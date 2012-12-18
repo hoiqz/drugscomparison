@@ -40,7 +40,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="8" selection-start="677" selection-end="677" vertical-scroll-proportion="0.9037736">
+            <state line="30" column="3" selection-start="671" selection-end="671" vertical-scroll-proportion="0.9037736">
               <folding />
             </state>
           </provider>
@@ -389,7 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="677" selection-end="677" vertical-scroll-proportion="0.9037736">
+        <state line="30" column="3" selection-start="671" selection-end="671" vertical-scroll-proportion="0.9037736">
           <folding />
         </state>
       </provider>
