@@ -19,7 +19,13 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: drugscomparison
   pool: 5
-  timeout: 5000
+  username: hoi
+  password: h0160Biopolis
+  #host: 127.0.0.1
+  #host: localhost
+  host: ec2-107-20-67-75.compute-1.amazonaws.com
