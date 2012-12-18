@@ -2,7 +2,7 @@ require "rvm/capistrano"
 set :user, 'hoi'
 set :domain, 'ec2-107-20-67-75.compute-1.amazonaws.com'
 set :application, 'drugscomparison'
-set :rake, 'bundle exec rake'
+#set :rake, 'bundle exec rake'
 # file paths
 set :repository,  "#{user}@#{domain}:~/git/#{application}.git"
 #set :repository,  "RemoteServer:/~/git/#{application}.git"
