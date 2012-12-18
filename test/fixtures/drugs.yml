@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  generic_name: MyString
+  brand_name: MyString
+  side_effect: MyString
+  dosage: MyText
+  precaution: MyText
+  manufacturer: MyString
+
+two:
+  generic_name: MyString
+  brand_name: MyString
+  side_effect: MyString
+  dosage: MyText
+  precaution: MyText
+  manufacturer: MyString
