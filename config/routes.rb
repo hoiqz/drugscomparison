@@ -1,4 +1,8 @@
 Drugscomparison::Application.routes.draw do
+  get "conditions/index"
+
+  get "conditions/show"
+
   resources :drugs
 
   # The priority is based upon order of creation:
