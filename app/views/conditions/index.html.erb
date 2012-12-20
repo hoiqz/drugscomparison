@@ -1,2 +1,19 @@
-<h1>Conditions#index</h1>
-<p>Find me in app/views/conditions/index.html.erb</p>
+<h1>Listing conditions</h1>
+
+<table>
+  <tr>
+    <th>Condition  ID</th>
+    <th>Condition</th>
+    <th>Related Drug</th>
+  </tr>
+
+  <% @conditions.each do |condition| %>
+      <tr>
+        <td><%= condition.id %></td>
+        <td><%= condition.information %></td>
+        <td><%= condition.get_related_drugs %></td>
+        </tr>
+  <% end %>
+</table>
+
+<br />

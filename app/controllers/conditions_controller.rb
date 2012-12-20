@@ -1,9 +1,10 @@
 class ConditionsController < ApplicationController
   def index
-    @title="Index Page"
+    @conditions=Condition.all
+
   end
 
   def show
-    @title="Individual Page"
+    @conditions=Condition.all
   end
 end
