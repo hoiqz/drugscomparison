@@ -1,0 +1,65 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :ethnicity %><br />
+    <%= f.text_field :ethnicity %>
+  </div>
+  <div class="field">
+    <%= f.label :email_address %><br />
+    <%= f.text_field :email_address %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :ip_address %><br />
+    <%= f.text_field :ip_address %>
+  </div>
+  <div class="field">
+    <%= f.label :genome_file %><br />
+    <%= f.text_field :genome_file %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :smoking_status %><br />
+    <%= f.text_field :smoking_status %>
+  </div>
+  <div class="field">
+    <%= f.label :allow_contact %><br />
+    <%= f.check_box :allow_contact %>
+  </div>
+  <div class="field">
+    <%= f.label :caregiver %><br />
+    <%= f.check_box :caregiver %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

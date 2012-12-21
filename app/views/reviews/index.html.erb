@@ -1,0 +1,45 @@
+<h1>Listing reviews</h1>
+
+<table>
+  <tr>
+    <th>Drug</th>
+    <th>User</th>
+    <th>Condition</th>
+    <th>Comments</th>
+    <th>Review url</th>
+    <th>Effectiveness</th>
+    <th>Ease of use</th>
+    <th>Satisfactory</th>
+    <th>Tolerability</th>
+    <th>Tag cloud path</th>
+    <th>Similar experience</th>
+    <th>Usage duration days</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= review.drug_id %></td>
+    <td><%= review.user_id %></td>
+    <td><%= review.condition_id %></td>
+    <td><%= review.comments %></td>
+    <td><%= review.review_url %></td>
+    <td><%= review.effectiveness %></td>
+    <td><%= review.ease_of_use %></td>
+    <td><%= review.satisfactory %></td>
+    <td><%= review.tolerability %></td>
+    <td><%= review.tag_cloud_path %></td>
+    <td><%= review.similar_experience %></td>
+    <td><%= review.usage_duration_days %></td>
+    <td><%= link_to 'Show', review %></td>
+    <td><%= link_to 'Edit', edit_review_path(review) %></td>
+    <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Review', new_review_path %>

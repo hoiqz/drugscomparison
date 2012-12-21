@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @user.age %>
+</p>
+
+<p>
+  <b>Ethnicity:</b>
+  <%= @user.ethnicity %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%= @user.email_address %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @user.location %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <b>Ip address:</b>
+  <%= @user.ip_address %>
+</p>
+
+<p>
+  <b>Genome file:</b>
+  <%= @user.genome_file %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @user.weight %>
+</p>
+
+<p>
+  <b>Smoking status:</b>
+  <%= @user.smoking_status %>
+</p>
+
+<p>
+  <b>Allow contact:</b>
+  <%= @user.allow_contact %>
+</p>
+
+<p>
+  <b>Caregiver:</b>
+  <%= @user.caregiver %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

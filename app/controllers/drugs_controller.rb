@@ -25,7 +25,7 @@ class DrugsController < ApplicationController
   # GET /drugs/new.json
   def new
     @drug = Drug.new
-
+    3.times {@drug.reviews.build}
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @drug }

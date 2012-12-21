@@ -1,4 +1,8 @@
 Drugscomparison::Application.routes.draw do
+  resources :reviews
+
+  resources :users
+
   get "conditions/index"
 
   get "conditions/show"

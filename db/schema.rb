@@ -11,12 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219081615) do
+ActiveRecord::Schema.define(:version => 20121220090540) do
 
   create_table "conditions", :force => true do |t|
     t.text     "information"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "name"
   end
 
   create_table "drugs", :force => true do |t|
@@ -30,11 +31,45 @@ ActiveRecord::Schema.define(:version => 20121219081615) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "reviews", :force => true do |t|
+    t.integer  "drug_id"
+    t.integer  "user_id"
+    t.integer  "condition_id"
+    t.text     "comments",                             :null => false
+    t.string   "review_url"
+    t.float    "effectiveness",                        :null => false
+    t.float    "ease_of_use",                          :null => false
+    t.float    "satisfactory",                         :null => false
+    t.float    "tolerability",        :default => 0.0
+    t.string   "tag_cloud_path"
+    t.integer  "similar_experience",  :default => 0
+    t.integer  "usage_duration_days"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+  end
+
   create_table "treatments", :force => true do |t|
     t.integer  "drug_id"
     t.integer  "condition_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username",                          :null => false
+    t.integer  "age",                               :null => false
+    t.string   "ethnicity"
+    t.string   "email_address"
+    t.string   "location"
+    t.string   "gender",                            :null => false
+    t.string   "ip_address"
+    t.string   "genome_file"
+    t.integer  "weight"
+    t.string   "smoking_status"
+    t.boolean  "allow_contact",  :default => true
+    t.boolean  "caregiver",      :default => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
   end
 
 end

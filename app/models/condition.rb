@@ -1,5 +1,5 @@
 class Condition < ActiveRecord::Base
-  attr_accessible :information, :condition_id
+  attr_accessible :information, :condition_id , :name
   has_many :treatments,
           # :foreign_key => "drug_id",
            :dependent => :destroy
@@ -7,6 +7,10 @@ class Condition < ActiveRecord::Base
   has_many :drugs, :through => :treatments
            #:source => "drug_id",
           # :dependent => :destroy
+  has_many :reviews,
+           :dependent => :destroy
+
+
 
   def get_related_drugs
     druglist=self.drugs

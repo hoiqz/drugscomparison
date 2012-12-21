@@ -32,4 +32,9 @@
 
 
 <%= link_to 'Edit', edit_drug_path(@drug) %> |
-<%= link_to 'Back', drugs_path %>
+<%= link_to 'Back', drugs_path %> |
+
+<%= link_to "See #{@drug.generic_name} reviews", :controller => "reviews", :action => "index", :drug_id=>@drug.id if @drug.reviews.exists? %>
+<p>
+<%= link_to "Write a review!", :controller => "reviews", :action => "new", :drug_id=>@drug.id, :drug_name=>@drug.generic_name%>
+</p>

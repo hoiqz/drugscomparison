@@ -11,6 +11,19 @@
     </div>
   <% end %>
 
+   <% f.fields_for :reviews do |builder| %>
+        <p>
+          <%= builder.label :comments, "Add comments" %><br />
+        <%= builder.text_field :comments%>
+          <%= builder.label :effectiveness, "effectiveness score" %><br />
+        <%= builder.text_field :effectiveness %>
+          <%= builder.label :ease_of_use, "ease of use score" %><br />
+        <%= builder.text_field :ease_of_use %>
+          <%= builder.label :satisfactory, "Satisfactory score" %><br />
+        <%= builder.text_field :satisfactory %>
+        </p>
+        <% end %>
+
   <div class="field">
     <%= f.label :generic_name %><br />
     <%= f.text_field :generic_name %>

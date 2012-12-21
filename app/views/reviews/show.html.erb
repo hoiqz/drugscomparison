@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Drug:</b>
+  <%= @review.drug_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @review.user_id %>
+</p>
+
+<p>
+  <b>Condition:</b>
+  <%= @review.condition_id %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @review.comments %>
+</p>
+
+<p>
+  <b>Review url:</b>
+  <%= @review.review_url %>
+</p>
+
+<p>
+  <b>Effectiveness:</b>
+  <%= @review.effectiveness %>
+</p>
+
+<p>
+  <b>Ease of use:</b>
+  <%= @review.ease_of_use %>
+</p>
+
+<p>
+  <b>Satisfactory:</b>
+  <%= @review.satisfactory %>
+</p>
+
+<p>
+  <b>Tolerability:</b>
+  <%= @review.tolerability %>
+</p>
+
+<p>
+  <b>Tag cloud path:</b>
+  <%= @review.tag_cloud_path %>
+</p>
+
+<p>
+  <b>Similar experience:</b>
+  <%= @review.similar_experience %>
+</p>
+
+<p>
+  <b>Usage duration days:</b>
+  <%= @review.usage_duration_days %>
+</p>
+
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
