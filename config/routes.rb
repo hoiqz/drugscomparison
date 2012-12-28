@@ -2,12 +2,12 @@ Drugscomparison::Application.routes.draw do
   resources :reviews
 
   resources :users
-
+  resources :drugs
   get "conditions/index"
 
   get "conditions/show"
+  get "static_pages/home"
 
-  resources :drugs
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,21 +1,6 @@
 ---
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
-application.js: application-359c83db6ebcc1589ed183a9fbbd818f.js
-application.css: application-0149f820dbdd285aa65e241569d8c256.css
-blueprint/plugins/buttons/icons/cross.png: blueprint/plugins/buttons/icons/cross-c2651300ae2e326a9727177155b48bf7.png
-blueprint/plugins/buttons/icons/key.png: blueprint/plugins/buttons/icons/key-9db9f7ef5cb5f66d1dd4a2adfbf0a87b.png
-blueprint/plugins/buttons/icons/tick.png: blueprint/plugins/buttons/icons/tick-749c8298fcbfe4490ba9f7e4a9079637.png
-blueprint/plugins/buttons/readme.txt: blueprint/plugins/buttons/readme-19221f7d283e4a5d8c4bd7e230c24c44.txt
-blueprint/plugins/fancy-type/readme.txt: blueprint/plugins/fancy-type/readme-c34790b425da91297556c0d7f65087d6.txt
-blueprint/plugins/link-icons/icons/doc.png: blueprint/plugins/link-icons/icons/doc-60f5a9be85d1f29f02d915ef2d33e2c3.png
-blueprint/plugins/link-icons/icons/email.png: blueprint/plugins/link-icons/icons/email-d10a1cbeb98596c14961c48b15888ea7.png
-blueprint/plugins/link-icons/icons/external.png: blueprint/plugins/link-icons/icons/external-3bef4b7b3b5614716526f2ee5d69f829.png
-blueprint/plugins/link-icons/icons/feed.png: blueprint/plugins/link-icons/icons/feed-dd7771a1711b88314ce4f484836aa285.png
-blueprint/plugins/link-icons/icons/im.png: blueprint/plugins/link-icons/icons/im-81a1c3f5f8f27209b8607c65d85fb0fc.png
-blueprint/plugins/link-icons/icons/lock.png: blueprint/plugins/link-icons/icons/lock-272e7ed1d34b55511eab7b2094b0759b.png
-blueprint/plugins/link-icons/icons/pdf.png: blueprint/plugins/link-icons/icons/pdf-fd8027aed74f50538ab830a71d7e56da.png
-blueprint/plugins/link-icons/icons/visited.png: blueprint/plugins/link-icons/icons/visited-75731a32fe07fbcd10c95173254e69ed.png
-blueprint/plugins/link-icons/icons/xls.png: blueprint/plugins/link-icons/icons/xls-590ac03632317af39267aa4dc073cbcc.png
-blueprint/plugins/link-icons/readme.txt: blueprint/plugins/link-icons/readme-65a1d718f19baf262d741c5d189b38e6.txt
-blueprint/plugins/rtl/readme.txt: blueprint/plugins/rtl/readme-e1cabbf7290891d9065cead2cc0f87a8.txt
-blueprint/src/grid.png: blueprint/src/grid-99a56fe9528f46c2bbb7084a7e34bb4f.png
+application.js: application-447256e746054e60fd84869be80a8c23.js
+application.css: application-350d5d2380f6b48389947fac35cfff36.css
+glyphicons-halflings-white.png: glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
+glyphicons-halflings.png: glyphicons-halflings-ab3144065a860d198f1d7d9a4882640c.png

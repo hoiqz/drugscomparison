@@ -1,6 +1,6 @@
 <h1>Listing reviews</h1>
 
-<table>
+<table class="table table-hover">
   <tr>
     <th>Drug</th>
     <th>User</th>
@@ -24,7 +24,7 @@
     <td><%= review.drug_id %></td>
     <td><%= review.user_id %></td>
     <td><%= review.drug.conditions.name %></td>
-    <td><%= review.comments %></td>
+    <td><%= link_to "#{review.comments}", "#{review.review_url}" %></td>
     <td><%= review.review_url %></td>
     <td><%= review.effectiveness %></td>
     <td><%= review.ease_of_use %></td>

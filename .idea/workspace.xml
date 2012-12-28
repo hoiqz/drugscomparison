@@ -2,22 +2,90 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/models/drug.rb" line="32" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convert2seed.rb" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\db\seed.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\cross-c2651300ae2e326a9727177155b48bf7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\cross.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\key-9db9f7ef5cb5f66d1dd4a2adfbf0a87b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\key.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\tick-749c8298fcbfe4490ba9f7e4a9079637.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\icons\tick.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\readme-19221f7d283e4a5d8c4bd7e230c24c44.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\buttons\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\fancy-type\readme-c34790b425da91297556c0d7f65087d6.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\fancy-type\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\doc-60f5a9be85d1f29f02d915ef2d33e2c3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\doc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\email-d10a1cbeb98596c14961c48b15888ea7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\email.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\external-3bef4b7b3b5614716526f2ee5d69f829.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\external.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\feed-dd7771a1711b88314ce4f484836aa285.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\feed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\im-81a1c3f5f8f27209b8607c65d85fb0fc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\im.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\lock-272e7ed1d34b55511eab7b2094b0759b.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\pdf-fd8027aed74f50538ab830a71d7e56da.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\visited-75731a32fe07fbcd10c95173254e69ed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\visited.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\xls-590ac03632317af39267aa4dc073cbcc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\icons\xls.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\readme-65a1d718f19baf262d741c5d189b38e6.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\link-icons\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\rtl\readme-e1cabbf7290891d9065cead2cc0f87a8.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\plugins\rtl\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\src\grid-99a56fe9528f46c2bbb7084a7e34bb4f.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueprint\src\grid.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\buttons\icons\cross.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\buttons\icons\key.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\buttons\icons\tick.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\buttons\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\buttons\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\fancy-type\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\fancy-type\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\doc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\email.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\external.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\feed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\im.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\lock.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\visited.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\icons\xls.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\link-icons\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\rtl\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\plugins\rtl\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\forms.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\grid.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\grid.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\blueprint\src\typography.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stylesheets\custom.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ritalin+Oral_reviews_childcleaned.tsv" afterPath="$PROJECT_DIR$/Ritalin+Oral_reviews_childcleaned.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/condition.rb" afterPath="$PROJECT_DIR$/app/models/condition.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drug.rb" afterPath="$PROJECT_DIR$/app/models/drug.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="$PROJECT_DIR$/public/assets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js" afterPath="$PROJECT_DIR$/public/assets/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +104,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="51" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0">
+            <state line="6" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="convert2seed.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert2seed.rb">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="28" selection-start="3935" selection-end="3935" vertical-scroll-proportion="0.0">
+            <state line="13" column="85" selection-start="174" selection-end="174" vertical-scroll-proportion="-8.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="50" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -57,25 +134,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="52" selection-start="467" selection-end="467" vertical-scroll-proportion="0.43098593">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reviews/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="89" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+            <state line="10" column="38" selection-start="223" selection-end="223" vertical-scroll-proportion="0.31423292">
               <folding />
             </state>
           </provider>
@@ -84,7 +143,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.769231">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,14 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/drugs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121226015901_add_sourceid_to_drug.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121226033025_change_usertable_age_type.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121226065617_remove_condition_id_from_review.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121227072235_change_column_email_address.rb" />
         <option value="$PROJECT_DIR$/app/models/drug.rb" />
         <option value="$PROJECT_DIR$/app/models/condition.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121227082139_change_column_email_address.rb" />
@@ -118,6 +169,14 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/convert2seed.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
       </list>
     </option>
@@ -181,7 +240,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,11 +254,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,6 +291,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,46 +351,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -315,6 +370,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -325,12 +420,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../drugtest" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../drugtest" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -607,7 +702,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="715" extended-state="1" />
+    <frame x="0" y="0" width="1366" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -615,11 +710,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.34330985" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1722561" sideWeight="0.6858108" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17454268" sideWeight="0.6858108" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.33450705" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.49771342" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3141892" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3128039" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,78 +778,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20121220090540_add_condition_name_to_conditions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="66" selection-start="176" selection-end="176" vertical-scroll-proportion="0.23809524" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20121226065617_remove_condition_id_from_review.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="188" selection-end="188" vertical-scroll-proportion="0.40583554" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ritalin+Oral_reviews_childcleaned.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="-9.20436" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/treatment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20121227082139_change_column_email_address.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="374" selection-end="374" vertical-scroll-proportion="0.4473684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="211" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="86" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert2seed.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="28" selection-start="3935" selection-end="3935" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="53" selection-start="674" selection-end="674" vertical-scroll-proportion="-0.3830986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -766,23 +799,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.769231">
+        <state line="5" column="29" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1755028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="48" selection-start="310" selection-end="310" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="66" selection-start="418" selection-end="418" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="85" selection-start="174" selection-end="174" vertical-scroll-proportion="-8.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="89" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+        <state line="13" column="89" selection-start="343" selection-end="343" vertical-scroll-proportion="-0.059964728">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="50" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="467" selection-end="467" vertical-scroll-proportion="0.43098593">
+        <state line="10" column="38" selection-start="223" selection-end="223" vertical-scroll-proportion="0.31423292">
           <folding />
         </state>
       </provider>
