@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
   # GET /reviews.json
   def index
     if params[:drug_id]
-    @reviews = Review.find(params[:drug_id])
+    @reviews = Review.find_all_by_drug_id(params[:drug_id])
     else
       @reviews= Review.all
       end

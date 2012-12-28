@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121220090540) do
+ActiveRecord::Schema.define(:version => 20121227082139) do
 
   create_table "conditions", :force => true do |t|
     t.text     "information"
@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(:version => 20121220090540) do
     t.string   "manufacturer"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "source_id"
   end
 
   create_table "reviews", :force => true do |t|
     t.integer  "drug_id"
     t.integer  "user_id"
-    t.integer  "condition_id"
     t.text     "comments",                             :null => false
     t.string   "review_url"
     t.float    "effectiveness",                        :null => false
@@ -55,9 +55,12 @@ ActiveRecord::Schema.define(:version => 20121220090540) do
     t.datetime "updated_at",   :null => false
   end
 
+  add_index "treatments", ["condition_id"], :name => "index_treatments_on_condition_id"
+  add_index "treatments", ["drug_id"], :name => "index_treatments_on_drug_id"
+
   create_table "users", :force => true do |t|
     t.string   "username",                          :null => false
-    t.integer  "age",                               :null => false
+    t.string   "age",                               :null => false
     t.string   "ethnicity"
     t.string   "email_address"
     t.string   "location"

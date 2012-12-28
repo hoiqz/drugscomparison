@@ -1,1 +1,0 @@
-Review.create(:comments=>"itsgreat i love it",:effectiveness=>4, :ease_of_use=>4,:satisfactory=>5,)

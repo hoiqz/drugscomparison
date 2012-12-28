@@ -1,12 +1,12 @@
 class Drug < ActiveRecord::Base
   attr_accessible :drug_id, :brand_name, :dosage, :generic_name, :manufacturer, :precaution, :side_effect,
-                  :treatments_attributes, :reviews_attributes
+                  :treatments_attributes, :reviews_attributes, :source_id
 
   has_many :treatments ,
             #:foreign_key=>"condition_id",
            :dependent => :destroy
   has_many :conditions, :through => :treatments
-  has_many :reviews, :dependent => :destroy
+  has_many :reviews
 
   accepts_nested_attributes_for :reviews #, :allow_destroy => true, :reject_if => :reject_review
   accepts_nested_attributes_for :treatments, :allow_destroy => true, :reject_if => :reject_treatment
@@ -24,7 +24,7 @@ class Drug < ActiveRecord::Base
   end
 
 
-  validates :generic_name, :presence => true, :uniqueness => true
+  validates :generic_name, :presence => true#, :uniqueness => true
 
 
 

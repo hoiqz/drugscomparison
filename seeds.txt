@@ -2,21 +2,21 @@
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "Started to use Ritalin in high school because of mild hyperactivity which became more severe.  Experienced huge change due to Ritalin and became much more focused on school, and more successful.  Have been taking Ritalin since then (through college and now at work) and could not imagine life without it.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2007-09-18 16:34:08', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=46&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2007-09-24 22:25:35', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=46&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "When all else fails, go back to basic ritalin for treatment.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2007-09-26 20:05:37', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=46&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -37,7 +37,7 @@ newuser.reviews.create(comments: "Hit in the temple with baseball bat.slept all 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have MS, with all the other pills I take, and the disease symptoms, I can't stay awake during a conversation.  So far this is the best at helping me to stay awake.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-10-29 21:32:21', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=45&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -51,14 +51,14 @@ newuser.reviews.create(comments: "life changing i can life normal life",effectiv
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "i am who i am because of it and people around me can stay around me and want to be my friends",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-11-21 01:32:42', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=45&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2007-12-04 011:12:18', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=44&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -128,14 +128,14 @@ newuser.reviews.create(comments: "This statement has not been evaluated by the F
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "Taking 10mg tab @ rate 6/day of immediate release. I'm a 200lb male.  Not quite enough mg's to get through day but better than the &quot;2 pot a day&quot; coffee habit that I had before. I did not seek treatment until 30 years of age and so I did not take Ritalin until then.  At 30yrs of age I finally had a neuropsyc exam to see if there were any learning disabilities.  Diag'ed with ADHD but also with assessed IQ at above 90% of population.  ADD is real and any who doubt it have no clue.  It's a shame they can't experience it for one day.  It was not until the neuropsyc exam, resultant ADHD diagnoses, and Ritalin script; that I found peace.  Prior to I might as well have had an IQ of 50.  This whole time I thought that I was below average IQ &amp; ability.  I barely grad'ed H.S.  At this time my social skills were poor, I had great hyperactivity, and also no ability to focus.  Resultant poor self-esteem leading to anger/frustration and then illicit drug use to &quot;self-medicate&quot; as they say. My life was problematic before due to impulsivity as well and the usual inability to focus. Everyone around me would joke of ADD but I didn't take it seriously. After starting Ritalin I am now a college student w/3.0 avg GPA in the hardest Mathematics sequence that exists on this planet. God Bless Ritalin. I hope that parents out there with a kid who fits this description of my past doesn't fall victim to the hype that this drug is destructive. Sure, any substance can be misused.  However, if a doc recommends it for these symptoms in a person, it's worth a shot; a shot at life. My life is just beginning at and it could have started so long ago had this pharmaceutical solution been taken earlier on in my life.  Look at the long-term studies of this drug. It's track record is good and my worst day on Ritalin is still better than my better days off of it. Exercise helps, Ritalin solves. If this becomes a permanent solution then so be it.  I don't want to go back to the way it was... ever.",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2008-01-23 22:22:34', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=42&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I have been taking Ritalin 15mg 3 times a day for 4 months now along with Lithium 900mg a day in order to treat rapid progression BiPolar disorder with mania onset A.D.D. It has been wonderful. There are a few side effects as with any medication, but the overall benefit has been huge. As a college student I am able to pay attention, and live a normal day to day life without the wild swings of R.P. BiPolar or the distraction of A.D.D.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-01-26 011:50:22', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=42&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -163,7 +163,7 @@ newuser.reviews.create(comments: "My neurologist prescribed Ritalin in addition 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I am 49 yrs old and it has helped mostly with focus and concentration",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-09 06:36:31', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=41&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -177,7 +177,7 @@ newuser.reviews.create(comments: "I have Parkinsons and this drug gives me the e
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have been diognosed with adult add. I have only been taking Ritalin for a few weeks - but I notice a big change. I can focus so well. I don't have to read and re-read something to &quot;get it&quot;. It does seem to wear off about 2 or 3 in the afternoon, so I know I need to get all my school work done in the morning to maintain my &quot;focus&quot;  It has been a great help to me.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-02-13 16:00:35', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=41&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -191,14 +191,14 @@ newuser.reviews.create(comments: "hAS HELPED ME FOCUS MUCH ETTER.",effectiveness
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "i used to not be able to focus on anything, and the day i took ritalin for the FIRST TIME i was able to write a 4 page pager for my english final",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2008-02-27 15:09:00', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=41&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have been using Ritalin for almost 15 years- with adverse side-effects ( oh, except when washing it down with espresso- some palpitations!)",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-28 05:04:21', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=40&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -226,21 +226,21 @@ newuser.reviews.create(comments: "Diagnosed ADD about 3 yrs. ago by a psycologis
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have suffered with clinical depression for most of my life, but since the &quot;prozac&quot; type drugs came on the market, have had control of most depression symptoms.  However, the SSRIs don't seem to improve my feelings of physical &quot;heaviness&quot; or my fatigue.  Having ruled out most other common causes of fatigue, my doctor prescribed Ritalin for me.  It has worked like a charm.  Even in very low doses, I no longer feel heavy and tired during the day.  I've only been taking it for a few months, and have never stopped, so I'm not sure about the withdrawl problems or whether I've developed a dependency on it.  I've forgotten to take it a few times (weekends) and never noticed any problem.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-05-07 09:36:14', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=40&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "i have adhd and have been prescribed ritalin. iv had adhd since 2nd grade and iv been through adderall, ritalin, stratera and concerta.  stratera didnt work at all.  anyways i got prescribed to ritalin last week and i saw noticable effects about 40 minutes after taking it the first day.  i can focus much better, i dont fall asleep in class and can do my work at a rediculous pace.  bad part is my appetites gone ( all ive eaten in 2 days is a chicken strip) i feel really shaky, my eyes are much more sensitive to light although my pupils are the same size as usual, i have increased muscle tension in my face and jaw, and i have a really hard time sleeping. i weigh 180 and am taking 3 doses a day at 10mg each. my final dose is taken before 3pm and last night i fell asleep only with the aid of a tranquilizer known as zolpidiem but woke up at 2 and laid in bed, trying to fall asleep, until 730 when i had to go to school. it was very frustrating, yet odly enough i dont really feel tired at all. but yeah i guess the medicines doing what its supposed to do, but im thinking that its doing a lot of things its not supposed to do too.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-05-08 011:41:03', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=39&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have difficulty getting up in the morning no matter how much sleep I have.  It has been a problem all my life.  This is the only medication that helped me.  However, it is the short acting dosage and I do notice a definite decrease in energy at the end of the 4 hours.",effectiveness: 4, ease_of_use: 3, satisfactory: 3, created_at: '2008-05-13 24:59:33', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=39&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -268,14 +268,14 @@ newuser.reviews.create(comments: "My 6, year old grandson was given this drug du
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "NO effect felt",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2008-06-06 011:46:07', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=38&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '7-12',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '7-12',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "My 7 yr old son began taking this medication 7 months ago. It worked somewhat but it decreased his appetite to nothing. It was also a pain to have him take a pill every four hours",effectiveness: 4, ease_of_use: 2, satisfactory: 3, created_at: '2008-06-16 20:34:14', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=38&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -289,7 +289,7 @@ newuser.reviews.create(comments: "I was just reading through some of these comme
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "has been very effective in trating my condition.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-07-06 20:06:59', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=38&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -303,14 +303,14 @@ newuser.reviews.create(comments: "I have had M.S. fatigue for a decade. I have t
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "I took this when i was a child and i had a lot of side effects of it i didnt like the way to made me feel parents think its a quick fix for there child and its not. I really wish they would take this off the market  i still think i have side effects of this medicine today",effectiveness: 3, ease_of_use: 3, satisfactory: 1, created_at: '2008-07-31 17:32:06', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=37&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I was diagnosed with acute ADD in the audio modality. This drug is a god send, however, I know I might have the genes that make me prone to addiction. With that in mind, I take this drug sparingly, when I know I will need it, and it has worked like a charm.  I do not take it everyday, and always take a 3 month holiday during the summer.  The trick is to take it at the very beginning of your day, and scheduale your day around when the drug will be most effective, so that you can use it and still sleep at night.  I just wonder about having caffeine with ritalin.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-08-06 08:38:33', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=37&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -324,7 +324,7 @@ newuser.reviews.create(comments: "I have been taking Ritalin for the past 3 year
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "I just started taking Ritalin and it's day 6. I have noticed a big difference in being able to study and getting the most out of the time I have. I have had problems getting passing grades in college but I feel like I have more focus and can remember the lectures a lot better than I did before being on the medication. I have more energy when I take it but it does wind down at the end of the day. I have ADD in which I am taking Lexapro and Propranolol for social anxiety disorder too. I'm at 5mg. right now and I think this is where I want to stay. I could go all the way up to 20mg. if I want to but I think I need to check in with my doctor to get some feedback on my treatment overall.",effectiveness: 4, ease_of_use: 3, satisfactory: 4, created_at: '2008-08-08 012:13:41', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=37&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -366,7 +366,7 @@ newuser.reviews.create(comments: "it makes me feel awful and stressed and worn o
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "Aderall works better.Ritalin makes me nervous and gives me a stomache ache.",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2008-09-28 14:59:17', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=36&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -380,14 +380,14 @@ newuser.reviews.create(comments: "My son was taking the Ritalin along with Tenex
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "makes my stomache hurt makes me tired. MAKES MY HEART POUND OUT OF MY CHEST!HIGH BLOOD PRESSURE and i am taking a low dose and still getting all this (10mg)",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2008-10-02 17:28:57', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=35&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-10-05 01:01:52', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=35&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -408,7 +408,7 @@ newuser.reviews.create(comments: "My Son sometimes experiences times when he is 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "it worked for awhile then got more depressed so he uped it now i am having headaches and nausea ie this just temp.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2008-10-25 24:38:31', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=34&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -443,7 +443,7 @@ newuser.reviews.create(comments: "After having ECT, I was put on 15 mg ea day.Me
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '3-6',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '3-6',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "My 6 year old son had problems all through kindergarten with focusing and sitting still. His teacher wanted him tested for ADD/ADHD. So we took the Conners Check List. Then we got a second opinion from a child psychologist who then diagnosised him with moderate ADHD. He had started Ritalin 4 months ago. He is taking it twice a day at 10mg ea. He is much calmer and more focused now. He enjoys reading more then he did be for. All I can say it has worked for us.",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2008-11-15 22:27:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=33&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -464,7 +464,7 @@ newuser.reviews.create(comments: "I have had ADD for nearly my entire life. My p
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "It makes me feel horrible. It helps me pay attention at first, but then I feel incredibly irritable. I took it the majority of my life then finally decided i hated it. I went back on it and I remember why i went off of it in the first place. Not for everyone.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2008-12-02 16:10:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=33&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -478,7 +478,7 @@ newuser.reviews.create(comments: "Along with ignored ADD i suffer PTSD, I slowly
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "medication is helpfull and controls adhd most of the time however side effects are begging to become more noticable.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-12-23 17:44:34', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=32&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -499,7 +499,7 @@ newuser.reviews.create(comments: "well lets see at first it worked perfect but a
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "This drug helped decrease the fatigue I have from Multiple Sclerosis.  It helped me stay employed which meant I could continue talking care of myself and have my own health insurance.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-23 20:40:22', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=32&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -520,7 +520,7 @@ newuser.reviews.create(comments: "I have been taking ritalin for about three wee
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "i started taking it because i was too tired all the time, sleeping 8 hrs at night along with two 1-3hr naps a day. sleep was interfering with my everyday life. the ritalin has helped me stay up during the day. i also have ADD and for the first time i got stright A's and studied.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-15 02:26:44', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=31&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -548,14 +548,14 @@ newuser.reviews.create(comments: "Doesn't seem to last throughout the afternoon.
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have been taking this med for about 5 days and it gives me energy and helps be stay awake and alert in college.  I can sit in class now and acutally want to listen to the lecutres and remember what its about.  No more racing thoughts and moving around in my chiar.  Down side to the med is about 3 hours later after taking the first dose i'm very tired.  I take 20mg 2x daily.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-02-28 23:25:26', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=30&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I was prescibed to ritalin when I was 14 years old and now I am 22. The medication use to work very well when I was in highschhol. Now the medication seems to be ineffective. It has caused me to have severe anxiety and panic attack. Also, when the medication wears off I have a great deal of depression. I started with 10mg-3 times a day and now I am taking 20mg-3times a day. Sometimes I feel like the medication is not working and my tolerance has gone up. I would not suggest this medication for anyone to take over a long period of time.",effectiveness: 3, ease_of_use: 4, satisfactory: 1, created_at: '2009-03-05 15:54:24', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=30&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -569,21 +569,21 @@ newuser.reviews.create(comments: "Provigil gave me headaches for two months and 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '7-12',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '7-12',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "loss of appetite, jitters,",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-03-11 15:14:43', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=30&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "This medication has been too activating for me and has caused severe irritability and anxiety, as well as headaches.  It wasn't the best choice, I suppose, since I am generally an anxious person.  However, I've heard it has helped many others.",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-03-12 17:32:44', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=30&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "i think this drug is a joke. its pretty much like taking speed. my best friend was prescribed it for school to conentrate but i think she didnt need it it causes her anxiwety and she never seems herself anymore. its a way the doctors can make money but never really even look into conditions just write out prescriptions and move to the next patient. there are other ways to curve hyperness or lack of concentration other than medications you just have to look.!",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-03-29 14:50:42', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=29&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -625,21 +625,21 @@ newuser.reviews.create(comments: "I have begun to notice after approximately 1 y
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "i felt better about myself and more energetic",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-04-27 15:26:17', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=28&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '65-74',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '65-74',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "used for chemo brain to be able to focus and write",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-05-10 24:27:59', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=28&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '7-12',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '7-12',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "My almost 8 yr old daughter has tried several ADHD drugs before finally being prescribed Ritalin.  She takes it twice a day...only at school.  It has done wonders.  She is able to concentrate during the day and focus on her work.  Her behavior has improved 100%.  She is above average in school in all subjects.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-05-18 20:09:23', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=28&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -653,7 +653,7 @@ newuser.reviews.create(comments: "I took this med when I was about 5 or 6, I've 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-06-10 21:00:10', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=27&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -667,7 +667,7 @@ newuser.reviews.create(comments: "works with my concentration",effectiveness: 3,
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '7-12',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '7-12',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-20 24:27:25', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=27&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -723,7 +723,7 @@ newuser.reviews.create(comments: "I started taking Ritalin a little over a month
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I recently switched from Adderall to Ritalin because the Adderall wore off rather quick. Both seem to be equally effective, but I have different/bad side effects with each. With the Adderall I lost my appetite and lost 7+ pounds in a month. With the Ritalin, I keep getting headaches. I usually never get headaches so I am very disappointed. Hopefully they go away in the next couple of weeks and my body adjusts to the drug, otherwise I will switch back to Adderall or try something else.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2009-07-30 06:01:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=25&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -751,7 +751,7 @@ newuser.reviews.create(comments: "I had trouble concentrating and remembering th
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "Have been taking Ritalon for 21 years.  It worked well in the beginning. I was a student and found that Ritalin allowed me to read and understand the content, as well as learn. 20 years later, my heart seems to have problems racing, and high blood pressure with lots of headaches and it all seems related to my Ritalin. Now when I take it I feel that it make me lazy and after conferring with some colleagues, they agree they see the laziness and disorganization too.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-08-30 02:01:15', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=25&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -772,7 +772,7 @@ newuser.reviews.create(comments: "Effects of Ritalin are excellent but the stigm
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '55-64',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '55-64',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "Psychiatrists are considered  as  the brightest among the doctors.Not from only purely medical view, but commercially. They sell the medical unthinkable as a disease.Grief and mourning are now being transformed and given the status and the statute of a neurobiological illness  (PGD, Prolonged Grief Disorder). &#171; Work &#187; is also done to force pregnancy to be conceived as a medical-pathological &#171; disorder &#187;, so that pregnancy can be treated with preventive drugs against post-natal depression. The advantage would be that premature babies (bingo!) with osteoporosis (bingo!), will be born with withdrawal symptoms (bingo!) and that mothers will have to continue their taking persistent doping (bingo again!).The allergy of the multidisciplinary team (PPHS, Projected pedagogical helplessness syndrome) against a normal child behavior appears to be an incurable disease. PPHS has the same symptoms as ADHD.But the &#171; children &#187; are treated as supposed to be suffering from ADHD.The allergy itself is questionable, especially when the &#171; patients &#187; were trained to manage this allergy.That alienation is to be considered to be a crime because the kids can not resist.But what initially was considered as medically unthinkable, takes now only 1 moment of decision. There is nothing medically wrong with these three examples.Up to this point the patients are medically speaking  perfectly OK, (but this is but a small detail).To speak in terms of a neurobiological disorder is premature.Treatment itself is making the disease the alleged disease.Indeed, no doctor,  neither a real nor a psychiatrist, has explained the mechanism that doping would mobilize  immeasurable and alleged deficiencies of dopamine, serotonine, norepinephrine, etc. All the myths about these biochemical molecules are presented as scientific dogmas.Indeed : how can SSRIs , such as Prozac and  Strattera 'selectively' treat  the dopamine deficits in ADHD?Selectively releasing serotonine by massive dose",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-09-22 03:57:24', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=24&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -786,14 +786,14 @@ newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfacto
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I started Ritalin about a week ago, and already I am noticing changes for the better.  I am able to pay attention and understand my college courses, as well as a huge confidence boost.  My self esteem has never been higher.  After about 3 to 4 hours I start to get a mild headache, nothing terrible.  The dosage I use is 10mg so headaches and other side effects may be worse with higher doses.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-10-08 03:30:57', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=24&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2009-10-14 14:36:42', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=23&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -856,7 +856,7 @@ newuser.reviews.create(comments: "I am 24 and was diagnosed with ADHD as child. 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "can not tell a difference since taking this medicine",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2009-11-27 16:27:18', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=22&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -898,7 +898,7 @@ newuser.reviews.create(comments: "it has helped me focos at school",effectivenes
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "Really have lifted my depression and attitude.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-02-03 21:34:18', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=20&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -912,14 +912,14 @@ newuser.reviews.create(comments: "I have been taking generic Ritalin for ADD for
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "anxiety attacks",effectiveness: 3, ease_of_use: 1, satisfactory: 1, created_at: '2010-02-19 09:06:28', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=20&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2010-02-24 15:35:52', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=20&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -940,7 +940,7 @@ newuser.reviews.create(comments: "I was prescribed 10 mg twice a day and now I'm
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I first saw some improvement from 5mg but it soon became ineffective.  The same for 10mg at first there was improvement but soom showed no improvement.  Don't know how large a dosage I can take.  Have no side effects.",effectiveness: 1, ease_of_use: 5, satisfactory: 2, created_at: '2010-03-16 20:23:28', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=19&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -968,14 +968,14 @@ newuser.reviews.create(comments: "I was diagnosed w/ ADHD almost 20 yrs ago.  Ad
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '65-74',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '65-74',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I experience an ability to adapt to situations which usually cause me to have symptoms of fearfulness and inability to cope. Ritalin helps me to feel normal.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-05 20:30:51', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=18&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2010-04-08 14:43:47', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=18&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -996,14 +996,14 @@ newuser.reviews.create(comments: "I have had ADD all my life but just dx in past
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '13-18',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '13-18',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "At first, I thought Ritalin helped. I took it on and over over 3-4 years. However, I started to take more and more to get the same effect, as you start to get immune to the effects of a lower dosage after continued use. Then I started overdosing.I do not recommend Ritalin at all, as it is easy to get hooked on to the point where you're dependant on that weird high you get from it.",effectiveness: 2, ease_of_use: 5, satisfactory: 3, created_at: '2010-04-16 010:31:54', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=18&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "i am chronically fatiged since taking ritalin 20mg 3x per day i have become alert and living a normal life",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-25 17:24:03', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=17&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1052,28 +1052,28 @@ newuser.reviews.create(comments: "i use this drug daily for 8 years now and i st
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "Ritalin helped me sooo much to focus on school work, communicate, increased my energy, and creativity. Sounds like a miracle drug, right? No! I got so completely addicted to it it drove me crazy. When my doctor took me off of it I would regularly go down to Mexico where I could buy it without a prescription and smuggle it back across the border, I did this for almost 2 years. Luckily, I moved much further north so driving to Mexico was no longer an option, so I'm finally off of it for good. I probably should have gone to some kind of Ritalin rehab. Ritalin also made me want to smoke cigarettes all the time, which is totally disgusting. But now without Ritalin, I no longer want to smoke, it makes me sick just to smell it.",effectiveness: 5, ease_of_use: 4, satisfactory: 2, created_at: '2010-05-22 21:23:36', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=16&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '3-6',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '3-6',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "My 5 year old son starting taking Ritalin after being diagnosed with ADHD. We started on 5 mg 2 x day with no change in behavior at all. Next we tried 7.5 mg 2 x day, a little improvement, but not much. Our last attemt was 10 mg 2 x day. Not much change in behavior but he did start to show some minor facial tics and irritability. We are now meeting with his dr. to discuss trying a different med.",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2010-05-22 23:57:26', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=16&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '19-24',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "I was prescribed Ritalin 20 mg. And at first, it seemed to do wonders for me. But, this medicine cause me to develop facial tics whenever I took it. I would blink my eyes constantly and I would wrinkle up my nose. So, I stopped taking Ritalin on my own. And I got prescribed Focalin. And I have to say, I love Focalin.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-06-02 011:33:57', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=16&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "This medication is extremely helpful along with my antidepressant for both treatment resistant depression and excessive fatigue related to the depression; however, I don't like how it is so short-acting and I have to take it 3 times a day. I would prefer something longer-acting.  But other than that, I love Ritalin and I am very satisfied. I am, however, concerned about the possibility of addiction/dependency, so I am being careful.",effectiveness: 5, ease_of_use: 2, satisfactory: 4, created_at: '2010-06-06 05:21:05', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=15&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1087,14 +1087,14 @@ newuser.reviews.create(comments: "Prescribted this drug as a supplement for depr
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Other').first_or_create(name: 'Other')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '55-64',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '55-64',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-06-15 16:42:03', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=15&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have treatment-resistant depression.  About a month ago, I was prescribed Ritalin 10 mg once a day as an add-on to the 40mg of Prozac I take.  It has definitely made a tremendous difference.  I feel so much more positive, actually happy.  Only complaint is that it lasts just 4 or so hours.  I will talk to my doc about increasing to 10mg twice a day next time I see him.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2010-06-25 15:36:28', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=15&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1122,21 +1122,21 @@ newuser.reviews.create(comments: "ritalin",effectiveness: 1, ease_of_use: 1, sat
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-07-30 08:30:57', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=14&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '45-54',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "depression and laziness",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2010-08-04 16:24:41', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=14&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I've been taking Ritalin for 2 wks and it has worked wonders for me. I often get very overwhelmed at work and it has stopped. I take it as soon as I get to work and again 4 hrs later. I take 10mg each time. I have notice I tend to get head aches a little more when I am NOT taking it. I started getting a tic in my cheek today. I also take Celexa for depression and I feel like it has even made a difference in the depression, in a better way. It has not effected my sleep. I can sleep on this medication. I wish I would have taken this medication when I was a child because it has made such a big difference in my life. I needed this medication a long time ago.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-08-07 20:53:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=14&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1178,7 +1178,7 @@ newuser.reviews.create(comments: "I was diagnosed with severe treatment resistan
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "This medicine works great but it doesn't seem to last very long for me. My Doctor said she might swith me to adderall which lasts longer.",effectiveness: 3, ease_of_use: 5, satisfactory: 4, created_at: '2010-11-27 15:55:32', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=12&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1248,7 +1248,7 @@ newuser.reviews.create(comments: "Worked well when I first began",effectiveness:
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '7-12',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '7-12',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "bad dreams, depression enhanced, irritable at anything, just do not feel like self. sleepless nights.",effectiveness: 3, ease_of_use: 2, satisfactory: 1, created_at: '2011-05-06 04:01:06', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=10&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1283,21 +1283,21 @@ newuser.reviews.create(comments: "I am 37 years old and after having my son diag
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', age: '',gender: '')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', age: '',gender: '')
 newuser=User.last
 newuser.reviews.create(comments: "It has made me able to concentrate and helps with anxity",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-06-28 08:11:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=9&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2011-07-15 17:50:34', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=9&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "Ritalin worked great for me! The only problem was, I has a crash in the afetroon and had to make sure I had the afternoon dose with me no matter what was going on.  I just changed to Vyvanse this week. I hope I have the same results.  I have taken Ritalin for 3 years",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-07-20 012:35:30', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=9&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1318,7 +1318,7 @@ newuser.reviews.create(comments: "Having abused opiates.oxycodone in high doses)
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I take oxycodone for my chronic pain but continue to work 40-50 hrs per week.  I take ritalin to keep from falling asleep at work.  I use it so I can complete tasks and stay focused.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-09-05 01:35:18', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=8&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1339,7 +1339,7 @@ newuser.reviews.create(comments: "My energy level improves,however I'm bipolar a
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "It works ok but after it wears off it make me feel that unease,confuse, and my body shuts down.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-09-19 09:54:22', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=8&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1353,7 +1353,7 @@ newuser.reviews.create(comments: "There is some high and low levels of drug stim
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "im 41 yrs old. diagnosed with add for over 10 years. I started on concerta ER, which was perfect, no side effects, no notice at all in change of behaviour. lost my insurance and could no longer afford it. its 135 without insurance! so i had to switch to generic ritalin, I take just 10-20mgs,the smallest dose avail. If i have a busy day or meetings, ill take the 20, but usually just a 10mg dose is good. I dont feel or notice anything at all, but I do know it works because im able to focus, work, and i don't forget things or my mind doesn't wander. Scary moments like forgetting my 8 mnth old son on by bed and he rolls off it on to the floor. NOT GOOD! LUCKILY bed is close to the floor and we have thick carpet and he just kind of slid off it, but still reminded me that I have to be more alert and if im watching him myself i take larger dose. It does wonders. Sometimes Ill have these weird panic attacks in middle of the night. I wake up alarmed, with a sense of doom or that im dying or choking, but then i realize in 5 seconds or so that im just having an episode or dream and that I'm fine. I get a drink of water and go back to bed. see your doctor to try different doses or even different meds, but it takes few weeks to settle in and get used to. you can't make decisions based on just a week of use or a few days. hope this helps.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-10-04 010:47:23', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=7&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1402,7 +1402,7 @@ newuser.reviews.create(comments: "I have Crohns Disease and it has been causing 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Depression').first_or_create(name: 'Depression')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I have been taking the generic form of Ritalin for about a month and a half now.  The energy and focus it has given me have been awesome.  I am able to focus on the tasks at hand and get alot of things accomplished.  The only down side I have seen thus far is a bad pounding headache that Tylenol doesn't seem to help either.  Will talk to my doctor to see if it is a side effect of the meds or something else because the headaches are pretty bad.  I haven't seen a whole lot of comments from others saying headache was a symptom so...maybe it's just coincidental.  Would love to stay on the meds because the my energy and focus level have sky rocketed.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-11-12 22:29:50', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=6&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1451,7 +1451,7 @@ newuser.reviews.create(comments: "I take the generic, methylphenidate (sp?).  I 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '65-74',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '65-74',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-01-04 20:24:39', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=5&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1465,7 +1465,7 @@ newuser.reviews.create(comments: "I have ADDH; helps me stay focused; does not d
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '35-44',gender: 'Male')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '35-44',gender: 'Male')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-01-16 010:08:28', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=4&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1493,7 +1493,7 @@ newuser.reviews.create(comments: "name brand ritalin has less side effects and w
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:false, age: '25-34',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "I took this medication for about 3 months.  the side effects I experienced after a month, were uncontrollable diarrhea, and always sick at my stomach, lost 15 pounds, changed my diet, hoping that would help my stomach.  I was swapped to adderall just this week.  Do not have near the side effects.  Ritalin however helped with focusing, but I felt trapped in my own head, I couldn't express how I was feeling when I was on it.",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2012-03-14 03:36:06', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=3&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
@@ -1528,7 +1528,7 @@ newuser.reviews.create(comments: "I just started this medicine last week,and it 
 Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'methylphenidate', brand_name: 'Ritalin Oral', source_id: '9475')
 newdrug=Drug.last
 newdrug.conditions.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-User.where(username: 'visitor1356657734').first_or_create(username: 'visitor1356657734', caregiver:true, age: '3-6',gender: 'Female')
+User.where(username: 'visitor1356659132').first_or_create(username: 'visitor1356659132', caregiver:true, age: '3-6',gender: 'Female')
 newuser=User.last
 newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-05-12 22:36:46', review_url: 'http://www.webmd.com/drugs/drugreview-9475-Ritalin+Oral.aspx?drugid=9475&drugname=Ritalin+Oral&pageIndex=2&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
