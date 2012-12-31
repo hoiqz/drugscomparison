@@ -23,7 +23,7 @@
   <tr>
     <td><%= review.drug_id %></td>
     <td><%= review.user_id %></td>
-    <td><%= review.drug.conditions.name %></td>
+    <td><%= review.drug.conditions.first.name %></td>
     <td><%= link_to "#{review.comments}", "#{review.review_url}" %></td>
     <td><%= review.review_url %></td>
     <td><%= review.effectiveness %></td>

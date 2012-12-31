@@ -1,6 +1,6 @@
 class Drug < ActiveRecord::Base
   attr_accessible :drug_id, :brand_name, :dosage, :generic_name, :manufacturer, :precaution, :side_effect,
-                  :treatments_attributes, :reviews_attributes, :source_id
+                  :treatments_attributes, :reviews_attributes, :source_id, :conditions_attributes
 
   has_many :treatments ,
             #:foreign_key=>"condition_id",
@@ -10,6 +10,7 @@ class Drug < ActiveRecord::Base
 
   accepts_nested_attributes_for :reviews #, :allow_destroy => true, :reject_if => :reject_review
   accepts_nested_attributes_for :treatments, :allow_destroy => true, :reject_if => :reject_treatment
+  accepts_nested_attributes_for :conditions
 
 
   def reject_review(attributed)

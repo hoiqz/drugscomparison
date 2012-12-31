@@ -1,12 +1,13 @@
-## before running this script. you need to sort the review file in ascending order by time.
+##***********IMPORTANT!!**************
+# before running this script. you need to sort the review file in ascending order by time.
 ## do sed '1!G;h;$!d' <filename> >outfilefile
 
 tablename1="Drug"
 tablename2="Condition"
 tablename3="Review"
-generic_name="methylphenidate"
-source_id="9475"
-total_reviews=233
+generic_name="amphetamine and dextroamphetamine"
+source_id="63164"
+total_reviews=578
 webmd=true
 askapatient=false
 everydayhealth=false
@@ -48,12 +49,12 @@ File.open(ARGV[0],"r") do |filereader|
       brand_name=values[0].gsub(/\+/," ")
       OUT.write("#{tablename1}.where(brand_name: '#{brand_name}').first_or_create(generic_name: '#{generic_name}', brand_name: '#{brand_name}', source_id: '#{source_id}')\n")
       OUT.write("newdrug=Drug.last\n")
-      OUT.write("newdrug.conditions.where(name: '#{values[1]}').first_or_create(name: '#{values[1]}')\n")
-
+      OUT.write("Condition.where(name: '#{values[1]}').first_or_create(name: '#{values[1]}')\n")
+      OUT.write("newdrug.conditions << Condition.find_by_name(\"#{values[1]}\")\n")
 
       if values[2]=~/^(.*)?,/
       userinfo=$1
-      OUT.write("User.where(username: '#{userinfo}').first_or_create(username: '#{userinfo}',")
+      OUT.write("User.where(username: \"#{userinfo}\").first_or_create(username: \"#{userinfo}\",")
         if userinfo=~/^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
           email=userinfo
           print "has email detected #{email}"
@@ -65,7 +66,7 @@ File.open(ARGV[0],"r") do |filereader|
         dateTime=Time.new
         timestamp=dateTime.to_time.to_i
         userinfo="visitor"+"#{timestamp}"
-        OUT.write("User.where(username: '#{userinfo}').first_or_create(username: '#{userinfo}', ")
+        OUT.write("User.where(username: \"#{userinfo}\").first_or_create(username: \"#{userinfo}\", ")
       end
       print "\n"
 

@@ -8,7 +8,7 @@ class Condition < ActiveRecord::Base
            #:source => "drug_id",
           # :dependent => :destroy
 
-
+   validates :name,:uniqueness => true
 
 
   def get_related_drugs
@@ -16,7 +16,8 @@ class Condition < ActiveRecord::Base
     appended_drug=""
     druglist.each do |drug|
       #appended_drug.join(",#{drug.generic_name}")
-      appended_drug<<",#{drug.generic_name}"
+
+      appended_drug<<",#{drug.generic_name}" if appended_drug !~/#{drug.generic_name}/
       appended_drug=appended_drug.sub(/^,/,"")
     end
     return appended_drug

@@ -14,6 +14,19 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def list
+    if params[:drug_id]
+      @reviews = Review.find_all_by_drug_id(params[:drug_id])
+    else
+      @reviews= Review.all
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @reviews }
+    end
+  end
+
   # GET /reviews/1
   # GET /reviews/1.json
   def show
