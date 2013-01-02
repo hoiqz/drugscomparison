@@ -33,8 +33,13 @@
 
 <%= render "review_ratings"%>
 
-<div id="reviews_chart" style="width: 560px; height: 300px;"></div>
-<%= link_to 'Piechart', :remote=>true%>
+<div id="reviews_chart" style="width: 660px; height: 300px;"></div>
+<div id="buttons">
+<%= link_to 'Average Ratings', drug_path, :id=>'avg_link', remote: true%>
+<%= link_to 'Effectiveness', effectiveness_count_drug_path, :id=>'effectlink', remote: true%>
+  <%= link_to 'Ease of Use', ease_of_use_count_drug_path, :id=>'eoulink', remote: true%>
+  <%= link_to 'Satisfactory', satisfactory_count_drug_path, :id=>'satisfylink', remote: true%>
+</div>
 
 <%= link_to 'Edit', edit_drug_path(@drug) %> |
 <%= link_to 'Back', drugs_path %> |

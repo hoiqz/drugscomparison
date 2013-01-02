@@ -1,0 +1,52 @@
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'reviews_chart',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'How easy to use is this drug?'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                percentageDecimals: 1
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#000000',
+                        connectorColor: '#000000',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Percentage of reviews',
+                data: [
+                    ['Score of 2',    <%=raw @lessthan2 %> ],
+                    {
+                        name: 'Score of 1',
+                        y: <%=raw @lessthan1 %>,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Score of 3',    <%=raw  @lessthan3 %>],
+                    ['Score of 4',    <%=raw  @lessthan4 %>],
+                    ['Score of 3',   <%=raw  @lessthan5 %>]
+                ]
+            }]
+        });
+    });
+
+});

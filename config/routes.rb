@@ -2,7 +2,13 @@ Drugscomparison::Application.routes.draw do
   resources :reviews
 
   resources :users
-  resources :drugs
+  resources :drugs do
+    member do
+      get 'effectiveness_count'
+      get 'ease_of_use_count'
+      get 'satisfactory_count'
+    end
+  end
   get "conditions/index"
 
   get "conditions/show"

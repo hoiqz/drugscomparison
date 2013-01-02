@@ -1,37 +1,31 @@
 <script type="text/javascript" charset="utf-8">
+
     $(function(){
         $(document).ready(function() {
             new Highcharts.Chart({
                 chart:{
-                    renderTo: "reviews_chart"
-
+                    renderTo: "reviews_chart" ,
+                    type: 'column'
                 },
                 title:{
                     text: "Average Ratings across user reviews"
                 },
                 xAxis:{
-                    categories: ['Effectiveness','Ease of Use','Satisfactory']
+                    categories: ['Effectiveness', 'Ease of Use', 'Satisfactory']
+
                 },
                 yAxis:{
                     title:{
                         text: "User Ratings"
                     }
                 },
-                series:[{
+                series:[
+                    {
                     type: "column",
-                    name: "Avg Effectiveness",
-                    data: [<%= raw @avg_effectivness %>]
-                },
-                    {
-                        type: "column",
-                        name: "Avg Ease of Use",
-                        data: [<%= raw @avg_ease_of_use %>]
-                    },
-                    {
-                        type: "column",
-                        name: "Avg Satisfactory",
-                        data: [<%= raw @avg_satisfactory %>]
+                    name: "Avg Ratings",
+                    data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
                     }
+
                 ]
 
 

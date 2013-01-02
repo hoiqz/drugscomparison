@@ -1,0 +1,51 @@
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'reviews_chart',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'User ratings Pie view'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                percentageDecimals: 1
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#000000',
+                        connectorColor: '#000000',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'User ratings',
+                data: [
+                    ['Effectiveness',  <%=raw @avg_effectivness %>],
+                    ['Ease of Use',    <%=raw  @avg_ease_of_use %>],
+                    {
+                        name: 'Ease of Use',
+                        y: 12.8,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Satisfactory',   <%=raw  @avg_satisfactory %>]
+                ]
+            }]
+        });
+    });
+
+});
