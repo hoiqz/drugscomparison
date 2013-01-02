@@ -31,6 +31,11 @@
 </p>
 
 
+<%= render "review_ratings"%>
+
+<div id="reviews_chart" style="width: 560px; height: 300px;"></div>
+<%= link_to 'Piechart', :remote=>true%>
+
 <%= link_to 'Edit', edit_drug_path(@drug) %> |
 <%= link_to 'Back', drugs_path %> |
 

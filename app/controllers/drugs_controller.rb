@@ -14,10 +14,14 @@ class DrugsController < ApplicationController
   # GET /drugs/1.json
   def show
     @drug = Drug.find(params[:id])
+    @avg_effectivness=@drug.reviews.average('effectiveness')
+    @avg_ease_of_use=@drug.reviews.average('ease_of_use')
+    @avg_satisfactory=@drug.reviews.average('satisfactory')
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @drug }
+
     end
   end
 
@@ -79,5 +83,11 @@ class DrugsController < ApplicationController
       format.html { redirect_to drugs_url }
       format.json { head :no_content }
     end
+  end
+
+  def ajax_update
+     respond_to do |format|
+       format.js {render :layout => false}
+     end
   end
 end
