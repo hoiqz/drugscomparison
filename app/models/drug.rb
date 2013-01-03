@@ -44,4 +44,14 @@ class Drug < ActiveRecord::Base
     end
     return appended_drug
   end
+
+  def avg_eff
+     self.reviews.average('effectiveness')
+  end
+  def avg_eou
+    self.reviews.average('ease_of_use')
+  end
+  def avg_sat
+    self.reviews.average('satisfactory')
+  end
 end

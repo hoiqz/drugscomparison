@@ -3,9 +3,9 @@ class DrugsController < ApplicationController
 
   def get_average
     @drug = Drug.find(params[:id])
-    @avg_effectivness=@drug.reviews.average('effectiveness')
-    @avg_ease_of_use=@drug.reviews.average('ease_of_use')
-    @avg_satisfactory=@drug.reviews.average('satisfactory')
+    @avg_effectivness=@drug.avg_eff
+    @avg_ease_of_use=@drug.avg_eou
+    @avg_satisfactory=@drug.avg_sat
   end
   # GET /drugs
   # GET /drugs.json

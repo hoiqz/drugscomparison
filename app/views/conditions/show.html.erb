@@ -10,14 +10,27 @@
   <%= @condition.information %>
 </p>
 
+
+
+<%= render "condition_drugs"%>
+<div id="reviews_chart" style="width: 660px; height: 300px;"></div>
+
 <p>
   <b>Drugs related to this condition: </b>
-  <ul>
-  <% @condition.drugs.each do |drug|%>
-  <li><%= link_to "#{drug.brand_name}", drug_path(drug.id) %></li>
-  <% end %>
-  </ul>
 </p>
-
-
-<div id="reviews_chart" style="width: 660px; height: 300px;"></div>
+<table class="table table-hover">
+  <thead>
+  <tr>
+  <th>Brand</th>
+  <th>Number of reviews</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @drugs.each do |drug|%>
+      <tr>
+        <td><i class="icon-eye-open"></i>   <%= link_to "#{drug.brand_name}", drug_path(drug.id) %></td>
+        <td><%= drug.reviews.count %></td>
+      </tr>
+  <% end %>
+  </tbody>
+    </table>

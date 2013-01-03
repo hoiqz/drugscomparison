@@ -22,4 +22,6 @@ class Condition < ActiveRecord::Base
     end
     return appended_drug
   end
+
+
 end

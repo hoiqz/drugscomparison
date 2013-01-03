@@ -20,21 +20,17 @@
                     }
                 },
                 series:[
-                    {
-                        type: "column",
-                        name: "<%= %>",
-                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
-                    },
-                    {
-                        type: "column",
-                        name: "Avg Ratings",
-                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
-                    },
-                    {
-                        type: "column",
-                        name: "Avg Ratings",
-                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
-                    }
+                        <% i=1%>
+                       <% @drugs.each do |drug| %>
+                        <%= ',' if i>1 %>
+                        {
+                        type: 'column',
+                        name: '<%= drug.brand_name %>',
+                            <% retarr= [drug.avg_eff.to_f,drug.avg_eou.to_f,drug.avg_sat.to_f]%>
+                        data: <%=raw retarr%>
+                        }
+                        <% i=i+1 %>
+                    <% end %>
 
                 ]
 
