@@ -48,9 +48,11 @@ File.open(ARGV[0],"r") do |filereader|
       # puts "size of array is #{size}"
       brand_name=values[0].gsub(/\+/," ")
       OUT.write("#{tablename1}.where(brand_name: '#{brand_name}').first_or_create(generic_name: '#{generic_name}', brand_name: '#{brand_name}', source_id: '#{source_id}')\n")
-      OUT.write("newdrug=Drug.last\n")
+      OUT.write("newdrug=Drug.find_by_brand_name(\"#{brand_name}\")\n")
       OUT.write("Condition.where(name: '#{values[1]}').first_or_create(name: '#{values[1]}')\n")
+      OUT.write("if newdrug.conditions.find_by_name(\"#{values[1]}\").nil?\n")
       OUT.write("newdrug.conditions << Condition.find_by_name(\"#{values[1]}\")\n")
+      OUT.write("end\n")
 
       if values[2]=~/^(.*)?,/
       userinfo=$1

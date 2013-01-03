@@ -9,9 +9,10 @@ Drugscomparison::Application.routes.draw do
       get 'satisfactory_count'
     end
   end
-  get "conditions/index"
+  resources :conditions
+  #get "conditions/index"
 
-  get "conditions/show"
+  #get "conditions/show"
   get "static_pages/home"
 
 

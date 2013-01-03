@@ -5,6 +5,6 @@ class Treatment < ActiveRecord::Base
   belongs_to :condition
   accepts_nested_attributes_for :condition
 
-  validates :drug_id, :presence => true
+  validates :drug_id, :presence => true, :uniqueness => {:scope=> :condition_id}
   validates :condition_id, :presence => true
 end

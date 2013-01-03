@@ -1,2 +1,23 @@
-<h1>Conditions#show</h1>
-<p>Find me in app/views/conditions/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Condition name:</b>
+  <%= @condition.name %>
+</p>
+
+<p>
+  <b>Information</b>
+  <%= @condition.information %>
+</p>
+
+<p>
+  <b>Drugs related to this condition: </b>
+  <ul>
+  <% @condition.drugs.each do |drug|%>
+  <li><%= link_to "#{drug.brand_name}", drug_path(drug.id) %></li>
+  <% end %>
+  </ul>
+</p>
+
+
+<div id="reviews_chart" style="width: 660px; height: 300px;"></div>

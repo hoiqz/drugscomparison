@@ -17,7 +17,7 @@ class Condition < ActiveRecord::Base
     druglist.each do |drug|
       #appended_drug.join(",#{drug.generic_name}")
 
-      appended_drug<<",#{drug.generic_name}" if appended_drug !~/#{drug.generic_name}/
+      appended_drug<<",#{drug.brand_name}" if appended_drug !~/#{drug.brand_name}/
       appended_drug=appended_drug.sub(/^,/,"")
     end
     return appended_drug

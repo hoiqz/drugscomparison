@@ -1,1792 +1,1480 @@
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Male')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '45-54',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "Started to use Ritalin in high school because of mild hyperactivity which became more severe.  Experienced huge change due to Ritalin and became much more focused on school, and more successful.  Have been taking Ritalin since then (through college and now at work) and could not imagine life without it.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2007-09-18 16:34:08', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Its important to note that you should watch the child on focalin, don't medicate so that the child is a zombie. All children need room to act out and learn from experience. Eating was much easier on Focalin than other stimulants, while they'll say they aren't hungry I can at least get them to eat something, ie fruit, cookies, cheese.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-09-19 010:59:23', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2007-09-24 22:25:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Newly diagnosed 43-year old mom of 3 with inattentive ADD; was actually having my 5-year old son evaluated for ADHD when my diagnosis was confirmed. Have been taking Focalin xr 5 mg in am and 5 mg pm; seemed to work for the first 2-3 weeks, now not so much. I also seem to be very sensitive to the &quot;ups and downs&quot; effect common with the use of extended release medicines. However, the best response I have is right after my morning dose; once that wears off, I pretty much fight a losing battle all day with the return of inattentiveness, distraction, and fatigue as the lower-end dosing 'xr' begins to fizzle out. My Dr. told me to wait for a while longer to see if things even out. Otherwise, he thought a higher dose of a shorter-acting medicine may be an alternate way to maximize symptom control and extend the morning's response throughout the remainder of the day.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2007-09-26 18:19:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '35-44',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '19-24',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "When all else fails, go back to basic ritalin for treatment.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2007-09-26 20:05:37', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Terrible! Doesnt work. Try Adderall.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2007-09-27 011:17:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=115&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "RandomRegards").first_or_create(username: "RandomRegards",caregiver:false, age: '13-18',gender: 'Male')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 2, satisfactory: 3, created_at: '2007-09-28 23:17:58', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-10-08 24:32:05', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "Larry").first_or_create(username: "Larry",caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Hit in the temple with baseball bat.slept all night,up two hours than down for 3 hours,all day long.Now I take two ritali 20mg in morning and 1 every 3 hours.doing good so far",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2007-10-21 17:59:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have MS, with all the other pills I take, and the disease symptoms, I can't stay awake during a conversation.  So far this is the best at helping me to stay awake.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-10-29 21:32:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "speekers2001").first_or_create(username: "speekers2001",age: '25-34',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '25-34',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "life changing i can life normal life",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2007-11-02 19:11:55', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "BOTH OF MY KIDS TAKE THIS MEDICATION NOW, AFTER ADDERALL GAVE THEM TOO MANY HEADACHES AND MADE MY YOUNGEST SICK. THIS MEDICINE DOES NOT HAVE ANY EFFECT ON THEM.  ITS LIKE TAKING NOTHING AT ALL...",effectiveness: 1, ease_of_use: 3, satisfactory: 1, created_at: '2007-10-16 24:55:20', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Female')
+end
+User.where(username: "kimbeth18").first_or_create(username: "kimbeth18",caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "i am who i am because of it and people around me can stay around me and want to be my friends",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-11-21 01:32:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "It took a while to find the correct dosage for me.  After a couple weeks of &quot;getting used to&quot; the medication my body adjusted and the side effects subsided.  After over a year, I've seen dramatic, positive changes in my life.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-10-16 21:52:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2007-12-04 011:12:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "jimmyemoworld03").first_or_create(username: "jimmyemoworld03",caregiver:false, age: '19-24',gender: 'Male')
+end
+User.where(username: "Sam").first_or_create(username: "Sam",caregiver:false, age: '13-18',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I was put on ritilin before I started taking adderol and to be honest, it threw me off guard a little bit becasue I found myself distracted by talking even more than i normally do becasue I actually thought I sounded interesting and would take me a good 45 min to calm down.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2007-12-05 21:24:56', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "After taking the Daytrana, and getting an accidental overdose. This medicine has worked for me; even though I've only been taking it for a couple of weeks...I do see a better improvement.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2007-10-18 02:10:43', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "krb3311").first_or_create(username: "krb3311",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have severe obstructive sleep apnea with severe hypersomnia and have been under treatment for 8 years with Ritalin. Recently, I have had an accident and have been off work. I decided to stop the Ritalin while not working. I did not suffer any withdrawal symptoms; however, I did experience a return of the severe hypersomnia, would fall asleep several times a day without my CPAP and developed hypoxic headaches as a result. I am a RN, and while I would prefer not to have to take any drug, life without the Ritalin has not been satisfying.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-12-06 07:21:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "hyhilee").first_or_create(username: "hyhilee",caregiver:false, age: '19-24',gender: 'Male')
+end
+User.where(username: "cookie").first_or_create(username: "cookie",caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "This was the first treatment method used for my ADHD. Continued treatment for 3 years. Zombie like state of mind for duration of medication. Concentration improved but for the extra homework i got completed I think i lost out on so many social skills in school. All in all not so bad just didn't like it when i was a child.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2007-12-06 17:07:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My son has been taking this medication for 1 1/5 yrs. now. And it's helped with his ADHD a great deal. The only side effect I have noticed are the tics and occassional body jerks. He is able to eat and sleeps great.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-10-25 24:22:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=114&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "maratini").first_or_create(username: "maratini",caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I am bipolar I with very refractory symptoms, particularly moderate to severe depresseion.  After trying practically every anti-depressant currently available my psychiatrist suggested I try Ritalin to increase my energy and elevate my mood. I have been on it (as well as soma and requip) as adjunct therapy to lamictal, cymbalta, and abilify. Its success, in my opinion, has been remarkable.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-12-16 14:04:53', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "plovell").first_or_create(username: "plovell",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Ritalin has proved to be a life altering treatment for me. The drug itself may fall into the &quot;bandaid&quot; category of treatments, as opposed to your atypical SSRI anti-depressants, but I would not consider it to be overly addictive neccessarily, such as is generally the case with Xanax and other benzodiazepines.  Quite honestly....to sum it up....Ritalin has the ability to restore a hapless depression patient to full, lucid cognetive abilities, and even enhance such capabilities beyond societies accepted &quot;norm.&quot;",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-12-20 012:08:05', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "ccmtdd").first_or_create(username: "ccmtdd",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Completely life changing. :  )",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2007-12-21 15:32:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "mintman16").first_or_create(username: "mintman16",caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I've been on Ritalin since the third grade.",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2008-01-01 04:41:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "aj").first_or_create(username: "aj",caregiver:true, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My son took this drug for about 5 years, it really worked, he was able to control himself in school and with the other kids.Able to sit in class and do his work.I had heard that this drug stunts your growth but I really don't know. My son is only 5'9 I think he should be taller when I compare him with his family back ground.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-01-09 18:59:23', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "NaturalRemedyMan4Ever").first_or_create(username: "NaturalRemedyMan4Ever",caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "This statement has not been evaluated by the FDA.  My information is not intended to diagnose, treat, cure or prevent any disease. I am not a doctor.This drug seriously and I mean seriously damaged me. It enlarged my heart, gave me a heart attack, made my palms very sweaty, my body jittery and depressed most of the time and actually made my concentration many times worse. I became unable to feel rested on this drug and it took me hours to fall asleep. This drugged completely turned me against the use of any drugs in the human body. By simply giving myself large amounts of very nutrient dense foods (fresh farmers market organic produce) and completely removing all unnatural food additives (food colorings, monosodium glutamate, refined sugar...) I was able to completely cure my ADHD, feel calm and relaxed all the time. 8 hours of intense studies is now easily in reach for me. I would suggest to people that before using this drug to perhaps get off the sugar, msg, food colorings, low vitamin and mineral foods as thousands of studies show the relation between nutrition and mental abilities. Also, let me tell you that getting off this drug was very painful and saddening for me. Talk to your doctor about this, all the information that I am telling you is my own opinion and I am not a medical doctor, though I now have over 8000 thousand hours of nutritional studies. The only reason I am saying this is because I feel that if i don't say this, I am breaking the law and they will remove this review.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2008-01-23 13:27:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "Taking 10mg tab @ rate 6/day of immediate release. I'm a 200lb male.  Not quite enough mg's to get through day but better than the &quot;2 pot a day&quot; coffee habit that I had before. I did not seek treatment until 30 years of age and so I did not take Ritalin until then.  At 30yrs of age I finally had a neuropsyc exam to see if there were any learning disabilities.  Diag'ed with ADHD but also with assessed IQ at above 90% of population.  ADD is real and any who doubt it have no clue.  It's a shame they can't experience it for one day.  It was not until the neuropsyc exam, resultant ADHD diagnoses, and Ritalin script; that I found peace.  Prior to I might as well have had an IQ of 50.  This whole time I thought that I was below average IQ &amp; ability.  I barely grad'ed H.S.  At this time my social skills were poor, I had great hyperactivity, and also no ability to focus.  Resultant poor self-esteem leading to anger/frustration and then illicit drug use to &quot;self-medicate&quot; as they say. My life was problematic before due to impulsivity as well and the usual inability to focus. Everyone around me would joke of ADD but I didn't take it seriously. After starting Ritalin I am now a college student w/3.0 avg GPA in the hardest Mathematics sequence that exists on this planet. God Bless Ritalin. I hope that parents out there with a kid who fits this description of my past doesn't fall victim to the hype that this drug is destructive. Sure, any substance can be misused.  However, if a doc recommends it for these symptoms in a person, it's worth a shot; a shot at life. My life is just beginning at and it could have started so long ago had this pharmaceutical solution been taken earlier on in my life.  Look at the long-term studies of this drug. It's track record is good and my worst day on Ritalin is still better than my better days off of it. Exercise helps, Ritalin solves. If this becomes a permanent solution then so be it.  I don't want to go back to the way it was... ever.",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2008-01-23 22:22:34', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
 newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Male')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '13-18',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I have been taking Ritalin 15mg 3 times a day for 4 months now along with Lithium 900mg a day in order to treat rapid progression BiPolar disorder with mania onset A.D.D. It has been wonderful. There are a few side effects as with any medication, but the overall benefit has been huge. As a college student I am able to pay attention, and live a normal day to day life without the wild swings of R.P. BiPolar or the distraction of A.D.D.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-01-26 011:50:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 13 year old daughter was recently diagnosed with inattentive ADHD. So far she has been on it for 2 weeks and have already seen dramatic improvements. I am sorry that it took this long to be diagnosed, had she been on it long before, I think there would have been alot of less heartache. Her comment was &quot; It feels great to be able to think&quot;",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-10-31 23:21:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "Bosie").first_or_create(username: "Bosie",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I works well for me, but gives me dirreahea.Any suggestions as to how to take it?",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2008-02-03 15:01:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "pastor_vance").first_or_create(username: "pastor_vance",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "All Ritalin has done is mess up my life. I feel like a zombie, I have lost weight, and i get drowsy all the time and almost in a daze. they over prescribe Ritalin. I am 20 years old and I was recently diagnosed, and I hate Ritalin cause honestly all its done is screw up my life.",effectiveness: 1, ease_of_use: 2, satisfactory: 1, created_at: '2008-02-03 23:07:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "jeanette").first_or_create(username: "jeanette",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My neurologist prescribed Ritalin in addition to Lexapro for depression.  I have only heard bad things about Ritalin/kids,etc.  Always thought Ritalin as a drug to calm/quiet children in the schoolrooms,etc.  Am anxious about beginning to take this drug.   Undecided what to do.  Have been looking for experiences published  on the Internet.   I am 50 yo female.  I definitely do not want to become addicted to it.   Lexapro 10 mg made no difference, so he increased that dosage to 20 mg.  It has helped, but we both agree that there is more help for me, if we can just fine tune what's to be done.",effectiveness: 1, ease_of_use: 3, satisfactory: 1, created_at: '2008-02-08 18:43:32', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am 49 yrs old and it has helped mostly with focus and concentration",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-09 06:36:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "gregsbaci").first_or_create(username: "gregsbaci",caregiver:false, age: '65-74',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have Parkinsons and this drug gives me the energy I need to get through the day",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-11 16:16:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been diognosed with adult add. I have only been taking Ritalin for a few weeks - but I notice a big change. I can focus so well. I don't have to read and re-read something to &quot;get it&quot;. It does seem to wear off about 2 or 3 in the afternoon, so I know I need to get all my school work done in the morning to maintain my &quot;focus&quot;  It has been a great help to me.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-02-13 16:00:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "RDODIER61@WIDEOPENWEST.COM").first_or_create(username: "RDODIER61@WIDEOPENWEST.COM",email_address: 'RDODIER61@WIDEOPENWEST.COM',caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "hAS HELPED ME FOCUS MUCH ETTER.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-26 13:52:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "i used to not be able to focus on anything, and the day i took ritalin for the FIRST TIME i was able to write a 4 page pager for my english final",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2008-02-27 15:09:00', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been using Ritalin for almost 15 years- with adverse side-effects ( oh, except when washing it down with espresso- some palpitations!)",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-28 05:04:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "oddforce").first_or_create(username: "oddforce",age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "becuz of the extrme fatigue due to my ms, it really helps me on my very, very tire days!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-03-26 22:54:25', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "gialol96").first_or_create(username: "gialol96",caregiver:true, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My five year old son was diagnosed in August of 2007 with ADHD and was prescribed Ritalin, 5 mg, twice daily at time.  It worked very well the first day, but we went through atleast a month of restless nights, that have finally gotten better with time.  It has had to be increased to three times a day already and he still cannot sit still or concentrate at all.  It may be a cure-all for some, but not for our family.  He is not able to go to school even on the medication.  It does not seem to have disturbed his height, but he has lost about ten pounds in the time that he has been on it.  Mealtime is not any fun around here.  He cannot sit still enough to even eat without leaving the table atleast once.  He has been changed to Vyvanse now, we are hoping for better results.",effectiveness: 2, ease_of_use: 5, satisfactory: 3, created_at: '2008-04-10 24:13:00', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "peggyk64").first_or_create(username: "peggyk64",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Diagnosed ADD about 3 yrs. ago by a psycologist (which can diagnose but not prescribe medications). Went to Family practice physician and after trial and error of medications I found Retalin non time released tablets to work best.  I was placed on the maximum amount of medication allowed per month by a regular MD which was one 20mg. tabled 3 x daily.  Now after being on this dosage for a few years it just dosent have the effect it once did.  I was maxed out by my physician which gave me no choice but to stay at the same level of medicaiton.  I lost my health insurance and this med (generic or not) just is not available thru a discount pharmacy (walmart, etc).  I lost my job (again) and always struggle financially.  I want to stop the cycle of constant struggle.  I have not afforded or had regular couseling or guidance due to little income.  I feel little to no effects from the drug and need a higher dosage to get back on track.  The family practive physician can not up my dosage and I do not know how to go about getting past this.  I have heard of children on higher dosage's than me.  Is there help for me?  How can I get passed this?",effectiveness: 2, ease_of_use: 3, satisfactory: 3, created_at: '2008-05-01 09:09:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have suffered with clinical depression for most of my life, but since the &quot;prozac&quot; type drugs came on the market, have had control of most depression symptoms.  However, the SSRIs don't seem to improve my feelings of physical &quot;heaviness&quot; or my fatigue.  Having ruled out most other common causes of fatigue, my doctor prescribed Ritalin for me.  It has worked like a charm.  Even in very low doses, I no longer feel heavy and tired during the day.  I've only been taking it for a few months, and have never stopped, so I'm not sure about the withdrawl problems or whether I've developed a dependency on it.  I've forgotten to take it a few times (weekends) and never noticed any problem.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-05-07 09:36:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "i have adhd and have been prescribed ritalin. iv had adhd since 2nd grade and iv been through adderall, ritalin, stratera and concerta.  stratera didnt work at all.  anyways i got prescribed to ritalin last week and i saw noticable effects about 40 minutes after taking it the first day.  i can focus much better, i dont fall asleep in class and can do my work at a rediculous pace.  bad part is my appetites gone ( all ive eaten in 2 days is a chicken strip) i feel really shaky, my eyes are much more sensitive to light although my pupils are the same size as usual, i have increased muscle tension in my face and jaw, and i have a really hard time sleeping. i weigh 180 and am taking 3 doses a day at 10mg each. my final dose is taken before 3pm and last night i fell asleep only with the aid of a tranquilizer known as zolpidiem but woke up at 2 and laid in bed, trying to fall asleep, until 730 when i had to go to school. it was very frustrating, yet odly enough i dont really feel tired at all. but yeah i guess the medicines doing what its supposed to do, but im thinking that its doing a lot of things its not supposed to do too.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-05-08 011:41:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have difficulty getting up in the morning no matter how much sleep I have.  It has been a problem all my life.  This is the only medication that helped me.  However, it is the short acting dosage and I do notice a definite decrease in energy at the end of the 4 hours.",effectiveness: 4, ease_of_use: 3, satisfactory: 3, created_at: '2008-05-13 24:59:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "worried fiance").first_or_create(username: "worried fiance",caregiver:true, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My fiance has been the one taking the ritalin. He has had all the typical ADD problems all his life but has just recently started taking it. The only problem is, he has a tendency to abuse drugs. Last month he went thru 30 of them in one week. This month I am distributing them to him, but if he found them I know what would happen. I do believe they help him, but it brings back too many memories of his &quot;cocaine&quot; days. He doesn't sleep well and tends to keep me up. I'm just not sure how to handle it, whether I should talk to his doctor or if his doctor would even talk to me. I'm worried.",effectiveness: 4, ease_of_use: 5, satisfactory: 1, created_at: '2008-05-13 15:23:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Dina").first_or_create(username: "Dina",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "The Magic Pill if you actually have ADHD/hyperactivity.  I was Diagnosed 3 years ago after being advised to do so by a colloge professor.  Thank God I did. I had immediate major improvement on day 1.  I started on the non time lapsed dose and it made me crash hard;I would end up with headaches. I loved the effects, but the headaches were becoming daily problems. My doctor put me on the time lapsed pills and I have been good for over a year now.  I graduated high school with a 1.2 G.P.A, barely getting by. Stupidity was acceptance when it came to my self image. I am currently in college finishing up my degree with a 4.0. G.P.A. Not bad considering I was expelled from my first high school and maintained less than C average most of my life. It causes some jitters at first, like way to much coffee jitters, but that subsides over time. It pulls your focus so you stay in 1 lane at a time by filing your thoughts. It feels good to finally see your mind as a gift instead of a curse. Afterall, we are some quick thinkers, so just imagine being able to organize all those precious thoughts to be saved for the right time and place. Good Luck!",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2008-05-21 02:23:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Cuteboy").first_or_create(username: "Cuteboy",caregiver:true, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My 6, year old grandson was given this drug due to his being unable to sit still or stop talking.and he would not listen very good,alway doing what he should not. He is very smart but lost insrented in just a few minutes.His mind seem to go faster then it should. I gave him 1 pill on a Saturday to see what it made him do,so he would be at home. And thank God I did that pill made my poor child go wild,he was so nervous,he jerked all over.That pill like to have caused my poor child go crazy,may I say I would not give my child another one of thoes pills for a million dollars. he ask me please don't give me another pill.believe me I didn't. now he is getting a bit older and is settling down on his self I cut back on sweets and dranks such as cokes.I advised all to be very careful of Ritalin.I believe this is a very bad drug.or it was for my child.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2008-05-23 13:43:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "NO effect felt",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2008-06-06 011:46:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '7-12',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My 7 yr old son began taking this medication 7 months ago. It worked somewhat but it decreased his appetite to nothing. It was also a pain to have him take a pill every four hours",effectiveness: 4, ease_of_use: 2, satisfactory: 3, created_at: '2008-06-16 20:34:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Georgia Girl").first_or_create(username: "Georgia Girl",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I was just reading through some of these comments about Ritalin, and I wanted to add my experiences.  I was diagnosed with ADD my senior year of college (over 10 years ago) and had been taken Ritalin ever since.  I agree with all the comments about experiencing the jitters and how you can operate with little sleep.  Despite the side effects, it was a miracle!  I had always taken the max dosage 20 mg/x3.  Over the years I started to see a decrease in effectiveness and even tried other drugs - strattera, adderall, wellbuterin...nothing as effective as ritalin.  Even now I feel somewhat addicted and have even exceeded the max dosage signifcantly.  (For those others who had concerns - ritalin is addictive, esp mentally in my case.)  Needless to say, I've gotten off of it completely for approximately 2 months.  I've been struggling like all of us with true ADD, but I had to prove that I could function without it.  For those of you in the same boat as me, take a break from it.  Once you get back on the ritalin after a break it becomes more effective again. (Just make sure you regulate yourself...I have to divide up my doses by week, and hide the rest.  If I run out then I have to make do without!)  Hopefully this helps!  (Please share your experiences here if anyone knows of anything else that helps with ADD/Depression.)  Thanks, and Good Luck!   :)",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2008-06-23 13:32:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "has been very effective in trating my condition.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-07-06 20:06:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "boca").first_or_create(username: "boca",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have had M.S. fatigue for a decade. I have tried other drugs to combat it but had nasty side effects and weight loss. I am taking 10mg of Ritalin 4X a day and it works great for me with no weight loss (and the drug is cheap).",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-07-20 010:07:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "I took this when i was a child and i had a lot of side effects of it i didnt like the way to made me feel parents think its a quick fix for there child and its not. I really wish they would take this off the market  i still think i have side effects of this medicine today",effectiveness: 3, ease_of_use: 3, satisfactory: 1, created_at: '2008-07-31 17:32:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I was diagnosed with acute ADD in the audio modality. This drug is a god send, however, I know I might have the genes that make me prone to addiction. With that in mind, I take this drug sparingly, when I know I will need it, and it has worked like a charm.  I do not take it everyday, and always take a 3 month holiday during the summer.  The trick is to take it at the very beginning of your day, and scheduale your day around when the drug will be most effective, so that you can use it and still sleep at night.  I just wonder about having caffeine with ritalin.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-08-06 08:38:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "Ben E").first_or_create(username: "Ben E",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking Ritalin for the past 3 years for my MS cognitive fatigue.  I take 20 mg @ 6A, 1030A &amp; 3P.   This helps burn off the fog that would normally be surrounding me from my MS.   It also helps with the physical fatigue as well.  Before I started Ritalin, I was taking Cylert (18.75 mg) daily.  Worked just as well.  For information on this, you can check out the Cleveland Clinic website for MS symptom management...http://my.clevelandclinic.org/di sorders/pediatric_multiple_sclerosis/ns_symptom_m anagement.aspx",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-08-06 24:53:47', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "I just started taking Ritalin and it's day 6. I have noticed a big difference in being able to study and getting the most out of the time I have. I have had problems getting passing grades in college but I feel like I have more focus and can remember the lectures a lot better than I did before being on the medication. I have more energy when I take it but it does wind down at the end of the day. I have ADD in which I am taking Lexapro and Propranolol for social anxiety disorder too. I'm at 5mg. right now and I think this is where I want to stay. I could go all the way up to 20mg. if I want to but I think I need to check in with my doctor to get some feedback on my treatment overall.",effectiveness: 4, ease_of_use: 3, satisfactory: 4, created_at: '2008-08-08 012:13:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Laura").first_or_create(username: "Laura",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "worry about addition levels - increased my anxiety to panic attacks and did not control my ADHD as well as the Vyvanse.  Also been on Adderall XR &amp; Concerta and failed on those as well.",effectiveness: 2, ease_of_use: 2, satisfactory: 1, created_at: '2008-08-15 19:00:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "bogie").first_or_create(username: "bogie",caregiver:false, age: '7-12',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "it has helped my hyper child to focus and concentrate",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-08-31 012:43:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "KittyHawk").first_or_create(username: "KittyHawk",caregiver:true, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "help my daughter with her hyperactivity and it help her to be more calm.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2008-09-02 07:13:30', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "grandma").first_or_create(username: "grandma",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Dr said it would give me energy as I am an adult but have not had any energy at all---still always tired and feeling blah",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2008-09-07 24:17:20', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "me").first_or_create(username: "me",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "it makes me feel awful and stressed and worn out",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2008-09-27 21:43:25', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Aderall works better.Ritalin makes me nervous and gives me a stomache ache.",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2008-09-28 14:59:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "TRIAL AND ERROR").first_or_create(username: "TRIAL AND ERROR",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My son was taking the Ritalin along with Tenex (HBP medicine) and the Ritalin made him more jumpy and fidgety.  I now give him the Tenex alone and it seems to be working.",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2008-10-01 24:27:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "makes my stomache hurt makes me tired. MAKES MY HEART POUND OUT OF MY CHEST!HIGH BLOOD PRESSURE and i am taking a low dose and still getting all this (10mg)",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2008-10-02 17:28:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-10-05 01:01:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "MinaO").first_or_create(username: "MinaO",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I was diagnosed with ADHD when I was 25 years old. It finally explained my &quot;oddness,&quot; if you will... : ). My Dr. started me out on Adderall XR @ 1st and it worked wonders, but gave me severe, daily headaches. I already suffer from migraines as it is, so that was terrible! I went off the adderall and on Zoloft. I then went about a year without any meds. I failed the state Bar exam both times I took it AND work has been a NIGHTMARE! My co-workers are always questioning my speed on work (not fast enough, not productive enough, etc...). I always feel like a failure at the end of the day! I recently started taking Ritalin and I can focus extremely well, I WANT to study for the bar and can actually sit through long sessions without being extremely bored. Downside? Sleep. Not getting any. Hence, writing in here at 2 am, when I have to be up at 6:30. : )",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-10-10 01:59:25', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "jlberry2004ab@peoplepc.com").first_or_create(username: "jlberry2004ab@peoplepc.com",email_address: 'jlberry2004ab@peoplepc.com',caregiver:true, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My Son sometimes experiences times when he is very angry hitting things has had explosive behavior at times.I am not sure if it is the medication itself or the ADHD,He is also Bi Polar and is on  Abilify for that .",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2008-10-23 23:32:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "it worked for awhile then got more depressed so he uped it now i am having headaches and nausea ie this just temp.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2008-10-25 24:38:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "eeyore").first_or_create(username: "eeyore",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "in '81 was in a car crash, frontal lobe damage, broken jaw (now tmj (d))no jaw joints now, facial &amp; head lacerations, on going treatments since '81. took ritalin for while, went off bc became ineffective, went back on a few years back, redignosed &amp; added 1 dose, still having problems without a good knowledged dr. for treatment- pass around still. I have coped and adapted when possible but too often told 'change your thinking, but with injured brain I struggle, but tell them it is like telling someone with broken leg or amp. leg to grow a new one.   I currently take 20mg 3 times daily, grazing on food daily and nightly, so feel no stomach stress, but at loss at emotional-strain of frontal lobe damage, not enough adults speaking out. also see similar behaviors in abuse cases in children or teens that could have been abused such as head hits, shaken baby....",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2008-10-31 09:55:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "brokenspur64").first_or_create(username: "brokenspur64",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "It worked for awhile, but now my doctor has me taking Lexapro (for depression), and thyroid meds (for over active thyroid)...I've now lost so much weight I look disgusting to myself. I have felt so ill at times I thought someone was trying to poison me! I'm not a doctor, but I believe the combination of the 3 drugs are not mixing well. I THIS is why I put off seeing any kind of doctor. (Any ideas on how to gain weight would be GREATLY appreciated)..PS I'm having the headaches and nausea too.",effectiveness: 3, ease_of_use: 2, satisfactory: 2, created_at: '2008-11-02 17:43:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "gasweetei56").first_or_create(username: "gasweetei56",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "This was a godsend for me! My brain fog cleared and I was able to do my computer job properly. I was like a zombie while my brain was working in high focus, but no one in my computer job even noticed my lack of socialness. But then I did talk, I would be really into to it and talk a long time.  But in the end it affected my blood pressure and creatnin levels so I had to quit. But it had pulled me out of my fog far enough to let me funtion wihtout it again, so I ma happy that I used it. It did crave it for about a year after I quit, but I know that I cannot affor to ruin my kidneys just to get ahead at work. I am a good stable worker and have no danger of losing my job no, so I am pleased with the results.",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2008-11-09 24:02:32', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "BWilliams").first_or_create(username: "BWilliams",caregiver:false, age: '65-74',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "After having ECT, I was put on 15 mg ea day.Medication began i May 1980 to give me strenght.  For the past month or so, have a red rash on face in the early am.  No blister or leagage, just red splotches.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-11-11 17:56:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My 6 year old son had problems all through kindergarten with focusing and sitting still. His teacher wanted him tested for ADD/ADHD. So we took the Conners Check List. Then we got a second opinion from a child psychologist who then diagnosised him with moderate ADHD. He had started Ritalin 4 months ago. He is taking it twice a day at 10mg ea. He is much calmer and more focused now. He enjoys reading more then he did be for. All I can say it has worked for us.",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2008-11-15 22:27:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "Sleepyhead628").first_or_create(username: "Sleepyhead628",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have Narcolepsy, and used Ritalin for 13 years. The best description for this drug  is &quot;A Rollercoaster&quot; Up and Down! The upside: The drug works quickly! in 15 to 20 minutes I was ready to go. It kept me alert, and when I got the proper sleep, works very predictably, and is easy to take. Now the downside: The drug is very ADDICTIVE! I was on a very high dose (20 MG 3 X's per day)and when it wore off...WATCH OUT! Not only were the Narcoleptic symtoms of tiredness coming back, but I was also &quot;Coming Down&quot; After many years my wife and I determined that arguments between us occurred most frequently when I was due to take my medication. I was &quot;Coming Down&quot;! The medication IS MOODS ALTERING! After many years I noticed it had an effect on my nervous system, that included muscle spasms when falling asleep (Medium severity)and an extreme sensitivity to certain loud noises when tired. Hands clapping when I was tired, could send me through the ceiling. It was a rollercoaster. You went up fast...and came down hard!     I know this because I was &quot;Weaned&quot; off of Ritalin to Provigil. It took me 6 weeks to &quot;De-Tox&quot; For my family...it was hell! Daddy is reducing his meds today....STAY AWAY! After about a year off the drug, The muscle spasms stopped, and the sensitivity to noises mostly sub-sided. Awareness to these facts are important. Now do not get the wrong impression here. If other drugs are not do-able, for whatever reason. For the person with Narcolepsy this drug is a GOD-SEND! It works! It's better than a life spent fighting to stay awake...and failing. But awareness of the side effects will be a tremendous advantage. Take it from someone who has 13 years of knowledge.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2008-11-23 22:23:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "kat23607").first_or_create(username: "kat23607",caregiver:false, age: '',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have had ADD for nearly my entire life. My parents put me on ritalin when I was 6 years old, and I took it for years. I have also been on Adderall and Concerta, for the most part, the drugs all worked the same for me. The upside to ritalin is that it is MUCH cheaper. The downside is having to take it more than once in a day. And in general, the side effects are true. Which can be the downside to these type of drugs. For instance, I know to make sure and have it filled on time because if I don't take it, I literally cannot function because I am so tired. And the crash and the end of the day sucks too. I'm now 20, and can safely say that for me, all the drugs pretty well have worked the same, and for the most part have been effective if taken properly.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-11-24 21:45:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "It makes me feel horrible. It helps me pay attention at first, but then I feel incredibly irritable. I took it the majority of my life then finally decided i hated it. I went back on it and I remember why i went off of it in the first place. Not for everyone.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2008-12-02 16:10:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "Taz Master").first_or_create(username: "Taz Master",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Along with ignored ADD i suffer PTSD, I slowly went in to Depresion I was prescribed Ritalin . Now after months Ive regained control of Both ADD &amp; PTSD with no deprssion",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-12-08 18:22:55', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "medication is helpfull and controls adhd most of the time however side effects are begging to become more noticable.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-12-23 17:44:34', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "se80").first_or_create(username: "se80",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I was on ritalin all my life. Now im 21 and i thought i would go back on it. No, i hate the feeling and side effects and im going to stop once again.",effectiveness: 4, ease_of_use: 4, satisfactory: 2, created_at: '2009-01-09 011:52:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "chelsea0821").first_or_create(username: "chelsea0821",caregiver:false, age: '13-18',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "well lets see at first it worked perfect but after about 4 months it started making me fall asleep i took it three times a day. within about 30 minutes of me taking it i was suddenly exausted. it may not work for me but ive seen others it works perfect on.",effectiveness: 3, ease_of_use: 5, satisfactory: 4, created_at: '2009-01-12 08:41:39', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "This drug helped decrease the fatigue I have from Multiple Sclerosis.  It helped me stay employed which meant I could continue talking care of myself and have my own health insurance.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-23 20:40:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "ruby").first_or_create(username: "ruby",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "what is the difference between an amphetamine and methylphenadate(sp) and what is teh dextro- new to the both??",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-01-31 15:37:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "momoathome").first_or_create(username: "momoathome",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking ritalin for about three weeks now to treat Fibro Fog, an awful symptom of Fibromyalgia. I was having so much difficulty at work (I'm a nurse) that I was thinking time to look into SSDI. I was drowsy and my brain felt muddled all the time. I felt like messages were being recieved by my brain well, but the response to the message was slow, and my words were slurred. My doctor suggested ritalin, which is usually not prescribed for Fibro-fog, but I said I would try it. I now wake up easily every morning, stay awake all day, I can concentrate again, I can finish tasks, I can remember things. It feels like a life-saver to me, because I was having such trouble working, now &amp; feel normal again. I just pray it continues to work, so that I can continue to work !!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-01 09:44:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i started taking it because i was too tired all the time, sleeping 8 hrs at night along with two 1-3hr naps a day. sleep was interfering with my everyday life. the ritalin has helped me stay up during the day. i also have ADD and for the first time i got stright A's and studied.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-15 02:26:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "do1phinprincess@yahoo.com").first_or_create(username: "do1phinprincess@yahoo.com",email_address: 'do1phinprincess@yahoo.com',caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am 27 and have been recently diagnosed with Adult ADD, both hyper and inattentive. I feel much more organized and I have alot more energy. The first week I started on it I was only taking one in am and one at noon at about 4pm, I would be sooooo tired, the doc upped me to 3 10mg per day and I feel great by time the meds are wearing off its bed time, I have to admit, I personally have had a little increase in my appetite, I was hoping for the opposite, maybe its just because I really feel better about me! Also I have noticed that I am not as moody and letting crude comments fall from my mouth, After countless anti depressants that didnt work",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-02-17 010:49:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "iamcpc").first_or_create(username: "iamcpc",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Great for treating my ADD symtoms! The only reason I only gave 4 stars for satisfaction is that it takes 10-25 minutes to take effect and I am unable to sleep while on ritalin.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-02-17 15:01:40', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "xxreddoor24xx").first_or_create(username: "xxreddoor24xx",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Doesn't seem to last throughout the afternoon.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2009-02-24 05:06:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking this med for about 5 days and it gives me energy and helps be stay awake and alert in college.  I can sit in class now and acutally want to listen to the lecutres and remember what its about.  No more racing thoughts and moving around in my chiar.  Down side to the med is about 3 hours later after taking the first dose i'm very tired.  I take 20mg 2x daily.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-02-28 23:25:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I was prescibed to ritalin when I was 14 years old and now I am 22. The medication use to work very well when I was in highschhol. Now the medication seems to be ineffective. It has caused me to have severe anxiety and panic attack. Also, when the medication wears off I have a great deal of depression. I started with 10mg-3 times a day and now I am taking 20mg-3times a day. Sometimes I feel like the medication is not working and my tolerance has gone up. I would not suggest this medication for anyone to take over a long period of time.",effectiveness: 3, ease_of_use: 4, satisfactory: 1, created_at: '2009-03-05 15:54:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "wwwtchr").first_or_create(username: "wwwtchr",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Provigil gave me headaches for two months and my insurance and I fought everytime I went to get my RX. Finally my dr. gave me Ritalin. I thought he made a bad judgement call because my son took Ritalin while in school for ADHD. I knew I didn't have that. I couldn't stay awake, no matter how much sleep I had. However, since he'd been my dr. for 20+ years I trusted him so I took it. Then I did some research on it. It has been a blessing. My stomach aches with it sometimes, and I have notice the &quot;coming down&quot; but it has allowed me to keep my job and to do my job. When I start yawning, I know I have about 30 min. before I hit bottom. So I wait 15 min. take it, and in about 15 min. I am ready to work. My last pill at 3 gives me time to get home and start supper. I don't have much energy in the evening, but  as long as I can keep my job, I'm happy with it.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-03-09 16:00:51', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '7-12',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "loss of appetite, jitters,",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-03-11 15:14:43', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "This medication has been too activating for me and has caused severe irritability and anxiety, as well as headaches.  It wasn't the best choice, I suppose, since I am generally an anxious person.  However, I've heard it has helped many others.",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-03-12 17:32:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "i think this drug is a joke. its pretty much like taking speed. my best friend was prescribed it for school to conentrate but i think she didnt need it it causes her anxiwety and she never seems herself anymore. its a way the doctors can make money but never really even look into conditions just write out prescriptions and move to the next patient. there are other ways to curve hyperness or lack of concentration other than medications you just have to look.!",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-03-29 14:50:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "aprilakamom24").first_or_create(username: "aprilakamom24",caregiver:true, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My 5 year old son started on this medication about 2 weeks ago and so far it is doing great.He takes it 3xs a day and we really are liking it so far.  Dr said to wait at least 2 weeks to see improvment at school, but after 3 days we got a letter from the teacher saying he was listening to instructions better and staying in his seat at lunch, whereas before he was running aroud the lunchroom. He says he doesn't eat lunch at school anymore because he isn't hungry, but he usually eats breakfast before it kicks in and supper when it starts to wear off.  So it does have some effect on his appetite, but we just give him snacks and things whenever he IS hungry so that hasn't been to much of a problem. We tried Vyvanse before and that was a NIGHTMARE!!  We are very happy with this medicine. The only reason i gave it 4 stars is because it is short acting.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2009-04-06 23:38:37', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "A1A5KA").first_or_create(username: "A1A5KA",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am an adult, recently diagnosed with ADHD Combined Type.  As part of our ongoing search to discover the medication and dosage that is best for me, my doctor recently prescribed Ritalin.  Unfortunately, the side effects of the medication were such that, after only a week, he took me off the Ritalin and put me back on the medication I was taking previously (Dexedrine).  (Note: Anyone reading this review should remember that what medications and dosages work for ADHD can vary greatly from person to person)  For me, the Ritalin made me feel like I was so exhausted I couldn't think straight.  It also made me both depressed and anxious.  In fact, I am also taking Lexapro to treat depression and when I was taking the Ritalin, the Lexapro stopped working.  Far from providing any sort of help for my ADHD, the Ritalin erased all energy or desire I had to do anything except sleep or cry.  I am very glad to no longer be taking this medication!!!",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2009-04-07 012:07:05', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "sleepy head").first_or_create(username: "sleepy head",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have Narcolepsy. There are only two available medications in Canada to treat this and Ritilan is one of them. I still fall asleep a lot. I am worse off when I don't take them but it doesn't work as well as I would like. I still fall asleep standing up at work or trying to help my daughter with her homework. I have read other peoples reviews and now am wondering if this drug is the reason for my agitation all the time. I have no patience and get so agrevated over stupid little things that should not bother me. I used to be a very happy person. With lots of patience. I'm not saying Ritilan is the reason but I now have to wonder.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-04-16 09:36:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "twit8125").first_or_create(username: "twit8125",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I started taking Ritalin at 18 and it helped tremendously. Then I had to keep upping my doses. And then it started working for shorter periods of time. And then it got to a point where I had to take too much too often that it started causing severe ups and downs in energy. I then got on Strattera which works but I had all of the physical side effects and it wasn't worth it anymore. Now I'm starting on Concerta (I'm 27 yrs old now). I think people have to try different things to see what works for them. Also, sometimes you just have to switch after awhile because your body gets used to the medicine. So maybe I'll take Concerta for awhile and then if it stops helping, I'll go back on Strattera.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-04-16 23:50:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "hoopsbear").first_or_create(username: "hoopsbear",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have begun to notice after approximately 1 year of use, that I have become edgy and cold. Very easily irritated.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-04-18 20:38:55', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i felt better about myself and more energetic",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-04-27 15:26:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '65-74',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "used for chemo brain to be able to focus and write",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-05-10 24:27:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '7-12',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My almost 8 yr old daughter has tried several ADHD drugs before finally being prescribed Ritalin.  She takes it twice a day...only at school.  It has done wonders.  She is able to concentrate during the day and focus on her work.  Her behavior has improved 100%.  She is above average in school in all subjects.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-05-18 20:09:23', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Laura").first_or_create(username: "Laura",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I took this med when I was about 5 or 6, I've just been told, &amp; it turned me into a zombie. It made me tired, so I was taken off of it immediately. So I lived with the ADHD all my life.In fact, every med I've taken made me tired, or gave me another side effect.Why do I always feel tired when I'm on meds, but other people get extra energy?",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-06-10 011:04:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2009-06-10 21:00:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "jess").first_or_create(username: "jess",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "works with my concentration",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2009-06-12 011:40:11', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '7-12',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-20 24:27:25', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "juan").first_or_create(username: "juan",caregiver:false, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My son takes 5 mil in the day and 5 at 12pm and he still has problems at school and at home",effectiveness: 2, ease_of_use: 1, satisfactory: 1, created_at: '2009-06-21 20:55:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "stefani").first_or_create(username: "stefani",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I just recently started on this medication to treat my Adult ADD.  So far, I am somewhat pleased with the results.  I don't really have any complaints about it.  So far, my side effects are very mild and don't really interfere with my everyday life.  I started on 5 mg the first week and have moved up to 10 mg, taken twice a day.  I have noticed that my brain does not go a mile a minute any more which makes it easier to concentrate.  I have noticed that I remember things that I would normally forget.  My mood has been so much more calm and my angry outbursts have practically gone completely away.  I do find that I am a little more tired but my increase in mood helps me to overcome that.  No trouble going to sleep but staying asleep is the problem.  I find I am a little more jittery than usual, again not a big deal.  I still forget things on a daily basis, but not near as much as before.  My husband has even noticed a change in my mood, for the better.  I find that it is easier for me to stay on task at work and to prioritize my work more effectively.  I still find myself being distracted a little, but not as much as before the medication.  So, far I have been satisfied with the medication and would recommend it to women my age who have just been diagnosed with Adult ADD, as in my case.",effectiveness: 3, ease_of_use: 3, satisfactory: 4, created_at: '2009-06-25 14:05:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "califloria").first_or_create(username: "califloria",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am in my mid-40s and have been on Ritalin for 5 years. I started taking 20mg twice a day. I am now on approx. 180mg to 240mg per day, My doctor has me on 160 mg/per day, but sometimes I take an extra one for my dosage. I have chest pains, hives, blurred vision, paranoia, panic attacks, horrible anxiety, lack of motivation, my social life has gone down the toilet, i feel like i'm going slighty crazy once in a while (a minute or two ever couple days). I don't know what to do or how to cut back or stop. I don't have insurance because my individual Blue Cross plan when from $350 to $550 per month, this month. I cannot wake up in the morning w/out it. I feel like I might die and I don't care a whole lot if I do.",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2009-06-30 16:48:58', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "dont know").first_or_create(username: "dont know",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i just started it and am having a problem with headaches on it. after reading some posts i see that is common. i believe it may help with my disorganization and motivation. but the headaches are a pain and sometimes i feel kind of tired. i will have to try it a little longer and see if that goes away.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2009-07-05 20:28:19', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "mmike1492").first_or_create(username: "mmike1492",caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "it makes me feel uplifted and alert and it doesn't make me nervous and moreover it actually sometimes puts me to spleep which sounds inconsistent but it is true.My only wish is that I can take ten times more but I am not stupid and I follow instructions but I said that for emphasis.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-07-06 22:40:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "Pat in LA").first_or_create(username: "Pat in LA",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am taking Ritalin to battle narcolepsy-like symptoms caused by Lyrica and Skelaxin.  It works really well for me.  I no longer fall asleep without warning.  It works much better than Provigil or Nuvigil.  I take 20 mgs in the morning and 10 in early afternoon.  I haven't noticed any side-effects.  It's letting me live my life again.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-07-08 18:13:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "MImom").first_or_create(username: "MImom",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I started taking Ritalin a little over a month ago. I noticed a positive change in the first week with my school work and being able to sit for more than five minutes at a time. I did experience both headaches and irritability when the drug started to wear off. My doctor prescribed Celexa, an antidepressant and the irritibility disappeared and the headaches are far and few between. I've noticed a few other posts about being tired after taking the pill. I am on a 10 mg pill, twice per day and I notice that after I take the second pill in the afternoon I get very tired. Hope this helps!",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-07-21 09:28:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I recently switched from Adderall to Ritalin because the Adderall wore off rather quick. Both seem to be equally effective, but I have different/bad side effects with each. With the Adderall I lost my appetite and lost 7+ pounds in a month. With the Ritalin, I keep getting headaches. I usually never get headaches so I am very disappointed. Hopefully they go away in the next couple of weeks and my body adjusts to the drug, otherwise I will switch back to Adderall or try something else.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2009-07-30 06:01:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "concerned").first_or_create(username: "concerned",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I just want to know how this drug efects my liver. and kidneys",effectiveness: 4, ease_of_use: 5, satisfactory: 2, created_at: '2009-08-07 010:41:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "JNL").first_or_create(username: "JNL",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I took Adderall XR 5mg for 5 days and it made me so irritable that i had to quit taking it. I give it 2 stars because i lost 5 lbs in 5 days. Thats the only pro. It only lasted me 5 hours out of the day then i would be so exhausted.",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2009-08-07 16:18:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "Gannongal").first_or_create(username: "Gannongal",caregiver:true, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I had trouble concentrating and remembering things. I ADD but not Hyperactivity. I am able to do more and remember more and I don't feel any side affects as I did with Adderall. I think this drug is much more effective and it sure as heck costs a lot less, having no insurance that was a big plus but not the reason it works. I have had ADD for a long time and didn't know what cause my behavioral problems I am 57 and to much happier and feel a lot less drugged up. I hope this helps others.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-08-20 012:50:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Have been taking Ritalon for 21 years.  It worked well in the beginning. I was a student and found that Ritalin allowed me to read and understand the content, as well as learn. 20 years later, my heart seems to have problems racing, and high blood pressure with lots of headaches and it all seems related to my Ritalin. Now when I take it I feel that it make me lazy and after conferring with some colleagues, they agree they see the laziness and disorganization too.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2009-08-30 02:01:15', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "dumdum").first_or_create(username: "dumdum",caregiver:true, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Agression",effectiveness: 4, ease_of_use: 3, satisfactory: 3, created_at: '2009-09-14 21:23:19', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "nammedic").first_or_create(username: "nammedic",caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Effects of Ritalin are excellent but the stigmatism of the drug being so highly controlled by DEA causes numerous difficulties as tolerances elevate. Having been on this treatment for my Narcolepsy since 1977 you can imagine the battles I've had to fight just to convince MD&quot;s even with suportive sleep studies is a thing we that are diagnosed wih should not have to face I mean who are the DEA except a bunch of administrators and bureaucrats anyway",effectiveness: 5, ease_of_use: 3, satisfactory: 3, created_at: '2009-09-16 05:21:54', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Psychiatrists are considered  as  the brightest among the doctors.Not from only purely medical view, but commercially. They sell the medical unthinkable as a disease.Grief and mourning are now being transformed and given the status and the statute of a neurobiological illness  (PGD, Prolonged Grief Disorder). &#171; Work &#187; is also done to force pregnancy to be conceived as a medical-pathological &#171; disorder &#187;, so that pregnancy can be treated with preventive drugs against post-natal depression. The advantage would be that premature babies (bingo!) with osteoporosis (bingo!), will be born with withdrawal symptoms (bingo!) and that mothers will have to continue their taking persistent doping (bingo again!).The allergy of the multidisciplinary team (PPHS, Projected pedagogical helplessness syndrome) against a normal child behavior appears to be an incurable disease. PPHS has the same symptoms as ADHD.But the &#171; children &#187; are treated as supposed to be suffering from ADHD.The allergy itself is questionable, especially when the &#171; patients &#187; were trained to manage this allergy.That alienation is to be considered to be a crime because the kids can not resist.But what initially was considered as medically unthinkable, takes now only 1 moment of decision. There is nothing medically wrong with these three examples.Up to this point the patients are medically speaking  perfectly OK, (but this is but a small detail).To speak in terms of a neurobiological disorder is premature.Treatment itself is making the disease the alleged disease.Indeed, no doctor,  neither a real nor a psychiatrist, has explained the mechanism that doping would mobilize  immeasurable and alleged deficiencies of dopamine, serotonine, norepinephrine, etc. All the myths about these biochemical molecules are presented as scientific dogmas.Indeed : how can SSRIs , such as Prozac and  Strattera 'selectively' treat  the dopamine deficits in ADHD?Selectively releasing serotonine by massive dose",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-09-22 03:57:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "jngravatt").first_or_create(username: "jngravatt",caregiver:true, age: '13-18',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-09-23 17:50:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I started Ritalin about a week ago, and already I am noticing changes for the better.  I am able to pay attention and understand my college courses, as well as a huge confidence boost.  My self esteem has never been higher.  After about 3 to 4 hours I start to get a mild headache, nothing terrible.  The dosage I use is 10mg so headaches and other side effects may be worse with higher doses.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-10-08 03:30:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2009-10-14 14:36:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "rlnelsen").first_or_create(username: "rlnelsen",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I started on Ritalin approximately three weeks ago.  My focus and concentration as well as my motivation level have increased dramatically.  I know this may sound weird but has actually help lower my anxiety such that I have been able to reduce my daily dosage of Xanax.  The only downside I've experienced appears to be an increase in my blood pressure.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-10-16 23:00:09', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "B").first_or_create(username: "B",caregiver:true, age: '7-12',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "MY SON IS 8YRS OF AGE AND HE'S IN SECOUND GRADE AGAIN AFTER FLUNKING. RITALIN WAS  PRECRIBED TO HIM LAST YEAR BUT I REALLY DIDN'T GIVE IT TO HIM BECAUSE OF THE SIDE EFFECTS;DIZZYNESS,HEADACHES,AND STOMACK ACHES.HE'S ALSO VERY SHORT FOR HIS AGE AND I'M SCARED THAT THIS MED WILL SLOW HIS GROWTH EVEN MORE.I TOLD THE DOCTOR ABOUT MY CONCERN AND HE SUGGESTED I GIVE HIM THE EXTENDED REALEASE.THIS HELPED BECAUSE INSTEAD OF GIVING HIM 10MG IN THE AM AND 10MG BEFORE LUNCH,I ONLY GIVE IT TO HIM ONCE IN THE AM.THIS HELPS WITH THE CRASH AND PREVENTS MOST OF THE SIDE EFFECTS HE WAS EXPERIENCING.HE IS ALREADY DOING SO MUCH BETTER IN SCHOOL AND HE CAME HOME WITH A RECOGNITION CERTIFICATE FOR MOST IMPROVED.HIS TEACHER SAY'S ITS LIKE DAY AND NIGHT.I DON'T KNOW HOW HE WILL DO WITH THIS LONG TERM.SO FAR I HAVENT READ ANYTHING GOOD WITH PT'S THAT HAVE BEEN TAKING THIS LONG TERM.I WILL KEEP A CLOSE EYE ON HIM.",effectiveness: 4, ease_of_use: 3, satisfactory: 3, created_at: '2009-10-17 16:33:40', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "alwayslateral").first_or_create(username: "alwayslateral",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I was diagnosed with Adult ADD when 2 months ago.  I started on the standard 5mg twice a day.  After about 3 days I could notice a big difference in my ablility to focus and concentrate.  After a week I moved up to 10mg twice a day and then 10 mg three times daily.  I experienced some of the side effects; dry mouth, not hungry, sleeplessness, racing pulse and higher blood pressure, tiredness.  Sleeplessness AND tiredness, well after taking the first dose you hit your peak after about 1-2 hrs and then come back down(crash) which tires you out, take the next dose and go back on that rollercoaster.  I finally figured out how to space my doses out so it would be worn off by the time I needed to get to sleep and for me that was taking the last dose by 3pm so I could hit the sheets by 10pm.  I hated that roller coaster ride so I talked with my doc and he put me on 20mg extended release that I take twice daily.  The effect lasts between 4-8 hrs.  I get up at 5am for work and then go to night school and am home by 930.  Long hours to be needing focused and the extended release is the perfect fit for me.  If the effect is wearing off too fast ask about the extended release and you will be a lot happier.  I do get a slight headach but goes away after eating.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-10-26 13:59:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "carlene").first_or_create(username: "carlene",caregiver:true, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "used for allertness and not working after brain injury. While having to be tube feed cant take it by mouth.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-11-08 07:58:39', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "miley").first_or_create(username: "miley",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I get a lot of energy.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-11-18 13:54:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "miley").first_or_create(username: "miley",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2009-11-18 18:24:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "cmbr").first_or_create(username: "cmbr",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have MS and I take it to combat fatigue.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-11-19 06:29:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "jonjk85").first_or_create(username: "jonjk85",caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I am 24 and was diagnosed with ADHD as child. I was on meds when I was younger, but at around 12 stopped taking stimulants. I am in college and the lovely distractedness has reared it's head after so many years. I am back on ritalin and couldn't be happier. My grades are improving, I can concentrate, and I feel calm all the time.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2009-11-21 24:42:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "can not tell a difference since taking this medicine",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2009-11-27 16:27:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "rick battistoni").first_or_create(username: "rick battistoni",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "The issue is half life. This in fact may cause unautherized patient increase, in which can turn to dependence and decreased cerebral effect.",effectiveness: 4, ease_of_use: 2, satisfactory: 3, created_at: '2009-12-06 22:02:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "palexb17").first_or_create(username: "palexb17",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "First of all let me mention that i have add not adhd, i have trouble focusing and my mind goes into a creative ride a lot, but since i started taking this medication it all changed.  Now I can focus perfectly in what i'm doing and don't get distracted by anything, it also elevates my mood and elevates my mood. The only downside to this medication is that the effect lasts only a few hours, in my case for a 20 mg pill.  I take it twice a day and can go most of the day with a focused state of mind. I have had highly satisfactory results with it and wouldn't go a day without taking it.",effectiveness: 5, ease_of_use: 3, satisfactory: 4, created_at: '2009-12-29 21:58:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "SANCHEZMARITA").first_or_create(username: "SANCHEZMARITA",caregiver:true, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "MY 9 YEARS OLD SON HAS BEEN TAKING RITALIN A YEAR AGO. AFTER HIS SECOND EVALUATION IN THIRD GRADE, HIS TEACHER SAID THAT FOR SURE HE WILL REPEAT THE GRADE, THEN HE START TAKING RITALIN 5 MG. TWICE A DAY, IT WORKS, BUT HE NEEDS MORE, AND AFTER A WEEK HE STARTED WITH 10 MG TWICE A DAY. 10 MG AT 7 AM, AND 10 MG AT 11 AM, SO RITALIN WORKS WHILE MY SON IS AT SCHOOL, AND ALSO, BY THE AFTERNOON AND WITHOUT THE EFFECT OF RITALIN HE DOES PRETTY WELL WITH HIS HOMEWORK AND EVEN IN HIS KUNG-FU CLASS. HE HAS CLEARLY IMPROVE ON WHATEVER IS HE DOING. HIS ENERGY DOESN'T GO LOW OR FEEL SAD. I NEVER GIVE HIM RITALIN ON WEEKENDS OR VACATIONS. HE IS SO BRILLIANT AND NOW HIS SOCIAL LIFE IS NORMAL, HIS PEERS NOTICE DE 360' CHANGE AND THE FOCUS IN THE SCHOOL COULDN'T BE BETTER. MAYBE THIS COULD HELP YOU, BUT DON'T FORGET THAT EACH BODY REACT IN A DIFFERENT WAY.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2010-01-12 02:56:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "mcguires").first_or_create(username: "mcguires",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i have never been able 2 complete a task before taking. its quite amazing!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-01-13 21:33:00', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "freakynita76@yahoo.com").first_or_create(username: "freakynita76@yahoo.com",email_address: 'freakynita76@yahoo.com',caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "it has helped me focos at school",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-01-21 13:34:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Really have lifted my depression and attitude.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-02-03 21:34:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "dan").first_or_create(username: "dan",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking generic Ritalin for ADD for 3 months now. It has helped me with better thinking, better moods, and more energy and drive. The problem I have with it is that the medication's effectiveness is varied. I have had 3 different refills and the first was mild, the second was intense, and the third was between mild and intense. I then have to change my dosage and time intervals to compensate for these different effects in the pills or batches. This can be difficult to do. But overall, I am satisfied so far.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-02-17 15:41:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "anxiety attacks",effectiveness: 3, ease_of_use: 1, satisfactory: 1, created_at: '2010-02-19 09:06:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2010-02-24 15:35:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "angelomqt").first_or_create(username: "angelomqt",caregiver:true, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My son has been taking ritalin for three years now. he only takes it during the week while in school. It has helped him greatly. He is able to sit still and focus on his school work, as well as helping him stay organized while at school. For the first two years he took 5mg and now he has been bumped up to 7.5mg. I think after awhile he kind of got &quot;immune&quot; to the dosage. Thats when our MD bumped the dosage up to 7.5mg.  Overall I have been very pleased with the results and so has he. Without ritalin I am sure he would of had to repeat 2nd and 3rd grade.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2010-02-25 09:43:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "GoGoSarah").first_or_create(username: "GoGoSarah",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I was prescribed 10 mg twice a day and now I'm up to 20 mg twice a day.  I have never felt better.  I'm not tired anymore, I can focus more then I have ever in my enitre life.  If there is noise in the back ground will studying I can still focus.  It an amazing drug.  I've only been on it for two months but this is the wonder drug I have been looking for my entire life.  I have struggled through my educational life but now my grades are better, my mood, my marriage.  Its wonderful. I do make sure that I drink a small amount of caffefine will on it to subside the side effects.  This is my 'trick' to curving the negative side effects. Best wishes to all!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-03-03 15:32:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I first saw some improvement from 5mg but it soon became ineffective.  The same for 10mg at first there was improvement but soom showed no improvement.  Don't know how large a dosage I can take.  Have no side effects.",effectiveness: 1, ease_of_use: 5, satisfactory: 2, created_at: '2010-03-16 20:23:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Rusty").first_or_create(username: "Rusty",caregiver:false, age: '7-12',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I hate ritalin i took it onced and it made me extremely jittery i will never take it again in my life!",effectiveness: 2, ease_of_use: 1, satisfactory: 1, created_at: '2010-03-21 19:04:01', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Alice").first_or_create(username: "Alice",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I began use ten years ago and at first it was a life changer, but it was hard for me to take doses at work on a timely basis.I also trialed  generic version which didn't work as well. Tried Adderall lost too much weight Staterra which didn't work at all for my issues. Going back to Ritilan 10mg but insurance requires generic. I am not sure if it is pill content or dosage this time but I am not experiencing instant effectiveness as I did. I kept journals and had people around me add comments for each medication I used except increased dosage of Adderal . I sugest all do this, to avoid continued use if there are side affects you don't realize.",effectiveness: 5, ease_of_use: 3, satisfactory: 4, created_at: '2010-03-28 011:46:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "NickLuddy").first_or_create(username: "NickLuddy",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I was diagnosed w/ ADHD almost 20 yrs ago.  Admittedly, Ritalin was one of the few drug treatments available then.  However, I have tried many other drugs over the years to enhance concentration. Still I have yet to discover any therapy, (chemical or otherwise), that has proven to be nearly as cost-effective or time-efficient as regular Ritalin (time-release Ritalin is expensive).  Although... I would highly recommend that anyone suffering from ADHD seek behavioral, cognitive, or other psychological therapy - in addition to medicinal treatment.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2010-03-29 010:11:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '65-74',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I experience an ability to adapt to situations which usually cause me to have symptoms of fearfulness and inability to cope. Ritalin helps me to feel normal.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-05 20:30:51', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2010-04-08 14:43:47', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "bill b.").first_or_create(username: "bill b.",caregiver:false, age: '',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "it's been a life altering experience for me. it helps me focus on reading television etc.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-09 14:44:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "cj").first_or_create(username: "cj",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have had ADD all my life but just dx in past 10 years. Take 20mg 2 times a day and a concerta(extended release ritalin) in the am. Works very well- don't know how I got thru school the first time without it(very slowly) Generic does not work; causes upset stomach with no help in ability to focus. Brand name well worth the extra cost. Does not keep me awake and has no effect on appetite at this point. Seems to me that abuse potential would be small because does not cause euphoria or a &quot;high&quot;",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-12 16:25:32', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "At first, I thought Ritalin helped. I took it on and over over 3-4 years. However, I started to take more and more to get the same effect, as you start to get immune to the effects of a lower dosage after continued use. Then I started overdosing.I do not recommend Ritalin at all, as it is easy to get hooked on to the point where you're dependant on that weird high you get from it.",effectiveness: 2, ease_of_use: 5, satisfactory: 3, created_at: '2010-04-16 010:31:54', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i am chronically fatiged since taking ritalin 20mg 3x per day i have become alert and living a normal life",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-25 17:24:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "G/Texas").first_or_create(username: "G/Texas",caregiver:true, age: '75 or over',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My 87 yr old Mother has been taking this med for 9+ yrs, &quot;allergic to tricyclates (sp?)&quot;. She has 38 yrs of sobriety (alcohol), but lately she gets very irritable/hostile outbursts and her short-term memory is terrible and she is very easily confused. She can only handle one small task at a time IF she can remember the task. Does the methylphenidate cause her problems or usual old age or the combination of drug AND old age? She still lives alone with visits from home health nurses twice a week along with &quot;providers&quot; every other week. My brother and I also see her at least once a week for shopping, rides, etc. Thanks for any help, her condition is becoming so stressful. I spend most of my days on phone solving problems, apologizing for her behavior and orchestrating her long distant care. I live 35 miles from her. We took her car from her last year...seem her problems really started thereafter...boredom contributes??",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-04-26 010:59:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "NW_Joe").first_or_create(username: "NW_Joe",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have been on Ritalin 10mg 3x per day for over 8 years. They just upped the dose to 20mg 3x and 60mg Strattera. It was like turning a light switch off in my head. This medication has changed my life in the best way possible. My wife was the one telling me to get tested for ADHD. I was diagnosed with ADD without Hyperactivity @ age 30. It was very hard to find a MD doctor that believed in giving Ritalin to someone over the age of 18. I finally found a psychiatrist that would. Before I started my meds I had very hard times with home(not able to complete choirs), school (Very poor grades &amp; placed in special class), work (avg job lasting 2-3 months),  projects (I would start them and never finish them), and couldn't keep any long term relationships my whole life. My parents refused that I have had any issues with ADD or ADHD my whole life. They thought I was just the way my brain developed and I was &quot;Lazy, Procrastinator, Unreliable, Absentminded, Never finish anything I started&quot; I think they may have been embarrassed of the term &quot;ADD &amp; ADHD&quot; in the 1970's. My family, friends, and I cannot believe the changes that the medication has done. It has changed me 180.  I have some books that I also found that has helped me deal with and understand ADD. One book is called &quot;A.D.D. &amp; Romance&quot; by Jonathan Halverstadt, &quot;You Mean I'm Not Lazy, Stupid or Crazy?!&quot; by Kate Kelly &amp; Peggy Ramundo.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-28 03:02:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "lil_devil44032").first_or_create(username: "lil_devil44032",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "It makes me feel very weird, my headaches are worse, and the only thing it's helped is my attitude because i'm afraid to speek up in fear my heAD WOULD FEEL WORSE.",effectiveness: 2, ease_of_use: 5, satisfactory: 1, created_at: '2010-05-05 012:49:51', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "BeMyPenguin").first_or_create(username: "BeMyPenguin",caregiver:false, age: '19-24',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I've only been on Ritalin for 8 days now, but i just upped my dosage today and am noticing differences. My father noticed alot of positive differences and my conversational skills and in my thought processes when helping him with errands. However, i'm noticing im more irritable. i started on 10mg/day and today was told to start taking 10mg either twice a day or two at once in the morning. i tried two at once about 2 hours ago and find i have nausea and am far more irritable over absolutely nothing. I also find that if i TRY (purposely) thinking about anything...i can't. Unless whatever im thinking about is visible or if im talking about it, i can't think ahead to plan anything. i cant think things over in my head. i HAVE to verbalize it or be actually doing it. i dont like that aspect. i almost feel like my thoughts are in a rubber band and as i try to think about something outside of what's visible or what the conversation around me is, it gets snapped back and im forced to think about the present. i know thats part of the reason for taking the medication, but i cant sit in my own thoughts, at all. any suggestions or help?",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2010-05-06 15:59:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "patty").first_or_create(username: "patty",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have experienced Chronic Fatigue, Gall Bladder Cancer, and Fibromyalgia for the past 18 years. I am trying the Ritalin to see if it might help my fibromyalgia symptoms. I've only been on it 2 weeks but it seems to be helping.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2010-05-15 21:38:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=85&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "alexisgrace876@aol.com").first_or_create(username: "alexisgrace876@aol.com",email_address: 'alexisgrace876@aol.com',caregiver:false, age: '13-18',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i use this drug daily for 8 years now and i still have the same side effects, my eyes twitch and i have uncontrollable blinking.",effectiveness: 5, ease_of_use: 4, satisfactory: 2, created_at: '2010-05-19 09:03:08', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=85&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Ritalin helped me sooo much to focus on school work, communicate, increased my energy, and creativity. Sounds like a miracle drug, right? No! I got so completely addicted to it it drove me crazy. When my doctor took me off of it I would regularly go down to Mexico where I could buy it without a prescription and smuggle it back across the border, I did this for almost 2 years. Luckily, I moved much further north so driving to Mexico was no longer an option, so I'm finally off of it for good. I probably should have gone to some kind of Ritalin rehab. Ritalin also made me want to smoke cigarettes all the time, which is totally disgusting. But now without Ritalin, I no longer want to smoke, it makes me sick just to smell it.",effectiveness: 5, ease_of_use: 4, satisfactory: 2, created_at: '2010-05-22 21:23:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=85&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '3-6',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "My 5 year old son starting taking Ritalin after being diagnosed with ADHD. We started on 5 mg 2 x day with no change in behavior at all. Next we tried 7.5 mg 2 x day, a little improvement, but not much. Our last attemt was 10 mg 2 x day. Not much change in behavior but he did start to show some minor facial tics and irritability. We are now meeting with his dr. to discuss trying a different med.",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2010-05-22 23:57:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=85&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I was prescribed Ritalin 20 mg. And at first, it seemed to do wonders for me. But, this medicine cause me to develop facial tics whenever I took it. I would blink my eyes constantly and I would wrinkle up my nose. So, I stopped taking Ritalin on my own. And I got prescribed Focalin. And I have to say, I love Focalin.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-06-02 011:33:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=85&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "This medication is extremely helpful along with my antidepressant for both treatment resistant depression and excessive fatigue related to the depression; however, I don't like how it is so short-acting and I have to take it 3 times a day. I would prefer something longer-acting.  But other than that, I love Ritalin and I am very satisfied. I am, however, concerned about the possibility of addiction/dependency, so I am being careful.",effectiveness: 5, ease_of_use: 2, satisfactory: 4, created_at: '2010-06-06 05:21:05', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=84&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "Anne").first_or_create(username: "Anne",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Prescribted this drug as a supplement for depression and exaustion.  At first it seemed to help but after a month or so the symptoms not only returned but increasd. I stopped the medication and after approximately a week still have the bad effects of more exhaustion and depresstion.",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2010-06-07 19:08:56', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=84&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-06-15 16:42:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=84&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have treatment-resistant depression.  About a month ago, I was prescribed Ritalin 10 mg once a day as an add-on to the 40mg of Prozac I take.  It has definitely made a tremendous difference.  I feel so much more positive, actually happy.  Only complaint is that it lasts just 4 or so hours.  I will talk to my doc about increasing to 10mg twice a day next time I see him.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2010-06-25 15:36:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=84&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "craig").first_or_create(username: "craig",caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "just started this drug,looking for more info",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2010-07-02 18:42:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=84&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "cider_2007@verizon.net").first_or_create(username: "cider_2007@verizon.net",email_address: 'cider_2007@verizon.net',caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking Ritalin for approx. 3yrs this last time at the following dose:2 -20mg Ritalin tabs three(3)times a dayAbout 5yrs prior to this usage I took 1-15mg tab three(3)times a day.My present usage has helped me quite a bit with both ADHD AND Bipolar Depression; however, I Still frequently and often misplace papers of importance.  This is Veryfrustrating and can cause situational depression, that is solved when I am able to relocate my papers.I DEFINITELY have to give this med. a 2&quot;thumbs up&quot; sign in all respects. I occassionally experience inappropriate anger, but can usually recognize it and adapt to it before it gets detrimental.I pay CLOSE attention tha I NEVER misuse/abuse this med. and have medication left over at the end of my &quot;months&quot; supply by only taking one tablet for the last dose.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2010-07-15 19:02:23', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=83&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "annrt").first_or_create(username: "annrt",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "ritalin",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-07-23 20:04:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=83&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-07-30 08:30:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=83&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "depression and laziness",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2010-08-04 16:24:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=83&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I've been taking Ritalin for 2 wks and it has worked wonders for me. I often get very overwhelmed at work and it has stopped. I take it as soon as I get to work and again 4 hrs later. I take 10mg each time. I have notice I tend to get head aches a little more when I am NOT taking it. I started getting a tic in my cheek today. I also take Celexa for depression and I feel like it has even made a difference in the depression, in a better way. It has not effected my sleep. I can sleep on this medication. I wish I would have taken this medication when I was a child because it has made such a big difference in my life. I needed this medication a long time ago.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-08-07 20:53:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=83&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "karen003").first_or_create(username: "karen003",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "i have been on this medicine for about 7 months now.  I really like it. I take it for more than one reason..because i keep falling asleep during the day, cant focus on anything even little every day small things ( disassociate ). i take 40 mg at 9 am 20 mg at 12 noon and 20 mg at 3 pm. I find myself feeling great laughing again joking around again, burst of energy with episodes of talking a lot ( actually wanting to be social) can focus great and can listen to a complete sentence without my mind wondering off. However after 5:30 or 6 I'm useless again. Having to take it every 3 hrs is hard for me to watch the clock with the demands of everyday life. but will realize when i so called come down from it leaving my system, but sometimes even if i take it late it does not have the same effect as it does when i take it on time.",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2010-08-12 13:17:08', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=82&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "A. Sheppard").first_or_create(username: "A. Sheppard",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I have severe bi-polar disorder with very severe depressive episodes along with impulsive behavior along with the other behavior manic-depression brings.Ritalin has helped significantly with my depression (not the blues or being in the dumps )but true despondent depression and has helped modify greatly my impulsive speech and behavior.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2010-09-02 21:41:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=82&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "methylin").first_or_create(username: "methylin",caregiver:false, age: '65-74',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I've had extreme fatigue over the past several years. Ritalin was prescribed by my neurologist. It has given me some energy. I've taken it daily for 3 months.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-09-05 16:14:53', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=82&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "TAMMIAM4509").first_or_create(username: "TAMMIAM4509",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I'VE TAKEN IT FOR TEN YEAR AND IT WORKS JUST FINE FOR ME.  I'VE TRIED MANY MEDICATIONS IN THE SAME CATAGORY.THE RITTALLIN I TAKE IS MILD AND TAKEN 3 TO 4 TIMES A DAY.THE OTHERS LIKE CONCERTA,ADDERALL,FOCOLIN, GAVE ME HEADACHES.  I LIKE MY LITTLE PILLS THAT KEEP MY CONCENTRATION LEVEL IN TACT AND MAKE ME FINISH  THINGS I'VE STARTED. AND NO I'VE NEVER ABUSED IT LIKE SO MANY PEOPLE WITH DISORDERS. MY DISORDERS SEVERE CLINICAL DEPRESSION,BIPOLAR 1 (MIXED) AND I RAPID CYCLE VERY OFTEN.I ALSO TAKE DEPAKOTE,TRAZADONE(WHICH DOES NOTHING) AND KLONIPIN.NONE OF THESE MEDS HAVE STABILIZED ME..I STILL HAVE MY WONDERFUL MANIC EPISODES. THEN IT COMES THE DEEP DARK DEPRESSION. ONE TIME I DIDN'T WALK OUT OF MY HOUSE FOR 4 MONTHS.I HAVE BEEN DIAGNOSED WITH MY DISORDERS FOR 10 YEARS AND BEEN ON SOCIAL SECURITY DISABILITY FOR FOR YEARS.FOR MY MANIC EPISODES I HAVE BEEN HOSPITALIZED NUMEROUS TIMES.IF YOU COULD RECOMMEND OTHER MEDICATIONS, DR'S IN BROWNSVILLE, TEXAS.MY EMAIL IS TAMMIAM4509@YAHOO.COM  OR WVGOLDEN4509@HOTMAIL.COM",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-09-08 17:08:11', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=82&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "Josh").first_or_create(username: "Josh",caregiver:false, age: '19-24',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I was diagnosed with severe treatment resistant depression, as well as social anxiety. I tried lots of different meds but none worked well. I finally started a combination of Trazadone and Welbutrin, while this helped some I still felt that something was missing, still felt lethargic, and still working on the depression. Worst of all the Welbutrin caused me to become mentally unfocused, and my mind was wandering constantly. It was, however the only drug that had helped me at all. I then was prescribed Ritalin in addition to those. Wow is it exactly what I had needed. I have been able  to keep my focus, able to have enough energy to get through a standard day and not want to hide from the world. For the first time, I have actually been feeling good. I honestly feel like I have found a miracle combination for what was troubling me. I have noticed no negative side effects. the only down side is that after about 6 hrs or so of taking it I begin to feel a slow down, or crash. As if I hadnt taken it at all. I intend to see if I can spread it out through the day. but other than that it really has been fantastic for me.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-10-27 18:47:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=82&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "This medicine works great but it doesn't seem to last very long for me. My Doctor said she might swith me to adderall which lasts longer.",effectiveness: 3, ease_of_use: 5, satisfactory: 4, created_at: '2010-11-27 15:55:32', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=81&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "flsl3y").first_or_create(username: "flsl3y",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "A few years ago, my doctor gave me some Ritalin, because I could not concentrate and was a lot hyperactive.It helped me a lot!!My doctor change for another city too far for me so don't have a doctor anymore and in Canada, we have a problem with that.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-12-03 04:58:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=81&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "jasper").first_or_create(username: "jasper",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-12-12 13:14:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=81&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "dave").first_or_create(username: "dave",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "This medicne works for me well,but now Im being weened off of it and put on wellbutrin..",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-01-24 010:45:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=81&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "emm").first_or_create(username: "emm",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "This is a new drug for me.  I have only taken 5 mg a couple times.  I feel jittery and my blood pressure has risen (usually I am 110/70 and right now I am 164/96) which makes me weary of this drug. I do have more energy and can read a paragraph without falling asleep. I feel the effect after an hour of taking it, then about 3 hours later it wears off and I am my normal, sluggish, disorganized self.  I will call my Dr. for reassurance, but I am already addicted to nicotine and caffeine.  I dont want another addiction.",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2011-02-07 22:15:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=81&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "HellNo").first_or_create(username: "HellNo",caregiver:false, age: '13-18',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Made me go crazy",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2011-03-08 14:48:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=80&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "not tellin").first_or_create(username: "not tellin",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I just started &amp; want to know if it gets people depressed or aggresive.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2011-04-05 21:35:51', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=80&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "gruesome").first_or_create(username: "gruesome",caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "I am high functioning Autistic.  I take two doses of 40 mg per day.  It calms me down and I lost about 25 pounds.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-04-07 010:55:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=80&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "w.g.").first_or_create(username: "w.g.",caregiver:false, age: '65-74',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "possible seisure, combined with caffine",effectiveness: 3, ease_of_use: 1, satisfactory: 1, created_at: '2011-04-22 08:38:20', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=80&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "Tom").first_or_create(username: "Tom",age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Worked well when I first began",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2011-04-25 13:18:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=80&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '7-12',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "bad dreams, depression enhanced, irritable at anything, just do not feel like self. sleepless nights.",effectiveness: 3, ease_of_use: 2, satisfactory: 1, created_at: '2011-05-06 04:01:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=79&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "ron.harshbarger@yahoo.com").first_or_create(username: "ron.harshbarger@yahoo.com",email_address: 'ron.harshbarger@yahoo.com',caregiver:false, age: '55-64',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "startet takeing the medication was feeling better now allways feeling tired and the dr called me and sais my thyroid was low is it the ritalin.that is causing this",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2011-05-15 16:47:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=79&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "Jackie").first_or_create(username: "Jackie",caregiver:false, age: '45-54',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "To begin with it worked really well. Then my reaction to the drug started to wane. My dr. doubled my dosage. To begin with it worked well but has started to become ineffective again. I a very worried about the ingredients in this drug.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-06-07 08:42:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=79&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "?").first_or_create(username: "?",caregiver:false, age: '65-74',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have sleep apnea and the masks don't work.  Methilphenidate(Ritalin generic) keeps me alert for 5-6 hours a day which is much better than none.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2011-06-09 19:09:32', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=79&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Amandazon247").first_or_create(username: "Amandazon247",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I am 37 years old and after having my son diagnosed with ADHD and going through several doctors and FINALLY going to a psychiatrist he stopped me after my sons appoinment and asked me to come see him alone he would like to test me. I was then also diagnosed with ADD. I am in the beginning of trying to control this for myself though I have been researching and controlling it for my son for over 5 years. My son takes concerta and it seems to be working for now but I have earned that sometimes you have to switch up meds to keep them effective. I would also suggest anyone needing this kind of treatment see an actual Psychiatrist he has been a life saver for me ... Anyway Ritilin is working for me so far.. I do experience the tight jaw... mild headaches and nausia.  I found if I eat something about 30 minutes after taking it no headache or nausia.. I do tend to not sleep well if I take my last dose too late. But I can concentrate so much better and I get so much more accomplished. At first it did cause me to be irratable but I think that was more me being able to focus on everything going on around me instead of feeling like there was a movie playing in the background. I go back for a check up soon and it will be 3 weeks of taking this med. but so far so good.. Its not perfect or a miracle but it is helping.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2011-06-16 13:58:40', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=79&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", age: '',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "It has made me able to concentrate and helps with anxity",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-06-28 08:11:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=78&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2011-07-15 17:50:34', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=78&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "Ritalin worked great for me! The only problem was, I has a crash in the afetroon and had to make sure I had the afternoon dose with me no matter what was going on.  I just changed to Vyvanse this week. I hope I have the same results.  I have taken Ritalin for 3 years",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-07-20 012:35:30', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=78&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "scalliwags39").first_or_create(username: "scalliwags39",caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "just started taking,but am cincider switching to anoyher adderall.",effectiveness: 3, ease_of_use: 2, satisfactory: 3, created_at: '2011-08-08 19:48:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=78&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Other').first_or_create(name: 'Other')
-newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "brad_turner28@yahoo.com").first_or_create(username: "brad_turner28@yahoo.com",email_address: 'brad_turner28@yahoo.com',caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "Having abused opiates.oxycodone in high doses)ssri's would not touch depression,5 psychiartrist,,i was found to have add/adhd,so one med took away the depression and the adhd,adderall,last resort for depression,in those who abused opiates,not all cases,however,this is what i,,e and other patients who, also like my self did the mmt(methadone maintenance).looking back should have avoided m.t.t.Suboxone was not availabe,when it did i easily got free of methadone,suboxone,easier,a lot easier to wean from suboxone.now adderall and 1 ,2,1.0 alprazolams(Xanax)will keep adderall from losing needed sleep.methadone and xanax is a deadly combonation.most people are aware,however,it has responsible,for many,deaths,i was fortunate and resucitated ,twice,okay,i,m just sharing,thank you for letting me share.sincerely.B.T.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-08-20 03:51:09', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=78&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I take oxycodone for my chronic pain but continue to work 40-50 hrs per week.  I take ritalin to keep from falling asleep at work.  I use it so I can complete tasks and stay focused.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-09-05 01:35:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=77&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "bugnancy").first_or_create(username: "bugnancy",caregiver:false, age: '25-34',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking this for a week now, and have had headaches every afternoon. I can tell a slight difference in my attention span. I have not seen a considerable difference as I was hoping.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-09-06 17:55:18', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=77&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "Leddie50").first_or_create(username: "Leddie50",caregiver:false, age: '55-64',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "My energy level improves,however I'm bipolar and it was given to me to help my depression.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-09-17 010:30:27', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=77&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
+end
+User.where(username: "jglover0014").first_or_create(username: "jglover0014",caregiver:true, age: '25-34',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "It works ok but after it wears off it make me feel that unease,confuse, and my body shuts down.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-09-19 09:54:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=77&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My six year old son was put on Focalin to help with his ADHD. This medication made him an absolute monster. For the two weeks he was on it he was in a constant rage over the tiniest things.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2007-11-02 13:38:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Ritalin 10 mg").first_or_create(username: "Ritalin 10 mg",caregiver:false, age: '19-24',gender: 'Male')
+end
+User.where(username: "proud mom").first_or_create(username: "proud mom",caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "There is some high and low levels of drug stimulation, which makes me feel like im riding a rollercoaster while i'm studying. Sometimes i feel too excited, and sometimes seems like the med makes me more unplugged from the reality.",effectiveness: 4, ease_of_use: 4, satisfactory: 3, created_at: '2011-09-20 19:14:08', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=77&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 10 year old son was using Adderall which caused him to have unusual ticks such as throat clearing and head twitches, and he was unable to eat.  We switched to Focalin about 18 months ago.  Focalin does not give him these problems and helps him concentrate much better.  The one problem I see is that it quiets him to a point he seems shy and nervouse to people.  Focalin has given him the least amount of side effects and his grades are amazing.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-11-09 08:11:01', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "im 41 yrs old. diagnosed with add for over 10 years. I started on concerta ER, which was perfect, no side effects, no notice at all in change of behaviour. lost my insurance and could no longer afford it. its 135 without insurance! so i had to switch to generic ritalin, I take just 10-20mgs,the smallest dose avail. If i have a busy day or meetings, ill take the 20, but usually just a 10mg dose is good. I dont feel or notice anything at all, but I do know it works because im able to focus, work, and i don't forget things or my mind doesn't wander. Scary moments like forgetting my 8 mnth old son on by bed and he rolls off it on to the floor. NOT GOOD! LUCKILY bed is close to the floor and we have thick carpet and he just kind of slid off it, but still reminded me that I have to be more alert and if im watching him myself i take larger dose. It does wonders. Sometimes Ill have these weird panic attacks in middle of the night. I wake up alarmed, with a sense of doom or that im dying or choking, but then i realize in 5 seconds or so that im just having an episode or dream and that I'm fine. I get a drink of water and go back to bed. see your doctor to try different doses or even different meds, but it takes few weeks to settle in and get used to. you can't make decisions based on just a week of use or a few days. hope this helps.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-10-04 010:47:23', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=76&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
+end
 User.where(username: "J").first_or_create(username: "J",caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-10-04 22:22:05', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=76&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Adderall made her a complete zombie.  Concerta &amp; Metadate were only effective for a short period of time.  Focalin XR has been the Godsend that finally actually worked, producing notificible positive results, without diminishing personality.",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2007-11-13 13:49:39', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", age: '',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2007-11-20 010:41:54', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=113&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I was great for about a year for my 11 year old son and then his body was no longer reacting to it.  It was great because he still had an appetite compared to the other ADHD drugs used in the past and it did not last as long therefore it did not keep him up all-night. Unfortunately we are at a max dose of 20 mg. and will need to try something different.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-11-26 08:10:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I have ADHD and this was prescribed by my Physiatrist and overall it helps but, you may result in having some minor to mild trouble going to sleep. Considering i'm on other medications that include antidepressent's, and i'm a minor others will most likely have different side effects.",effectiveness: 3, ease_of_use: 5, satisfactory: 4, created_at: '2007-11-27 01:10:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
 newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "Vermillion_89").first_or_create(username: "Vermillion_89",age: '19-24',gender: 'Female')
+end
+User.where(username: "CGgrl86").first_or_create(username: "CGgrl86",caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "My tongue and lips have been swallen for days days now and I dont know why?It was used recreationaly.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2011-10-04 23:14:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=76&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "After taking Focalin for the past year or so, I am just now realizing that it is to blame for my severe mood swings - msotly towards a very depressed, almsot sedated mood. I felt very anxious, sad, and self-concious while on it, and after reading teh allergic responses to it's main ingredient - Methyphenidate - I am clear now that my body does not react well with that chemical. I was even experiencing the other allergic reaction of small purple spots (like little bruises) whenever I was on Focalin. I highly, highly recommend Aderall XR - despite the minor insomnia, it is wonderful.",effectiveness: 2, ease_of_use: 5, satisfactory: 1, created_at: '2007-11-27 16:06:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "ROGER6544").first_or_create(username: "ROGER6544",age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "THIS MEDICINE HAS BEEN A GOD SEND FOR ME. I CAN NOW STAY AWAKE AL DAY.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-10-11 06:39:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=76&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "CK1991").first_or_create(username: "CK1991",caregiver:false, age: '0-2',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '3-6',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I was about 3 years old when I was placed on Ritalin. According to my parents, I had hallucinations, would wake up screaming in the night, as well as break out in twitches. They took me off it after one month of use, and I was put on another medication. I believe it was Concerta. I was on Concerta for the next 15 years of my life.I still suffer from uncontrollable hand shaking as a side effect of using the Ritalin at such a young age. This is NOT a safe drug for children to be on. It should be taken off the market for children under the age of 16.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2011-10-26 012:22:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=76&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Before my daughter was on Focalin she was very uncontrolable as soon as we started her on the Focalin there was a major change in her attitude it seemed to start working with in 3 days. The only problem we had is she was not gaining any weight so the doctor tried switching her to Adderall and it made her very violent and we decided to try Focalin again and since then she has been doing great as long as we keep her on a strict eating schedule.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-12-03 20:58:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Jim").first_or_create(username: "Jim",caregiver:false, age: '19-24',gender: 'Male')
+end
+User.where(username: "simon").first_or_create(username: "simon",caregiver:false, age: '3-6',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "I'm building a tolerance to it quick, and it doesn't last very long at all. It does help me focus and do slightly better in school, but it also gives me anxiety.",effectiveness: 3, ease_of_use: 2, satisfactory: 3, created_at: '2011-11-03 011:15:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=75&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "my child is 5yrs old.this drug so far has been the only adhd drug he can take and not vomit.however he has no appetite at all.hes looseing wait fast.he goes all day then eats at night.a smaal meal.when the drug wears off hes out of control, until the next dose.but other than that its like a mireacle drug.hes like a dffrent kid.but im worried about his eating and his out of control behaveiour.i will talk to his docter when he goes back for follow up feb 21 o8.but do you have any suggestions.mrs ellis ps hes been on this drug 6 weeks now",effectiveness: 4, ease_of_use: 5, satisfactory: 2, created_at: '2008-01-07 07:08:09', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=112&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "DB").first_or_create(username: "DB",caregiver:false, age: '25-34',gender: '')
+end
+User.where(username: "Princess").first_or_create(username: "Princess",caregiver:true, age: '7-12',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I have Crohns Disease and it has been causing minor flare up in my  bowel...sooo painful and trying to find what will help me with out hurting me...",effectiveness: 4, ease_of_use: 2, satisfactory: 2, created_at: '2011-11-11 22:20:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=75&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My Daughter was on addreall and had no appatite now she eats. Also seems to be doing better in her classes.{consentration's better} Does't last as long, so takes extra in afternoon. Much better.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-01-07 24:46:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Depression').first_or_create(name: 'Depression')
-newdrug.conditions << Condition.find_by_name("Depression")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Female')
-newuser=User.last
-newuser.reviews.create(comments: "I have been taking the generic form of Ritalin for about a month and a half now.  The energy and focus it has given me have been awesome.  I am able to focus on the tasks at hand and get alot of things accomplished.  The only down side I have seen thus far is a bad pounding headache that Tylenol doesn't seem to help either.  Will talk to my doctor to see if it is a side effect of the meds or something else because the headaches are pretty bad.  I haven't seen a whole lot of comments from others saying headache was a symptom so...maybe it's just coincidental.  Would love to stay on the meds because the my energy and focus level have sky rocketed.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-11-12 22:29:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=75&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "tuc27004").first_or_create(username: "tuc27004",caregiver:false, age: '19-24',gender: 'Female')
+end
+User.where(username: "marcy").first_or_create(username: "marcy",caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "This drug has caused me to vomit each and every time I use it. In addition, my stomache gets very upset, and I experience dizziness.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2011-11-22 010:12:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=75&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 12 year old son hab been taking focalin for over a year.... I have notice several things he grades are great from 1st thru 6th period, he's last two classes of the day he's getting a c in ( other classes A's and B's) I was wondering if any other parent has had this problem.  His weight has also been a problem.... we have finally gotten him to a whole 80 pounds all his other friends out weight him by 30 or 40 pounds he is 5' tall.... any help would be wonderfull....",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2008-01-30 20:53:00', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "lewis").first_or_create(username: "lewis",caregiver:false, age: '45-54',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "found it helped me after taking the drug for about four weeks my problem greatly decreased",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2011-12-04 010:11:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=75&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "bill").first_or_create(username: "bill",caregiver:false, age: '35-44',gender: 'Male')
+end
+User.where(username: "mom of four").first_or_create(username: "mom of four",caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "this medication works very well for me.  I can concentrate and actually sit down and watch tv with my wife!!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-12-06 24:36:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=74&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 7 year old son reacted very badly to this medication. He is bi-polar and the medication made him suicidal and manic after the first (and only) dose. We will never use it agian, clearly not the right medication for him.",effectiveness: 1, ease_of_use: 2, satisfactory: 1, created_at: '2008-02-03 21:03:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "lacy21").first_or_create(username: "lacy21",caregiver:false, age: '19-24',gender: 'Female')
+end
+User.where(username: "Waste").first_or_create(username: "Waste",caregiver:false, age: '19-24',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "slows me down a little but doesn't help very much or last very long",effectiveness: 2, ease_of_use: 5, satisfactory: 1, created_at: '2011-12-07 13:38:16', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=74&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Side effect: blurred vision. Did not help with ADD at all!",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2008-02-07 21:38:00', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "tjlvv").first_or_create(username: "tjlvv",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This medication seems to not last lomg enough to get through dinner and homework. makes child seem like emotional roller coaster never know how child will act from one minute to the nexts. cries very easily.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2008-03-01 20:50:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=111&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "debbie").first_or_create(username: "debbie",age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My son was on focalin for three weeks.  Although it did help him with his concentration and focus, He started to have seizures.  We took him off the medication but he is still having seizures.  I think that it did something to his brain.",effectiveness: 4, ease_of_use: 5, satisfactory: 1, created_at: '2008-03-10 17:22:16', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "channing1974").first_or_create(username: "channing1974",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 10 yr old has been on this med for over a year and we are still adjusting it as we go. We found this med to have the least side effect of we have tried so far. it takes time to adjust. As for not eating he shared that symptom to bad at first we expressed our concerns to the dr. he reluctantly prescribed a steriod (mild) to help his appetite",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-03-22 23:10:29', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "sondra senesac").first_or_create(username: "sondra senesac",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "this is the third medication i have tried with my daughter and it is by far the best we have used",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2008-03-24 22:07:47', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "NCW055").first_or_create(username: "NCW055",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I am an adult with add.....it carried over from childhood. I was given Ritilan first, and the pharmacy made a mistake and filled the script with Focalin. They called two days later to tell me....but it was a blessing really. Focalin XR works much better for me and so my doctor switched me onto it. Sometimes i get muscle cramping though.....that is the only draw back for me......but Ritilan did the same thing....and it had more side affects. I like Focalin better than the other ADD drugs.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-04-02 06:26:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "hv2badd").first_or_create(username: "hv2badd",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I am an adult with ADD.  I also take Cymbalta for depression.  This medication caused me to have severe mood swings.  Either I was extremely happy, extremely aggitated, extremely depressed, or I was having an over the top anxiety attack.  Dr. has now prescribed Concerta, we'll see how this one goes.",effectiveness: 3, ease_of_use: 4, satisfactory: 2, created_at: '2008-04-05 21:40:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=110&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "gehlkat").first_or_create(username: "gehlkat",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Our foster son was diagnosed with ADHD at the age of 6.  He was originally prescribed Concerta XR.  He lost a tremendous amount of weight with Concerta and his behaviors got worse over time.  Our doctor prescribed Focalin XR 10mg a week ago today.  Our foster son is happy and excited about his accomplishments for the first time in his life.  His teacher has noticed a difference as well as our family.  He had gained some of his weight back and has an appetite again.  We are very pleased with this medication and our son is too!",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-04-12 011:59:15', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I am an adult with ADD and started taking Focalin a few weeks ago.  It has already been life-changing for me.  I am able to work from home for 8-9 hours per day and finish projects I would have never completed before.  I wish I would have been diagnosed and treated a long time ago so I could have accomplished more at this point in my life.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-04-12 20:52:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Bert").first_or_create(username: "Bert",caregiver:false, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I am 39 years old and was recently diagnosed with Adult ADD.  After trying Stratera for a few days, my doctor changed me to Focalin 5 mg twice daily.  The Stratera did not work for me, made me very drowsey, wicked cotton mouth, upset stomach and the ever onmious &quot;sexual side effects&quot;  but alarmingly it gave me very gruesome nightmares.  I've never had that happen before, so the doctor changed me to Focalin after only 4 days.Wow what a lifesaver.  I'm currently in school fulltime because of a career change.  With the ADD I was unable to work and go to school at the same time, to the point where my parents offered to support me while in school.  The ADD was just too much for me to do both.  After only a few weeks, I can say that this drug has saved me.  Finally I can concentrate fully and not get distracted.  This has allowed me to start working again while in school, so I am extremely happy.As for side effects, I've been pretty happy with the dose I'm on.  The only real side effect for me is loss of weight, which at my age isn't something I'm going to complain about too much! lol  I do have to remind myself to eat, and it's a weird sensation to go a whole day without eating and not be hungry.  It's amazing in that respect.  Other than that I have no complaints.One last comment is regarding sleep problems.  I have suffered through many many sleepness nights because of the ADD.  It is not unusual for me to be up until 3 or 4 am everynight because I couldn't quiet my mind enough.  I take this drug twice daily, six hours apart.  In a roundabout way, Focalin has relieved the sleep problems, because by the end of the day I seem pretty well spent.  I workout 3 times weekly and I seem to have more energy now due to the Focalin.  The workouts and the Focalin ensure that I am dead tired by 10 pm.  This is a fast acting drug and I feel it within 5 minutes of taking it on an empty stomach.  It doesn't make me feel ramped up, I do have a lot of energy when taking it.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2008-04-23 04:13:19', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Hunter").first_or_create(username: "Hunter",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "INSOMIA AND LOSE OF APPETITE",effectiveness: 5, ease_of_use: 3, satisfactory: 3, created_at: '2008-04-23 24:06:11', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "MOOD SWINGS",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2008-05-01 22:45:53', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=109&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I was prescribed this about 6 months ago, I am not a heavy drinker how ever after attending a wedding reception and having 2 glasses of wine I was unconcious and talking out of my head I passed out and would come two over and over again I had no clue as to where I was or had been. I became extremely sick to my stomach and was take to the ER I was told this was a side affect. My advise is do not drink at all while taking this med!~!",effectiveness: 3, ease_of_use: 5, satisfactory: 1, created_at: '2008-05-27 18:11:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "sixof08@AOL.com").first_or_create(username: "sixof08@AOL.com",email_address: 'sixof08@AOL.com',caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Haven't started this treatment yet.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2008-05-31 24:20:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "mother").first_or_create(username: "mother",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "dosent last throughout the day",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2008-06-01 14:18:16', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "fcfirecat").first_or_create(username: "fcfirecat",caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My son has struggled with a mild form of ADHD since 3rd grade.  He's now going into 8th grade.  After trying numerous drugs over the past several years that had severe side effects and very little good effects, Focalin has been a blessing!  His grades have improved tremendously (almost straight A's!) and he is so happy now!  He even gets along with his peers and sister (he never had friends before).  The only side effect is his lack of appetite which is easily controlled.  We are very satisfied!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-06-13 14:25:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Mom of 6").first_or_create(username: "Mom of 6",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I started out on 5mg daily with NO results.  I am up to 10mg a day still with no results.",effectiveness: 2, ease_of_use: 4, satisfactory: 1, created_at: '2008-08-07 07:37:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=108&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This medication is given to my 7 year old and seems to work well with very few side effects.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-09-02 18:38:13', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Adrianne ").first_or_create(username: "Adrianne ",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I knew my son was high maintence since the day he was born but it wasn't until many complaints from his preschool teachers, and my husband and I being totally wiped out at the end of the day when I started to realize he has ADHD.  We saw SEVERAL doctors and they all said yes to ADHD.  I was in denial and tried so hard to help him but finally I had to help him with this because it was more than I knew how to deal with (and I have a BS in ECH EDU).  I took him to a child psychiatrist last Novemeber and he has been on 5mg of Focalin since January.  I took him off of it for a month during the summer and sometimes I don't know if I really see a difference in behavior or not.  He seems too be more calm but he is very moody.  He started Kindergarten last week and we are still getting complaints about his behavior and attention issues.  I will talk to his Dr. about this next month but I feel for all parents and children who have to live with this.  It's a lot to deal with...  I just pray it gets easier somehow for my son.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2008-09-07 21:15:42', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-09-22 13:58:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-24 010:52:27', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
 newdrug.conditions << Condition.find_by_name("Other")
-User.where(username: "Jasmine16").first_or_create(username: "Jasmine16",caregiver:false, age: '45-54',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I have been taking the ritalin for over a month now and find that I have periods where I get feeling down and drained.  I was taking Provigil but am working with insurance to get this medicine approved. Very expensive so had to switch to the ritalin for now.  They currently have me taking it for Idiopathic Hypersomnia (fatigue without a cause).",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2011-12-07 15:01:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=74&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 9 year old has ADD (just inattentive)so we needed something for school. She was on Vyvance for 3 months. She lost lots of weight and was very moody. We changed her to Focalin XR a month ago. It has been a blessing. We haven't noticed any side effects and it works great. She can't swallow a pill so we open it and pour it on her tongue and then she takes a drink.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-26 16:36:20', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=107&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Recurring Sleep Episodes During the Day').first_or_create(name: 'Recurring Sleep Episodes During the Day')
-newdrug.conditions << Condition.find_by_name("Recurring Sleep Episodes During the Day")
-User.where(username: "akc41").first_or_create(username: "akc41",caregiver:false, age: '65-74',gender: '')
-newuser=User.last
-newuser.reviews.create(comments: "I take the generic, methylphenidate (sp?).  I have narcolepsy.  This drug provides more alert time than provigil.  The poor rating on ease of use is the monthly trip I have to make to see the doctor and receive another prescription.",effectiveness: 4, ease_of_use: 1, satisfactory: 5, created_at: '2011-12-14 09:34:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=74&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Cognitive Impairment following Traumatic Brain Injury').first_or_create(name: 'Cognitive Impairment following Traumatic Brain Injury')
-newdrug.conditions << Condition.find_by_name("Cognitive Impairment following Traumatic Brain Injury")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '65-74',gender: 'Male')
-newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-01-04 20:24:39', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=74&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
-#. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "none").first_or_create(username: "none",caregiver:false, age: '',gender: 'Female')
+end
+User.where(username: "lilkrys").first_or_create(username: "lilkrys",caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "I have ADDH; helps me stay focused; does not disrupt my sleep - I take 20mg at bedtime to control nightmares from PTSD.I'm ok with it.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2012-01-14 16:03:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=73&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "my son has adhd... very hyper and very innatentive... he is 7 years old. we tried concerta at first and it was working great, but i was cutting the pill up for him to take cuz he couldn't swallow it... the doctors said not to do that it wasn't good so they switched me to foculin since it was a capsule and i could just empty the powder into applesauce or something. the first night he was up the whole night HALLUCINATING..... it was the scariest thing we ever experienced. he was seeing bugs crawling everywhere, hearing bees flying around him, seeing people in my tv... it was so scary... i took him off of it immediately. im now going to try fish oil. ive been doing some research and it has been proven to do wonders, and its an all natural supplement with NO side effects.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2008-10-02 03:35:11', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '35-44',gender: 'Male')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-01-16 010:08:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=73&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2008-10-03 21:16:15', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "aset").first_or_create(username: "aset",caregiver:false, age: '19-24',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '25-34',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "i have struggled with ADD since i was about 9 andi feel like it works great..im on the 20mg once daily and i take it about 9am and i it definatly help with concentration it dose ware off about noon..i will talk to my doctor about taking mabye 1/2 tab at noon.",effectiveness: 3, ease_of_use: 4, satisfactory: 4, created_at: '2012-01-21 14:50:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=73&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My son was on this medication for 2 years. It was on a time release so by the time he got home, I saw my normal child. It wasn't until I took him out of school for a couple of days for a trip that I saw what it was doing to him. He had NO personality. He would sit and stare into space, not interested in anything going on around him. When I discussed this with his teachers, they told me that he acted like a zombie&quot; at school and never interacted with the other kids. I took him off the medication and we have tried going without meds for a year now. But now that he is in 5th grade, the teachers aren't as helpful with his problems. They tell me he needs to be punished and taught responsibility. On the way back to the dr. tomorrow.....",effectiveness: 3, ease_of_use: 5, satisfactory: 1, created_at: '2008-10-07 13:47:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "dechea").first_or_create(username: "dechea",caregiver:false, age: '45-54',gender: 'Female')
+end
+User.where(username: "lbaezl").first_or_create(username: "lbaezl",caregiver:false, age: '3-6',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "I am a 48 year old female who has been on Ritalin 10 mg for 5 months. I have gained 30 lbs on this medication. I take it twice a day once in the am and again after lunch. by 7 pm each day I am tired and groggy and starved I eat everything in site. Generally after I eat all I want to do is sleep.I crash and sleep so hard it is if I have been drugged. If I awake to go to the bathroom I generally feel hungry and often have to fight the urge to go to the kitchen for a snack. I've never been a candy or junk food eater but find myself craving chocolate and chips. Will wake up and eat junk food and go right back to sleep. I dont like this drug. Was previously on Vyvanse 60mg once a day but was getting muscle spasams. that drug worked great but the spasams were awful.Dont know if it came in a lower dosage my doctor just took me off it a smaller dosage may have prevented the spasams. My doctor has now prescribed focalin RX which is very expensive even with my insurance",effectiveness: 2, ease_of_use: 3, satisfactory: 1, created_at: '2012-02-06 010:11:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=73&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 6 year old son had been having trouble is school since preschool, and at home since he was born with hyperactivity...he was overbearing with his friends and even lost some...I dreaded picking him up from school b/c of the teachers report...I've even had to pick him up early due to disruptive behavoir...he is also gifted with compounded the issue of being bord in school...We started medication for the first time 3 weeks ago and I absolutly love it...we have not had a negitive report since...he has not had any side effects and I medicate on weekends as well so I can see how it affects him and it is wonderful to see him interacting with others appropriately...the other day he said &quot;thank you mom for my brain medicine.. now I feel like a superhero because it helps me think more clearly&quot;  I almost cried...it's been a God-send!",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2008-10-23 08:46:01', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "tom").first_or_create(username: "tom",caregiver:false, age: '55-64',gender: 'Male')
+end
+User.where(username: "Trying").first_or_create(username: "Trying",caregiver:true, age: '13-18',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "name brand ritalin has less side effects and works more effectively than generic. why? and are there different brands of generic",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-03-02 23:38:19', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=73&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "The overall effect on my 13 year old son   has been moderate but real. He is still the same child but without the extremes. His grades have improved significantly with less occasions of forgetting assignments. I see an increase in his chance for success.  The playing field has been evened out for him.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-10-25 13:49:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=106&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:false, age: '25-34',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I took this medication for about 3 months.  the side effects I experienced after a month, were uncontrollable diarrhea, and always sick at my stomach, lost 15 pounds, changed my diet, hoping that would help my stomach.  I was swapped to adderall just this week.  Do not have near the side effects.  Ritalin however helped with focusing, but I felt trapped in my own head, I couldn't express how I was feeling when I was on it.",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2012-03-14 03:36:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=72&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "When my son first started taking Focalin xr he seemed to be zombie like now, almost a year later he has become very aggressive at school, moody, and cries easily.",effectiveness: 2, ease_of_use: 3, satisfactory: 1, created_at: '2008-10-26 012:16:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Peter").first_or_create(username: "Peter",caregiver:false, age: '25-34',gender: 'Male')
+end
+User.where(username: "olsgasweetei56").first_or_create(username: "olsgasweetei56",caregiver:false, age: '45-54',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I have been on Ritalin for 2 years now and have found drastic differences between different generics.  I personally have found the generic i find at Dominicks and Target to be the most effective for me.  I had issues with not eating and sleepless nights for the first couple weeks but all subsided.  I tried Adderall and found it made my mind race and heart beat hard.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-03-15 22:26:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=72&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "Terrible side effects: hemmoroids, ulcers, hair loss, extremely heavy periods. Then my createnin levels and my bood pressure became unstable, too. I was refferred to a kidney specialist.  I was able to focus better but it was not wortht the side effects. Better to live a slow, easy life than to be in pain all the time, not even able to sit down!",effectiveness: 3, ease_of_use: 5, satisfactory: 1, created_at: '2008-11-09 011:44:56', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "efsmith326").first_or_create(username: "efsmith326",caregiver:true, age: '3-6',gender: 'Female')
+end
+User.where(username: "allahuakbar").first_or_create(username: "allahuakbar",caregiver:false, age: '13-18',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "has caused aggression,outburst{verbal)fit throwing",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2012-04-16 05:09:13', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=72&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "i was able to complete more schoolwork and had slightly better time management, but focalin xr made me anorexic and it has taken me a very long time to overcome it even after i discontinued my use of this medication after about 2 months. it also made me like a zombie and sometimes i felt like i was high. at first i ate more than i did on other ADHD medications, but when i started to gain wait it bothered me like it never has before, and i was not overweight. i had serious OCD symptoms and anorexia nervosa brought on my focalin XR i know side effects of ADHD medications are different for everyone but please if you start to get symptoms of anorexia discontinue the drug right away before you get deep into it because it will not go away if you wait too long.",effectiveness: 3, ease_of_use: 1, satisfactory: 1, created_at: '2008-11-15 17:54:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Rachel Lea26").first_or_create(username: "Rachel Lea26",caregiver:true, age: '25-34',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '13-18',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "My daughter takes this medicine. She takes 10mg at 8am, 10mg at 12pm and 5mg at 4pm. It has really helped her calm down. The only side effect she has had is nervousness and weight loss. She has lost 10lbs. Other than that it has helped her alot.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-04-20 22:44:09', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=72&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My son has had adhd since 1st grade and now he is 13 years old. He has tried every medicine but they either made him a zombie, severly depressed, angry, etc. but focalin has been a miracle in his behavior and his grades are up. He has been on focalin for over one year and it is the best adhd medicine.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-11-19 23:06:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "prissygirls").first_or_create(username: "prissygirls",caregiver:false, age: '25-34',gender: 'Female')
+end
+User.where(username: "zacheysmom").first_or_create(username: "zacheysmom",caregiver:false, age: '3-6',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I just started this medicine last week,and it has really helped me focus better at work,and at home. It has also helped a lot with my OCD, and helps me stay calm through out the day. It did make my stomach upset but it didnt last long. The other problem i am having is musle spasms at night but i hope they wont last long either. I will give this drug a month before i think about trying something else.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2012-05-07 24:10:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=72&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My son was diagnosied with ADHD this summer.  The Doctor told us about focalin, he just told us about the eating and sleeping part.  My son does fine while on the medication, but when hes is coming down off medication, he has aggression and realy high anxiety.  Then when the medication is completly gone hes hungry. We are suppose to be switching him to something that does not cause this reaction",effectiveness: 4, ease_of_use: 2, satisfactory: 2, created_at: '2008-11-26 14:38:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=105&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "visitor1356924313").first_or_create(username: "visitor1356924313", caregiver:true, age: '3-6',gender: 'Female')
+end
+User.where(username: "K&amp;amp;K'sMom").first_or_create(username: "K&amp;amp;K'sMom",caregiver:true, age: '7-12',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-05-12 22:36:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=71&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My daughter started taking this medication approximately two weeks ago. I have noticed some decrease in appetite however, she seems to be doing much better overall. I will continue to watch her weight because she only weighs 64 lbs and has just turned eleven. In her words, &quot;I can understand the teachers alot better now, mom.&quot; I hope to see continued improvement in her behavior.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2008-12-03 08:46:43', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "Anna34").first_or_create(username: "Anna34",caregiver:false, age: '25-34',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "feels like it wears off to soon they i get angry",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2012-05-29 15:54:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=71&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "My 8 year old son has been using focalin (10mg) for about 3 or 4 months now.  I have not seen a dramatic change in his behavior but his teacher has.  He went from a 49 on the ADHD rating scale to an 8 on the rating scale.  He is able to focus at school more, complete his work at school and just function as a normal child at school.  I have never seen him as a zombie, lose his appetite, lose sleep or have any other negative side effects.  I only wish I saw more effects of his medication at home.  He is still a little wild and forgetful at home.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2008-12-11 010:15:15', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "melandjosh88").first_or_create(username: "melandjosh88",caregiver:false, age: '25-34',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '25-34',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I was a very young when I was diagnosed with ADHD. And I was prescribed Ritalin. And it made me sit and stare my days away.I Hated it!!!",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2012-05-30 22:57:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=71&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "So far I have been on Focalin 5mg twice daily for one week.  The first day I took it I felt that I actually wanted to do things,cleaning, homework, laundry.  I do all of those anyway but it's like I have to force myself.  I work full time and go to college full time. I do feel that it is helping a little.  I don't feel like I'm all amped up or anything. More like, clearer. The only side effects are very very mild.  Feeling not very hungry.  Which is fine by me, because I also take Welbutrin XL 300mg and Seroquel 400mg which made me gain like 30lbs in the last six months.  I'm still eating well. Just not allllll the time like before. I also noticed a sort of heavy feeling in my left shoulder and left side of my neck.  Not sure what that is about.  I'll be sure to ask my Dr about it though.  It usually only happens if I take it on an empty stomach.  But other than that I can't tell I'm taking it.  I was scared starting ADD medication because I hear alot of terrible things about being zombie like, mean, moody.. and so on.  So I'm going to stick with it and see how it plays out until my next appointment in a month.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-01-06 011:12:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
-Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
-newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "blondie3").first_or_create(username: "blondie3",caregiver:false, age: '25-34',gender: 'Female')
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "wagel").first_or_create(username: "wagel",caregiver:false, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "I have LOVED being on Ritalin! It gives me a mental focus like &quot;i can do this!&quot; I have also not changed anything and lost weight on it. It gives me so much more energy and as a mom I needed a little pick me up :)",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-06-10 09:56:02', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=71&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "This was prescribed for ADD and insomnia.  I take the short acting generic version of Foclin. I can take it when needed, typically first thing in am, and then 4 hours later, with a 3rd dose if needed @4 more hours.  I like being able to control dose and not have to deal with too much wakefulness when bedtime comes around. After the dose wears off, there is a considerable feeling of fatigue, which helps promote sleep in the evening.  Very much able to concentrate and complete daily tasks with an ample amount of energy.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-12 24:17:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "solong1234").first_or_create(username: "solong1234",caregiver:false, age: '35-44',gender: 'Male')
+end
+User.where(username: "spacecase81").first_or_create(username: "spacecase81",caregiver:false, age: '25-34',gender: 'Male')
 newuser=User.last
-newuser.reviews.create(comments: "Don't be afraid to start gradual, split the pills up to small doses, and eventually not take the full dose recomended by doc if you don't need that much.  Years ago went to doc with chest pains and after ruling out physical aliment, he referred me to a physiologist. Head doc diagnose me with add and gave me strattera. didn't know much about it but it turned my life around. Had problems peeing, hurt ejaculate, and after taking cold meds one winter I had serous high blood pressure. Body doc told me to stop, and the head doc started me down the road of lexapro and other meds that made me not give a damn.  Got off those after my house went to crap...and wasted 8 years of my life.  Recently started screwing up at work, and relizing I couldn't get anything done outside of work, went back to my 3rd head doc and ask for generic add med. He tried to put me on prozac, saying it was the same as ritalin, adderall, but I wasn't buying it.  He put me on 30 mg ritalin and what a help! First day I notice I was slowing down, not making the mistakes I once made, taking care of my home and myself on only 2 5 mg dose. I like that you can cut the instant release pills in half, I have for months settled on taking 10 in the morning and 2 half throughout the day.  That is all I need, no side effects, I like that I can take only what I need unlike stattera and adderall which you are stuck with the dose and side effects.  No dry mouth, dribble peeing, or obsessive thoughts as with stattera.  Course maybe I was on too high a dose with stattera, who knows?  Just hate that I have to see the doc every month, wish he could do refills so i could cut back on visits, wait times are an hour or more.  There is a stigma and fear attached to these drugs because some abuse them, too sad.",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2012-07-21 21:02:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=71&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-12 24:53:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=104&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
 #. . .
-Drug.where(brand_name: 'Ritalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Ritalin Oral', source_id: '63164')
-newdrug=Drug.last
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
 Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
 newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
-User.where(username: "jphillips50").first_or_create(username: "jphillips50",caregiver:false, age: '55-64',gender: 'Female')
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '35-44',gender: 'Female')
 newuser=User.last
-newuser.reviews.create(comments: "RITALIN HELPS ME A LITTLE. I AM STILL IMPULSIVE AND HAVE TROUBLING ORGANIZING TASKS AND DOING THEM.",effectiveness: 3, ease_of_use: 5, satisfactory: 4, created_at: '2012-08-08 14:56:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Ritalin+Oral.aspx?drugid=63164&drugname=Ritalin+Oral&pageIndex=70&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-13 21:08:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my son is 8 and has been on this medication for about a year.  His grades have been steadily improving and they discussing removing him from special ed. He started out on 10mg but he would come home a little zoned out but when the doctor lowered his dose to 5mg we immediately seen improvements at home as well as at school",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-01-23 14:40:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Liz").first_or_create(username: "Liz",caregiver:false, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 6 yr old was switched from vyvanse to focalin because after being on vyvanse for 2 months, it no longer had an affect on him. He's now been on focalin for a week and i really dont see a difference. I'm really getting nervous because he's only 6 and is on 15 mg with no difference. I guess i'll be calling his doctor again.",effectiveness: 1, ease_of_use: 3, satisfactory: 1, created_at: '2009-01-29 010:07:58', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "A patient of mine was recently changed from concerta to focalin and he has become increasing difficult to handle. He has been very violent and had psychotic episodes since starting this medicine.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2009-01-29 19:31:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "sherry").first_or_create(username: "sherry",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "does this medication makeyour child really whinny and cry alot",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-02-07 011:36:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=103&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "mom of 2").first_or_create(username: "mom of 2",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I gave this medication to my 7 y.o. because she was diagnoised with ADD and was flunking 2nd graded it started off working fine and she was doing great, we were seeing great improvements, then suddenly she began having horribly mood swings, and became very violent and started talking about suicide.  She is now seeing a shrink and no longer taking this medication.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-02-11 010:41:19', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My 10 year old has been taking Focalin Xr for 3 years now.  We had tried strattera and concerta before and neither worked.  This has been wonderful for him.  His teacher said the difference in his behavior and class work being on vs being off the medication was like night and day.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-02-11 18:03:30', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Catherinebert").first_or_create(username: "Catherinebert",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My 7yo daughter could have used this in 1st grade, but we did not start until 2nd.  Her focus in class, grades and homework have all skyrocketed.  We even give her a 2nd dose in the afternoon to help with evening time activities (chores, playing nicely, getting ready for bed). She is taking 20mg, but we started at 5mg.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-13 24:52:33', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 3, satisfactory: 1, created_at: '2009-02-21 21:25:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "terylane").first_or_create(username: "terylane",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This drug has increased my ability to stay focused at work. And has helped me go from 202lbs to 134lbs.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-23 20:25:38', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=102&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "successful_ladyj").first_or_create(username: "successful_ladyj",caregiver:false, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My son takes Focalin 10mg, 1 and 1/2 tablets twice a day.  I have found that the Generic of this product is more potent than the name brand version.  I am pleased with my sons progress under the generic form, but I have recently noticed that it is becoming harder to find in the dosage amount that he needs.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-03-07 24:36:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my son has adhd he is taking 2 20mg a day and is doning very well on this drug. I have a concern I was told that he should not be taken more thatn 1 20mg a day should i take him off this drug?",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2009-03-17 13:00:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "cutenes18").first_or_create(username: "cutenes18",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My son is 9 and was being very disruptive in school, bothering other kids, not paying attention and not doing his work, hiding it, lying, so his doctor took him off adderal and put him on focaline, one in the afternoon at school then another when he came hom from school so he was able to pay attention to his homework, well his teacher requested that I give him it in the morning before school and then his regular dosage at school 4 hours later, so i agreed, she thanked me so much, he is nice and clam all day at school now instead of just in the afternoon, now i deal with his hyperness after school since he can not take it then, but i would rather him behave in school and do his work, it is working great, anyone want to know more feel free to email me...cutenes18@yahoo.com",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-03-31 13:50:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My seven year old son is on this medicine and at first I noticed a change but he is still acting out.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2009-04-01 010:50:03', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "thewholive78").first_or_create(username: "thewholive78",caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I take focalain 15mg xr.I get a rush in the morning but late in the afternoon i get depressed and tired.Is this commen.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2009-04-09 07:02:30', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=101&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 5 yr old nephew just started taking this medication and I was just wanting to know how it is going to effect him. He has ADHD and has had violent outburst, cusing, screaming, and his Dr. has changed his meds many time. Im just worried about him. He is my little guy and I love him very much. In just a few days of him being on this med it has made a turn around in his behavior. He is calm, well behaved, and is getting great letters sent home from his teachers.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2009-04-17 01:47:44', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "arkexpress").first_or_create(username: "arkexpress",caregiver:true, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My daughtyer has been on Focalin 10mg once daily for three yrs. She did better in school but still brought home bad grades. Very agitated alot with a attitude problem. Now that she is going into the 7th grade, my wife an I have noticed that she forgets how to do simple task. Such as turning on the shower or flushing the toilet. We are watching and going to talk to the doctor. Just a little scared we have screwed up with this medication. She is off every weekend an every summer really no change. But she says she can understand better. This was not an issue in the early days of medication. Just started happening in the last few months. we are wondering if this is a long term effect.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2009-04-17 010:24:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "cutenes18").first_or_create(username: "cutenes18",caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Im just confused, I left a post awhile ago, my son take focalin in the morning before school and at schol, he has been taking the generic brand and its been great, yesterday i ran out and debated on sending him to school without anything, the secretary who is a good friend of mine, said yes send him he will be fine, well she called me at 10:30am to come get him because he was being un cooperative, so finally his meds came in, but they had to get me the name brand, i gave him a pill and it doesnt seem to be working as good as the generic brand, could that be right, or am i just losing it, i thought the name brand was suppose to be better than generic, anyone can help email me please, cutenes18@yahoo.com",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-04-24 15:37:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '3-6',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have a hearing impaired 6 y.o wih ADHD and she was switched to Focaline XR after taking Vyvance for 1 day. (It mad her really sick). Focaline XR has helped her to focus so much more now then ever. She is a lot more relaxed but the moodiness seem to be getting worse and the medication isn't lasting long enough. She's getting to the point that she hits herself if she can't get her point across. Some advice please...",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2009-04-29 011:55:43', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Bryan").first_or_create(username: "Bryan",caregiver:false, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I'm a 15 year old who took this drug for about a month.Focalin XR was effective in getting me to pay attention but I noticed that i was very fidgety.My teacher confronted me about my fidgetiness and it was a big problem.Also my parents notice I was very moody and very aggressive.I decided to stop taking Focalin XR after I got into a very aggressive argument with my father.I have a border line intermidiate level of anger problems without any drugs, Focalin XR just made them worse.Fidgetiness also did not improve,it almost seemed worse with Focalin XR.Focalin XR in my opinion should only be for Predominantly Inattentive Type ADHD.I have Combined Type ADHD and it is at an intermiditate level.I hope this review will help parents and patients decide whether Focalin XR is the right medication for them or their children.",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2009-04-29 14:06:31', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=100&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "For years, prior to using Focalin, I had been prescribed a multi-regiment of anti-anxioty/psycotic medications--they never really helped!  I was at my witts end.  Then my Dr. Had me try Focalin--My whole world changed; I was a different person able to read a book, not get ahead of myself in speech and gather thoughts at a &quot;normal&quot; pace.  This medication was, almost, short of a miracle.  I feel like a real person again.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2009-05-14 011:46:01', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My husband takes this medicine and it has been very beneficial for him.  He has had better focus at work and at home.  His personality is more controlled. The biggest thing we have noticed is he can't skip doses.  If he does it is harder for him when he takes the next one and his personality immediately changes from the missed dose.  It's made our lives so much easier.",effectiveness: 1, ease_of_use: 5, satisfactory: 5, created_at: '2009-05-25 17:08:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "It has worked for me very well. I am 15 years old, and i have been taking it since I was 13. There is another side effect that is not listed that I believe should be. Muscle spasms. I have them daily, but other than that it has worked for me very well. I believe that it is much less addicting than they say it is. I would advise this for people having trouble with ADHD.",effectiveness: 4, ease_of_use: 3, satisfactory: 4, created_at: '2009-05-31 15:38:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2009-06-05 20:22:47', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Tiffany ").first_or_create(username: "Tiffany ",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my son is 9 and is doing very well on the medication.he had been on adderall did not like this medcine at all,he lost 15 pounds first month.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-09 14:22:37', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=99&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "prosandcons").first_or_create(username: "prosandcons",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My daughter is 11 and has been on focalin for autism and adhd.  She only takes 1 dose of 5mg per day. This is the first and only med shes ever been on. It works great to keep her focused in school. But although it can be a challenge to help her focused without it, I refuse to give her any more, I deal with her behavior the best I can, because her physical health is of great importance. I read several comments and i truely believe that the dosage that most mentioned giving their kids is crazzy. Its great for school because teachers really dont want any more work than they have to. But as parents, lets find other ways to treat our kids than with narcotics, which is what these drugs are, legal narcotics.",effectiveness: 4, ease_of_use: 4, satisfactory: 3, created_at: '2009-06-16 22:59:53', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I take the Focalin XR and there are actually less side affects than regular Focalin. The generic version can make symptoms worse if you are taking other medications such as antidepressants or certain types of mood disorder medications.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-06-22 012:59:47', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "christin").first_or_create(username: "christin",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "1 week of this Rx ended up with me in the er. I am a healthy 32 year old female and i took this med to help with concentration. My b/p was 140/100 and pulse rate got to 120, vision blurred and left arm went numb. just had a cat scan to see if i possily have any lasting effects from this drug..please use carefully or find a alternative safer med.",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2009-07-23 18:36:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "jcrodriguez777@yahoo.com").first_or_create(username: "jcrodriguez777@yahoo.com",email_address: 'jcrodriguez777@yahoo.com',caregiver:true, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My grandson was born to a meth addict and had problems at school focusing. the doctor put him on focalin and the change was from night to day, Incredible still I wanted to know more of the risks and side effects.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-09-07 011:20:13', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", age: '7-12',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-09-17 14:19:17', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=98&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "vbcoach").first_or_create(username: "vbcoach",caregiver:false, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Slight headaches and difficulty getting to sleep.  Once asleep I sleep well, but have a hard time waking up.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-09-17 21:49:40', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-10-02 011:50:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "chiles23").first_or_create(username: "chiles23",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My moods are more stable and I am more on track where I need to be.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-10-07 012:36:59', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "paigenale").first_or_create(username: "paigenale",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My daughter took this medicine for 2 days.  She was taken off Vyvanese 20 mg b/c it was too strong for her.  After the 2nd day of taking Focalin 10 mg she ended up in the floor of the principals office with dizziness, stomach pains and tremors on her right side.  Needless to say, I have taken her off this medication.  The dr now recommends Strattera 18 mg.  Hopefully that one will do better for us.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-11-12 18:54:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 3, ease_of_use: 3, satisfactory: 1, created_at: '2009-11-18 19:54:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=97&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "mon of ADHD").first_or_create(username: "mon of ADHD",caregiver:true, age: '3-6',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My son is four years old and focalin has been the 2nd med we have tried. 45 min after being on this med he intentionally slammed his head off floor during a tantrum and ended up in ER with one staple in the head. The following 2 days after every 30 min on the dot his mood swings would fluctuate from calm and collected-to-bouncing off wall and endangering self or others. I highly do not recommend this med, as to my brother has also tried this and started hearing voices and seeing illusions after almost a month of taking this.",effectiveness: 1, ease_of_use: 2, satisfactory: 1, created_at: '2009-11-25 21:13:48', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "zachariah").first_or_create(username: "zachariah",caregiver:false, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "this medication has changed my attitude so much and it has affected my weight, actually making me ain 20 lbs overweight this drug also has affected the way I eat, it makes me eat less, and when I do take this I hardly eat and when I do it is very little.  it oddly brings headaches, upset stomach, fatigue, and bodily pain.",effectiveness: 4, ease_of_use: 2, satisfactory: 3, created_at: '2009-12-09 18:13:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "mum ").first_or_create(username: "mum ",caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "fast dyastolic + blood pressure",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2009-12-23 21:40:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "Clay's Mom").first_or_create(username: "Clay's Mom",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My child started Focalin in Feb. 2009. He could not pay attention, follow directions, and was very easily distracted. My husband and I saw an a mediate change in his grades.  His grades all rose between 6 to 8 points in each subject.  We thought he was going to have to repeat the 1st grade but with the help from alot of dedicated people and Focalin he passed and now he's in the second grade in the 2nd semester and has ALL A's!!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-01-15 15:54:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "vfr2bfe").first_or_create(username: "vfr2bfe",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I tried Ritalin and it was helpful however I found that I seemed to be moody and even agressive when I took it. Focolin did not affect my mood and I was able to sleep better at night.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-01-27 03:40:50', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=96&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "Psych-mom2010").first_or_create(username: "Psych-mom2010",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My daughter is going on 9 yrs old and was diagnosed with Type I Inattentive ADHD in Nov. of 08 when she was 7. In the beginning, I felt like there was no hope of her bringing home any grade above a &quot;C.&quot; She was placed on Focalin XR as part of her regimen and I'm happy to say that I have seen overwhelming improvement in her abilities to concentrate on tasks and follow through with instruction. I cannot say where she would be without her Psychiatrist and the treatment she has received, but without it she wouldn't be Student of the Month and Class Vice-President now. Her teacher stated that she was &quot;One of her Best Students&quot; during our last conference.  Her grades have sky-rocketed and I am very satisfied with what she has accomplished with the help from this medication. Being a mother and psychiatric health care professional myself, I highly recommend this medication for all of those who have tried everything else. It has made a world of difference for my daughter. Not only has her grades improved, but her self-esteem is so much better. I feel like I have a normal child now!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-01-28 01:45:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 3, satisfactory: 4, created_at: '2010-02-10 08:35:14', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-02-24 21:05:06', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "lauriegrace").first_or_create(username: "lauriegrace",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Within 2 months of beginning Focalin my 2nd grade daughter's spelling and reading skills had improved remarkably, and her teacher reports very improved classroom behavior.  Good stuff!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-03-02 15:04:35', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "nikki").first_or_create(username: "nikki",caregiver:true, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My son is taking this medication. Last month the Dr. office accidentally ordered focalin 10mg instead of focalin xr. He has recently started having accidents at school could it be related to the medication??",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-03-02 18:02:24', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=95&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", age: '',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-03-12 08:58:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "redgul").first_or_create(username: "redgul",caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my child just started onit and i wanted to know some side effects",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-03-14 09:22:30', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "canderson").first_or_create(username: "canderson",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my son started taking Focalin for ADHD. after a short period of time he became sad and upset at little things.he stopped taking it after he began to hear his stuffed animals talking. he has been taking Adderall XR for 3 years now and is doing great.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2010-03-22 012:13:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Crystal").first_or_create(username: "Crystal",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have been taking Focalin XR for about 6 months now and I can honestly say I feel as if a whole new world has opened up to me.  I have never been so productive at both work and home in my life.  Also the quality of the work I do has dramatically increased to the point that several of my co-workers, one of which includes my supervisor have made positive comments regarding my work.  I noticed on some of the posts that side effects are bothersome for some so I feel that I should say that it took about 2 months for my body to adjust to the medicine, after that, everything has just seemed to improve for me.  My most annoying side effect has to be headaches which have decreased in both severity and frequency over the past 6 months.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2010-03-26 08:28:11', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "bspmom3").first_or_create(username: "bspmom3",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My 9 year old is on focalin 18 mg but she is so focused she can`t change subjects. She is mean and moody but when she is off of it she is sweet but can`t pay attention.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-04-02 22:54:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=94&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "sistergwen").first_or_create(username: "sistergwen",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 12 year old son was diagnosed last July with ADHD.  I've been trying to avoid giving him medicine but it's not working.  My son also has asthma.  Will this medication clash with his asthma medicine?",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-04-30 20:43:52', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "cistre60").first_or_create(username: "cistre60",caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 7 year old son was diagnosed with ADHD in October 2009. I was constantley getting phone calls from his 1st grade teacher about how he was behaving in class and how he was just down right refusing to be still. I decided to have him tested basically to rule out this condition. His dr placed him on this medicine and it was remarkable. He is not a &quot;zombie&quot; while on this. He is still able to play with his friends and be a normal child without the impluse to do what he wants in class. His conduct grade went from a very low D to 100% A.  I have recomended that other parents that I know of who are having the same issues with their children in school to talk to their drs about this medicine.Every morning my son makes sure that his medicine is next to his breakfast plate so he will not get in trouble in school.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-05-03 23:53:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "grandmaj").first_or_create(username: "grandmaj",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 8 year old grandson was diagnosed with narcolepsy with cataplexy and given focalin xr 15mg. After taking the drug for 3 days he experienced lack of appetite, insomnia and severe hallucinations seeing spiders all over his body, the walls and ceilings. After calling his neurologist I was told to stop the drug and let it work its way out of his system by giving him a lot of fluids and OTC medicines which causes sleep, but not sleeping pills. It was a horrible 3 days later before he was back to his old narcoleptic self. We will be trying a different drug for narcolepsy soon.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2010-06-09 09:17:29', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Moses").first_or_create(username: "Moses",caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Better memory,attention ,and work and life performance. I feel normal again.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-06-30 18:32:26', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "kells").first_or_create(username: "kells",caregiver:true, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My Son has been on the Focalin 5mg for about a mo. did not see much difference in his focus. So the Dr started him on the 10mg now he is complaining of his head feeling like it is moving. I am not real sure if i want him on the pill and how long will this last?",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2010-07-07 13:56:36', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=93&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I tried six other medications before I tried this one.  Adderall was effective but it was leaving purplish bruises all over me.  Focalin XR is a life saver!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-07-13 18:29:58', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "DawnRichardson39").first_or_create(username: "DawnRichardson39",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "my son started this medicine 8 days after have surgery with general Anesthesia. His Adderall quit working for whatever reason and he has been on Focalin several monthes back as a breakthru PRN medication for homework time.. after 3 days I started noticing some strange symptoms such as:1.  TICS -- tongue and hands involuntarily moving. No control over them. He could not pick up anything2. had a hard time talking as he could not get the words out.3. Emotionaless - he tried to cry and could not do it4. too focused  He had to be prompted 3 - 4x and then we had to move his head several times to make hime get eye contact. 5. Drooling6. Malaise/fatigueI called in to the Dr. who was on vacation but reachable by Community support said to drop his doseage.. Same events happened and then cut it again to the lowest dose and again same thing.. I dumped the meds down the toilet!",effectiveness: 2, ease_of_use: 3, satisfactory: 1, created_at: '2010-08-28 01:13:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Mother of one").first_or_create(username: "Mother of one",caregiver:true, age: '3-6',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My daughter started this rx  three weeks ago. I am very blessed because this is her first med and it has worked wonders. She is more focused and is able to complete school work independently. She takes 5mg 2times a day. I do have concerns because when she doesn't take it she is much more hyper than she was before she stared it.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-09-26 22:25:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I became anxious, did not want to eat even when I needed to, became depressed and suffered from tightness in the chest.  My dr said to take it for a full week before stopping but I stopped after only a few days.  I saw no reason to put myself through such symptoms to satisfy his belief that they would just go away ....",effectiveness: 1, ease_of_use: 3, satisfactory: 1, created_at: '2010-10-05 010:37:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Elys PR").first_or_create(username: "Elys PR",caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "It was horrible. My 6 years old boy was out of control. He stars swweting, red chicks and lips and he could&quot; sleep. We start with 5mg but it doesn&quot;t work so the doctor decide to give him 10mg becasuse of his weight but it was worst.",effectiveness: 1, ease_of_use: 2, satisfactory: 1, created_at: '2010-11-05 09:13:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=92&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Erin Leon").first_or_create(username: "Erin Leon",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Concerta caused depression. With Focalin, I was able to maintain to usual happy personality and still pay attention in class. The only issue I have with this medication is the really bad headaches I get coming off of it.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2010-12-06 012:01:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "rochelle").first_or_create(username: "rochelle",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "my 12 yr old daughter has been on this drug for approx 4yrs and it has been very effective.  she's had very little trouble with side effects. her progress at school has improved as well. we havent any complaints about this drug.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2010-12-09 22:35:34', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "Charli3").first_or_create(username: "Charli3",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Much faster wakeup time with higher level of alertnets than with Provigil or generic ritalin.  Once a day dosing easier to manage than generic ritalin 2x per day.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2010-12-27 011:14:15', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "NCButterflywings@aol.com").first_or_create(username: "NCButterflywings@aol.com",email_address: 'NCButterflywings@aol.com',caregiver:false, age: '25-34',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "More focused but find myself needing more to stay thatway!",effectiveness: 3, ease_of_use: 2, satisfactory: 4, created_at: '2010-12-27 13:23:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "nessyshameless27").first_or_create(username: "nessyshameless27",caregiver:true, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "facal flushing",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2011-01-04 14:45:34', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=91&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '19-24',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "Previously on Concerta. Switched to Focalin and it is much better. I never realized all the side effects that came with the concentration and focus that Concerta provided (i.e. felt speeded up, hyper-attentive, easy to get to much or not enough, tunnel-vision with creative thinking). Focalin provides the focus and help with my adhd but it feels besides that you would not even know you have taken it except I am slightly more alert but no where near as noticeable as the concerta and also there is some loss in appetite, but again not as much as on concerta.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-01-31 09:08:25', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "redwing1340").first_or_create(username: "redwing1340",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I previously was on ritalin 20 mg 2 x daily and was having the normal side affects.  I had heard about focalin and how it has less side affects so decided to ask doctor to try that instead. she switched meamd my first day noticed major difference and a good one, no side affects ( racing heart, flushing ect...) and as or if not more effective than ritalin i am very pleased and so glad tried it, because it is so great having a med really work and not having all the negitive side affects that seem to go a long with so many of them!  i feel great and it does what it is suppose to wonderfully.  I would recomend it to anyone who has side affects from ritalin or any other ADHD med,  also only been few days but have not had the crashing like before on ritalin and on 20mg daily of focalin is all i need   half of what was taking of ritalin   it is well worth it !!  never will go back to ritalin!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-02-11 23:38:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "zenman88").first_or_create(username: "zenman88",caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Have increased dosage from 20 mg to 30 mg with no noticeable improvement in ability to focus.",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2011-03-02 22:07:08', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 10-yr old son was diagnosed last year with ADHD. He was put on Adderall, which made him mean. He was switched to Metadate, which caused a lot of mood swings and made him overly emotionally sensitive. He was placed on 15 mg of Focalin XR, which has been fantastic. He is able to concentrate and complete all his school work and homework, without all the side effects.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2011-04-05 18:36:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "jj5").first_or_create(username: "jj5",caregiver:false, age: '25-34',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Have been on ritilin for years and am planning to go back.",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2011-04-12 16:44:02', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=90&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '3-6',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2011-04-24 08:52:21', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "S.O.Mama").first_or_create(username: "S.O.Mama",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 10 yr old son was diagnosed with  ADD when he was 6 yr old and has taken Ritalin for the last 5 years. We decided that his symptoms were no longer being controlled well a couple of months ago and switched him to Focalin and have kept his dosage to 10mg daily. He has been in this dosage for about 6 wks and starting this past week has had a &quot;meltdown&quot; pretty much every afternoon. Small things will set him off. Crying for up to two hours at a time! I'm calling our pediatrician tomorrow. This cannot go on. I don't know if he is overmedicated or under medicated. He was on 30mg of Ritalin LA  before and did not have this &quot;side effect&quot;. - Stressed out Mama",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2011-04-26 22:05:13', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "cocoberg").first_or_create(username: "cocoberg",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My son has been having a hard time focusing in school, he had been on another medication for past few years and we switched to Focalin, noted an immediate difference, then when we were prescribed to double it, thing got even better, his grades started coming up, and he is such a more pleasant child, also decreased fighting with his brothers.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-05-02 09:31:09', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "twh356ss").first_or_create(username: "twh356ss",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My 8 year old daughter is on 20mg of Focalin XR and it is working quite well for her. We also have her on Abilify 5mg, Vistaril 35mg 3x day, and Trazadone 35mg at night. Bipolar, ADHD, and Opposition and Defiance Disorder. Parents and caregivers need to watch as the child grows and make sure that the meds are keeping up. We have found this out the hard way. Please heed this advice.",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2011-05-04 20:53:46', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "ty").first_or_create(username: "ty",caregiver:false, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "i am 17 and have been taking focalin for almost six years and i have asked to be taken off of it about 12 times. it works to some extent and it is the first med i haven't grown a tolerance to.  it slows down my thinking process and which makes those around me happy i guess.  i dislike this med because it feels like i dont have control of what i do while on it. as a side note i am having a heart problem but it is still unknown if it is due to focalin xr or not.",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2011-05-09 09:43:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=89&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Focalin XR (20mg) is the best stimulant I've tried thus far (diagnosed at age 28 with ADHD). It has had the least negative side effects and has no &quot;afternoon crash&quot; which I experienced with other medicines we tried first. It helps me listen when someone is speaking, be more productive at work, and has helped me feel calmer overall. I do think I will be upping to 30mg soon, as it is slowly becoming slightly less effective after several months, but overall I have been pleased with the results.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-07-08 14:31:07', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '3-6',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 3, satisfactory: 2, created_at: '2011-08-29 010:34:12', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "Deb").first_or_create(username: "Deb",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 8 yr old son has ADHD and has been on this since April  2011, we started out on 10mg and then went to 20mg as my son was still causing problems at school and not focusing, he has been on 30 mg once a day for almost 2 months now and is so much better, My only concern is he seems to be more paranoid, bugs bother him, he has no desire to ride his bike or play sports etc,., I do not know if i should lower his dosage or change med's. This has me very concerned. His dr. tells me I have to give him help with his confidenece......",effectiveness: 3, ease_of_use: 3, satisfactory: 3, created_at: '2011-09-01 24:19:54', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "alicia").first_or_create(username: "alicia",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 10 yr old son has taken this medicine for almost two yrs. In school grades has been very good and make study time easier and more effective. During this last yr. Ive been noticing a tick with his hands,like looking for small hairs, and has become very irritable,moody,extra sensitive,making relationships wuth his classmates difficult. He appears strange with the hand tick and has become sort of a loner. Im in the process of looking other alternatives or evaluating to not prescribe him at all.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2011-10-24 07:58:04', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Lara").first_or_create(username: "Lara",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My daughter has been taking this medication for abut 6 months.  There has been noticeable improvement, but it wears off as the day goes on.  In the beginning she was extermemly moody and depressed, but this has tapered off.  Now that she has been on it for awhile it does not seem to be working as well and will need to be increased periodically.  The worst side affect is that she has began pulling out all of her eyelashes.  She becomes hyperfocused and almost obsessed with some activities.",effectiveness: 3, ease_of_use: 2, satisfactory: 3, created_at: '2011-11-06 15:35:28', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=88&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '13-18',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 2, satisfactory: 2, created_at: '2011-11-30 08:26:43', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "DaddyAlex").first_or_create(username: "DaddyAlex",caregiver:true, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "This is like the fourth ADHD med we tried.  Others made him a basket case, aggressive or too thin.  This one seemed to be working well unitl he started pulling his hair, eyebrows and eyelashes out.  Talks about voices in his head too.  He is 10 years old and has been on 20mg for about 2 years.  He was diagnosed when he was 5.  After reading some of these reviews, I'm thinking of trying another med.",effectiveness: 4, ease_of_use: 4, satisfactory: 3, created_at: '2011-12-09 15:45:22', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "proud mom of 1 great kid").first_or_create(username: "proud mom of 1 great kid",caregiver:true, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My 12 yr old son was diagnosed when 6 tried many adhd drugs. Then in 4th grade (9yrs) switched doctors and she decided he metabolized things to quick for xr drugs and tried focolin 2 times a day. It worked,for a while then when starting middle school she decided to add Intunitiv which as helped alot. He made the honor roll for the first time ever!",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2011-12-24 23:35:56', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "summergirl").first_or_create(username: "summergirl",caregiver:true, age: '0-2',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My son was dx at age 2 with ADHD. He was started on clonadine at night and tenex 2x a day. He was either a zombie or bouncing off the wall.As a parent it tore me apart. He was started on Ritalin and it helped but, Dr wanted us to try Focalin XL 10mg and it was a big help after a week or so of adjusting to it...He is now 7 yrs old he takes Foclain XL 15mg with tenex 2x aday and it has made a huge difference in his life.He still has to be reminded to focus but, teachers and I agree this med has helped turn his life around. last report card was 3 B's and all S's including great behaviour. Everyone is different so it will effect some negatively.Personally I'm glad I gave my son the chance to try it.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2012-01-11 22:13:56', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "happymom").first_or_create(username: "happymom",caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "We tried many things to help my daughter with her inability to focus, her impulsiveness, and her learning disabilities.  Special Education, good diet and exercise, and A LOT of homework help at home helped, but she still required a lot of redirection and one-on-one time at school from her teachers.  We finally agreed with her doctor to try a medication.  We tried Concerta and it was terrible.  Too strong for her!  She was tearful and suffered insomnia and nightmares.  We asked the doctor what else we could try.  He prescribed the lowest dose of Focalin... 10mg.  It worked!!!  The difference in her behavior was like night and day and it didn't affect her sweet personality at all.  I didn't tell her teachers so I could really see if they noticed a difference, and they immediately saw a change in her school performance.  She was less impulsive, she stayed on task, and she actually finished assignments!  At home she was able to do more things like getting dressed on her own, cleaning her room, doing most her own homework without me prompting her every five minutes.  We found that giving her half a pill in the morning and half at lunch (the school helps us with that) worked best for her (it seems to last 5 hours).   After school homework time was a challenge since the Rx had worn off, but her Dr. prescribed a 2mg dose as needed for these days, and it works really well.  She is still able to sleep by 8PM.  She still has a good appetite too (which worried me).  It is available in generic form so it's easily affordable. The only problem with this Rx is that it isn't long-acting so you need to give a booster dose mid day.  But we haven't found this to be difficult for now.  I hope this helps someone out there!  It has been a life-saver for our sweet daughter!",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2012-04-02 18:52:41', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=87&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "kali").first_or_create(username: "kali",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "this medication in not for people with that have so call ADD and ADHD it made me the person am not i started cutting my self and i am not the type of person that in roud or mean at all but it made mt that way my family and dont realy talk i was a people person i loved my life and as soon at a stoped taking that i was back to the person i was befor so i hated it made my life a living hell",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2012-04-24 14:31:39', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Lydia").first_or_create(username: "Lydia",caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "My son is 8 y/o has been taking Focalin 5mg for about a year. It makes him like a zombie he sits and stares out the door all day long until it wears off. The medication last 10-12 hours. I gave him the medication at 7am and it started wearing off at around 5 oclock pm. He would not eat or drink anything. He often complains of his stomach hurting and nausea. I feel like this is abuse to our children. That's all this country knows how to do is push and use drugs. This country should spend more money on research for curing diseases and behaviors without doping everybody up with drugs, especially our children, it's sad and pitiful.",effectiveness: 3, ease_of_use: 5, satisfactory: 1, created_at: '2012-05-08 23:14:57', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "Concerned").first_or_create(username: "Concerned",caregiver:true, age: '7-12',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "We have been using Focalin for an 11 year old female. She is never hungry. When she eats she's very irratated and settles for bread, pasta and butter, and sweets.  Waking up in the middle of the night as times to eat these terrible foods.  This has gone on for two year; we just found our she has lymphoma hodgkin's cancer.  I have not done any research. It is my understanding that without the proper nutrition the body doesn't function properly and could it be possible that this medication assisted the cancer to grow. It obviously makes one lose appetite, therefore, it seems that the lymps don't function properly causing low immune system.",effectiveness: 2, ease_of_use: 1, satisfactory: 1, created_at: '2012-05-24 21:05:49', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "visitor1357182331").first_or_create(username: "visitor1357182331", caregiver:true, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2012-06-13 08:21:45', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Focalin Oral').first_or_create(generic_name: 'amphetamine and dextroamphetamine', brand_name: 'Focalin Oral', source_id: '63164')
+newdrug=Drug.find_by_brand_name("Focalin Oral")
+Condition.where(name: 'Attention Deficit Disorder with Hyperactivity').first_or_create(name: 'Attention Deficit Disorder with Hyperactivity')
+if newdrug.conditions.find_by_name("Attention Deficit Disorder with Hyperactivity").nil?
+newdrug.conditions << Condition.find_by_name("Attention Deficit Disorder with Hyperactivity")
+end
+User.where(username: "chezka12").first_or_create(username: "chezka12",caregiver:false, age: '7-12',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I am 10years old. I have been taking Focalin my grades improved to all A and one B+. the only thing that I have are those horribles ticks. I act like I have turret syndrome. What medications should I take to eliminate or at least decrease these horribles ticks. Thank-you",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2012-07-23 18:58:10', review_url: 'http://www.webmd.com/drugs/drugreview-63164-Focalin+Oral.aspx?drugid=63164&drugname=Focalin+Oral&pageIndex=86&sortby=3&conditionFilter=-1', drug_id:newdrug.id)

@@ -5,7 +5,6 @@
     <th>Condition  ID</th>
     <th>Condition_name</th>
     <th>Condition</th>
-    <th>Related Drug</th>
   </tr>
 
   <% @conditions.each do |condition| %>
@@ -13,7 +12,7 @@
         <td><%= condition.id %></td>
         <td><%= condition.name %></td>
         <td><%= condition.information %></td>
-        <td><%= condition.get_related_drugs %></td>
+        <td><%= link_to 'show', condition %></td>
         </tr>
   <% end %>
 </table>

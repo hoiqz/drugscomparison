@@ -1,4 +1,12 @@
 class DrugsController < ApplicationController
+  before_filter :get_average, :only=>:show
+
+  def get_average
+    @drug = Drug.find(params[:id])
+    @avg_effectivness=@drug.reviews.average('effectiveness')
+    @avg_ease_of_use=@drug.reviews.average('ease_of_use')
+    @avg_satisfactory=@drug.reviews.average('satisfactory')
+  end
   # GET /drugs
   # GET /drugs.json
   def index
@@ -13,10 +21,6 @@ class DrugsController < ApplicationController
   # GET /drugs/1
   # GET /drugs/1.json
   def show
-    @drug = Drug.find(params[:id])
-    @avg_effectivness=@drug.reviews.average('effectiveness')
-    @avg_ease_of_use=@drug.reviews.average('ease_of_use')
-    @avg_satisfactory=@drug.reviews.average('satisfactory')
 
     respond_to do |format|
       format.html # show.html.erb

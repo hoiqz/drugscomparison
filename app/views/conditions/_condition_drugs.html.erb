@@ -1,0 +1,47 @@
+<script type="text/javascript" charset="utf-8">
+
+    $(function(){
+        $(document).ready(function() {
+            new Highcharts.Chart({
+                chart:{
+                    renderTo: "reviews_chart" ,
+                    type: 'column'
+                },
+                title:{
+                    text: "Ratings across all related drugs reviews"
+                },
+                xAxis:{
+                    categories: ['Effectiveness', 'Ease of Use', 'Satisfactory']
+
+                },
+                yAxis:{
+                    title:{
+                        text: "User Ratings"
+                    }
+                },
+                series:[
+                    {
+                        type: "column",
+                        name: "<%= %>",
+                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
+                    },
+                    {
+                        type: "column",
+                        name: "Avg Ratings",
+                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
+                    },
+                    {
+                        type: "column",
+                        name: "Avg Ratings",
+                        data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
+                    }
+
+                ]
+
+
+            })
+
+
+        });
+    })
+</script>
