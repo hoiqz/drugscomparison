@@ -1,0 +1,70 @@
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+
+            chart: {
+                renderTo: 'reviews_chart',
+                type: 'column'
+            },
+
+            title: {
+                text: 'Separation by gender'
+            },
+
+            xAxis: {
+                categories: ['Effectiveness','Ease of Use','Satisfactory']
+            },
+
+            yAxis: {
+                allowDecimals: false,
+                min: 0,
+                title: {
+                    text: 'Ratings'
+                }
+            },
+
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.x +'</b><br/>'+
+                            'Average '+this.series.name +' ratings: '+ this.y +'<br/>';
+                }
+            },
+
+            plotOptions: {
+                column: {
+                    stacking: 'normal'
+                }
+            },
+
+            series: [
+                <% i=1%>
+                <% @drugs.each do |drug| %>
+                <%= ',' if i>1 %>
+                {
+                    showInLegend: false,
+                    name: 'Male',
+                    stack: '<%=raw drug.brand_name %>',
+                    data: [<%=raw @condition.get_male_reviews(drug.id).average('effectiveness').round %>,
+                        <%=raw @condition.get_male_reviews(drug.id).average('ease_of_use').round %>,
+                        <%=raw @condition.get_male_reviews(drug.id).average('satisfactory').round %>
+                    ]
+                },
+                {
+                    showInLegend: false,
+                    name: 'Female',
+                    stack: '<%=raw drug.brand_name %>',
+                    data: [<%=raw @condition.get_female_reviews(drug.id).average('effectiveness').round %>,
+                        <%=raw @condition.get_female_reviews(drug.id).average('ease_of_use').round %>,
+                        <%=raw @condition.get_female_reviews(drug.id).average('satisfactory').round %>
+                    ]
+                }
+                <% i=i+1 %>
+                    <% end %>
+
+            ]
+        });
+    });
+
+});

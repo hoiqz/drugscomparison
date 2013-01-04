@@ -9,7 +9,11 @@ Drugscomparison::Application.routes.draw do
       get 'satisfactory_count'
     end
   end
-  resources :conditions
+  resources :conditions do
+    member do
+      get 'gender_distinction'
+    end
+  end
   #get "conditions/index"
 
   #get "conditions/show"

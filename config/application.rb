@@ -61,6 +61,6 @@ module Drugscomparison
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.precompile += ['highcharts.js', 'jquery-rails.js','bootstrap']
+    config.assets.precompile += ['highcharts.js', 'jquery-rails.js','bootstrap','highcharts-more']
   end
 end

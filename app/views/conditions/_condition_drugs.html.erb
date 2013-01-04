@@ -1,43 +1,76 @@
 <script type="text/javascript" charset="utf-8">
+    $(function () {
 
-    $(function(){
-        $(document).ready(function() {
-            new Highcharts.Chart({
-                chart:{
-                    renderTo: "reviews_chart" ,
-                    type: 'column'
-                },
-                title:{
-                    text: "Ratings across all related drugs reviews"
-                },
-                xAxis:{
-                    categories: ['Effectiveness', 'Ease of Use', 'Satisfactory']
+        window.chart = new Highcharts.Chart({
 
-                },
-                yAxis:{
-                    title:{
-                        text: "User Ratings"
+            chart: {
+                renderTo: 'reviews_chart',
+                polar: true
+
+            },
+
+            title: {
+                text: 'Average Drug Performance According to User Reviews'
+            },
+
+            pane: {
+                center: ['50%', '50%'],
+                size: '80%',
+                startAngle: 0,
+                endAngle: 360
+            },
+
+            xAxis: {
+                categories: ['Effectiveness', 'Ease of Use', 'Satisfactory'],
+                tickmarkPlacement: 'on',
+                gridLineWidth: 1,
+                gridLineColor: 'grey',
+                lineWidth: 3,
+                labels: {
+                    formatter: function () {
+                        return this.value ;
                     }
-                },
+                }
+
+            },
+
+            yAxis: {
+                min: 0,
+                max: 5,
+                tickInterval: 1
+            },
+
+            tooltip: {
+                shared: true
+
+            },
+
+            legend: {
+                align: 'right',
+                verticalAlign: 'top',
+                y: 50,
+                layout: 'vertical'
+            },
+
                 series:[
-                        <% i=1%>
-                       <% @drugs.each do |drug| %>
-                        <%= ',' if i>1 %>
-                        {
-                        type: 'column',
+                    <% i=1%>
+                    <% @drugs.each do |drug| %>
+                    <%= ',' if i>1 %>
+                    {
+                        type: 'area',
                         name: '<%= drug.brand_name %>',
-                            <% retarr= [drug.avg_eff.to_f,drug.avg_eou.to_f,drug.avg_sat.to_f]%>
-                        data: <%=raw retarr%>
-                        }
-                        <% i=i+1 %>
+                        <% returnarr= [drug.avg_eff.to_f,drug.avg_eou.to_f,drug.avg_sat.to_f]%>
+                        data: <%=raw returnarr%> ,
+                        lineWidth: 2,
+                        marker: {
+                            enabled: false
+                        },
+                        shadow: true
+                    }
+                    <% i=i+1 %>
                     <% end %>
 
                 ]
-
-
-            })
-
-
         });
-    })
+    });
 </script>

@@ -1,37 +1,73 @@
 <script type="text/javascript" charset="utf-8">
-
-    $(function(){
-        $(document).ready(function() {
-            new Highcharts.Chart({
-                chart:{
-                    renderTo: "reviews_chart" ,
-                    type: 'column'
-                },
-                title:{
-                    text: "Average Ratings across user reviews"
-                },
-                xAxis:{
-                    categories: ['Effectiveness', 'Ease of Use', 'Satisfactory']
-
-                },
-                yAxis:{
-                    title:{
-                        text: "User Ratings"
-                    }
-                },
-                series:[
-                    {
-                    type: "column",
-                    name: "Avg Ratings",
-                    data: [<%= raw @avg_effectivness %>,<%= raw @avg_ease_of_use %>,<%= raw @avg_satisfactory %>]
-                    }
-
-                ]
-
-
-            })
-
-
+    $(function () {
+        Highcharts.setOptions({
+            colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',      '#6AF9C4']
         });
-    })
+        window.chart = new Highcharts.Chart({
+
+            chart: {
+                renderTo: 'reviews_chart',
+                polar: true
+
+            },
+
+            title: {
+                text: 'Average Drug Performance According to User Reviews'
+            },
+
+            pane: {
+                center: ['50%', '50%'],
+                size: '80%',
+                startAngle: 0,
+                endAngle: 360
+            },
+
+            xAxis: {
+                categories: ['Effectiveness', 'Ease of Use', 'Satisfactory'],
+                tickmarkPlacement: 'on',
+                gridLineWidth: 1,
+                gridLineColor: 'grey',
+                lineWidth: 3,
+                labels: {
+                    formatter: function () {
+                        return this.value ;
+                    }
+                }
+
+            },
+
+            yAxis: {
+                min: 0,
+                max: 5,
+                tickInterval: 0.5
+            },
+
+            tooltip: {
+                shared: true
+
+            },
+
+            legend: {
+                align: 'right',
+                verticalAlign: 'top',
+                y: 50,
+                layout: 'vertical'
+            },
+
+            series: [{
+                name:'<%=raw @drug.brand_name%>',
+                type: 'area',
+
+                data: [{y:<%= raw @avg_effectivness %>,color: '#058DC7'},
+                    {y:<%= raw @avg_ease_of_use %>, color: '#50B432'},
+                    {y:<%= raw @avg_satisfactory %>,color:'#ED561B'}],
+                lineWidth: 2,
+                marker: {
+                    enabled: false
+                },
+                shadow: true
+            }
+            ]
+        });
+    });
 </script>

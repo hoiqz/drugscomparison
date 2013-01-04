@@ -23,5 +23,22 @@ class Condition < ActiveRecord::Base
     return appended_drug
   end
 
+  def get_male_reviews (for_drug_id)
+    #@male=Array.new
+    Review.joins(:drug,:user).where(:users=>{:gender=>'Male'},:drug_id=>for_drug_id)
 
+  end
+  def get_male_reviews_counts (for_drug_id)
+    #@male=Array.new
+    Review.joins(:drug,:user).where(:users=>{:gender=>'Male'},:drug_id=>for_drug_id).counts
+  end
+
+  def get_female_reviews (for_drug_id)
+    #@male=Array.new
+    Review.joins(:drug,:user).where(:users=>{:gender=>'Female'},:drug_id=>for_drug_id)
+  end
+  def get_female_reviews_counts (for_drug_id)
+    #@male=Array.new
+    Review.joins(:drug,:user).where(:users=>{:gender=>'Female'},:drug_id=>for_drug_id).counts
+  end
 end

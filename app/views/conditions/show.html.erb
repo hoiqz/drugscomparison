@@ -15,6 +15,9 @@
 <%= render "condition_drugs"%>
 <div id="reviews_chart" style="width: 660px; height: 300px;"></div>
 
+<div id="buttons">
+  <%= link_to 'By gender', gender_distinction_condition_path, :id=>'gender_link', remote: true%>
+  </div>
 <p>
   <b>Drugs related to this condition: </b>
 </p>

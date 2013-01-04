@@ -54,4 +54,29 @@ class Drug < ActiveRecord::Base
   def avg_sat
     self.reviews.average('satisfactory')
   end
+
+  def get_male_reviews
+
+    @male=Array.new
+
+    self.reviews.each do |review|
+      userid=review.user_id
+      if User.find(userid).gender =='Male'
+        @male.push(review.id)
+      end
+    end
+    return @male
+  end
+
+  def get_female_reviews
+    @female=Array.new
+
+    self.reviews.each do |review|
+      userid=review.user_id
+      if User.find(userid).gender =='Female'
+        @female.push(review.id)
+      end
+    end
+    return @female
+  end
 end

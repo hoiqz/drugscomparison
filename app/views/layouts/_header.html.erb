@@ -15,14 +15,14 @@
 
 
           <ul class="nav">
-            <li>
+            <li class="<%= 'active' if params[:controller] == 'static_pages' %>">
               <%= link_to 'Home', static_pages_home_path%>
             </li>
-            <li>
+            <li class="<%= 'active' if params[:controller] == 'drugs' %>">
              <%= link_to 'Browse Drugs', drugs_path %>
             </li>
 
-            <li class="dropdown">
+            <li class="dropdown <%= 'active' if params[:controller] == 'conditions' %>">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Conditions <b class="caret"></b>
               </a>
                 <ul class="dropdown-menu">
@@ -39,7 +39,7 @@
                   </li>
                     </ul>
             </li>
-            <li>
+            <li class="<%= 'active' if params[:controller] == 'reviews' %>">
               <%= link_to 'Write a review' , new_review_path%>
             </li>
           </ul>
