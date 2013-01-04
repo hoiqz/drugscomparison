@@ -1,6 +1,6 @@
 require "rvm/capistrano"
 set :user, 'hoi'
-set :domain, 'ec2-107-20-67-75.compute-1.amazonaws.com'
+set :domain, '54.235.209.29'
 set :application, 'drugscomparison'
 #set :rake, 'bundle exec rake'
 # file paths
