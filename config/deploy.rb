@@ -5,11 +5,12 @@ set :application, 'drugscomparison'
 #set :rake, 'bundle exec rake'
 # file paths
 set :repository,  "#{user}@#{domain}:~/git/#{application}.git"
+#set :repository, "git@github.com:hoiqz/drugscomparison.git"
 #set :repository,  "RemoteServer:/~/git/#{application}.git"
-set :scm_passphrase, "h0160Biopolis"
+#set :scm_passphrase, "h0160Biopolis"
 set :deploy_to, "/home/#{user}/#{application}_deployed"
 set :ssh_options, {:forward_agent => true}
-set :scm_username, 'hoi'
+#set :scm_username, 'hoi'
 ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_dsa")]
 set :use_sudo, false
 
