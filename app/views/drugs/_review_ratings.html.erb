@@ -58,9 +58,9 @@
                 name:'<%=raw @drug.brand_name%>',
                 type: 'area',
 
-                data: [{y:<%= raw @avg_effectivness %>,color: '#058DC7'},
-                    {y:<%= raw @avg_ease_of_use %>, color: '#50B432'},
-                    {y:<%= raw @avg_satisfactory %>,color:'#ED561B'}],
+                data: [{y:<%= raw number_with_precision @avg_effectivness, :precision =>2 %>,color: '#058DC7'},
+                    {y:<%= raw number_with_precision @avg_ease_of_use, :precision =>2 %>, color: '#50B432'},
+                    {y:<%= raw raw number_with_precision @avg_satisfactory, :precision =>2%>,color:'#ED561B'}],
                 lineWidth: 2,
                 marker: {
                     enabled: false

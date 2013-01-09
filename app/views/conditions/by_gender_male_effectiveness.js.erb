@@ -1,0 +1,86 @@
+$(function () {
+
+    var chart;
+    $(document).ready(function() {
+        var review_container = document.createElement('div');
+        review_container.style.height=<%= (((@drugs.count)/2.0).ceil) * 250 %>+'px';
+        document.getElementById('reviews_chart').innerHTML='';
+        document.getElementById('reviews_chart').appendChild(review_container);
+
+        Highcharts.setOptions({
+            colors: <%=raw @generate_colors%>
+        });
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: review_container,
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'Effectiveness ratings by Male reviewers '
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                percentageDecimals: 1
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#000000',
+                        connectorColor: '#000000',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
+                        }
+                    }
+                }
+            },
+            series: [
+                <% i=1%>
+                <% y=150%>
+                <% x=150%>
+                <% @drugs.each do |drug| %>
+                <%= ',' if i>1 %>
+                {
+                    type: 'pie',
+                    size: 100,
+                    name: '<%= drug.brand_name %>',
+                    <% if i.odd? %>
+                    <% if i !=1 %>
+                    center: [ 200, <%= y+200 %> ],
+                    <% y=y+200 %>
+                    <% else %>
+                    center: [ 200, 100 ],
+                    <% end%>
+                    <% else %>
+                    <% if i !=2 %>
+                    center: [ 500, <%= x+200 %> ],
+                    <% x=x+200 %>
+                    <% else %>
+                    center: [ 500, 100 ],
+                    <% end%>
+                    <% end%>
+                    data: [
+                        ['Score of 1',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=1").count %> ],
+                        ['Score of 2',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=2").count %> ],
+                        ['Score of 3',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=3").count %>],
+                        ['Score of 4',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=4").count %>],
+                        {
+                            name: 'Score of 5',
+                            y: <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=5").count %>,
+                            sliced: true,
+                            selected: true
+                        }
+
+                    ]}
+                <% i=i+1 %>
+                <% end %>
+
+            ]
+        });
+    });
+
+});

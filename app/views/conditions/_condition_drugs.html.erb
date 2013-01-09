@@ -48,8 +48,11 @@
             legend: {
                 align: 'right',
                 verticalAlign: 'top',
-                y: 50,
-                layout: 'vertical'
+                y: 150,
+                layout: 'vertical' ,
+                labelFormatter: function() {
+                    return this.name+ " (click to hide)";
+                }
             },
 
                 series:[
@@ -59,7 +62,7 @@
                     {
                         type: 'area',
                         name: '<%= drug.brand_name %>',
-                        <% returnarr= [drug.avg_eff.to_f,drug.avg_eou.to_f,drug.avg_sat.to_f]%>
+                        <% returnarr= [drug.avg_eff.round(2),drug.avg_eou.round(2),drug.avg_sat.round(2)]%>
                         data: <%=raw returnarr%> ,
                         lineWidth: 2,
                         marker: {

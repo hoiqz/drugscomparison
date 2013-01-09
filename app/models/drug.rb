@@ -46,13 +46,31 @@ class Drug < ActiveRecord::Base
   end
 
   def avg_eff
-     self.reviews.average('effectiveness')
+     score1=self.reviews.where("effectiveness=1").count
+     score2=self.reviews.where("effectiveness=2").count
+     score3=self.reviews.where("effectiveness=3").count
+     score4=self.reviews.where("effectiveness=4").count
+     score5=self.reviews.where("effectiveness=5").count
+     sum=Float(self.reviews.count)
+     weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
   end
   def avg_eou
-    self.reviews.average('ease_of_use')
+    score1=self.reviews.where("ease_of_use=1").count
+    score2=self.reviews.where("ease_of_use=2").count
+    score3=self.reviews.where("ease_of_use=3").count
+    score4=self.reviews.where("ease_of_use=4").count
+    score5=self.reviews.where("ease_of_use=5").count
+    sum=Float(self.reviews.count)
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
   end
   def avg_sat
-    self.reviews.average('satisfactory')
+    score1=self.reviews.where("satisfactory=1").count
+    score2=self.reviews.where("satisfactory=2").count
+    score3=self.reviews.where("satisfactory=3").count
+    score4=self.reviews.where("satisfactory=4").count
+    score5=self.reviews.where("satisfactory=5").count
+    sum=Float(self.reviews.count)
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
   end
 
   def get_male_reviews

@@ -23,6 +23,10 @@ class Condition < ActiveRecord::Base
     return appended_drug
   end
 
+  def get_all_reviews (for_drug_id)
+    Review.joins(:drug,:user).where(:drug_id=>for_drug_id)
+
+  end
   def get_male_reviews (for_drug_id)
     #@male=Array.new
     Review.joins(:drug,:user).where(:users=>{:gender=>'Male'},:drug_id=>for_drug_id)

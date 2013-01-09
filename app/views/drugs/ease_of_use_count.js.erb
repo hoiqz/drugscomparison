@@ -2,6 +2,9 @@
 $(function () {
     var chart;
     $(document).ready(function() {
+        Highcharts.setOptions({
+            colors: ['#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E']
+        });
         chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'reviews_chart',
@@ -34,18 +37,18 @@ $(function () {
                 type: 'pie',
                 name: 'Percentage of reviews',
                 data: [
+                    ['Score of 1',    <%=raw @lessthan1 %> ],
                     ['Score of 2',    <%=raw @lessthan2 %> ],
-                    {
-                        name: 'Score of 1',
-                        y: <%=raw @lessthan1 %>,
-                        sliced: true,
-                        selected: true
-                    },
                     ['Score of 3',    <%=raw  @lessthan3 %>],
                     ['Score of 4',    <%=raw  @lessthan4 %>],
-                    ['Score of 5',   <%=raw  @lessthan5 %>]
+                    {
+                        name: 'Score of 5',
+                        y: <%=raw @lessthan5 %>,
+                        sliced: true,
+                        selected: true
+                    }
                 ]
-            }]
+                     }]
         });
     });
 
