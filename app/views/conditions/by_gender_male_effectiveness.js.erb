@@ -64,13 +64,13 @@ $(function () {
                     <% end%>
                     <% end%>
                     data: [
-                        ['Score of 1',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=1").count %> ],
-                        ['Score of 2',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=2").count %> ],
-                        ['Score of 3',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=3").count %>],
-                        ['Score of 4',    <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=4").count %>],
+                        ['Score of 1',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id, :gender=>'Male').where("effectiveness=1").count %> ],
+                        ['Score of 2',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id, :gender=>'Male').where("effectiveness=2").count %> ],
+                        ['Score of 3',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id, :gender=>'Male').where("effectiveness=3").count %>],
+                        ['Score of 4',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id, :gender=>'Male').where("effectiveness=4").count %>],
                         {
                             name: 'Score of 5',
-                            y: <%=raw @condition.get_male_reviews(drug.id).where("effectiveness=5").count %>,
+                            y: <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id, :gender=>'Male').where("effectiveness=5").count %>,
                             sliced: true,
                             selected: true
                         }

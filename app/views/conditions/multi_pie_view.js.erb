@@ -36,6 +36,17 @@ $(function () {
                             return '<b>'+ this.point.name +'</b> <br>rating: '+ this.point.y ;
                         }
                     }
+                },
+                series: {
+                    point: {
+                        events: {
+                            update: function(event) {
+                                if (!confirm('Do you want to set the point\'s value to '+ event.options +'?')) {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
                 }
             },
             series: [
@@ -64,11 +75,11 @@ $(function () {
                         <% end%>
                     <% end%>
                     data: [
-                        ['Effectiveness',  <%= raw  drug.avg_eff.round(2)%>],
-                        ['Ease of Use',    <%= raw  drug.avg_eou.round(2) %> ],
+                        ['Effectiveness',  <%= raw  @condition.avg_eff(drug.id).round(2)%>],
+                        ['Ease of Use',    <%= raw  @condition.avg_eou(drug.id).round(2) %> ],
                         {
                             name: 'Satisfactory',
-                            y: <%= raw drug.avg_sat.round(2) %>,
+                            y: <%= raw @condition.avg_sat(drug.id).round(2) %>,
                             sliced: true,
                             selected: true
                         }
@@ -77,6 +88,9 @@ $(function () {
                 <% end %>
 
             ]
+        });
+        $('#button').click(function() {
+            chart.series[0].data[0].update(<%=raw @update_values["1"]['all'] %>);
         });
     });
 
