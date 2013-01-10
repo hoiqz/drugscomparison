@@ -11,12 +11,22 @@ class ConditionsController < ApplicationController
   def show
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @drug }
-      format.js
+    @generate_colors=Array.new
+    @drugs.each do  |drug|
+      @generate_colors.push('#E238EC','#8AFB17' ,'#736AFF')    #set the colors here then pass to the javascript
     end
-  end
+
+    if params[:conditions]
+      @optionshash=params
+    end
+    respond_to do |format|
+          format.html # show.html.erb
+          format.json { render json: @drug }
+
+      end
+    #  format.js
+    end
+
 
   def gender_distinction
     @condition=Condition.find(params[:id])
@@ -30,10 +40,14 @@ class ConditionsController < ApplicationController
   @condition=Condition.find(params[:id])
   @drugs=@condition.drugs.scoped
   @generate_colors=Array.new
-  @update_values=Hash.new{|hash, key| hash[key] = Hash.new{|hash, key| hash[key] = Array.new}}
+
+   @review_options=params
+  @update_values = Hash.new{|hash, key| hash[key] = Array.new}
       @drugs.each do  |drug|
+        @review_options[:for_drug_id]=drug.id
+        @related_reviews=@condition.get_all_reviews(@review_options)
         @generate_colors.push('#E238EC','#8AFB17' ,'#736AFF')    #set the colors here then pass to the javascript
-        (@update_values["1"]["all"]).push(@condition.avg_eff(drug.id), @condition.avg_eou(drug.id) ,@condition.avg_sat(drug.id))
+        (@update_values[drug]).push(@condition.avg_eff2(@related_reviews), @condition.avg_eou2(@related_reviews) ,@condition.avg_sat2(@related_reviews))
       end
 
   #updated_values{

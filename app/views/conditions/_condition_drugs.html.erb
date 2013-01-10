@@ -55,25 +55,25 @@
                 }
             },
 
-                series:[
-                    <% i=1%>
-                    <% @drugs.each do |drug| %>
-                    <%= ',' if i>1 %>
-                    {
-                        type: 'area',
-                        name: '<%= drug.brand_name %>',
-                        <% returnarr= [drug.avg_eff.round(2),drug.avg_eou.round(2),drug.avg_sat.round(2)]%>
-                        data: <%=raw returnarr%> ,
-                        lineWidth: 2,
-                        marker: {
-                            enabled: false
-                        },
-                        shadow: true
-                    }
-                    <% i=i+1 %>
-                    <% end %>
+            series:[
+                <% i=1%>
+                <% @drugs.each do |drug| %>
+                <%= ',' if i>1 %>
+                {
+                    type: 'area',
+                    name: '<%= drug.brand_name %>',
+                    <% returnarr= [drug.avg_eff.round(2),drug.avg_eou.round(2),drug.avg_sat.round(2)]%>
+                    data: <%=raw returnarr%> ,
+                    lineWidth: 2,
+                    marker: {
+                        enabled: false
+                    },
+                    shadow: true
+                }
+                <% i=i+1 %>
+                <% end %>
 
-                ]
+            ]
         });
     });
 </script>

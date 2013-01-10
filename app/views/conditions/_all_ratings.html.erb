@@ -1,0 +1,97 @@
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+
+        var chart;
+        $(document).ready(function() {
+            var review_container = document.createElement('div');
+            review_container.style.height=<%= (((@drugs.count)/2.0).ceil) * 250 %>+'px';
+            document.getElementById('reviews_chart').innerHTML='';
+            document.getElementById('reviews_chart').appendChild(review_container);
+
+            Highcharts.setOptions({
+                colors: <%=raw @generate_colors%>
+            });
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: review_container,
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: 'Average ratings across all related drugs'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                    percentageDecimals: 1
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            color: '#000000',
+                            connectorColor: '#000000',
+                            formatter: function() {
+                                return '<b>'+ this.point.name +'</b> <br>rating: '+ this.point.y ;
+                            }
+                        }
+                    },
+                    series: {
+                        point: {
+                            events: {
+                                update: function(event) {
+                                    if (!confirm('Do you want to set the point\'s value to '+ event.options +'?')) {
+                                        return false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                series: [
+                    <% i=1%>
+                    <% y=150%>
+                    <% x=150%>
+                    <% @drugs.each do |drug| %>
+                    <%= ',' if i>1 %>
+                    {
+                        type: 'pie',
+                        size: 100,
+                        name: '<%= drug.brand_name %>',
+                        <% if i.odd? %>
+                        <% if i !=1 %>
+                        center: [ 200, <%= y+200 %> ],
+                        <% y=y+200 %>
+                        <% else %>
+                        center: [ 200, 100 ],
+                        <% end%>
+                        <% else %>
+                        <% if i !=2 %>
+                        center: [ 500, <%= x+200 %> ],
+                        <% x=x+200 %>
+                        <% else %>
+                        center: [ 500, 100 ],
+                        <% end%>
+                        <% end%>
+                        data: [
+                            ['Effectiveness',  <%= raw  @condition.avg_eff(drug.id).round(2)%>],
+                            ['Ease of Use',    <%= raw  @condition.avg_eou(drug.id).round(2) %> ],
+                            {
+                                name: 'Satisfactory',
+                                y: <%= raw @condition.avg_sat(drug.id).round(2) %>,
+                                sliced: true,
+                                selected: true
+                            }
+                        ]}
+                    <% i=i+1 %>
+                    <% end %>
+
+                ]
+            });
+
+        });
+
+    });
+</script>

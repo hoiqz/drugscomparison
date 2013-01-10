@@ -74,24 +74,14 @@ $(function () {
                             center: [ 500, 100 ],
                         <% end%>
                     <% end%>
-                    data: [
-                        ['Effectiveness',  <%= raw  @condition.avg_eff(drug.id).round(2)%>],
-                        ['Ease of Use',    <%= raw  @condition.avg_eou(drug.id).round(2) %> ],
-                        {
-                            name: 'Satisfactory',
-                            y: <%= raw @condition.avg_sat(drug.id).round(2) %>,
-                            sliced: true,
-                            selected: true
-                        }
-                    ]}
+                    data: <%=raw @update_values[drug]%>
+                }
                 <% i=i+1 %>
                 <% end %>
 
             ]
         });
-        $('#button').click(function() {
-            chart.series[0].data[0].update(<%=raw @update_values["1"]['all'] %>);
-        });
+
     });
 
 });

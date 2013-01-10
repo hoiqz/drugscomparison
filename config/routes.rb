@@ -16,7 +16,7 @@ Drugscomparison::Application.routes.draw do
       get 'by_gender_all_effectiveness'
       get 'by_gender_male_effectiveness'
       get 'by_gender_female_effectiveness'
-    end
+         end
   end
   #get "conditions/index"
 
