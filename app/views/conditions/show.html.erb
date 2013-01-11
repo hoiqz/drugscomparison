@@ -14,19 +14,26 @@
 
 <div id="chart_container">
 <div id="reviews_chart">
-
+  <div class="hero-unit">
+  <h1>Get started!</h1>
+  <p>Click on the button below to start comparing drugs</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+      Start!
+    </a>
+  </p>
+  </div>
 </div>
   <div id="conditions">
 
   </div>
 </div>
+
 <div id="static_buttons">
 <%= render "chart_buttons" %>
 </div>
 
-<div id="buttons">
-  <%= link_to 'By gender', gender_distinction_condition_path, :id=>'gender_link', remote: true%>
-</div>
+
 
 <p>
   <b>Drugs related to this condition: </b>

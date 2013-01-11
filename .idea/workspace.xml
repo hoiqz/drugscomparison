@@ -6,17 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/drugs/_chart_buttons.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,19 +35,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_chart_buttons.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="88" selection-start="600" selection-end="600" vertical-scroll-proportion="-2.6153846">
+            <state line="38" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="-7.8846154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conditions_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+      <file leaf-file-name="drug.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="82" selection-start="3721" selection-end="3721" vertical-scroll-proportion="1.0305755">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="effectiveness_count.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/drugs/effectiveness_count.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="82" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.754159">
               <folding />
             </state>
           </provider>
@@ -56,16 +65,7 @@
       <file leaf-file-name="condition.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="84" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="445" selection-end="445" vertical-scroll-proportion="-15.576923">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,28 +84,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/multi_pie_view.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/condition.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/drugs/_chart_buttons.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/drugs/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/drugs/effectiveness_count.js.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1366" />
-    <option name="height" value="717" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -256,28 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="drugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conditions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,7 +652,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="717" extended-state="1" />
+    <frame x="0" y="0" width="1366" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -750,114 +728,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="80" selection-start="2751" selection-end="2751" vertical-scroll-proportion="2.2055888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/1.9.1/rexml/functions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="295" column="19" selection-start="8959" selection-end="8959" vertical-scroll-proportion="0.33272395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="526" selection-end="526" vertical-scroll-proportion="0.6193078">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="71" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="71" selection-start="1003" selection-end="1003" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="445" selection-end="445" vertical-scroll-proportion="-15.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="70" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="94" selection-start="118" selection-end="1013" vertical-scroll-proportion="0.22753346">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="84" selection-start="3229" selection-end="3229" vertical-scroll-proportion="0.0">
+        <state line="20" column="71" selection-start="419" selection-end="419" vertical-scroll-proportion="-13.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="88" selection-start="600" selection-end="600" vertical-scroll-proportion="-2.6153846">
+        <state line="0" column="142" selection-start="114" selection-end="142" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="39" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.5248619">
+        <state line="12" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.35978836">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="71" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.6887661">
+        <state line="19" column="46" selection-start="326" selection-end="326" vertical-scroll-proportion="-0.03512015">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/ease_of_use_count.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="21" selection-start="2736" selection-end="2736" vertical-scroll-proportion="0.7571702">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/eou_view.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="21" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.6749522">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/ajax_update.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="37" selection-start="2340" selection-end="2745" vertical-scroll-proportion="0.73480666">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.754159">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="82" selection-start="3721" selection-end="3721" vertical-scroll-proportion="1.0305755">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.50831795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/satisfactory_count.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6598891">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/_chart_buttons.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="359" selection-end="359" vertical-scroll-proportion="0.09426987">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="-7.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert2seed.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/_review_ratings.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/effectiveness_count.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="82" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.754159">
           <folding />
         </state>
       </provider>

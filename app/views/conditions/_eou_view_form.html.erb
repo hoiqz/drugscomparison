@@ -4,21 +4,29 @@
 
     <%= hidden_field_tag 'type', 'all', :id=>"viewtype"%>
     <%= label_tag(:gender, "Gender") %>
-    <%= radio_button_tag(:gender,"Male") %> Male
-    <%= radio_button_tag(:gender,"Female") %> Female
-
     <ul>
-      <%= label_tag(:age, "Age Range") %>
-      <li><%= radio_button_tag(:age,"7-12") %>7-12</li>
-      <li><%= radio_button_tag(:age,"19-24") %>19-24</li>
-      <li><%= radio_button_tag(:age,"25-34") %>25-34</li>
-      <li><%= radio_button_tag(:age,"35-44") %>35-44</li>
-      <li><%= radio_button_tag(:age,"45-54") %>45-54</li>
-      <li><%= radio_button_tag(:age,"55-64") %>55-64</li>
-      <li><%= radio_button_tag(:age,"65-74") %>65-74</li>
-      <li><%= radio_button_tag(:age,"75 or over") %>75 or over</li>
-
+      <%= radio_button_tag(:gender,"Male") %> Male |
+      <%= radio_button_tag(:gender,"Female") %> Female
     </ul>
+
+    <%= label_tag(:age, "Age Range") %>
+    <ul>
+      <%= radio_button_tag(:age,"7-12") %>7-12 |
+      <%= radio_button_tag(:age,"19-24") %>19-24 |
+    </ul>
+    <ul>
+      <%= radio_button_tag(:age,"25-34") %>25-34 |
+      <%= radio_button_tag(:age,"35-44") %>35-44 |
+    </ul>
+    <ul>
+      <%= radio_button_tag(:age,"45-54") %>45-54 |
+      <%= radio_button_tag(:age,"55-64") %>55-64 |
+    </ul>
+    <ul>
+      <%= radio_button_tag(:age,"65-74") %>65-74 |
+      <%= radio_button_tag(:age,"75 or over") %>75 or over
+    </ul>
+
 
     <%= submit_tag "Refresh",:id=>"button",:class=>" btn btn-primary"%>
 <%  end%>

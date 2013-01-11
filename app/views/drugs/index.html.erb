@@ -1,31 +1,21 @@
 <h1>Listing drugs</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
-    <th>Drug_id</th>
-    <th>Generic name</th>
     <th>Brand name</th>
     <th>Side effect</th>
-    <th>Dosage</th>
-    <th>Precaution</th>
     <th>Manufacturer</th>
     <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
 <% @drugs.each do |drug| %>
   <tr>
-    <td><%= drug.id %></td>
-    <td><%= drug.generic_name %></td>
-    <td><%= drug.brand_name %></td>
+    <td><%= drug.brand_name %> (<%=drug.generic_name%>)</td>
     <td><%= drug.side_effect %></td>
-    <td><%= drug.dosage %></td>
-    <td><%= drug.precaution %></td>
     <td><%= drug.manufacturer %></td>
-    <td><%= link_to 'Show', drug %></td>
-    <td><%= link_to 'Edit', edit_drug_path(drug) %></td>
-    <td><%= link_to 'Destroy', drug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', drug ,:class=>'btn'%></td>
+
   </tr>
 <% end %>
 </table>

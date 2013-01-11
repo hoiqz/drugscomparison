@@ -1,18 +1,19 @@
-<h1>Listing conditions</h1>
+<h1>Condition list A-Z</h1>
 
-<table>
+<h5>Click on the beside each condition to view more infomation on it</h5>
+
+<table class="table table-striped">
   <tr>
-    <th>Condition  ID</th>
-    <th>Condition_name</th>
     <th>Condition</th>
+    <th>Description</th>
+    <th>Action</th>
   </tr>
 
   <% @conditions.each do |condition| %>
       <tr>
-        <td><%= condition.id %></td>
         <td><%= condition.name %></td>
         <td><%= condition.information %></td>
-        <td><%= link_to 'show', condition %></td>
+        <td><%= link_to 'show', condition ,:class => "btn"%></td>
         </tr>
   <% end %>
 </table>

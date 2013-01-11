@@ -11,11 +11,7 @@ Drugscomparison::Application.routes.draw do
   end
   resources :conditions do
     member do
-      get 'gender_distinction'
       get 'multi_pie_view'
-      get 'by_gender_all_effectiveness'
-      get 'by_gender_male_effectiveness'
-      get 'by_gender_female_effectiveness'
       get 'effectiveness_view'
       get 'eou_view'
       get 'satisfactory_view'
