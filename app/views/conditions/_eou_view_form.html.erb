@@ -1,0 +1,23 @@
+<%= form_for @condition,:url=> eou_view_condition_path(@condition.id),:method => "get", :remote=>true do |f| %>
+    <%= hidden_field_tag 'conditions', 'true' %>
+
+    <%= hidden_field_tag 'type', 'all', :id=>"viewtype"%>
+    <ul><%= label_tag(:gender, "Restrict by Gender") %>
+      <li><%= radio_button_tag(:gender,"Male") %> Male</li>
+      <li><%= radio_button_tag(:gender,"Female") %> Female</li>
+    </ul>
+    <ul>
+      <%= label_tag(:age, "Age Range") %>
+      <li><%= radio_button_tag(:age,"7-12") %>7-12</li>
+      <li><%= radio_button_tag(:age,"19-24") %>19-24</li>
+      <li><%= radio_button_tag(:age,"25-34") %>25-34</li>
+      <li><%= radio_button_tag(:age,"35-44") %>35-44</li>
+      <li><%= radio_button_tag(:age,"45-54") %>45-54</li>
+      <li><%= radio_button_tag(:age,"55-64") %>55-64</li>
+      <li><%= radio_button_tag(:age,"65-74") %>65-74</li>
+      <li><%= radio_button_tag(:age,"75 or over") %>75 or over</li>
+
+    </ul>
+
+    <%= submit_tag "Refresh",:id=>"button"%>
+<%  end%>

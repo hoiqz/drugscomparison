@@ -36,19 +36,19 @@ class Condition < ActiveRecord::Base
         query_record=query_record.where(:users=>{:age=>value})
         next
       end
-      if key ==:location
+      if key =="location"
         query_record=query_record.where(:users=>{:location=>value})
         next
       end
-      if key ==:ethnicity
+      if key =="ethnicity"
         query_record=query_record.where(:users=>{:ethnicity=>value})
         next
       end
-      if key ==:weight
+      if key =="weight"
         query_record=query_record.where(:users=>{:weight=>value})
         next
       end
-      if key ==:smoking_status
+      if key =="smoking_status"
         query_record=query_record.where(:users=>{:smoking_status=>value})
         next
       end
@@ -69,34 +69,7 @@ class Condition < ActiveRecord::Base
     Review.joins(:drug,:user).where(:users=>{:gender=>'Female'},:drug_id=>for_drug_id)
   end
 
-  # avg_* methods are for "all" tabs
-  def avg_eff(drugid)
-    score1=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=1").count
-    score2=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=2").count
-    score3=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=3").count
-    score4=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=4").count
-    score5=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=5").count
-    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
-    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
-  end
-  def avg_eou(drugid)
-    score1=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=1").count
-    score2=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=2").count
-    score3=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=3").count
-    score4=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=4").count
-    score5=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=5").count
-    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
-    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
-  end
-  def avg_sat(drugid)
-    score1=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=1").count
-    score2=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=2").count
-    score3=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=3").count
-    score4=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=4").count
-    score5=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=5").count
-    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
-    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
-  end
+
 
   def avg_eff2(review)
     score1=review.where("effectiveness=1").count
@@ -126,4 +99,79 @@ class Condition < ActiveRecord::Base
     weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
   end
 
+  def eff_score1(review)
+    review.where("effectiveness=1").count
+  end
+  def eff_score2(review)
+    review.where("effectiveness=2").count
+  end
+  def eff_score3(review)
+    review.where("effectiveness=3").count
+  end
+  def eff_score4(review)
+    review.where("effectiveness=4").count
+  end
+  def eff_score5(review)
+    review.where("effectiveness=5").count
+  end
+  def eou_score1(review)
+    review.where("ease_of_use=1").count
+  end
+  def eou_score2(review)
+    review.where("ease_of_use=2").count
+  end
+  def eou_score3(review)
+    review.where("ease_of_use=3").count
+  end
+  def eou_score4(review)
+    review.where("ease_of_use=4").count
+  end
+  def eou_score5(review)
+    review.where("ease_of_use=5").count
+  end
+  def sat_score1(review)
+    review.where("satisfactory=1").count
+  end
+  def sat_score2(review)
+    review.where("satisfactory=2").count
+  end
+  def sat_score3(review)
+    review.where("satisfactory=3").count
+  end
+  def sat_score4(review)
+    review.where("satisfactory=4").count
+  end
+  def sat_score5(review)
+    review.where("satisfactory=5").count
+  end
+
+  ###DEPRECEATED METHODS!!
+  # avg_* methods are for "all" tabs
+  def avg_eff(drugid)
+    score1=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=1").count
+    score2=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=2").count
+    score3=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=3").count
+    score4=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=4").count
+    score5=self.get_all_reviews(:for_drug_id=>drugid).where("effectiveness=5").count
+    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+  end
+  def avg_eou(drugid)
+    score1=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=1").count
+    score2=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=2").count
+    score3=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=3").count
+    score4=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=4").count
+    score5=self.get_all_reviews(:for_drug_id=>drugid).where("ease_of_use=5").count
+    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+  end
+  def avg_sat(drugid)
+    score1=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=1").count
+    score2=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=2").count
+    score3=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=3").count
+    score4=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=4").count
+    score5=self.get_all_reviews(:for_drug_id=>drugid).where("satisfactory=5").count
+    sum=Float(self.get_all_reviews(:for_drug_id=>drugid).count)
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+  end
 end

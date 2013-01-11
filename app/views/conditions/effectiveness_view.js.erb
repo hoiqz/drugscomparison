@@ -63,24 +63,14 @@ $(function () {
                     center: [ 500, 100 ],
                     <% end%>
                     <% end%>
-                    data: [
-                        ['Score of 1',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id).where("effectiveness=1").count %> ],
-                        ['Score of 2',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id).where("effectiveness=2").count %> ],
-                        ['Score of 3',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id).where("effectiveness=3").count %>],
-                        ['Score of 4',    <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id).where("effectiveness=4").count %>],
-                        {
-                            name: 'Score of 5',
-                            y: <%=raw @condition.get_all_reviews(:for_drug_id=>drug.id).where("effectiveness=5").count %>,
-                            sliced: true,
-                            selected: true
-                        }
-
-                    ]}
+                    data: <%=raw @update_values[drug]%>
+                }
                 <% i=i+1 %>
                 <% end %>
 
             ]
         });
+        $('#conditions').html("<%= escape_javascript(render "effectiveness_view_form") %>");
     });
 
 });

@@ -6,11 +6,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/multi_pie_view.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\_all_ratings.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\_test.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\by_gender_all_effectiveness.js.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\by_gender_female_effectiveness.js.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\by_gender_male_effectiveness.js.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\multi_pie_view.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\conditions\show.js.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/condition.rb" afterPath="$PROJECT_DIR$/app/models/condition.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,43 +48,25 @@
       <file leaf-file-name="_chart_buttons.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="100" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-22.23077">
+            <state line="4" column="88" selection-start="600" selection-end="600" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conditions_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="conditions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="15" selection-start="1512" selection-end="1512" vertical-scroll-proportion="1.4644195">
+            <state line="106" column="96" selection-start="3775" selection-end="3775" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multi_pie_view.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/multi_pie_view.html.erb">
+      <file leaf-file-name="effectiveness_view.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="223" selection-end="223" vertical-scroll-proportion="-9.807693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_test.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/_test.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="24" selection-start="0" selection-end="3792" vertical-scroll-proportion="-43.153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_multi_pie_view.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="80" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-3.6923077">
+            <state line="72" column="75" selection-start="0" selection-end="2574" vertical-scroll-proportion="-14.230769">
               <folding />
             </state>
           </provider>
@@ -77,35 +75,16 @@
       <file leaf-file-name="multi_pie_view.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="78" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.9230769">
-              <folding>
-                <marker date="1357806435341" expanded="true" signature="14:2987" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="65:2982" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="388:445" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="485:2973" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
-                <marker date="1357806435341" expanded="true" signature="702:782" placeholder="{&quot;text&quot;: 'Average ratings across all related drugs'...}" />
-                <marker date="1357806435341" expanded="true" signature="805:932" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
-                <marker date="1357806435341" expanded="true" signature="959:1892" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="982:1441" placeholder="{&quot;allowPointSelect&quot;: true...}" />
-                <marker date="1357806435341" expanded="true" signature="1099:1423" placeholder="{&quot;enabled&quot;: true...}" />
-                <marker date="1357806435341" expanded="true" signature="1279:1401" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1467:1878" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1496:1860" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1530:1838" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1584:1812" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1697:1782" placeholder="{...}" />
-                <marker date="1357806435341" expanded="true" signature="1914:2963" placeholder="[...]" />
-                <marker date="1357806435341" expanded="true" signature="2089:2894" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
-              </folding>
+            <state line="83" column="8" selection-start="2984" selection-end="3064" vertical-scroll-proportion="-13.5">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="condition.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="condition.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="18" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0">
+            <state line="116" column="54" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.5974499">
               <folding />
             </state>
           </provider>
@@ -114,7 +93,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="71" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.8076923">
+            <state line="19" column="7" selection-start="250" selection-end="250" vertical-scroll-proportion="-9.692307">
               <folding />
             </state>
           </provider>
@@ -133,28 +112,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/conditions/by_gender_female_effectiveness.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/all_ratings.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_condition_drugs.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/all_ratings.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_all_ratings.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/test.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/show.js.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_test.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/models/condition.rb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/multi_pie_view.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/condition.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/eou_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1366" />
-    <option name="height" value="715" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -701,7 +680,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="715" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -710,7 +689,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.34330985" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2195122" sideWeight="0.6739865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2195122" sideWeight="0.6750842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.33450705" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3108108" sideWeight="0.5007622" order="7" side_tool="true" content_ui="tabs" />
@@ -777,135 +756,107 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_condition_drugs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="115" selection-end="115" vertical-scroll-proportion="0.13051823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="1070" selection-end="1145" vertical-scroll-proportion="0.559415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_all_ratings.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="92" selection-start="519" selection-end="519" vertical-scroll-proportion="10.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="366" selection-end="366" vertical-scroll-proportion="-7190.6445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/static_pages.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/by_gender_all_effectiveness.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="97" selection-start="2418" selection-end="2439" vertical-scroll-proportion="2.2086613">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_test.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="24" selection-start="0" selection-end="3792" vertical-scroll-proportion="-43.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="80" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-3.6923077">
+        <state line="65" column="80" selection-start="2751" selection-end="2751" vertical-scroll-proportion="2.2055888">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/multi_pie_view.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="78" selection-start="276" selection-end="276" vertical-scroll-proportion="-3.9230769">
-          <folding>
-            <marker date="1357806435341" expanded="true" signature="14:2987" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="65:2982" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="388:445" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="485:2973" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
-            <marker date="1357806435341" expanded="true" signature="702:782" placeholder="{&quot;text&quot;: 'Average ratings across all related drugs'...}" />
-            <marker date="1357806435341" expanded="true" signature="805:932" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
-            <marker date="1357806435341" expanded="true" signature="959:1892" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="982:1441" placeholder="{&quot;allowPointSelect&quot;: true...}" />
-            <marker date="1357806435341" expanded="true" signature="1099:1423" placeholder="{&quot;enabled&quot;: true...}" />
-            <marker date="1357806435341" expanded="true" signature="1279:1401" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1467:1878" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1496:1860" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1530:1838" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1584:1812" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1697:1782" placeholder="{...}" />
-            <marker date="1357806435341" expanded="true" signature="1914:2963" placeholder="[...]" />
-            <marker date="1357806435341" expanded="true" signature="2089:2894" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
-          </folding>
+        <state line="83" column="8" selection-start="2984" selection-end="3064" vertical-scroll-proportion="-13.5">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="18" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0">
+        <state line="7" column="55" selection-start="0" selection-end="1372" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby193/lib/ruby/1.9.1/rexml/functions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="19" selection-start="8959" selection-end="8959" vertical-scroll-proportion="0.33272395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="460" selection-end="460" vertical-scroll-proportion="0.29254302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="65" selection-start="408" selection-end="408" vertical-scroll-proportion="0.19502868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="0" selection-end="1009" vertical-scroll-proportion="0.06500956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="75" selection-start="0" selection-end="2574" vertical-scroll-proportion="-14.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="73" selection-start="2541" selection-end="2541" vertical-scroll-proportion="2.3403442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/eou_view.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="103" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.707457">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="526" selection-end="526" vertical-scroll-proportion="0.6193078">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="100" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-22.23077">
+        <state line="4" column="88" selection-start="600" selection-end="600" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.8076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/multi_pie_view.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="223" selection-end="223" vertical-scroll-proportion="-9.807693">
+        <state line="19" column="7" selection-start="250" selection-end="250" vertical-scroll-proportion="-9.692307">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="15" selection-start="1512" selection-end="1512" vertical-scroll-proportion="1.4644195">
+        <state line="106" column="96" selection-start="3775" selection-end="3775" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="54" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.5974499">
           <folding />
         </state>
       </provider>
