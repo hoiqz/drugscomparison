@@ -101,9 +101,17 @@ footer {
     }
   }
 }
+
 #reviews_chart{
-  width: 660px;
+  float: left;
+  width: 900px;
   min-height: 300px;
   overflow: auto;
-
+}
+#conditions{
+  float:right;
+  width: 250px;
+}
+#static_buttons{
+  clear: both;
 }

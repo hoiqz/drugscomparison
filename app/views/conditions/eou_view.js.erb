@@ -63,7 +63,13 @@ $(function () {
                     center: [ 500, 100 ],
                     <% end%>
                     <% end%>
-                    data: <%=raw @update_values[drug]%>
+                    data: [
+                        ['Score of 1',<%=raw @update_values[drug][0] %> ],
+                        ['Score of 2',<%=raw @update_values[drug][1] %> ],
+                        ['Score of 3',<%=raw @update_values[drug][2] %> ],
+                        ['Score of 4',<%=raw @update_values[drug][3] %> ],
+                        ['Score of 5',<%=raw @update_values[drug][4] %> ]
+                    ]
                 }
                 <% i=i+1 %>
                 <% end %>

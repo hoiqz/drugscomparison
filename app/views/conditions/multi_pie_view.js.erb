@@ -68,13 +68,17 @@ $(function () {
                          <% end%>
                     <% else %>
                         <% if i !=2 %>
-                            center: [ 500, <%= x+200 %> ],
+                            center: [ 600, <%= x+200 %> ],
                             <% x=x+200 %>
                         <% else %>
-                            center: [ 500, 100 ],
+                            center: [ 600, 100 ],
                         <% end%>
                     <% end%>
-                    data: <%=raw @update_values[drug]%>
+                    data: [
+                        ['Effectiveness',  <%= raw  @update_values[drug][0]%>],
+                        ['Ease of Use',    <%= raw  @update_values[drug][1] %> ],
+                        ['Satisfactory',    <%= raw  @update_values[drug][2] %> ]
+                        ]
                 }
                 <% i=i+1 %>
                 <% end %>

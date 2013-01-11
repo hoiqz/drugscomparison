@@ -27,15 +27,6 @@ class ConditionsController < ApplicationController
     #  format.js
     end
 
-
-  def gender_distinction
-    @condition=Condition.find(params[:id])
-    @drugs=@condition.drugs
-    respond_to do |format|
-      format.js
-    end
-  end
-
   def multi_pie_view
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs.scoped
@@ -47,7 +38,7 @@ class ConditionsController < ApplicationController
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
       @generate_colors.push('#E238EC','#8AFB17' ,'#736AFF')    #set the colors here then pass to the javascript
-      (@update_values[drug]).push(@condition.avg_eff2(@related_reviews), @condition.avg_eou2(@related_reviews) ,@condition.avg_sat2(@related_reviews))
+      (@update_values[drug]).push(@condition.avg_eff2(@related_reviews).round(2), @condition.avg_eou2(@related_reviews).round(2),@condition.avg_sat2(@related_reviews).round(2))
     end
     respond_to do |format|
       #format.html
@@ -66,7 +57,7 @@ class ConditionsController < ApplicationController
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
       @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')    #set the colors here then pass to the javascript
-      (@update_values[drug]).push(@condition.eff_score1(@related_reviews), @condition.eff_score2(@related_reviews) ,@condition.eff_score3(@related_reviews),@condition.eff_score4(@related_reviews),@condition.eff_score5(@related_reviews))
+      (@update_values[drug]).push(@condition.eff_score1(@related_reviews).round(2), @condition.eff_score2(@related_reviews).round(2) ,@condition.eff_score3(@related_reviews).round(2),@condition.eff_score4(@related_reviews).round(2),@condition.eff_score5(@related_reviews).round(2))
     end
     respond_to do |format|
       #format.html
@@ -85,7 +76,7 @@ class ConditionsController < ApplicationController
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
       @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')    #set the colors here then pass to the javascript
-      (@update_values[drug]).push(@condition.eou_score1(@related_reviews), @condition.eou_score2(@related_reviews) ,@condition.eou_score3(@related_reviews),@condition.eou_score4(@related_reviews),@condition.eou_score5(@related_reviews))
+      (@update_values[drug]).push(@condition.eou_score1(@related_reviews).round(2), @condition.eou_score2(@related_reviews).round(2),@condition.eou_score3(@related_reviews).round(2),@condition.eou_score4(@related_reviews).round(2),@condition.eou_score5(@related_reviews).round(2))
     end
     respond_to do |format|
       #format.html
@@ -104,7 +95,7 @@ class ConditionsController < ApplicationController
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
       @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')    #set the colors here then pass to the javascript
-      (@update_values[drug]).push(@condition.sat_score1(@related_reviews), @condition.sat_score2(@related_reviews) ,@condition.sat_score3(@related_reviews),@condition.sat_score4(@related_reviews),@condition.sat_score5(@related_reviews))
+      (@update_values[drug]).push(@condition.sat_score1(@related_reviews).round(2), @condition.sat_score2(@related_reviews).round(2),@condition.sat_score3(@related_reviews).round(2),@condition.sat_score4(@related_reviews).round(2),@condition.sat_score5(@related_reviews).round(2))
     end
     respond_to do |format|
       #format.html
@@ -112,6 +103,14 @@ class ConditionsController < ApplicationController
     end
   end
 
+  ##DEPRECEATED METHODS
+  def gender_distinction
+    @condition=Condition.find(params[:id])
+    @drugs=@condition.drugs
+    respond_to do |format|
+      format.js
+    end
+  end
   def by_gender_all_effectiveness
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs.scoped

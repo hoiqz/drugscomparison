@@ -1,16 +1,12 @@
 <%= form_for @condition,:url=> multi_pie_view_condition_path(@condition.id),:method => "get", :remote=>true do |f| %>
+    <legend>Restrict By:</legend>
     <%= hidden_field_tag 'conditions', 'true' %>
-    <ul><%= label_tag(:type, "View By:") %>
-      <li><%= radio_button_tag(:type,"overall") %> Overall rating</li>
-      <li><%= radio_button_tag(:type,"effectiveness") %> Effectiveness Rating</li>
-      <li><%= radio_button_tag(:type,"ease_of_use") %> Ease of Use Rating</li>
-      <li><%= radio_button_tag(:type,"satisfactory") %> Satisfactory Rating</li>
-    </ul>
+
     <%= hidden_field_tag 'type', 'all', :id=>"viewtype"%>
-    <ul><%= label_tag(:gender, "Restrict by Gender") %>
-      <li><%= radio_button_tag(:gender,"Male") %> Male</li>
-      <li><%= radio_button_tag(:gender,"Female") %> Female</li>
-    </ul>
+    <%= label_tag(:gender, "Gender") %>
+      <%= radio_button_tag(:gender,"Male") %> Male
+      <%= radio_button_tag(:gender,"Female") %> Female
+
     <ul>
       <%= label_tag(:age, "Age Range") %>
       <li><%= radio_button_tag(:age,"7-12") %>7-12</li>
@@ -24,5 +20,5 @@
 
     </ul>
 
-    <%= submit_tag "Refresh",:id=>"button"%>
+    <%= submit_tag "Refresh",:id=>"button",:class=>" btn btn-primary"%>
 <%  end%>
