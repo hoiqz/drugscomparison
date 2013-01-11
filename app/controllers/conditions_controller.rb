@@ -49,14 +49,8 @@ class ConditionsController < ApplicationController
         @generate_colors.push('#E238EC','#8AFB17' ,'#736AFF')    #set the colors here then pass to the javascript
         (@update_values[drug]).push(@condition.avg_eff2(@related_reviews), @condition.avg_eou2(@related_reviews) ,@condition.avg_sat2(@related_reviews))
       end
-
-  #updated_values{
-  #"maleonly"=>[1,2,3,4,5,6],
-  #"all"=>[1..6],
-  #"agegrp1"=>[1..6]
-  #}
-
   respond_to do |format|
+    format.html
     format.js
   end
   end
