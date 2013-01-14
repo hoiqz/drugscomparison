@@ -47,10 +47,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="convert2seed.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="convert2seed.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convert2seed.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="58" selection-start="446" selection-end="446" vertical-scroll-proportion="0.6005435">
+            <state line="13" column="58" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,7 +69,19 @@
         <entry file="file://$PROJECT_DIR$/app/views/drugs/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="51" column="49" selection-start="379" selection-end="939" vertical-scroll-proportion="-17.038462">
-              <folding />
+              <folding>
+                <marker date="1357881104519" expanded="true" signature="36:92" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="97:149" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="154:208" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="213:257" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="262:314" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="319:375" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="434:510" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="461:470" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="494:503" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="537:574" placeholder="..." />
+                <marker date="1357881104519" expanded="true" signature="805:938" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -695,8 +716,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="715" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="715" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.49695122" order="6" side_tool="false" content_ui="tabs" />
@@ -771,13 +792,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/ease_of_use.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="3" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.9347409">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/drugs/ease_of_use_count.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="23" selection-start="0" selection-end="1837" vertical-scroll-proportion="0.19577736">
@@ -878,7 +892,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/convert2seed.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="58" selection-start="446" selection-end="446" vertical-scroll-proportion="0.6005435">
+        <state line="13" column="58" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
