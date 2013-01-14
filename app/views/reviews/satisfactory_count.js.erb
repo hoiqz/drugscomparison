@@ -1,0 +1,55 @@
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        Highcharts.setOptions({
+            colors: ['#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E']
+        });
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'reviews_chart',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'How satisfied are users who use this drug?'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+                percentageDecimals: 1
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        color: '#000000',
+                        connectorColor: '#000000',
+                        formatter: function() {
+                            return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Percentage of reviews',
+                data: [
+                    ['Score of 1',    <%=raw @lessthan1 %> ],
+                    ['Score of 2',    <%=raw @lessthan2 %> ],
+                    ['Score of 3',    <%=raw  @lessthan3 %>],
+                    ['Score of 4',    <%=raw  @lessthan4 %>],
+                    {
+                        name: 'Score of 5',
+                        y: <%=raw @lessthan5 %>,
+                        sliced: true,
+                        selected: true
+                    }
+                ]
+            }]
+        });
+    });
+
+});

@@ -11,10 +11,10 @@
 
 <% @drugs.each do |drug| %>
   <tr>
-    <td><%= drug.brand_name %> (<%=drug.generic_name%>)</td>
+    <td><%= drug.brand_name %> (<%= pluralize(drug.reviews.count, "Review")%>)</td>
     <td><%= drug.side_effect %></td>
     <td><%= drug.manufacturer %></td>
-    <td><%= link_to 'Show', drug ,:class=>'btn'%></td>
+    <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
 
   </tr>
 <% end %>

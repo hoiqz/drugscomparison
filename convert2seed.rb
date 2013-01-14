@@ -1,13 +1,16 @@
 ##***********IMPORTANT!!**************
 # before running this script. you need to sort the review file in ascending order by time.
 ## do sed '1!G;h;$!d' <filename> >outfilefile
+## also edit the source id  with the drug id from webmd
+## edit the total reviews number
+## edit the generic name
 
 tablename1="Drug"
 tablename2="Condition"
 tablename3="Review"
 generic_name="amphetamine and dextroamphetamine"
-source_id="63164"
-total_reviews=578
+source_id="9475"
+total_reviews=234
 webmd=true
 askapatient=false
 everydayhealth=false

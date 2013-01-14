@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'bootstrap-sass'
 gem 'sqlite3'
+gem 'kaminari'
 
 group :development do
   gem 'rspec-rails', '2.0.1'

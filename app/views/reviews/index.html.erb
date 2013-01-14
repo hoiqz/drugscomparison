@@ -1,45 +1,72 @@
-<h1>Listing reviews</h1>
-
-<table class="table table-hover">
-  <tr>
-    <th>Drug</th>
-    <th>User</th>
-    <th>Condition</th>
-    <th>Comments</th>
-    <th>Review url</th>
-    <th>Effectiveness</th>
-    <th>Ease of use</th>
-    <th>Satisfactory</th>
-    <th>Tolerability</th>
-    <th>Tag cloud path</th>
-    <th>Similar experience</th>
-    <th>Usage duration days</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @reviews.each do |review| %>
-  <tr>
-    <td><%= review.drug_id %></td>
-    <td><%= review.user_id %></td>
-    <td><%= review.drug.conditions.first.name %></td>
-    <td><%= link_to "#{review.comments}", "#{review.review_url}" %></td>
-    <td><%= review.review_url %></td>
-    <td><%= review.effectiveness %></td>
-    <td><%= review.ease_of_use %></td>
-    <td><%= review.satisfactory %></td>
-    <td><%= review.tolerability %></td>
-    <td><%= review.tag_cloud_path %></td>
-    <td><%= review.similar_experience %></td>
-    <td><%= review.usage_duration_days %></td>
-    <td><%= link_to 'Show', review %></td>
-    <td><%= link_to 'Edit', edit_review_path(review) %></td>
-    <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<% content_for :script do %>
+    <script type='text/javascript'>
+        $(function () {
+            $('#paginator nav span a').live('click', function () {
+                $.getScript(this.href);
+                return false;
+            });
+        });
+    </script>
 <% end %>
-</table>
 
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Generic name:</b>
+  <%= @drug.generic_name %>
+</p>
+
+<p>
+  <b>Brand name:</b>
+  <%= @drug.brand_name %>
+</p>
+
+<p>
+  <b>Side effect:</b>
+  <%= @drug.side_effect %>
+</p>
+
+<p>
+  <b>Dosage:</b>
+  <%= @drug.dosage %>
+</p>
+
+<p>
+  <b>Precaution:</b>
+  <%= @drug.precaution %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%= @drug.manufacturer %>
+</p>
+
+
+<%= render "review_ratings"%>
+<div id="chart_container">
+  <div id="reviews_chart">
+  </div>
+  <div id="conditions">
+  </div>
+</div>
+
+<div id="static_buttons">
+  <%= render "chart_buttons" %>
+</div>
+
+<%= link_to 'Edit', edit_drug_path(@drug) %> |
+<%= link_to 'Back', drugs_path %> |
+
+<%= link_to "See #{@drug.generic_name} reviews", :controller => "reviews", :action => "index", :drug_id=>@drug.id if @drug.reviews.exists? %>
+<p>
+  <%= link_to "Write a review!", :controller => "reviews", :action => "new", :drug_id=>@drug.id, :drug_name=>@drug.generic_name%>
+</p>
+
+
+
+  <div id="reviewtable">
+  <%= render "reviews" %>
+</div>
 <br />
 
 <%= link_to 'New Review', new_review_path %>
