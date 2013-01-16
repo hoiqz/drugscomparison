@@ -9,7 +9,7 @@
     </script>
 <% end %>
 
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <b>Generic name:</b>
@@ -62,11 +62,14 @@
   <%= link_to "Write a review!", :controller => "reviews", :action => "new", :drug_id=>@drug.id, :drug_name=>@drug.generic_name%>
 </p>
 
+<div id="comment-notice"></div>
+
+<p id="notice"><%= notice %></p>
 
 
-  <div id="reviewtable">
-  <%= render "reviews" %>
+<span id="reviews_count"><%= pluralize(@reviews.count, "reviews") %></span>
+<div id="reviews_section">
+  <%= render "reviews", :locals => { :list => true } %>
 </div>
-<br />
 
-<%= link_to 'New Review', new_review_path %>
+

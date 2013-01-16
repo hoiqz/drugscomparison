@@ -8,10 +8,12 @@ class Drug < ActiveRecord::Base
   has_many :conditions, :through => :treatments
   has_many :reviews
 
-  accepts_nested_attributes_for :reviews #, :allow_destroy => true, :reject_if => :reject_review
+  accepts_nested_attributes_for :reviews, :allow_destroy => true, :reject_if => :reject_review
   accepts_nested_attributes_for :treatments, :allow_destroy => true, :reject_if => :reject_treatment
   accepts_nested_attributes_for :conditions
 
+
+  validates :generic_name, :presence => true#, :uniqueness => true
 
   def reject_review(attributed)
     if attributed['comments'].blank? or attributed['effectiveness'].blank? or attributed['ease_of_use'].blank? or attributed['satisfactory'].blank?
@@ -25,7 +27,6 @@ class Drug < ActiveRecord::Base
   end
 
 
-  validates :generic_name, :presence => true#, :uniqueness => true
 
 
 

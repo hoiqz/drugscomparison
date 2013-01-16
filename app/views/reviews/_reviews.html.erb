@@ -2,41 +2,12 @@
   <%= paginate @reviews %>
 </div>
 
-<table class="table table-hover">
-  <tr>
-    <th>Drug</th>
-    <th>User</th>
-    <th>Condition</th>
-    <th>Comments</th>
-    <th>Effectiveness</th>
-    <th>Ease of use</th>
-    <th>Satisfactory</th>
-    <th>Similar experience</th>
-    <th>Usage duration days</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tbody>
   <% @reviews.each do |review| %>
-<tr>
-  <td><%= review.drug_id %></td>
-  <td><%= review.user.username %></td>
-  <td><%= review.drug.conditions.first.name %></td>
-  <td><%= link_to "#{review.comments}", "#{review.review_url}" %></td>
-
-  <td><%= review.effectiveness %></td>
-  <td><%= review.ease_of_use %></td>
-  <td><%= review.satisfactory %></td>
-
-
-  <td><%= review.similar_experience %></td>
-  <td><%= review.usage_duration_days %></td>
-  <td><%= link_to 'Show', review %></td>
-  <td><%= link_to 'Edit', edit_review_path(review) %></td>
-  <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+    <span class="dateandoptions">
+    Posted <%=time_ago_in_words(review.created_at)%> ago<br />
+      <%= link_to 'Delete', review, :method => :delete, :class => "delete", :remote => true  %>
+  </span>
+    <p><b><%= review.user.username %></b> wrote:</p>
+    <br />
+    <%= content_tag(:p, review.comments, :class => "comment-body") %>
   <% end %>
-  </tbody>
-
-</table>

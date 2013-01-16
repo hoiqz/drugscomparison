@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  #before_filter :get_drug, :except => :create
   before_filter :get_drug
   #before_filter :get_average, :only=>:show
 
@@ -10,7 +11,8 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
-    @reviews = @drug.reviews.page(params[:page]).per(5)
+    @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }
@@ -45,7 +47,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/new.json
   def new
     @review = @drug.reviews.new
-
+    @user=User.new
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @review }
@@ -54,21 +56,31 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1/edit
   def edit
-    @review = @drugs.reviews.find(params[:id])
+    @review = @drug.reviews.find(params[:id])
   end
 
   # POST /reviews
   # POST /reviews.json
   def create
-    @review = @drugs.reviews.new(params[:review])
+    #@drug=Drug.find(params[:review][:drug_id])
+    @user=User.new(params[:user])
+    #@user.save!
+
+    @review = @user.reviews.build(params[:review])
+    @review.drug_id=params[:drug_id]
+
+
+
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
+        format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
         format.json { render json: @review, status: :created, location: @review }
       else
         format.html { render action: "new" }
-        format.json { render json: @review.errors, status: :unprocessable_entity }
+        format.json { render json: @review.errors, status: :unprocessable_entity
+        render json: @user.errors, status: :unprocessable_entity
+        }
       end
     end
   end
@@ -76,7 +88,7 @@ class ReviewsController < ApplicationController
   # PUT /reviews/1
   # PUT /reviews/1.json
   def update
-    @review = @drugs.reviews.find(params[:id])
+    @review = @drug.reviews.find(params[:id])
 
     respond_to do |format|
       if @review.update_attributes(params[:review])
@@ -92,7 +104,7 @@ class ReviewsController < ApplicationController
   # DELETE /reviews/1
   # DELETE /reviews/1.json
   def destroy
-    @review = @drugs.reviews.find(params[:id])
+    @review = @drug.reviews.find(params[:id])
     @review.destroy
     respond_to do |format|
       format.html { redirect_to reviews_url }

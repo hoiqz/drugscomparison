@@ -1,4 +1,4 @@
-<%= form_for(@review) do |f| %>
+<%= form_for @review do |f| %>
   <% if @review.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
@@ -11,65 +11,72 @@
     </div>
   <% end %>
 
+        <%= fields_for @user do |user_detail_form| %>
 
-    <p>Please fill in the following review information for the drug <%= params[:drug_name] %></p>
-  <div class="field">
-    <%= f.label "Enter a name" %><br />
-    <%= text_field_tag(:username, "", :size => "24x6") %>
-  </div>
+            <%= user_detail_form.label :username, "Your name" %><br />
+            <%= user_detail_form.text_field :username %><br />
+            <%= user_detail_form.label :email_address, "Email address" %><br />
+            <%= user_detail_form.text_field :email_address %><br />
+            <%= user_detail_form.label :age, "Age" %><br />
+            <%= user_detail_form.text_field :age %><br />
+            <%= user_detail_form.label :gender, "Gender" %><br />
+            <%= user_detail_form.text_field :gender %><br />
+            <%= user_detail_form.label :ethnicity, "Ethnicity" %><br />
+            <%= user_detail_form.text_field :ethnicity %><br />
+            <%= user_detail_form.label :weight, "Weight" %><br />
+            <%= user_detail_form.text_field :weight %><br />
+        <% end %>
+        <%= f.label :comments, "Comments" %><br />
+        <%= f.text_area :comments, :rows => 8 %><br />
+        <div class="field">
+          <%= f.label :effectiveness %><br />
+          <%= f.radio_button :effectiveness, "1" %>
+          <%= label :effectiveness, '1' %>
+          <%= f.radio_button :effectiveness, "2" %>
+          <%= label :effectiveness, '2' %>
+          <%= f.radio_button :effectiveness, "3" %>
+          <%= label :effectiveness, '3' %>
+          <%= f.radio_button :effectiveness, "4" %>
+          <%= label :effectiveness, '4' %>
+          <%= f.radio_button :effectiveness, "5" %>
+          <%= label :effectiveness, '5' %>
+        </div>
+        <div class="field">
+          <%= f.label :ease_of_use %><br />
+          <%= f.radio_button :ease_of_use, "1" %>
+          <%= label :ease_of_use, '1' %>
+          <%= f.radio_button :ease_of_use, "2" %>
+          <%= label :ease_of_use, '2' %>
+          <%= f.radio_button :ease_of_use, "3" %>
+          <%= label :ease_of_use, '3' %>
+          <%= f.radio_button :ease_of_use, "4" %>
+          <%= label :ease_of_use, '4' %>
+          <%= f.radio_button :ease_of_use, "5" %>
+          <%= label :ease_of_use, '5' %>
+        </div>
+        <div class="field">
+          <%= f.label :satisfactory %><br />
+          <%= f.radio_button :satisfactory, "1" %>
+          <%= label :satisfactory, '1' %>
+          <%= f.radio_button :satisfactory, "2" %>
+          <%= label :satisfactory, '2' %>
+          <%= f.radio_button :satisfactory, "3" %>
+          <%= label :satisfactory, '3' %>
+          <%= f.radio_button :satisfactory, "4" %>
+          <%= label :satisfactory, '4' %>
+          <%= f.radio_button :satisfactory, "5" %>
+          <%= label :satisfactory, '5' %>
+        </div>
 
-  <div class="field">
-    <%= f.label :comments %><br />
-    <%= f.text_area :comments %>
-  </div>
+        <div class="field">
+          <%= f.label "Choose the duration that best match your usage" %><br />
+          <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
+        </div>
 
-  </div>
-  <div class="field">
-    <%= f.label :effectiveness %><br />
-    <%= f.radio_button :effectiveness, "1" %>
-    <%= label :effectiveness, '1' %>
-    <%= f.radio_button :effectiveness, "2" %>
-    <%= label :effectiveness, '2' %>
-    <%= f.radio_button :effectiveness, "3" %>
-    <%= label :effectiveness, '3' %>
-    <%= f.radio_button :effectiveness, "4" %>
-    <%= label :effectiveness, '4' %>
-    <%= f.radio_button :effectiveness, "5" %>
-    <%= label :effectiveness, '5' %>
-  </div>
-  <div class="field">
-    <%= f.label :ease_of_use %><br />
-    <%= f.radio_button :ease_of_use, "1" %>
-    <%= label :ease_of_use, '1' %>
-    <%= f.radio_button :ease_of_use, "2" %>
-    <%= label :ease_of_use, '2' %>
-    <%= f.radio_button :ease_of_use, "3" %>
-    <%= label :ease_of_use, '3' %>
-    <%= f.radio_button :ease_of_use, "4" %>
-    <%= label :ease_of_use, '4' %>
-    <%= f.radio_button :ease_of_use, "5" %>
-    <%= label :ease_of_use, '5' %>
-  </div>
-  <div class="field">
-    <%= f.label :satisfactory %><br />
-    <%= f.radio_button :satisfactory, "1" %>
-    <%= label :satisfactory, '1' %>
-    <%= f.radio_button :satisfactory, "2" %>
-    <%= label :satisfactory, '2' %>
-    <%= f.radio_button :satisfactory, "3" %>
-    <%= label :satisfactory, '3' %>
-    <%= f.radio_button :satisfactory, "4" %>
-    <%= label :satisfactory, '4' %>
-    <%= f.radio_button :satisfactory, "5" %>
-    <%= label :satisfactory, '5' %>
-  </div>
+        <%= hidden_field_tag :drug_id, @drug.id%>
 
-  <div class="field">
-    <%= f.label "Choose the duration that best match your usage" %><br />
-    <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
-  </div>
+        <div class="actions">
+          <%= f.submit "Add comment" %>
+        </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+    <% end %>
