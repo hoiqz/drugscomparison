@@ -12,9 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
+
 //= require_tree .
+$(function () {
+jQuery.ajaxSetup({
+    'beforeSend': function (xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+});
+
+$(document).ready(function (){
+    $('#new_review').submit(function (){
+        $.post($(this).attr('action'), $(this).serialize(), null, "script");
+        return false;
+    });
 
 
-
+});
+});
 

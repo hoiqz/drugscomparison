@@ -74,23 +74,24 @@ class ReviewsController < ApplicationController
     @review = @user.reviews.build(params[:review])
     @review.drug_id=params[:drug_id]
 
-    @for_counts=@drug.reviews.count
+    #@for_counts=@drug.reviews.count
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 
     respond_to do |format|
       if @review.save
         @new_id=@review.id
         flash[:notice] = "Thanks for reviewing!"
-        #format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
+        format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
         #format.json { render json: @review, status: :created, location: @review }
         format.js
       else
         @error_msg= ""
         flash[:notice] = "Error with your submission!"
         @review.errors.full_messages.each do |error|
-          @error_msg=@error_msg+error
-         end
-        #format.html { render action: "index" }
+          @error_msg << "#{error}\n"
+        end
+
+        format.html { render action: "index" }
         #format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review creation failed.' }
         #format.json { render json: @review.errors, status: :unprocessable_entity
         #render json: @user.errors, status: :unprocessable_entity

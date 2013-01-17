@@ -6,10 +6,18 @@
    <div id="review_<%="#{review.id}"%>">
     <span class="dateandoptions">
     Posted <%= time_ago_in_words(review.created_at)%> ago<br />
-      <%= link_to 'Delete', drug_reviews_path, :method => :delete, :class => "delete", :remote => true  %>
   </span>
-    <p><b><%= review.user.username %></b> wrote:</p>
-    <br />
+    <p><b><%= review.user.username %></b> wrote:</p><br />
+     <div class="rating_bar">
+       <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
+     </div>  Effectiveness
+     <div class="rating_bar">
+       <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
+     </div> Ease of Use
+     <div class="rating_bar">
+       <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
+     </div> Satisfactory
+
     <%= content_tag(:p, review.comments, :class => "review-body") %>
 
 <%	end %>

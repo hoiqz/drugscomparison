@@ -5,24 +5,18 @@
                 $.getScript(this.href);
                 return false;
             });
-            $(document).on("ajax:success", function(evt, xhr, status, error){
-                /* Replace the count of comments */
-                $("#reviews_count").html("<%= pluralize(@for_counts, 'reviews') %>");
+            $('#write_review').bind('click',function(){
+                if ($("#new_review").hasClass("hide"))
+                {
+                $("#new_review").removeClass("hide");
+                }
+                else
+                {
+                    $("#new_review").addClass("hide");
+                }
 
-                /* Add the new comment to the bottom of the comments list */
-
-
-                $("#reviews_section").html("<%= escape_javascript(render "reviews") %>",function(){
-
-                    $("#new_review")[0].reset();
-
-                });
+                console.log("this is the click");
             });
-            var error=$(document).on("ajax:error", function(evt, xhr, status, error){
-                $("#reviews-notice").html("<p><%= escape_javascript @error_msg %></p>");
-                $("#error_explanation").html('<p>test</p>') ;
-            });
-
         });
     </script>
 <% end %>
@@ -73,89 +67,56 @@
 </div>
 
 <%= link_to 'Edit', edit_drug_path(@drug) %> |
-<%= link_to 'Back', drugs_path %> |
+<%= link_to 'Back', drugs_path %>
 
-<%= link_to "See #{@drug.generic_name} reviews", :controller => "reviews", :action => "index", :drug_id=>@drug.id if @drug.reviews.exists? %>
 <p>
-  <%= link_to "Write a review!", :controller => "reviews", :action => "new", :drug_id=>@drug.id, :drug_name=>@drug.generic_name%>
+  <button id="write_review" class="btn btn-primary" type="button">Write Review</button>
 </p>
 
-<div id="reviews-notice"></div>
 
-<p id="notice"><%= notice %></p>
-<div id="error_explanation">
-<% if @review.errors.any? %>
+<%= form_for ([@drug,@review]),:remote=>true,:html => {:class => "hide"} do |f| %>
 
-      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
-
-      <ul>
-        <% @review.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-        <% end %>
-      </ul>
-
-<% end %>
-
-  </div>
-
-<%= form_for ([@drug,@review]),:remote=>true, :html => { :'data-type' => 'html', :id => 'new_review' } do |f| %>
-
+    <%= f.error_messages %>
 
     <%= fields_for @user do |user_detail_form| %>
 
-        <%= user_detail_form.label :username, "Your name" %><br />
-        <%= user_detail_form.text_field :username %><br />
-        <%= user_detail_form.label :email_address, "Email address" %><br />
-        <%= user_detail_form.text_field :email_address %><br />
-        <%= user_detail_form.label :age, "Age" %><br />
-        <%= user_detail_form.text_field :age %><br />
-        <%= user_detail_form.label :gender, "Gender" %><br />
-        <%= user_detail_form.text_field :gender %><br />
-        <%= user_detail_form.label :ethnicity, "Ethnicity" %><br />
-        <%= user_detail_form.text_field :ethnicity %><br />
-        <%= user_detail_form.label :weight, "Weight" %><br />
-        <%= user_detail_form.text_field :weight %><br />
+        Enter A Name: <%= user_detail_form.text_field :username %><br />
+
+        Email Address: <%= user_detail_form.text_field :email_address %><br />
+
+        Age:  <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]) %><br />
+
+        Gender: <%= user_detail_form.select :gender, options_for_select([["Male","Male"],["Female","Female"]]) %> <br />
+
+        Ethnicity: <%= user_detail_form.text_field :ethnicity %><br />
+
+        Weight: <%= user_detail_form.text_field :weight %>Kg<br />
     <% end %>
-    <%= f.label :comments, "Comments" %><br />
-    <%= f.text_area :comments, :rows => 8 %><br />
+    <%= f.label :comments, "Review" %>
+    <%= f.text_area :comments, :size=> "44x6" %><br />
     <div class="field">
-      <%= f.label :effectiveness %><br />
-      <%= f.radio_button :effectiveness, "1" %>
-      <%= label :effectiveness, '1' %>
-      <%= f.radio_button :effectiveness, "2" %>
-      <%= label :effectiveness, '2' %>
-      <%= f.radio_button :effectiveness, "3" %>
-      <%= label :effectiveness, '3' %>
-      <%= f.radio_button :effectiveness, "4" %>
-      <%= label :effectiveness, '4' %>
-      <%= f.radio_button :effectiveness, "5" %>
-      <%= label :effectiveness, '5' %>
+      <%= f.label :effectiveness %>
+      <%= f.radio_button :effectiveness, "1" %> 1 |
+      <%= f.radio_button :effectiveness, "2" %> 2 |
+      <%= f.radio_button :effectiveness, "3" %> 3 |
+      <%= f.radio_button :effectiveness, "4" %> 4 |
+      <%= f.radio_button :effectiveness, "5" %> 5
     </div>
     <div class="field">
-      <%= f.label :ease_of_use %><br />
-      <%= f.radio_button :ease_of_use, "1" %>
-      <%= label :ease_of_use, '1' %>
-      <%= f.radio_button :ease_of_use, "2" %>
-      <%= label :ease_of_use, '2' %>
-      <%= f.radio_button :ease_of_use, "3" %>
-      <%= label :ease_of_use, '3' %>
-      <%= f.radio_button :ease_of_use, "4" %>
-      <%= label :ease_of_use, '4' %>
-      <%= f.radio_button :ease_of_use, "5" %>
-      <%= label :ease_of_use, '5' %>
+      <%= f.label :ease_of_use %>
+      <%= f.radio_button :ease_of_use, "1" %> 1 |
+      <%= f.radio_button :ease_of_use, "2" %> 2 |
+      <%= f.radio_button :ease_of_use, "3" %> 3 |
+      <%= f.radio_button :ease_of_use, "4" %> 4 |
+      <%= f.radio_button :ease_of_use, "5" %> 5
     </div>
     <div class="field">
-      <%= f.label :satisfactory %><br />
-      <%= f.radio_button :satisfactory, "1" %>
-      <%= label :satisfactory, '1' %>
-      <%= f.radio_button :satisfactory, "2" %>
-      <%= label :satisfactory, '2' %>
-      <%= f.radio_button :satisfactory, "3" %>
-      <%= label :satisfactory, '3' %>
-      <%= f.radio_button :satisfactory, "4" %>
-      <%= label :satisfactory, '4' %>
-      <%= f.radio_button :satisfactory, "5" %>
-      <%= label :satisfactory, '5' %>
+      <%= f.label :satisfactory %>
+      <%= f.radio_button :satisfactory, "1" %> 1 |
+      <%= f.radio_button :satisfactory, "2" %> 2 |
+      <%= f.radio_button :satisfactory, "3" %> 3 |
+      <%= f.radio_button :satisfactory, "4" %> 4 |
+      <%= f.radio_button :satisfactory, "5" %> 5
     </div>
 
     <div class="field">
@@ -164,24 +125,18 @@
     </div>
 
     <%= hidden_field_tag :drug_id, @drug.id%>
-
+    <div id="error_explanation" class="hide"></div>
     <div class="actions">
-      <%= f.submit "Add comment" %>
+      <%= f.submit "Add comment" ,:class=>"btn btn-primary"%>
     </div>
 
 <% end %>
-
-<!-- Button to trigger modal -->
-<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-
-<!-- Modal -->
-<%= render "modal" %>
-
-
 
 <span id="reviews_count"><%= pluralize(@for_counts, "reviews") %></span>
 <div id="reviews_section">
   <%= render "reviews", :locals => { :list => true } %>
 </div>
+
+
 
 

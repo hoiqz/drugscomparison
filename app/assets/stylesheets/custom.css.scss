@@ -115,3 +115,36 @@ footer {
 #static_buttons{
   clear: both;
 }
+
+.rating_bar {
+  width: 55px;
+  background: url(star_x_grey.gif) 0 0 repeat-x;
+}
+
+.rating_bar div {
+  height: 12px;
+  background: url(star_x_orange.gif) 0 0 repeat-x;
+}
+
+#errorExplanation
+  {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+div.flash.notice
+  {
+  display: block;
+  padding: 10px;
+  border: 1px solid #3A991A;
+  background-color: #ABD7A4;
+  margin: 20px 10px;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
