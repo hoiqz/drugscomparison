@@ -11,7 +11,13 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
+    @for_counts=@drug.reviews.count
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
+
+
+    ## for adding form into the page
+    @review = @drug.reviews.new
+    @user=User.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -65,22 +71,32 @@ class ReviewsController < ApplicationController
     #@drug=Drug.find(params[:review][:drug_id])
     @user=User.new(params[:user])
     #@user.save!
-
     @review = @user.reviews.build(params[:review])
     @review.drug_id=params[:drug_id]
 
-
-
+    @for_counts=@drug.reviews.count
+    @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
-        format.json { render json: @review, status: :created, location: @review }
+        @new_id=@review.id
+        flash[:notice] = "Thanks for reviewing!"
+        #format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
+        #format.json { render json: @review, status: :created, location: @review }
+        format.js
       else
-        format.html { render action: "new" }
-        format.json { render json: @review.errors, status: :unprocessable_entity
-        render json: @user.errors, status: :unprocessable_entity
-        }
+        @error_msg= ""
+        flash[:notice] = "Error with your submission!"
+        @review.errors.full_messages.each do |error|
+          @error_msg=@error_msg+error
+         end
+        #format.html { render action: "index" }
+        #format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review creation failed.' }
+        #format.json { render json: @review.errors, status: :unprocessable_entity
+        #render json: @user.errors, status: :unprocessable_entity
+        #}
+        format.js
+
       end
     end
   end
@@ -109,6 +125,7 @@ class ReviewsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to reviews_url }
       format.json { head :no_content }
+      format.js #added for form
     end
   end
 

@@ -1,0 +1,25 @@
+$(function () {
+    $(document).on("ajax:success", function(evt, xhr, status, error){
+        /* Replace the count of comments */
+        $("#reviews_count").html("<%= pluralize(@for_counts, 'reviews') %>");
+
+        /* Add the new comment to the bottom of the comments list */
+
+
+                    $("#reviews_section").html("<%= escape_javascript(render "reviews") %>",function(){
+
+                    $("#new_review")[0].reset();
+
+                    });
+                });
+
+
+
+// Create a list of errors
+        var error=$(document).on("ajax:error", function(evt, xhr, status, error){
+$("#reviews-notice").html("<p><%= escape_javascript @error_msg %></p>");
+            $("#error_explanation").html('<p>test</p>') ;
+        });
+
+
+});

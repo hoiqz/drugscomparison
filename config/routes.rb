@@ -1,5 +1,5 @@
 Drugscomparison::Application.routes.draw do
-  resources :reviews
+ # resources :reviews
 
   resources :users
 

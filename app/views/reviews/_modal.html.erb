@@ -1,15 +1,11 @@
-<%= form_for (@review) , :url => drug_reviews_path(@drug.id)  do |f| %>
-  <% if @review.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
-
-      <ul>
-      <% @review.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Help us write a comment</h3>
+  </div>
+  <div class="modal-body">
+    <%= form_for ([@drug,@review]),:remote=>true do |f| %>
 
         <%= fields_for @user do |user_detail_form| %>
 
@@ -74,9 +70,14 @@
         </div>
 
         <%= hidden_field_tag :drug_id, @drug.id%>
+        <div class="validation-error"></div>
 
-        <div class="actions">
-          <%= f.submit "Add comment" %>
-        </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 
+    <%= f.submit "Add comment", :class=>"btn btn-primary" %>
     <% end %>
+
+  </div>
+</div>

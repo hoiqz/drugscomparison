@@ -5,6 +5,24 @@
                 $.getScript(this.href);
                 return false;
             });
+            $(document).on("ajax:success", function(evt, xhr, status, error){
+                /* Replace the count of comments */
+                $("#reviews_count").html("<%= pluralize(@for_counts, 'reviews') %>");
+
+                /* Add the new comment to the bottom of the comments list */
+
+
+                $("#reviews_section").html("<%= escape_javascript(render "reviews") %>",function(){
+
+                    $("#new_review")[0].reset();
+
+                });
+            });
+            var error=$(document).on("ajax:error", function(evt, xhr, status, error){
+                $("#reviews-notice").html("<p><%= escape_javascript @error_msg %></p>");
+                $("#error_explanation").html('<p>test</p>') ;
+            });
+
         });
     </script>
 <% end %>
@@ -62,12 +80,106 @@
   <%= link_to "Write a review!", :controller => "reviews", :action => "new", :drug_id=>@drug.id, :drug_name=>@drug.generic_name%>
 </p>
 
-<div id="comment-notice"></div>
+<div id="reviews-notice"></div>
 
 <p id="notice"><%= notice %></p>
+<div id="error_explanation">
+<% if @review.errors.any? %>
+
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+        <% @review.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+
+<% end %>
+
+  </div>
+
+<%= form_for ([@drug,@review]),:remote=>true, :html => { :'data-type' => 'html', :id => 'new_review' } do |f| %>
 
 
-<span id="reviews_count"><%= pluralize(@reviews.count, "reviews") %></span>
+    <%= fields_for @user do |user_detail_form| %>
+
+        <%= user_detail_form.label :username, "Your name" %><br />
+        <%= user_detail_form.text_field :username %><br />
+        <%= user_detail_form.label :email_address, "Email address" %><br />
+        <%= user_detail_form.text_field :email_address %><br />
+        <%= user_detail_form.label :age, "Age" %><br />
+        <%= user_detail_form.text_field :age %><br />
+        <%= user_detail_form.label :gender, "Gender" %><br />
+        <%= user_detail_form.text_field :gender %><br />
+        <%= user_detail_form.label :ethnicity, "Ethnicity" %><br />
+        <%= user_detail_form.text_field :ethnicity %><br />
+        <%= user_detail_form.label :weight, "Weight" %><br />
+        <%= user_detail_form.text_field :weight %><br />
+    <% end %>
+    <%= f.label :comments, "Comments" %><br />
+    <%= f.text_area :comments, :rows => 8 %><br />
+    <div class="field">
+      <%= f.label :effectiveness %><br />
+      <%= f.radio_button :effectiveness, "1" %>
+      <%= label :effectiveness, '1' %>
+      <%= f.radio_button :effectiveness, "2" %>
+      <%= label :effectiveness, '2' %>
+      <%= f.radio_button :effectiveness, "3" %>
+      <%= label :effectiveness, '3' %>
+      <%= f.radio_button :effectiveness, "4" %>
+      <%= label :effectiveness, '4' %>
+      <%= f.radio_button :effectiveness, "5" %>
+      <%= label :effectiveness, '5' %>
+    </div>
+    <div class="field">
+      <%= f.label :ease_of_use %><br />
+      <%= f.radio_button :ease_of_use, "1" %>
+      <%= label :ease_of_use, '1' %>
+      <%= f.radio_button :ease_of_use, "2" %>
+      <%= label :ease_of_use, '2' %>
+      <%= f.radio_button :ease_of_use, "3" %>
+      <%= label :ease_of_use, '3' %>
+      <%= f.radio_button :ease_of_use, "4" %>
+      <%= label :ease_of_use, '4' %>
+      <%= f.radio_button :ease_of_use, "5" %>
+      <%= label :ease_of_use, '5' %>
+    </div>
+    <div class="field">
+      <%= f.label :satisfactory %><br />
+      <%= f.radio_button :satisfactory, "1" %>
+      <%= label :satisfactory, '1' %>
+      <%= f.radio_button :satisfactory, "2" %>
+      <%= label :satisfactory, '2' %>
+      <%= f.radio_button :satisfactory, "3" %>
+      <%= label :satisfactory, '3' %>
+      <%= f.radio_button :satisfactory, "4" %>
+      <%= label :satisfactory, '4' %>
+      <%= f.radio_button :satisfactory, "5" %>
+      <%= label :satisfactory, '5' %>
+    </div>
+
+    <div class="field">
+      <%= f.label "Choose the duration that best match your usage" %><br />
+      <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
+    </div>
+
+    <%= hidden_field_tag :drug_id, @drug.id%>
+
+    <div class="actions">
+      <%= f.submit "Add comment" %>
+    </div>
+
+<% end %>
+
+<!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+<!-- Modal -->
+<%= render "modal" %>
+
+
+
+<span id="reviews_count"><%= pluralize(@for_counts, "reviews") %></span>
 <div id="reviews_section">
   <%= render "reviews", :locals => { :list => true } %>
 </div>

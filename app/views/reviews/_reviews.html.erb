@@ -2,12 +2,15 @@
   <%= paginate @reviews %>
 </div>
 
-  <% @reviews.each do |review| %>
+<% @reviews.each do |review| %>
+   <div id="review_<%="#{review.id}"%>">
     <span class="dateandoptions">
-    Posted <%=time_ago_in_words(review.created_at)%> ago<br />
-      <%= link_to 'Delete', review, :method => :delete, :class => "delete", :remote => true  %>
+    Posted <%= time_ago_in_words(review.created_at)%> ago<br />
+      <%= link_to 'Delete', drug_reviews_path, :method => :delete, :class => "delete", :remote => true  %>
   </span>
     <p><b><%= review.user.username %></b> wrote:</p>
     <br />
-    <%= content_tag(:p, review.comments, :class => "comment-body") %>
-  <% end %>
+    <%= content_tag(:p, review.comments, :class => "review-body") %>
+
+<%	end %>
+</div>
