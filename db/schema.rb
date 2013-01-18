@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121227082139) do
+ActiveRecord::Schema.define(:version => 20130118021024) do
 
   create_table "conditions", :force => true do |t|
     t.text     "information"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20121227082139) do
     t.integer  "usage_duration_days"
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
+    t.string   "other_drugs"
   end
 
   create_table "treatments", :force => true do |t|

@@ -1,8 +1,9 @@
-<% unless @error_msg.nil?%>
+<% if @error_msg%>
 $('#error_explanation').removeClass("hide");
-$('#error_explanation').html('<div id="flash_notice"><%= escape_javascript(@error_msg) %></div>');
-<%end%>
-$('#new_review').before('<div id="flash_notice"><%= escape_javascript(flash.discard(:notice)) %></div>');
+$('#error_explanation').html('<%= escape_javascript(@error_msg) %>');
+  <% else %>
+$('#error_explanation').html('<div id="flash_notice"><%= escape_javascript(flash.discard(:notice)) %></div>');
 $('#reviews_count').html('<%= pluralize(@drug.reviews.count, "reviews") %>');
 $('#reviews_section').html('<%= escape_javascript(render "reviews") %>')
 $('#new_review')[0].reset();
+<%end%>

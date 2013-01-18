@@ -1,5 +1,5 @@
 class Review < ActiveRecord::Base
-  attr_accessible :comments, :drug_id, :ease_of_use, :effectiveness, :review_url, :satisfactory, :similar_experience, :tag_cloud_path, :tolerability, :usage_duration_days, :user_attributes, :created_at
+  attr_accessible :comments, :drug_id, :ease_of_use, :effectiveness, :review_url, :satisfactory, :similar_experience, :tag_cloud_path, :tolerability, :usage_duration_days, :user_attributes, :created_at, :other_drugs
   belongs_to :drug, :inverse_of => :reviews
   #validates_presence_of :drug
   #belongs_to :condition
@@ -11,9 +11,9 @@ class Review < ActiveRecord::Base
             :length => {:minimum => 5,:maximum => 2000}
 
 
-  validates :ease_of_use, :numericality => true , :presence => true
-  validates :effectiveness, :numericality => true , :presence => true
-  validates :satisfactory, :numericality => true , :presence => true
+  validates :ease_of_use , :presence => true
+  validates :effectiveness, :presence => true
+  validates :satisfactory , :presence => true
 
 
   end

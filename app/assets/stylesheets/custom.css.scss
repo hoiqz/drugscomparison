@@ -134,9 +134,27 @@ footer {
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+  h2{
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+  }
+  p{
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  ul li{
+    font-size: 12px;
+    list-style: square;
+  }
 }
 
-div.flash.notice
+#flash_notice
   {
   display: block;
   padding: 10px;
@@ -147,4 +165,43 @@ div.flash.notice
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+.dateandoptions
+  {
+  float:right;
+  color:gray;
+  text-align:right;
+}
+
+.comment
+  {
+  display: block;
+  background: #E5EEED;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#reviews_count{
+  font-weight: bold;
+  color:gray;
+  border-bottom: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+}
+
+#write_review{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.commentor{
+  border-top: 1px solid #EAEAEA;
+  padding-top: 5px;
+}
+
+.review_object{
+
 }
