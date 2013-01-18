@@ -6,10 +6,10 @@ Drugscomparison::Application.routes.draw do
   resources :drugs do
     resources :reviews
     member do
-      get 'effectiveness_count'
-      get 'ease_of_use_count'
-      get 'satisfactory_count'
-
+      get 'effectiveness_view'
+      get 'eou_view'
+      get 'satisfactory_view'
+      get 'search'
     end
   end
   resources :conditions do

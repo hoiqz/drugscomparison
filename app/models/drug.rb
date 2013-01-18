@@ -27,7 +27,85 @@ class Drug < ActiveRecord::Base
   end
 
 
+  def get_all_reviews (options = {})
+    #options[:for_drug_id]||options[:for_drug_id]=1
+    query_record=Review.joins(:drug,:user).where(:drug_id=>options[:for_drug_id])  #always search with a drug id
+                                                                                   # add in other search conditions depending on what options were passed in
+    options.each do |key,value|
+      if key=="gender"
+        query_record=query_record.where(:users=>{:gender=>value})
+        next
+      end
+      if key=="age"
+        query_record=query_record.where(:users=>{:age=>value})
+        next
+      end
+      if key =="location"
+        query_record=query_record.where(:users=>{:location=>value})
+        next
+      end
+      if key =="ethnicity"
+        query_record=query_record.where(:users=>{:ethnicity=>value})
+        next
+      end
+      if key =="weight"
+        query_record=query_record.where(:users=>{:weight=>value})
+        next
+      end
+      if key =="smoking_status"
+        query_record=query_record.where(:users=>{:smoking_status=>value})
+        next
+      end
+    end
 
+    return query_record
+  end
+
+  def eff_score1(review)
+    review.where("effectiveness=1").count
+  end
+  def eff_score2(review)
+    review.where("effectiveness=2").count
+  end
+  def eff_score3(review)
+    review.where("effectiveness=3").count
+  end
+  def eff_score4(review)
+    review.where("effectiveness=4").count
+  end
+  def eff_score5(review)
+    review.where("effectiveness=5").count
+  end
+  def eou_score1(review)
+    review.where("ease_of_use=1").count
+  end
+  def eou_score2(review)
+    review.where("ease_of_use=2").count
+  end
+  def eou_score3(review)
+    review.where("ease_of_use=3").count
+  end
+  def eou_score4(review)
+    review.where("ease_of_use=4").count
+  end
+  def eou_score5(review)
+    review.where("ease_of_use=5").count
+  end
+  def sat_score1(review)
+    review.where("satisfactory=1").count
+  end
+  def sat_score2(review)
+    review.where("satisfactory=2").count
+  end
+  def sat_score3(review)
+    review.where("satisfactory=3").count
+  end
+  def sat_score4(review)
+    review.where("satisfactory=4").count
+  end
+  def sat_score5(review)
+    review.where("satisfactory=5").count
+  end
 
 
   #this method is not working dur to some mass assignment crap

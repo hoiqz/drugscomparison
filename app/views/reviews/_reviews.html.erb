@@ -1,7 +1,7 @@
 <div id="paginator1" class="paginator" xmlns="http://www.w3.org/1999/html">
   <%= paginate @reviews %>
 </div>
-
+<span id="reviews_count"><%= pluralize(@for_counts, "reviews for #{@drug.brand_name}") %></span>
 <% @reviews.each do |review| %>
    <div id="review_<%="#{review.id}"%>" class="review_object">
     <span class="dateandoptions">

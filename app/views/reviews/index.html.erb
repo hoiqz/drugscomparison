@@ -54,13 +54,23 @@
 </p>
 
 
-<%= render "review_ratings"%>
 <div id="chart_container">
   <div id="reviews_chart">
+    <div class="hero-unit">
+      <h1>Get started!</h1>
+      <p>Click on the buttons below to start comparing drugs</p>
+      <p>
+        <a class="btn btn-primary btn-large">
+          Start!
+        </a>
+      </p>
+    </div>
   </div>
   <div id="conditions">
+
   </div>
 </div>
+
 
 <div id="static_buttons">
   <%= render "chart_buttons" %>
@@ -189,7 +199,7 @@
 
 <% end %>
 
-<span id="reviews_count"><%= pluralize(@for_counts, "reviews for #{@drug.brand_name}") %></span>
+
 <div id="reviews_section">
   <%= render "reviews", :locals => { :list => true } %>
 </div>

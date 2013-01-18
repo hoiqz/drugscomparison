@@ -91,43 +91,63 @@ class DrugsController < ApplicationController
 
 
   ## Hoi's defined method goes below
-  def effectiveness_count
+def search
     @drug = Drug.find(params[:id])
-    @lessthan1=@drug.reviews.count(:conditions => "effectiveness =1")
-    @lessthan2=@drug.reviews.count(:conditions => "effectiveness =2")
-    @lessthan3=@drug.reviews.count(:conditions => "effectiveness =3")
-    @lessthan4=@drug.reviews.count(:conditions => "effectiveness =4")
-    @lessthan5=@drug.reviews.count(:conditions => "effectiveness =5")
-
-     respond_to do |format|
-       format.js
-     end
+    @review_options=params
+    @review_options[:for_drug_id]=params[:id]
+     @reviews=@drug.get_all_reviews(@review_options).order("created_at DESC").page(params[:page]).per(5)
+    @for_counts=@reviews.count
+  respond_to do |format|
+    format.js
   end
+end
 
-  def ease_of_use_count
+  def effectiveness_view
     @drug = Drug.find(params[:id])
-    @lessthan1=@drug.reviews.count(:conditions => "ease_of_use =1")
-    @lessthan2=@drug.reviews.count(:conditions => "ease_of_use =2")
-    @lessthan3=@drug.reviews.count(:conditions => "ease_of_use =3")
-    @lessthan4=@drug.reviews.count(:conditions => "ease_of_use =4")
-    @lessthan5=@drug.reviews.count(:conditions => "ease_of_use =5")
+    @generate_colors=Array.new
+    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @review_options=params
+    @update_values = Hash.new{|hash, key| hash[key] = Array.new}
+    @review_options[:for_drug_id]=@drug.id
+    @related_reviews=@drug.get_all_reviews(@review_options)
+    (@update_values[@drug.brand_name]).push(Condition.first.eff_score1(@related_reviews).round(2), Condition.first.eff_score2(@related_reviews).round(2) ,Condition.first.eff_score3(@related_reviews).round(2),Condition.first.eff_score4(@related_reviews).round(2),Condition.first.eff_score5(@related_reviews).round(2))
 
     respond_to do |format|
+      #format.html
       format.js
     end
   end
 
-  def satisfactory_count
+  def eou_view
     @drug = Drug.find(params[:id])
-    @lessthan1=@drug.reviews.count(:conditions => "satisfactory =1")
-    @lessthan2=@drug.reviews.count(:conditions => "satisfactory =2")
-    @lessthan3=@drug.reviews.count(:conditions => "satisfactory =3")
-    @lessthan4=@drug.reviews.count(:conditions => "satisfactory =4")
-    @lessthan5=@drug.reviews.count(:conditions => "satisfactory =5")
+    @generate_colors=Array.new
+    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @review_options=params
+    @update_values = Hash.new{|hash, key| hash[key] = Array.new}
+    @review_options[:for_drug_id]=@drug.id
+    @related_reviews=@drug.get_all_reviews(@review_options)
+    (@update_values[@drug.brand_name]).push(Condition.first.eou_score1(@related_reviews).round(2), Condition.first.eou_score2(@related_reviews).round(2) ,Condition.first.eou_score3(@related_reviews).round(2),Condition.first.eou_score4(@related_reviews).round(2),Condition.first.eou_score5(@related_reviews).round(2))
 
     respond_to do |format|
+      #format.html
       format.js
     end
   end
+  def satisfactory_view
+    @drug = Drug.find(params[:id])
+    @generate_colors=Array.new
+    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @review_options=params
+    @update_values = Hash.new{|hash, key| hash[key] = Array.new}
+    @review_options[:for_drug_id]=@drug.id
+    @related_reviews=@drug.get_all_reviews(@review_options)
+    (@update_values[@drug.brand_name]).push(Condition.first.sat_score1(@related_reviews).round(2), Condition.first.sat_score2(@related_reviews).round(2) ,Condition.first.sat_score3(@related_reviews).round(2),Condition.first.sat_score4(@related_reviews).round(2),Condition.first.sat_score5(@related_reviews).round(2))
+
+    respond_to do |format|
+      #format.html
+      format.js
+    end
+  end
+
 
 end

@@ -1,4 +1,4 @@
-<%= link_to 'Average Ratings', drug_reviews_path(params[:drug_id]), :id=>'avg_link', remote: true, :class =>"btn btn-inverse"%>
-<%= link_to 'Effectiveness', effectiveness_count_drug_path(:id=>params[:drug_id]), :id=>'effectlink', remote: true, :class =>"btn btn-inverse"%>
-<%= link_to 'Ease of Use', ease_of_use_count_drug_path(:id=>params[:drug_id]), :id=>'eoulink', remote: true, :class =>"btn btn-inverse"%>
-<%= link_to 'Satisfactory', satisfactory_count_drug_path(:id=>params[:drug_id]), :id=>'satisfylink', remote: true, :class =>"btn btn-inverse"%>
+<a href="/drugs/5/search?conditions=true&type=all&age=19-24" data-remote="true">test</a>
+<%= link_to 'Effectiveness', effectiveness_view_drug_path(@drug.id), :id=>'effectlink', remote: true, :class =>"btn btn-inverse"%>
+<%= link_to 'Ease of Use', eou_view_drug_path(@drug.id), :id=>'eoulink', remote: true, :class =>"btn btn-inverse"%>
+<%= link_to 'Satisfactory', satisfactory_view_drug_path(@drug.id), :id=>'satisfylink', remote: true, :class =>"btn btn-inverse"%>

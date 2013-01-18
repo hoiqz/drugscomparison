@@ -35,7 +35,7 @@
                               color: '#000000',
                               connectorColor: '#000000',
                               formatter: function() {
-                                  return '<b>'+ this.point.name +'</b> <br>rating: '+ this.point.y ;
+                                  return '<b>' +this.point.name +'</b> <br>rating: '+ this.point.y ;
                               }
                           }
                       },
@@ -76,6 +76,7 @@
                           center: [ 500, 100 ],
                           <% end%>
                           <% end%>
+
                           data: <%=raw @update_values[drug]%>
                       }
                       <% i=i+1 %>

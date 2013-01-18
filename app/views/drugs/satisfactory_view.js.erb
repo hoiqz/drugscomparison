@@ -3,7 +3,7 @@ $(function () {
     var chart;
     $(document).ready(function() {
         Highcharts.setOptions({
-            colors: ['#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E']
+            colors: <%=raw @generate_colors%>
         });
         chart = new Highcharts.Chart({
             chart: {
@@ -13,7 +13,7 @@ $(function () {
                 plotShadow: false
             },
             title: {
-                text: 'How effective is this drug?'
+                text: 'How satisfied are users who use this drug?'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage}%</b>',
@@ -37,19 +37,36 @@ $(function () {
                 type: 'pie',
                 name: 'Percentage of reviews',
                 data: [
-                    ['Score of 1',    <%=raw @lessthan1 %> ],
-                    ['Score of 2',    <%=raw @lessthan2 %> ],
-                    ['Score of 3',    <%=raw  @lessthan3 %>],
-                    ['Score of 4',    <%=raw  @lessthan4 %>],
                     {
-                        name: 'Score of 5',
-                        y: <%=raw @lessthan5 %>,
-                        sliced: true,
-                        selected: true
+                        name: 'Score of 1',
+                        y: <%=raw @update_values[@drug.brand_name][0] %> ,
+                        url: "google.com"
+                    },
+                    {
+                        name: 'Score of 2',
+                        y: <%=raw @update_values[@drug.brand_name][1] %> ,
+                        url: "google.com"
+                    },
+                    {
+                        name: 'Score of 3',
+                        y: <%=raw @update_values[@drug.brand_name][2] %> ,
+                        url: "google.com"
+                    },
+                    {
+                        name: 'Score of 4',
+                        y: <%=raw @update_values[@drug.brand_name][3] %> ,
+                        url: "google.com"
+                    },
+                    {
+                        name: 'Score of5',
+                        y: <%=raw @update_values[@drug.brand_name][4] %> ,
+                        url: "google.com"
                     }
+
                 ]
             }]
         });
+        $('#conditions').html("<%= escape_javascript(render "satisfactory_view_form") %>");
     });
 
 });

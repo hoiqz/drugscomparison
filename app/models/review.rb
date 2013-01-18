@@ -16,5 +16,6 @@ class Review < ActiveRecord::Base
   validates :satisfactory , :presence => true
 
 
-  end
+
+end
 
