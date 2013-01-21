@@ -60,9 +60,8 @@
       <h1>Get started!</h1>
       <p>Click on the buttons below to start comparing drugs</p>
       <p>
-        <a class="btn btn-primary btn-large">
-          Start!
-        </a>
+        <%= link_to 'Start!', effectiveness_view_drug_path(@drug.id), :id=>'effectlink', remote: true, :class =>"btn btn-primary btn-large"%>
+
       </p>
     </div>
   </div>

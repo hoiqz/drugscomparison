@@ -105,7 +105,7 @@ end
   def effectiveness_view
     @drug = Drug.find(params[:id])
     @generate_colors=Array.new
-    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')
     @review_options=params
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
