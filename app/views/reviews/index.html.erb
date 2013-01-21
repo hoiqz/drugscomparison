@@ -84,7 +84,7 @@
 
 <%= form_for ([@drug,@review]),:remote=>true,:html => {:class => "form-horizontal hide"} do |f| %>
 
-    <%= f.error_messages %>
+
 
     <%= fields_for @user do |user_detail_form| %>
         <div class="control-group">
