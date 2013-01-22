@@ -40,7 +40,7 @@ $(function () {
                     {
                         name: 'Score of 1',
                         y: <%=raw @update_values[@drug.brand_name][0] %> ,
-                        url: "google.com"
+                        url: "<%= link_to search_drug_path(@drug.id), remote: true, %>"
                     },
                     {
                         name: 'Score of 2',
