@@ -56,7 +56,7 @@ class ConditionsController < ApplicationController
     @drugs.each do  |drug|
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')     #set the colors here then pass to the javascript
       (@update_values[drug]).push(@condition.eff_score1(@related_reviews).round(2), @condition.eff_score2(@related_reviews).round(2) ,@condition.eff_score3(@related_reviews).round(2),@condition.eff_score4(@related_reviews).round(2),@condition.eff_score5(@related_reviews).round(2))
     end
     respond_to do |format|
@@ -75,7 +75,7 @@ class ConditionsController < ApplicationController
     @drugs.each do  |drug|
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')      #set the colors here then pass to the javascript
       (@update_values[drug]).push(@condition.eou_score1(@related_reviews).round(2), @condition.eou_score2(@related_reviews).round(2),@condition.eou_score3(@related_reviews).round(2),@condition.eou_score4(@related_reviews).round(2),@condition.eou_score5(@related_reviews).round(2))
     end
     respond_to do |format|
@@ -94,7 +94,7 @@ class ConditionsController < ApplicationController
     @drugs.each do  |drug|
       @review_options[:for_drug_id]=drug.id
       @related_reviews=@condition.get_all_reviews(@review_options)
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')      #set the colors here then pass to the javascript
       (@update_values[drug]).push(@condition.sat_score1(@related_reviews).round(2), @condition.sat_score2(@related_reviews).round(2),@condition.sat_score3(@related_reviews).round(2),@condition.sat_score4(@related_reviews).round(2),@condition.sat_score5(@related_reviews).round(2))
     end
     respond_to do |format|
@@ -116,7 +116,7 @@ class ConditionsController < ApplicationController
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
     @drugs.each do  |drug|
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')      #set the colors here then pass to the javascript
     end
     respond_to do |format|
       format.js
@@ -128,7 +128,7 @@ class ConditionsController < ApplicationController
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
     @drugs.each do  |drug|
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')      #set the colors here then pass to the javascript
     end
     respond_to do |format|
       format.js
@@ -140,7 +140,7 @@ class ConditionsController < ApplicationController
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
     @drugs.each do  |drug|
-      @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')      #set the colors here then pass to the javascript
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')     #set the colors here then pass to the javascript
     end
     respond_to do |format|
       format.js

@@ -17,6 +17,47 @@ $(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
+            labels:{
+                items: [
+                    <% i=1%>
+                    <% y=150%>     // starting point of first plot
+                    <% x=150%>
+                    <% @drugs.each do |drug| %>
+                    <%= ',' if i>1 %>
+                    {
+                        html: '<b><%= drug.brand_name %></b>',
+                        <% if i.odd? %>
+                        <% if i !=1 %>  // Case row 1 column2; i!=1 meaning plots 3,5,7,9 ...
+                        style: {
+                            left: '150px',
+                            top: '<%= y+100 %>px'
+                        },
+                        <% y=y+200 %>
+                        <% else %>      // Case row 1 column1
+                        style: {
+                            left: '150px',
+                            top: '0px'
+                        }   ,
+                        <% end%>
+                        <% else %>       //case: row = 2
+                        <% if i !=2 %>                       // Case row 2 column2
+                        style: {
+                            left: '550px',
+                            top: '<%= x+100 %>px'
+                        }   ,
+                        <% x=x+200 %>
+                        <% else %>         // Case row 2 column1
+                        style: {
+                            left: '550px',
+                            top: '0px'
+                        }
+                        <% end%>
+                        <% end%>
+                    }
+                    <% i=i+1 %>
+                    <% end %>
+                ]
+            },
             title: {
                 text: 'Satisfactory ratings across related drugs'
             },
