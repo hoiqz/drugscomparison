@@ -110,6 +110,18 @@ end
     #this two following variable is for clickable pie chart
     @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
     @urlendcoded=@edited_params.to_query
+
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)
@@ -129,6 +141,18 @@ end
     #this two following variable is for clickable pie chart
     @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
     @urlendcoded=@edited_params.to_query
+
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+             @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)
@@ -147,6 +171,18 @@ end
     #this two following variable is for clickable pie chart
     @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
     @urlendcoded=@edited_params.to_query
+
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)

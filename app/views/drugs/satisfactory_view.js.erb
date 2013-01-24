@@ -13,7 +13,18 @@ $(function () {
                 plotShadow: false
             },
             title: {
-                text: 'How satisfied are users who use this drug?'
+                text: 'Reviewers satisfaction towards <%= @drug.brand_name%> ?'
+            },
+            labels:{
+                items: [
+                    {
+                        html: "<b>Restrictions:</b> <%= @label%>",
+                        style: {
+                            left: '0px',
+                            top: '0px'
+                        }
+                    }
+                ]
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage}%</b>',
@@ -25,8 +36,8 @@ $(function () {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        color: '#000000',
-                        connectorColor: '#000000',
+                        color: '#F8F8F8',
+                        connectorColor: '#F8F8F8',
                         formatter: function() {
                             return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
                         }
