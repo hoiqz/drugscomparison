@@ -1,0 +1,28 @@
+<div id="paginator1" class="paginator" xmlns="http://www.w3.org/1999/html">
+  <%= paginate @reviews %>
+</div>
+<span id="reviews_count"><%= pluralize(@for_counts, "reviews for #{@type}") %></span>
+<% @reviews.each do |review| %>
+    <div id="review_<%="#{review.id}"%>" class="review_object">
+    <span class="dateandoptions">
+    Posted <%= time_ago_in_words(review.created_at)%> ago<br />
+  </span>
+      <p class="commentor"><b><%= review.user.username %></b> wrote:</p>
+      Effectiveness <div class="rating_bar">
+      <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
+    </div>
+      Ease of Use <div class="rating_bar">
+      <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
+    </div>
+      Satisfactory <div class="rating_bar">
+      <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
+    </div> <br />
+
+      <%= content_tag(:p, review.comments, :class => "review-body") %>
+    </div> <br />
+
+<%	end %>
+
+<div id="paginator" class="paginator" xmlns="http://www.w3.org/1999/html">
+  <%= paginate @reviews %>
+</div>

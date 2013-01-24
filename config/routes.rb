@@ -1,4 +1,10 @@
 Drugscomparison::Application.routes.draw do
+  resources :searches do
+    member do
+      get 'non_form_search'
+    end
+  end
+
  # resources :reviews
 
   resources :users

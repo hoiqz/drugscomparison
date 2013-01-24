@@ -107,6 +107,9 @@ end
     @generate_colors=Array.new
     @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')
     @review_options=params
+    #this two following variable is for clickable pie chart
+    @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
+    @urlendcoded=@edited_params.to_query
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)
@@ -121,8 +124,11 @@ end
   def eou_view
     @drug = Drug.find(params[:id])
     @generate_colors=Array.new
-    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')
     @review_options=params
+    #this two following variable is for clickable pie chart
+    @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
+    @urlendcoded=@edited_params.to_query
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)
@@ -136,8 +142,11 @@ end
   def satisfactory_view
     @drug = Drug.find(params[:id])
     @generate_colors=Array.new
-    @generate_colors.push('#C11B17','#EE9A4D' , '#DDDF00','#CCFB5D' , '#5EFB6E')
+    @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')
     @review_options=params
+    #this two following variable is for clickable pie chart
+    @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
+    @urlendcoded=@edited_params.to_query
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @review_options[:for_drug_id]=@drug.id
     @related_reviews=@drug.get_all_reviews(@review_options)
