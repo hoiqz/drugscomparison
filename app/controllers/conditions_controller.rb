@@ -32,6 +32,17 @@ class ConditionsController < ApplicationController
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
 
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
     @review_options=params
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @drugs.each do  |drug|
@@ -50,6 +61,17 @@ class ConditionsController < ApplicationController
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
+
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
 
     @review_options=params
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
@@ -70,6 +92,17 @@ class ConditionsController < ApplicationController
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
 
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
     @review_options=params
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
     @drugs.each do  |drug|
@@ -88,6 +121,17 @@ class ConditionsController < ApplicationController
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs.scoped
     @generate_colors=Array.new
+
+    #for the condition label
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
 
     @review_options=params
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}

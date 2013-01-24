@@ -61,6 +61,17 @@ $(function () {
             title: {
                 text: 'Effectiveness ratings across related drugs'
             },
+            labels:{
+                items: [
+                    {
+                        html: "<b>Restrictions:</b> <%= @label%>",
+                        style: {
+                            left: '0px',
+                            top: '0px'
+                        }
+                    }
+                ]
+            },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage}%</b>',
                 percentageDecimals: 1
