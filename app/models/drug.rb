@@ -7,6 +7,7 @@ class Drug < ActiveRecord::Base
            :dependent => :destroy
   has_many :conditions, :through => :treatments
   has_many :reviews
+  #has_many :tags
 
   accepts_nested_attributes_for :reviews, :allow_destroy => true, :reject_if => :reject_review
   accepts_nested_attributes_for :treatments, :allow_destroy => true, :reject_if => :reject_treatment

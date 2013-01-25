@@ -47,6 +47,11 @@ class Search < ActiveRecord::Base
         query_record=query_record.where(:satisfactory=>value)
         next
       end
+      if key =="keyword"
+         cleaned_value=CGI::unescape value
+        query_record=query_record.where("comments like ?","%#{cleaned_value}%")
+        next
+      end
     end
 
     return query_record

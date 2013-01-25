@@ -7,6 +7,7 @@ class Condition < ActiveRecord::Base
   has_many :drugs, :through => :treatments
            #:source => "drug_id",
           # :dependent => :destroy
+  #has_many :tags
 
    validates :name,:uniqueness => true
 

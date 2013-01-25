@@ -1,5 +1,18 @@
 <% content_for :script do %>
     <script type='text/javascript'>
+        /*!
+         * Create an array of word objects, each representing a word in the cloud
+         */
+        var word_array = [
+                <% @tagshash.each_pair do |key,value|%>
+                    {text: "<%=key%>", weight: <%= value.to_i%>, link: "/searches/1/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>"},
+                <% end%>
+
+            //{text: "Ipsum", weight: 9, link: "http://jquery.com/"},
+            //{text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
+
+        ];
+
         $(function () {
             $('.paginator nav span a').live('click', function () {
                 $.getScript(this.href);
@@ -15,7 +28,8 @@
                     $("#new_review").addClass("hide");
                 }
             });
-                $("#example").popover();
+            $("#example").popover();
+            $("#tagcloud").jQCloud(word_array);
         });
     </script>
 <% end %>
@@ -55,14 +69,8 @@
 
 <div id="chart_container">
   <div id="reviews_chart">
-    <div class="hero-unit">
-      <h1>Get started!</h1>
-      <p>Click on the buttons below to start comparing drugs</p>
-      <p>
-        <%= link_to 'Start!', effectiveness_view_drug_path(@drug.id), :id=>'effectlink', remote: true, :class =>"btn btn-primary btn-large"%>
-
-      </p>
-    </div>
+    <!-- You should explicitly specify the dimensions of the container element -->
+    <div id="tagcloud" style="width: 550px; height: 350px;"></div>
   </div>
   <div id="conditions">
 

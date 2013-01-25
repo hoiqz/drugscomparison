@@ -29,40 +29,33 @@ $(function () {
                         <% if i.odd? %>
                         <% if i !=1 %>  // Case row 1 column2; i!=1 meaning plots 3,5,7,9 ...
                         style: {
-                            left: '150px',
+                            left: '200px',
                             top: '<%= y+100 %>px'
                         },
                         <% y=y+200 %>
                         <% else %>      // Case row 1 column1
                         style: {
-                            left: '150px',
-                            top: '0px'
+                            left: '200px',
+                            top: '20px'
                         }   ,
                         <% end%>
                         <% else %>       //case: row = 2
                         <% if i !=2 %>                       // Case row 2 column2
                         style: {
-                            left: '550px',
+                            left: '600px',
                             top: '<%= x+100 %>px'
                         }   ,
                         <% x=x+200 %>
                         <% else %>         // Case row 2 column1
                         style: {
-                            left: '550px',
-                            top: '0px'
+                            left: '600px',
+                            top: '20px'
                         }
                         <% end%>
                         <% end%>
-                    }
+                    },
                     <% i=i+1 %>
                     <% end %>
-                ]
-            },
-            title: {
-                text: 'Effectiveness ratings across related drugs'
-            },
-            labels:{
-                items: [
                     {
                         html: "<b>Restrictions:</b> <%= @label%>",
                         style: {
@@ -72,6 +65,10 @@ $(function () {
                     }
                 ]
             },
+            title: {
+                text: 'Effectiveness ratings across related drugs'
+            },
+
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage}%</b>',
                 percentageDecimals: 1
@@ -102,17 +99,17 @@ $(function () {
                     name: '<%= drug.brand_name %>',
                     <% if i.odd? %>
                     <% if i !=1 %>
-                    center: [ 200, <%= y+200 %> ],
+                    center: [ 250, <%= y+200 %> ],
                     <% y=y+200 %>
                     <% else %>
-                    center: [ 200, 100 ],
+                    center: [ 250, 120 ],
                     <% end%>
                     <% else %>
                     <% if i !=2 %>
-                    center: [ 600, <%= x+200 %> ],
+                    center: [ 650, <%= x+200 %> ],
                     <% x=x+200 %>
                     <% else %>
-                    center: [ 600, 100 ],
+                    center: [ 650, 120 ],
                     <% end%>
                     <% end%>
                     data: [

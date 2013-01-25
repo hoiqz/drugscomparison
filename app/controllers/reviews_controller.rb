@@ -18,12 +18,27 @@ class ReviewsController < ApplicationController
     ## for adding form into the page
     @review = @drug.reviews.new
     @user=User.new
+    #for the tag cloud
+    @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
+    @urlendcoded=@edited_params.to_query
+
+    @tags=Tag.find_by_brand_name(@drug.brand_name)
+    @tagshash=format2hash(@tags.word_list)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }
       format.js
     end
+  end
+
+  def format2hash(string)
+    stringhash={}
+  string.split(",").map { |keyvalue|
+    arr=keyvalue.split("=>",2)
+    stringhash[arr[0]]=arr[1]
+  }
+    return stringhash
   end
 
   def list
