@@ -1,0 +1,1 @@
+Tag.create!(brand_name: "Focalin Oral", word_list: "adhd=>6.4,side effects=>4.0,diagnosed=>3.0,give=>2.8,in special class at mainstream school=>1.4,problem=>1.4,mood swings=>1.2,saw=>1.2")

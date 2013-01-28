@@ -21,6 +21,6 @@ File.open(ARGV[0],"r") do |filereader|
     wordlist_stringify=wordline.join(',')
     #puts wordlist_stringify
 
-    OUT=File.new("seeds.txt","w")
+    OUT=File.new("#{brandname}.tags","w")
     OUT.write("Tag.create!(brand_name: \"#{brandname}\", word_list: \"#{wordlist_stringify}\")\n")
 end
