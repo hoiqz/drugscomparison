@@ -5,7 +5,7 @@
          */
         var word_array = [
                 <% @tagshash.each_pair do |key,value|%>
-                    {text: "<%=key%>", weight: <%= value.to_i%>, link: "/searches/<%= params[:drug_id]%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>"},
+                    {text: "<%=key%>", weight: <%= value.to_i%>, link: "/searches/<%= @drug.id%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>"},
                 <% end%>
 
             //{text: "Ipsum", weight: 9, link: "http://jquery.com/"},

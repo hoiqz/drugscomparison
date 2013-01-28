@@ -1,11 +1,28 @@
-<div class="center hero-unit">
-  <h1>DrugsComparison 1.0</h1>
 
-  <h2>
-    This is the home page for drugs comparison application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><%= link_to image_tag("drugposter2.jpg", alt: "Rails"), 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %>
+      <div class="carousel-caption">
+        <h4>Are You Getting the Most?</h4>
+        <p>FDA Balances Costs, Patient Safety in the Biologics and Personalized Medicine Revolution. <%= link_to "Read More", 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %></p>
+      </div>
+    </div>
+    <div class="item"><%= link_to image_tag("fda.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %>
+      <div class="carousel-caption">
+        <h4>Is this the right drug for me?</h4>
+        <p>Get more information on Over-the-Counter Medicines before purchasing them. <%= link_to "Read More", 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %></p>
+      </div>
+    </div>
+    <div class="item"><%= link_to image_tag("over_the_counter2.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %>
+      <div class="carousel-caption">
+        <h4>What Are Generic Drugs?</h4>
+        <p>Facts about generic drugs that you should know. <%= link_to "Read More", 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %></p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
