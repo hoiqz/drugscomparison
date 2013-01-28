@@ -14,7 +14,6 @@ class ReviewsController < ApplicationController
     @for_counts=@drug.reviews.count
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 
-
     ## for adding form into the page
     @review = @drug.reviews.new
     @user=User.new
