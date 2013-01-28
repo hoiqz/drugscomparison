@@ -51,8 +51,9 @@ class SearchesController < ApplicationController
     else
       @type="All Drugs"
     end
-    @for_counts=Search.last.get_all_reviews(@review_options).count
-    @reviews = Search.last.get_all_reviews(@review_options).order("created_at DESC").page(params[:page]).per(5)
+    @newsearch=Search.new
+    @for_counts=@newsearch.get_all_reviews(@review_options).count
+    @reviews = @newsearch.get_all_reviews(@review_options).order("created_at DESC").page(params[:page]).per(5)
 
 
     respond_to do |format|
