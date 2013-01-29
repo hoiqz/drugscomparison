@@ -12,8 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require bootstrap
+//= require highcharts
+//= require highcharts-more
+//= require exporting
+//= require gray
+//= require jqcloud-1.0.2.min
 //= require_tree .
+
 $(function () {
 jQuery.ajaxSetup({
     'beforeSend': function (xhr) {xhr.setRequestHeader("Accept", "text/javascript")}

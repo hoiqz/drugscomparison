@@ -18,7 +18,7 @@
             <li class="<%= 'active' if params[:controller] == 'static_pages' %>">
               <%= link_to 'Home', static_pages_home_path%>
             </li>
-            <li class="<%= 'active' if params[:controller] == 'reviews' %>">
+            <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %>">
              <%= link_to 'Browse Drugs', drugs_path %>
             </li>
 
