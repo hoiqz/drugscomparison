@@ -2,13 +2,14 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/models/drug.rb" line="113" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="48" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="46" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +78,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="37" selection-start="7301" selection-end="7301" vertical-scroll-proportion="-10.307693">
+            <state line="55" column="38" selection-start="7224" selection-end="7224" vertical-scroll-proportion="-17.5">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -90,7 +91,7 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="92" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.7206166">
+            <state line="41" column="11" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.65510595">
               <folding />
             </state>
           </provider>
@@ -108,7 +109,7 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="21" selection-start="2927" selection-end="2927" vertical-scroll-proportion="0.0">
+            <state line="277" column="20" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,11 +147,11 @@
         <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       </list>
     </option>
@@ -1023,20 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="53" selection-start="1032" selection-end="1048" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="86" selection-start="8459" selection-end="8459" vertical-scroll-proportion="-16.846153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1044,41 +1031,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="21" selection-start="2927" selection-end="2927" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="228" selection-start="228" selection-end="228" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="37" selection-start="7301" selection-end="7301" vertical-scroll-proportion="-10.307693">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="63" selection-start="345" selection-end="345" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="65" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1092,9 +1047,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="38" selection-start="7224" selection-end="7224" vertical-scroll-proportion="-17.5">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="277" column="20" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="86" selection-start="8459" selection-end="8459" vertical-scroll-proportion="-16.846153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="53" selection-start="1032" selection-end="1048" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="228" selection-start="228" selection-end="228" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="65" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="92" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.7206166">
+        <state line="41" column="11" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.65510595">
           <folding />
         </state>
       </provider>

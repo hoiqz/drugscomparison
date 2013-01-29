@@ -269,3 +269,14 @@ div.jqcloud {
 div.jqcloud span { padding: 0; }
 
 /* Jqcloud ends*/
+
+
+/* bootstrap changes*/
+.thumbnail{
+  min-height: 420px;
+  .caption{
+    .caption_content{
+      min-height: 100px;
+    }
+  }
+}
