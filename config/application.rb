@@ -61,6 +61,6 @@ module Drugscomparison
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.precompile += ['highcharts.js', 'bootstrap.js','highcharts-more.js','exporting.js','gray.js','bootstrap-tooltip.js','jqcloud-1.0.2.min.js']
+    #config.assets.precompile += ['highcharts.js', 'bootstrap.js','highcharts-more.js','exporting.js','gray.js','bootstrap-tooltip.js','jqcloud-1.0.2.min.js']
   end
 end
