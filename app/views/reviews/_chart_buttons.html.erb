@@ -1,4 +1,3 @@
-<%= link_to 'Effectiveness', effectiveness_view_drug_path(@drug.id), :id=>'effectlink', remote: true, :class =>"btn btn-inverse"%>
-<%= link_to 'Ease of Use', eou_view_drug_path(@drug.id), :id=>'eoulink', remote: true, :class =>"btn btn-inverse"%>
-<%= link_to 'Satisfactory', satisfactory_view_drug_path(@drug.id), :id=>'satisfylink', remote: true, :class =>"btn btn-inverse"%>
-<a href="#" id="example" class="btn btn-danger" data-trigger="hover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">hover for popover</a>
+<%= link_to 'Satisfactory', satisfactory_view_drug_path(@drug.id), :id=>'satisfylink', remote: true, :class =>"btn btn-inverse", "data-trigger"=>"hover","data-content"=> "View the score of this drug in terms of user satisfaction", "data-original-title"=>"By Satisfactory","data-placement"=>"bottom"%>
+<%= link_to 'Effectiveness', effectiveness_view_drug_path(@drug.id), :id=>'effectlink', remote: true, :class =>"btn btn-inverse", "data-trigger"=>"hover","data-content"=> "View the score of this drug in terms of effectiveness", "data-original-title"=>"By Effectiveness","data-placement"=>"bottom"%>
+<%= link_to 'Ease of Use', eou_view_drug_path(@drug.id), :id=>'eoulink', remote: true, :class =>"btn btn-inverse", "data-trigger"=>"hover","data-content"=> "View the score of this drug in terms of ease of use", "data-original-title"=>"By Ease of Use","data-placement"=>"bottom"%>

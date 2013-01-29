@@ -28,7 +28,9 @@
                     $("#new_review").addClass("hide");
                 }
             });
-            $("#example").popover();
+            $("#effectlink").popover();
+            $("#eoulink").popover();
+            $("#satisfylink").popover();
             $("#tagcloud").jQCloud(word_array);
         });
     </script>
@@ -79,10 +81,11 @@
 
 
 <div id="static_buttons">
+  <div><h5>Chart Views</h5></div>
   <%= render "chart_buttons" %>
 </div>
 
-
+ <br>
 <div>
         <button id="write_review" class="btn btn-primary" type="button">Write Review</button>
 </div>
@@ -94,31 +97,31 @@
 
     <%= fields_for @user do |user_detail_form| %>
         <div class="control-group">
-          <%= user_detail_form.label :username, "Enter A Name", :class=>"control-label" %>
+          <%= user_detail_form.label :username, "Username", :class=>"control-label" %>
           <div class="controls">
-            <%= user_detail_form.text_field :username, :placeholder=>"John Doe"%>
+            <%= user_detail_form.text_field :username, :placeholder=>"John Doe"%> *
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :email_address, "Email Address", :class=>"control-label" %>
+          <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
           <div class="controls">
             <%= user_detail_form.text_field :email_address, :placeholder=>"John_Doe@abc.com"%>
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :age, "Select Age Range", :class=>"control-label" %>
+          <%= user_detail_form.label :age, "Age Range", :class=>"control-label" %>
           <div class="controls">
-          <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]) %>
+          <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]),:prompt => "Select Age range" %>
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :gender, "Choose Your Gender", :class=>"control-label" %>
+          <%= user_detail_form.label :gender, "Gender", :class=>"control-label" %>
           <div class="controls">
-            <%= user_detail_form.select :gender, options_for_select([["Male","Male"],["Female","Female"]]) %>
+            <%= user_detail_form.select :gender, options_for_select([["Male","Male"],["Female","Female"]]),:prompt => "Select Gender" %>
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :ethnicity, "Choose An Ethnicity", :class=>"control-label" %>
+          <%= user_detail_form.label :ethnicity, "Ethnicity", :class=>"control-label" %>
           <div class="controls">
             <%= user_detail_form.select :ethnicity , options_for_select([["Mixed Race","Mixed Race"],
                                                                          ["Arctic (Siberian, Eskimo)","Arctic (Siberian, Eskimo)"],
@@ -132,11 +135,11 @@
                                                                          ["Pacific (Polynesian, Micronesian, etc)","Pacific (Polynesian, Micronesian, etc)"],
                                                                          ["South East Asian (Chinese, Thai, Malay, Filipino, etc)","South East Asian (Chinese, Thai, Malay, Filipino, etc)"],
                                                                          ["West African, Bushmen, Ethiopian","est African, Bushmen, Ethiopian"],
-                                                                         ["Other Race","Other Race"]])%>
+                                                                         ["Other Race","Other Race"]]),:prompt => "Select Ethnicity"%>
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :weight, "Weight (in Kg)", :class=>"control-label" %>
+          <%= user_detail_form.label :weight, "Weight", :class=>"control-label" %>
           <div class="controls">
             <%= user_detail_form.text_field :weight %>
           </div>
@@ -146,7 +149,7 @@
     <div class="control-group">
       <%= f.label :comments, "Write A Review For This Drug", :class=>"control-label" %>
       <div class="controls">
-        <%= f.text_area :comments, :size=> "44x6", :class=>"input-xxlarge" %>
+        <%= f.text_area :comments, :size=> "44x6", :class=>"input-xxlarge" %> *
       </div>
     </div>
 
@@ -157,7 +160,7 @@
         <%= f.radio_button :effectiveness, "2" %> 2 |
         <%= f.radio_button :effectiveness, "3" %> 3 |
         <%= f.radio_button :effectiveness, "4" %> 4 |
-        <%= f.radio_button :effectiveness, "5" %> 5
+        <%= f.radio_button :effectiveness, "5" %> 5   *
       </div>
     </div>
     <div class="control-group">
@@ -167,7 +170,7 @@
         <%= f.radio_button :ease_of_use, "2" %> 2 |
         <%= f.radio_button :ease_of_use, "3" %> 3 |
         <%= f.radio_button :ease_of_use, "4" %> 4 |
-        <%= f.radio_button :ease_of_use, "5" %> 5
+        <%= f.radio_button :ease_of_use, "5" %> 5     *
       </div>
     </div>
     <div class="control-group">
@@ -177,18 +180,18 @@
         <%= f.radio_button :satisfactory, "2" %> 2 |
         <%= f.radio_button :satisfactory, "3" %> 3 |
         <%= f.radio_button :satisfactory, "4" %> 4 |
-        <%= f.radio_button :satisfactory, "5" %> 5
+        <%= f.radio_button :satisfactory, "5" %> 5    *
       </div>
     </div>
     <div class="control-group">
-      <%= f.label :usage_duration_days, "Choose Average Dosage", :class=>"control-label" %>
+      <%= f.label :usage_duration_days, "How long have you been using this drug?", :class=>"control-label" %>
       <div class="controls">
         <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
       </div>
     </div>
 
     <div class="control-group">
-      <%= f.label :other_drugs, "Are You Taking Any Other Drugs At The Same Time?", :class=>"control-label" %>
+      <%= f.label :other_drugs, "List Any Other Drugs You Are Consuming?", :class=>"control-label" %>
       <div class="controls">
         <%= f.text_field :other_drugs%>
       </div>
@@ -197,7 +200,7 @@
     <div id="error_explanation" class="hide"></div>
     <div class="control-group">
       <div class="controls">
-        <%= f.submit "Submit Review" ,:class=>"btn btn-primary"%>
+        <%= f.submit "Submit Review" ,:class=>"btn btn-primary"%> (* :required fields)
       </div>
     </div>
 

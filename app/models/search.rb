@@ -48,8 +48,12 @@ class Search < ActiveRecord::Base
         next
       end
       if key =="keyword"
-         cleaned_value=CGI::unescape value
-        query_record=query_record.where("comments like ?","%#{cleaned_value}%")
+        cleaned_value=CGI::unescape value
+        #search_length = cleaned_value.split.length
+        #query_record=query_record.all(:conditions => [(['comments LIKE ?'] * search_length).join(' AND ')] + cleaned_value.split.map { |name| "%#{name}%" })
+        cleaned_value.split.each do |word|
+          query_record=query_record.where("comments like ?","%#{word}%")
+        end
         next
       end
     end
