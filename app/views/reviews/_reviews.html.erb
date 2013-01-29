@@ -8,15 +8,19 @@
     Posted <%= time_ago_in_words(review.created_at)%> ago<br />
   </span>
     <p class="commentor"><b><%= review.user.username %></b> wrote:</p>
-     Effectiveness <div class="rating_bar">
-       <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
-     </div>
-     Ease of Use <div class="rating_bar">
-       <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
-     </div>
-     Satisfactory <div class="rating_bar">
-       <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
-     </div> <br />
+     <ul class="inline">
+       <li>Effectiveness <div class="rating_bar">
+         <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
+       </div>
+       </li>
+       <li>Ease of Use <div class="rating_bar">
+         <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
+       </div></li>
+       <li>Satisfactory <div class="rating_bar">
+         <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
+       </div></li>
+     </ul>
+      <br />
 
     <%= content_tag(:p, review.comments, :class => "review-body") %>
    </div> <br />

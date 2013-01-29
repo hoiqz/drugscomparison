@@ -9,8 +9,21 @@
 </head>
 <body>
 <%= render "layouts/header" %>
-<div class="container">
-  <%= yield %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+    <div class="span8">
+      <!--Body content-->
+      <%= yield %>
+
+    </div>
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+  </div>
+
   <%= render "layouts/footer" %>
 </div>
 
