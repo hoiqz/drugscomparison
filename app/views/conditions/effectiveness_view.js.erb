@@ -81,6 +81,7 @@ $(function () {
                         enabled: true,
                         color: '#F8F8F8',
                         connectorColor: '#F8F8F8',
+                        distance: 20,
                         formatter: function() {
                             return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
                         }
@@ -113,11 +114,11 @@ $(function () {
                     <% end%>
                     <% end%>
                     data: [
-                        ['Score of 1',<%=raw @update_values[drug][0] %> ],
-                        ['Score of 2',<%=raw @update_values[drug][1] %> ],
-                        ['Score of 3',<%=raw @update_values[drug][2] %> ],
-                        ['Score of 4',<%=raw @update_values[drug][3] %> ],
-                        ['Score of 5',<%=raw @update_values[drug][4] %> ]
+                        ['Scored 1/5',<%=raw @update_values[drug][0] %> ],
+                        ['Scored 2/5',<%=raw @update_values[drug][1] %> ],
+                        ['Scored 3/5',<%=raw @update_values[drug][2] %> ],
+                        ['Scored 4/5',<%=raw @update_values[drug][3] %> ],
+                        ['Scored 5/5',<%=raw @update_values[drug][4] %> ]
                             ]
                 }
                 <% i=i+1 %>

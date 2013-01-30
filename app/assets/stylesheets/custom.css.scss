@@ -103,12 +103,21 @@ footer {
 }
 
 #reviews_chart{
-  float: left;
-  width: 900px;
+  //float: left;
+  //width: 900px;
   min-height: 400px;
-  overflow: auto;
+  //overflow: auto;
+  border-bottom: 1px dashed #B2B2B2;
 }
-#conditions{
+#tagcloud{
+  min-height: 400px;
+}
+
+#reviews_sectionaa{
+  width: 900px;
+}
+
+#conditionsaa{
   float:right;
   width: 240px;
   border: 1px solid #EAEAEA;
@@ -116,9 +125,21 @@ footer {
 }
 #static_buttons{
   clear: both;
-  padding-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #B2B2B2;
+  margin-left: 0px;
 }
 
+.notification{
+  padding-top: 30px;
+}
+
+h3#review_title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
 .rating_bar {
   width: 55px;
   background: url(star_x_grey.gif) 0 0 repeat-x;
@@ -196,18 +217,13 @@ footer {
 }
 
 #write_review{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .commentor{
   border-top: 1px solid #EAEAEA;
   padding-top: 5px;
-}
-#reviews_section{
-width: 900px;
-}
-.review_object{
 }
 
 

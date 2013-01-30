@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  layout "drug_review_layout"
   #before_filter :get_drug, :except => :create
   before_filter :get_drug
   #before_filter :get_average, :only=>:show

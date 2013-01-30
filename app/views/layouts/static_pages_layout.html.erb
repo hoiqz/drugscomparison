@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= csrf_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= render "layouts/stylesheets" %>
+  <%= yield :script %>
+</head>
+<body>
+<%= render "layouts/header" %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+    <div class="span8">
+      <!--Body content-->
+      <%= yield %>
+
+    </div>
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+  </div>
+
+  <%= render "layouts/footer" %>
+</div>
+
+<%= debug(params) if Rails.env.development? %>
+
+</body>
+</html>
