@@ -1,0 +1,45 @@
+<h1>Listing druginfographs</h1>
+
+<table>
+  <tr>
+    <th>Brand name</th>
+    <th>Avg sat male</th>
+    <th>Avg sat female</th>
+    <th>Top used words</th>
+    <th>Age more 50</th>
+    <th>Age less 18</th>
+    <th>Age btw 18 50</th>
+    <th>No of males</th>
+    <th>No of females</th>
+    <th>Effective over 4</th>
+    <th>Effective less 4</th>
+    <th>Eou over 4</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @druginfographs.each do |druginfograph| %>
+  <tr>
+    <td><%= druginfograph.brand_name %></td>
+    <td><%= druginfograph.avg_sat_male %></td>
+    <td><%= druginfograph.avg_sat_female %></td>
+    <td><%= druginfograph.top_used_words %></td>
+    <td><%= druginfograph.age_more_50 %></td>
+    <td><%= druginfograph.age_less_18 %></td>
+    <td><%= druginfograph.age_btw_18_50 %></td>
+    <td><%= druginfograph.no_of_males %></td>
+    <td><%= druginfograph.no_of_females %></td>
+    <td><%= druginfograph.effective_over_4 %></td>
+    <td><%= druginfograph.effective_less_4 %></td>
+    <td><%= druginfograph.eou_over_4 %></td>
+    <td><%= link_to 'Show', druginfograph %></td>
+    <td><%= link_to 'Edit', edit_druginfograph_path(druginfograph) %></td>
+    <td><%= link_to 'Destroy', druginfograph, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Druginfograph', new_druginfograph_path %>

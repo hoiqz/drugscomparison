@@ -11,13 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130125061344) do
+ActiveRecord::Schema.define(:version => 20130131051458) do
 
   create_table "conditions", :force => true do |t|
     t.text     "information"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "name"
+  end
+
+  create_table "druginfographs", :force => true do |t|
+    t.string   "brand_name"
+    t.float    "avg_sat_male"
+    t.float    "avg_sat_female"
+    t.string   "top_used_words"
+    t.float    "age_more_50"
+    t.float    "age_less_18"
+    t.float    "age_btw_18_50"
+    t.float    "no_of_males"
+    t.float    "no_of_females"
+    t.float    "effective_over_3"
+    t.float    "effective_less_3"
+    t.float    "eou_over_3"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.float    "eou_less_3"
   end
 
   create_table "drugs", :force => true do |t|
@@ -70,7 +88,6 @@ ActiveRecord::Schema.define(:version => 20130125061344) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-  add_index "tags", ["brand_name"], :name => "index_tags_on_brand_name"
 
   create_table "treatments", :force => true do |t|
     t.integer  "drug_id"

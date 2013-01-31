@@ -1,4 +1,6 @@
 Drugscomparison::Application.routes.draw do
+  resources :druginfographs
+
   resources :searches do
     member do
       get 'non_form_search'

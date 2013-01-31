@@ -1,0 +1,2 @@
+module DruginfographsHelper
+end

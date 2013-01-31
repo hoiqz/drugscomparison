@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Brand name:</b>
+  <%= @druginfograph.brand_name %>
+</p>
+
+<p>
+  <b>Avg sat male:</b>
+  <%= @druginfograph.avg_sat_male %>
+</p>
+
+<p>
+  <b>Avg sat female:</b>
+  <%= @druginfograph.avg_sat_female %>
+</p>
+
+<p>
+  <b>Top used words:</b>
+  <%= @druginfograph.top_used_words %>
+</p>
+
+<p>
+  <b>Age more 50:</b>
+  <%= @druginfograph.age_more_50 %>
+</p>
+
+<p>
+  <b>Age less 18:</b>
+  <%= @druginfograph.age_less_18 %>
+</p>
+
+<p>
+  <b>Age btw 18 50:</b>
+  <%= @druginfograph.age_btw_18_50 %>
+</p>
+
+<p>
+  <b>No of males:</b>
+  <%= @druginfograph.no_of_males %>
+</p>
+
+<p>
+  <b>No of females:</b>
+  <%= @druginfograph.no_of_females %>
+</p>
+
+<p>
+  <b>Effective over 4:</b>
+  <%= @druginfograph.effective_over_4 %>
+</p>
+
+<p>
+  <b>Effective less 4:</b>
+  <%= @druginfograph.effective_less_4 %>
+</p>
+
+<p>
+  <b>Eou over 4:</b>
+  <%= @druginfograph.eou_over_4 %>
+</p>
+
+
+<%= link_to 'Edit', edit_druginfograph_path(@druginfograph) %> |
+<%= link_to 'Back', druginfographs_path %>

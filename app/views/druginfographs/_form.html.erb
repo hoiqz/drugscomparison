@@ -1,0 +1,65 @@
+<%= form_for(@druginfograph) do |f| %>
+  <% if @druginfograph.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@druginfograph.errors.count, "error") %> prohibited this druginfograph from being saved:</h2>
+
+      <ul>
+      <% @druginfograph.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :brand_name %><br />
+    <%= f.text_field :brand_name %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_sat_male %><br />
+    <%= f.text_field :avg_sat_male %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_sat_female %><br />
+    <%= f.text_field :avg_sat_female %>
+  </div>
+  <div class="field">
+    <%= f.label :top_used_words %><br />
+    <%= f.text_field :top_used_words %>
+  </div>
+  <div class="field">
+    <%= f.label :age_more_50 %><br />
+    <%= f.text_field :age_more_50 %>
+  </div>
+  <div class="field">
+    <%= f.label :age_less_18 %><br />
+    <%= f.text_field :age_less_18 %>
+  </div>
+  <div class="field">
+    <%= f.label :age_btw_18_50 %><br />
+    <%= f.text_field :age_btw_18_50 %>
+  </div>
+  <div class="field">
+    <%= f.label :no_of_males %><br />
+    <%= f.text_field :no_of_males %>
+  </div>
+  <div class="field">
+    <%= f.label :no_of_females %><br />
+    <%= f.text_field :no_of_females %>
+  </div>
+  <div class="field">
+    <%= f.label :effective_over_4 %><br />
+    <%= f.text_field :effective_over_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :effective_less_4 %><br />
+    <%= f.text_field :effective_less_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :eou_over_4 %><br />
+    <%= f.text_field :eou_over_4 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
