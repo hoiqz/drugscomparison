@@ -5,12 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\assets\stylesheets\custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/age_breakdown.png" afterPath="$PROJECT_DIR$/app/assets/images/age_breakdown.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="" />
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
