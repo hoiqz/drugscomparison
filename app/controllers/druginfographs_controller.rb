@@ -72,13 +72,13 @@ class DruginfographsController < ApplicationController
     total_reviews_for_this= total_reviews(drug).to_f
     eff_over_3=statistic_get_more_or_equal(drug,"effectiveness",3)
     eff_less_3=statistic_get_less(drug,"effectiveness",3)
-    att_hash[:effective_over_3]=(eff_over_3/ total_reviews_for_this)*100
-    att_hash[:effective_less_3]  =(eff_less_3/ total_reviews_for_this) *100
+    att_hash[:effective_over_3]=(eff_over_3/ total_reviews_for_this)*10
+    att_hash[:effective_less_3]  =(eff_less_3/ total_reviews_for_this) *10
 
     eou_over_3=statistic_get_more_or_equal(drug,"ease_of_use",3)
     eou_less_3=statistic_get_less(drug,"ease_of_use",3)
-    att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *100
-    att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *100
+    att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
+    att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
 
     return att_hash
   end

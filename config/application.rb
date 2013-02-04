@@ -57,6 +57,7 @@ module Drugscomparison
     config.assets.enabled = true
     config.assets.paths << "#{Rails.root}/public/assets/stylesheets"
     config.assets.paths << "#{Rails.root}/public/assets/javascripts"
+    config.assets.paths << "#{Rails.root}/public/assets/fonts"
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

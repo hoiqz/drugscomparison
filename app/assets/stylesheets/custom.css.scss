@@ -1,6 +1,14 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+@font-face {
+  font-family: 'leaguegothic';
+  src: url(font-path('leaguegothic-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
+  url(font-path('leaguegothic-regular-webfont.woff')) format('woff'),
+  url(font-path('leaguegothic-regular-webfont.ttf'))  format('truetype'),
+  url(font-path('leaguegothic-regular-webfont.svg') + "#leaguegothic") format('svg');
+}
+
 $lightGray: #999;
 $grayMediumLight: #eaeaea;
 /* universal*/
@@ -293,4 +301,191 @@ div.jqcloud span { padding: 0; }
       min-height: 100px;
     }
   }
+}
+
+/* drug infograph */
+
+#avg_sat_infograph{
+  font-family: leaguegothic;
+
+  h3{
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #157DEC;
+    text-transform: uppercase;
+  }
+
+  span#maleleft{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 170px;
+    font-size: 30px;
+    color: #F87431;
+    text-transform: uppercase;
+  }
+  span#femaleright{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 400px;
+    font-size: 30px;
+    color: #F87431;
+    text-transform: uppercase;
+  }
+  width: 695px;
+  height: 400px;
+  background: url("average-satisfaction_white.png") no-repeat;
+}
+
+#freq_words_infograph{
+  font-family: leaguegothic;
+  position: relative;
+  ul {
+    position: absolute;
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 100px;
+    li{
+      list-style-type: none;
+      margin: 15px;
+    }
+  }
+  h3{
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #157DEC;
+    text-transform: uppercase;
+    margin-left: 400px;
+    margin-top: 170px;
+  }
+  width: 695px;
+  height: 400px;
+  background: url("frequentwordsbackground.png") no-repeat;
+}
+
+#age_breakdown_infograph{
+  font-family: leaguegothic;
+
+  ul {
+    position: relative;
+    li{
+      list-style-type: none;
+      position: absolute;
+
+      font-family: arial;
+      font-size: 32px;
+      color:#ffffff;
+    }
+    li#child{
+      margin-left: 400px;
+      margin-top: 60px;
+    }
+    li#adult{
+      margin-left: 410px;
+      margin-top: 195px;
+    }
+    li#senior{
+      margin-left: 420px;
+      margin-top: 330px;
+    }
+  }
+  h3{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
+    #text-align: center;
+    font-size: 30px;
+    color: #157DEC;
+    text-transform: uppercase;
+    width: 200px;
+  }
+  width: 695px;
+  height: 400px;
+  background: url("age_breakdown.png") no-repeat;
+}
+#gender_breakdown_infograph{
+  font-family: leaguegothic;
+  position: relative;
+  ul {
+
+    li{
+      list-style-type: none;
+      position: absolute;
+
+      font-family: leaguegothic;
+      font-size: 32px;
+      color:#157DEC;
+    }
+    .human_bar1 {
+      margin-top:20px;
+      margin-left: 30px;
+      width: 300px;
+      background: url("whiteorangeman.png") 0 0 repeat-x;
+    }
+
+    .human_bar1 div {
+      height: 60px;
+      background: url("orangeman.png") 0 0 repeat-x;
+      margin-bottom: 30px;
+    }
+    .human_bar2 {
+      margin-top:200px;
+      margin-left: 300px;
+      width: 300px;
+      background: url("whiteblueman.png") 0 0 repeat-x;
+    }
+
+    .human_bar2 div {
+      height: 60px;
+      background: url("blueman.png") 0 0 repeat-x;
+      margin-bottom: 30px;
+    }
+  }
+  h3{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
+    #text-align: center;
+    font-size: 30px;
+    color: #157DEC;
+    text-transform: uppercase;
+    width: 200px;
+  }
+  width: 695px;
+  height: 400px;
+  background: url("effectiveness-background.png") no-repeat;
+}
+
+
+
+.focus6{
+  font-size: 20px;
+  color:#F87431
+}
+.focus5{
+   font-size: 40px;
+  color:#F87431
+ }
+.focus4{
+  font-size: 60px;
+  padding-top: 10px;
+  color:#F87431
+}
+.focus3{
+  font-size: 80px;
+  padding-top: 10px;
+  color:#F87431
+}
+.focus2{
+  font-size: 100px;
+  padding-top: 10px;
+  color:#F87431
+}
+.focus1{
+  font-size: 120px;
+  padding-top: 10px;
+  color:#F87431
 }

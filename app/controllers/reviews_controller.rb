@@ -25,6 +25,9 @@ class ReviewsController < ApplicationController
     @tags=Tag.find_by_brand_name(@drug.brand_name)
     @tagshash=format2hash(@tags.word_list)
 
+    # for the infograph
+    @infograph=Druginfograph.find_by_brand_name(@drug.brand_name)
+    @topwords=@infograph.top_used_words.split(',')
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }

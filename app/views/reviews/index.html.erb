@@ -31,7 +31,7 @@
             $("#effectlink").popover();
             $("#eoulink").popover();
             $("#satisfylink").popover();
-            $("#tagcloud").jQCloud(word_array);
+            //$("#tagcloud").jQCloud(word_array);
         });
     </script>
 <% end %>
@@ -72,9 +72,62 @@
 <div id="chart_container" class="row-fluid">
   <div id="reviews_chart" class="span12">
     <!-- You should explicitly specify the dimensions of the container element -->
-    <div id="tagcloud" class="span12">
+    <div id="myCarousel" class="carousel slide" data-interval="15000">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <div id="avg_sat_infograph">
+            <h3>Overall<br><span class="focus3">Satisfaction</span></h3>
+            <span id="maleleft"><span class="focus3"><%= @infograph.avg_sat_male.round(2)%></span> / 5</span>
+            <span id="femaleright"><span class="focus3"><%= @infograph.avg_sat_female.round(2)%></span> / 5</span>
+          </div>
+        </div>
+        <div class="item">
+          <div id="freq_words_infograph">
+              <ul>
+              <li><span class="focus3">&ldquo;<%= @topwords.shift %></span></li>
+              <li><span class="focus4"><%= @topwords.shift %></span></li>
+              <li><span class="focus5"><%= @topwords.shift %>&rdquo;</span></li>
+                </ul>
 
+          </div>
+        </div>
+        <div class="item">
+          <div id="age_breakdown_infograph">
+
+            <ul>
+              <li id="child"><%= @infograph.age_less_18.round(1) %></span></li>
+              <li id="adult"><%= @infograph.age_btw_18_50.round(1) %></span></li>
+              <li id="senior"><%= @infograph.age_more_50.round(1) %></span></li>
+            </ul>
+            <h3><span class="focus2"><%= @infograph.age_btw_18_50.round(1) %></span> % of our reviewers come from age group <br><span class="focus5">18 - 55</span></h3>
+          </div>
+        </div>
+        <div class="item">
+          <div id="gender_breakdown_infograph">
+
+            <ul>
+              <li><div class="human_bar1">
+                <div style="width:<%= (@infograph.effective_over_3.round)*30 %>px"></div>
+                <span class="focus2"><%= @infograph.effective_over_3.round %></span> in  <span class="focus3">10</span> <br>reviewers found this<br> drug effective.
+              </div>
+              </li>
+              <li><div class="human_bar2">
+                <div style="width:<%= (@infograph.effective_less_3.ceil)*30 %>px"></div>
+                <span class="focus2"><%= @infograph.effective_less_3.ceil %></span> in <span class="focus3">10</span> <br>reviewers found this <br>drug ineffective.
+              </div>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
+
+
   </div>
 
   <div id="static_buttons" class="span12">
