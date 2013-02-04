@@ -6,11 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\assets\stylesheets\custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/age_breakdown.png" afterPath="$PROJECT_DIR$/app/assets/images/age_breakdown.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.js.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.js.erb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <file leaf-file-name="custom.css.scss.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="257" selection-end="257" vertical-scroll-proportion="0.1118421">
+            <state line="10" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.27960527">
               <folding />
             </state>
           </provider>
@@ -117,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static_pages_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/drug_review_layout.html.erb" />
@@ -133,6 +131,7 @@
         <option value="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
       </list>
     </option>
   </component>
@@ -907,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="75" selection-start="61" selection-end="75" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="273" column="57" selection-start="11352" selection-end="11406" vertical-scroll-proportion="-178.5">
@@ -931,9 +923,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="63" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
+        <state line="0" column="75" selection-start="61" selection-end="75" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
@@ -945,9 +937,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="257" selection-end="257" vertical-scroll-proportion="0.1118421">
+        <state line="27" column="63" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.27960527">
           <folding />
         </state>
       </provider>
