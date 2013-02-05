@@ -1,0 +1,1 @@
+Tag.create!(brand_name: "Adderall XR Oral", word_list: "help=>168,adhd=>118,side effects=>87,focus=>59,diagnosed=>57,depression=>43,changed=>34,energy=>33,problem=>22,causes=>21,dry mouth=>21,cause=>20,change=>18,positive=>18,sleeping=>18,finish=>17,focused=>17,focal segmental glomerulosclerosis 3 susceptibility to=>15,headaches=>15")

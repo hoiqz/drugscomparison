@@ -1,5 +1,7 @@
 
 $(function () {
+    $("#reviews_chart").empty();
+
     var chart;
     $(document).ready(function() {
         Highcharts.setOptions({
@@ -88,6 +90,7 @@ $(function () {
                 ]
             }]
         });
+        $('#conditions').show;
         $('#conditions').html("<%= escape_javascript(render "effectiveness_view_form") %>");
     });
 

@@ -1,0 +1,1 @@
+Tag.create!(brand_name: "Ritalin Oral", word_list: "help=>66,make=>45,adhd=>26,side effects=>25,focus=>20,diagnosed=>19,headaches=>19,tired=>17,depression=>16,give=>14,lost=>14,causes=>11,energy=>11,problem=>10,asleep=>9,brain=>9,cause=>9,change=>9,awake=>8")

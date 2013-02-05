@@ -1,5 +1,14 @@
 $('#reviews_section').html('<%= escape_javascript render("reviews") %>');
-$("#reviews_chart").empty()
-$("#reviews_chart").jQCloud(word_array);
+<% if params[:button]=="tag_cloud_link"%>
+    $("#reviews_chart").empty();
+   // $("#conditions").hide(300);
+    $("#reviews_chart").jQCloud(word_array);
+<%end%>
+<% if params[:button]=="infograph"%>
+$("#reviews_chart").empty();
+//$("#conditions").hide(300);
+$("#reviews_chart").html('<%= escape_javascript render("infographs") %>');
+<%end%>
+
 
 
