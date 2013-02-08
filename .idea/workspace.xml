@@ -6,7 +6,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\Thumbs-4879ee667c3eff9d26803c9a1105b91d.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\age_breakdown-405f1d63ab3a4778e3c7dcf50a40fdd6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\age_breakdown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application-4ff9242e2106fd57675cc933a3c9454d.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application-4ff9242e2106fd57675cc933a3c9454d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application-8df8154ae316bce298269f3b0441a3d1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application-8df8154ae316bce298269f3b0441a3d1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\application.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction-c9155d5cfa79614697b0240892b9c44c.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction_black-253a97ecebb9dd7f06fc8b62e0de73e6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction_black.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction_white-97cfaf43cd29211936c1c24f31854db8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\average-satisfaction_white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueman-8dde06e4e83fe16a487b6b13ca8f047f.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\blueman.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\drugposter-1d6d1a3b855e5824f3f16f5065caa9fd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\drugposter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\drugposter2-1154b99b868d6e2361ac1e66978bc1b9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\drugposter2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\effectiveness-background-30e4679ae4f015095556ce3342d4cafc.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\effectiveness-background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\fda-39d1f27e673f8e93d5d513ef88254769.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\fda.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\fda_1006-1705acbe90ba8cc4e1700a6ff9a5be11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\fda_1006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\frequentwords-df4b6010ef42f0bf234d4983ef3633e8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\frequentwords.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\frequentwordsbackground-749466abfcf1dec07447b32954b98ef0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\frequentwordsbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\glyphicons-halflings-ab3144065a860d198f1d7d9a4882640c.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont-8a0558bb8012b670b8b01e4e2fa346b6.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont-ddc1125204b1f74c7be1dbbdc458cd3b.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont-ecafddfc54436ef15d1184c3d0ef1275.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont-f1ac70d6f8d2f32b0dcdc4501a4b50a4.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\leaguegothic-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\manifest.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\orangeman-9df0dc57baf9fbd3ac7140e87b55b1a4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\orangeman.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\over_the_counter-b8b266185da589631a301e381876bce8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\over_the_counter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\over_the_counter2-4db6f55302fac35ba114bb53f56a4213.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\over_the_counter2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\rails-be8732dac73d845ac5b142c8fb5f9fb0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\rails.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\star_x_grey-71f995bc590e1163330bf65966a301f9.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\star_x_grey.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\star_x_orange-cd23bdfedc73a91385eaa12680648a57.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\star_x_orange.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stars-a93aa7a325078bffa8c20cf32cb0a2a4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\stars.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteblueman-e56178b41e3731f19bbdb9d04f652d27.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteblueman.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteman-a474ed4ec16fb0887ed48a48e48830cf.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteman.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteorangeman-912f561b749aa98d0d89da0be4e74e33.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\public\assets\whiteorangeman.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +107,7 @@
       <file leaf-file-name="custom.css.scss.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="113" selection-start="475" selection-end="475" vertical-scroll-proportion="0.36710963">
+            <state line="6" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="0.16943522">
               <folding />
             </state>
           </provider>
@@ -974,7 +1041,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="113" selection-start="475" selection-end="475" vertical-scroll-proportion="0.36710963">
+        <state line="6" column="30" selection-start="131" selection-end="131" vertical-scroll-proportion="0.16943522">
           <folding />
         </state>
       </provider>
