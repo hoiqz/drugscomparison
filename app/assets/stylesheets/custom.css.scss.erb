@@ -1,12 +1,13 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+
 @font-face {
     font-family: 'leaguegothic';
-    src: url(font-path('leaguegothicregularwebfont.eot') + "?#iefix") format('embedded-opentype'),
-    url(font-path('leaguegothicregularwebfont.woff')) format('woff'),
-    url(font-path('leaguegothicregularwebfont.ttf'))  format('truetype'),
-    url(font-path('leaguegothicregularwebfont.svg') + "#leaguegothic") format('svg');
+    src: url('<%= asset_path 'leaguegothicregularwebfont'%>') format('embedded-opentype'),
+    url('<%= asset_path 'leaguegothicregularwebfont.woff'%>') format('woff'),
+    url('<%= asset_path 'leaguegothicregularwebfont.ttf'%>')  format('truetype'),
+    url('<%= asset_path 'leaguegothicregularwebfont.svg'%>') format('svg');
 }
 
 $lightGray: #999;
