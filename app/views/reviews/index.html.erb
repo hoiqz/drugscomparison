@@ -94,6 +94,7 @@
     <button  class="btn btn-primary" type="button">Write Review</button>
   </div>
 
+</div>
 
 
 
@@ -102,7 +103,7 @@
 
 
 
-  <%= form_for ([@drug,@review]),:remote=>true,:html => {:class => "form-horizontal hide span12"} do |f| %>
+<%= form_for ([@drug,@review]),:remote=>true,:html => {:class => "form-horizontal hide span12"} do |f| %>
 
 
 
@@ -224,6 +225,5 @@
   <%= render "reviews", :locals => { :list => true } %>
 </div>
 
-</div>
 
 

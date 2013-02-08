@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131051458) do
+ActiveRecord::Schema.define(:version => 20130206075045) do
+
+  create_table "conditioninfographs", :force => true do |t|
+    t.integer  "condition_id"
+    t.string   "most_reviewed"
+    t.float    "cheapest"
+    t.string   "most_satisfied"
+    t.string   "most_kids_using"
+    t.float    "total_reviews"
+    t.string   "top_side_effect"
+    t.string   "most_easy_to_use"
+    t.string   "most_effective"
+    t.string   "overall_winner"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "most_bad_reviews"
+  end
 
   create_table "conditions", :force => true do |t|
     t.text     "information"

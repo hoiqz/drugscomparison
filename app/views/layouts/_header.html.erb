@@ -21,7 +21,9 @@
             <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %>">
              <%= link_to 'Browse Drugs', drugs_path %>
             </li>
-
+            <li class="<%= 'active' if params[:controller] == 'conditions' %>">
+              <%= link_to 'By Conditions', conditions_path %>
+            </li>
             <li class="dropdown <%= 'active' if params[:controller] == 'conditions' %>">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Conditions <b class="caret"></b>
               </a>

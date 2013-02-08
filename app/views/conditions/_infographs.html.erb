@@ -1,0 +1,47 @@
+<div id="myCarousel" class="carousel slide" data-interval=false>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <div id="total_reviews_infograph">
+        <h3>Over<br><span class="focus3"><%= @total_reviews %></span> reviewers shared their opinion on drugs related to <span class="focus5"><%= @condition.name %></span></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div id="most_kids_infograph">
+        <h3><span class="focus3"><%= @most_kids_using["winner"] %></span> <br> has the highest number of <span class="focus4">kids*</span> review</h3>
+        <h4>That is approximately <span class="focus5"><%= @most_kids_freq%> %</span> of all kids reviews for <span class="focus6"><%= @condition.name %></span></h4>
+        <p>* We group ages 18 and below under the category 'kids'</p>
+      </div>
+    </div>
+    <div class="item">
+      <div id="most_reviewed_infograph">
+        <div id="pillgraph" style="margin-top:<%= (10-@number_of_drugs) >0 ? (10-@number_of_drugs): 0 %>em">
+          <%@most_reviewed.collect do |k,v|%>
+             <div class="pillbar_container">
+               <div class="labeltext"><%= k%></div>
+              <div class="pillbar">
+                 <div style="width:<%= (v.to_f.round)*30 %>px"></div>
+              </div>
+               <div class="labeltext"><%= ((v.to_f) *10).round(2)%> %</div>
+             </div>
+              <div class="clear"></div>
+        <% end %>
+        </div>
+        <h3><span class="focus4"><%= @winner[0]%> </span> has the most number of users </h3>
+        <h4>It makes up <span class="focus5"><%= @winner[1]%> %</span> of all <span class="focus6"><%= @condition.name%></span> reviews </h4>
+      </div>
+    </div>
+    <div class="item">
+      <div id="most_awards">
+        <h3 id="m_sat">Most Satisfied users<br><span class="focus5"><%= @most_satisfied["winner"] %></span></h3>
+        <h3 id="m_eff">Most effective<br><span class="focus5"><%= @most_effective["winner"] %></span></h3>
+        <h3 id="m_eou">Most easy to use<br><span class="focus5"><%= @most_easy_to_use["winner"] %></span></h3>
+
+        <p>Winner of each categories are calculated based on reviews with score above 4 out of 5</p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>

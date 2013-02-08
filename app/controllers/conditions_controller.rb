@@ -1,4 +1,5 @@
 class ConditionsController < ApplicationController
+  layout :resolve_layout
   def index
     @conditions=Condition.all
     respond_to do |format|
@@ -11,6 +12,7 @@ class ConditionsController < ApplicationController
   def show
     @condition=Condition.find(params[:id])
     @drugs=@condition.drugs
+    @number_of_drugs=@drugs.count
     @generate_colors=Array.new
     @drugs.each do  |drug|
       @generate_colors.push('#E238EC','#8AFB17' ,'#736AFF')    #set the colors here then pass to the javascript
@@ -19,6 +21,24 @@ class ConditionsController < ApplicationController
     if params[:conditions]
       @optionshash=params
     end
+
+    # for the infograph
+    @infograph=Conditioninfograph.find_by_condition_id(@condition.id)
+    @most_reviewed=format2hash_string(@infograph.most_reviewed) # returns a ranked hash  eg  Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
+    if(@infograph.most_reviewed=~/(.*?),/)   # get the first in the sorted
+      @most_reviewed_first= $1
+      @winner=@most_reviewed_first.split("=>")
+      @winner[1]=((@winner[1].to_f) *10).round(2)
+    end
+
+    @most_satisfied =format2hash_string(@infograph.most_satisfied)
+    @most_kids_using =format2hash_string(@infograph.most_kids_using)
+    @most_kids_freq=@most_kids_using["frequency"].to_f * 100
+    @total_reviews =@infograph.total_reviews.to_i
+    @most_easy_to_use =format2hash_string(@infograph.most_easy_to_use)
+    @most_effective =format2hash_string(@infograph.most_effective)
+    @most_bad_reviews =format2hash_string(@infograph.most_bad_reviews)
+
     respond_to do |format|
           format.html # show.html.erb
           format.json { render json: @drug }
@@ -26,6 +46,15 @@ class ConditionsController < ApplicationController
       end
     #  format.js
     end
+
+  def format2hash_string(string)
+    stringhash={}
+    string.split(",").map { |keyvalue|
+      arr=keyvalue.split("=>",2)
+      stringhash[arr[0]]=arr[1]
+    }
+    return stringhash
+  end
 
   def multi_pie_view
     @condition=Condition.find(params[:id])
@@ -190,5 +219,19 @@ class ConditionsController < ApplicationController
       format.js
     end
   end
+
+  private
+
+  def resolve_layout
+    case action_name
+      #when "new", "create"
+       # "some_layout"
+      when "show"
+        "condition_layout"
+      else
+        "application"
+    end
+  end
+
 end
 

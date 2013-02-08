@@ -1,0 +1,41 @@
+<h1>Listing conditioninfographs</h1>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Most reviewed</th>
+    <th>Cheapest</th>
+    <th>Most satisfied</th>
+    <th>Most kids using</th>
+    <th>Total reviews</th>
+    <th>Top side effect</th>
+    <th>Most easy to use</th>
+    <th>Most effective</th>
+    <th>Overall winner</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @conditioninfographs.each do |conditioninfograph| %>
+  <tr>
+    <td><%= conditioninfograph.condition_id %></td>
+    <td><%= conditioninfograph.most_reviewed %></td>
+    <td><%= conditioninfograph.cheapest %></td>
+    <td><%= conditioninfograph.most_satisfied %></td>
+    <td><%= conditioninfograph.most_kids_using %></td>
+    <td><%= conditioninfograph.total_reviews %></td>
+    <td><%= conditioninfograph.top_side_effect %></td>
+    <td><%= conditioninfograph.most_easy_to_use %></td>
+    <td><%= conditioninfograph.most_effective %></td>
+    <td><%= conditioninfograph.overall_winner %></td>
+    <td><%= link_to 'Show', conditioninfograph %></td>
+    <td><%= link_to 'Edit', edit_conditioninfograph_path(conditioninfograph) %></td>
+    <td><%= link_to 'Destroy', conditioninfograph, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Conditioninfograph', new_conditioninfograph_path %>

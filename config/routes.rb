@@ -1,4 +1,6 @@
 Drugscomparison::Application.routes.draw do
+  resources :conditioninfographs
+
   resources :druginfographs
 
   resources :searches do

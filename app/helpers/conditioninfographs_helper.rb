@@ -1,0 +1,2 @@
+module ConditioninfographsHelper
+end

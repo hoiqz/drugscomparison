@@ -10,7 +10,7 @@ class DruginfographsController < ApplicationController
       if @druginfograph.save
         next
       else
-        @druginfograph = Druginfograph.find(drug.id)
+        @druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
         @druginfograph.update_attributes(@attributehash)
       end
     end

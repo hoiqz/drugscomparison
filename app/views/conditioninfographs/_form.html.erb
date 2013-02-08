@@ -1,0 +1,57 @@
+<%= form_for(@conditioninfograph) do |f| %>
+  <% if @conditioninfograph.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conditioninfograph.errors.count, "error") %> prohibited this conditioninfograph from being saved:</h2>
+
+      <ul>
+      <% @conditioninfograph.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :condition_id %><br />
+    <%= f.number_field :condition_id %>
+  </div>
+  <div class="field">
+    <%= f.label :most_reviewed %><br />
+    <%= f.text_field :most_reviewed %>
+  </div>
+  <div class="field">
+    <%= f.label :cheapest %><br />
+    <%= f.text_field :cheapest %>
+  </div>
+  <div class="field">
+    <%= f.label :most_satisfied %><br />
+    <%= f.text_field :most_satisfied %>
+  </div>
+  <div class="field">
+    <%= f.label :most_kids_using %><br />
+    <%= f.text_field :most_kids_using %>
+  </div>
+  <div class="field">
+    <%= f.label :total_reviews %><br />
+    <%= f.text_field :total_reviews %>
+  </div>
+  <div class="field">
+    <%= f.label :top_side_effect %><br />
+    <%= f.text_field :top_side_effect %>
+  </div>
+  <div class="field">
+    <%= f.label :most_easy_to_use %><br />
+    <%= f.text_field :most_easy_to_use %>
+  </div>
+  <div class="field">
+    <%= f.label :most_effective %><br />
+    <%= f.text_field :most_effective %>
+  </div>
+  <div class="field">
+    <%= f.label :overall_winner %><br />
+    <%= f.text_field :overall_winner %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

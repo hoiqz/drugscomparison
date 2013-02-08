@@ -10,41 +10,34 @@
         });
     </script>
 <% end %>
+<div class="span9">
 <p>
   <b>Condition name:</b>
   <%= @condition.name %>
 </p>
+</div>
 
+<div class="span9">
 <p>
   <b>Information</b>
   <%= @condition.information %>
 </p>
+</div>
 
 
-
-<div id="chart_container">
-<div id="reviews_chart">
-  <div class="hero-unit">
-  <h1>Get started!</h1>
-  <p>Click on the buttons below to start comparing drugs</p>
-  <p>
-    <%= link_to 'Overall', multi_pie_view_condition_path(@condition,@optionshash), :id=>'multi_pie_link', remote: true, :class =>"btn btn-primary btn-large" %>
-
-  </p>
+  <div id="reviews_chart" class="span9">
+    <%= render "infographs" %>
   </div>
-</div>
-  <div id="conditions">
 
+  <div class="span9">
+    <h3>Control Panel</h3>
+    <%= render "chart_buttons" %>
+    <p class="notification"><span class="label label-info">Info</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
   </div>
-</div>
-
-<div id="static_buttons">
-  <div><h5>Chart Views</h5></div>
-<%= render "chart_buttons" %>
-</div>
 
 
 <br>
+<div class="span9">
 <p>
   <b>Drugs related to this condition: </b>
 </p>
@@ -65,3 +58,4 @@
   <% end %>
   </tbody>
     </table>
+</div>

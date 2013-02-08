@@ -3,14 +3,16 @@
 
 @font-face {
     font-family: 'leaguegothic';
-    src: url(font-path('leaguegothic-regular-webfont.eot') + "?#iefix") format('embedded-opentype'),
-    url(font-path('leaguegothic-regular-webfont.woff')) format('woff'),
-    url(font-path('leaguegothic-regular-webfont.ttf'))  format('truetype'),
-    url(font-path('leaguegothic-regular-webfont.svg') + "#leaguegothic") format('svg');
+    src: url(font-path('leaguegothicregularwebfont.eot') + "?#iefix") format('embedded-opentype'),
+    url(font-path('leaguegothicregularwebfont.woff')) format('woff'),
+    url(font-path('leaguegothicregularwebfont.ttf'))  format('truetype'),
+    url(font-path('leaguegothicregularwebfont.svg') + "#leaguegothic") format('svg');
 }
 
 $lightGray: #999;
 $grayMediumLight: #eaeaea;
+$infographblue: #157DEC;
+$infographorange:  #F87431;
 /* universal*/
 
 html{
@@ -314,7 +316,7 @@ div.jqcloud span { padding: 0; }
     padding-top: 10px;
     text-align: center;
     font-size: 30px;
-    color: #157DEC;
+    color: $infographblue;
     text-transform: uppercase;
   }
 
@@ -323,7 +325,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 180px;
     margin-left: 170px;
     font-size: 30px;
-    color: #F87431;
+    color: $infographorange;
     text-transform: uppercase;
   }
   span#femaleright{
@@ -331,7 +333,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 180px;
     margin-left: 400px;
     font-size: 30px;
-    color: #F87431;
+    color: $infographorange;
     text-transform: uppercase;
   }
   width: 695px;
@@ -357,7 +359,7 @@ div.jqcloud span { padding: 0; }
     padding-top: 20px;
     text-align: center;
     font-size: 30px;
-    color: #157DEC;
+    color: $infographblue;
     text-transform: uppercase;
     margin-left: 400px;
     margin-top: 170px;
@@ -399,7 +401,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 150px;
     #text-align: center;
     font-size: 30px;
-    color: #157DEC;
+    color: $infographorange;
     text-transform: uppercase;
     width: 200px;
   }
@@ -407,6 +409,7 @@ div.jqcloud span { padding: 0; }
   height: 400px;
   background: url("age_breakdown.png") no-repeat;
 }
+
 #gender_breakdown_infograph{
   font-family: leaguegothic;
   position: relative;
@@ -418,7 +421,7 @@ div.jqcloud span { padding: 0; }
 
       font-family: leaguegothic;
       font-size: 32px;
-      color:#157DEC;
+      color:$infographblue;
     }
     .human_bar1 {
       margin-top:20px;
@@ -451,7 +454,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 150px;
     #text-align: center;
     font-size: 30px;
-    color: #157DEC;
+    color: $infographblue;
     text-transform: uppercase;
     width: 200px;
   }
@@ -460,33 +463,188 @@ div.jqcloud span { padding: 0; }
   background: url("effectiveness-background.png") no-repeat;
 }
 
+    /* conditions inforgraphs*/
+#total_reviews_infograph{
+    font-family: leaguegothic;
+    position: relative;
+    h3{
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 200px;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 600px;
+    }
+    width: 100%;
+    height: 400px;
+    background: url("total_reviews_background.png") no-repeat;
+}
+
+#most_kids_infograph{
+    font-family: leaguegothic;
+    position: relative;
+    h3{
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 50px;
+        font-size: 40px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 400px;
+    }
+    h4{
+        position: absolute;
+        margin-left: 460px;
+        margin-top: 250px;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 380px;
+    }
+    p{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 370px;
+        font-size: 10px;
+        color: #696969;
+        text-transform: uppercase;
+        width: 400px;
+    }
+    width: 100%;
+    height: 400px;
+    background: url("most_kids_background.png") no-repeat;
+}
+
+#most_reviewed_infograph{
+    font-family: leaguegothic;
+    position: relative;
+   div#pillgraph{
+       position: absolute;
+       margin-left: 50px;
+       margin-top: 0%;
+       width: 550px;
+       font-family: leaguegothic;
+       font-size: 20px;
+       color: $infographblue;
+       text-transform: uppercase;
+       .pillbar_container{
+           width: 550px;
+           margin-top: 10px;
+       }
+       .pillbar {
+           width: 300px;
+           background: url("pill_white.png") 0 0 repeat-x;
+           float: left;
+       }
+       .pillbar div {
+               height: 40px;
+               background: url("pill.png") 0 0 repeat-x;
+           }
+       .labeltext{
+           float:left;
+           width: 50px;
+           margin-right: 10px;
+           margin-left: 10px;
+       }
+       .clear { clear: both;}
+       }
+    h3{
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 50px;
+        #text-align: center;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 200px;
+    }
+    h4{
+        position: absolute;
+        margin-left: 490px;
+        margin-top: 250px;
+        font-size: 20px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 300px;
+    }
+
+    width: 100%;
+    height: 400px;
+    background: url("most_reviewed_background.png") no-repeat;
+}
+
+#most_awards{
+    font-family: leaguegothic;
+    position: relative;
+    h3{
+        position: absolute;
+        font-size: 25px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 150px;
+    }
+    #m_sat{
+        margin-left: 130px;
+        margin-top: 260px;
+    }
+    #m_eff{
+        margin-left: 420px;
+        margin-top: 260px;
+    }
+    #m_eou{
+        margin-left: 690px;
+        margin-top: 260px;
+    }
+    h4{
+        position: absolute;
+        margin-left: 460px;
+        margin-top: 250px;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 380px;
+    }
+    p{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 370px;
+        font-size: 10px;
+        color: #696969;
+        text-transform: uppercase;
+    }
+    width: 100%;
+    height: 400px;
+    background: url("most_award.png") no-repeat;
+}
+
 
 
 .focus6{
   font-size: 20px;
-  color:#F87431
+  color:$infographorange;
 }
 .focus5{
    font-size: 40px;
-  color:#F87431
+  color:$infographorange;
  }
 .focus4{
   font-size: 60px;
   padding-top: 10px;
-  color:#F87431
+    color:$infographorange;
 }
 .focus3{
   font-size: 80px;
   padding-top: 10px;
-  color:#F87431
+    color:$infographorange;
 }
 .focus2{
   font-size: 100px;
   padding-top: 10px;
-  color:#F87431
+    color:$infographorange;
 }
 .focus1{
   font-size: 120px;
   padding-top: 10px;
-  color:#F87431
+    color:$infographorange;
 }
