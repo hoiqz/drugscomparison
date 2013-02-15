@@ -10,52 +10,68 @@
         });
     </script>
 <% end %>
-<div class="span9">
-<p>
-  <b>Condition name:</b>
-  <%= @condition.name %>
-</p>
-</div>
 
-<div class="span9">
-<p>
-  <b>Information</b>
-  <%= @condition.information %>
-</p>
-</div>
+<div class="box span10">
+    <span class="miniheader">By Condition</span>
 
-
-  <div id="reviews_chart" class="span9">
+ <article class="articlecontent">
+   <h2>
+     <%= @condition.name %>
+   </h2>
+  <div id="reviews_chart">
     <%= render "infographs" %>
   </div>
 
-  <div class="span9">
+  <div class="static_buttons">
     <h3>Control Panel</h3>
     <%= render "chart_buttons" %>
     <p class="notification"><span class="label label-info">Info</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
   </div>
+ </article>
+</div>
 
 
-<br>
-<div class="span9">
-<p>
-  <b>Drugs related to this condition: </b>
-</p>
 
-<table class="table table-hover" id="conditions_table">
-  <thead>
-  <tr>
-  <th>Brand</th>
-  <th>Number of reviews</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @drugs.each do |drug|%>
-      <tr>
-        <td><i class="icon-eye-open"></i>   <%= link_to "#{drug.brand_name}", drug_reviews_path(drug.id) %></td>
-        <td><%= drug.reviews.count %></td>
-      </tr>
-  <% end %>
-  </tbody>
-    </table>
+
+
+<div class="box span10">
+  <span class="miniheader">Infomation pertaining to <%= @condition.name %></span>
+  <article class="articlecontent">
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">General Information</a></li>
+    <li><a href="#tab2" data-toggle="tab">Related Drugs (<%= @drugs.count%>)</a></li>
+
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p><%= @condition.information %></p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p>
+        <b>Drugs related to this condition: </b>
+      </p>
+
+      <table class="table table-hover" id="conditions_table">
+        <thead>
+        <tr>
+          <th>Brand</th>
+          <th>Number of reviews</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @drugs.each do |drug|%>
+            <tr>
+              <td><i class="icon-eye-open"></i>   <%= link_to "#{drug.brand_name}", drug_reviews_path(drug.id) %></td>
+              <td><%= drug.reviews.count %></td>
+              <td><button  class="btn btn-primary" type="button">Write Review</button></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+  </article>
 </div>

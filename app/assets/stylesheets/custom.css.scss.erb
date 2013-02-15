@@ -46,6 +46,7 @@ textarea{
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+    margin: 20px 0 10px;
 }
 
 h1{
@@ -59,7 +60,7 @@ h2{
   font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+ // text-align: center;
   font-weight: normal;
   color: $lightGray;
 }
@@ -67,6 +68,7 @@ h2{
 p{
   font-size: 1.1em;
   line-height: 1.7em;
+    margin: 15px;
 }
 
 /* header */
@@ -134,13 +136,46 @@ footer {
   border: 1px solid #EAEAEA;
   padding: 10px;
 }
-#static_buttons{
+.static_buttons{
   clear: both;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px dashed #B2B2B2;
+//  border-bottom: 1px dashed #B2B2B2;
   margin-left: 0px;
-    border-top: 1px dashed #B2B2B2;
+  //  border-top: 1px dashed #B2B2B2;
+}
+
+#conditions{
+padding: 0px 25px;
+}
+
+.box{
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.miniheader{
+    background-color: #EAEAEA;
+    background-image: linear-gradient(#FAFAFA, #EAEAEA);
+    background-repeat: repeat-x;
+    border-color: #CACACA;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.articlecontent{
+    background-color: #FFFFFF;
+    border: 1px solid #CACACA;
+    padding: 30px;
 }
 
 .notification{
@@ -326,7 +361,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 180px;
     margin-left: 170px;
     font-size: 30px;
-    color: $infographorange;
+    color: $infographblue;
     text-transform: uppercase;
   }
   span#femaleright{
@@ -334,7 +369,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 180px;
     margin-left: 400px;
     font-size: 30px;
-    color: $infographorange;
+    color: $infographblue;
     text-transform: uppercase;
   }
   width: 695px;
@@ -402,7 +437,7 @@ div.jqcloud span { padding: 0; }
     margin-top: 150px;
     #text-align: center;
     font-size: 30px;
-    color: $infographorange;
+    color: $infographblue;
     text-transform: uppercase;
     width: 200px;
   }
@@ -419,7 +454,7 @@ div.jqcloud span { padding: 0; }
     li{
       list-style-type: none;
       position: absolute;
-
+        line-height:30px;
       font-family: leaguegothic;
       font-size: 32px;
       color:$infographblue;
@@ -554,11 +589,12 @@ div.jqcloud span { padding: 0; }
         position: absolute;
         margin-left: 550px;
         margin-top: 50px;
+        line-height: 40px;
         #text-align: center;
         font-size: 30px;
         color: $infographblue;
         text-transform: uppercase;
-        width: 200px;
+        width: 240px;
     }
     h4{
         position: absolute;

@@ -26,7 +26,7 @@
           <li id="adult"><%= @infograph.age_btw_18_50.round(1) %></span></li>
           <li id="senior"><%= @infograph.age_more_50.round(1) %></span></li>
         </ul>
-        <h3><span class="focus2"><%= @infograph.age_btw_18_50.round(1) %></span> % of our reviewers come from age group <br><span class="focus5">18 - 55</span></h3>
+        <h3><span class="focus2"><%= @infograph.age_btw_18_50.round(1) %></span> % of our reviewers come from <span class="focus5">age group <br>18 - 55</span></h3>
       </div>
     </div>
     <div class="item">
@@ -35,12 +35,12 @@
         <ul>
           <li><div class="human_bar1">
             <div style="width:<%= (@infograph.effective_over_3.round)*30 %>px"></div>
-            <span class="focus2"><%= @infograph.effective_over_3.round %></span> in  <span class="focus3">10</span> <br>reviewers found this<br> drug effective.
+            <span class="focus2"><%= @infograph.effective_over_3.round %></span> in  <span class="focus3">10</span> <br>reviewers found this<br> drug <span class="focus5">effective</span>
           </div>
           </li>
           <li><div class="human_bar2">
             <div style="width:<%= (@infograph.effective_less_3.ceil)*30 %>px"></div>
-            <span class="focus2"><%= @infograph.effective_less_3.ceil %></span> in <span class="focus3">10</span> <br>reviewers found this <br>drug ineffective.
+            <span class="focus2"><%= @infograph.effective_less_3.ceil %></span> in <span class="focus3">10</span> <br>reviewers found this <br>drug <span class="focus5">ineffective</span>
           </div>
 
           </li>

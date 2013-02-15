@@ -41,65 +41,74 @@
 <% end %>
 
 
+<div class="box span12">
+  <span class="miniheader">By Drug</span>
+  <article class="articlecontent">
+   <h1>
+    <%= @drug.brand_name %>
+  </h1>
 
-<p>
-  <b>Generic name:</b>
-  <%= @drug.generic_name %>
-</p>
-
-<p>
-  <b>Brand name:</b>
-  <%= @drug.brand_name %>
-</p>
-
-<p>
-  <b>Side effect:</b>
-  <%= @drug.side_effect %>
-</p>
-
-<p>
-  <b>Dosage:</b>
-  <%= @drug.dosage %>
-</p>
-
-<p>
-  <b>Precaution:</b>
-  <%= @drug.precaution %>
-</p>
-
-<p>
-  <b>Manufacturer:</b>
-  <%= @drug.manufacturer %>
-</p>
+      <div id="reviews_chart" class="articlecontent">
+        <!-- You should explicitly specify the dimensions of the container element -->
+        <%= render "infographs" if !params[:button]%>
 
 
-<div id="chart_container" class="row-fluid">
-  <div id="reviews_chart" class="span12">
-    <!-- You should explicitly specify the dimensions of the container element -->
-   <%= render "infographs" if !params[:button]%>
+      </div>
+
+      <div class="static_buttons">
+        <h3>Control Panel</h3>
+        <%= render "chart_buttons" %>
+        <p class="notification"><span class="label label-info">Info</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
+      </div>
+
+  </article>
+</div>
 
 
-  </div>
+<div class="box span12">
+  <span class="miniheader">Other information on <%= @drug.brand_name %></span>
+  <article class="articlecontent">
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">General Information</a></li>
+        <li><a href="#tab2" data-toggle="tab">Side Effects</a></li>
+        <li><a href="#tab3" data-toggle="tab">Precaution</a></li>
+        <li><a href="#tab4" data-toggle="tab">Dosage</a></li>
+        <li><a href="#tab5" data-toggle="tab">Manufacturer</a></li>
+        <li><a href="#tab6" data-toggle="tab">Reviews (<%=@for_counts%>)</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>Generic Name: <%= @drug.generic_name %></p>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>side effects content<%= @drug.side_effect %></p>
+        </div>
+        <div class="tab-pane" id="tab3">
+          <p><%= @drug.precaution %></p>
+        </div>
+        <div class="tab-pane" id="tab4">
+          <p><%= @drug.dosage %></p>
+        </div>
+        <div class="tab-pane" id="tab5">
+          <p><%= @drug.manufacturer %></p>
+        </div>
+        <div class="tab-pane" id="tab6">
+          <div id="reviews_section" class="span12">
+            <%= render "reviews", :locals => { :list => true } %>
+          </div>
+        </div>
 
-  <div id="static_buttons" class="span12">
-    <h3>Control Panel</h3>
-    <%= render "chart_buttons" %>
-    <p class="notification"><span class="label label-info">Info</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
-  </div>
-
-
-  <h3 id="review_title"><%= @drug.brand_name%> Reviews</h3>
-
-  <div id="write_review" class="span3 offset4">
-    <button  class="btn btn-primary" type="button">Write Review</button>
-  </div>
-
+      </div>
+    </div>
+  </article>
 </div>
 
 
 
-
-
+  <div id="write_review" class="span3 offset4">
+    <button  class="btn btn-primary" type="button">Write Review</button>
+  </div>
 
 
 
@@ -221,9 +230,7 @@
 <% end %>
 
 
-<div id="reviews_section" class="span12">
-  <%= render "reviews", :locals => { :list => true } %>
-</div>
+
 
 
 

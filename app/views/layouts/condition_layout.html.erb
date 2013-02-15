@@ -11,19 +11,23 @@
 <%= render "layouts/header" %>
 <div class="container">
   <div class="row">
-    <div class="span1">
-      <!--Sidebar content-->
-    </div>
-    <div class="span9">
+
+    <div class="span10">
       <!--Body content-->
       <%= yield %>
 
     </div>
     <div class="span2">
-      <div id="conditions"></div>
-      <!--Sidebar content-->
-    </div>
+      <p></p>
+      <div class="box">
 
+        <span class="miniheader">Filters</span>
+        <article id="conditions" class="articlecontent">
+        </article>
+      </div>
+
+
+  </div>
   </div>
 </div>
   <%= render "layouts/footer" %>

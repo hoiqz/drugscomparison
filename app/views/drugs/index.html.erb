@@ -1,25 +1,33 @@
-<h1>Listing drugs</h1>
+<div class="box">
+  <span class="miniheader">Most Common</span>
+  <article class="articlecontent">
+    <h1>Most common drugs</h1>
+  </article>
+</div>
 
-<table class="table table-striped">
-  <tr>
-    <th>Brand name</th>
-    <th>Side effect</th>
-    <th>Manufacturer</th>
-    <th></th>
+<div class="box">
+  <span class="miniheader">All Drugs</span>
+  <article class="articlecontent">
+    <h1>Drugs A-Z</h1>
+    <table class="table table-striped">
+      <tr>
+        <th>Brand name</th>
+        <th>Side effect</th>
+        <th>Manufacturer</th>
+        <th></th>
 
-  </tr>
+      </tr>
 
-<% @drugs.each do |drug| %>
-  <tr>
-    <td><%= drug.brand_name %> (<%= pluralize(drug.reviews.count, "Review")%>)</td>
-    <td><%= drug.side_effect %></td>
-    <td><%= drug.manufacturer %></td>
-    <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
+      <% @drugs.each do |drug| %>
+          <tr>
+            <td><%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= pluralize(drug.reviews.count, "Review")%>)</td>
+            <td><%= drug.side_effect %></td>
+            <td><%= drug.manufacturer %></td>
+            <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
 
-  </tr>
-<% end %>
-</table>
+          </tr>
+      <% end %>
+    </table>
+  </article>
+</div>
 
-<br />
-
-<%= link_to 'New Drug', new_drug_path %>

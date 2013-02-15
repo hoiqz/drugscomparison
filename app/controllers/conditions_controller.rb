@@ -29,6 +29,10 @@ class ConditionsController < ApplicationController
       @most_reviewed_first= $1
       @winner=@most_reviewed_first.split("=>")
       @winner[1]=((@winner[1].to_f) *10).round(2)
+    else # cant be split by the comma, ie only one drug
+      @most_reviewed_first=@infograph.most_reviewed
+      @winner=@most_reviewed_first.split("=>")
+      @winner[1]=((@winner[1].to_f) *10).round(2)
     end
 
     @most_satisfied =format2hash_string(@infograph.most_satisfied)
