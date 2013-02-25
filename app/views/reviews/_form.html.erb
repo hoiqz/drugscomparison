@@ -1,82 +1,132 @@
-<%= form_for (@review) , :url => drug_reviews_path(@drug.id)  do |f| %>
-  <% if @review.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+<%= form_for ([@drug,@review]),:html => {:class => "form-horizontal span12"}, :remote=>true,:id=>"newreviewform" do |f| %>
 
-      <ul>
-      <% @review.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-        <%= fields_for @user do |user_detail_form| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-            <%= user_detail_form.label :username, "Your name" %><br />
-            <%= user_detail_form.text_field :username %><br />
-            <%= user_detail_form.label :email_address, "Email address" %><br />
-            <%= user_detail_form.text_field :email_address %><br />
-            <%= user_detail_form.label :age, "Age" %><br />
-            <%= user_detail_form.text_field :age %><br />
-            <%= user_detail_form.label :gender, "Gender" %><br />
-            <%= user_detail_form.text_field :gender %><br />
-            <%= user_detail_form.label :ethnicity, "Ethnicity" %><br />
-            <%= user_detail_form.text_field :ethnicity %><br />
-            <%= user_detail_form.label :weight, "Weight" %><br />
-            <%= user_detail_form.text_field :weight %><br />
-        <% end %>
-        <%= f.label :comments, "Comments" %><br />
-        <%= f.text_area :comments, :rows => 8 %><br />
-        <div class="field">
-          <%= f.label :effectiveness %><br />
-          <%= f.radio_button :effectiveness, "1" %>
-          <%= label :effectiveness, '1' %>
-          <%= f.radio_button :effectiveness, "2" %>
-          <%= label :effectiveness, '2' %>
-          <%= f.radio_button :effectiveness, "3" %>
-          <%= label :effectiveness, '3' %>
-          <%= f.radio_button :effectiveness, "4" %>
-          <%= label :effectiveness, '4' %>
-          <%= f.radio_button :effectiveness, "5" %>
-          <%= label :effectiveness, '5' %>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
         </div>
-        <div class="field">
-          <%= f.label :ease_of_use %><br />
-          <%= f.radio_button :ease_of_use, "1" %>
-          <%= label :ease_of_use, '1' %>
-          <%= f.radio_button :ease_of_use, "2" %>
-          <%= label :ease_of_use, '2' %>
-          <%= f.radio_button :ease_of_use, "3" %>
-          <%= label :ease_of_use, '3' %>
-          <%= f.radio_button :ease_of_use, "4" %>
-          <%= label :ease_of_use, '4' %>
-          <%= f.radio_button :ease_of_use, "5" %>
-          <%= label :ease_of_use, '5' %>
-        </div>
-        <div class="field">
-          <%= f.label :satisfactory %><br />
-          <%= f.radio_button :satisfactory, "1" %>
-          <%= label :satisfactory, '1' %>
-          <%= f.radio_button :satisfactory, "2" %>
-          <%= label :satisfactory, '2' %>
-          <%= f.radio_button :satisfactory, "3" %>
-          <%= label :satisfactory, '3' %>
-          <%= f.radio_button :satisfactory, "4" %>
-          <%= label :satisfactory, '4' %>
-          <%= f.radio_button :satisfactory, "5" %>
-          <%= label :satisfactory, '5' %>
-        </div>
+    <% end %>
 
-        <div class="field">
-          <%= f.label "Choose the duration that best match your usage" %><br />
-          <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
+
+    <%= fields_for @user do |user_detail_form| %>
+        <div class="control-group">
+          <%= user_detail_form.label :username, "Username", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.text_field :username, :placeholder=>"John Doe"%> *
+          </div>
         </div>
-
-        <%= hidden_field_tag :drug_id, @drug.id%>
-
-        <div class="actions">
-          <%= f.submit "Add comment" %>
+        <div class="control-group">
+          <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.text_field :email_address, :placeholder=>"John_Doe@abc.com"%>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :age, "Age Range", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]),:prompt => "Select Age range" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :gender, "Gender", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :gender, options_for_select([["Male","Male"],["Female","Female"]]),:prompt => "Select Gender" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :ethnicity, "Ethnicity", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :ethnicity , options_for_select([["Mixed Race","Mixed Race"],
+                                                                         ["Arctic (Siberian, Eskimo)","Arctic (Siberian, Eskimo)"],
+                                                                         ["Caucasian (European)","Caucasian (European)"],
+                                                                         ["Caucasian (Indian)","Caucasian (Indian)"],
+                                                                         ["Caucasian (Middle East)","Caucasian (Middle East)"],
+                                                                         ["Caucasian (North African, Other)","Caucasian (North African, Other)"],
+                                                                         ["Indigenous Australian","Indigenous Australian"],
+                                                                         ["Native American","Native American"],
+                                                                         ["North East Asian (Mongol, Tibetan, Korean Japanese, etc)","North East Asian (Mongol, Tibetan, Korean Japanese, etc)"],
+                                                                         ["Pacific (Polynesian, Micronesian, etc)","Pacific (Polynesian, Micronesian, etc)"],
+                                                                         ["South East Asian (Chinese, Thai, Malay, Filipino, etc)","South East Asian (Chinese, Thai, Malay, Filipino, etc)"],
+                                                                         ["West African, Bushmen, Ethiopian","est African, Bushmen, Ethiopian"],
+                                                                         ["Other Race","Other Race"]]),:prompt => "Select Ethnicity"%>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :weight, "Weight", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.text_field :weight %>
+          </div>
         </div>
 
     <% end %>
+    <div class="control-group">
+      <%= f.label :comments, "Write A Review For This Drug", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.text_area :comments, :size=> "44x6", :class=>"input-xxlarge" %> *
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :effectiveness, "How Effective Is This Drug? (1: not effective , 5: very effective)", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.radio_button :effectiveness, "1" %> 1 |
+        <%= f.radio_button :effectiveness, "2" %> 2 |
+        <%= f.radio_button :effectiveness, "3" %> 3 |
+        <%= f.radio_button :effectiveness, "4" %> 4 |
+        <%= f.radio_button :effectiveness, "5" %> 5   *
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :ease_of_use, "Is This Drug Easy To Use? (1: not easy to use , 5: very easy to use)", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.radio_button :ease_of_use, "1" %> 1 |
+        <%= f.radio_button :ease_of_use, "2" %> 2 |
+        <%= f.radio_button :ease_of_use, "3" %> 3 |
+        <%= f.radio_button :ease_of_use, "4" %> 4 |
+        <%= f.radio_button :ease_of_use, "5" %> 5     *
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :satisfactory, "Are You Satisfied With This Drug? (1: not satisfied, 5: very satisfied)", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.radio_button :satisfactory, "1" %> 1 |
+        <%= f.radio_button :satisfactory, "2" %> 2 |
+        <%= f.radio_button :satisfactory, "3" %> 3 |
+        <%= f.radio_button :satisfactory, "4" %> 4 |
+        <%= f.radio_button :satisfactory, "5" %> 5    *
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :usage_duration_days, "How long have you been using this drug?", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :other_drugs, "List Any Other Drugs You Are Consuming?", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.text_field :other_drugs%>
+      </div>
+    </div>
+    <%= hidden_field_tag :drug_id, @drug.id%>
+
+
+
+
+      <div class="control-group">
+      <div class="controls">
+        <%= f.submit "Submit Review" ,:class=>"btn btn-primary"%> (* :required fields)
+      </div>
+    </div>
+
+
+
+
+<% end %>

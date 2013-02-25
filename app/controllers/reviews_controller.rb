@@ -67,6 +67,11 @@ class ReviewsController < ApplicationController
     end
   end
 
+  # GET /reviews/1/edit
+  def edit
+    @review = @drug.reviews.find(params[:id])
+  end
+
   # GET /reviews/new
   # GET /reviews/new.json
   def new
@@ -76,11 +81,6 @@ class ReviewsController < ApplicationController
       format.html # new.html.erb
       format.json { render json: @review }
     end
-  end
-
-  # GET /reviews/1/edit
-  def edit
-    @review = @drug.reviews.find(params[:id])
   end
 
   # POST /reviews
@@ -100,20 +100,9 @@ class ReviewsController < ApplicationController
         @new_id=@review.id
         flash[:notice] = "Thanks for reviewing!"
         format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }
-        #format.json { render json: @review, status: :created, location: @review }
-        format.js
+        format.js   { render  :redirect } # JavaScript to do the redirect
       else
-        @error_msg= ""
-        flash[:notice] = "Error with your submission!"
-        @review.errors.full_messages.each do |error|
-          @error_msg << "#{error}\n"
-        end
-
-        format.html { render action: "index" }
-        #format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review creation failed.' }
-        #format.json { render json: @review.errors, status: :unprocessable_entity
-        #render json: @user.errors, status: :unprocessable_entity
-        #}
+        format.html { render action: "new" }
         format.js
 
       end

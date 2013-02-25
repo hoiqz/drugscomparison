@@ -30,9 +30,50 @@ $(document).ready(function (){
         $.post($(this).attr('action'), $(this).serialize(), null, "script");
         return false;
     });
-
+    $('#newuserform').submit(function() {
+        $.post(this.action, $(this).serialize(), null, "script");
+        return false;
+    });
+    $('#newreviewform').submit(function() {
+        $.post(this.action, $(this).serialize(), null, "script");
+        return false;
+    });
+});
 
 
 });
-});
 
+function new_user(){
+
+    var obj = this;
+    obj.el_body = $("#myModal .modal-body");
+    obj.button_id = '#submit';
+    obj.form_id = '#newuserform';
+    obj.el_form = null;
+
+    obj.init = function() {
+
+        obj.el_form = $(obj.form_id);
+
+        $(obj.button_id).click(function(){
+            obj.el_form.submit();
+        });
+
+        obj.setup_form();
+
+    };
+
+    obj.setup_form = function() {
+
+        obj.el_form.submit(function(e){
+            e.preventDefault();
+            $.post( obj.el_form.action, obj.el_form.serialize(), function( data ) {
+                obj.el_body.html(data);
+                obj.el_form = obj.el_body.find(obj.form_id);
+                obj.setup_form();
+            });
+        });
+
+    };
+    obj.init();
+}

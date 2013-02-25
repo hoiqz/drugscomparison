@@ -1,7 +1,7 @@
 $('#myModal .modal-body').html("<%= escape_javascript(render :partial => 'form') %>");
 
-$('#newreviewform').submit(function() {
-    $.post(this.action, $(this).serialize(), null, "script");
+$('#newuserform').submit(function() {
+        $.post(this.action, $(this).serialize(), null, "script");
     return false;
 });
 $(function() {                       // On DOM ready

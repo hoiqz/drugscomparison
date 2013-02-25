@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :reviews, :allow_destroy => true
 
 
- validates :username, :uniqueness => true
+ validates :username, :uniqueness => true , :presence => true
  #validates :age, :numericality => true
  # validates :email_address, :format => {:with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i} #,:presence => true
   validates :gender, :presence => true
