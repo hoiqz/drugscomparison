@@ -1,4 +1,4 @@
-<%= form_for ([@drug,@review]),:html => {:class => "form-horizontal span12"}, :remote=>true,:id=>"newreviewform" do |f| %>
+<%= form_for ([@drug,@review]),:html => {:class => "form-horizontal"}, :remote=>true,:id=>"newreviewform" do |f| %>
 
 
     <% if @user.errors.any? %>
@@ -16,15 +16,18 @@
 
     <%= fields_for @user do |user_detail_form| %>
         <div class="control-group">
-          <%= user_detail_form.label :username, "Username", :class=>"control-label" %>
+          <%= user_detail_form.label :username, "Username *", :class=>"control-label" %>
           <div class="controls">
-            <%= user_detail_form.text_field :username, :placeholder=>"John Doe"%> *
+            <%= user_detail_form.text_field :username, :placeholder=>"Visitor"%>
           </div>
         </div>
         <div class="control-group">
           <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
-          <div class="controls">
-            <%= user_detail_form.text_field :email_address, :placeholder=>"John_Doe@abc.com"%>
+          <div class="controls ">
+            <div class="input-append">
+            <%= user_detail_form.text_field :email_address, :placeholder=>"John_Doe@abc"%>
+            <span class="add-on">.com</span>
+            </div>
           </div>
         </div>
         <div class="control-group">
@@ -60,15 +63,28 @@
         <div class="control-group">
           <%= user_detail_form.label :weight, "Weight", :class=>"control-label" %>
           <div class="controls">
-            <%= user_detail_form.text_field :weight %>
+            <div class="input-append">
+              <%= user_detail_form.text_field :weight %>
+              <span class="add-on">Kg</span>
+            </div>
+            <a href="https://www.google.com.sg/#hl=en&sugexp=les%3B&gs_rn=4&gs_ri=psy-ab&tok=7wt6bUI1aOwN5pqkGgx4jg&cp=23&gs_id=1l&xhr=t&q=pounds+to+kg+conversion&es_nrs=true&pf=p&output=search&sclient=psy-ab&oq=pounds+to+kg+conversion&gs_l=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42965579,d.bmk&fp=dc95da784d3321d&biw=1248&bih=613" target="_blank">Converter</a>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :smoking_status, "Do you smoke?", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.radio_button :smoking_status, "no", :checked =>true %>
+            <%= label :smoking_status_no, 'No' %>
+            <%= user_detail_form.radio_button :smoking_status, "yes" %>
+            <%= label :smoking_status_yes, 'Yes' %>
           </div>
         </div>
 
     <% end %>
     <div class="control-group">
-      <%= f.label :comments, "Write A Review For This Drug", :class=>"control-label" %>
+      <%= f.label :comments, "Your experience with this drug  *", :class=>"control-label" %>
       <div class="controls">
-        <%= f.text_area :comments, :size=> "44x6", :class=>"input-xxlarge" %> *
+        <%= f.text_area :comments, :size=> "20x6", :class=>"input-xlarge", :placeholder=>"Enter review here..." %>
       </div>
     </div>
 
@@ -114,14 +130,14 @@
     <div class="control-group">
       <%= f.label :usage_duration_days, "How long have you been using this drug?", :class=>"control-label" %>
       <div class="controls">
-        <%= f.select :usage_duration_days, options_for_select([["< than a day",1],["<a week",7],["<a month",30],["<a year",365]]) %>
+        <%= f.select :usage_duration_days, options_for_select([["less than 3 months",90],["3 - 6 months",180],["6 - 9 months",270],["one year",365],["two years",730],["three years or more",1000]]) %>
       </div>
     </div>
 
     <div class="control-group">
-      <%= f.label :other_drugs, "List Any Other Drugs You Are Consuming?", :class=>"control-label" %>
+      <%= f.label :other_drugs, "Are you consuming any other medication at the same time?", :class=>"control-label" %>
       <div class="controls">
-        <%= f.text_field :other_drugs%>
+        <%= f.text_field :other_drugs ,:placeholder=>"eg painkillers"%>
       </div>
     </div>
     <%= hidden_field_tag :drug_id, @drug.id%>
@@ -134,8 +150,5 @@
         <%= f.submit "Submit Review" ,:class=>"btn btn-primary"%> (* :required fields)
       </div>
     </div>
-
-
-
 
 <% end %>

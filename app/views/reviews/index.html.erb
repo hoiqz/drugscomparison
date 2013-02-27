@@ -62,19 +62,23 @@
   <article class="articlecontent">
     <div class="tabbable"> <!-- Only required for left/right tabs -->
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab1" data-toggle="tab">General Information</a></li>
-        <li><a href="#tab2" data-toggle="tab">Side Effects</a></li>
+        <li  class="active"><a href="#tab1" data-toggle="tab" id="tabcount"> <%=@for_counts%> Reviews</a></li>
+        <li><a href="#tab2" data-toggle="tab">General Information</a></li>
         <li><a href="#tab3" data-toggle="tab">Precaution</a></li>
         <li><a href="#tab4" data-toggle="tab">Dosage</a></li>
         <li><a href="#tab5" data-toggle="tab">Manufacturer</a></li>
-        <li><a href="#tab6" data-toggle="tab">Reviews (<%=@for_counts%>)</a></li>
+        <li><a href="#tab6" data-toggle="tab">Side Effects</a></li>
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="tab1">
-          <p>Generic Name: <%= @drug.generic_name %></p>
+          <div id="reviews_section">
+            <%= render "reviews", :locals => { :list => true } %>
+          </div>
+
         </div>
         <div class="tab-pane" id="tab2">
-          <p>side effects content<%= @drug.side_effect %></p>
+          <p>Generic Name: <%= @drug.generic_name %></p>
+
         </div>
         <div class="tab-pane" id="tab3">
           <p><%= @drug.precaution %></p>
@@ -86,9 +90,7 @@
           <p><%= @drug.manufacturer %></p>
         </div>
         <div class="tab-pane" id="tab6">
-          <div id="reviews_section" class="span12">
-            <%= render "reviews", :locals => { :list => true } %>
-          </div>
+          <p>side effects content<%= @drug.side_effect %></p>
         </div>
 
       </div>

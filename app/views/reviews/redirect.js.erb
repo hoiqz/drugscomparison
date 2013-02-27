@@ -1,0 +1,17 @@
+$('#myModal .modal-body').html("Review created successfully!")
+
+$('#myModal').bind('hidden',function(){
+    <% @for_counts=  @drug.reviews.count %>
+    $('#tabcount').html("<%= @for_counts %> Reviews");
+    $('#reviews_section').html("<%= escape_javascript (render :partial => 'reviews') %>");
+    $('#reviews_count').html("<%= pluralize(@for_counts, "reviews for #{@drug.brand_name}") %>");
+    $('#review_<%=@review.id%>').focus();
+    $('#review_<%=@review.id%>').addClass('newreview');
+
+    $('#myModal .modal-body').html("<%= escape_javascript(render :partial => 'form') %>");
+    $('#newreviewform').submit(function() {
+        $.post(this.action, $(this).serialize(), null, "script");
+        return false;
+    });
+});
+
