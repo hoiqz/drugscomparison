@@ -1,71 +1,99 @@
-<div id="holder">
-<div id="myCarousel" class="carousel slide" data-interval="false">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"><%= link_to image_tag("sample2Bannertext2.png", alt: "Rails") %>
+<% content_for :script do %>
+    <script type='text/javascript' xmlns="http://www.w3.org/1999/html">
 
-    </div>
-    <div class="item"><%= link_to image_tag("sample1Bannertext2.png", alt: "Rails") %>
+        $(function () {
+            $("#feature1").tooltip();
+            $("#feature2").tooltip();
+            $("#feature3").tooltip();
+        });
+    </script>
+<% end %>
 
+
+<div id="logo" class="span12">
+  <%= image_tag("logosample4.png") %>
+</div>
+<div id="banner_black" class="span12 well">
+  <h2>Make an informed choice. Join the community, choose your medication wisely.</h2>
+
+</div>
+<div class="row-fluid">
+  <div class="span9">
+    <h4 class="static_divider">Features</h4>
+    <div class="row-fluid">
+      <ul class="thumbnails">
+        <li class="span4">
+          <div class="thumbnail">
+            <div class="caption">
+              <%= image_tag ("conditionfeature.jpg") %>
+              <p><%= link_to 'Compare By Conditions', conditions_path, :id=>"feature1", "data-toggle"=>"tooltip", :title=>"Tons of drugs out there for a single condition. Find the out more from statistics we constructed from other drug users" %></p>
+            </div>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+            <div class="caption">
+              <%= image_tag ("drugfeature.jpg") %>
+              <p><%= link_to 'Look up a drug', drugs_path, :id=>"feature2", "data-toggle"=>"tooltip", :title=>"See how the community rates a drug, read the side effects and precaution." %></p>
+            </div>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+            <div class="caption">
+              <%= image_tag ("reviewfeature.jpg") %>
+              <p><%= link_to 'Write a Review', drugs_path, :id=>"feature3", "data-toggle"=>"tooltip", :title=>"Return to the community. Share your experience with a drug" %></p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="item"><%= link_to image_tag("drugposter2.jpg", alt: "Rails"), 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %>
-      <div class="carousel-caption">
-        <h4>Are You Getting the Most?</h4>
-        <p>FDA Balances Costs, Patient Safety in the Biologics and Personalized Medicine Revolution. <%= link_to "Read More", 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %></p>
+    <h4 class="static_divider">Latest News</h4>
+    <div class="row-fluid">
+    <div id="myCarousel" class="carousel slide span12" data-interval="false">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="item"><%= link_to image_tag("sample2Bannertext2.png", alt: "Rails") %>
+
+        </div>
+        <div class="item"><%= link_to image_tag("sample1Bannertext2.png", alt: "Rails") %>
+
+        </div>
+        <div class="item"><%= link_to image_tag("drugposter2.jpg", alt: "Rails"), 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %>
+          <div class="carousel-caption">
+            <h4>Are You Getting the Most?</h4>
+            <p>FDA Balances Costs, Patient Safety in the Biologics and Personalized Medicine Revolution. <%= link_to "Read More", 'http://www.forbes.com/sites/jonentine/2012/07/23/fda-balances-costs-patient-safety-in-the-biologics-and-personalized-medicine-revolution-will-it-get-it-right-or-damage-the-miracle-industry/' %></p>
+          </div>
+        </div>
+        <div class="item"><%= link_to image_tag("fda.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %>
+          <div class="carousel-caption">
+            <h4>Is this the right drug for me?</h4>
+            <p>Get more information on Over-the-Counter Medicines before purchasing them. <%= link_to "Read More", 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %></p>
+          </div>
+        </div>
+        <div class="active item"><%= link_to image_tag("over_the_counter2.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %>
+          <div class="carousel-caption">
+            <h4>What Are Generic Drugs?</h4>
+            <p>Facts about generic drugs that you should know. <%= link_to "Read More", 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %></p>
+          </div>
+        </div>
       </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-    <div class="item"><%= link_to image_tag("fda.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %>
-      <div class="carousel-caption">
-        <h4>Is this the right drug for me?</h4>
-        <p>Get more information on Over-the-Counter Medicines before purchasing them. <%= link_to "Read More", 'http://www.fda.gov/Drugs/ResourcesForYou/Consumers/BuyingUsingMedicineSafely/UnderstandingOver-the-CounterMedicines/Choosingtherightover-the-countermedicineOTCs/ucm150299.htm' %></p>
-      </div>
-    </div>
-    <div class="item"><%= link_to image_tag("over_the_counter2.jpg", alt: "Rails"), 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %>
-      <div class="carousel-caption">
-        <h4>What Are Generic Drugs?</h4>
-        <p>Facts about generic drugs that you should know. <%= link_to "Read More", 'http://www.fda.gov/Drugs/EmergencyPreparedness/BioterrorismandDrugPreparedness/ucm134010.htm' %></p>
-      </div>
     </div>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-
-  <div class="row-fluid">
-    <ul class="thumbnails">
-      <li class="span4">
-        <div class="thumbnail">
-          <h3>Browse Reviews</h3>
-          <div class="caption">
-            <img alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAADVElEQVR4nO3YQW6CUBRAUfe/FBfnFtppk2oFEeG+nsGZ6A8+Yv7Nh8vtdvsCKLgcPQDAUoIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWINcr9dflq5fc+3/Oi/HE6wh7m3+Rxt2r7WT5+UcBGuAR5ty6edLA/Bs7dR5OQ/BGmBNAKw9/v/idYI1WC0WZ5iBcxOsgf56d7NnALY+jgkWzwjWQEcF695vb4nVJ+alRbAGO+LE8kqwjgwsLYI12FGPWO+K1afmpUOwBjv7CWvJOsHiJ8EaYK9N/clgffreaBKsAba+/1nzSLbX2jX3964Z6BGsIe6dbNacgrauffUktPba77w3egRrkLWbdMspZ+n37wjWHvPSJFhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZ37JlvgwJIkd3AAAAAElFTkSuQmCC">
-
-            <p class="caption_content">Read user reviews on drugs and see how they perform in terms of different modes of comparison</p>
-            <p><%= link_to 'Get Started', drugs_path, :class=>"btn" %></p>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <h3>Compare Drugs</h3>
-          <div class="caption">
-            <img alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAADVElEQVR4nO3YQW6CUBRAUfe/FBfnFtppk2oFEeG+nsGZ6A8+Yv7Nh8vtdvsCKLgcPQDAUoIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWINcr9dflq5fc+3/Oi/HE6wh7m3+Rxt2r7WT5+UcBGuAR5ty6edLA/Bs7dR5OQ/BGmBNAKw9/v/idYI1WC0WZ5iBcxOsgf56d7NnALY+jgkWzwjWQEcF695vb4nVJ+alRbAGO+LE8kqwjgwsLYI12FGPWO+K1afmpUOwBjv7CWvJOsHiJ8EaYK9N/clgffreaBKsAba+/1nzSLbX2jX3964Z6BGsIe6dbNacgrauffUktPba77w3egRrkLWbdMspZ+n37wjWHvPSJFhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZ37JlvgwJIkd3AAAAAElFTkSuQmCC">
-            <p class="caption_content">We provide you with the comparison between drugs targeting similar conditions and give you are feel of which is the most well receive in the web community </p>
-            <p><%= link_to 'Get Started', conditions_path, :class=>"btn" %></p>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <h3>Drug information</h3>
-          <div class="caption">
-          <img alt="300x200" data-src="holder.js/300x200" style="width: 300px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAADVElEQVR4nO3YQW6CUBRAUfe/FBfnFtppk2oFEeG+nsGZ6A8+Yv7Nh8vtdvsCKLgcPQDAUoIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWINcr9dflq5fc+3/Oi/HE6wh7m3+Rxt2r7WT5+UcBGuAR5ty6edLA/Bs7dR5OQ/BGmBNAKw9/v/idYI1WC0WZ5iBcxOsgf56d7NnALY+jgkWzwjWQEcF695vb4nVJ+alRbAGO+LE8kqwjgwsLYI12FGPWO+K1afmpUOwBjv7CWvJOsHiJ8EaYK9N/clgffreaBKsAba+/1nzSLbX2jX3964Z6BGsIe6dbNacgrauffUktPba77w3egRrkLWbdMspZ+n37wjWHvPSJFhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZ37JlvgwJIkd3AAAAAElFTkSuQmCC">
-            <p class="caption_content">Get the drug information you require all in one page and make an informed choice before deciding on a drug</p>
-            <p><%= link_to 'Read More', drugs_path, :class=>"btn" %></p>
-          </div>
-        </div>
-      </li>
+  <div class="span3">
+    <h4 class="static_divider">Top Picks</h4>
+    <ul class="nav nav-list">
+      <li class="nav-header">Most Common</li>
+      <li><a href="#">drug a</a></li>
+      <li><a href="#">drug b</a></li>
+      <li class="nav-header">Most Reviewed</li>
+      <li><a href="#">drug c</a></li>
+      <li><a href="#">drug d</a></li>
     </ul>
   </div>
-    </div>
+</div>
 

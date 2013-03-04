@@ -39,8 +39,6 @@ $(document).ready(function (){
         return false;
     });
 });
-
-
 });
 
 function new_user(){

@@ -1,20 +1,20 @@
-<header class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
+<div class="navbar navbar-fixed-top">
 
+  <div class="navbar-inner">
+    <div class="container span10">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to 'Drugs comparison logo', static_pages_home_path, :class=>"brand" %>
-      <nav>
+      <%= image_tag("headerlogo.png",:class=>"brand") %>
+
         <div class="nav-collapse collapse navbar-responsive-collapse">
 
 
-          <ul class="nav">
+          <ul class="nav pull-right">
             <li class="<%= 'active' if params[:controller] == 'static_pages' %>">
               <%= link_to 'Home', static_pages_home_path%>
             </li>
@@ -39,19 +39,14 @@
                   <li>
                     <a href="#">Attention Deficit Disorder with Hyperactivity</a>
                   </li>
+
                     </ul>
             </li>
-
+            <li><%= link_to "Help", '#' %></li>
           </ul>
          </div>
-      </nav>
 
-      <nav>
-        <ul class="nav pull-right">
-          <li><%= link_to "Help", '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
-        </ul>
-      </nav>
     </div>
+  </div>
   </div>
 </header>

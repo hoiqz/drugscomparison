@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130206075045) do
+ActiveRecord::Schema.define(:version => 20130301053432) do
 
   create_table "conditioninfographs", :force => true do |t|
     t.integer  "condition_id"
@@ -130,6 +130,15 @@ ActiveRecord::Schema.define(:version => 20130206075045) do
     t.boolean  "caregiver",      :default => false
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
+  end
+
+  create_table "webmds", :force => true do |t|
+    t.string   "brand_name"
+    t.string   "source_id"
+    t.integer  "current_reviews"
+    t.integer  "latest_reviews"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
