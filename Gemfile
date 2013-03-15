@@ -49,3 +49,7 @@ gem 'jquery-rails', '2.1.4'
 
 # To use debugger
 # gem 'debugger'
+
+# For Rake task
+gem 'hpricot'
+#gem 'open-uri'

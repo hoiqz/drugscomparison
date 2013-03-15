@@ -11,9 +11,13 @@
     <div class="item">
       <div id="freq_words_infograph">
         <ul>
+          <%	 if @topwords.nil? %>
+              <li><span class="focus3">Word frequency statistics not available for this drug</span></li>
+              <%	 else %>
           <li><span class="focus3">&ldquo;<%= @topwords.shift %></span></li>
           <li><span class="focus4"><%= @topwords.shift %></span></li>
           <li><span class="focus5"><%= @topwords.shift %>&rdquo;</span></li>
+              <%	 end %>
         </ul>
 
       </div>

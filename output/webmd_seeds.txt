@@ -1,0 +1,1370 @@
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "EchosOfGreen").first_or_create(username: "EchosOfGreen",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have been taking Zomig 5mg since 2000. Now I am having trouble getting said drug from anywhere.. Pharmacy said on permanent back order from drug company?? Its the ONLY drug that will work. Imitrix or Maxalt DOES NOT work for me! Help!! How do I find &amp; get this drug?? I have a current script from my Dr.... PLEASE HELP ME!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-08-14 13:25:59', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=26&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "rw").first_or_create(username: "rw",caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "At onset, I am able to use half a tab (2.5 mg) and within 2 hours, the migraine has been stopped.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-08-10 23:09:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=26&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "muddpuppy").first_or_create(username: "muddpuppy",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I took this medicine when I felt the migraine coming on. After taking the Zomig I felt like a truck had ran over my body. I could not move or function. Felt extremely hung over and had to lay down. I tried this a few times and decided with the side effects I does NOT work for me. I also felt somewhat depressed and suicidal. Unlike me... glad it works for those it does.",effectiveness: 2, ease_of_use: 4, satisfactory: 1, created_at: '2012-08-01 18:35:14', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=26&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "RfromTX").first_or_create(username: "RfromTX",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have been taking Zomig for 16 years for migraines. It takes about 90 mins for the pain to go away. Very rarely do I need a second dose. Instead of being debilitated for 24 hours, I know I can go on with my dayas normal in 45-90 mins. Since I was having migraines at least once a week, Zomig has saved my sanity and my life. It is however very expensive. Side effect is a very strong tingling in mouth and lower jaw like eating a lemon, the first couple of bites of food I ingest after drug takes effect, also increased sensitivity to hot and cold when eating initially. Mild overall head/neck/arms/shoulders tenderness for about 6-12 hours.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-07-14 18:40:16', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=26&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig is a miracle drug for migraine, I have had debilitating migrains for over 45 yrs, now I don't fear my next attack.  I can continue with my activities in about 2 hrs.  Instead of vomiting and laying in bed for 2 days !!!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-06-29 22:35:08', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=26&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Pam").first_or_create(username: "Pam",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Headache is usually gone within 30 minutes, and I can get on with life.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-06-20 20:30:39', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=25&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "SusanQOD").first_or_create(username: "SusanQOD",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig works for my migraines 9 out of 10 times. I get achy joints, and skin sensitivity to heat (can't wash dishes by hand, which is actually a plus). It works best when you take it early on. If I lay down, it can be hard to get up - even when the migraine is gone! If I am up, I do not find it makes me drowsy. It does not work on a couple specific food related migraines (aged cheese &amp; turkey deli meat).",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2012-04-29 012:04:49', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=25&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Elyse").first_or_create(username: "Elyse",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I also need to take an aspirin with this drug to insure the pain goes away. It also removes the stiffness i get in my neck along with the migraine. I can only get 6 pills a month and it is so expensive. Looking for the day a generic of this one is made. Imitrex generic only partially works and can give me heartburn which can also be sooo uncomfortable.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-04-23 17:21:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=25&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "rockojh").first_or_create(username: "rockojh",caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "This drug is dangerous for the type of migraines i have (complex migraines with aura) It is totally ineffective for the aura which is my worst part of migraines. My most recent physician told me i should never been prescribed this medication especially because i also have high blood pressure and a serious family history of heart attacks and strokes.",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2012-03-07 21:26:42', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=25&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "alli").first_or_create(username: "alli",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have tried dozens of different medicines... imitrex, imitrex injectable, treximet, etc.  Zomig is the only drug that gives me complete relief once I get a migraine.  (The trick is to take it early in the headache, though).  All other drugs would only dull the pain, or leave me completely nauseated.Now if I can only pin down a good treatment for preventing migraines in the first place....",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2012-02-24 012:31:30', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=25&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This is a wonder drug!  I tried all sorts of things before I found it and nothing helped the intense pain and all the other symptoms that go along with it.  I tried Imitrex a few times and it worked ok but not as fast and not as well.  I do wish Zomig worked faster than an hour and that it didn't cost so much.  I have no insurance for it.  Anyone know when it is going generic???",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-01-25 23:43:03', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=24&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Have only had to take a second dose a few times.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-01-15 03:51:32', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=24&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I use %mg doses. I have had 100% relief from this drug. I have tried several other drugs with no relief including Imitrex. Zomig is sometimes not covered but you must get a prior auth from your md and well worth it.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2012-01-03 21:23:56', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=24&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "zomigfan").first_or_create(username: "zomigfan",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This is the only drug that has worked for my migraine headaches.  Immutrex did nothing, so my physician put me on Zomig several years ago.    I take 1/2 does of the 5mg tablet.  The 2.5 mg table doesn't work, and I am not sure why.   The only side effect is sometimes, chest pain, if I have taken too much.   I know it's a side effect, so I don't worry about it.   It's well worth getting rid of the debilitating migraine.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-11-23 22:29:37', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=24&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "When I took this medicine it made my migraine 10 times worse and made the whole bottom part of my mouth to go numb... And knocked me out for several hours",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2011-11-16 05:14:30', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=24&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "works great, but is expensive",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-11-13 20:33:54', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=23&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "WaterboyQC").first_or_create(username: "WaterboyQC",caregiver:false, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "This &quot;Magic Pill&quot;,I like to call it, is very effective after 1 hour. I do get some sense of  numbness and dry mouth but this is a very small price to pay to get rid of a very unpleasant migraine.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2011-09-21 15:18:08', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=23&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "KYmom").first_or_create(username: "KYmom",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My doctor switched me to Zomig after Midrin became unavailable.  It made the pain go away, but I acted like a drunk person for hours afterward.  I was dizzy, had slurred speech and trouble thinking.  Midrin never did this to me.  Has anyone else felt tipsy taking Zomig?",effectiveness: 5, ease_of_use: 1, satisfactory: 1, created_at: '2011-09-12 09:45:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=23&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Virginia R.").first_or_create(username: "Virginia R.",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I use this medication when I feel a migraine coming on.  It does a great job of taking care of it within 30 min to 1 hour.  If I wake up with a headache or have a major migraine I have to resort to the imitrex shot for complete relief.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2011-08-31 08:18:58', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=23&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Bonnie").first_or_create(username: "Bonnie",caregiver:false, age: '65-74',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig was like a miracle drug for me.  I have had it on hand for years, and find it totally reliable.  Unfortunately, my prescription plan has dropped Zomig, and I am now using the generic imitrex.  The imitrex seems to be effective so far but without the almost euphoric relief I felt with the zomig.    My only complaint with both drugs is that relief takes at least an hour to occur.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-07-31 14:53:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=23&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:true, age: '25-34',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "This med works really well, fast relief, I think the ODT form works the best, especially when nausea is present. No need to swallow just pop it under your tongue and get back to your day.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-07-17 04:55:32', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=22&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "PattyK").first_or_create(username: "PattyK",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Been taking as needed for over 10 years.  Does the trick everytime.  Really is a life saver.  Found that sometimes I get tingling sensation down my arms, but usually if I cut my dosage in half I don't get that sensation.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-05-27 24:44:09', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=22&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have suffered from migraines for only a couple of years.  I was very luckily to find zomig pretty quickly.  Zomig has saved my life.  I can take this drug and within 30 min to and hour, the headache is gone.  The only downfall of this drug is the side effects.  This drug leaves me with a tightening of the throat, tingles in my fingertips, intensified sensations: anything hot to touch is intensified, and sometimes I feel nauseous for a short time.  All of these symptoms fade within an hour after taking the drug, at which time I am releived of all the pain.  Zomig wins hands down and I will never go back to any over the counter drug or any other triptan.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2011-05-24 011:57:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=22&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Seems to dull the pain if I take it on the onset, doesn't touch it once the window has passed (2.5mg up to 4 pills). Doesn't help my nausea, and my nausea med (zofran) doesn't help my head - the 2 together seem to fight. Gotta pee every 5 mins, can't focus to save my life. Unfortunatly, this is the best concoction we've come up with that works for me oraly.",effectiveness: 3, ease_of_use: 5, satisfactory: 3, created_at: '2011-05-07 02:59:28', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=22&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "clawsonf").first_or_create(username: "clawsonf",caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I have been taking this drug for about 4 months and have yet to see any inprovement with my headaches.",effectiveness: 1, ease_of_use: 5, satisfactory: 2, created_at: '2011-04-24 04:12:24', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=22&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "hj2s4r").first_or_create(username: "hj2s4r",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have taken this for 10 years, and it has saved me from spending 3 days in bed wanting to die. Recently though, if I physically exert myself after taking this I am having shortness of breath (SOB), so as a nurse I am getting a bit concerned. I am fatigued sometimes when I take it, but I not willing to give it up in exchange for hell. I will be trying to &quot;rest&quot; during the day after taking this and hope this SOB will not continue. Wondered if anyone else has experienced this. Imitrex years ago gave me severe cardiac side effects with the second dose. Maxalt, makes me really light headed and exhausted. Since getting older my migraines have slowed down, but when they occur it's back to the same horrific pain, that only migraine sufferers understand.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-04-22 15:39:05', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=21&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "tsmith").first_or_create(username: "tsmith",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "There is no other migrane medication that helps me but Zomig and I have tried them all. Even if the pain was starting to get pretty advanced before I can get to the Zomig, it takes care of any and all my pain. Zomig had been a wonderful medication for my migranes which were horriable pain and vomiting for 24 hours or more.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-04-11 05:34:55', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=21&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "karen in tennessee").first_or_create(username: "karen in tennessee",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have taken Zomig for about 7-8 years now and it does relieve my headaches and I can continue to work or exercise or whatever I wanted to do.  Although I notice most of the times I need to take it the tips of my fingers become quite sensitive.  I finally related it to the med. Not only that but if I have had to take a whole pill all the joints and muscles in my body and become sore and achy.  I had to see if others have had this side effect.  I am comforted to know that I am relating the effect correctly to this med.  I will still use Zoming when needed but know that it may be helpful to take something that Advil too for the side effect.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-03-18 20:51:58', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=21&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "YukonOK").first_or_create(username: "YukonOK",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Have used 5 mg Zomig for chronic migraines for 20-25 days per mo for years. Works well, but insurance won't allow purchase of more than 6 per/mo, so I have to get samples from Dr and a sister shares hers w/me as well.  I end up taking half tabs which often does not work so I end up taking the other half. Side effects are tolerable; lethargy mostly, but the main annoying effect is frequent urination -every 15 minutes for 2-3 hrs! Anyone else deal with the urination side effect? Urine is clear like water, w/no pain involved, just very hard to deal with in the workplace.",effectiveness: 5, ease_of_use: 4, satisfactory: 4, created_at: '2011-02-26 22:50:51', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=21&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "julianne").first_or_create(username: "julianne",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Forty years with migraine, thirty years of different treatments, varying severity and causes, exacerbated by HRT. Zomig wins hands down, every time. Side effects are sensitivity to hot drinks and hot water (shower and dishwater). The bridge of my nose gets tender to the touch. Totally effective within ten minutes of taking. Lower dose usually works fine. Rarely have to take a second dose in one day though my headaches last 72 hours and I take a pill a day for the duration. Menopause didn't help.I have no health insurance and twenty dollars a pill is prohibitive so I have had to switch to the generic imitrex. Give me Zomig anytime as I have to work regardless and Zomig is dependably effective. With the imitrex the headache returns later that day. Not so with the Zomig.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-01-27 24:25:27', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=21&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "lisa").first_or_create(username: "lisa",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "the dose helped relieve pain however the jaw pain caused by it wa unbearable and lasted for more than five hours. Same reaction in my teen daughter.",effectiveness: 4, ease_of_use: 5, satisfactory: 1, created_at: '2011-01-23 012:51:54', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=20&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2011-01-16 18:27:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=20&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "sanitarysallyyouknow").first_or_create(username: "sanitarysallyyouknow",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Been on Zomig for some years now. Started out on the 2.5 mg then went up to the 5 mg tablet, partly due to my horrible perimenopausal migraines. Zomig has been helping me through this for the most part.  I'm almost 52 and have been suffering from migraines since my teens and have found Zomig to be one of the better meds for me.  Everyone is different, so each  medication works and behaves and has a different effect on them.  I do experience a side effect such as some drowsiness with Zomig, but for me, I'd much rather have that than the crippling migraines that can least up to 10 or more days at a time for me.  Zomig is a life saver.  I'd rate the &quot;effectiveness&quot; 5 stars but there are some times when my migraines need a little more boost and my neurologist has to put me on steroids - not very often but this has been a recent thing due to my perimenopausal migraines, which are sometimes relentless.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2011-01-12 08:57:01', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=20&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Alexaaa").first_or_create(username: "Alexaaa",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This drug worked great for the first few months it got rid of my migraines.  But then a month ago I started to get severe joint pains and chest pains and now I stopped taking it and now I have to see a cardiologist.",effectiveness: 3, ease_of_use: 5, satisfactory: 1, created_at: '2010-09-30 20:36:30', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=20&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Mockingbird13").first_or_create(username: "Mockingbird13",caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Has helped to nip many migraines in the bud, even allowing me to go to work.  However, there have been times that the fourth pill still left some migraine and I took a fifth, which completely knocked out the rest of the migraine.  Compared with merely waiting it out, or trying OTC meds to help, I'd much rather take the Zomig.My normal side effects include thirst/drymouth and tingling on the scalp once enough drugs are in my system to knock out the migraine.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-08-08 21:29:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=20&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "motherof2").first_or_create(username: "motherof2",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I don't know what I would do with zomig.  I do find that the nasal spray works a lot better than taking the pills.  It's WONDERFUL!!!! no side effects for me.  It does work best if you do take it at the beginning of the migraine rather than waiting until it's really bad.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-07-29 17:00:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=19&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "doglover").first_or_create(username: "doglover",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Has changed my life. I can participate in &quot;life&quot;, without that constant fear of will I get a (debilitating) migrane.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-06-15 24:28:36', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=19&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "moseley").first_or_create(username: "moseley",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "The side effects of Zomig are so bad. I take 5mg it makes my heart flutter, my throat tight and my head dizzy. I feel forgetful and sleepy. My migraine gets worse and its takes about 120 min for relief and that doesnt last to long.",effectiveness: 3, ease_of_use: 4, satisfactory: 3, created_at: '2010-06-03 21:39:14', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=19&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "MMWall").first_or_create(username: "MMWall",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "While Zomig has been the only medication that will take care of my migraines, I do experience sigificant side effects (sleepy, joint pain, fatigue).  I wish it was more affordabile.",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2010-05-20 22:17:57', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=19&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Vern").first_or_create(username: "Vern",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I will not take this medication again.  I felt like I was having a heart attack.  I had difficulty breathing.  Felt like a load of bricks on my chest. My throat was a little swollen and I had chest pains.  Not to mention I felt incapacitated with dizziness and not feeling myself.  It relieved my headache a little bit, but the side effects was not worth it.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2010-05-18 13:13:30', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=19&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "extremely effectively in relieving my migraines. Some unpleasant side effects. General overall achiness - flu-like feeling.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-05-16 14:01:20', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=18&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "astraldragonflye").first_or_create(username: "astraldragonflye",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "within minutes of taking Zomig, after trying several other drugs, my initial symptoms worsened before easing up. I have suffered severe chronic migraines for years, and I feel Zomig is second best to a combination of Excedrin and Maxalt. Zomig caused dizziness, acute vertigo, confusion, blurry vision, and nausea. I would not recommend it for the severe sufferer like myself.",effectiveness: 3, ease_of_use: 4, satisfactory: 2, created_at: '2010-04-07 21:31:20', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=18&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "The drug has been very effective for the treatment of my migraine headaches. The one side effect that troubles me is vertigo that I have been experiencing a day or two after taking the drug.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-04-05 010:23:57', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=18&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", age: '',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "ZOMIG IS A WONDER PILL FOR ME.  NOTHING ELSE WORKED BEFORE AND WITH ZOMIG MY MIGRAINE HEADACHE IS GONE IN NO MORE THAN 20 MINUTES.  I HAVE NO SIDE EFFECTS. IT DOES NOT MAKE ME DROWSY AND I CAN FUNCTION PERFECTLY.  I JUST WISH PHARMACEUTICAL COMPANIES AND THE MAKERS OF ZOMIG WOULD HAVE PITY AND MAKE IT MORE AFFORTABLE.",effectiveness: 5, ease_of_use: 3, satisfactory: 5, created_at: '2010-03-28 14:45:14', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=18&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "When i first feel a headache starting, i take my Zomig. Within an hour, I am headache free. The side effects for me are: sleepy (if i'm able i nap for at least 30 min) i feel sore (to the touch)and very slow..but all that goes away by the end of my day.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2010-03-18 011:41:49', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=18&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "pmpro").first_or_create(username: "pmpro",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My current favorite.  Quick acting.  No apparent side affects.  Nasal spray is not real convenient to carry around, but worth it for how quickly it works.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-03-09 23:12:17', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=17&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "abbyelove").first_or_create(username: "abbyelove",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-02-09 19:22:07', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=17&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '65-74',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This is the only thing that has helped my migraines.  I get relief usually within 30-60 minutes.  Seldom do I have any of the side affects.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2010-01-22 24:59:46', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=17&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This drug worked great as long as it was taken at the onset of the migraine. However , I developed terrible chest pressure after taking 2.5mg,like nothing I've ever experienced. Needless to say,my doc switched me to Imitrex- We will see!!!",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-12-31 23:49:58', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=17&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "PA patient").first_or_create(username: "PA patient",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I would get a migraine headache at least twice a month and it would last for two days if I would not go to bed with a cold washcloth on my face. I took zomig 5mg, within 10 minutes my headache was gone and I felt great. I have tried over the counter and other prescription medicine but nothing else worked.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-12-23 16:26:10', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=17&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "marglind").first_or_create(username: "marglind",caregiver:false, age: '65-74',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I can now completely control my headaches with a 2.5 mg Zomig and darvocet. However, I have noticed a relationship between taking zomig and having parasomnias (vivid nightmares, screaming and falling out of bed. I cannot associate these events with any other drugs I take. Has anyone else noticed this effect?",effectiveness: 4, ease_of_use: 4, satisfactory: 5, created_at: '2009-12-12 17:20:57', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=16&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This drug nearly killed me!  I had no known drug allergies before taking this drug.  I thought I was having a heart attack and I'm only in my early 20s!  This drug is dangerous!  It might mean relief for some, but not for me.  I think I would rather have the migraine than to ever suffer from the debilitating side effects of zomig again!",effectiveness: 1, ease_of_use: 1, satisfactory: 1, created_at: '2009-11-20 13:36:53', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=16&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "JULIE83983").first_or_create(username: "JULIE83983",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "MYSELF LIKE OTHERS THAT HAVE COMMENTED HERE, THIS IS A MIRACLE MED. ICE-PAKS, HEATING PADS, OTCs, DARK ROOM WITH NO NOISE OR ODORS, NONE OF THESE WORK. THE DRs GAVE ME THE 5MG ZOMIG, AND WALLA, HEADACHE GONE IN AN HOUR OR LESS, AND LIFE IS GOOD WITHOUT FEELING DOPED UP. IT JUST LIFTS, AND I CAN DO WHAT I NEED TO DO. WITHOUT IT, CANT DO ANYTHING WHEN HEADACHE KICKS UP. I ALSO TAKE CLARITIN, LEXAPRO AND VERAPAMIL AS PREVENTATIVES, BUT THERE ARE TIMES THAT THE HEADACHE STILL COMES ON. LESS FREQUENT, BUT THEY ARE STILL DISABLING. THANK YOU TO THE TEAM THAT DESIGNED THIS MED AND UNDERSTAND, ITS NOT &quot;JUST A HEADACHE&quot;. TIGHTENED MUSCLES ALL OVE BODY GET MORE INTENSE WHEN ITS HURTING. I DRAW UP AND CANT DO ANYTHING.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-11-18 08:16:53', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=16&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "A miracle drug for me. I used to end up in the ER with migraines several times a year. Now I just take Zomig and it goes away within an hour or so. Minimal side effects -- just some dizziness and dry mouth.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-11-04 16:12:39', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=16&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '3-6',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have had migraines since I was 4 years old. I'm almost 20 now and I have gone through many different medicines. This one is the only one that has actually helped with out any major side effects happening to me! I recomend it definitely!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-10-22 02:57:12', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=16&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "fastpepper").first_or_create(username: "fastpepper",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have been suffering from migraines for a few years and this drug relieves my grueling pain in less than an hour. It allows me to contunie with my daily rutine. Nothing else I have taken has relieve my pain.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-09-21 02:11:34', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=15&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I have suffered from migraines for over 21 years and no medication really worked. Not until I was prescribed zomig. This med worked wonders it takes away migraine within 30 mins. Unless its a really big one then I sometimes have to use 2 pills and that takes care of the pain. I usually feel tired and sore afterwards but better that than a migraine.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-09-20 19:41:34', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=15&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "yvonne").first_or_create(username: "yvonne",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "If I take this medicine right away, I get releife and am able to complete daily tasks unlike other medicines I have tried.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-09-08 14:05:39', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=15&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I was suffering from a migraine at work, pain, nauseau, the usual.  Even after having the migraine for a while took a Zomig 5 mg and layed down on the couch for 1 hour with a heating pad on my eyes.  MIGRAIN GONE!!!!  Miraculous drug!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-09-05 08:08:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=15&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "just THINKING about ever having to take another one of these pills makes my head throb!! my dr gave me these for my migraines and i tried them on 3 ocassions and it never worked not once.. the pain it would cause in my neck which is a side effect was on an equal level with the migraine ITSELF!! so then i had a migraine AND a pain in my neck that felt like i was being tortured!! i will never take this again!! but every thing works different for different people i guess??",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2009-08-28 17:57:47', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=15&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "have none").first_or_create(username: "have none",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig has worked better than max-alt for me.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-08-14 24:26:10', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=14&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "sjpeloquin").first_or_create(username: "sjpeloquin",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I took Zomig after a visit to my nurologist. She cautioned that it and other drugs like it would cause nausea and chest pain. I took it with another drug called Frova I'm not really sure which one caused the nausea but it was awful. I continued to take the Frova and wasn't sick at all. After I got over the nausea the Zomig worked great but I don't plan on taking it again. The nausea was just too much for me and it started almost instantly.",effectiveness: 2, ease_of_use: 5, satisfactory: 2, created_at: '2009-08-06 18:10:41', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=14&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "chosn chld of God").first_or_create(username: "chosn chld of God",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I frequently have megraines, about 4 day out of the week three weeks out of the month and they are severe to where I am light and sound sensitive and I have 3 children at home so it doesn't leave room for a lot of down time. Since Zomig was suggested to me I am able after taking 2 pills within the first two hours am able to bounce back and function. I am so thankful to God for His Mercy to put in the minds ot the med. people to help us.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-07-27 20:15:29', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=14&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I get severe migrain headaches 3 to 4 times a month. Zomig is one of the many perscriptions I have for my chronic headaches and it only works if I take it at the first sign of a migrain attack. Zomig usually works but cannot be taken if I have taken other medications in the same family such as maxalt in the last 3 days. My concern with zomig is the side effects. It makes me feel really strange, drowsy, and my joints feel weird. These symptoms last 2 days for me and I really dread taking zomig because of the strange side effects. However, it has helped me through some bad migrains if taken immediately.",effectiveness: 4, ease_of_use: 4, satisfactory: 3, created_at: '2009-07-22 15:42:52', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=14&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 2, ease_of_use: 5, satisfactory: 5, created_at: '2009-07-18 13:53:21', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=14&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '13-18',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I started off taking Imitrex and found it barely worked and often times made the headache worse. Zomig is great for the headaches...but im pretty much on another planet while taking it...and I get jittery like a squirrel. I've found that by taking Zomig and sleeping for a few hours immediately after taking the first dose I can avoid the drowsy and jumpy side effects.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2009-07-17 02:32:06', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=13&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This is the only migraine medicine that actually releves my migraine completely.",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2009-07-06 09:15:32', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=13&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "lovezomig").first_or_create(username: "lovezomig",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I had experienced migraines for about 5 years before my doctor prescribed this miracle drug. It works wonderfully for me. I am prescribed 2.5 mg but can often manage with one half of that. Maybe 3 or 4 times over the last 7 years, I have had to take 5 mg and felt a little spacey but I no longer had the migraine. I am now pregnant and I am suffering without my medicine. I wish more research could be done so my doctor would allow me to take it. She has prescribed basically extra strength tylenol which does nothing but make me drowsy. How am I supposed to function??? I see some research has been done and it appears that the risks are start at 11 times the max daily dose of 10mg so why can't I take the one little 2.5mg pill??? I am only 12 weeks pregnant and I have been laying in bed all weekend!!! I can't continue like this. I need to work!!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-21 19:19:26', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=13&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Charles").first_or_create(username: "Charles",caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "Many side effects; all negative.",effectiveness: 4, ease_of_use: 1, satisfactory: 2, created_at: '2009-06-18 14:56:17', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=13&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Nancy").first_or_create(username: "Nancy",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Within 20 minutes, it usually does the trick.  Occasionally, I need a 2nd dose and that has worked every time so far. I've had migraines since I was a child.  Thank goodness for this treatment.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-11 13:43:04', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=13&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Nnette432").first_or_create(username: "Nnette432",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "To me, Zomig is the greatest invention in the history of the universe.  It's the only pill that has ever worked to rid me of a migraine.  Side effects:  tiredness, thirst.  Not a bad trade-off.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-06-03 17:06:34', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=12&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Other').first_or_create(name: 'Other')
+if newdrug.conditions.find_by_name("Other").nil?
+newdrug.conditions << Condition.find_by_name("Other")
+end
+User.where(username: "Lee").first_or_create(username: "Lee",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "After years of suffering with migraines and several years of using potent drugs that disrupted my normal routine (due to their sedative effect), I absolutely love that I can take my zomig, feel relief quickly (usually within 20 - 30 minutes) and continue with my routine!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-05-23 24:47:19', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=12&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig did not work at all for my migraines. I did not get any relief.",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2009-05-16 14:34:38', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=12&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "dfwpm").first_or_create(username: "dfwpm",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I'm 58 years old and have suffered with frequent migraines for years. Zomig has been very effective for getting rid of the headache. I do, however, have side effects from it and more the longer I take it. First was skin sensitivity to warm water--fingers and toes especially. Within an hour after taking it I feel as if I have taken a diuetic for about 2 hours. I also have arthritis and it seems to intensify the pain and discomfort from that. I would much rather put up with these effects rather than the headache and nausea.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-04-17 23:10:49', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=12&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-04-09 17:19:49', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=12&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "zomig saved my life. it's the first and only thing that ever stopped a migraine in thirty-one years. no more er visits and demerol shots. I have some control back in my life. Thank-you.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-04-02 21:59:38', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=11&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I tried this medication 3 different times. The headache never went away and all I got was a terrible ache in my right arm. Then I had a headache and an achy arm!",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2009-04-01 15:29:43', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=11&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "DLNorton").first_or_create(username: "DLNorton",caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I've come to the conclusion that I cannot take Zomig or it's cousin Imitrex. These drugs make me hyper-anxious, and my muscles start cramping badly, and my joints inflame. And in addition, my nasal passages itch like crazy. It even makes my migraine worse. My wife also gets migraines and has much better results than I with Imitrex. Your results may vary.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2009-03-20 02:25:17', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=11&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "mrs gumby").first_or_create(username: "mrs gumby",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "this has been kind of a wonder drug for me. i can keep on with the day.   i have only had a couple of migraines where this med did not work.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-03-17 15:32:34', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=11&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "vanessa5").first_or_create(username: "vanessa5",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig worked for me! But made me very sleepy - hard to stay awake and function for the next 12-18 hours after taking it. Aside from that, I like how it feels &quot;mild&quot; compared to Imitrex, which sometimes makes my headache worse for the first 10 minutes, but then the headache disappears. With Zomig, there was no side effect for me except the sleepiness. Which is okay if it's a weekend headache. But hard to go to work and be on Zomig. I use Zomig for weekend use only because I never know how sleepy I will feel.",effectiveness: 5, ease_of_use: 5, satisfactory: 2, created_at: '2009-03-01 21:15:26', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=11&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I use the 5mg at the onset of a headache, it seems to work best if i can lay down for 30minuts after i take the medicine, it has given me back my life, i dont need it that often but i always make sure i have it on hand",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-03-01 010:14:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=10&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Senseless").first_or_create(username: "Senseless",caregiver:false, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I have tried a few other triptans, including Frova and Imitrex. Zomig works best for me. The others didn't always work, but Zomig works at least 95% of the time when taken at the onset of the headache. Unlike some of the others, I have not experienced significant side effects from Zomig. The one side effect I sometimes get is a mild malaise, as though a cold is coming on but it goes away in under an hour. If I have a complaint about this drug, it is that it takes at least 90 minutes to work. 60 on an empty stomach. It can have a &quot;rebound&quot; effect sometimes in which taking it will cause another headache the next day..but it's not common. It's expensive, but it's more effective with less side effects. I recommend it.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2009-03-01 01:42:45', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=10&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Irma").first_or_create(username: "Irma",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I'm 61 yrs. old. My migraines started when I was 38. They have lessoned since menopause, but I still get them, even though I watch what I eat and always read the labels.  I experience some cramping in my jaw area, but it doesn't last long at all. I used to use shots, but the Zomig works great for me. I started with 2.5 mg. but now use 5 mg.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-25 18:55:11', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=10&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "www.myspace.com/leigh19").first_or_create(username: "www.myspace.com/leigh19",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This is a miracle drug. I have 4-5 migraines per week and this is the only medication that has been effective for me. The only down side is that the pharmacy will only give me 6 pills per month and with health insurance it still costs me around $50/month. I take it as soon as I feel a migraine coming on and it stops it from persisting. I have tried every drug under the sun for migraines and this is the only drug that has worked for me. I wish I could find it in a generic so that it would be more affordable but it's worth the cost to not have to deal with a migraine. The drug company does offer a coupon type deal if you register on their website.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-21 02:08:32', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=10&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Sal").first_or_create(username: "Sal",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I am 58 years old and have been using Zomig 2.5 mg for the past 10 years--8 of which I have been in menopause.  I thought migraines were suppose to go away then!!  I sometimes get several migraines a week--I also have fibromyalgia.  There is a history of heart disease in my family but for the past 28 years, I have gotten into the exercise habit--either a treadmill or eliptical every other day/30 minutes plus light weights to make my heart strong.  The only side effects I would say I experienced were a little tiredness, an uplift in mood, and if I took a shower, I wouldn't be able to have the water as hot as I usually do--that's it.  It has been a life saver for me--I just wish there was a safe drug I could take to prevent them.  (I don't want to use Topamax--too many side effects, although I haven't tried it.)",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-02-07 012:52:29', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=10&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-31 15:51:14', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=9&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "homerprice").first_or_create(username: "homerprice",caregiver:false, age: '45-54',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "I find this drug works for me in about 30 minutes if I catch the beginning of the migraine. I used to take 3 ibuprofen with it, but now I can take it alone. I make sure I rest while sitting up in a comfortable chair with an eyemask on.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2009-01-21 08:15:51', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=9&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I've had Migraines for years, tried numerous drugs but always developed a tolerance after a while.  I really like Zomig, but the tightness/pressure in the neck &amp; throat can be bothersome.  (I'm glad to read I'm not the only one that experiences this.) The 5mg actually made me hoarse for a couple of hours, but eventually went away; so I now take the 2.5mg.  I works for me and I would recommend this to anyone who deals with the pain of migraines!",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2009-01-03 17:14:26', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=9&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "cc").first_or_create(username: "cc",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "i take the 2.5 dissolving tabs it works a majority of the time there are still times i resort to the dilaudids but i also take the whole range of triptans frova, imitrex sprays, tabs, and injections at times too but this is the best",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2008-11-24 22:27:39', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=9&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "SHOSH").first_or_create(username: "SHOSH",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "R E L I E F!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-11-21 08:50:41', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=9&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "eeyore").first_or_create(username: "eeyore",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "It works for me within 5-10 minutes. However, the side effects of th extreme tension/tighting in the jaw and neck is very disturbing and uncomfortable!!",effectiveness: 5, ease_of_use: 4, satisfactory: 4, created_at: '2008-11-06 18:38:11', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=8&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "relief within in about one hour",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-10-23 010:50:34', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=8&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "jody").first_or_create(username: "jody",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I use 50mg Demerol plus 10 mg.valium to stopthe migraine.  If this doesn't work, I use 2.5 mg. of Zomig and this prevents me from going to the emergency room.  Migraine completely gone in 2 hours.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-10-22 13:47:51', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=8&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2008-10-17 07:46:33', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=8&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "The only problem's are the side effects (tightness in the neck, shoulder,jaw and arms). But there are times I have no side effects. I have found that if you take advil prior to taking the pill it does help with the muscle aches.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2008-10-03 14:27:32', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=8&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Very fast and effective.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-10-01 17:29:02', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=7&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "THIS MEDICATION ALMOST IMMEDIATELY TAKES MIGRAINE AWAY WITHOUT SIDE EFFECTS. IT IS AS IF THE MIGRAINE NEVER EXISTED",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-26 07:30:57', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=7&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "IHateMigraines").first_or_create(username: "IHateMigraines",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have suffered all my life from migraines and this drug is amazing. It works within 15 minutes and I can actually feel the pain subside. I experience joint aches/pain/soreness after I take it though. Almost like I just exercised pretty hard.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-22 16:33:45', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=7&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "dianaiynnanne@aol.com").first_or_create(username: "dianaiynnanne@aol.com",email_address: 'dianaiynnanne@aol.com',caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Ever since I've been going through menopause I have been getting migraines,especially when the weather is changing and pressures are rising and falling.After seeing numerous Drs.,and taking at least 4 different daily meds(that made me non functional after a couple weeks)one Dr. gave me Zomig 2.5 mg and it's the only drug that gets rid of the migraines. I get at least 12+ migraines a month.What's up with that?!?",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-12 011:56:48', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=7&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "judistevens08132aol.com").first_or_create(username: "judistevens08132aol.com",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "this is a miracle drug",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-10 17:26:41', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=7&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Have had headaches for years, was recently diagnosed with migraines.  Tried Relpax, Frova - Zomig truly takes away the pain.  I feel slight dizziness about 30 minutes after I take Zomig, but it goes away and so does the migraine.",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2008-09-10 010:50:05', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=6&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I had incapacitating migraines until I started taking zomig 10 years ago.  It changed my life.  Only side effect is a weakness in joins and slight sleepiness.  Relief arrives within 20-30 min. it taken at onset.  It is the only drug that has ever helped.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-08 24:21:11', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=6&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "lje").first_or_create(username: "lje",caregiver:false, age: '25-34',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I couldn't be more happy that this drug is in existance.  I just wish that I could have more than 12 pills per month.  Sometimes I have to double up and I do have about 12 migraines per month. The side effects I've experienced is frequent urination, tingling in my jaw and drowsiness.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-09-03 01:01:36', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=6&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "My doctors didn't know why I was gettting vertigo and discovered it was migraines.  This is the only thing that keeps me working for I was about to lose my job!  5mg gave me strong chest pressure and pains along with my left side being tingly and numb.  But half of a 2.5 tablet gives me no side effects and relieves the migraine for 2 hours.  Would be nice if the 5mg tablet was scored four ways to save money.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-08-27 08:33:38', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=6&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I suffered with 5 day long migraines for 30 years before my doctor recommeded this medication.  It gave me my life back.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-08-20 19:58:54', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=6&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I get horrible migraines several times a month and this medicine works about 99% of the time.  Its a miracle worker in my experience",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-08-16 21:36:56', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=5&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "debbycake").first_or_create(username: "debbycake",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I found no relief when taking Zomig.",effectiveness: 1, ease_of_use: 4, satisfactory: 1, created_at: '2008-07-14 22:24:31', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=5&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "jaguar").first_or_create(username: "jaguar",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have come to realize that after taking this medication it is more effecive if I lay down for 20-30 minutes to get the relief from my migraine headache.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-06-15 011:39:11', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=5&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "kaisnewkrib1").first_or_create(username: "kaisnewkrib1",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have tried alot of migraine meds. This is the only one that has worked for me.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-06-06 09:49:02', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=5&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have hormonal headaches.  Zomig works the majority of the time.  I do have several side effects including burning mouth, drowsiness, and tingling.",effectiveness: 4, ease_of_use: 5, satisfactory: 3, created_at: '2008-05-28 24:54:14', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=5&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "headache and nausea completely gone in 20 minutes.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-05-23 14:12:20', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=4&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "AG").first_or_create(username: "AG",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I get migraines fairly regularly and nothing seemed to help until I started taking Zomig.  I usually get auras before my migraine (tingly hands/fingers or loss of vision) and taking the zomig when I start an aura usualy stops the migraine.  When I do not get an aura it usualy takes about 45-1hr to start to work.  I do not get any side effects from taking the drug, it works wonders!",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2008-05-21 010:41:25', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=4&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "wander40").first_or_create(username: "wander40",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have had migraines since the beginning of menstruation. For the first several years products like Advil and Excedrin worked fine but then they seemed to lose their effectiveness.  Even Excedrin Migraine does nothing for me.  I tried many of the new drugs that came out like Imitrex and Maxalt but they did not work.  Then Zomig came along and I haven't tried anything else since. It works very well for me.  Only side effects are a tired or numb feeling in my neck and jaw and of course it is VERY expensive.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-05-17 22:09:55', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=4&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have suffered from migraine headaches for over 30 years and this is the only medication I have taken that takes the headache away in a relatively short period of time and with few side effects. I have found that if I catch it quickly, I can take a third of a 5mg pill and it does the trick. I do have some joint soreness after taking the pill which I never had taking other migraine medications.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-04-28 19:40:59', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=4&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Jme").first_or_create(username: "Jme",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I am 24 and get migraines often. The doctors do not know why but when i take the zomig my headache always goes away it is very expensive and i do use it often but it is worth it. My skin does burn after i take it  especially if i take a shower.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-04-18 19:34:47', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=4&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "mare").first_or_create(username: "mare",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I find Zomig to relieve a migraine within 1-2 hours of onset.  Side effects are skin sensitivity and joint pain (hip area and jaw).  Sleepiness may also happen, but if im at work, I dont feel the sleepiness as much as when im home and relaxed.  Side effects are worth it to get rid of the migraine.  Cost is high:$120 co-pay for 12 pills (3 mo. supply). Would be nice if drug co. offered coupons.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-03-12 010:54:31', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=3&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "lvs").first_or_create(username: "lvs",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have had migraines for about 20 years.  I have tried nearly every medication possible and Zomig is by far the best one for relieving my pain.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-03-07 19:23:20', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=3&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Susang").first_or_create(username: "Susang",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have migraines that come in clusters and may last one day or over a period of two days; sometimes I've had migraines almost daily and in recent months, maybe two or three per month.  Zomig has been the only medication that works on a continual basis.  I take it at the first signs of a migraine and it usually works wonders.  I, too have problems with joint and muscle pain that accompany my headaches and leave me sore afterward.  I was glad to see that others have this problem too.  As an accompanying treatment, a licensed massage therapist that is skilled in pain management is beneficial as well.",effectiveness: 4, ease_of_use: 4, satisfactory: 4, created_at: '2008-03-06 010:42:50', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=3&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have used Zomig since it first came on the market after trying many other medications for migraine. It is the best one I have used and it always works within 30-45 minutes. The only drawbacks are that only being able to take two tablets in a 24 hour period, sometimes each tab doesn't last for 12 hours and I may cheat and take another tab sooner than I should. Also, I have joint pain and tightness and tingling in the neck area. Since my migraines usually last 3 days, the cost of 6 tabs is really high and I usually have at least 2 migraines a month. My insurance only pays for 6 tabs per month and i also have a 40% co-pay.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-27 17:11:35', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=3&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "jamone").first_or_create(username: "jamone",caregiver:false, age: '55-64',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "this pill is a life saver for me. it works within twenty mins or less. i could not work with out it. it takes the pain away completely for me. i get migraines almost every day. its a family curse. i was put on this ten years ago. and i only take one pill a day and i am good all day. sometimes weeks go by without a migraine. only problem it is expensive and my healthplan will not pay for all i need. the drug co itself helpsme.",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-02-18 20:39:23', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=3&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '13-18',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "i was somewhat paralyzed for two hours. i couldnt move one half of my body. i was scared to death and nauseated.",effectiveness: 1, ease_of_use: 5, satisfactory: 1, created_at: '2008-02-11 09:10:54', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=2&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Holmesl06").first_or_create(username: "Holmesl06",caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "It took my migrane away briefly but then it came back so much worse it made me nausious and my jaw hurt too.",effectiveness: 2, ease_of_use: 5, satisfactory: 1, created_at: '2008-02-06 010:55:37', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=2&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "arlicia hardy").first_or_create(username: "arlicia hardy",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "nervous, heart racing, sleepness, migraines",effectiveness: 2, ease_of_use: 2, satisfactory: 1, created_at: '2008-01-30 19:11:10', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=2&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 1, ease_of_use: 5, satisfactory: 3, created_at: '2008-01-09 08:47:20', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=2&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '55-64',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-01-02 19:54:03', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=2&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "llval").first_or_create(username: "llval",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I have taken Zomig for the last several years and am very pleased w/the results.  If I take it when the migraine just begins, it will usually prevent it.  Even if I take it after the migraine develops, it will usually knock it out w/in a couple of hours.  The only drawback is severe joint and muscle pain within a few hrs of taking it, especially if I lay down and sleep after taking it.  But, it's a small price to pay for getting rid of the migraines!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2008-01-01 23:46:16', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '35-44',gender: 'Male')
+newuser=User.last
+newuser.reviews.create(comments: "BARELY TOUCHED THE HEADACHE, EVEN AFTER TAKING MAX DOSAGE.",effectiveness: 2, ease_of_use: 4, satisfactory: 2, created_at: '2007-12-17 16:36:57', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "april").first_or_create(username: "april",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "it worked wonders. i have been trying medications since i was 26 nothing has even tuoched them. only side effect i experinced was pressure in my neck, not enough to make me stop. wonder drug for me!",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2007-12-17 24:17:59', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '19-24',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 4, created_at: '2007-12-11 23:16:04', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This medication got rid of my migraine but put me down for several hours. I also had tightness of the chest and neck for the first hour.",effectiveness: 5, ease_of_use: 5, satisfactory: 3, created_at: '2007-12-07 22:25:05', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Tanya").first_or_create(username: "Tanya",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "Zomig did help my head but makes me feel real weird all over the rest of my body.",effectiveness: 4, ease_of_use: 5, satisfactory: 4, created_at: '2007-12-01 011:21:19', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=0&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", age: '',gender: '')
+newuser=User.last
+newuser.reviews.create(comments: "This migraine medication works the best for me. It knocks my migraines out quickly.  I don't like the side effects(drowsiness, nausea, shakey) but they are better than the migraine!",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-11-17 011:34:18', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=0&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "Tina").first_or_create(username: "Tina",caregiver:false, age: '35-44',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "This product alone did not help my migrane headaches.  I finally found relief with this AND 3 ibuprofen tablets.  I'm not sure if it was the combination or the ibuprofen alone that worked.",effectiveness: 3, ease_of_use: 5, satisfactory: 2, created_at: '2007-11-12 07:56:44', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=0&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 4, satisfactory: 5, created_at: '2007-11-08 08:08:40', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=0&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-11-05 20:03:37', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=0&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "SereNole").first_or_create(username: "SereNole",caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "I've had chronic migraine's with syncope since I was 28 and this is the first drug that has really been effective on the pain that doesn't wipe me out. The only thing I'd like to see changed about it is for it to be scored so as to be broken in half easier. (my dosage requires only a half tablet be taken at onset..the tablets are hard and requires a pill splitter to cut it.)",effectiveness: 5, ease_of_use: 5, satisfactory: 5, created_at: '2007-10-24 02:13:08', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=-1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)
+#. . .
+Drug.where(brand_name: 'Zomig Oral').first_or_create(generic_name: '', brand_name: 'Zomig Oral', source_id: '5400')
+newdrug=Drug.find_by_brand_name("Zomig Oral")
+Condition.where(name: 'Migraine Headache').first_or_create(name: 'Migraine Headache')
+if newdrug.conditions.find_by_name("Migraine Headache").nil?
+newdrug.conditions << Condition.find_by_name("Migraine Headache")
+end
+User.where(username: "visitor1362471803").first_or_create(username: "visitor1362471803", caregiver:false, age: '45-54',gender: 'Female')
+newuser=User.last
+newuser.reviews.create(comments: "At the onset of a headache is the best time to use this medicine.  It may take 1/2 to 1 hour for effectiveness.  The worst side effect I have is body aches, especially in the lower extremities. Tenderness of skin on the thighs, and pain in the bottoms of my feet are typical complaints.  Although my migraine have lessened with treatment to prevent headaches with amitriptyline and propranolol used on a daily basis, the use of Zomig 5mg has been very effective to reduce the frequency of blinding migraines.  I would recommend this product for anyone who suffers from migraines.  Anything is worth the effort to recover the hours and days lost to nausea, light sensitivity and crippling pain.",effectiveness: 4, ease_of_use: 5, satisfactory: 5, created_at: '2007-09-28 22:03:51', review_url: "http://www.webmd.com/drugs/drugreview-5400-Zomig+Oral.aspx?drugid=5400&drugname=Zomig+Oral&pageIndex=-1&sortby=3&conditionFilter=-1", drug_id:newdrug.id)

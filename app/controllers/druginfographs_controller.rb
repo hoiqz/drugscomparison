@@ -147,11 +147,16 @@ class DruginfographsController < ApplicationController
 
   def get_top_used_words(drug)
     @tags=Tag.find_by_brand_name(drug)
+    if @tags.nil?
+      string=""
+      else
     @tagshash=format2hash(@tags.word_list)
     temp=@tagshash.sort_by {|k,v| v}.reverse.shift(3)
     string=''
     arr=temp.collect { |x| x[0]}
     string  =arr.join(",")
+    end
+
   end
 
   def format2hash(string)

@@ -7,10 +7,6 @@
                 <% @tagshash.each_pair do |key,value|%>
                     {text: "<%=key%>", weight: <%= value.to_i%>, link: {href: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>", target: "_blank"}},
                 <% end%>
-
-            //{text: "Ipsum", weight: 9, link: "http://jquery.com/"},
-            //{text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
-
         ];
 
         $(function () {

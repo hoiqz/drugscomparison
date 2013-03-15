@@ -14,7 +14,7 @@ class Drug < ActiveRecord::Base
   accepts_nested_attributes_for :conditions
 
 
-  validates :generic_name, :presence => true#, :uniqueness => true
+  validates :brand_name, :presence => true#, :uniqueness => true
 
   def reject_review(attributed)
     if attributed['comments'].blank? or attributed['effectiveness'].blank? or attributed['ease_of_use'].blank? or attributed['satisfactory'].blank?

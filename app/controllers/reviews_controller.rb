@@ -23,11 +23,20 @@ class ReviewsController < ApplicationController
     @urlendcoded=@edited_params.to_query
 
     @tags=Tag.find_by_brand_name(@drug.brand_name)
-    @tagshash=format2hash(@tags.word_list)
+    if @tags.nil?
+      @tagshash={:key1=>"Word list not available for this drug"}
+    else
+      @tagshash=format2hash(@tags.word_list)
+    end
 
     # for the infograph
     @infograph=Druginfograph.find_by_brand_name(@drug.brand_name)
-    @topwords=@infograph.top_used_words.split(',')
+    if @infograph.nil?
+      @topwords=nil
+    else
+      @topwords=@infograph.top_used_words.split(',')
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @reviews }
