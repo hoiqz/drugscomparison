@@ -67,11 +67,6 @@ namespace :project do
         found=(doc/"html body#htmBody div#Drugs.tools div div#container div#content div#template div#outer div#inner div#twocolumn.template div.col1 div#browsable.detail-browsable div div.tabbed div.tabbed-outer div.tabbed_skinny div.tabbed_skinny_content div.bvr-tab-container p").inner_html
          if found=~/No ratings found/
            source_reviews=0
-           if existing=Everydayhealth.find_by_name("#{drug}")
-             existing.update_attributes(:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
-           else
-             Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
-           end
 
          end
         #puts found if found
@@ -79,7 +74,12 @@ namespace :project do
         if found2=~/\((.*)? results found\)/
           source_reviews= $1.to_i
         end
-        #source_reviews
+
+        if existing=Everydayhealth.find_by_name("#{drug}")
+          existing.update_attributes(:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+        else
+          Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+        end
 
       end
       end
