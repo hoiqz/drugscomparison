@@ -146,6 +146,7 @@ namespace :project do
       caregiver="true"
 
       brand_name=urldecode(name)
+      Dir.mkdir("out_tmp")
       File.open("out_tmp/#{basename}","r") do |filereader|
         i=0
         filereader.each {|line|
@@ -234,6 +235,7 @@ namespace :project do
             min=$5
             sec=$6
             type=$7
+            puts $1 +$2 +$3 +$4 +$5 +$6 +$7
             if type == 'PM'
               hour=hour+12
             else

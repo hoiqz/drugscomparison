@@ -33,6 +33,8 @@ namespace :project do
         #OUT.write("Webmd.create!(source_id:'#{source_id}', brand_name:\"#{values[0]}\", current_reviews: #{values[2]}, latest_reviews: #{formatted_count})\n")
         if found=Webmd.find_by_brand_name("#{brand}")
           found.update_attributes(:latest_reviews=> formatted_count)
+        else
+          Webmd.create!(brand_name:"#{brand}",source_id:"#{source_id}", current_reviews: values[2], latest_reviews: formatted_count)
         end
       end
     end
@@ -51,6 +53,8 @@ namespace :project do
     File.open(druglist,"r") do |filereader|
       filereader.each do |line|
         drug=line.chomp
+        Dir.mkdir("everydayhealth_reviews")
+        OUT=File.new("everydayhealth_reviews/#{drug}.reviews","w+")
         puts drug
        # for each drug open its drug file
         drug_review=reviews_folder+"/#{drug}"
@@ -63,6 +67,12 @@ namespace :project do
         found=(doc/"html body#htmBody div#Drugs.tools div div#container div#content div#template div#outer div#inner div#twocolumn.template div.col1 div#browsable.detail-browsable div div.tabbed div.tabbed-outer div.tabbed_skinny div.tabbed_skinny_content div.bvr-tab-container p").inner_html
          if found=~/No ratings found/
            source_reviews=0
+           if existing=Everydayhealth.find_by_name("#{drug}")
+             existing.update_attributes(:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+           else
+             Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+           end
+
          end
         #puts found if found
         found2=(doc/"html body#htmBody div#Drugs.tools div div#container div#content div#template div#outer div#inner div#twocolumn.template div.col1 div#browsable.detail-browsable div div.tabbed div.tabbed-outer div.tabbed_skinny div.tabbed_skinny_content div.bvr-tab-container div#treatment_ratings.user_ratings div.pagination div.pagination_left").inner_html
@@ -172,11 +182,11 @@ namespace :project do
               OUT.write("#{filename}\t")
               parse_page(doc2)
             end
-            sleeptime=5+rand(15)
+            sleeptime=rand(10)+rand(15)
             sleep(sleeptime.minutes)
           end
         end
-        sleeptime=7+rand(15)
+        sleeptime=7+rand(20)
         sleep(sleeptime.minutes)
         OUT.close
       end
