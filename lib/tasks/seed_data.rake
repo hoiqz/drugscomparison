@@ -251,7 +251,7 @@ namespace :project do
               page_to_link=generate_url(web_source,reviews_per_page,target_review,total_reviews,source_reviews)
               review_url="http://www.webmd.com/drugs/drugreview-#{source_id}-#{name}.aspx?drugid=#{source_id}&drugname=#{name}&pageIndex=#{page_to_link}&sortby=3&conditionFilter=-1"
               newcomments=escape_characters_in_string(values[8])  if values[8]
-              newreview=newuser.reviews.create(comments: "#{newcomments}",effectiveness: values[2], ease_of_use: values[3], satisfactory: values[4], created_at: "#{formateddate}", review_url: "#{review_url}", drug_id: newdrug.id) if newuser.save!
+              newreview=newuser.reviews.create(source: "#{web_source}",comments: "#{newcomments}",effectiveness: values[2], ease_of_use: values[3], satisfactory: values[4], created_at: "#{formateddate}", review_url: "#{review_url}", drug_id: newdrug.id) if newuser.save!
             elsif web_source=="askapatient"
               reviews_per_page=60
               target_review=i

@@ -6,15 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/ASMANEX+TWISTHALER_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/ASACOL+HD_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/ASACOL_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/ASTELIN_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130318065826_add_source_to_review_table.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/ARTHROTEC_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/ARTHROTEC_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +37,7 @@
       <file leaf-file-name="seed_data.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="234" selection-end="240" vertical-scroll-proportion="-6.5830507">
+            <state line="256" column="78" selection-start="9875" selection-end="9875" vertical-scroll-proportion="0.56271183">
               <folding />
             </state>
           </provider>
@@ -128,10 +120,10 @@
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/druginfographs_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
         <option value="$PROJECT_DIR$/db/migrate/20130318022732_create_everydayhealths.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
         <option value="$PROJECT_DIR$/db/migrate/20130318065826_add_source_to_review_table.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
       </list>
     </option>
   </component>
@@ -1086,7 +1078,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="234" selection-end="240" vertical-scroll-proportion="-6.5830507">
+        <state line="256" column="78" selection-start="9875" selection-end="9875" vertical-scroll-proportion="0.56271183">
           <folding />
         </state>
       </provider>
