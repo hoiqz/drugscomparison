@@ -86,30 +86,30 @@
 #AREDIA	20036	http://www.askapatient.com/viewrating.asp?drug=20036&name=AREDIA
 #ARICEPT	20690	http://www.askapatient.com/viewrating.asp?drug=20690&name=ARICEPT
 #ARIMIDEX	20541	http://www.askapatient.com/viewrating.asp?drug=20541&name=ARIMIDEX
-AROMASIN	20753	http://www.askapatient.com/viewrating.asp?drug=20753&name=AROMASIN
-ARTANE	6773	http://www.askapatient.com/viewrating.asp?drug=6773&name=ARTANE
-ARTHROTEC	20607	http://www.askapatient.com/viewrating.asp?drug=20607&name=ARTHROTEC
-ASACOL	19651	http://www.askapatient.com/viewrating.asp?drug=19651&name=ASACOL
-ASACOL HD	21830	http://www.askapatient.com/viewrating.asp?drug=21830&name=ASACOL+HD
-ASMANEX TWISTHALER	21067	http://www.askapatient.com/viewrating.asp?drug=21067&name=ASMANEX+TWISTHALER
-ASTELIN	20114	http://www.askapatient.com/viewrating.asp?drug=20114&name=ASTELIN
-ASTEPRO	22203	http://www.askapatient.com/viewrating.asp?drug=22203&name=ASTEPRO
-ATACAND	20838	http://www.askapatient.com/viewrating.asp?drug=20838&name=ATACAND
-ATACAND HCT	21093	http://www.askapatient.com/viewrating.asp?drug=21093&name=ATACAND+HCT
-ATARAX	10485	http://www.askapatient.com/viewrating.asp?drug=10485&name=ATARAX
-ATENOLOL	72303	http://www.askapatient.com/viewrating.asp?drug=72303&name=ATENOLOL
-ATENOLOL AND CHLORTHALIDONE	72301	http://www.askapatient.com/viewrating.asp?drug=72301&name=ATENOLOL+AND+CHLORTHALIDONE
-ATIVAN	17794	http://www.askapatient.com/viewrating.asp?drug=17794&name=ATIVAN
-ATRIPLA	21937	http://www.askapatient.com/viewrating.asp?drug=21937&name=ATRIPLA
-ATROVENT	19085	http://www.askapatient.com/viewrating.asp?drug=19085&name=ATROVENT
-AUGMENTIN '125'	50575	http://www.askapatient.com/viewrating.asp?drug=50575&name=AUGMENTIN+%27125%27
-AUGMENTIN '250'	50564	http://www.askapatient.com/viewrating.asp?drug=50564&name=AUGMENTIN+%27250%27
-AUGMENTIN '875'	50720	http://www.askapatient.com/viewrating.asp?drug=50720&name=AUGMENTIN+%27875%27
-AUGMENTIN XR	50785	http://www.askapatient.com/viewrating.asp?drug=50785&name=AUGMENTIN+XR
-AVALIDE	20758	http://www.askapatient.com/viewrating.asp?drug=20758&name=AVALIDE
-AVANDIA	21071	http://www.askapatient.com/viewrating.asp?drug=21071&name=AVANDIA
-AVAPRO	20757	http://www.askapatient.com/viewrating.asp?drug=20757&name=AVAPRO
-AVELOX	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
+#AROMASIN	20753	http://www.askapatient.com/viewrating.asp?drug=20753&name=AROMASIN
+#ARTANE	6773	http://www.askapatient.com/viewrating.asp?drug=6773&name=ARTANE
+#ARTHROTEC	20607	http://www.askapatient.com/viewrating.asp?drug=20607&name=ARTHROTEC
+#ASACOL	19651	http://www.askapatient.com/viewrating.asp?drug=19651&name=ASACOL
+#ASACOL HD	21830	http://www.askapatient.com/viewrating.asp?drug=21830&name=ASACOL+HD
+#ASMANEX TWISTHALER	21067	http://www.askapatient.com/viewrating.asp?drug=21067&name=ASMANEX+TWISTHALER
+#ASTELIN	20114	http://www.askapatient.com/viewrating.asp?drug=20114&name=ASTELIN
+#ASTEPRO	22203	http://www.askapatient.com/viewrating.asp?drug=22203&name=ASTEPRO
+#ATACAND	20838	http://www.askapatient.com/viewrating.asp?drug=20838&name=ATACAND
+#ATACAND HCT	21093	http://www.askapatient.com/viewrating.asp?drug=21093&name=ATACAND+HCT
+#ATARAX	10485	http://www.askapatient.com/viewrating.asp?drug=10485&name=ATARAX
+#ATENOLOL	72303	http://www.askapatient.com/viewrating.asp?drug=72303&name=ATENOLOL
+#ATENOLOL AND CHLORTHALIDONE	72301	http://www.askapatient.com/viewrating.asp?drug=72301&name=ATENOLOL+AND+CHLORTHALIDONE
+#ATIVAN	17794	http://www.askapatient.com/viewrating.asp?drug=17794&name=ATIVAN
+#ATRIPLA	21937	http://www.askapatient.com/viewrating.asp?drug=21937&name=ATRIPLA
+#ATROVENT	19085	http://www.askapatient.com/viewrating.asp?drug=19085&name=ATROVENT
+#AUGMENTIN '125'	50575	http://www.askapatient.com/viewrating.asp?drug=50575&name=AUGMENTIN+%27125%27
+#AUGMENTIN '250'	50564	http://www.askapatient.com/viewrating.asp?drug=50564&name=AUGMENTIN+%27250%27
+#AUGMENTIN '875'	50720	http://www.askapatient.com/viewrating.asp?drug=50720&name=AUGMENTIN+%27875%27
+#AUGMENTIN XR	50785	http://www.askapatient.com/viewrating.asp?drug=50785&name=AUGMENTIN+XR
+#AVALIDE	20758	http://www.askapatient.com/viewrating.asp?drug=20758&name=AVALIDE
+#AVANDIA	21071	http://www.askapatient.com/viewrating.asp?drug=21071&name=AVANDIA
+#AVAPRO	20757	http://www.askapatient.com/viewrating.asp?drug=20757&name=AVAPRO
+#AVELOX	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
 AVIANE-28	75796	http://www.askapatient.com/viewrating.asp?drug=75796&name=AVIANE%2D28
 AVINZA	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
 AVITA	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA

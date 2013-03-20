@@ -47,14 +47,17 @@ namespace :project do
   desc "get data from pages scrapped off everyday health"
   task :initalize_everydayhealth_table =>:environment do
     require 'open-uri'
+    require 'iconv'
+
     #inputdir=ENV["in"]
     druglist=ENV['druglist']
     reviews_folder=ENV['input_dir']
+    Dir.mkdir("everydayhealth_reviews") if !File.exists?("everydayhealth_reviews")
+    OUT=File.new("everydayhealth_reviews/all.merged.reviews","w+")
     File.open(druglist,"r") do |filereader|
       filereader.each do |line|
         drug=line.chomp
-        Dir.mkdir("everydayhealth_reviews")
-        OUT=File.new("everydayhealth_reviews/#{drug}.reviews","w+")
+
         puts drug
        # for each drug open its drug file
         drug_review=reviews_folder+"/#{drug}"
@@ -73,13 +76,72 @@ namespace :project do
         found2=(doc/"html body#htmBody div#Drugs.tools div div#container div#content div#template div#outer div#inner div#twocolumn.template div.col1 div#browsable.detail-browsable div div.tabbed div.tabbed-outer div.tabbed_skinny div.tabbed_skinny_content div.bvr-tab-container div#treatment_ratings.user_ratings div.pagination div.pagination_left").inner_html
         if found2=~/\((.*)? results found\)/
           source_reviews= $1.to_i
+         # get the drug name
+          drugname=""
+          condition=""
+
+          recommend=""
+          date=""
+          comments=""
+          if drug=~/(.*)?.page/
+            drugname=$1
+            puts drugname
+          end
+          # get the condition
+          doc.search("div#treatment_ratings.user_ratings div.hreview").each do |finder|
+            scores=""
+            conditionfinder=finder.search("span.rated.min-pad a")
+            conditionfinder.inner_html=~/for (.*)?\./
+            condition=$1
+
+            # get date
+            datefinder=finder.search("div.under_comment p.min-pad cite")
+            unformatteddate=$1 if datefinder.inner_html=~/\((.*)?\)/
+            unformatteddate=~/(\d+)\/(\d+)\/(\d+)/
+            month=$1
+            date=$2
+            year="20"+$3
+            date="#{year}-#{month}-#{date} 00:00:00"
+
+
+            #get the ratings
+            finder.search("table.rating-sideways span.value").each do |s|
+              scores << "\t#{s.inner_html}"
+            end
+
+            #get comments
+            comments=finder.search("div p:not(.min-pad)").inner_html.gsub(/<wbr \/>/,"")
+            if comments.empty?
+              puts "comments empty. trying to see if theres a link"
+              finder.search("div h3 a").each do |commentsfinder|
+              href= commentsfinder.attributes['href']
+              #puts commentsfinder.inner_html
+
+              if href
+              puts href
+              ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
+              doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
+            #  doc_comment = Hpricot(open("#{href}"))
+                (doc_comment/"meta").remove
+              comments=doc_comment.inner_html.gsub(/^\n/,"").gsub(/<wbr \/>/,"")
+                puts comments
+                sleep(10.seconds)
+              end
+                end
+            end
+
+            # get recommended
+           # recommend=finder.search("div p.rating-helpfulness").inner_html
+            puts "#{drugname}\t#{condition}\t#{date}\t#{scores}\t#{comments}\n"
+            OUT.write("#{drugname}\t#{condition}\t#{date}\t#{scores}\t#{comments}\n")
+          end
         end
 
-        if existing=Everydayhealth.find_by_name("#{drug}")
-          existing.update_attributes(:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
-        else
-          Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
-        end
+        #if existing=Everydayhealth.find_by_name("#{drug}")
+        #  existing.update_attributes(:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+        #else
+        #  Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
+        #end
 
       end
       end
@@ -182,11 +244,11 @@ namespace :project do
               OUT.write("#{filename}\t")
               parse_page(doc2)
             end
-            sleeptime=rand(10)+rand(15)
+            sleeptime=8+rand(5)
             sleep(sleeptime.minutes)
           end
         end
-        sleeptime=7+rand(20)
+        sleeptime=5+rand(17)
         sleep(sleeptime.minutes)
         OUT.close
       end
