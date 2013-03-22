@@ -110,40 +110,40 @@
 #AVANDIA	21071	http://www.askapatient.com/viewrating.asp?drug=21071&name=AVANDIA
 #AVAPRO	20757	http://www.askapatient.com/viewrating.asp?drug=20757&name=AVAPRO
 #AVELOX	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
-AVIANE-28	75796	http://www.askapatient.com/viewrating.asp?drug=75796&name=AVIANE%2D28
-AVINZA	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
-AVITA	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA
-AVODART	21319	http://www.askapatient.com/viewrating.asp?drug=21319&name=AVODART
-AVONEX	103628	http://www.askapatient.com/viewrating.asp?drug=103628&name=AVONEX
-AXERT	21001	http://www.askapatient.com/viewrating.asp?drug=21001&name=AXERT
-AXID	19508	http://www.askapatient.com/viewrating.asp?drug=19508&name=AXID
-AYGESTIN	18405	http://www.askapatient.com/viewrating.asp?drug=18405&name=AYGESTIN
-AZATHIOPRINE	74069	http://www.askapatient.com/viewrating.asp?drug=74069&name=AZATHIOPRINE
-AZELEX	20428	http://www.askapatient.com/viewrating.asp?drug=20428&name=AZELEX
-AZILECT	21641	http://www.askapatient.com/viewrating.asp?drug=21641&name=AZILECT
-AZITHROMYCIN	65246	http://www.askapatient.com/viewrating.asp?drug=65246&name=AZITHROMYCIN
-AZMACORT	18117	http://www.askapatient.com/viewrating.asp?drug=18117&name=AZMACORT
-AZOPT	20816	http://www.askapatient.com/viewrating.asp?drug=20816&name=AZOPT
-AZOR	22100	http://www.askapatient.com/viewrating.asp?drug=22100&name=AZOR
-AZULFIDINE	7073	http://www.askapatient.com/viewrating.asp?drug=7073&name=AZULFIDINE
-BACLOFEN	72234	http://www.askapatient.com/viewrating.asp?drug=72234&name=BACLOFEN
-BACTRIM	17377	http://www.askapatient.com/viewrating.asp?drug=17377&name=BACTRIM
-BACTRIM PEDIATRIC	17560	http://www.askapatient.com/viewrating.asp?drug=17560&name=BACTRIM+PEDIATRIC
-BACTROBAN	50591	http://www.askapatient.com/viewrating.asp?drug=50591&name=BACTROBAN
-BAYCOL	20740	http://www.askapatient.com/viewrating.asp?drug=20740&name=BAYCOL
-BECONASE	18584	http://www.askapatient.com/viewrating.asp?drug=18584&name=BECONASE
-BECONASE AQ	19389	http://www.askapatient.com/viewrating.asp?drug=19389&name=BECONASE+AQ
-BENADRYL	6146	http://www.askapatient.com/viewrating.asp?drug=6146&name=BENADRYL
-BENADRYL PRESERVATIVE FREE	9486	http://www.askapatient.com/viewrating.asp?drug=9486&name=BENADRYL+PRESERVATIVE+FREE
-BENAZEPRIL HYDROCHLORIDE AND HYDROCHLOROTHIAZIDE	76612	http://www.askapatient.com/viewrating.asp?drug=76612&name=BENAZEPRIL+HYDROCHLORIDE+AND+HYDROCHLOROTHIAZIDE
-BENICAR	21286	http://www.askapatient.com/viewrating.asp?drug=21286&name=BENICAR
-BENICAR HCT	21532	http://www.askapatient.com/viewrating.asp?drug=21532&name=BENICAR+HCT
-BENLYSTA	125370	http://www.askapatient.com/viewrating.asp?drug=125370&name=BENLYSTA
-BENTYL	7409	http://www.askapatient.com/viewrating.asp?drug=7409&name=BENTYL
-BENZACLIN	50756	http://www.askapatient.com/viewrating.asp?drug=50756&name=BENZACLIN
-BENZAMYCIN	50557	http://www.askapatient.com/viewrating.asp?drug=50557&name=BENZAMYCIN
-BENZAMYCIN PAK	50769	http://www.askapatient.com/viewrating.asp?drug=50769&name=BENZAMYCIN+PAK
-BENZONATATE	81297	http://www.askapatient.com/viewrating.asp?drug=81297&name=BENZONATATE
+#AVIANE-28	75796	http://www.askapatient.com/viewrating.asp?drug=75796&name=AVIANE%2D28
+#AVINZA	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
+#AVITA	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA
+#AVODART	21319	http://www.askapatient.com/viewrating.asp?drug=21319&name=AVODART
+#AVONEX	103628	http://www.askapatient.com/viewrating.asp?drug=103628&name=AVONEX
+#AXERT	21001	http://www.askapatient.com/viewrating.asp?drug=21001&name=AXERT
+#AXID	19508	http://www.askapatient.com/viewrating.asp?drug=19508&name=AXID
+#AYGESTIN	18405	http://www.askapatient.com/viewrating.asp?drug=18405&name=AYGESTIN
+#AZATHIOPRINE	74069	http://www.askapatient.com/viewrating.asp?drug=74069&name=AZATHIOPRINE
+#AZELEX	20428	http://www.askapatient.com/viewrating.asp?drug=20428&name=AZELEX
+#AZILECT	21641	http://www.askapatient.com/viewrating.asp?drug=21641&name=AZILECT
+#AZITHROMYCIN	65246	http://www.askapatient.com/viewrating.asp?drug=65246&name=AZITHROMYCIN
+#AZMACORT	18117	http://www.askapatient.com/viewrating.asp?drug=18117&name=AZMACORT
+#AZOPT	20816	http://www.askapatient.com/viewrating.asp?drug=20816&name=AZOPT
+#AZOR	22100	http://www.askapatient.com/viewrating.asp?drug=22100&name=AZOR
+#AZULFIDINE	7073	http://www.askapatient.com/viewrating.asp?drug=7073&name=AZULFIDINE
+#BACLOFEN	72234	http://www.askapatient.com/viewrating.asp?drug=72234&name=BACLOFEN
+#BACTRIM	17377	http://www.askapatient.com/viewrating.asp?drug=17377&name=BACTRIM
+#BACTRIM PEDIATRIC	17560	http://www.askapatient.com/viewrating.asp?drug=17560&name=BACTRIM+PEDIATRIC
+#BACTROBAN	50591	http://www.askapatient.com/viewrating.asp?drug=50591&name=BACTROBAN
+#BAYCOL	20740	http://www.askapatient.com/viewrating.asp?drug=20740&name=BAYCOL
+#BECONASE	18584	http://www.askapatient.com/viewrating.asp?drug=18584&name=BECONASE
+#BECONASE AQ	19389	http://www.askapatient.com/viewrating.asp?drug=19389&name=BECONASE+AQ
+#BENADRYL	6146	http://www.askapatient.com/viewrating.asp?drug=6146&name=BENADRYL
+#BENADRYL PRESERVATIVE FREE	9486	http://www.askapatient.com/viewrating.asp?drug=9486&name=BENADRYL+PRESERVATIVE+FREE
+#BENAZEPRIL HYDROCHLORIDE AND HYDROCHLOROTHIAZIDE	76612	http://www.askapatient.com/viewrating.asp?drug=76612&name=BENAZEPRIL+HYDROCHLORIDE+AND+HYDROCHLOROTHIAZIDE
+#BENICAR	21286	http://www.askapatient.com/viewrating.asp?drug=21286&name=BENICAR
+#BENICAR HCT	21532	http://www.askapatient.com/viewrating.asp?drug=21532&name=BENICAR+HCT
+#BENLYSTA	125370	http://www.askapatient.com/viewrating.asp?drug=125370&name=BENLYSTA
+#BENTYL	7409	http://www.askapatient.com/viewrating.asp?drug=7409&name=BENTYL
+#BENZACLIN	50756	http://www.askapatient.com/viewrating.asp?drug=50756&name=BENZACLIN
+#BENZAMYCIN	50557	http://www.askapatient.com/viewrating.asp?drug=50557&name=BENZAMYCIN
+#BENZAMYCIN PAK	50769	http://www.askapatient.com/viewrating.asp?drug=50769&name=BENZAMYCIN+PAK
+#BENZONATATE	81297	http://www.askapatient.com/viewrating.asp?drug=81297&name=BENZONATATE
 BETAGAN	19219	http://www.askapatient.com/viewrating.asp?drug=19219&name=BETAGAN
 BETAPACE	19865	http://www.askapatient.com/viewrating.asp?drug=19865&name=BETAPACE
 BIAXIN	50662	http://www.askapatient.com/viewrating.asp?drug=50662&name=BIAXIN

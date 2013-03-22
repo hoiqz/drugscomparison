@@ -6,14 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\list_of_all_drugs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/AZOPT_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/AZOPT_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/ASTELIN_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/ASTELIN_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1" afterPath="$PROJECT_DIR$/test1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="convert2seed.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="convert2seed.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convert2seed.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="63" selection-start="2791" selection-end="2791" vertical-scroll-proportion="-2.6016948">
+            <state line="180" column="91" selection-start="5726" selection-end="5726" vertical-scroll-proportion="-38.56">
               <folding />
             </state>
           </provider>
@@ -44,25 +45,25 @@
       <file leaf-file-name="seed_data.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="261" column="95" selection-start="10329" selection-end="10329" vertical-scroll-proportion="-15.44">
+            <state line="289" column="10" selection-start="11072" selection-end="11126" vertical-scroll-proportion="-8.64">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="review.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+      <file leaf-file-name="_infographs.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="223" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+            <state line="51" column="19" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.94227505">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="63" selection-start="882" selection-end="888" vertical-scroll-proportion="0.0">
+            <state line="6" column="104" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +72,7 @@
       <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1960" selection-end="1960" vertical-scroll-proportion="-34.0">
+            <state line="284" column="112" selection-start="10914" selection-end="10914" vertical-scroll-proportion="-182.92">
               <folding />
             </state>
           </provider>
@@ -80,7 +81,7 @@
       <file leaf-file-name="druginfographs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/druginfographs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="48" selection-start="1637" selection-end="6016" vertical-scroll-proportion="0.0">
+            <state line="136" column="101" selection-start="5039" selection-end="5123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,15 +111,15 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/convert2seed.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/druginfographs_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130318022732_create_everydayhealths.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130318065826_add_source_to_review_table.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-        <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
         <option value="$PROJECT_DIR$/app/models/review.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
+        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+        <option value="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
       </list>
     </option>
   </component>
@@ -887,7 +888,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1278" height="776" extended-state="7" />
+    <frame x="-4" y="-4" width="1278" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -963,34 +964,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert2tags.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="62" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130304080608_create_webmds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="84" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19572368">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130318022732_create_everydayhealths.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="99" selection-start="258" selection-end="258" vertical-scroll-proportion="0.33552632">
@@ -1040,37 +1013,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
+    <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1960" selection-end="1960" vertical-scroll-proportion="-34.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/druginfographs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="48" selection-start="1637" selection-end="6016" vertical-scroll-proportion="0.0">
+        <state line="284" column="112" selection-start="10914" selection-end="10914" vertical-scroll-proportion="-182.92">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="95" selection-start="10329" selection-end="10329" vertical-scroll-proportion="-15.44">
+        <state line="289" column="10" selection-start="11072" selection-end="11126" vertical-scroll-proportion="-8.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="63" selection-start="882" selection-end="888" vertical-scroll-proportion="0.62857145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/review.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="223" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="1" column="223" selection-start="257" selection-end="257" vertical-scroll-proportion="0.028571429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="104" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/druginfographs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="101" selection-start="5039" selection-end="5123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convert2seed.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="63" selection-start="2791" selection-end="2791" vertical-scroll-proportion="-2.6016948">
+        <state line="180" column="91" selection-start="5726" selection-end="5726" vertical-scroll-proportion="-38.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="19" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.94227505">
           <folding />
         </state>
       </provider>

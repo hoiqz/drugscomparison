@@ -285,13 +285,18 @@ namespace :project do
   task :initDruginfographs =>:environment do
     drugs=Drug.all
     drugs.map do |drug|
+      #if drug.id <74
+      #              next
+      #end
       attributehash=get_infograph_attributes(drug.brand_name)
       druginfograph = Druginfograph.new(attributehash)
       if druginfograph.save
+        puts "#{druginfograph} saved"
         next
       else
         druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
         druginfograph.update_attributes(attributehash)
+        puts "#{druginfograph} updated"
       end
     end
   end
@@ -432,7 +437,9 @@ namespace :project do
     score4=query_record.where("satisfactory=?",4).count
     score5=query_record.where("satisfactory=?",5).count
     sum=Float(query_record.count)
+
     weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+    puts "#{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
   end
 
   def get_top_used_words(drug)

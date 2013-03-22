@@ -53,9 +53,14 @@ namespace :project do
     druglist=ENV['druglist']
     reviews_folder=ENV['input_dir']
     Dir.mkdir("everydayhealth_reviews") if !File.exists?("everydayhealth_reviews")
-    OUT=File.new("everydayhealth_reviews/all.merged.reviews","w+")
+    Dir.mkdir("../everydayhealth/reviews/done") unless Dir.exist?("../everydayhealth/reviews/done")
+    OUT=File.new("everydayhealth_reviews/all.merged.reviews","a+")
     File.open(druglist,"r") do |filereader|
       filereader.each do |line|
+        if line=~/^#/
+          puts "skipping #{line} with #"
+          next
+        end
         drug=line.chomp
 
         puts drug
@@ -79,7 +84,7 @@ namespace :project do
          # get the drug name
           drugname=""
           condition=""
-
+          address="-"
           recommend=""
           date=""
           comments=""
@@ -119,13 +124,14 @@ namespace :project do
 
               if href
               puts href
+              address=href
               ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
               doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
             #  doc_comment = Hpricot(open("#{href}"))
                 (doc_comment/"meta").remove
               comments=doc_comment.inner_html.gsub(/^\n/,"").gsub(/<wbr \/>/,"")
                 puts comments
-                sleep(10.seconds)
+                sleep(15.seconds)
               end
                 end
             end
@@ -133,7 +139,8 @@ namespace :project do
             # get recommended
            # recommend=finder.search("div p.rating-helpfulness").inner_html
             puts "#{drugname}\t#{condition}\t#{date}\t#{scores}\t#{comments}\n"
-            OUT.write("#{drugname}\t#{condition}\t#{date}\t#{scores}\t#{comments}\n")
+            OUT.write("#{drugname}\t#{condition}\t#{date}\t#{scores}\t#{comments}\t#{address}\n")
+
           end
         end
 
@@ -142,7 +149,7 @@ namespace :project do
         #else
         #  Everydayhealth.create(:name=>"#{drug}",:latest_reviews=> source_reviews, :current_reviews=>source_reviews)
         #end
-
+        File.rename("#{reviews_folder}/#{drug}","../everydayhealth/reviews/done/#{drug}")
       end
       end
 =begin
@@ -255,6 +262,41 @@ namespace :project do
     end
 
   end
+
+
+  #########################################
+  #rake in=inputfile project:matchdrugtowebmd
+  #########################################
+  desc "get the list of drugs in webmb and try to match a the input file drug to it."
+  task :matchdrugtowebmd =>:environment do
+    input=ENV['in']
+    OUT=File.new("matchings","w+")
+    File.open(input,"r") do |filereader|
+      filereader.each do |line|
+        indrug=line.chomp.downcase
+        #see if any exact match
+        exactmatch=Drug.find_all_by_brand_name(indrug)
+        exactmatchstr=""
+        exactmatch.each do |exact|
+          exactmatchstr << " #{exact.brand_name}"
+        end
+        if exactmatch.blank?
+          indrugsplit=indrug.split("-")
+          closematch=Drug.where("brand_name LIKE ? OR brand_name LIKE ?","%#{indrugsplit[0]}%","%#{indrugsplit[1]}%")
+          closematchstr=""
+          closematch.each do |match|
+               closematchstr << " #{match.brand_name}"
+            end
+          puts "#{indrug}\t#{closematchstr}\n}"
+        else
+          puts "#{indrug}\t#{exactmatchstr}\n}"
+        end
+
+      end
+    end
+
+  end
+
 
   def parse_page(doc)
     abort("no table found. You make have overloaded") if  doc.search("html body table.ratingsTable").nil?
