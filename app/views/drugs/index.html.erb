@@ -1,33 +1,45 @@
-<div class="box">
-  <span class="miniheader">Most Common</span>
-  <article class="articlecontent">
-    <h1>Most common drugs</h1>
-  </article>
-</div>
-
-<div class="box">
-  <span class="miniheader">All Drugs</span>
+<div class="box span7">
+  <span class="miniheader">Drugs</span>
   <article class="articlecontent">
     <h1>Drugs A-Z</h1>
+    <div class="pagination pagination-mini pagination-left">
+      <ul>
+        <% @alphabetical.each do |letter| %>
+            <%= content_tag :li, link_to(letter, drugs_pagination_path(:letter=>letter.downcase)) %>
+        <% end %>
+      </ul>
+    </div>
+
     <table class="table table-striped">
       <tr>
         <th>Brand name</th>
-        <th>Side effect</th>
-        <th>Manufacturer</th>
         <th></th>
-
       </tr>
-
+      <% if @drugs %>
       <% @drugs.each do |drug| %>
           <tr>
             <td><%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= pluralize(drug.reviews.count, "Review")%>)</td>
-            <td><%= drug.side_effect %></td>
-            <td><%= drug.manufacturer %></td>
             <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
 
           </tr>
       <% end %>
+          <%end%>
     </table>
+
+  </article>
+</div>
+
+<div class="box span2">
+  <span class="miniheader">Common Drugs</span>
+  <article class="articlecontent">
+
+           <ol>
+      <% @commondrugs.each do |drug| %>
+             <li>
+            <%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= drug.reviews.count%>)
+             </li>
+      <% end %>
+           </ol>
   </article>
 </div>
 

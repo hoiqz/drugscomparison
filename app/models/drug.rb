@@ -16,6 +16,11 @@ class Drug < ActiveRecord::Base
 
   validates :brand_name, :presence => true#, :uniqueness => true
 
+  scope :by_letter,
+        lambda { |letter| where("brand_name LIKE ?","#{letter}%")}
+
+  scope :by_non_letter, where("brand_name LIKE ?","1").where("brand_name LIKE ?","2").where("brand_name LIKE ?","3").where("brand_name LIKE ?","4").where("brand_name LIKE ?","5").where("brand_name LIKE ?","6").where("brand_name LIKE ?","7").where("brand_name LIKE ?","8").where("brand_name LIKE ?","9").where("brand_name LIKE ?","0")
+
   def reject_review(attributed)
     if attributed['comments'].blank? or attributed['effectiveness'].blank? or attributed['ease_of_use'].blank? or attributed['satisfactory'].blank?
       return true

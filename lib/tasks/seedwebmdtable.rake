@@ -298,6 +298,26 @@ namespace :project do
   end
 
 
+  #########################################
+  #rake project:generatemostcommon
+  #########################################
+  desc "get the list of drugs that are most common and put in in mostcommondrugs table."
+  task :generatemostcommon =>:environment do
+    Drug.all.each do |drug|
+      size=drug.reviews.count
+      if size >200
+        found=Mostcommondrug.find_by_drug_id(drug.id)
+      if found
+        found.update_attributes(:count=>size)
+      else
+        Mostcommondrug.create(:brand_name=>drug.brand_name, :count=>size,:drug_id=>drug.id)
+      end
+      end
+
+    end
+  end
+
+
   def parse_page(doc)
     abort("no table found. You make have overloaded") if  doc.search("html body table.ratingsTable").nil?
     doc.search("html body table.ratingsTable").each do |tablerow|

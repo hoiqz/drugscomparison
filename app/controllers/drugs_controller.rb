@@ -1,6 +1,6 @@
 class DrugsController < ApplicationController
   before_filter :get_average, :only=>:show
-
+  layout "drug_index_layout"
   def get_average
     @drug = Drug.find(params[:id])
     @avg_effectivness=@drug.avg_eff
@@ -10,7 +10,21 @@ class DrugsController < ApplicationController
   # GET /drugs
   # GET /drugs.json
   def index
-    @drugs = Drug.all
+    @alphabetical=("A".."Z").to_a
+    @alphabetical<<"#"
+    if params[:letter]
+      params[:letter]=="#" ?  @drugs=Drug.by_non_letter(params[:letter]) : @drugs=Drug.by_letter(params[:letter])
+      #@drugs=Drug.by_letter(params[:letter]) if params[:letter]=!/#/
+      #@drugs=Drug.by_non_letter(params[:letter]) if params[:letter] =~/#/
+    end
+    @drugsarr = Array.new
+    Mostcommondrug.scoped.each do |common|
+      @drugsarr<<common.drug_id
+      if @drugsarr.size >9
+        break
+      end
+    end
+    @commondrugs=Drug.find(@drugsarr)
 
     respond_to do |format|
       format.html # index.html.erb

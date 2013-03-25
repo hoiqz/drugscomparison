@@ -144,20 +144,20 @@
 #BENZAMYCIN	50557	http://www.askapatient.com/viewrating.asp?drug=50557&name=BENZAMYCIN
 #BENZAMYCIN PAK	50769	http://www.askapatient.com/viewrating.asp?drug=50769&name=BENZAMYCIN+PAK
 #BENZONATATE	81297	http://www.askapatient.com/viewrating.asp?drug=81297&name=BENZONATATE
-BETAGAN	19219	http://www.askapatient.com/viewrating.asp?drug=19219&name=BETAGAN
-BETAPACE	19865	http://www.askapatient.com/viewrating.asp?drug=19865&name=BETAPACE
-BIAXIN	50662	http://www.askapatient.com/viewrating.asp?drug=50662&name=BIAXIN
-BIAXIN XL	50775	http://www.askapatient.com/viewrating.asp?drug=50775&name=BIAXIN+XL
-BICILLIN L-A	50141	http://www.askapatient.com/viewrating.asp?drug=50141&name=BICILLIN+L%2DA
-BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE	75469	http://www.askapatient.com/viewrating.asp?drug=75469&name=BISOPROLOL+FUMARATE+AND+HYDROCHLOROTHIAZIDE
-BLOCADREN	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN
-BONIVA	21455	http://www.askapatient.com/viewrating.asp?drug=21455&name=BONIVA
-BONTRIL	88021	http://www.askapatient.com/viewrating.asp?drug=88021&name=BONTRIL
-BONTRIL PDM	85272	http://www.askapatient.com/viewrating.asp?drug=85272&name=BONTRIL+PDM
-BOTOX COSMETIC	10300	http://www.askapatient.com/viewrating.asp?drug=10300&name=BOTOX+COSMETIC
-BRETHINE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
-BREVICON 28-DAY	17743	http://www.askapatient.com/viewrating.asp?drug=17743&name=BREVICON+28%2DDAY
-BRILINTA	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
+#BETAGAN	19219	http://www.askapatient.com/viewrating.asp?drug=19219&name=BETAGAN
+#BETAPACE	19865	http://www.askapatient.com/viewrating.asp?drug=19865&name=BETAPACE
+#BIAXIN	50662	http://www.askapatient.com/viewrating.asp?drug=50662&name=BIAXIN
+#BIAXIN XL	50775	http://www.askapatient.com/viewrating.asp?drug=50775&name=BIAXIN+XL
+#BICILLIN L-A	50141	http://www.askapatient.com/viewrating.asp?drug=50141&name=BICILLIN+L%2DA
+#BISOPROLOL FUMARATE AND HYDROCHLOROTHIAZIDE	75469	http://www.askapatient.com/viewrating.asp?drug=75469&name=BISOPROLOL+FUMARATE+AND+HYDROCHLOROTHIAZIDE
+#BLOCADREN	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN
+#BONIVA	21455	http://www.askapatient.com/viewrating.asp?drug=21455&name=BONIVA
+#BONTRIL	88021	http://www.askapatient.com/viewrating.asp?drug=88021&name=BONTRIL
+#BONTRIL PDM	85272	http://www.askapatient.com/viewrating.asp?drug=85272&name=BONTRIL+PDM
+#BOTOX COSMETIC	10300	http://www.askapatient.com/viewrating.asp?drug=10300&name=BOTOX+COSMETIC
+#BRETHINE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
+#BREVICON 28-DAY	17743	http://www.askapatient.com/viewrating.asp?drug=17743&name=BREVICON+28%2DDAY
+#BRILINTA	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
 BUPRENEX	18401	http://www.askapatient.com/viewrating.asp?drug=18401&name=BUPRENEX
 BUPRENORPHINE HCL	74137	http://www.askapatient.com/viewrating.asp?drug=74137&name=BUPRENORPHINE+HCL
 BUPROPION HCL	75310	http://www.askapatient.com/viewrating.asp?drug=75310&name=BUPROPION+HCL
