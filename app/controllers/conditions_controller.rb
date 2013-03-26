@@ -233,7 +233,7 @@ class ConditionsController < ApplicationController
       when "show"
         "condition_layout"
       else
-        "application"
+        "drug_index_layout"
     end
   end
 

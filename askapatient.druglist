@@ -158,33 +158,33 @@
 #BRETHINE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
 #BREVICON 28-DAY	17743	http://www.askapatient.com/viewrating.asp?drug=17743&name=BREVICON+28%2DDAY
 #BRILINTA	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
-BUPRENEX	18401	http://www.askapatient.com/viewrating.asp?drug=18401&name=BUPRENEX
-BUPRENORPHINE HCL	74137	http://www.askapatient.com/viewrating.asp?drug=74137&name=BUPRENORPHINE+HCL
-BUPROPION HCL	75310	http://www.askapatient.com/viewrating.asp?drug=75310&name=BUPROPION+HCL
-BUPROPION HYDROCHLORIDE	77285	http://www.askapatient.com/viewrating.asp?drug=77285&name=BUPROPION+HYDROCHLORIDE
-BUSPAR	18731	http://www.askapatient.com/viewrating.asp?drug=18731&name=BUSPAR
-BUTALBITAL, ACETAMINOPHEN AND CAFFEINE	40261	http://www.askapatient.com/viewrating.asp?drug=40261&name=BUTALBITAL%2C+ACETAMINOPHEN+AND+CAFFEINE
-BUTALBITAL, ASPIRIN AND CAFFEINE	86162	http://www.askapatient.com/viewrating.asp?drug=86162&name=BUTALBITAL%2C+ASPIRIN+AND+CAFFEINE
-BUTRANS	21306	http://www.askapatient.com/viewrating.asp?drug=21306&name=BUTRANS
-BYDUREON	22200	http://www.askapatient.com/viewrating.asp?drug=22200&name=BYDUREON
-BYETTA	21773	http://www.askapatient.com/viewrating.asp?drug=21773&name=BYETTA
-BYSTOLIC	21742	http://www.askapatient.com/viewrating.asp?drug=21742&name=BYSTOLIC
-CADUET	21540	http://www.askapatient.com/viewrating.asp?drug=21540&name=CADUET
-CAFERGOT	9000	http://www.askapatient.com/viewrating.asp?drug=9000&name=CAFERGOT
-CALAN	18817	http://www.askapatient.com/viewrating.asp?drug=18817&name=CALAN
-CALCITONIN-SALMON	73690	http://www.askapatient.com/viewrating.asp?drug=73690&name=CALCITONIN%2DSALMON
-CAMBIA	22165	http://www.askapatient.com/viewrating.asp?drug=22165&name=CAMBIA
-CAMILA	76177	http://www.askapatient.com/viewrating.asp?drug=76177&name=CAMILA
-CAMPRAL	21431	http://www.askapatient.com/viewrating.asp?drug=21431&name=CAMPRAL
-CANASA	21252	http://www.askapatient.com/viewrating.asp?drug=21252&name=CANASA
-CAPTOPRIL	74322	http://www.askapatient.com/viewrating.asp?drug=74322&name=CAPTOPRIL
-CARAFATE	18333	http://www.askapatient.com/viewrating.asp?drug=18333&name=CARAFATE
-CARBATROL	20712	http://www.askapatient.com/viewrating.asp?drug=20712&name=CARBATROL
-CARDIZEM	18602	http://www.askapatient.com/viewrating.asp?drug=18602&name=CARDIZEM
-CARDIZEM CD	20062	http://www.askapatient.com/viewrating.asp?drug=20062&name=CARDIZEM+CD
-CARDURA	19668	http://www.askapatient.com/viewrating.asp?drug=19668&name=CARDURA
-CARISOPRODOL	40124	http://www.askapatient.com/viewrating.asp?drug=40124&name=CARISOPRODOL
-CARTIA XT	74752	http://www.askapatient.com/viewrating.asp?drug=74752&name=CARTIA+XT
+#BUPRENEX	18401	http://www.askapatient.com/viewrating.asp?drug=18401&name=BUPRENEX
+#BUPRENORPHINE HCL	74137	http://www.askapatient.com/viewrating.asp?drug=74137&name=BUPRENORPHINE+HCL
+#BUPROPION HCL	75310	http://www.askapatient.com/viewrating.asp?drug=75310&name=BUPROPION+HCL
+#BUPROPION HYDROCHLORIDE	77285	http://www.askapatient.com/viewrating.asp?drug=77285&name=BUPROPION+HYDROCHLORIDE
+#BUSPAR	18731	http://www.askapatient.com/viewrating.asp?drug=18731&name=BUSPAR
+#BUTALBITAL, ACETAMINOPHEN AND CAFFEINE	40261	http://www.askapatient.com/viewrating.asp?drug=40261&name=BUTALBITAL%2C+ACETAMINOPHEN+AND+CAFFEINE
+#BUTALBITAL, ASPIRIN AND CAFFEINE	86162	http://www.askapatient.com/viewrating.asp?drug=86162&name=BUTALBITAL%2C+ASPIRIN+AND+CAFFEINE
+#BUTRANS	21306	http://www.askapatient.com/viewrating.asp?drug=21306&name=BUTRANS
+#BYDUREON	22200	http://www.askapatient.com/viewrating.asp?drug=22200&name=BYDUREON
+#BYETTA	21773	http://www.askapatient.com/viewrating.asp?drug=21773&name=BYETTA
+#BYSTOLIC	21742	http://www.askapatient.com/viewrating.asp?drug=21742&name=BYSTOLIC
+#CADUET	21540	http://www.askapatient.com/viewrating.asp?drug=21540&name=CADUET
+#CAFERGOT	9000	http://www.askapatient.com/viewrating.asp?drug=9000&name=CAFERGOT
+#CALAN	18817	http://www.askapatient.com/viewrating.asp?drug=18817&name=CALAN
+#CALCITONIN-SALMON	73690	http://www.askapatient.com/viewrating.asp?drug=73690&name=CALCITONIN%2DSALMON
+#CAMBIA	22165	http://www.askapatient.com/viewrating.asp?drug=22165&name=CAMBIA
+#CAMILA	76177	http://www.askapatient.com/viewrating.asp?drug=76177&name=CAMILA
+#CAMPRAL	21431	http://www.askapatient.com/viewrating.asp?drug=21431&name=CAMPRAL
+#CANASA	21252	http://www.askapatient.com/viewrating.asp?drug=21252&name=CANASA
+#CAPTOPRIL	74322	http://www.askapatient.com/viewrating.asp?drug=74322&name=CAPTOPRIL
+#CARAFATE	18333	http://www.askapatient.com/viewrating.asp?drug=18333&name=CARAFATE
+#CARBATROL	20712	http://www.askapatient.com/viewrating.asp?drug=20712&name=CARBATROL
+#CARDIZEM	18602	http://www.askapatient.com/viewrating.asp?drug=18602&name=CARDIZEM
+#CARDIZEM CD	20062	http://www.askapatient.com/viewrating.asp?drug=20062&name=CARDIZEM+CD
+#CARDURA	19668	http://www.askapatient.com/viewrating.asp?drug=19668&name=CARDURA
+#CARISOPRODOL	40124	http://www.askapatient.com/viewrating.asp?drug=40124&name=CARISOPRODOL
+#CARTIA XT	74752	http://www.askapatient.com/viewrating.asp?drug=74752&name=CARTIA+XT
 CASODEX	20498	http://www.askapatient.com/viewrating.asp?drug=20498&name=CASODEX
 CATAFLAM	20142	http://www.askapatient.com/viewrating.asp?drug=20142&name=CATAFLAM
 CATAPRES	17407	http://www.askapatient.com/viewrating.asp?drug=17407&name=CATAPRES

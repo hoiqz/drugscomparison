@@ -1,4 +1,4 @@
-<div class="box span7">
+<div class="box span7 border-shadow">
   <span class="miniheader">Drugs</span>
   <article class="articlecontent">
     <h1>Drugs A-Z</h1>
@@ -13,7 +13,7 @@
     <table class="table table-striped">
       <tr>
         <th>Brand name</th>
-        <th></th>
+        <th>Action</th>
       </tr>
       <% if @drugs %>
       <% @drugs.each do |drug| %>
@@ -29,17 +29,15 @@
   </article>
 </div>
 
-<div class="box span2">
-  <span class="miniheader">Common Drugs</span>
-  <article class="articlecontent">
 
-           <ol>
-      <% @commondrugs.each do |drug| %>
-             <li>
-            <%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= drug.reviews.count%>)
-             </li>
-      <% end %>
-           </ol>
-  </article>
-</div>
-
+<div class="well span3 border-shadow">
+<ul class="nav nav-list">
+  <li class="nav-header">Commonly rated Drugs</li>
+  <li class="divider"></li>
+  <% @commondrugs.each do |drug| %>
+      <li>
+        <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
+      </li>
+  <% end %>
+</ul>
+   </div>

@@ -1,25 +1,20 @@
-<div class="box">
-  <span class="miniheader">Top Conditions</span>
-  <article class="articlecontent">
-    <h1>Most common conditions</h1>
-  </article>
-</div>
 
-<div class="box">
-  <span class="miniheader">List of all drugs</span>
+
+<div class="box span7">
+  <span class="miniheader">All Conditions</span>
   <article class="articlecontent">
     <h1>Condition list A-Z</h1>
     <table class="table table-striped">
       <tr>
         <th>Condition</th>
-        <th>Description</th>
+
         <th>Action</th>
       </tr>
 
       <% @conditions.each do |condition| %>
           <tr>
             <td><%= link_to condition.name, condition %></td>
-            <td><%= condition.information %></td>
+
             <td><%= link_to 'show', condition ,:class => "btn"%></td>
           </tr>
       <% end %>
@@ -27,5 +22,12 @@
   </article>
 </div>
 
-<h1></h1>
+<div class="well span3">
+  <ul class="nav nav-list">
+    <li class="nav-header">Top Conditions</li>
+    <li class="divider"></li>
+
+  </ul>
+</div>
+
 
