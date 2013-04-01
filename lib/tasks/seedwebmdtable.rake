@@ -101,13 +101,16 @@ namespace :project do
 
             # get date
             datefinder=finder.search("div.under_comment p.min-pad cite")
+            if datefinder.empty?
+              date="2000-01-01 00:00:00"
+            else
             unformatteddate=$1 if datefinder.inner_html=~/\((.*)?\)/
             unformatteddate=~/(\d+)\/(\d+)\/(\d+)/
             month=$1
             date=$2
             year="20"+$3
             date="#{year}-#{month}-#{date} 00:00:00"
-
+            end
 
             #get the ratings
             finder.search("table.rating-sideways span.value").each do |s|
@@ -128,10 +131,16 @@ namespace :project do
               ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
               doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
             #  doc_comment = Hpricot(open("#{href}"))
+              while doc_comment.nil?
+                sleeptime=90+rand(90)
+                sleep(sleeptime.seconds)
+                doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
+              end
                 (doc_comment/"meta").remove
               comments=doc_comment.inner_html.gsub(/^\n/,"").gsub(/<wbr \/>/,"")
                 puts comments
-                sleep(15.seconds)
+              sleeptime=rand(25)+rand(60)
+              sleep(sleeptime.seconds)
               end
                 end
             end
@@ -265,7 +274,7 @@ namespace :project do
 
 
   #########################################
-  #rake in=inputfile project:matchdrugtowebmd
+  #rake in=../everydayhealth/druglist.tsv.original project:matchdrugtowebmd
   #########################################
   desc "get the list of drugs in webmb and try to match a the input file drug to it."
   task :matchdrugtowebmd =>:environment do
@@ -277,21 +286,29 @@ namespace :project do
         #see if any exact match
         exactmatch=Drug.find_all_by_brand_name(indrug)
         exactmatchstr=""
+        byspacematchstr=""
+        closematchstr=""
         exactmatch.each do |exact|
           exactmatchstr << " #{exact.brand_name}"
         end
         if exactmatch.blank?
           indrugsplit=indrug.split("-")
-          closematch=Drug.where("brand_name LIKE ? OR brand_name LIKE ?","%#{indrugsplit[0]}%","%#{indrugsplit[1]}%")
+          searchbyspace=indrugsplit.join(" ")
+          byspacematch=Drug.where("brand_name LIKE ?","%#{searchbyspace}%")
+          byspacematch.each do |match|
+            byspacematchstr << " #{match.brand_name}"
+          end
+          #closematch=Drug.where("brand_name LIKE ? OR brand_name LIKE ?","%#{indrugsplit[0]}%","%#{indrugsplit[1]}%")
+          if indrugsplit[0].length > 4
+          closematch=Drug.where("brand_name LIKE ?","%#{indrugsplit[0]}%")
           closematchstr=""
           closematch.each do |match|
                closematchstr << " #{match.brand_name}"
-            end
-          puts "#{indrug}\t#{closematchstr}\n}"
-        else
-          puts "#{indrug}\t#{exactmatchstr}\n}"
-        end
+          end
+          end
 
+        end
+        puts "#{indrug}\t#{exactmatchstr}\t#{byspacematchstr}\t#{closematchstr}\n"
       end
     end
 

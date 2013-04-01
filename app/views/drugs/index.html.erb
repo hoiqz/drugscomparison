@@ -18,7 +18,7 @@
       <% if @drugs %>
       <% @drugs.each do |drug| %>
           <tr>
-            <td><%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= pluralize(drug.reviews.count, "Review")%>)</td>
+            <td><%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= pluralize(drug.reviews_count, "Review")%>)</td>
             <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
 
           </tr>
