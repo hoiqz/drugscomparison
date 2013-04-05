@@ -6,11 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/DEPO-MEDROL_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/DEPO-MEDROL_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" afterPath="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="336" column="3" selection-start="12650" selection-end="12683" vertical-scroll-proportion="0.079896905">
+            <state line="336" column="3" selection-start="12650" selection-end="12683" vertical-scroll-proportion="-1.24">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130328091401_add_review_counter.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.11971831">
               <folding />
             </state>
           </provider>
@@ -59,7 +64,7 @@
       <file leaf-file-name="drug.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
+            <state line="2" column="113" selection-start="236" selection-end="252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +101,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20130403061150_add_column_to_drug_table.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
         <option value="$PROJECT_DIR$/app/models/drug.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+        <option value="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" />
       </list>
     </option>
   </component>
@@ -1081,13 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/review.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="29" selection-start="278" selection-end="292" vertical-scroll-proportion="0.055690072">
@@ -1104,21 +1102,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+        <state line="2" column="113" selection-start="236" selection-end="252" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="336" column="3" selection-start="12650" selection-end="12683" vertical-scroll-proportion="0.079896905">
+        <state line="336" column="3" selection-start="12650" selection-end="12683" vertical-scroll-proportion="-1.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.11971831">
           <folding />
         </state>
       </provider>

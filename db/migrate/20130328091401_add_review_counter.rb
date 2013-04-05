@@ -1,6 +1,6 @@
 class AddReviewCounter < ActiveRecord::Migration
   def up
-    add_column :drugs, :reviews_count,:integer,:default=>0
+    #add_column :drugs, :reviews_count,:integer,:default=>0
     Drug.reset_column_information
 
   end
