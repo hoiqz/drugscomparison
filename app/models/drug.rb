@@ -1,6 +1,6 @@
 class Drug < ActiveRecord::Base
   attr_accessible :drug_id, :brand_name, :dosage, :generic_name, :manufacturer, :precaution, :side_effect,
-                  :treatments_attributes, :reviews_attributes, :source_id, :conditions_attributes, :reviews_count
+                  :treatments_attributes, :reviews_attributes, :source_id, :conditions_attributes, :reviews_count,:other_names
 
   has_many :treatments ,
             #:foreign_key=>"condition_id",

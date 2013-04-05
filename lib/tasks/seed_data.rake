@@ -301,27 +301,6 @@ namespace :project do
     end
   end
 
-  ##############
-  ## NEW TASK
-  ##############
-  # usage rake project:initconditioninfographs
-  desc "task to initialize initconditioninfographs for all conditions in database"
-  task :initconditioninfographs =>:environment do
-    @conditions=Condition.all
-    @conditions.map do |condition|
-      @attributehash=get_infograph_attributes(condition)
-      @conditioninfograph = Conditioninfograph.new(@attributehash)
-      if @conditioninfograph.save
-        puts "#{condition} saved"
-        next
-
-      else
-        @conditioninfograph = Conditioninfograph.find_by_condition_id(condition.id)
-        @conditioninfograph.update_attributes(@attributehash)
-        puts "#{condition} updated"
-      end
-    end
-  end
 
   ########################
   # CLASS METHODS

@@ -132,14 +132,14 @@ namespace :project do
               doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
             #  doc_comment = Hpricot(open("#{href}"))
               while doc_comment.nil?
-                sleeptime=90+rand(90)
+                sleeptime=rand(120)+rand(150)
                 sleep(sleeptime.seconds)
                 doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
               end
                 (doc_comment/"meta").remove
               comments=doc_comment.inner_html.gsub(/^\n/,"").gsub(/<wbr \/>/,"")
                 puts comments
-              sleeptime=rand(25)+rand(60)
+              sleeptime=rand(225)+rand(160)
               sleep(sleeptime.seconds)
               end
                 end
@@ -260,12 +260,12 @@ namespace :project do
               OUT.write("#{filename}\t")
               parse_page(doc2)
             end
-            sleeptime=8+rand(5)
-            sleep(sleeptime.minutes)
+            sleeptime=rand(139)+rand(205)
+            sleep(sleeptime.seconds)
           end
         end
-        sleeptime=5+rand(17)
-        sleep(sleeptime.minutes)
+        sleeptime=rand(300)+rand(370)
+        sleep(sleeptime.seconds)
         OUT.close
       end
     end
@@ -324,16 +324,376 @@ namespace :project do
       size=drug.reviews.count
       if size >200
         found=Mostcommondrug.find_by_drug_id(drug.id)
-      if found
-        found.update_attributes(:count=>size)
-      else
-        Mostcommondrug.create(:brand_name=>drug.brand_name, :count=>size,:drug_id=>drug.id)
-      end
+        if found
+          found.update_attributes(:count=>size)
+        else
+          Mostcommondrug.create(:brand_name=>drug.brand_name, :count=>size,:drug_id=>drug.id)
+        end
       end
 
     end
   end
 
+  #########################################
+  #rake project:rename_and_getrepeats
+  #########################################
+  desc "get the list of drugs are not unique after removing the suffix. generates a tofix file consisting of all the duplicates to use
+with the next rake task:fix_other_records"
+  task :rename_and_getrepeats =>:environment do
+    h=Hash.new
+    OUT=File.new("tofix","w+")
+    Drug.all.each do |drug|
+      edited_drug=drug.brand_name.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+
+      if h.has_key?(edited_drug)
+        h[edited_drug]=h[edited_drug]+";"+drug.brand_name
+        puts "#{edited_drug} already exist. original name was #{h[edited_drug]}"
+        OUT.write(h[edited_drug]+"\n")
+      else
+        h[edited_drug]=drug.brand_name
+        end
+      drug.update_attributes(:brand_name => edited_drug)
+    end
+    puts "#{Drug.all.count} records reduced to #{h.size}"
+  end
+
+
+  #########################################
+  #rake project:fix_other_records
+  #########################################
+  desc "lots of steps to rename the drugs and fix the others tables."
+  task :fix_other_records =>:environment do
+    input=ENV['in']
+    toupdate=Array.new
+    File.open(input,"r") do |filereader|
+      filereader.each do |line|
+      next if line=~/^#/
+         drugs=Array.new
+         drugs=line.split(";")
+        retain=drugs.pop.chomp
+
+         newname=retain.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+         toupdate.push newname
+
+         retain_drug=Drug.where("other_names LIKE ?","%#{retain}%").first
+         drugs array now contains all the drugs to be destroyed
+         drugs.each do |drug|
+           puts "working on #{drug} now"
+           # change the reviews drugid to the merged drug id
+            oldrecord=Drug.where("other_names LIKE ?","%#{drug}%").first
+           found=oldrecord.reviews
+           unless (found.nil?)
+           found.each do |rev|
+             rev.update_attributes(:drug_id=>retain_drug.id)
+             #destroy the drug. conditions will get destroyed too.
+             #oldrecord.destroy
+           end
+           end
+           # remove the druginfograph entry
+           Druginfograph.find_by_brand_name(drug).destroy       if Druginfograph.find_by_brand_name(drug)
+
+         end
+         #update the other_names to include both
+         update_alias=line
+         #update the review counts
+         retain_drug.update_attributes(:other_names=>update_alias,:reviews_count=>retain_drug.reviews.count)
+
+       end
+    end
+       puts toupdate
+       toupdate.each do |entry|
+         Drug.find_all_by_brand_name(entry).each do |repeats|
+           if repeats.reviews.count < 1 && repeats.other_names !~ /;/
+              puts "entries to be deleted : #{repeats.other_names} #{repeats.id}"
+             repeats.destroy
+           else
+             puts "Not deleted: #{repeats.other_names} #{repeats.id}"
+           end
+         end
+       end
+
+    #update the name on Druginforgraphs
+    Druginfograph.all.each do |drug|
+    edited_drug=drug.brand_name.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+    drug.update_attributes(:brand_name=>edited_drug)
+    end
+      #after that run initdruginfographs for those
+      toupdate.each do |drug|
+        if Druginfograph.find_by_brand_name(drug)
+        attributehash=get_infograph_attributes(drug)
+        druginfograph = Druginfograph.find_by_brand_name(drug)
+        druginfograph.update_attributes(attributehash)
+        puts "#{druginfograph.brand_name} updated"
+          end
+      end
+
+  end
+
+
+
+  ##############
+  ## NEW TASK
+  ##############
+  # usage rake project:initconditioninfographs
+  desc "task to initialize initconditioninfographs for all conditions in database"
+  task :initconditioninfographs =>:environment do
+    @conditions=Condition.all
+    @conditions.map do |condition|
+      @attributehash=get_infograph_attributes(condition)
+      @conditioninfograph = Conditioninfograph.new(@attributehash)
+      if @conditioninfograph.save
+        puts "#{condition} saved"
+        next
+
+      else
+        @conditioninfograph = Conditioninfograph.find_by_condition_id(condition.id)
+        @conditioninfograph.update_attributes(@attributehash)
+        puts "#{condition} updated"
+      end
+    end
+  end
+
+  ########################
+  # CLASS METHODS
+  ########################
+
+  def escape_characters_in_string(string)
+    pattern = /(\'|\"|\*|\/|\-|\\|\#|\@|\$|\%|\&)/
+    string.gsub(pattern){|match|"\\"  + match} # <-- Trying to take the currently found match and add a \ before it I have no idea how to do that).
+  end
+
+  def urldecode(str)
+    # always  first replace the + with space . then do the urldecode method  if not the encoded "+" will be gone
+    str2=str.gsub(/\+/," ")
+    #puts "#{str2}"
+    str2.to_enum(:scan,  /%../i ).map {
+      matched=Regexp.last_match.to_s.upcase
+      pattern=matched
+      replace=@urltable["#{matched}"]
+      #puts replace
+      if replace
+        str2=str2.gsub(/#{Regexp.escape(pattern)}/,"#{replace}")
+        #  puts "check ->#{str2} pattern -> #{pattern}"
+      end
+    }
+    #print "#{str}=> #{str2}"
+    return str2
+  end
+
+  def generate_url(source,page_constant,target_review,total_rev,source_reviews)
+    total_reviews=total_rev+1
+    offset=source_reviews-total_reviews
+    pageoffset=(offset/page_constant).ceil
+    pageindex=((total_reviews-target_review)/page_constant).floor
+    pagelink=pageoffset+pageindex
+    #reviews_to_skip=total_reviews-target_review
+    #pages_to_skip=(reviews_to_skip/page_constant).floor
+    if source=='webmd'
+      page_to_link=pagelink        # webmd starts from zero page onwards!
+      return page_to_link
+    elsif source=='askapatient'
+
+    elsif source=='everydayhealth'
+    else
+    end
+  end
+
+  def get_infograph_attributes(drug) #drug is the brand_name not drug id
+    att_hash={}
+    att_hash[:brand_name]=drug
+    att_hash[:avg_sat_male]=get_satisfactory(drug,"Male")
+    att_hash[:avg_sat_female]=get_satisfactory(drug,"Female")
+    att_hash[:top_used_words]=get_top_used_words(drug)
+
+    total_reviewer_for_this= total_reviewers(drug).to_f
+    count_age_group1=get_user_age_group(drug,">55")
+    count_age_group2=get_user_age_group(drug,"<18")
+    count_age_group3=total_reviewer_for_this - count_age_group1 - count_age_group2
+    att_hash[:age_more_50]=(count_age_group1/total_reviewer_for_this) *100
+    att_hash[:age_less_18]= (count_age_group2/total_reviewer_for_this) *100
+    att_hash[:age_btw_18_50]= (count_age_group3/total_reviewer_for_this) *100
+
+    att_hash[:no_of_males] =(total_reviewers(drug,"Male") /total_reviewer_for_this)*100
+    att_hash[:no_of_females]=(total_reviewers(drug,"Female")/total_reviewer_for_this)*100
+
+    total_reviews_for_this= total_reviews(drug).to_f
+    eff_over_3=statistic_get_more_or_equal(drug,"effectiveness",3)
+    eff_less_3=statistic_get_less(drug,"effectiveness",3)
+    att_hash[:effective_over_3]=(eff_over_3/ total_reviews_for_this)*10
+    att_hash[:effective_less_3]  =(eff_less_3/ total_reviews_for_this) *10
+
+    eou_over_3=statistic_get_more_or_equal(drug,"ease_of_use",3)
+    eou_less_3=statistic_get_less(drug,"ease_of_use",3)
+    att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
+    att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
+
+    return att_hash
+  end
+
+  def total_reviews(drug)
+    mydrugid=Drug.find_by_brand_name(drug).id
+    query_record=Review.joins(:drug,:user).where("drug_id=?",mydrugid).count
+  end
+
+  def statistic_get_more_or_equal(drug,type,score)
+    mydrugid=Drug.find_by_brand_name(drug).id
+    query_record=Review.joins(:drug,:user).where("drug_id=? AND #{type} >= ?",mydrugid,score).count
+  end
+
+  def statistic_get_less(drug,type,score)
+    mydrugid=Drug.find_by_brand_name(drug).id
+    query_record=Review.joins(:drug,:user).where("drug_id=? AND #{type} < ?",mydrugid,score).count
+  end
+
+  def total_reviewers(drug,*gender)
+    drugid=Drug.find_by_brand_name(drug).id
+
+    if gender.empty?
+
+      user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid}).count
+    else
+      if gender.shift == 'Male'
+        user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid},:gender=>"Male").count
+      else
+        #if gender.shift =='Female'
+        user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid},:gender=>"Female").count
+      end
+    end
+    return user_record_count
+  end
+
+  def get_user_age_group(drug,age_range)
+    drugid=Drug.find_by_brand_name(drug).id
+    user_record=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid})
+    count=0
+    if age_range == "<18"
+      count=count+user_record.where("age=?","3-6").count
+      count=count+user_record.where("age=?","7-12").count
+      count=count+user_record.where("age=?","12-18").count
+    end
+    if age_range == ">55"
+      count=count+user_record.where("age=?","55-64").count
+      count=count+user_record.where("age=?","65-74").count
+      count=count+user_record.where("age=?","75 or over").count
+    end
+    return count
+  end
+
+  def get_satisfactory(drug,gender)
+    mydrugid=Drug.find_by_brand_name(drug).id
+    query_record=Review.joins(:drug,:user).where(:drug_id=>mydrugid).where(:users=>{:gender=>gender})
+
+    score1=query_record.where("satisfactory=?",1).count
+    score2=query_record.where("satisfactory=?",2).count
+    score3=query_record.where("satisfactory=?",3).count
+    score4=query_record.where("satisfactory=?",4).count
+    score5=query_record.where("satisfactory=?",5).count
+    sum=Float(query_record.count)
+
+    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+    puts "#{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
+  end
+
+  def get_top_used_words(drug)
+    @tags=Tag.find_by_brand_name(drug)
+    if @tags.nil?
+      string=""
+    else
+      @tagshash=format2hash(@tags.word_list)
+      temp=@tagshash.sort_by {|k,v| v}.reverse.shift(3)
+      string=''
+      arr=temp.collect { |x| x[0]}
+      string  =arr.join(",")
+    end
+
+  end
+
+  def format2hash(string)
+    stringhash={}
+    string.split(",").map { |keyvalue|
+      arr=keyvalue.split("=>",2)
+      stringhash[arr[0]]=arr[1].to_i
+    }
+    return stringhash
+  end
+
+  # self declared methods to get the values
+
+
+  def get_most_bad_reviews(condition,score)
+    highest_count=0.0
+    total=0.0
+    winner='Insufficient Data'
+    condition.drugs.map do |drug|
+      query_record_count=Review.joins(:drug,:user).where("drug_id=? AND effectiveness <= ? AND ease_of_use <= ? AND satisfactory <= ?",drug.id,score,score,score).count
+      total=total+query_record_count
+      if query_record_count > highest_count
+        highest_count=query_record_count
+        winner=drug.brand_name
+      end
+    end
+    freq=highest_count/total
+    return "winner=>#{winner},frequency=>#{freq.round(2)}"
+  end
+
+  def get_all_reviews(condition)
+    count=0
+    condition.drugs.map do |drug|
+      count=count+ user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drug.id}).count
+    end
+    return count
+  end
+
+  def get_most_kids_using(condition)
+    highest_count=0.0
+    total=0.0
+    winner='Insufficient Data'
+    condition.drugs.map do |drug|
+      user_record_count=0
+      user_record=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drug.id})
+      user_record_count=user_record_count+user_record.where("age=?","3-6").count
+      user_record_count=user_record_count+user_record.where("age=?","7-12").count
+      user_record_count=user_record_count+user_record.where("age=?","12-18").count
+      total=total+user_record_count
+      if user_record_count > highest_count
+        highest_count=user_record_count
+        winner=drug.brand_name
+      end
+    end
+    freq=highest_count/total
+    return "winner=>#{winner},frequency=>#{freq.round(2)}"
+  end
+
+  def get_most(condition,score,type)
+    highest_count=0.0
+    total=0.0
+    winner='Insufficient Data'
+    condition.drugs.map do |drug|
+      query_record_count=Review.joins(:drug,:user).where("drug_id=? AND #{type} >= ?",drug.id,score).count
+      total=total+query_record_count
+      if query_record_count > highest_count
+        highest_count=query_record_count
+        winner=drug.brand_name
+      end
+    end
+    freq=highest_count/total
+    return "winner=>#{winner},frequency=>#{freq.round(2)}"
+  end
+
+  def get_most_reviewed_drug(condition)
+    highest_count=0.0
+    total=get_all_reviews(condition).to_f
+    winner='Insufficient Data'
+    ranking=""
+    newhash=Hash.new
+    condition.drugs.map do |drug|
+      query_record_count=Review.joins(:drug,:user).where("drug_id=?",drug.id).count
+      newhash[drug.brand_name]=((query_record_count/total)*10).round(2)
+    end
+    newhash=newhash.sort_by {|k,v| v}.reverse        #reverse sort the hash according to the hash value
+    ranking=newhash.collect {|k,v| "#{k}=>#{v}"}.join(',')
+    return "#{ranking}" #store as a eg       Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
+  end
 
   def parse_page(doc)
     abort("no table found. You make have overloaded") if  doc.search("html body table.ratingsTable").nil?
