@@ -333,6 +333,15 @@ namespace :project do
 
     end
   end
+  #########################################
+  #rake project:generatereviewcounts
+  #########################################
+  desc "count number of reviews for each drug and stores it"
+  task :generatereviewcounts =>:environment do
+    Drug.all.each do |d|
+      d.update_attributes(:reviews_count=>d.reviews.count)
+    end
+  end
 
   #########################################
   #rake project:rename_and_getrepeats
