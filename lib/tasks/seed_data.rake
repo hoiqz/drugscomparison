@@ -301,6 +301,29 @@ namespace :project do
     end
   end
 
+  ##############
+  ## NEW TASK
+  ##############
+  # usage rake drugname= project:initSingleDruginfographs
+  desc "task to initialize Druginfographs for A SPECIFIC drug in database"
+  task :initSingleDruginfographs =>:environment do
+    drugname=ENV['drug']
+       unless drug=Drug.find_by_brand_name(drugname)
+         puts "No such drug: #{drugname} found. Are you sure you typed it correctly?"
+         exit
+       end
+      attributehash=get_infograph_attributes(drug.brand_name)
+      druginfograph = Druginfograph.new(attributehash)
+      if druginfograph.save
+        puts "#{druginfograph} saved"
+        next
+      else
+        druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
+        druginfograph.update_attributes(attributehash)
+        puts "#{druginfograph} updated"
+      end
+
+  end
 
   ########################
   # CLASS METHODS

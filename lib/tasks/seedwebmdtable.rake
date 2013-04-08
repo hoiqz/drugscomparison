@@ -338,10 +338,22 @@ namespace :project do
   #########################################
   desc "count number of reviews for each drug and stores it"
   task :generatereviewcounts =>:environment do
+    Drug.reset_column_information
     Drug.all.each do |d|
       d.update_attributes(:reviews_count=>d.reviews.count)
     end
   end
+
+  #########################################
+  #rake project:uploadwordcountfreq
+  #########################################
+  desc "upload the word count for each drug"
+  task :uploadwordcountfreq =>:environment do
+    Drug.all.each do |d|
+      d.update_attributes(:reviews_count=>d.reviews.count)
+    end
+  end
+
 
   #########################################
   #rake project:rename_and_getrepeats
@@ -385,7 +397,7 @@ with the next rake task:fix_other_records"
          toupdate.push newname
 
          retain_drug=Drug.where("other_names LIKE ?","%#{retain}%").first
-         drugs array now contains all the drugs to be destroyed
+         #drugs array now contains all the drugs to be destroyed
          drugs.each do |drug|
            puts "working on #{drug} now"
            # change the reviews drugid to the merged drug id

@@ -291,37 +291,37 @@
 #DAYTRANA	21514	http://www.askapatient.com/viewrating.asp?drug=21514&name=DAYTRANA
 #DDAVP	17922	http://www.askapatient.com/viewrating.asp?drug=17922&name=DDAVP
 #DECADRON	11664	http://www.askapatient.com/viewrating.asp?drug=11664&name=DECADRON
-DECA-DURABOLIN	13132	http://www.askapatient.com/viewrating.asp?drug=13132&name=DECA%2DDURABOLIN
-DELESTROGEN	9402	http://www.askapatient.com/viewrating.asp?drug=9402&name=DELESTROGEN
-DELSYM	18658	http://www.askapatient.com/viewrating.asp?drug=18658&name=DELSYM
-DELTASONE	9986	http://www.askapatient.com/viewrating.asp?drug=9986&name=DELTASONE
-DEMADEX	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
-DEMEROL	5010	http://www.askapatient.com/viewrating.asp?drug=5010&name=DEMEROL
-DEMULEN 1/35-28	18160	http://www.askapatient.com/viewrating.asp?drug=18160&name=DEMULEN+1%2F35%2D28
-DEPACON	20593	http://www.askapatient.com/viewrating.asp?drug=20593&name=DEPACON
-DEPAKENE	18081	http://www.askapatient.com/viewrating.asp?drug=18081&name=DEPAKENE
-DEPAKOTE	18723	http://www.askapatient.com/viewrating.asp?drug=18723&name=DEPAKOTE
-DEPAKOTE ER	21168	http://www.askapatient.com/viewrating.asp?drug=21168&name=DEPAKOTE+ER
-DEPO-MEDROL	11757	http://www.askapatient.com/viewrating.asp?drug=11757&name=DEPO%2DMEDROL
-DEPO-PROVERA	12541	http://www.askapatient.com/viewrating.asp?drug=12541&name=DEPO%2DPROVERA
-DEPO-TESTOSTERONE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
-DERMATOP	20279	http://www.askapatient.com/viewrating.asp?drug=20279&name=DERMATOP
-DESIPRAMINE HCL	71588	http://www.askapatient.com/viewrating.asp?drug=71588&name=DESIPRAMINE+HCL
-DESOGEN	20071	http://www.askapatient.com/viewrating.asp?drug=20071&name=DESOGEN
-DESOXYN	5378	http://www.askapatient.com/viewrating.asp?drug=5378&name=DESOXYN
-DESYREL	18207	http://www.askapatient.com/viewrating.asp?drug=18207&name=DESYREL
-DETROL	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
-DEXAMETHASONE	80968	http://www.askapatient.com/viewrating.asp?drug=80968&name=DEXAMETHASONE
-DEXEDRINE	17078	http://www.askapatient.com/viewrating.asp?drug=17078&name=DEXEDRINE
-DEXILANT	22287	http://www.askapatient.com/viewrating.asp?drug=22287&name=DEXILANT
-DEXTROAMP SACCHARATE, AMP ASPARTATE, DEXTROAMP SULFATE AND AMP SULFATE	40422	http://www.askapatient.com/viewrating.asp?drug=40422&name=DEXTROAMP+SACCHARATE%2C+AMP+ASPARTATE%2C+DEXTROAMP+SULFATE+AND+AMP+SULFATE
-DIABETA	17532	http://www.askapatient.com/viewrating.asp?drug=17532&name=DIABETA
-DIAMOX	8943	http://www.askapatient.com/viewrating.asp?drug=8943&name=DIAMOX
-DIAZEPAM	70152	http://www.askapatient.com/viewrating.asp?drug=70152&name=DIAZEPAM
-DICLOFENAC POTASSIUM	75152	http://www.askapatient.com/viewrating.asp?drug=75152&name=DICLOFENAC+POTASSIUM
-DICLOFENAC SODIUM	74391	http://www.askapatient.com/viewrating.asp?drug=74391&name=DICLOFENAC+SODIUM
-DICLOXACILLIN SODIUM	61454	http://www.askapatient.com/viewrating.asp?drug=61454&name=DICLOXACILLIN+SODIUM
-DICYCLOMINE HCL	40161	http://www.askapatient.com/viewrating.asp?drug=40161&name=DICYCLOMINE+HCL
+#DECA-DURABOLIN	13132	http://www.askapatient.com/viewrating.asp?drug=13132&name=DECA%2DDURABOLIN
+#DELESTROGEN	9402	http://www.askapatient.com/viewrating.asp?drug=9402&name=DELESTROGEN
+#DELSYM	18658	http://www.askapatient.com/viewrating.asp?drug=18658&name=DELSYM
+#DELTASONE	9986	http://www.askapatient.com/viewrating.asp?drug=9986&name=DELTASONE
+#DEMADEX	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
+#DEMEROL	5010	http://www.askapatient.com/viewrating.asp?drug=5010&name=DEMEROL
+#DEMULEN 1/35-28	18160	http://www.askapatient.com/viewrating.asp?drug=18160&name=DEMULEN+1%2F35%2D28
+#DEPACON	20593	http://www.askapatient.com/viewrating.asp?drug=20593&name=DEPACON
+#DEPAKENE	18081	http://www.askapatient.com/viewrating.asp?drug=18081&name=DEPAKENE
+#DEPAKOTE	18723	http://www.askapatient.com/viewrating.asp?drug=18723&name=DEPAKOTE
+#DEPAKOTE ER	21168	http://www.askapatient.com/viewrating.asp?drug=21168&name=DEPAKOTE+ER
+#DEPO-MEDROL	11757	http://www.askapatient.com/viewrating.asp?drug=11757&name=DEPO%2DMEDROL
+#DEPO-PROVERA	12541	http://www.askapatient.com/viewrating.asp?drug=12541&name=DEPO%2DPROVERA
+#DEPO-TESTOSTERONE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
+#DERMATOP	20279	http://www.askapatient.com/viewrating.asp?drug=20279&name=DERMATOP
+#DESIPRAMINE HCL	71588	http://www.askapatient.com/viewrating.asp?drug=71588&name=DESIPRAMINE+HCL
+#DESOGEN	20071	http://www.askapatient.com/viewrating.asp?drug=20071&name=DESOGEN
+#DESOXYN	5378	http://www.askapatient.com/viewrating.asp?drug=5378&name=DESOXYN
+#DESYREL	18207	http://www.askapatient.com/viewrating.asp?drug=18207&name=DESYREL
+#DETROL	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
+#DEXAMETHASONE	80968	http://www.askapatient.com/viewrating.asp?drug=80968&name=DEXAMETHASONE
+#DEXEDRINE	17078	http://www.askapatient.com/viewrating.asp?drug=17078&name=DEXEDRINE
+#DEXILANT	22287	http://www.askapatient.com/viewrating.asp?drug=22287&name=DEXILANT
+#DEXTROAMP SACCHARATE, AMP ASPARTATE, DEXTROAMP SULFATE AND AMP SULFATE	40422	http://www.askapatient.com/viewrating.asp?drug=40422&name=DEXTROAMP+SACCHARATE%2C+AMP+ASPARTATE%2C+DEXTROAMP+SULFATE+AND+AMP+SULFATE
+#DIABETA	17532	http://www.askapatient.com/viewrating.asp?drug=17532&name=DIABETA
+#DIAMOX	8943	http://www.askapatient.com/viewrating.asp?drug=8943&name=DIAMOX
+#DIAZEPAM	70152	http://www.askapatient.com/viewrating.asp?drug=70152&name=DIAZEPAM
+#DICLOFENAC POTASSIUM	75152	http://www.askapatient.com/viewrating.asp?drug=75152&name=DICLOFENAC+POTASSIUM
+#DICLOFENAC SODIUM	74391	http://www.askapatient.com/viewrating.asp?drug=74391&name=DICLOFENAC+SODIUM
+#DICLOXACILLIN SODIUM	61454	http://www.askapatient.com/viewrating.asp?drug=61454&name=DICLOXACILLIN+SODIUM
+#DICYCLOMINE HCL	40161	http://www.askapatient.com/viewrating.asp?drug=40161&name=DICYCLOMINE+HCL
 DIDREX	12427	http://www.askapatient.com/viewrating.asp?drug=12427&name=DIDREX
 DIFFERIN	20338	http://www.askapatient.com/viewrating.asp?drug=20338&name=DIFFERIN
 DIFLUCAN	19949	http://www.askapatient.com/viewrating.asp?drug=19949&name=DIFLUCAN
