@@ -304,7 +304,7 @@ namespace :project do
   ##############
   ## NEW TASK
   ##############
-  # usage rake drugname= project:initSingleDruginfographs
+  # usage rake drug=infed project:initSingleDruginfographs
   desc "task to initialize Druginfographs for A SPECIFIC drug in database"
   task :initSingleDruginfographs =>:environment do
     drugname=ENV['drug']

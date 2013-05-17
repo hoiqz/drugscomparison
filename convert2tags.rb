@@ -6,6 +6,7 @@ File.open(ARGV[0],"r") do |filereader|
 
     wordline=Array.new
     counter=1
+
    filereader.each do |line|
      if counter == maxsize
        break

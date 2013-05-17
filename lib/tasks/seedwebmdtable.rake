@@ -177,8 +177,8 @@ namespace :project do
     require 'open-uri'
     address="http://www.askapatient.com/drugalpha.asp?letter="
     root="http://www.askapatient.com/"
-    OUT=File.new("askapatient.druglist2","w+")
-    ("L".."Z").each do |letter|
+    OUT=File.new("askapatient.druglist","a+")
+    ("K".."Z").each do |letter|
       puts address+letter
       doc = Hpricot(open(address+letter))
       #doc = Hpricot(open("http://www.askapatient.com/drugalpha.asp?letter=A"))
@@ -197,8 +197,8 @@ namespace :project do
        OUT.write("#{name}\t#{drugid}\t#{location}\n")
 
        end
-       sleeptime=5+rand(10)
-      sleep(sleeptime.minutes)
+       sleeptime=50+rand(50)
+      sleep(sleeptime.seconds)
     end
   end
 
@@ -206,7 +206,7 @@ namespace :project do
   #########################################
   #rake in=inputfile project:pullaskapatientreviews
   #########################################
-  desc "go throught A-Z get askapatient druglist drug id and page URL"
+  desc "go throught A-Z pull ask a patient reviews"
   task :pullaskapatientreviews =>:environment do
     require 'open-uri'
     require 'action_view'
@@ -280,23 +280,32 @@ namespace :project do
   task :matchdrugtowebmd =>:environment do
     input=ENV['in']
     OUT=File.new("matchings","w+")
+    exactcounter=0
+    similarcounter=0
     File.open(input,"r") do |filereader|
       filereader.each do |line|
         indrug=line.chomp.downcase
         #see if any exact match
-        exactmatch=Drug.find_all_by_brand_name(indrug)
+
+        exactmatch=Drug.where("brand_name LIKE ?","#{indrug}%")
         exactmatchstr=""
         byspacematchstr=""
         closematchstr=""
+        if exactmatch
+          exactcounter +=1
         exactmatch.each do |exact|
           exactmatchstr << " #{exact.brand_name}"
         end
+        end
+
         if exactmatch.blank?
-          indrugsplit=indrug.split("-")
+          #indrugsplit=indrug.split("-")  #for everydayhealth druglist it is linked by '-'
+          indrugsplit=indrug.split(/\s/) # for sideeffects drug list it is separated by '\s'
           searchbyspace=indrugsplit.join(" ")
           byspacematch=Drug.where("brand_name LIKE ?","%#{searchbyspace}%")
           byspacematch.each do |match|
             byspacematchstr << " #{match.brand_name}"
+
           end
           #closematch=Drug.where("brand_name LIKE ? OR brand_name LIKE ?","%#{indrugsplit[0]}%","%#{indrugsplit[1]}%")
           if indrugsplit[0].length > 4
@@ -308,13 +317,39 @@ namespace :project do
           end
 
         end
-        puts "#{indrug}\t#{exactmatchstr}\t#{byspacematchstr}\t#{closematchstr}\n"
+        OUT.write "#{indrug}\tE:#{exactmatchstr}\tS:#{byspacematchstr}\tC:#{closematchstr}\n"
       end
+      "#{exactcounter} hits were matched exactly"
     end
 
   end
 
 
+  #########################################
+  #rake in=../everydayhealth/druglist.tsv.original project:findsideeffects
+  #########################################
+  desc "find the side effect for a list of drug."
+  task :findsideeffects =>:environment do
+    input=ENV['in']
+    OUT=File.new("matchings","w+")
+    exactcounter=0
+    similarcounter=0
+    Drug.all.each do |drug|
+      File.open(input,"r") do |filereader|
+        found=0
+        OUT.write("#{drug.brand_name} ")
+        filereader.each do |line|
+          if found ==1
+            break
+          end
+          if line=~/#{drug}/
+               OUT.write("has side effect #{line}\n")
+               found=1
+          end
+        end
+      end
+    end
+  end
   #########################################
   #rake project:generatemostcommon
   #########################################
@@ -380,7 +415,7 @@ with the next rake task:fix_other_records"
 
 
   #########################################
-  #rake project:fix_other_records
+  #rake in=tofix project:fix_other_records
   #########################################
   desc "lots of steps to rename the drugs and fix the others tables."
   task :fix_other_records =>:environment do
@@ -391,13 +426,13 @@ with the next rake task:fix_other_records"
       next if line=~/^#/
          drugs=Array.new
          drugs=line.split(";")
+      # the first drug is always the one that we want to retain. So we pop it and store as retain
         retain=drugs.pop.chomp
-
          newname=retain.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+      #rename the new drug we want to keep and push it into toupdate array
          toupdate.push newname
-
          retain_drug=Drug.where("other_names LIKE ?","%#{retain}%").first
-         #drugs array now contains all the drugs to be destroyed
+      #drugs array now contains all the drugs from tofix file that are to be destroyed / merged into another record
          drugs.each do |drug|
            puts "working on #{drug} now"
            # change the reviews drugid to the merged drug id
@@ -424,6 +459,7 @@ with the next rake task:fix_other_records"
        puts toupdate
        toupdate.each do |entry|
          Drug.find_all_by_brand_name(entry).each do |repeats|
+           #we  have shifted the reviews to the retain drugs. so duplicate drugs shld have >1 reviews
            if repeats.reviews.count < 1 && repeats.other_names !~ /;/
               puts "entries to be deleted : #{repeats.other_names} #{repeats.id}"
              repeats.destroy
@@ -450,10 +486,173 @@ with the next rake task:fix_other_records"
 
   end
 
+  ##############
+  ## NEW TASK
+  ##############
+  # usage rake inputdir=../wordfreq project:uploadwordcloud
+  desc "task to upload word cloud to the drugs"
+  task :uploadwordcloud =>:environment do
+    inputdir=ENV['inputdir']
+    workingdir=Dir.open inputdir
+    workingdir.each do |filename|
+      if filename=~/^\./
+        next
+      end
+       #print "working on #{filename} now : "
+      filename=~/(.*?)_reviews.tsv.words.freq/
+      brandname=$1
+      brandname=brandname.gsub(/\+/,' ').gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"").gsub(/%252f/,"/").gsub(/%26/,"&")
+      #puts brandname
+      maxsize=20
+      found=Drug.find_by_brand_name(brandname)
+      if found
+        #print "match #{found.brand_name}\n"
+        File.open("#{inputdir}/#{filename}","r") do |filereader|
+          wordline=Array.new
+          counter=1
+          filereader.each do |line|
+            if counter == maxsize
+              break
+            end
+            # i want to check that if the count is 1 then dont print it. do some normalization
+            arr=line.split(/\t/)
+            newvalue=arr[1].to_i
+            line2="#{arr[0]}=>#{newvalue}"
+            tag=line2.gsub(/,/,'').chomp
 
+            wordline << "#{tag}"
+            #end
+            counter=counter+1
+          end
+          wordlist_stringify=wordline.join(',')
+          #print "#{wordlist_stringify}\n"
+          Tag.create(:brand_name=>brandname,:word_list=>wordlist_stringify)
+          end
+      else
+        print "working on #{filename} now. Searchword #{brandname}: "
+        print "\n"
+      end
+    end
+  end
 
   ##############
   ## NEW TASK
+  ##############
+  # usage rake inputfile=../sideeffects/combined_new_format project:uploadsideeffects
+  desc "task to upload the side effects"
+  task :uploadsideeffects =>:environment do
+    inputfile=ENV['inputfile']
+    OUT=File.new("matchings","w+")
+      exactcounter=0
+      similarcounter=0
+      indrug=""
+      wordline=Hash.new
+      wordlist_stringify=""
+      File.open(inputfile,"r") do |filereader|
+        filereader.each do |line|
+          ## IF header line
+          if line=~/^#/
+
+            unless indrug.blank?
+              #filter the values in the array
+              temp=wordline.sort_by {|k,v| v}.reverse
+              toptwenty=temp[0..19]
+              wordlist_stringify=toptwenty.map {|k,v| "#{k}=>#{v}"}.join(",")
+             # a=Drug.find(indrug.id).update_attributes(:side_effects=>wordlist_stringify)
+
+              OUT.write("#{indrug.brand_name} -- Drug.find(#{indrug.id}).update_attributes(:side_effects=>'#{wordlist_stringify}')\n")
+              wordline.clear
+            end
+            indrug=line.gsub(/^#/,"").sub(/\s$/,"").chomp
+            #OUT.write "working on #{indrug} : Drug.where(\"brand_name LIKE ?\",\"#{indrug}%\")\n"
+            exactmatch=Drug.where("brand_name LIKE ?","#{indrug}%")
+
+            if !exactmatch.empty?
+              exactcounter +=1
+              indrug=exactmatch.first
+            else
+              #OUT.write("no match for #{indrug}\n")
+              indrug=""
+              next
+            end
+
+          else
+            # NOT header line
+            arr=line.split(/\t/)
+            if arr.size < 2
+              newvalue=0.0
+            else
+              newvalue=arr[1].to_f
+            end
+            #line2="#{arr[0]}=>#{newvalue}"
+            wordline[arr[0].chomp]=newvalue
+
+          end
+
+
+        end
+      end
+    end
+
+  ##############
+  ## NEW TASK
+  ##############
+  # usage rake inputfile=../sideeffects/combined_new_format project:sideeffectmatchingtest
+  desc "another way to match the side effects to the drugs. for testing"
+  task :sideeffectmatchingtest =>:environment do
+    inputfile=ENV['inputfile']
+    OUT=File.new("matchings","w+")
+    exactcounter=0
+    similarcounter=0
+    indrug=""
+    prev_drug=""
+    wordline=Hash.new
+    storage_hash=Hash.new
+    wordlist_stringify=""
+    File.open(inputfile,"r") do |filereader|
+      filereader.each do |line|
+        ## IF header line
+        if line=~/^#/
+          prev_drug=indrug
+          indrug=line.gsub(/^#/,"").sub(/\s$/,"").chomp
+          if !prev_drug.blank? && prev_drug != indrug
+            #filter the values in the array
+            temp=wordline.sort_by {|k,v| v}.reverse
+            toptwenty=temp[0..19]
+            wordlist_stringify=toptwenty.map {|k,v| "#{k}=>#{v}"}.join(",")
+            # a=Drug.find(indrug.id).update_attributes(:side_effects=>wordlist_stringify)
+            storage_hash[indrug]=wordlist_stringify
+            wordline.clear
+          end
+
+          #OUT.write "working on #{indrug} : Drug.where(\"brand_name LIKE ?\",\"#{indrug}%\")\n"
+
+        else
+          # NOT header line
+          arr=line.split(/\t/)
+          if arr.size < 2
+            newvalue=0.0
+          else
+            newvalue=arr[1].to_f
+          end
+          #line2="#{arr[0]}=>#{newvalue}"
+          wordline[arr[0].chomp]=newvalue
+
+        end
+
+      end
+    end
+    #check hash
+    #storage_hash.map {|k,v| OUT.write "#{k} =>  #{v}\n"}
+    Drug.all.each do |drug|
+      puts drug
+      if storage_hash[drug.brand_name]
+        OUT.write "#{drug.brand_name}=>#{storage_hash[drug.brand_name]}\n"
+      end
+    end
+  end
+###############
+#NEW TASK
   ##############
   # usage rake project:initconditioninfographs
   desc "task to initialize initconditioninfographs for all conditions in database"

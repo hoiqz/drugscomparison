@@ -6,14 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/DEPO-PROVERA_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/DEPO-PROVERA_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" afterPath="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/DIFLUCAN_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/DIFLUCAN_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convert2tags.rb" afterPath="$PROJECT_DIR$/convert2tags.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matchings" afterPath="$PROJECT_DIR$/matchings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tofix" afterPath="$PROJECT_DIR$/tofix" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xa" afterPath="$PROJECT_DIR$/xa" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,28 +39,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="seed_data.rake" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="seed_data.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="306" column="25" selection-start="11601" selection-end="11601" vertical-scroll-proportion="0.053268764">
+            <state line="485" column="65" selection-start="18236" selection-end="18236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="399" column="10" selection-start="14894" selection-end="14894" vertical-scroll-proportion="0.0">
+            <state line="461" column="101" selection-start="17314" selection-end="17314" vertical-scroll-proportion="0.7983051">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="convert2tags.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert2tags.rb">
+      <file leaf-file-name="_infographs.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="108" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,9 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/review.rb" />
         <option value="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
@@ -90,8 +103,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20130403061150_add_column_to_drug_table.rb" />
         <option value="$PROJECT_DIR$/app/models/drug.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
         <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
+        <option value="$PROJECT_DIR$/convert2tags.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
       </list>
     </option>
   </component>
@@ -146,10 +162,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Scope">
-        <subPane subId="All" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,152 +303,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static_pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conditions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -456,69 +322,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope">
+        <subPane subId="All" />
       </pane>
     </panes>
   </component>
@@ -527,15 +335,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="103" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="128" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/seedwebmdtable.rb" />
-    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../polaristest" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="75" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="803" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="919" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="803" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="124" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="117" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -810,7 +618,7 @@
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\lib\tasks\seedwebmdtable.rake" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="xa" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
@@ -823,8 +631,8 @@
       <item index="1" class="java.lang.String" itemvalue="Rails.Development: drugscomparison" />
       <item index="2" class="java.lang.String" itemvalue="Rake.test" />
       <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.assets:precompile" />
-      <item index="5" class="java.lang.String" itemvalue="Ruby.test" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.assets:precompile" />
       <item index="6" class="java.lang.String" itemvalue="Ruby.convert2seed" />
     </list>
     <recent_temporary>
@@ -882,7 +690,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1278" height="776" extended-state="7" />
+    <frame x="-4" y="-4" width="1278" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -890,11 +698,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.34330985" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19526143" sideWeight="0.6906585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1985294" sideWeight="0.6906585" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.33450705" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3101695" sideWeight="0.5007622" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3093415" sideWeight="0.49390244" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3093415" sideWeight="0.49390244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -958,30 +766,55 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/askapatient.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="113" selection-end="113" vertical-scroll-proportion="0.05414013">
+        <state line="5" column="12" selection-start="304" selection-end="304" vertical-scroll-proportion="0.20581114">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130206075045_add_column_to_conditioninfographs.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.11971831" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="107" selection-start="676" selection-end="689" vertical-scroll-proportion="0.7225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/druginfograph.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130318065826_add_source_to_review_table.rb">
+    <entry file="file://$PROJECT_DIR$/../polaristest">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../polaristest.ruby">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="485" column="65" selection-start="18236" selection-end="18236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130403061150_add_column_to_drug_table.rb">
+    <entry file="file://$PROJECT_DIR$/convert2seed.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.18949045">
+        <state line="17" column="85" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert2tags.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="4" selection-start="586" selection-end="623" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -992,127 +825,95 @@
           <ID>RailsDependency</ID>
           <OriginalElement>#drugscomparison</OriginalElement>
           <nodes>
-            <node x="0.0" y="280.30555555555554">User</node>
-            <node x="259.5" y="59.05555555555554">Condition</node>
-            <node x="221.0" y="614.3055555555555">Search</node>
-            <node x="242.0" y="208.05555555555554">Review</node>
-            <node x="640.0" y="614.3055555555555">Webmd</node>
-            <node x="518.0" y="48.0">Treatment</node>
-            <node x="855.0" y="614.3055555555555">Everydayhealth</node>
-            <node x="0.0" y="614.3055555555555">Conditioninfograph</node>
+            <node x="0.0" y="291.25">User</node>
+            <node x="259.5" y="67.41666666666666">Condition</node>
+            <node x="221.0" y="625.25">Search</node>
+            <node x="242.0" y="219.0">Review</node>
+            <node x="640.0" y="625.25">Webmd</node>
+            <node x="518.0" y="58.0">Treatment</node>
+            <node x="855.0" y="625.25">Everydayhealth</node>
+            <node x="0.0" y="625.25">Conditioninfograph</node>
             <node x="709.0" y="0.0">Druginfograph</node>
-            <node x="0.0" y="887.3055555555555">Tag</node>
-            <node x="190.0" y="887.3055555555555">Mostcommondrug</node>
-            <node x="0.0" y="-10.0">Drug</node>
-            <node x="425.0" y="614.3055555555555">Askapatient</node>
+            <node x="0.0" y="898.25">Tag</node>
+            <node x="190.0" y="898.25">Mostcommondrug</node>
+            <node x="0.0" y="0.0">Drug</node>
+            <node x="425.0" y="625.25">Askapatient</node>
           </nodes>
           <notes />
           <edges>
             <edge source="Drug" target="Treatment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="81.0" y="-82.99999999999999" />
+              <point x="242.0" y="56.91666666666666" />
+              <point x="438.0" y="56.91666666666666" />
+              <point x="-73.0" y="-17.0" />
             </edge>
             <edge source="User" target="Review">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="81.0" y="-0.0" />
+              <point x="-98.0" y="72.25" />
             </edge>
             <edge source="Drug" target="Condition">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="81.0" y="-0.0" />
+              <point x="-80.5" y="-0.0" />
             </edge>
             <edge source="Drug" target="Review">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="81.0" y="83.0" />
+              <point x="-98.0" y="-72.25" />
             </edge>
             <edge source="Condition" target="Treatment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="80.5" y="-0.0" />
+              <point x="438.0" y="121.91666666666666" />
+              <point x="-73.0" y="17.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.6157786885245902" x="102.7504159733777" y="379.7504159733777" />
+          <settings layout="Hierarchic Group" zoom="0.6089159067882473" x="98.0" y="384.0" />
           <SelectedNodes>
-            <node>Search</node>
+            <node>Drug</node>
           </SelectedNodes>
           <Categories>
-            <Category>Association fields</Category>
             <Category>Migration fields</Category>
+            <Category>Association fields</Category>
           </Categories>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert2seed.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="85" selection-start="565" selection-end="565" vertical-scroll-proportion="-3.1283293">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.2610838">
+        <state line="54" column="2" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-9.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="87" selection-start="566" selection-end="566" vertical-scroll-proportion="0.519084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="304" selection-end="304" vertical-scroll-proportion="0.20581114">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130328091401_add_review_counter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.11971831">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="107" selection-start="676" selection-end="689" vertical-scroll-proportion="0.7225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert2tags.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="34" column="108" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="10" selection-start="14894" selection-end="14894" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="25" selection-start="11601" selection-end="11601" vertical-scroll-proportion="0.053268764">
+        <state line="461" column="101" selection-start="17314" selection-end="17314" vertical-scroll-proportion="0.7983051">
           <folding />
         </state>
       </provider>
