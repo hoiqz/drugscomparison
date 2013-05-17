@@ -291,12 +291,12 @@ namespace :project do
       attributehash=get_infograph_attributes(drug.brand_name)
       druginfograph = Druginfograph.new(attributehash)
       if druginfograph.save
-        puts "#{druginfograph} saved"
+        puts "#{druginfograph.id} saved"
         next
       else
         druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
         druginfograph.update_attributes(attributehash)
-        puts "#{druginfograph} updated"
+        puts "#{druginfograph.id} updated"
       end
     end
   end
