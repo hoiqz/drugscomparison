@@ -12,6 +12,7 @@
       </tr>
 
       <% @conditions.each do |condition| %>
+          <% next if (condition.name == "Other"|| condition.name =="") %>
           <tr>
             <td><%= link_to condition.name, condition %></td>
 
