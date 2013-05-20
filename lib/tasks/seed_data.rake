@@ -400,13 +400,20 @@ namespace :project do
     att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
     att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
 
-    printHash(att_hash)
+    ValidateThenPrintHash(att_hash)
     return att_hash
   end
 
-  def printHash(myhash)
+  def ValidateThenPrintHash(myhash)
   myhash.each_pair do |key,value|
-    puts "#{key}  =>  #{value}\n"
+    if key=="brand_name" ||  key == "top_used_words"
+      puts "#{key}  =>  #{value}\n"
+    else
+      if value.nan?
+        myhash[key]=999.0
+      end
+      puts "#{key}  =>  #{value}\n"
+    end
   end
   end
 
@@ -471,15 +478,9 @@ namespace :project do
     sum=Float(query_record.count)
 
     puts "get satisfactory values: #{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
-    if sum == 0
-      puts "weighted average set to '-'\n"
-      weighted_average=999
-    else
+
       weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
-    end
-
-
-  end
+   end
 
   def get_top_used_words(drug)
     @tags=Tag.find_by_brand_name(drug)

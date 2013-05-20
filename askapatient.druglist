@@ -775,9 +775,9 @@
 #MICRONOR	16954	http://www.askapatient.com/viewrating.asp?drug=16954&name=MICRONOR
 #MICROZIDE	20504	http://www.askapatient.com/viewrating.asp?drug=20504&name=MICROZIDE
 #MIDAZOLAM HCL	75154	http://www.askapatient.com/viewrating.asp?drug=75154&name=MIDAZOLAM+HCL
-MIDOL LIQUID GELS	21472	http://www.askapatient.com/viewrating.asp?drug=21472&name=MIDOL+LIQUID+GELS
-MIFEPREX	20687	http://www.askapatient.com/viewrating.asp?drug=20687&name=MIFEPREX
-MIGRANAL	20148	http://www.askapatient.com/viewrating.asp?drug=20148&name=MIGRANAL
+#MIDOL LIQUID GELS	21472	http://www.askapatient.com/viewrating.asp?drug=21472&name=MIDOL+LIQUID+GELS
+#MIFEPREX	20687	http://www.askapatient.com/viewrating.asp?drug=20687&name=MIFEPREX
+#MIGRANAL	20148	http://www.askapatient.com/viewrating.asp?drug=20148&name=MIGRANAL
 MILTOWN	9698	http://www.askapatient.com/viewrating.asp?drug=9698&name=MILTOWN
 MINIPRESS	17442	http://www.askapatient.com/viewrating.asp?drug=17442&name=MINIPRESS
 MINOCIN	50444	http://www.askapatient.com/viewrating.asp?drug=50444&name=MINOCIN

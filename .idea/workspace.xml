@@ -6,6 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
     </list>
     <ignored path="drugscomparison.iws" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="seed_data.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="475" column="26" selection-start="17997" selection-end="17997" vertical-scroll-proportion="3.4614036">
+            <state line="482" column="1" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.91052634">
               <folding />
             </state>
           </provider>
@@ -976,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="475" column="26" selection-start="17997" selection-end="17997" vertical-scroll-proportion="3.4614036">
+        <state line="482" column="1" selection-start="18186" selection-end="18186" vertical-scroll-proportion="0.91052634">
           <folding />
         </state>
       </provider>
