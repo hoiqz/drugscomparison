@@ -285,9 +285,10 @@ namespace :project do
   task :initDruginfographs =>:environment do
     drugs=Drug.all
     drugs.map do |drug|
-      #if drug.id <74
-      #              next
-      #end
+      if drug.id < 437
+        puts "skipping drug: #{drug.id}"
+          next
+      end
       attributehash=get_infograph_attributes(drug.brand_name)
       druginfograph = Druginfograph.new(attributehash)
       if druginfograph.save
@@ -399,7 +400,14 @@ namespace :project do
     att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
     att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
 
+    printHash(att_hash)
     return att_hash
+  end
+
+  def printHash(myhash)
+  myhash.each_pair do |key,value|
+    puts "#{key}  =>  #{value}\n"
+  end
   end
 
   def total_reviews(drug)
@@ -462,8 +470,15 @@ namespace :project do
     score5=query_record.where("satisfactory=?",5).count
     sum=Float(query_record.count)
 
-    weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
-    puts "#{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
+    puts "get satisfactory values: #{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
+    if sum == 0
+      puts "weighted average set to '-'\n"
+      weighted_average='-'
+    else
+      weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+    end
+
+
   end
 
   def get_top_used_words(drug)

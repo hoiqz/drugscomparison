@@ -97,8 +97,13 @@ class ReviewsController < ApplicationController
   def create
     #@drug=Drug.find(params[:review][:drug_id])
     @user=User.new(params[:user])
-    #@user.save!
-    @review = @user.reviews.build(params[:review])
+
+    #if params[:user].blank?
+    #  @review=Review.new(params[:review])
+    #else
+      @review = @user.reviews.build(params[:review])
+    #end
+
     @review.drug_id=params[:drug_id]
 
     #@for_counts=@drug.reviews.count
