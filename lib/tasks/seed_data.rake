@@ -473,7 +473,7 @@ namespace :project do
     puts "get satisfactory values: #{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
     if sum == 0
       puts "weighted average set to '-'\n"
-      weighted_average='-'
+      weighted_average=999
     else
       weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
     end
