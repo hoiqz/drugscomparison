@@ -285,19 +285,21 @@ namespace :project do
   task :initDruginfographs =>:environment do
     drugs=Drug.all
     drugs.map do |drug|
-      if drug.id < 437
-        puts "skipping drug: #{drug.id}"
-          next
-      end
+      #if drug.id < 437
+      #  puts "skipping drug: #{drug.id}"
+      #    next
+      #end
+      if !(drug.reviews.empty?)
       attributehash=get_infograph_attributes(drug.brand_name)
       druginfograph = Druginfograph.new(attributehash)
       if druginfograph.save
-        puts "#{druginfograph.id} saved"
+        puts "#{drug.id} saved"
         next
       else
         druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
         druginfograph.update_attributes(attributehash)
-        puts "#{druginfograph.id} updated"
+        puts "#{drug.id} updated"
+      end
       end
     end
   end

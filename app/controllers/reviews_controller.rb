@@ -97,12 +97,18 @@ class ReviewsController < ApplicationController
   def create
     #@drug=Drug.find(params[:review][:drug_id])
     @user=User.new(params[:user])
-
+    @user.username="guest"+"#{rand 100}"+"#{Time.now.to_i}"
     #if params[:user].blank?
     #  @review=Review.new(params[:review])
     #else
-      @review = @user.reviews.build(params[:review])
+    #  @review = @user.reviews.build(params[:review])
     #end
+    @review = @user.reviews.build(params[:review])
+    #@review.effectiveness=params[:review][:effectiveness] ? params[:review][:effectiveness]:nil
+    #@review.satisfactory=params[:review][:satisfactory] ? params[:review][:satisfactory]:nil
+    #@review.ease_of_use=params[:review][:ease_of_use] ? params[:review][:ease_of_use]:nil
+
+
 
     @review.drug_id=params[:drug_id]
 

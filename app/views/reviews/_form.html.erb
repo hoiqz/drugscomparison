@@ -15,17 +15,12 @@
 
 
     <%= fields_for @user do |user_detail_form| %>
-        <div class="control-group">
-          <%= user_detail_form.label :username, "Username *", :class=>"control-label" %>
-          <div class="controls">
-            <%= user_detail_form.text_field :username, :placeholder=>"Visitor"%>
-          </div>
-        </div>
+
         <div class="control-group">
           <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
           <div class="controls ">
             <div class="input-append">
-            <%= user_detail_form.text_field :email_address, :placeholder=>"John_Doe@abc"%>
+            <%= user_detail_form.text_field :email_address, :placeholder=>"myemail@email"%>
             <span class="add-on">.com</span>
             </div>
           </div>

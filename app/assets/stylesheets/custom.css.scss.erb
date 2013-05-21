@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+
 @font-face {
     font-family: 'leaguegothic';
     src: url(font-path('leaguegothicregularwebfont.eot') + "?#iefix") format('embedded-opentype'),
@@ -275,9 +276,15 @@ h3#review_title{
 
 .dateandoptions
   {
-  float:right;
-  color:gray;
-  text-align:right;
+ // float:right;
+  color:#2f4f4f;
+  text-align:left;
+    background: none repeat scroll 0 0 #46C7C7;
+    padding: 10px 10px 10px 10px;
+    span{
+        color: white;
+        padding-right: 10px;
+    }
 }
 
 .comment
@@ -309,7 +316,17 @@ h3#review_title{
     -webkit-transition:background-color 2s;
     -o-transition:background-color 2s;
     transition:background-color 2s;
+    margin-top: 27px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #DDDDDD;
+    .comments{
+        padding: 10px 10px 10px 10px;
+    }
+    ul{
+        padding: 10px 10px 10px 10px;
+    }
 }
+
 
 .newreview{
     background-color:#E3E4FA;

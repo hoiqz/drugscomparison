@@ -4,10 +4,14 @@
 <span id="reviews_count"><%= pluralize(@for_counts, "reviews for #{@drug.brand_name}") %></span>
 <% @reviews.each do |review| %>
    <div id="review_<%="#{review.id}"%>" class="review_object">
-    <span class="dateandoptions">
-    Posted <%= time_ago_in_words(review.created_at)%> ago<br />
-  </span>
-    <p class="commentor"><b><%= review.user.username %></b> wrote:</p>
+     <div class="comments">
+     <blockquote class="pull-right"><%=review.comments %>
+       <small>
+         <%= review.user.username %>
+       </small>
+     </blockquote>
+     </div>
+
      <ul class="inline">
        <li>Effectiveness <div class="rating_bar">
          <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
@@ -22,7 +26,30 @@
      </ul>
       <br />
 
-    <%= content_tag(:p, review.comments, :class => "review-body") %>
+     <div class="dateandoptions">
+       <span>Posted <%= time_ago_in_words(review.created_at)%> ago  </span>
+     <% if review.user.caregiver %>
+           <span><i id="caregivericon"></i>Caregiver</span>
+        <%else%>
+          <span><i class="icon-user icon-white"></i>Patient</span>
+       <%end%>
+
+       <% if review.user.gender == "Male" %>
+       <span><i id="maleicon"></i>Male</span>
+           <% elsif review.user.gender == "Female" %>
+           <span><i class="icon-girl"></i>Female</span>
+           <%else%>
+           <span><i id="unknownicon"></i>Not Specified</span>
+
+     <%end%>
+
+       <span>Age: <%= review.user.age %></span>
+     </div>
+
+
+
+
+
    </div> <br />
 
 <%	end %>
