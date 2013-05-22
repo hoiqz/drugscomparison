@@ -14,7 +14,22 @@
                 $.getScript(this.href);
                 return false;
             });
+            ///////////////////////////////////
+            // hide it first
+            $("#fountainTextG").hide();
 
+            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph").bind("ajax:beforeSend", function(){
+                $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").addClass("disabled");
+                $("#fountainTextG").show();
+            });
+            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph").bind("ajax:complete", function(){
+                $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").removeClass("disabled")
+                $("#fountainTextG").hide();
+            });
+
+             //////////////////////////////
+
+            $("#infograph").popover();
             $("#effectlink").popover();
             $("#eoulink").popover();
             $("#satisfylink").popover();
@@ -31,23 +46,78 @@
 
 <div class="box span8 border-shadow">
   <span class="miniheader">By Drug</span>
+
   <article class="articlecontent">
    <h1>
     <%= @drug.brand_name %>
   </h1>
-
+    <div class="static_buttons">
+      <h4>Control Panel</h4>
+      <%= render "chart_buttons" %>
+    </div>
+    <div id="fountainTextG" class="span6 offset2">
+      <div id="fountainTextG_1" class="fountainTextG">
+        G</div>
+      <div id="fountainTextG_2" class="fountainTextG">
+        e</div>
+      <div id="fountainTextG_3" class="fountainTextG">
+        n</div>
+      <div id="fountainTextG_4" class="fountainTextG">
+        e</div>
+      <div id="fountainTextG_5" class="fountainTextG">
+        r</div>
+      <div id="fountainTextG_6" class="fountainTextG">
+        a</div>
+      <div id="fountainTextG_7" class="fountainTextG">
+        t</div>
+      <div id="fountainTextG_8" class="fountainTextG">
+        i</div>
+      <div id="fountainTextG_9" class="fountainTextG">
+        n</div>
+      <div id="fountainTextG_10" class="fountainTextG">
+        g</div>
+      <div id="fountainTextG_11" class="fountainTextG">
+        &nbsp;
+      </div>
+      <div id="fountainTextG_12" class="fountainTextG">
+        R</div>
+      <div id="fountainTextG_13" class="fountainTextG">
+        e</div>
+      <div id="fountainTextG_14" class="fountainTextG">
+        s</div>
+      <div id="fountainTextG_15" class="fountainTextG">
+        u</div>
+      <div id="fountainTextG_16" class="fountainTextG">
+        l</div>
+      <div id="fountainTextG_17" class="fountainTextG">
+        t</div>
+      <div id="fountainTextG_18" class="fountainTextG">
+        s</div>
+      <div id="fountainTextG_19" class="fountainTextG">
+        &nbsp;
+      </div>
+      <div id="fountainTextG_20" class="fountainTextG">
+        .</div>
+      <div id="fountainTextG_21" class="fountainTextG">
+        &nbsp;
+      </div>
+      <div id="fountainTextG_22" class="fountainTextG">
+        .</div>
+      <div id="fountainTextG_23" class="fountainTextG">
+        &nbsp;
+      </div>
+      <div id="fountainTextG_24" class="fountainTextG">
+        .</div>
+    </div>
       <div id="reviews_chart" class="articlecontent">
+
         <!-- You should explicitly specify the dimensions of the container element -->
         <%= render "infographs" if !params[:button]%>
 
 
       </div>
 
-      <div class="static_buttons">
-        <h3>Control Panel</h3>
-        <%= render "chart_buttons" %>
 
-      </div>
 
   </article>
 </div>
