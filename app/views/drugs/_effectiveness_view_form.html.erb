@@ -1,5 +1,7 @@
 <%= form_for @drug,:url=> effectiveness_view_drug_path(@drug.id),:method => "get", :remote=>true do |f| %>
-    <legend>Restrict By:</legend>
+    <legend>Restrict By:
+    <span><button type="submit" class="btn" href="#"><i class="icon-share-alt"></i> Reset</button></span>
+    </legend>
     <%= hidden_field_tag 'conditions', 'true' %>
 
     <%= hidden_field_tag 'type', 'all', :id=>"viewtype"%>
@@ -32,5 +34,5 @@
     </ul>
 
 
-    <%= submit_tag "Refresh",:id=>"button",:class=>" btn btn-primary"%>
+    <button type="submit" class="btn btn-primary"><i class="icon-refresh icon-white"></i> Reload Chart</button>
 <%  end%>
