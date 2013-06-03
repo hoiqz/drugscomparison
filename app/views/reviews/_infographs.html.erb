@@ -3,8 +3,9 @@
   <div class="carousel-inner">
     <div class="active item">
       <div id="avg_sat_infograph">
+        <%= image_tag("average-satisfaction_white.png") %>
         <h3>Overall<br><span class="focus3">Satisfaction</span></h3>
-        <%	 if @infograph.avg_sat_male.nil?  %>
+       <p> <%	 if @infograph.avg_sat_male.nil?  %>
             <span id="maleleft"><span class="focus3">-</span> / 5</span>
             <%	 else %>
             <span id="maleleft"><span class="focus3"><%= @infograph.avg_sat_male.round(2)%></span> / 5</span>
@@ -12,19 +13,21 @@
             <%	 if @infograph.avg_sat_female.nil?  %>
             <span id="femaleright"><span class="focus3">-</span> / 5</span>
             <%	 else %>
-        <span id="femaleright"><span class="focus3"><%= @infograph.avg_sat_female.round(2)%></span> / 5</span>
+            <span id="femaleright"><span class="focus3"><%= @infograph.avg_sat_female.round(2)%></span> / 5</span>
             <%end%>
+       </p>
       </div>
     </div>
     <div class="item">
       <div id="freq_words_infograph">
+        <%= image_tag("frequentwordsbackground.png") %>
         <ul>
           <%	 if @topwords.nil? %>
               <li><span class="focus3">Word frequency statistics not available for this drug</span></li>
               <%	 else %>
-          <li><span class="focus3">&ldquo;<%= @topwords.shift %></span></li>
-          <li><span class="focus4"><%= @topwords.shift %></span></li>
-          <li><span class="focus5"><%= @topwords.shift %>&rdquo;</span></li>
+          <li>&ldquo;<%= @topwords.shift %>&ldquo;</li>
+          <li>&ldquo;<%= @topwords.shift %>&ldquo;</li>
+          <li>&ldquo;<%= @topwords.shift %>&rdquo;</li>
               <%	 end %>
         </ul>
 
@@ -32,31 +35,25 @@
     </div>
     <div class="item">
       <div id="age_breakdown_infograph">
-
-        <ul>
-          <li id="child"><%= @infograph.age_less_18.round(1) %></span></li>
-          <li id="adult"><%= @infograph.age_btw_18_50.round(1) %></span></li>
-          <li id="senior"><%= @infograph.age_more_50.round(1) %></span></li>
-        </ul>
-        <h3><span class="focus2"><%= @infograph.age_btw_18_50.round(1) %></span> % of our reviewers come from <span class="focus5">age group <br>18 - 55</span></h3>
+        <%= image_tag("age_breakdown.png") %>
+        <h3>Overall<br>Reviewers <br> <span class="focus2">Gender profile</span></h3>
+          <p id="child"><%= @infograph.age_less_18.round(1) %></p>
+          <p id="adult"><%= @infograph.age_btw_18_50.round(1) %></p>
+          <p id="senior"><%= @infograph.age_more_50.round(1) %></p>
       </div>
     </div>
     <div class="item">
       <div id="gender_breakdown_infograph">
+        <%= image_tag("effectiveness-background.png") %>
+          <div class="human_bar1">
 
-        <ul>
-          <li><div class="human_bar1">
-            <div style="width:<%= (@infograph.effective_over_3.round)*30 %>px"></div>
-            <span class="focus2"><%= @infograph.effective_over_3.round %></span> in  <span class="focus3">10</span> <br>reviewers found this<br> drug <span class="focus5">effective</span>
-          </div>
-          </li>
-          <li><div class="human_bar2">
-            <div style="width:<%= (@infograph.effective_less_3.ceil)*30 %>px"></div>
-            <span class="focus2"><%= @infograph.effective_less_3.ceil %></span> in <span class="focus3">10</span> <br>reviewers found this <br>drug <span class="focus5">ineffective</span>
-          </div>
+            <span class="whiteorangeman"></span>
+            <span class="orangeman" style="width:<%= (@infograph.effective_over_3.round)*30 %>px"></span>
+            </div>
 
-          </li>
-        </ul>
+
+
+
       </div>
     </div>
   </div>

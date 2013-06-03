@@ -126,14 +126,14 @@ end
     @urlendcoded=@edited_params.to_query
 
     #for the condition label
-    @label='Nil'
+    @label='None'
     if params[:conditions]
       @label=''
       labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
       labels.each_pair do |key,value|
         @label<< "#{key.capitalize} : #{value} , "
       end
-      @label='Nil' if @label.blank?
+      @label='None' if @label.blank?
     end
 
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
@@ -157,14 +157,14 @@ end
     @urlendcoded=@edited_params.to_query
 
     #for the condition label
-    @label='Nil'
+    @label='None'
     if params[:conditions]
       @label=''
       labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
       labels.each_pair do |key,value|
              @label<< "#{key.capitalize} : #{value} , "
       end
-      @label='Nil' if @label.blank?
+      @label='None' if @label.blank?
     end
 
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}
@@ -187,14 +187,14 @@ end
     @urlendcoded=@edited_params.to_query
 
     #for the condition label
-    @label='Nil'
+    @label='None'
     if params[:conditions]
       @label=''
       labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id)
       labels.each_pair do |key,value|
         @label<< "#{key.capitalize} : #{value} , "
       end
-      @label='Nil' if @label.blank?
+      @label='None' if @label.blank?
     end
 
     @update_values = Hash.new{|hash, key| hash[key] = Array.new}

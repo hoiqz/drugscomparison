@@ -151,9 +151,9 @@ footer {
 #reviews_chart{
   //float: left;
   //width: 900px;
-  min-height: 400px;
+ // min-height: 400px;
   //overflow: auto;
-  padding-bottom: 10px;
+ // padding-bottom: 10px;
 }
 #tagcloud{
   min-height: 400px;
@@ -186,7 +186,8 @@ padding: 0px 25px;
 }
 
 .box{
-    background: none repeat scroll 0 0 #EEEEEE;
+    //background: none repeat scroll 0 0 #EEEEEE;
+    background: none repeat scroll 0 0 #FFFFFF;
     //border-radius: 3px 3px 3px 3px;
     padding: 3px;
     margin-bottom: 30px;
@@ -427,159 +428,264 @@ img{
 /* drug infograph */
 
 #avg_sat_infograph{
-  font-family: leaguegothic;
-
-  h3{
+    font-family: leaguegothic;
+    max-width: 100%;
     position: relative;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 30px;
-    color: $infographblue;
-    text-transform: uppercase;
-  }
-
-  span#maleleft{
-    position: absolute;
-    margin-top: 180px;
-    margin-left: 170px;
-    font-size: 30px;
-    color: $infographblue;
-    text-transform: uppercase;
-  }
-  span#femaleright{
-    position: absolute;
-    margin-top: 180px;
-    margin-left: 400px;
-    font-size: 30px;
-    color: $infographblue;
-    text-transform: uppercase;
-  }
-  width: 695px;
-  height: 400px;
-  background: url("average-satisfaction_white.png") no-repeat;
+    h3{
+        margin:0px;
+        font-size: 60px;
+        font-family: leaguegothic;
+        position: absolute;
+        text-align: center;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 100%;
+        top: 1%;
+    }
+    p{
+        font-family: leaguegothic;
+        font-size: 30px;
+        span#maleleft{
+            position: absolute;
+            top: 85%;
+            left: 20%;
+             font-size: 80px;
+            color: $infographblue;
+            text-transform: uppercase;
+        }
+        span#femaleright{
+            position: absolute;
+            top: 85%;
+            left: 55%;
+           font-size: 80px;
+            color: $infographblue;
+            text-transform: uppercase;
+        }
+    }
 }
 
 #freq_words_infograph{
-  font-family: leaguegothic;
-  position: relative;
+    max-width: 100%;
+    position: relative;
+    color: $infographorange;
+
   ul {
-    position: absolute;
-    width: 300px;
-    margin-left: 200px;
-    margin-top: 100px;
+      font-size: 70px;
+      font-family: leaguegothic;
+      position: absolute;
+      margin: 0px;
+      top: 10%;
+      left: 25%;
     li{
       list-style-type: none;
       margin: 15px;
+      padding: 10px;
     }
   }
-  h3{
-    position: absolute;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 30px;
-    color: $infographblue;
-    text-transform: uppercase;
-    margin-left: 400px;
-    margin-top: 170px;
-  }
-  width: 695px;
-  height: 400px;
-  background: url("frequentwordsbackground.png") no-repeat;
 }
 
 #age_breakdown_infograph{
-  font-family: leaguegothic;
-
-  ul {
+    max-width: 100%;
     position: relative;
-    li{
-      list-style-type: none;
-      position: absolute;
+    color: #ffffff;
 
-      font-family: arial;
-      font-size: 32px;
-      color:#ffffff;
+    p {
+        width: 10%;
+        font-size: 60px;
+        font-family: leaguegothic;
+        position: absolute;
+        margin: 0px;
     }
-    li#child{
-      margin-left: 400px;
-      margin-top: 60px;
+        #child{
+            top: 15%;
+            left: 57%;
+        }
+        #adult{
+            top: 48%;
+            left: 57%;
+        }
+       #senior{
+            top: 83%;
+            left: 58%;
+        }
+    h3{
+        position: absolute;
+        top: 50%;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 50%;
     }
-    li#adult{
-      margin-left: 410px;
-      margin-top: 195px;
-    }
-    li#senior{
-      margin-left: 420px;
-      margin-top: 330px;
-    }
-  }
-  h3{
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 150px;
-    #text-align: center;
-    font-size: 30px;
-    color: $infographblue;
-    text-transform: uppercase;
-    width: 200px;
-  }
-  width: 695px;
-  height: 400px;
-  background: url("age_breakdown.png") no-repeat;
 }
 
 #gender_breakdown_infograph{
-  font-family: leaguegothic;
-  position: relative;
-  ul {
-
-    li{
-      list-style-type: none;
-      position: absolute;
-        line-height:30px;
-      font-family: leaguegothic;
-      font-size: 32px;
-      color:$infographblue;
-    }
-    .human_bar1 {
-      margin-top:20px;
-      margin-left: 30px;
-      width: 300px;
-      background: url("whiteorangeman.png") 0 0 repeat-x;
-    }
-
-    .human_bar1 div {
-      height: 60px;
-      background: url("orangeman.png") 0 0 repeat-x;
-      margin-bottom: 30px;
-    }
-    .human_bar2 {
-      margin-top:200px;
-      margin-left: 300px;
-      width: 300px;
-      background: url("whiteblueman.png") 0 0 repeat-x;
-    }
-
-    .human_bar2 div {
-      height: 60px;
-      background: url("blueman.png") 0 0 repeat-x;
-      margin-bottom: 30px;
-    }
-  }
-  h3{
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 150px;
-    #text-align: center;
-    font-size: 30px;
+    font-family: leaguegothic;
+    max-width: 100%;
+    position: relative;
     color: $infographblue;
-    text-transform: uppercase;
-    width: 200px;
-  }
-  width: 695px;
-  height: 400px;
-  background: url("effectiveness-background.png") no-repeat;
+        div {
+            position: absolute;
+            margin: 0;
+            top:1%;
+            left: 1%;
+             width: 300px;
+            /*width: 5%;*/
+         span.whiteorangeman{
+             background: url("whiteorangeman.png") 0 0 repeat-x;
+             width: 300px;
+             z-index: 2;
+         }
+        span.orangeman{
+            /*height: 60px;*/
+            background: url("orangeman.png") 0 0 repeat-x;
+            margin-bottom: 30px;
+            z-index: 5;
+        }
+        }
+        .human_bar2 {
+            position: absolute;
+            margin-top:200px;
+            margin-left: 300px;
+            width: 300px;
+            background: url("whiteblueman.png") 0 0 repeat-x;
+            z-index: 10 ;
+        }
+
+        .human_bar2 div {
+            height: 60px;
+            background: url("blueman.png") 0 0 repeat-x;
+            margin-bottom: 30px;
+            z-index: 10 ;
+        }
+
+    h3{
+        position: absolute;
+       left: 1%;
+        top: 1%;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 200px;
+    }
 }
+
+/* MEDIA QUERIES */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    #avg_sat_infograph{
+        h3 {
+            font-size: 230%;
+        }
+        p{
+            span#maleleft{
+                font-size: 200%;
+            }
+            span#femaleright{
+                font-size: 200%;
+            }
+        }
+    }
+    #freq_words_infograph{
+       ul{
+           font-size: 300%;
+       }
+    }
+    #age_breakdown_infograph{
+        h3{
+            font-size: 230%;
+            top:30%;
+        }
+        p#child,p#adult,p#senior{
+            font-size: 230%;
+            left: 67%
+        }
+
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #avg_sat_infograph{
+        h3 {
+            font-size: 230%;
+        }
+        p{
+            span#maleleft{
+                font-size: 170%;
+            }
+            span#femaleright{
+                font-size: 170%;
+            }
+        }
+    }
+    #freq_words_infograph{
+        ul{
+            font-size: 400%;
+        }
+    }
+    #age_breakdown_infograph{
+        h3{
+            font-size: 150%;
+            top:30%;
+        }
+        p#child,p#adult,p#senior{
+            font-size: 180%;
+            left: 67%
+        }
+
+    }
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #avg_sat_infograph{
+        h3 {
+            font-size: 250%;
+        }
+        p{
+            span#maleleft{
+                font-size: 150%;
+            }
+            span#femaleright{
+                font-size: 150%;
+            }
+        }
+    }
+    #freq_words_infograph{
+        ul{
+            font-size: 400%;
+            li{
+                padding: 0px;
+            }
+        }
+    }
+    #age_breakdown_infograph{
+              h3{
+                  font-size: 250%;
+                  top:30%;
+              }
+              p#child,p#adult,p#senior{
+                  font-size: 220%;
+                  left: 66%
+              }
+
+          }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    #age_breakdown_infograph{
+        h3{
+            font-size: 300%;
+            top:30%;
+        }
+        p#child,p#adult,p#senior{
+            font-size: 300%;
+            left: 66%
+        }
+
+    }
+}
+
 
     /* conditions inforgraphs*/
 #total_reviews_infograph{
@@ -744,21 +850,21 @@ img{
   color:$infographorange;
 }
 .focus5{
-   font-size: 40px;
+ //  font-size: 40px;
   color:$infographorange;
  }
 .focus4{
-  font-size: 60px;
+//  font-size: 60px;
   padding-top: 10px;
     color:$infographorange;
 }
 .focus3{
-  font-size: 80px;
+  //font-size: 80px;
   padding-top: 10px;
     color:$infographorange;
 }
 .focus2{
-  font-size: 100px;
+ // font-size: 100px;
   padding-top: 10px;
     color:$infographorange;
 }

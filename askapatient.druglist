@@ -802,37 +802,37 @@
 #MONOPRIL	19915	http://www.askapatient.com/viewrating.asp?drug=19915&name=MONOPRIL
 #MONUROL	50717	http://www.askapatient.com/viewrating.asp?drug=50717&name=MONUROL
 #MORPHINE SULFATE	19916	http://www.askapatient.com/viewrating.asp?drug=19916&name=MORPHINE+SULFATE
-MOTOFEN	17744	http://www.askapatient.com/viewrating.asp?drug=17744&name=MOTOFEN
-MOTRIN	17463	http://www.askapatient.com/viewrating.asp?drug=17463&name=MOTRIN
-MOVIPREP	21881	http://www.askapatient.com/viewrating.asp?drug=21881&name=MOVIPREP
-MS CONTIN	19516	http://www.askapatient.com/viewrating.asp?drug=19516&name=MS+CONTIN
-MUCINEX	21282	http://www.askapatient.com/viewrating.asp?drug=21282&name=MUCINEX
-MUCINEX DM	21620	http://www.askapatient.com/viewrating.asp?drug=21620&name=MUCINEX+DM
-MULTAQ	22425	http://www.askapatient.com/viewrating.asp?drug=22425&name=MULTAQ
-MYCELEX	18181	http://www.askapatient.com/viewrating.asp?drug=18181&name=MYCELEX
-MYSOLINE	9170	http://www.askapatient.com/viewrating.asp?drug=9170&name=MYSOLINE
-MAGNESIUM HYDROXIDE; OMEPRAZOLE: SODIUM BICARBONATE	21850	http://www.askapatient.com/viewrating.asp?drug=21850&name=ZEGERID
-MAPROTILINE HYDROCHLORIDE	17543	http://www.askapatient.com/viewrating.asp?drug=17543&name=LUDIOMIL
-MECLIZINE HYDROCHLORIDE	10721	http://www.askapatient.com/viewrating.asp?drug=10721&name=ANTIVERT
-MECLIZINE HYDROCHLORIDE	40179	http://www.askapatient.com/viewrating.asp?drug=40179&name=MECLIZINE+HCL
-MEDROXYPROGESTERONE ACETATE	40159	http://www.askapatient.com/viewrating.asp?drug=40159&name=MEDROXYPROGESTERONE+ACETATE
-MEDROXYPROGESTERONE ACETATE	11839	http://www.askapatient.com/viewrating.asp?drug=11839&name=PROVERA
-MEDROXYPROGESTERONE ACETATE	12541	http://www.askapatient.com/viewrating.asp?drug=12541&name=DEPO%2DPROVERA
-MEFENAMIC ACID	15034	http://www.askapatient.com/viewrating.asp?drug=15034&name=PONSTEL
-MEFLOQUINE HYDROCHLORIDE	19591	http://www.askapatient.com/viewrating.asp?drug=19591&name=LARIAM
-MEGESTROL ACETATE	16979	http://www.askapatient.com/viewrating.asp?drug=16979&name=MEGACE
-MEGESTROL ACETATE	21778	http://www.askapatient.com/viewrating.asp?drug=21778&name=MEGACE+ES
-MELOXICAM	20938	http://www.askapatient.com/viewrating.asp?drug=20938&name=MOBIC
-MEMANTINE HYDROCHLORIDE	21627	http://www.askapatient.com/viewrating.asp?drug=21627&name=NAMENDA
-MENOTROPINS (FSH;LH)	21047	http://www.askapatient.com/viewrating.asp?drug=21047&name=REPRONEX
-MEPERIDINE HYDROCHLORIDE	5010	http://www.askapatient.com/viewrating.asp?drug=5010&name=DEMEROL
-MEPERIDINE HYDROCHLORIDE; PROMETHAZINE HYDROCHLORIDE	11730	http://www.askapatient.com/viewrating.asp?drug=11730&name=MEPERGAN
-MEPROBAMATE	9698	http://www.askapatient.com/viewrating.asp?drug=9698&name=MILTOWN
-MERCAPTOPURINE	9053	http://www.askapatient.com/viewrating.asp?drug=9053&name=PURINETHOL
-MERCAPTOPURINE	40594	http://www.askapatient.com/viewrating.asp?drug=40594&name=MERCAPTOPURINE
-MESALAMINE	21830	http://www.askapatient.com/viewrating.asp?drug=21830&name=ASACOL+HD
-MESALAMINE	21252	http://www.askapatient.com/viewrating.asp?drug=21252&name=CANASA
-MESALAMINE	19618	http://www.askapatient.com/viewrating.asp?drug=19618&name=ROWASA
+#MOTOFEN	17744	http://www.askapatient.com/viewrating.asp?drug=17744&name=MOTOFEN
+#MOTRIN	17463	http://www.askapatient.com/viewrating.asp?drug=17463&name=MOTRIN
+#MOVIPREP	21881	http://www.askapatient.com/viewrating.asp?drug=21881&name=MOVIPREP
+#MS CONTIN	19516	http://www.askapatient.com/viewrating.asp?drug=19516&name=MS+CONTIN
+#MUCINEX	21282	http://www.askapatient.com/viewrating.asp?drug=21282&name=MUCINEX
+#MUCINEX DM	21620	http://www.askapatient.com/viewrating.asp?drug=21620&name=MUCINEX+DM
+#MULTAQ	22425	http://www.askapatient.com/viewrating.asp?drug=22425&name=MULTAQ
+#MYCELEX	18181	http://www.askapatient.com/viewrating.asp?drug=18181&name=MYCELEX
+#MYSOLINE	9170	http://www.askapatient.com/viewrating.asp?drug=9170&name=MYSOLINE
+#MAGNESIUM HYDROXIDE; OMEPRAZOLE: SODIUM BICARBONATE	21850	http://www.askapatient.com/viewrating.asp?drug=21850&name=ZEGERID
+#MAPROTILINE HYDROCHLORIDE	17543	http://www.askapatient.com/viewrating.asp?drug=17543&name=LUDIOMIL
+#MECLIZINE HYDROCHLORIDE	10721	http://www.askapatient.com/viewrating.asp?drug=10721&name=ANTIVERT
+#MECLIZINE HYDROCHLORIDE	40179	http://www.askapatient.com/viewrating.asp?drug=40179&name=MECLIZINE+HCL
+#MEDROXYPROGESTERONE ACETATE	40159	http://www.askapatient.com/viewrating.asp?drug=40159&name=MEDROXYPROGESTERONE+ACETATE
+#MEDROXYPROGESTERONE ACETATE	11839	http://www.askapatient.com/viewrating.asp?drug=11839&name=PROVERA
+#MEDROXYPROGESTERONE ACETATE	12541	http://www.askapatient.com/viewrating.asp?drug=12541&name=DEPO%2DPROVERA
+#MEFENAMIC ACID	15034	http://www.askapatient.com/viewrating.asp?drug=15034&name=PONSTEL
+#MEFLOQUINE HYDROCHLORIDE	19591	http://www.askapatient.com/viewrating.asp?drug=19591&name=LARIAM
+#MEGESTROL ACETATE	16979	http://www.askapatient.com/viewrating.asp?drug=16979&name=MEGACE
+#MEGESTROL ACETATE	21778	http://www.askapatient.com/viewrating.asp?drug=21778&name=MEGACE+ES
+#MELOXICAM	20938	http://www.askapatient.com/viewrating.asp?drug=20938&name=MOBIC
+#MEMANTINE HYDROCHLORIDE	21627	http://www.askapatient.com/viewrating.asp?drug=21627&name=NAMENDA
+#MENOTROPINS (FSH;LH)	21047	http://www.askapatient.com/viewrating.asp?drug=21047&name=REPRONEX
+#MEPERIDINE HYDROCHLORIDE	5010	http://www.askapatient.com/viewrating.asp?drug=5010&name=DEMEROL
+#MEPERIDINE HYDROCHLORIDE; PROMETHAZINE HYDROCHLORIDE	11730	http://www.askapatient.com/viewrating.asp?drug=11730&name=MEPERGAN
+#MEPROBAMATE	9698	http://www.askapatient.com/viewrating.asp?drug=9698&name=MILTOWN
+#MERCAPTOPURINE	9053	http://www.askapatient.com/viewrating.asp?drug=9053&name=PURINETHOL
+#MERCAPTOPURINE	40594	http://www.askapatient.com/viewrating.asp?drug=40594&name=MERCAPTOPURINE
+#MESALAMINE	21830	http://www.askapatient.com/viewrating.asp?drug=21830&name=ASACOL+HD
+#MESALAMINE	21252	http://www.askapatient.com/viewrating.asp?drug=21252&name=CANASA
+#MESALAMINE	19618	http://www.askapatient.com/viewrating.asp?drug=19618&name=ROWASA
 MESALAMINE	19651	http://www.askapatient.com/viewrating.asp?drug=19651&name=ASACOL
 MESALAMINE	20049	http://www.askapatient.com/viewrating.asp?drug=20049&name=PENTASA
 METAPROTERENOL SULFATE	15874	http://www.askapatient.com/viewrating.asp?drug=15874&name=ALUPENT

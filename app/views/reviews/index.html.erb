@@ -43,19 +43,20 @@
     </script>
 <% end %>
 
-
-<div class="box span8 border-shadow">
-  <span class="miniheader">By Drug</span>
+<!-- level 2 nesting -->
+<div class=row>
+<div class="box span9 border-shadow">
+ <!-- <span class="miniheader">By Drug</span> -->
 
   <article class="articlecontent">
    <h1>
     <%= @drug.brand_name %>
   </h1>
-    <div class="static_buttons">
+    <div class="static_buttons span8">
       <h4>Control Panel</h4>
       <%= render "chart_buttons" %>
     </div>
-    <div id="fountainTextG" class="span6 offset2">
+    <div id="fountainTextG" class="span8">
       <div id="fountainTextG_1" class="fountainTextG">
         G</div>
       <div id="fountainTextG_2" class="fountainTextG">
@@ -109,21 +110,14 @@
       <div id="fountainTextG_24" class="fountainTextG">
         .</div>
     </div>
-      <div id="reviews_chart" class="articlecontent">
-
-        <!-- You should explicitly specify the dimensions of the container element -->
+      <div id="reviews_chart" class="span8">
         <%= render "infographs" if !params[:button]%>
-
-
       </div>
-
-
-
   </article>
 </div>
 
 
-<div class="box span8 border-shadow">
+<div class="box span9 border-shadow">
   <span class="miniheader">Other information on <%= @drug.brand_name %></span>
   <article class="articlecontent">
     <div class="tabbable"> <!-- Only required for left/right tabs -->
@@ -164,7 +158,7 @@
   </article>
 </div>
 
-<a href="#myModal" role="button" class="btn" data-toggle="modal">Review This Drug</a>
+
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -176,7 +170,7 @@
 
 </div>
 
-
+</div>
 
 
 
