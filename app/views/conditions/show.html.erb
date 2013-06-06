@@ -24,20 +24,20 @@
         });
     </script>
 <% end %>
-
+<div class=row>
 <div class="box span10 border-shadow">
-    <span class="miniheader">By Condition</span>
+   <!-- <span class="miniheader">By Condition</span>-->
 
  <article class="articlecontent">
    <h1>
      <%= @condition.name %>
    </h1>
 
-   <div class="static_buttons">
+   <div class="static_buttons span9">
      <h4>Control Panel</h4>
      <%= render "chart_buttons" %>
    </div>
-   <div id="fountainTextG" class="span6 offset3">
+   <div id="fountainTextG" class="span9">
      <div id="fountainTextG_1" class="fountainTextG">
        G</div>
      <div id="fountainTextG_2" class="fountainTextG">
@@ -91,7 +91,7 @@
      <div id="fountainTextG_24" class="fountainTextG">
        .</div>
    </div>
-  <div id="reviews_chart" class="articlecontent">
+  <div id="reviews_chart" class="span9">
     <%= render "infographs" %>
   </div>
 
@@ -143,4 +143,5 @@
   </div>
 </div>
   </article>
+</div>
 </div>
