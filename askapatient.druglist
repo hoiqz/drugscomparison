@@ -833,16 +833,16 @@
 #MESALAMINE	21830	http://www.askapatient.com/viewrating.asp?drug=21830&name=ASACOL+HD
 #MESALAMINE	21252	http://www.askapatient.com/viewrating.asp?drug=21252&name=CANASA
 #MESALAMINE	19618	http://www.askapatient.com/viewrating.asp?drug=19618&name=ROWASA
-MESALAMINE	19651	http://www.askapatient.com/viewrating.asp?drug=19651&name=ASACOL
-MESALAMINE	20049	http://www.askapatient.com/viewrating.asp?drug=20049&name=PENTASA
-METAPROTERENOL SULFATE	15874	http://www.askapatient.com/viewrating.asp?drug=15874&name=ALUPENT
-METAXALONE	13217	http://www.askapatient.com/viewrating.asp?drug=13217&name=SKELAXIN
-METFORMIN HYDROCHLORIDE	20357	http://www.askapatient.com/viewrating.asp?drug=20357&name=GLUCOPHAGE
-METFORMIN HYDROCHLORIDE	21748	http://www.askapatient.com/viewrating.asp?drug=21748&name=GLUMETZA
-METFORMIN HYDROCHLORIDE	21202	http://www.askapatient.com/viewrating.asp?drug=21202&name=GLUCOPHAGE+XR
-METFORMIN HYDROCHLORIDE	76450	http://www.askapatient.com/viewrating.asp?drug=76450&name=METFORMIN+HYDROCHLORIDE
-METFORMIN HYDROCHLORIDE; SITAGLIPTIN PHOSPHATE	22044	http://www.askapatient.com/viewrating.asp?drug=22044&name=JANUMET
-METHADONE HYDROCHLORIDE	17116	http://www.askapatient.com/viewrating.asp?drug=17116&name=METHADOSE
+#MESALAMINE	19651	http://www.askapatient.com/viewrating.asp?drug=19651&name=ASACOL
+#MESALAMINE	20049	http://www.askapatient.com/viewrating.asp?drug=20049&name=PENTASA
+#METAPROTERENOL SULFATE	15874	http://www.askapatient.com/viewrating.asp?drug=15874&name=ALUPENT
+#METAXALONE	13217	http://www.askapatient.com/viewrating.asp?drug=13217&name=SKELAXIN
+#METFORMIN HYDROCHLORIDE	20357	http://www.askapatient.com/viewrating.asp?drug=20357&name=GLUCOPHAGE
+#METFORMIN HYDROCHLORIDE	21748	http://www.askapatient.com/viewrating.asp?drug=21748&name=GLUMETZA
+#METFORMIN HYDROCHLORIDE	21202	http://www.askapatient.com/viewrating.asp?drug=21202&name=GLUCOPHAGE+XR
+#METFORMIN HYDROCHLORIDE	76450	http://www.askapatient.com/viewrating.asp?drug=76450&name=METFORMIN+HYDROCHLORIDE
+#METFORMIN HYDROCHLORIDE; SITAGLIPTIN PHOSPHATE	22044	http://www.askapatient.com/viewrating.asp?drug=22044&name=JANUMET
+#METHADONE HYDROCHLORIDE	17116	http://www.askapatient.com/viewrating.asp?drug=17116&name=METHADOSE
 METHADONE HYDROCHLORIDE	6134	http://www.askapatient.com/viewrating.asp?drug=6134&name=DOLOPHINE+HCL
 METHADONE HYDROCHLORIDE	6383	http://www.askapatient.com/viewrating.asp?drug=6383&name=METHADONE+HCL
 METHADONE HYDROCHLORIDE	89897	http://www.askapatient.com/viewrating.asp?drug=89897&name=METHADONE+HCL+INTENSOL

@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-interval="15000">
+<div id="myCarousel" class="carousel slide" data-interval="150000">
   <!-- Carousel items -->
   <div class="carousel-inner">
     <div class="active item">
@@ -44,14 +44,31 @@
     </div>
     <div class="item">
       <div id="gender_breakdown_infograph">
-        <%= image_tag("effectiveness-background.png") %>
-          <div class="human_bar1">
+        <div class="human_bar1">
+          <div style="width:<%= (@infograph.effective_over_3.round)*10 %>%"></div>
+          <h3><span class="focus2">8</span>
+          in
+          <span class="focus3">10</span>
+          <br>
+          reviewers found this
+          <br>
+          drug
+          <span class="focus5">effective</span>
+          </h3>
+        </div>
 
-            <span class="whiteorangeman"></span>
-            <span class="orangeman" style="width:<%= (@infograph.effective_over_3.round)*30 %>px"></span>
-            </div>
-
-
+        <div class="human_bar2">
+          <div style="width:<%= (@infograph.effective_less_3.ceil)*10 %>%"></div>
+          <h3><span class="focus2">2</span>
+          in
+          <span class="focus3">10</span>
+          <br>
+          reviewers found this
+          <br>
+          drug
+          <span class="focus5">ineffective</span>
+          </h3>
+        </div>
 
 
       </div>

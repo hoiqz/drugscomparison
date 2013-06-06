@@ -488,7 +488,7 @@ img{
     max-width: 100%;
     position: relative;
     color: #ffffff;
-
+    font-family: leaguegothic;
     p {
         width: 10%;
         font-size: 60px;
@@ -511,7 +511,8 @@ img{
     h3{
         position: absolute;
         top: 50%;
-        font-size: 30px;
+        left:5%;
+        font-size: 50px;
         color: $infographblue;
         text-transform: uppercase;
         width: 50%;
@@ -523,46 +524,28 @@ img{
     max-width: 100%;
     position: relative;
     color: $infographblue;
+    .human_bar1 {
+        background: url("whiteorangeman.png") repeat-x scroll 0 0 transparent;
+        width: 300px;
+        float:left;
         div {
-            position: absolute;
-            margin: 0;
-            top:1%;
-            left: 1%;
-             width: 300px;
-            /*width: 5%;*/
-         span.whiteorangeman{
-             background: url("whiteorangeman.png") 0 0 repeat-x;
-             width: 300px;
-             z-index: 2;
-         }
-        span.orangeman{
-            /*height: 60px;*/
-            background: url("orangeman.png") 0 0 repeat-x;
-            margin-bottom: 30px;
-            z-index: 5;
-        }
-        }
-        .human_bar2 {
-            position: absolute;
-            margin-top:200px;
-            margin-left: 300px;
-            width: 300px;
-            background: url("whiteblueman.png") 0 0 repeat-x;
-            z-index: 10 ;
-        }
-
-        .human_bar2 div {
+            background: url("orangeman.png") repeat-x scroll 0 0 transparent;
             height: 60px;
-            background: url("blueman.png") 0 0 repeat-x;
-            margin-bottom: 30px;
-            z-index: 10 ;
+        }
+    }
+        .human_bar2 {
+            background: url("whiteblueman.png") repeat-x scroll 0 0 transparent;
+            float:right;
+            width: 300px;
+
+            div{
+                background: url("blueman.png") repeat-x scroll 0 0 transparent;
+                height: 60px;
+            }
         }
 
     h3{
-        position: absolute;
-       left: 1%;
-        top: 1%;
-        font-size: 30px;
+        font-size: 50px;
         color: $infographblue;
         text-transform: uppercase;
         width: 200px;
@@ -624,7 +607,7 @@ img{
     }
     #age_breakdown_infograph{
         h3{
-            font-size: 150%;
+            font-size: 250%;
             top:30%;
         }
         p#child,p#adult,p#senior{
@@ -640,14 +623,14 @@ img{
 @media (max-width: 480px) {
     #avg_sat_infograph{
         h3 {
-            font-size: 250%;
+            font-size: 200%;
         }
         p{
             span#maleleft{
-                font-size: 150%;
+                font-size: 100%;
             }
             span#femaleright{
-                font-size: 150%;
+                font-size: 100%;
             }
         }
     }
@@ -661,15 +644,37 @@ img{
     }
     #age_breakdown_infograph{
               h3{
-                  font-size: 250%;
+                  font-size: 190%;
                   top:30%;
               }
               p#child,p#adult,p#senior{
-                  font-size: 220%;
+                  font-size: 200%;
                   left: 66%
               }
 
           }
+    #gender_breakdown_infograph{
+        .human_bar1{
+            background-size: 15px;
+            width: 150px;
+            div{
+                background-size: 15px;
+            }
+            h3{
+                font-size: 150%;
+            }
+        }
+        .human_bar2{
+            background-size: 15px;
+            width: 150px;
+            div{
+                background-size: 15px;
+            }
+            h3{
+                font-size: 150%;
+            }
+        }
+    }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
