@@ -17,19 +17,19 @@
     </div>
     <div class="item">
       <div id="most_reviewed_infograph">
-        <div id="pillgraph" style="margin-top:<%= (10-@number_of_drugs) >0 ? (10-@number_of_drugs): 0 %>em">
+        <div id="pillgraph">
           <%@most_reviewed.collect do |k,v|%>
              <div class="pillbar_container">
                <div class="labeltext"><%= k%></div>
               <div class="pillbar">
-                 <div style="width:<%= (v.to_f.round)*30 %>px"></div>
+                 <div style="width:<%= (v.to_f.round)*10 %>%"></div>
               </div>
                <div class="labeltext"><%= ((v.to_f) *10).round(2)%> %</div>
              </div>
               <div class="clear"></div>
         <% end %>
         </div>
-        <h3><span class="focus4"><%= @winner[0]%> </span> has the <span class="focus5">most</span> number of <span class="focus5">users</span> </h3>
+        <h3><span class="focus4"><%= @winner[0]%> </span> ranked <span class="focus5">highest</span> in terms of <span class="focus5">users</span> </h3>
         <h4>It makes up <span class="focus5"><%= @winner[1]%> %</span> of all <span class="focus6"><%= @condition.name%></span> reviews </h4>
       </div>
     </div>

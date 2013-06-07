@@ -566,7 +566,7 @@ img{
         color: $infographblue;
         text-transform: uppercase;
         width: 100%;
-        top: 80%;
+        top: 70%;
     }
 }
 
@@ -578,7 +578,7 @@ img{
         position: absolute;
         font-family: leaguegothic;
         left: 40%;
-        top: 10%;
+        top: 5%;
         font-size: 40px;
         color: $infographblue;
         text-transform: uppercase;
@@ -608,6 +608,57 @@ img{
         line-height: 0;
         width: 100%;
      //   width: 400px;
+    }
+}
+
+#most_reviewed_infograph{
+    max-width: 100%;
+    position: relative;
+    color: $infographblue;
+    div#pillgraph{
+        /*position: absolute;*/
+        float: left;
+        width: 50%;
+        font-family: leaguegothic;
+        font-size: 15px;
+        color: $infographblue;
+        text-transform: uppercase;
+        .pillbar_container{
+            width: 100%;
+        }
+        .pillbar {
+            width: 300px;
+            background: url("pill_white.png") 0 0 repeat-x;
+            float: left;
+        }
+        .pillbar div {
+            height: 40px;
+            background: url("pill.png") 0 0 repeat-x;
+        }
+        .labeltext{
+            float:left;
+            width: 10%;
+            /*margin-right: 10px;*/
+            /*margin-left: 10px;*/
+        }
+        .clear { clear: both;}
+    }
+    h3{
+        float: left;
+        line-height: 40px;
+        font-family: leaguegothic;
+        font-size: 35px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 240px;
+    }
+    h4{
+        float: left;
+        font-size: 20px;
+        color: $infographblue;
+        font-family: leaguegothic;
+        text-transform: uppercase;
+        width: 300px;
     }
 }
 
@@ -663,6 +714,36 @@ img{
             font-size: 120%;
         }
     }
+    #most_reviewed_infograph{
+        div#pillgraph{
+            width: 100%;
+            .pillbar_container{
+                width: 100%;
+            }
+            .pillbar {
+                width: 250px;
+                background-size:25px;
+            }
+            .pillbar div {
+                background-size:25px;
+                height: 45px;
+            }
+            .labeltext{
+                float:left;
+                font-size: 100%;
+                width: 10%;
+            }
+        }
+        h3{
+            font-size: 180%;
+            width: 100%;
+            line-height: 100%;
+        }
+        h4{
+            font-size: 130%;
+            width: 100%;
+        }
+    }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -707,6 +788,36 @@ img{
             left: 35%;
             top: 90%;
             font-size: 100%;
+        }
+    }
+    #most_reviewed_infograph{
+        div#pillgraph{
+            width: 100%;
+            .pillbar_container{
+                width: 100%;
+            }
+            .pillbar {
+                width: 250px;
+                background-size:25px;
+            }
+            .pillbar div {
+                background-size:25px;
+                height: 45px;
+            }
+            .labeltext{
+                float:left;
+                font-size: 100%;
+                width: 10%;
+            }
+        }
+        h3{
+            font-size: 180%;
+            width: 100%;
+            line-height: 100%;
+        }
+        h4{
+            font-size: 130%;
+            width: 100%;
         }
     }
 }
@@ -783,6 +894,36 @@ img{
             font-size: 70%;
         }
     }
+    #most_reviewed_infograph{
+        div#pillgraph{
+            width: 100%;
+            .pillbar_container{
+                width: 100%;
+            }
+            .pillbar {
+                width: 150px;
+                background-size:15px;
+            }
+            .pillbar div {
+                background-size:15px;
+                height: 20px;
+            }
+            .labeltext{
+                float:left;
+                font-size: 70%;
+                width: 10%;
+            }
+        }
+        h3{
+            font-size: 150%;
+            width: 100%;
+            line-height: 100%;
+        }
+        h4{
+            font-size: 100%;
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
@@ -811,69 +952,41 @@ img{
             font-size: 120%;
         }
     }
+    #most_reviewed_infograph{
+        div#pillgraph{
+            width: 50%;
+            .pillbar_container{
+                width: 100%;
+            }
+            .pillbar {
+                width: 250px;
+                background-size:25px;
+            }
+            .pillbar div {
+                background-size:25px;
+                height: 45px;
+            }
+            .labeltext{
+                float:left;
+                font-size: 100%;
+                width: 10%;
+            }
+        }
+        h3{
+            font-size: 230%;
+            width: 50%;
+            line-height: 100%;
+        }
+        h4{
+            font-size: 180%;
+            width: 50%;
+        }
+    }
 }
 
 
 
 
-#most_reviewed_infograph{
-    font-family: leaguegothic;
-    position: relative;
-   div#pillgraph{
-       position: absolute;
-       margin-left: 50px;
-       margin-top: 0%;
-       width: 550px;
-       font-family: leaguegothic;
-       font-size: 20px;
-       color: $infographblue;
-       text-transform: uppercase;
-       .pillbar_container{
-           width: 550px;
-           margin-top: 10px;
-       }
-       .pillbar {
-           width: 300px;
-           background: url("pill_white.png") 0 0 repeat-x;
-           float: left;
-       }
-       .pillbar div {
-               height: 40px;
-               background: url("pill.png") 0 0 repeat-x;
-           }
-       .labeltext{
-           float:left;
-           width: 50px;
-           margin-right: 10px;
-           margin-left: 10px;
-       }
-       .clear { clear: both;}
-       }
-    h3{
-        position: absolute;
-        margin-left: 550px;
-        margin-top: 50px;
-        line-height: 40px;
-        #text-align: center;
-        font-size: 30px;
-        color: $infographblue;
-        text-transform: uppercase;
-        width: 240px;
-    }
-    h4{
-        position: absolute;
-        margin-left: 490px;
-        margin-top: 250px;
-        font-size: 20px;
-        color: $infographblue;
-        text-transform: uppercase;
-        width: 300px;
-    }
-
-    width: 100%;
-    height: 400px;
-    background: url("most_reviewed_background.png") no-repeat;
-}
 
 #most_awards{
     font-family: leaguegothic;
@@ -922,7 +1035,7 @@ img{
 
 
 .focus6{
-  font-size: 20px;
+ // font-size: 20px;
   color:$infographorange;
 }
 .focus5{
@@ -945,7 +1058,7 @@ img{
     color:$infographorange;
 }
 .focus1{
-  font-size: 120px;
+//  font-size: 120px;
   padding-top: 10px;
     color:$infographorange;
 }
