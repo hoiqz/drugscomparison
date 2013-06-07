@@ -662,6 +662,48 @@ img{
     }
 }
 
+#most_awards{
+    font-family: leaguegothic;
+    position: relative;
+    max-width: 100%;
+    h3{
+        position: absolute;
+        font-size: 25px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 30%;
+        top: 65%;
+    }
+    #m_sat{
+        left: 10%;
+    }
+    #m_eff{
+        left: 45%;
+    }
+    #m_eou{
+        left: 75%;
+    }
+    h4{
+        position: absolute;
+        margin-left: 460px;
+        margin-top: 250px;
+        font-size: 30px;
+        color: $infographblue;
+        text-transform: uppercase;
+        width: 380px;
+    }
+    p{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 370px;
+        font-size: 10px;
+        color: #696969;
+        text-transform: uppercase;
+    }
+
+    /*height: 400px;*/
+    /*background: url("most_award.png") no-repeat;*/
+}
 
 /* MEDIA QUERIES */
 /* Portrait tablet to landscape and desktop */
@@ -744,7 +786,14 @@ img{
             width: 100%;
         }
     }
+    #most_awards{
+        h3{
+            font-size: 150%;
+            top: 60%;
+        }
+    }
 }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     #avg_sat_infograph{
@@ -818,6 +867,12 @@ img{
         h4{
             font-size: 130%;
             width: 100%;
+        }
+    }
+    #most_awards{
+        h3{
+            font-size: 120%;
+            top: 60%;
         }
     }
 }
@@ -924,6 +979,12 @@ img{
             width: 100%;
         }
     }
+    #most_awards{
+        h3{
+            font-size: 60%;
+            top: 53%;
+        }
+    }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
@@ -982,55 +1043,14 @@ img{
             width: 50%;
         }
     }
+    #most_awards{
+        h3{
+            font-size: 200%;
+            top: 60%;
+        }
+    }
 }
 
-
-
-
-
-#most_awards{
-    font-family: leaguegothic;
-    position: relative;
-    h3{
-        position: absolute;
-        font-size: 25px;
-        color: $infographblue;
-        text-transform: uppercase;
-        width: 150px;
-    }
-    #m_sat{
-        margin-left: 130px;
-        margin-top: 260px;
-    }
-    #m_eff{
-        margin-left: 420px;
-        margin-top: 260px;
-    }
-    #m_eou{
-        margin-left: 690px;
-        margin-top: 260px;
-    }
-    h4{
-        position: absolute;
-        margin-left: 460px;
-        margin-top: 250px;
-        font-size: 30px;
-        color: $infographblue;
-        text-transform: uppercase;
-        width: 380px;
-    }
-    p{
-        position: absolute;
-        margin-left: 300px;
-        margin-top: 370px;
-        font-size: 10px;
-        color: #696969;
-        text-transform: uppercase;
-    }
-    width: 100%;
-    height: 400px;
-    background: url("most_award.png") no-repeat;
-}
 
 
 
