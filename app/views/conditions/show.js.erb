@@ -1,0 +1,5 @@
+<% if params[:button]=="sat-table"%>
+$("#reviews_chart").empty();
+//$("#conditions").hide(300);
+$("#reviews_chart").html('<%= escape_javascript render("satisfactory_table") %>');
+<%end%>

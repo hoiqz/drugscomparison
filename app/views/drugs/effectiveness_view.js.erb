@@ -38,11 +38,11 @@ $(function () {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        color: '#F8F8F8',
-                        connectorColor: '#F8F8F8',
+                        color: '#313131',
+                        connectorColor: '#adadad',
                         distance: 20,
                         formatter: function() {
-                            return '<b>'+ this.point.name +'</b>: '+ this.point.y +' reviewers';
+                            return this.point.y +' reviewers'+'<br>gave <b>'+ this.point.name +'</b>';
                         }
                     }
                 }
@@ -62,27 +62,27 @@ $(function () {
                 },
                 data:  [
                     {
-                        name: 'Scored 1/5',
+                        name: '1/5',
                         y: <%=raw @update_values[@drug.brand_name][0] %> ,
                         url: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?effectiveness=1&<%= @urlendcoded %>"
                     },
                     {
-                        name: 'Scored 2/5',
+                        name: '2/5',
                         y: <%=raw @update_values[@drug.brand_name][1] %> ,
                         url: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?effectiveness=2&<%= @urlendcoded %>"
                     },
                     {
-                        name: 'Scored 3/5',
+                        name: '3/5',
                         y: <%=raw @update_values[@drug.brand_name][2] %> ,
                         url: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?effectiveness=3&<%= @urlendcoded %>"
                     },
                     {
-                        name: 'Scored 4/5',
+                        name: '4/5',
                         y: <%=raw @update_values[@drug.brand_name][3] %> ,
                         url: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?effectiveness=4&<%= @urlendcoded %>"
                     },
                     {
-                        name: 'Scored 5/5',
+                        name: '5/5',
                         y: <%=raw @update_values[@drug.brand_name][4] %> ,
                         url: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?effectiveness=5&<%= @urlendcoded %>"
                     }

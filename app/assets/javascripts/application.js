@@ -16,7 +16,6 @@
 //= require highcharts
 //= require highcharts-more
 //= require exporting
-//= require gray
 //= require jqcloud-1.0.2.min
 //= require_tree .
 

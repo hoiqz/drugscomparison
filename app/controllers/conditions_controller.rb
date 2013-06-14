@@ -22,6 +22,10 @@ class ConditionsController < ApplicationController
       @optionshash=params
     end
 
+    #for table testing. im adding dummy values
+    @good1=5
+    @average1=3
+    @bad1=2
     # for the infograph
     @infograph=Conditioninfograph.find_by_condition_id(@condition.id)
     @most_reviewed=format2hash_string(@infograph.most_reviewed) # returns a ranked hash  eg  Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
@@ -34,7 +38,6 @@ class ConditionsController < ApplicationController
       @winner=@most_reviewed_first.split("=>")
       @winner[1]=((@winner[1].to_f) *10).round(2)
     end
-
     @most_satisfied =format2hash_string(@infograph.most_satisfied)
     @most_kids_using =format2hash_string(@infograph.most_kids_using)
     @most_kids_freq=@most_kids_using["frequency"].to_f * 100
@@ -42,8 +45,9 @@ class ConditionsController < ApplicationController
     @most_easy_to_use =format2hash_string(@infograph.most_easy_to_use)
     @most_effective =format2hash_string(@infograph.most_effective)
     @most_bad_reviews =format2hash_string(@infograph.most_bad_reviews)
-
+    # end infograph stuff
     respond_to do |format|
+          format.js
           format.html # show.html.erb
           format.json { render json: @drug }
 

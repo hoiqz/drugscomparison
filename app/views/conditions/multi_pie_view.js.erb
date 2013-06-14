@@ -78,8 +78,8 @@ $(function () {
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: true,
-                        color: '#F8F8F8',
-                        connectorColor: '#F8F8F8',
+                        color: '#313131',
+                        connectorColor: '#adadad',
                         distance: 20,
                         formatter: function() {
                             return '<b>'+ this.point.name +'</b> <br>rating: '+ this.point.y ;
@@ -124,9 +124,9 @@ $(function () {
                     <% end%>
                     <% end%>
                     data: [
-                        ['Effectiveness',  <%= raw  @update_values[drug][0]%>],
-                        ['Ease of Use',    <%= raw  @update_values[drug][1] %> ],
-                        ['Satisfactory',    <%= raw  @update_values[drug][2] %> ]
+                        ['Effectiveness',  <%= raw  @update_values[drug][0].round(3)%>],
+                        ['Ease of Use',    <%= raw  @update_values[drug][1].round(3) %> ],
+                        ['Satisfactory',    <%= raw  @update_values[drug][2].round(3) %> ]
                         ]
                 }
                 <% i=i+1 %>
