@@ -869,31 +869,31 @@
 #METHYLPREDNISOLONE ACETATE	11757	http://www.askapatient.com/viewrating.asp?drug=11757&name=DEPO%2DMEDROL
 #METHYLPREDNISOLONE SODIUM SUCCINATE	11856	http://www.askapatient.com/viewrating.asp?drug=11856&name=SOLU%2DMEDROL
 #METHYSERGIDE MALEATE	12516	http://www.askapatient.com/viewrating.asp?drug=12516&name=SANSERT
-METOCLOPRAMIDE HYDROCHLORIDE	17854	http://www.askapatient.com/viewrating.asp?drug=17854&name=REGLAN
-METOPROLOL SUCCINATE	19962	http://www.askapatient.com/viewrating.asp?drug=19962&name=TOPROL%2DXL
-METOPROLOL SUCCINATE	76640	http://www.askapatient.com/viewrating.asp?drug=76640&name=METOPROLOL+SUCCINATE
-METOPROLOL TARTRATE	73288	http://www.askapatient.com/viewrating.asp?drug=73288&name=METOPROLOL+TARTRATE
-METOPROLOL TARTRATE	17963	http://www.askapatient.com/viewrating.asp?drug=17963&name=LOPRESSOR
-METRONIDAZOLE	18517	http://www.askapatient.com/viewrating.asp?drug=18517&name=METRONIDAZOLE
-METRONIDAZOLE	18657	http://www.askapatient.com/viewrating.asp?drug=18657&name=FLAGYL+I%2EV%2E+RTU+IN+PLASTIC+CONTAINER
-METRONIDAZOLE	18890	http://www.askapatient.com/viewrating.asp?drug=18890&name=METRONIDAZOLE+IN+PLASTIC+CONTAINER
-METRONIDAZOLE	19737	http://www.askapatient.com/viewrating.asp?drug=19737&name=METROGEL
-METRONIDAZOLE	20208	http://www.askapatient.com/viewrating.asp?drug=20208&name=METROGEL%2DVAGINAL
-METRONIDAZOLE	12623	http://www.askapatient.com/viewrating.asp?drug=12623&name=FLAGYL
-METRONIDAZOLE	20868	http://www.askapatient.com/viewrating.asp?drug=20868&name=FLAGYL+ER
-METRONIDAZOLE	20901	http://www.askapatient.com/viewrating.asp?drug=20901&name=METROLOTION
-METRONIDAZOLE	20743	http://www.askapatient.com/viewrating.asp?drug=20743&name=NORITATE
-METRONIDAZOLE HYDROCHLORIDE	18353	http://www.askapatient.com/viewrating.asp?drug=18353&name=FLAGYL+I%2EV%2E
-MEXILETINE HYDROCHLORIDE	18873	http://www.askapatient.com/viewrating.asp?drug=18873&name=MEXITIL
-MEXILETINE HYDROCHLORIDE	74377	http://www.askapatient.com/viewrating.asp?drug=74377&name=MEXILETINE+HCL
-MICONAZOLE NITRATE	76357	http://www.askapatient.com/viewrating.asp?drug=76357&name=MICONAZOLE+3+COMBINATION+PACK
-MICONAZOLE NITRATE	21308	http://www.askapatient.com/viewrating.asp?drug=21308&name=MONISTAT+1+COMBINATION+PACK
-MICONAZOLE NITRATE	21261	http://www.askapatient.com/viewrating.asp?drug=21261&name=MONISTAT+3+COMBINATION+PACK
-MICONAZOLE NITRATE	18888	http://www.askapatient.com/viewrating.asp?drug=18888&name=MONISTAT+3
-MICONAZOLE NITRATE	17450	http://www.askapatient.com/viewrating.asp?drug=17450&name=MONISTAT+7
-MICONAZOLE NITRATE; MICONAZOLE NITRATE	20288	http://www.askapatient.com/viewrating.asp?drug=20288&name=MONISTAT+7+COMBINATION+PACK
-MICONAZOLE NITRATE; MICONAZOLE NITRATE	20670	http://www.askapatient.com/viewrating.asp?drug=20670&name=MONISTAT%2D3+COMBINATION+PACK
-MICONAZOLE NITRATE; MICONAZOLE NITRATE	20968	http://www.askapatient.com/viewrating.asp?drug=20968&name=MONISTAT+DUAL%2D+PAK
+#METOCLOPRAMIDE HYDROCHLORIDE	17854	http://www.askapatient.com/viewrating.asp?drug=17854&name=REGLAN
+#METOPROLOL SUCCINATE	19962	http://www.askapatient.com/viewrating.asp?drug=19962&name=TOPROL%2DXL
+#METOPROLOL SUCCINATE	76640	http://www.askapatient.com/viewrating.asp?drug=76640&name=METOPROLOL+SUCCINATE
+#METOPROLOL TARTRATE	73288	http://www.askapatient.com/viewrating.asp?drug=73288&name=METOPROLOL+TARTRATE
+#METOPROLOL TARTRATE	17963	http://www.askapatient.com/viewrating.asp?drug=17963&name=LOPRESSOR
+#METRONIDAZOLE	18517	http://www.askapatient.com/viewrating.asp?drug=18517&name=METRONIDAZOLE
+#METRONIDAZOLE	18657	http://www.askapatient.com/viewrating.asp?drug=18657&name=FLAGYL+I%2EV%2E+RTU+IN+PLASTIC+CONTAINER
+#METRONIDAZOLE	18890	http://www.askapatient.com/viewrating.asp?drug=18890&name=METRONIDAZOLE+IN+PLASTIC+CONTAINER
+#METRONIDAZOLE	19737	http://www.askapatient.com/viewrating.asp?drug=19737&name=METROGEL
+#METRONIDAZOLE	20208	http://www.askapatient.com/viewrating.asp?drug=20208&name=METROGEL%2DVAGINAL
+#METRONIDAZOLE	12623	http://www.askapatient.com/viewrating.asp?drug=12623&name=FLAGYL
+#METRONIDAZOLE	20868	http://www.askapatient.com/viewrating.asp?drug=20868&name=FLAGYL+ER
+#METRONIDAZOLE	20901	http://www.askapatient.com/viewrating.asp?drug=20901&name=METROLOTION
+#METRONIDAZOLE	20743	http://www.askapatient.com/viewrating.asp?drug=20743&name=NORITATE
+#METRONIDAZOLE HYDROCHLORIDE	18353	http://www.askapatient.com/viewrating.asp?drug=18353&name=FLAGYL+I%2EV%2E
+#MEXILETINE HYDROCHLORIDE	18873	http://www.askapatient.com/viewrating.asp?drug=18873&name=MEXITIL
+#MEXILETINE HYDROCHLORIDE	74377	http://www.askapatient.com/viewrating.asp?drug=74377&name=MEXILETINE+HCL
+#MICONAZOLE NITRATE	76357	http://www.askapatient.com/viewrating.asp?drug=76357&name=MICONAZOLE+3+COMBINATION+PACK
+#MICONAZOLE NITRATE	21308	http://www.askapatient.com/viewrating.asp?drug=21308&name=MONISTAT+1+COMBINATION+PACK
+#MICONAZOLE NITRATE	21261	http://www.askapatient.com/viewrating.asp?drug=21261&name=MONISTAT+3+COMBINATION+PACK
+#MICONAZOLE NITRATE	18888	http://www.askapatient.com/viewrating.asp?drug=18888&name=MONISTAT+3
+#MICONAZOLE NITRATE	17450	http://www.askapatient.com/viewrating.asp?drug=17450&name=MONISTAT+7
+#MICONAZOLE NITRATE; MICONAZOLE NITRATE	20288	http://www.askapatient.com/viewrating.asp?drug=20288&name=MONISTAT+7+COMBINATION+PACK
+#MICONAZOLE NITRATE; MICONAZOLE NITRATE	20670	http://www.askapatient.com/viewrating.asp?drug=20670&name=MONISTAT%2D3+COMBINATION+PACK
+#MICONAZOLE NITRATE; MICONAZOLE NITRATE	20968	http://www.askapatient.com/viewrating.asp?drug=20968&name=MONISTAT+DUAL%2D+PAK
 MIDAZOLAM HYDROCHLORIDE	75154	http://www.askapatient.com/viewrating.asp?drug=75154&name=MIDAZOLAM+HCL
 MIDAZOLAM HYDROCHLORIDE	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
 MIDODRINE HYDROCHLORIDE	19815	http://www.askapatient.com/viewrating.asp?drug=19815&name=PROAMATINE

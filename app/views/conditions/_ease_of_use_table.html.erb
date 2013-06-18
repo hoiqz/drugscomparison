@@ -1,0 +1,33 @@
+<section id="flip-scroll">
+  <h3>Ranking drugs according to ease of administration</h3>
+  <table class="table">
+    <thead >
+    <tr>
+      <th class="headerfix">Drug</th>
+      <th class="headerfix">Easy <i class="icon-thumbs-up"></i><i class="icon-thumbs-up"></i> </th>
+      <th class="headerfix">Average <i class="icon-thumbs-up"></i> </th>
+      <th class="headerfix">Complicated <i class="icon-thumbs-down"></i></th>
+      <th class="headerfix">Number of Reviewers <i class="icon-comment"></i> </th>
+    </tr>
+    </thead>
+
+    <%  @drugs.each do |drug|%>
+        <tr>
+          <td><%= drug.brand_name %></td>
+          <td><div class="ratings_container">
+            <div class="good_icon" style="width:<%= (@good1)*10 %>%"></div>
+          </div>
+          </td>
+          <td><div class="ratings_container">
+            <div class="average_icon" style="width:<%= (@average1)*10 %>%"></div>
+          </div>
+          </td>
+          <td><div class="ratings_container">
+            <div class="bad_icon" style="width:<%= (@bad1)*10 %>%"></div>
+          </div>
+          </td>
+          <td><%= drug.reviews.count %></td>
+        </tr>
+    <%	 end %>
+  </table>
+</section>

@@ -2,4 +2,16 @@
 $("#reviews_chart").empty();
 //$("#conditions").hide(300);
 $("#reviews_chart").html('<%= escape_javascript render("satisfactory_table") %>');
+<% elsif params[:button]=="eff-table"%>
+$("#reviews_chart").empty();
+//$("#conditions").hide(300);
+$("#reviews_chart").html('<%= escape_javascript render("effectiveness_table") %>');
+<% elsif params[:button]=="eou-table"%>
+$("#reviews_chart").empty();
+//$("#conditions").hide(300);
+$("#reviews_chart").html('<%= escape_javascript render("ease_of_use_table") %>');
+<% elsif params[:button]=="infographs"%>
+$("#reviews_chart").empty();
+//$("#conditions").hide(300);
+$("#reviews_chart").html('<%= escape_javascript render("infographs") %>');
 <%end%>

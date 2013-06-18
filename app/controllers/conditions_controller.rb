@@ -23,9 +23,20 @@ class ConditionsController < ApplicationController
     end
 
     #for table testing. im adding dummy values
+    if params[:button]=="sat-table"
     @good1=5
     @average1=3
     @bad1=2
+    elsif params[:button]=="eff-table"
+      @good1=1
+      @average1=2
+      @bad1=7
+    elsif params[:button]=="eou-table"
+      @good1=5
+      @average1=5
+      @bad1=0
+    end
+
     # for the infograph
     @infograph=Conditioninfograph.find_by_condition_id(@condition.id)
     @most_reviewed=format2hash_string(@infograph.most_reviewed) # returns a ranked hash  eg  Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
