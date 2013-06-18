@@ -328,6 +328,37 @@ namespace :project do
 
   end
 
+  ##############
+  ## NEW TASK: To cal Average score for each metric for each drug corresponding to a condition
+  ##############
+  # usage rake drug=infed project:initSingleDruginfographs
+  desc "this is to populate table with 3 metric scores "
+  task :Createtables =>:environment do
+  tables = Hash.new
+  Condition.all.each do |cond|
+    cname = cond.name
+    drugs = cond.drugs
+    drugs.all.each do |drug|
+      dname = drug.brand_name
+      eou = drug.reviews.map{|x| x.ease_of_use}
+      sat = drug.reviews.map{|x| x.satisfactory}
+      eff = drug.reviews.map{|x| x.effectiveness}
+      eou_bad = eou.select{|a| a<2}.count
+      eou_avg = eou.select{|a| a>=2 && a<=3 }.count
+      eou_good = eou.select{|a| a>=4}.count
+      sat_bad = sat.select{|a| a<2}.count
+      sat_avg = sat.select{|a| a>=2 && a<=3 }.count
+      sat_good = sat.select{|a| a>=4}.count
+      eff_bad = eff.select{|a| a<2}.count
+      eff_avg = eff.select{|a| a>=2 && a<=3 }.count
+      eff_good = eff.select{|a| a>=4}.count
+      eff_AVG = eff.sum / eff.size.to_f
+      eou_AVG = eou.sum / eou.size.to_f
+      sat_AVG = sat.sum / sat.size.to_f
+      tables[cname]= [dname,eff_AVG,eff_bad,eff_avg,eff_good,sat_AVG,sat_bad,sat_avg,sat_good,eou_AVG,eou_bad,eou_avg,eou_good]
+    end
+  end
+
   ########################
   # CLASS METHODS
   ########################
@@ -418,6 +449,8 @@ namespace :project do
     end
   end
   end
+
+
 
   def total_reviews(drug)
     mydrugid=Drug.find_by_brand_name(drug).id
