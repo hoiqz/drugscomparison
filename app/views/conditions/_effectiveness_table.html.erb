@@ -1,5 +1,5 @@
 <section id="flip-scroll">
-  <h3>How effective is the drug?</h3>
+  <h3>How effective are the drugs?</h3>
   <table class="table">
     <thead >
     <tr>
@@ -11,22 +11,22 @@
     </tr>
     </thead>
 
-    <%  @drugs.each do |drug|%>
+    <%  @metric.each do |drug,value|%>
         <tr>
-          <td><%= drug.brand_name %></td>
+          <td><%= drug %></td>
           <td><div class="ratings_container">
-            <div class="good_icon" style="width:<%= (@good1)*10 %>%"></div>
+            <div class="good_icon" style="width:<%= (@metric[drug][:good])*100 %>%"></div>
           </div>
           </td>
           <td><div class="ratings_container">
-            <div class="average_icon" style="width:<%= (@average1)*10 %>%"></div>
+            <div class="average_icon" style="width:<%= (@metric[drug][:avg])*100 %>%"></div>
           </div>
           </td>
           <td><div class="ratings_container">
-            <div class="bad_icon" style="width:<%= (@bad1)*10 %>%"></div>
+            <div class="bad_icon" style="width:<%= (@metric[drug][:bad])*100 %>%"></div>
           </div>
           </td>
-          <td><%= drug.reviews.count %></td>
+          <td><%= @metric[drug][:counts] %></td>
         </tr>
     <%	 end %>
   </table>

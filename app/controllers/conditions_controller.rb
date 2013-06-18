@@ -22,21 +22,33 @@ class ConditionsController < ApplicationController
       @optionshash=params
     end
 
-    #for table testing. im adding dummy values
-    if params[:button]=="sat-table"
-    @good1=5
-    @average1=3
-    @bad1=2
-    elsif params[:button]=="eff-table"
-      @good1=1
-      @average1=2
-      @bad1=7
-    elsif params[:button]=="eou-table"
-      @good1=5
-      @average1=5
-      @bad1=0
+    @metric=Hash.new
+    @conmetric=Conditionmetric.find_all_by_condition(@condition.name)
+    @conmetric.each do |item|
+      review_count=Drug.find_by_brand_name(item.drug).reviews_count.to_f
+      if params[:button]=="sat-table"
+        @metric[item.drug] ={
+              :good=> (item.sat_good)/review_count,
+              :avg=> (item.sat_avg)/review_count,
+              :bad=>(item.sat_bad)/review_count,
+              :counts=>review_count.to_i
+      }
+      elsif params[:button]=="eff-table"
+        @metric[item.drug] ={
+                :good=> (item.eff_good)/review_count,
+                :avg=> (item.eff_avg)/review_count,
+                :bad=>(item.eff_bad)/review_count,
+                :counts=>review_count.to_i
+        }
+      elsif params[:button]=="eou-table"
+        @metric[item.drug] ={
+                :good=> (item.eou_good)/review_count,
+                :avg=> (item.eou_avg)/review_count,
+                :bad=>(item.eou_bad)/review_count,
+                :counts=>review_count.to_i
+        }
+      end
     end
-
     # for the infograph
     @infograph=Conditioninfograph.find_by_condition_id(@condition.id)
     @most_reviewed=format2hash_string(@infograph.most_reviewed) # returns a ranked hash  eg  Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
