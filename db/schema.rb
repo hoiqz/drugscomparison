@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130403061150) do
+ActiveRecord::Schema.define(:version => 20130618022148) do
 
   create_table "askapatients", :force => true do |t|
     t.string   "name"
@@ -38,11 +38,49 @@ ActiveRecord::Schema.define(:version => 20130403061150) do
     t.string   "most_bad_reviews"
   end
 
+  create_table "conditionmetrics", :force => true do |t|
+    t.string   "condition"
+    t.string   "drug"
+    t.float    "eff"
+    t.float    "sat"
+    t.float    "eou"
+    t.integer  "eff_bad"
+    t.integer  "eff_avg"
+    t.integer  "eff_good"
+    t.integer  "sat_bad"
+    t.integer  "sat_avg"
+    t.integer  "sat_good"
+    t.integer  "eou_bad"
+    t.integer  "eou_avg"
+    t.integer  "eou_good"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "conditions", :force => true do |t|
     t.text     "information"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "name"
+  end
+
+  create_table "conditions_metric", :force => true do |t|
+    t.string   "condition"
+    t.string   "drug"
+    t.float    "eff"
+    t.float    "sat"
+    t.float    "eou"
+    t.integer  "eff_bad"
+    t.integer  "eff_avg"
+    t.integer  "eff_good"
+    t.integer  "sat_bad"
+    t.integer  "sat_avg"
+    t.integer  "sat_good"
+    t.integer  "eou_bad"
+    t.integer  "eou_avg"
+    t.integer  "eou_good"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "druginfographs", :force => true do |t|

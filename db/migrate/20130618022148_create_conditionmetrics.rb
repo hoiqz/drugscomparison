@@ -1,7 +1,7 @@
-class Createtables < ActiveRecord::Migration
+class CreateConditionmetrics < ActiveRecord::Migration
   def change
-    create_tables :users do |t|
-      t.string :condition  
+    create_table :conditionmetrics do |t|
+      t.string :condition
       t.string :drug
       t.float :eff
       t.float :sat
@@ -15,8 +15,6 @@ class Createtables < ActiveRecord::Migration
       t.integer :eou_bad
       t.integer :eou_avg
       t.integer :eou_good
-
-
       t.timestamps
     end
   end
