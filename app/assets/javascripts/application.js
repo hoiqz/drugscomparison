@@ -17,6 +17,9 @@
 //= require highcharts-more
 //= require exporting
 //= require jqcloud-1.0.2.min
+//= require footable
+//= require footablesortable
+//= require footablefilter
 //= require_tree .
 
 $(function () {
