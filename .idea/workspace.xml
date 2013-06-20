@@ -6,8 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="drugscomparison.iws" />
@@ -41,19 +39,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11544991">
-              <folding />
+            <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.6153846">
+              <folding>
+                <marker date="1371697003740" expanded="true" signature="286:1320" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="310:1305" placeholder="{...}" />
+                <marker date="1371697003740" expanded="true" signature="547:745" placeholder="{...}" />
+                <marker date="1371697003740" expanded="true" signature="893:1093" placeholder="{...}" />
+                <marker date="1371697003740" expanded="true" signature="1346:4711" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1385:3502" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1476:3495" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1484:1521" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1560:1633" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1675:3400" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1729:1744" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1798:1813" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1867:1882" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="1936:1951" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2005:2020" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2074:2089" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2143:2158" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2212:2227" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2281:2296" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2351:2366" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2421:2447" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2502:2517" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2572:2587" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2642:2657" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2712:2727" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2782:2797" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2852:2867" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2922:2937" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="2992:3018" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3073:3088" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3143:3169" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3224:3239" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3294:3320" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3375:3390" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3441:3481" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3546:4704" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3663:4697" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3686:4684" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3757:3938" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="3966:4677" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4010:4064" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4101:4668" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4111:4171" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4234:4657" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4250:4345" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4263:4328" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4361:4642" placeholder="..." />
+                <marker date="1371697003740" expanded="true" signature="4413:4607" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+            <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.5684713">
               <folding />
             </state>
           </provider>
@@ -72,7 +119,9 @@
         <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
-              <folding />
+              <folding>
+                <marker date="1371694834686" expanded="true" signature="3:804" placeholder="if ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -351,6 +400,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -899,14 +970,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1371694834686" expanded="true" signature="3:804" placeholder="if ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -931,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="102" selection-start="594" selection-end="594" vertical-scroll-proportion="0.36348686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.27960527">
@@ -947,7 +1006,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11544991">
+        <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.6153846">
+          <folding>
+            <marker date="1371697003740" expanded="true" signature="286:1320" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="310:1305" placeholder="{...}" />
+            <marker date="1371697003740" expanded="true" signature="547:745" placeholder="{...}" />
+            <marker date="1371697003740" expanded="true" signature="893:1093" placeholder="{...}" />
+            <marker date="1371697003740" expanded="true" signature="1346:4711" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1385:3502" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1476:3495" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1484:1521" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1560:1633" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1675:3400" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1729:1744" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1798:1813" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1867:1882" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="1936:1951" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2005:2020" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2074:2089" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2143:2158" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2212:2227" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2281:2296" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2351:2366" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2421:2447" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2502:2517" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2572:2587" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2642:2657" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2712:2727" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2782:2797" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2852:2867" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2922:2937" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="2992:3018" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3073:3088" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3143:3169" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3224:3239" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3294:3320" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3375:3390" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3441:3481" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3546:4704" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3663:4697" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3686:4684" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3757:3938" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="3966:4677" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4010:4064" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4101:4668" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4111:4171" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4234:4657" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4250:4345" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4263:4328" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4361:4642" placeholder="..." />
+            <marker date="1371697003740" expanded="true" signature="4413:4607" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="104" selection-start="937" selection-end="937" vertical-scroll-proportion="0.6430921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.5684713">
           <folding />
         </state>
       </provider>
