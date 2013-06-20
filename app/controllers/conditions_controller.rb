@@ -21,7 +21,7 @@ class ConditionsController < ApplicationController
     if params[:conditions]
       @optionshash=params
     end
-
+    if params[:button]
     @metric=Hash.new
     @conmetric=Conditionmetric.find_all_by_condition(@condition.name)
     @conmetric.each do |item|
@@ -48,6 +48,7 @@ class ConditionsController < ApplicationController
                 :counts=>review_count.to_i
         }
       end
+    end
     end
     # for the infograph
     @infograph=Conditioninfograph.find_by_condition_id(@condition.id)

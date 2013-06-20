@@ -1,17 +1,22 @@
 
 <p id="notice"><%= notice %></p>
 <% content_for :script do %>
+    <%= stylesheet_link_tag 'footable-0.1'%>
+    <%= stylesheet_link_tag 'footablesortable-0.1'%>
+    <%= javascript_include_tag "footable" %>
+    <%= javascript_include_tag "footablesortable" %>
+
     <script type='text/javascript'>
         $(function () {
              /////////////////////////////////
             $("#fountainTextG").hide();
 
-            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view").bind("ajax:beforeSend", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view").addClass("disabled");
+            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:beforeSend", function(){
+                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled");
                 $("#fountainTextG").show();
             });
-            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view").bind("ajax:complete", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view").removeClass("disabled")
+            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:complete", function(){
+                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeClass("disabled")
                 $("#fountainTextG").hide();
             });
 
@@ -125,16 +130,14 @@
         <thead>
         <tr>
           <th>Brand</th>
-          <th>Number of reviews</th>
           <th>Action</th>
         </tr>
         </thead>
         <tbody>
         <% @drugs.each do |drug|%>
             <tr>
-              <td><i class="icon-eye-open"></i>   <%= link_to "#{drug.brand_name}", drug_reviews_path(drug.id) %></td>
-              <td><%= drug.reviews.count %></td>
-              <td><button  class="btn btn-primary" type="button">Write Review</button></td>
+              <td><i class="icon-zoom-in"></i>   <%= drug.brand_name%></td>
+              <td><%= link_to "Read", drug_reviews_path(drug.id), :class=>"btn btn-primary" %></td>
             </tr>
         <% end %>
         </tbody>

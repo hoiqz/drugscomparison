@@ -1,33 +1,31 @@
-<section id="flip-scroll">
+
   <h3>How effective are the drugs?</h3>
-  <table class="table">
+  <table class="footable">
     <thead >
     <tr>
-      <th class="headerfix">Drug</th>
-      <th class="headerfix">Good <i class="icon-thumbs-up"></i><i class="icon-thumbs-up"></i> </th>
-      <th class="headerfix">Average/Acceptable <i class="icon-thumbs-up"></i> </th>
-      <th class="headerfix">Below Average <i class="icon-thumbs-down"></i></th>
-      <th class="headerfix">Number of Reviewers <i class="icon-comment"></i> </th>
+      <th class="footable-sortable" data-sort-initial="true" data-class="expand" data-sort-initial="true" >Drug </th>
+      <th class="footable-sortable" data-hide="default" data-type="numeric">Good <i class="icon-thumbs-up"></i><i class="icon-thumbs-up"></i>  </th>
+      <th class="footable-sortable" data-hide="land_scape_phone,phone" data-type="numeric">Average/Acceptable <i class="icon-thumbs-up"></i>  </th>
+      <th class="footable-sortable" data-hide="phone,land_scape_phone" data-type="numeric" >Below Average <i class="icon-thumbs-down"></i>  </th>
+      <th class="footable-sortable" data-hide="land_scape_phone,phone" data-type="numeric">Number of Reviewers <i class="icon-comment"></i>  </th>
     </tr>
     </thead>
-
     <%  @metric.each do |drug,value|%>
         <tr>
           <td><%= drug %></td>
-          <td><div class="ratings_container">
-            <div class="good_icon" style="width:<%= (@metric[drug][:good])*100 %>%"></div>
+          <td data-value="<%= (@metric[drug][:good])*100 %>" title="<%= ((@metric[drug][:good])*10).round(1) %>/10"><div class="ratings_container">
+            <div class="good_icon"  style="width:<%= (@metric[drug][:good])*100 %>%"></div>
           </div>
           </td>
-          <td><div class="ratings_container">
-            <div class="average_icon" style="width:<%= (@metric[drug][:avg])*100 %>%"></div>
+          <td data-value="<%= (@metric[drug][:avg])*100 %>" title="<%= ((@metric[drug][:avg])*10).round(1) %>/10"><div class="ratings_container">
+            <div class="average_icon"  style="width:<%= (@metric[drug][:avg])*100 %>%"></div>
           </div>
           </td>
-          <td><div class="ratings_container">
-            <div class="bad_icon" style="width:<%= (@metric[drug][:bad])*100 %>%"></div>
+          <td data-value="<%= (@metric[drug][:bad])*100 %>" title="<%= ((@metric[drug][:bad])*10).round(1) %>/10"><div class="ratings_container">
+            <div class="bad_icon"  style="width:<%= (@metric[drug][:bad])*100 %>%"></div>
           </div>
           </td>
           <td><%= @metric[drug][:counts] %></td>
         </tr>
     <%	 end %>
   </table>
-</section>
