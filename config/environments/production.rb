@@ -21,7 +21,7 @@ Drugscomparison::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.assets.precompile += ['footable.css','footablesortable.css','footable.js','footablesortable.js','bootstrap-dropdown.js']
+  config.assets.precompile += ['footable.css','footablesortable.css','footable.js','footablesortable.js']
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
