@@ -13,14 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap-dropdown
-//= require highcharts
-//= require highcharts-more
-//= require exporting
-//= require jqcloud-1.0.2.min
-//= require footable
-//= require footablesortable
-//= require footablefilter
+
 //= require_tree .
 
 $(function () {
