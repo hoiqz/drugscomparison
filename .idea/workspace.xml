@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="48" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="45" />
     <bookmark url="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb" line="16" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/Thumbs.db" afterPath="$PROJECT_DIR$/app/assets/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/MIRTAZAPINE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/MIRTAZAPINE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/MORPHINE+SULFATE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/MORPHINE+SULFATE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_infographs.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_infographs.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,87 +47,130 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css.scss.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
+      <file leaf-file-name="conditions_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="723" column="0" selection-start="13732" selection-end="13732" vertical-scroll-proportion="-472.73077">
+            <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+      <file leaf-file-name="condition.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.6153846">
+            <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seed_data.rake" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_infographs.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/conditions/_infographs.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="18" selection-start="610" selection-end="610" vertical-scroll-proportion="0.25307557">
               <folding>
-                <marker date="1371697003740" expanded="true" signature="286:1320" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="310:1305" placeholder="{...}" />
-                <marker date="1371697003740" expanded="true" signature="547:745" placeholder="{...}" />
-                <marker date="1371697003740" expanded="true" signature="893:1093" placeholder="{...}" />
-                <marker date="1371697003740" expanded="true" signature="1346:4711" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1385:3502" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1476:3495" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1484:1521" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1560:1633" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1675:3400" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1729:1744" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1798:1813" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1867:1882" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="1936:1951" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2005:2020" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2074:2089" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2143:2158" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2212:2227" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2281:2296" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2351:2366" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2421:2447" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2502:2517" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2572:2587" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2642:2657" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2712:2727" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2782:2797" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2852:2867" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2922:2937" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="2992:3018" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3073:3088" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3143:3169" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3224:3239" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3294:3320" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3375:3390" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3441:3481" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3546:4704" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3663:4697" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3686:4684" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3757:3938" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="3966:4677" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4010:4064" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4101:4668" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4111:4171" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4234:4657" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4250:4345" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4263:4328" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4361:4642" placeholder="..." />
-                <marker date="1371697003740" expanded="true" signature="4413:4607" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.5684713">
-              <folding />
+      <file leaf-file-name="RailsDependency/#drugscomparison" pinned="false" current="false" current-in-tab="false">
+        <entry file="uml://RailsDependency/#drugscomparison">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>RailsDependency</ID>
+              <OriginalElement>#drugscomparison</OriginalElement>
+              <nodes>
+                <node x="0.0" y="291.25">User</node>
+                <node x="259.5" y="67.41666666666666">Condition</node>
+                <node x="431.0" y="625.25">Search</node>
+                <node x="242.0" y="219.0">Review</node>
+                <node x="850.0" y="625.25">Webmd</node>
+                <node x="518.0" y="58.0">Treatment</node>
+                <node x="0.0" y="958.25">Everydayhealth</node>
+                <node x="210.0" y="625.25">Conditioninfograph</node>
+                <node x="0.0" y="625.25">Druginfograph</node>
+                <node x="215.0" y="958.25">Tag</node>
+                <node x="405.0" y="958.25">Mostcommondrug</node>
+                <node x="0.0" y="0.0">Drug</node>
+                <node x="709.0" y="0.0">Conditionmetric</node>
+                <node x="635.0" y="625.25">Askapatient</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="User" target="Review">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Drug" target="Treatment">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Drug" target="Condition">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Drug" target="Review">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="Condition" target="Treatment">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7445173383317713" x="245.35649546827796" y="228.35649546827796" />
+              <SelectedNodes>
+                <node>User</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Association fields</Category>
+                <Category>Migration fields</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_chart_buttons.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
+      <file leaf-file-name="effectiveness_view.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="101" selection-start="768" selection-end="777" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.846153">
+              <folding>
+                <marker date="1370589689900" expanded="true" signature="14:4872" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="65:4867" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="388:445" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="485:4766" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+                <marker date="1370589689900" expanded="true" signature="702:2566" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="727:2552" placeholder="[...]" />
+                <marker date="1370589689900" expanded="true" signature="962:2221" placeholder="{&quot;html&quot;: '&lt;b&gt;&lt;%= drug.brand_name %&gt;&lt;/b&gt;'...}" />
+                <marker date="1370589689900" expanded="true" signature="1192:1312" placeholder="{&quot;left&quot;: '200px'...}" />
+                <marker date="1370589689900" expanded="true" signature="1445:1555" placeholder="{&quot;left&quot;: '200px'...}" />
+                <marker date="1370589689900" expanded="true" signature="1764:1884" placeholder="{&quot;left&quot;: '600px'...}" />
+                <marker date="1370589689900" expanded="true" signature="2023:2133" placeholder="{&quot;left&quot;: '600px'...}" />
+                <marker date="1370589689900" expanded="true" signature="2305:2534" placeholder="{&quot;html&quot;: &quot;&lt;b&gt;Restrictions:&lt;/b&gt; &lt;%= @label%&gt;&quot;...}" />
+                <marker date="1370589689900" expanded="true" signature="2405:2512" placeholder="{&quot;left&quot;: '0px'...}" />
+                <marker date="1370589689900" expanded="true" signature="2587:2669" placeholder="{&quot;text&quot;: 'Effectiveness ratings across related drugs'...}" />
+                <marker date="1370589689900" expanded="true" signature="2693:2820" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
+                <marker date="1370589689900" expanded="true" signature="2847:3383" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="2870:3369" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+                <marker date="1370589689900" expanded="true" signature="2987:3351" placeholder="{&quot;enabled&quot;: true...}" />
+                <marker date="1370589689900" expanded="true" signature="3205:3329" placeholder="{...}" />
+                <marker date="1370589689900" expanded="true" signature="3405:4756" placeholder="[...]" />
+                <marker date="1370589689900" expanded="true" signature="3580:4687" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
+                <marker date="1370589689900" expanded="true" signature="4264:4669" placeholder="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,9 +179,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
-              <folding>
-                <marker date="1371694834686" expanded="true" signature="3:804" placeholder="if ... end" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,22 +201,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130618022148_create_conditionmetrics.rb" />
-        <option value="$PROJECT_DIR$/app/models/conditionmetric.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
-        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/footable01.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/footablesortable01.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/footable.js" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_infographs.html.erb" />
       </list>
     </option>
   </component>
@@ -345,6 +403,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conditions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -378,50 +480,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -832,7 +890,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1256" height="776" extended-state="7" />
+    <frame x="-4" y="-4" width="1256" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -909,46 +967,51 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/footable.js">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="686" selection-end="686" vertical-scroll-proportion="0.38345864">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="92" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.8370119">
+        <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="76" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-18.961538">
+        <state line="15" column="30" selection-start="674" selection-end="674" vertical-scroll-proportion="0.32484075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="124" selection-start="957" selection-end="957" vertical-scroll-proportion="0.63577235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="10" selection-start="962" selection-end="962" vertical-scroll-proportion="0.48006645">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="85" selection-start="1796" selection-end="1796" vertical-scroll-proportion="-18.961538">
+        <state line="6" column="106" selection-start="233" selection-end="263" vertical-scroll-proportion="0.11950791">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="101" selection-start="768" selection-end="777" vertical-scroll-proportion="0.0">
+        <state line="5" column="55" selection-start="166" selection-end="166" vertical-scroll-proportion="0.14938489">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="70" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+        <state line="5" column="104" selection-start="270" selection-end="270" vertical-scroll-proportion="0.11950791">
           <folding />
         </state>
       </provider>
@@ -960,117 +1023,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/druginfographs.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
-          <folding>
-            <marker date="1371694834686" expanded="true" signature="3:804" placeholder="if ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="158" selection-start="3016" selection-end="3170" vertical-scroll-proportion="0.74285716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="522" selection-end="522" vertical-scroll-proportion="0.27960527">
+        <state line="24" column="52" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.6926995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="45" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.6153846">
+        <state line="9" column="63" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2688928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.846153">
           <folding>
-            <marker date="1371697003740" expanded="true" signature="286:1320" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="310:1305" placeholder="{...}" />
-            <marker date="1371697003740" expanded="true" signature="547:745" placeholder="{...}" />
-            <marker date="1371697003740" expanded="true" signature="893:1093" placeholder="{...}" />
-            <marker date="1371697003740" expanded="true" signature="1346:4711" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1385:3502" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1476:3495" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1484:1521" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1560:1633" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1675:3400" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1729:1744" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1798:1813" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1867:1882" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="1936:1951" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2005:2020" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2074:2089" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2143:2158" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2212:2227" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2281:2296" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2351:2366" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2421:2447" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2502:2517" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2572:2587" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2642:2657" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2712:2727" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2782:2797" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2852:2867" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2922:2937" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="2992:3018" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3073:3088" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3143:3169" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3224:3239" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3294:3320" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3375:3390" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3441:3481" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3546:4704" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3663:4697" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3686:4684" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3757:3938" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="3966:4677" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4010:4064" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4101:4668" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4111:4171" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4234:4657" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4250:4345" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4263:4328" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4361:4642" placeholder="..." />
-            <marker date="1371697003740" expanded="true" signature="4413:4607" placeholder="..." />
+            <marker date="1370589689900" expanded="true" signature="14:4872" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="65:4867" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="388:445" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="485:4766" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
+            <marker date="1370589689900" expanded="true" signature="702:2566" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="727:2552" placeholder="[...]" />
+            <marker date="1370589689900" expanded="true" signature="962:2221" placeholder="{&quot;html&quot;: '&lt;b&gt;&lt;%= drug.brand_name %&gt;&lt;/b&gt;'...}" />
+            <marker date="1370589689900" expanded="true" signature="1192:1312" placeholder="{&quot;left&quot;: '200px'...}" />
+            <marker date="1370589689900" expanded="true" signature="1445:1555" placeholder="{&quot;left&quot;: '200px'...}" />
+            <marker date="1370589689900" expanded="true" signature="1764:1884" placeholder="{&quot;left&quot;: '600px'...}" />
+            <marker date="1370589689900" expanded="true" signature="2023:2133" placeholder="{&quot;left&quot;: '600px'...}" />
+            <marker date="1370589689900" expanded="true" signature="2305:2534" placeholder="{&quot;html&quot;: &quot;&lt;b&gt;Restrictions:&lt;/b&gt; &lt;%= @label%&gt;&quot;...}" />
+            <marker date="1370589689900" expanded="true" signature="2405:2512" placeholder="{&quot;left&quot;: '0px'...}" />
+            <marker date="1370589689900" expanded="true" signature="2587:2669" placeholder="{&quot;text&quot;: 'Effectiveness ratings across related drugs'...}" />
+            <marker date="1370589689900" expanded="true" signature="2693:2820" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
+            <marker date="1370589689900" expanded="true" signature="2847:3383" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="2870:3369" placeholder="{&quot;allowPointSelect&quot;: true...}" />
+            <marker date="1370589689900" expanded="true" signature="2987:3351" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1370589689900" expanded="true" signature="3205:3329" placeholder="{...}" />
+            <marker date="1370589689900" expanded="true" signature="3405:4756" placeholder="[...]" />
+            <marker date="1370589689900" expanded="true" signature="3580:4687" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
+            <marker date="1370589689900" expanded="true" signature="4264:4669" placeholder="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="uml://RailsDependency/#drugscomparison">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#drugscomparison</OriginalElement>
+          <nodes>
+            <node x="0.0" y="291.25">User</node>
+            <node x="259.5" y="67.41666666666666">Condition</node>
+            <node x="431.0" y="625.25">Search</node>
+            <node x="242.0" y="219.0">Review</node>
+            <node x="850.0" y="625.25">Webmd</node>
+            <node x="518.0" y="58.0">Treatment</node>
+            <node x="0.0" y="958.25">Everydayhealth</node>
+            <node x="210.0" y="625.25">Conditioninfograph</node>
+            <node x="0.0" y="625.25">Druginfograph</node>
+            <node x="215.0" y="958.25">Tag</node>
+            <node x="405.0" y="958.25">Mostcommondrug</node>
+            <node x="0.0" y="0.0">Drug</node>
+            <node x="709.0" y="0.0">Conditionmetric</node>
+            <node x="635.0" y="625.25">Askapatient</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="User" target="Review">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Drug" target="Treatment">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Drug" target="Condition">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Drug" target="Review">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Condition" target="Treatment">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7445173383317713" x="245.35649546827796" y="228.35649546827796" />
+          <SelectedNodes>
+            <node>User</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="104" selection-start="937" selection-end="937" vertical-scroll-proportion="0.6430921">
+        <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="823" selection-end="823" vertical-scroll-proportion="0.5684713">
+        <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_infographs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="610" selection-end="610" vertical-scroll-proportion="0.25307557">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

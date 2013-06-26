@@ -894,34 +894,34 @@
 #MICONAZOLE NITRATE; MICONAZOLE NITRATE	20288	http://www.askapatient.com/viewrating.asp?drug=20288&name=MONISTAT+7+COMBINATION+PACK
 #MICONAZOLE NITRATE; MICONAZOLE NITRATE	20670	http://www.askapatient.com/viewrating.asp?drug=20670&name=MONISTAT%2D3+COMBINATION+PACK
 #MICONAZOLE NITRATE; MICONAZOLE NITRATE	20968	http://www.askapatient.com/viewrating.asp?drug=20968&name=MONISTAT+DUAL%2D+PAK
-MIDAZOLAM HYDROCHLORIDE	75154	http://www.askapatient.com/viewrating.asp?drug=75154&name=MIDAZOLAM+HCL
-MIDAZOLAM HYDROCHLORIDE	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
-MIDODRINE HYDROCHLORIDE	19815	http://www.askapatient.com/viewrating.asp?drug=19815&name=PROAMATINE
-MIFEPRISTONE	20687	http://www.askapatient.com/viewrating.asp?drug=20687&name=MIFEPREX
-MILNACIPRAN HYDROCHLORIDE	22256	http://www.askapatient.com/viewrating.asp?drug=22256&name=SAVELLA
-MINOCYCLINE HYDROCHLORIDE	50444	http://www.askapatient.com/viewrating.asp?drug=50444&name=MINOCIN
-MINOCYCLINE HYDROCHLORIDE	50808	http://www.askapatient.com/viewrating.asp?drug=50808&name=SOLODYN
-MINOCYCLINE HYDROCHLORIDE	63009	http://www.askapatient.com/viewrating.asp?drug=63009&name=MINOCYCLINE+HCL
-MINOXIDIL	74500	http://www.askapatient.com/viewrating.asp?drug=74500&name=MINOXIDIL+%28FOR+MEN%29
-MINOXIDIL	74743	http://www.askapatient.com/viewrating.asp?drug=74743&name=MINOXIDIL+%28FOR+WOMEN%29
-MINOXIDIL	20834	http://www.askapatient.com/viewrating.asp?drug=20834&name=ROGAINE+EXTRA+STRENGTH+%28FOR+MEN%29
-MINOXIDIL	19501	http://www.askapatient.com/viewrating.asp?drug=19501&name=ROGAINE+%28FOR+MEN%29
-MIRTAZAPINE	20415	http://www.askapatient.com/viewrating.asp?drug=20415&name=REMERON
-MIRTAZAPINE	21208	http://www.askapatient.com/viewrating.asp?drug=21208&name=REMERON+SOLTAB
-MISOPROSTOL	19268	http://www.askapatient.com/viewrating.asp?drug=19268&name=CYTOTEC
-MODAFINIL	20717	http://www.askapatient.com/viewrating.asp?drug=20717&name=PROVIGIL
-MOEXIPRIL HYDROCHLORIDE	20312	http://www.askapatient.com/viewrating.asp?drug=20312&name=UNIVASC
-MOLINDONE HYDROCHLORIDE	17111	http://www.askapatient.com/viewrating.asp?drug=17111&name=MOBAN
-MOMETASONE FUROATE	21067	http://www.askapatient.com/viewrating.asp?drug=21067&name=ASMANEX+TWISTHALER
-MOMETASONE FUROATE	19543	http://www.askapatient.com/viewrating.asp?drug=19543&name=ELOCON
-MOMETASONE FUROATE MONOHYDRATE	20762	http://www.askapatient.com/viewrating.asp?drug=20762&name=NASONEX
-MONTELUKAST SODIUM	20829	http://www.askapatient.com/viewrating.asp?drug=20829&name=SINGULAIR
-MORICIZINE HYDROCHLORIDE	19753	http://www.askapatient.com/viewrating.asp?drug=19753&name=ETHMOZINE
-MORPHINE SULFATE	19916	http://www.askapatient.com/viewrating.asp?drug=19916&name=MORPHINE+SULFATE
-MORPHINE SULFATE	19977	http://www.askapatient.com/viewrating.asp?drug=19977&name=ORAMORPH+SR
-MORPHINE SULFATE	20616	http://www.askapatient.com/viewrating.asp?drug=20616&name=KADIAN
-MORPHINE SULFATE	19516	http://www.askapatient.com/viewrating.asp?drug=19516&name=MS+CONTIN
-MORPHINE SULFATE	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
+#MIDAZOLAM HYDROCHLORIDE	75154	http://www.askapatient.com/viewrating.asp?drug=75154&name=MIDAZOLAM+HCL
+#MIDAZOLAM HYDROCHLORIDE	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
+#MIDODRINE HYDROCHLORIDE	19815	http://www.askapatient.com/viewrating.asp?drug=19815&name=PROAMATINE
+#MIFEPRISTONE	20687	http://www.askapatient.com/viewrating.asp?drug=20687&name=MIFEPREX
+#MILNACIPRAN HYDROCHLORIDE	22256	http://www.askapatient.com/viewrating.asp?drug=22256&name=SAVELLA
+#MINOCYCLINE HYDROCHLORIDE	50444	http://www.askapatient.com/viewrating.asp?drug=50444&name=MINOCIN
+#MINOCYCLINE HYDROCHLORIDE	50808	http://www.askapatient.com/viewrating.asp?drug=50808&name=SOLODYN
+#MINOCYCLINE HYDROCHLORIDE	63009	http://www.askapatient.com/viewrating.asp?drug=63009&name=MINOCYCLINE+HCL
+#MINOXIDIL	74500	http://www.askapatient.com/viewrating.asp?drug=74500&name=MINOXIDIL+%28FOR+MEN%29
+#MINOXIDIL	74743	http://www.askapatient.com/viewrating.asp?drug=74743&name=MINOXIDIL+%28FOR+WOMEN%29
+#MINOXIDIL	20834	http://www.askapatient.com/viewrating.asp?drug=20834&name=ROGAINE+EXTRA+STRENGTH+%28FOR+MEN%29
+#MINOXIDIL	19501	http://www.askapatient.com/viewrating.asp?drug=19501&name=ROGAINE+%28FOR+MEN%29
+#MIRTAZAPINE	20415	http://www.askapatient.com/viewrating.asp?drug=20415&name=REMERON
+#MIRTAZAPINE	21208	http://www.askapatient.com/viewrating.asp?drug=21208&name=REMERON+SOLTAB
+#MISOPROSTOL	19268	http://www.askapatient.com/viewrating.asp?drug=19268&name=CYTOTEC
+#MODAFINIL	20717	http://www.askapatient.com/viewrating.asp?drug=20717&name=PROVIGIL
+#MOEXIPRIL HYDROCHLORIDE	20312	http://www.askapatient.com/viewrating.asp?drug=20312&name=UNIVASC
+#MOLINDONE HYDROCHLORIDE	17111	http://www.askapatient.com/viewrating.asp?drug=17111&name=MOBAN
+#MOMETASONE FUROATE	21067	http://www.askapatient.com/viewrating.asp?drug=21067&name=ASMANEX+TWISTHALER
+#MOMETASONE FUROATE	19543	http://www.askapatient.com/viewrating.asp?drug=19543&name=ELOCON
+#MOMETASONE FUROATE MONOHYDRATE	20762	http://www.askapatient.com/viewrating.asp?drug=20762&name=NASONEX
+#MONTELUKAST SODIUM	20829	http://www.askapatient.com/viewrating.asp?drug=20829&name=SINGULAIR
+#MORICIZINE HYDROCHLORIDE	19753	http://www.askapatient.com/viewrating.asp?drug=19753&name=ETHMOZINE
+#MORPHINE SULFATE	19916	http://www.askapatient.com/viewrating.asp?drug=19916&name=MORPHINE+SULFATE
+#MORPHINE SULFATE	19977	http://www.askapatient.com/viewrating.asp?drug=19977&name=ORAMORPH+SR
+#MORPHINE SULFATE	20616	http://www.askapatient.com/viewrating.asp?drug=20616&name=KADIAN
+#MORPHINE SULFATE	19516	http://www.askapatient.com/viewrating.asp?drug=19516&name=MS+CONTIN
+#MORPHINE SULFATE	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
 MOXIFLOXACIN HYDROCHLORIDE	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
 MOXIFLOXACIN HYDROCHLORIDE	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
 MUPIROCIN	50591	http://www.askapatient.com/viewrating.asp?drug=50591&name=BACTROBAN

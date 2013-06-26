@@ -10,9 +10,13 @@
     <div class="item">
       <div id="most_kids_infograph">
         <%= image_tag("most_kids_background.png")%>
+        <% if @most_kids_using["winner"]=~/insufficient data/i %>
+        <h4>Opps! <span class="focus3"><%= @most_kids_using["winner"] %></span><br> to provide you with an accurate analysis.</h4>
+            <% else%>
         <h3><span class="focus3"><%= @most_kids_using["winner"] %></span> <br> ranked <span class="focus5">highest</span> in terms of <span class="focus4">kids*</span> review</h3>
         <h4>That is approximately <span class="focus5"><%= @most_kids_freq%> %</span> of all reviews in the kids category for <span class="focus6"><%= @condition.name %></span></h4>
         <p>* We group ages 18 and below under the category 'kids'</p>
+         <% end%>
       </div>
     </div>
     <div class="item">

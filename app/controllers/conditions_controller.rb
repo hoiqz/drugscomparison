@@ -21,6 +21,7 @@ class ConditionsController < ApplicationController
     if params[:conditions]
       @optionshash=params
     end
+    # this is for the tables view
     if params[:button]
     @metric=Hash.new
     @conmetric=Conditionmetric.find_all_by_condition(@condition.name)
@@ -50,6 +51,8 @@ class ConditionsController < ApplicationController
       end
     end
     end
+    #end table view
+
     # for the infograph
     @infograph=Conditioninfograph.find_by_condition_id(@condition.id)
     @most_reviewed=format2hash_string(@infograph.most_reviewed) # returns a ranked hash  eg  Adderall Oral=>473,Focalin Oral=>129,Ritalin Oral=>123
@@ -70,6 +73,7 @@ class ConditionsController < ApplicationController
     @most_effective =format2hash_string(@infograph.most_effective)
     @most_bad_reviews =format2hash_string(@infograph.most_bad_reviews)
     # end infograph stuff
+
     respond_to do |format|
           format.js
           format.html # show.html.erb
