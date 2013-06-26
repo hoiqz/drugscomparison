@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,19 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="104" selection-start="937" selection-end="937" vertical-scroll-proportion="0.6430921">
+            <state line="23" column="128" selection-start="937" selection-end="961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+            <state line="15" column="27" selection-start="644" selection-end="674" vertical-scroll-proportion="0.36348686">
               <folding />
             </state>
           </provider>
@@ -218,8 +217,8 @@
         <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_infographs.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -1127,13 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1164,16 +1156,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+        <state line="23" column="128" selection-start="937" selection-end="961" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="104" selection-start="937" selection-end="937" vertical-scroll-proportion="0.6430921">
+        <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="644" selection-end="674" vertical-scroll-proportion="0.36348686">
           <folding />
         </state>
       </provider>
