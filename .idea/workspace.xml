@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="45" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb" line="50" />
     <bookmark url="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb" line="16" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\assets\stylesheets\footable.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/footable.css.scss" />
+      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\assets\stylesheets\footablesortable.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/footablesortable.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,24 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="conditions_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="condition.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_infographs.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/_infographs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,15 +42,6 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="102" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.6572935">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -86,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footablesortable.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/footablesortable.css">
+      <file leaf-file-name="footablesortable.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/footablesortable.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="37" selection-start="144" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="5" column="37" selection-start="144" selection-end="162" vertical-scroll-proportion="0.13980263">
               <folding />
             </state>
           </provider>
@@ -130,12 +108,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/footable01.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/footablesortable01.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/footable.js" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_ease_of_use_table.html.erb" />
@@ -145,6 +121,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
       </list>
     </option>
@@ -315,6 +293,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -940,43 +940,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.38991597">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="48" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/druginfographs.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1012,9 +975,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
+        <state line="16" column="10" selection-start="581" selection-end="581" vertical-scroll-proportion="0.07381371">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="118" selection-start="335" selection-end="335" vertical-scroll-proportion="0.23901582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="tag#div#1;tag#article#0;tag#div#0;tag#div#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="81" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1026,16 +1012,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="81" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+        <state line="14" column="26" selection-start="623" selection-end="623" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/footablesortable.css">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="144" selection-end="162" vertical-scroll-proportion="0.0">
+        <state line="2" column="28" selection-start="62" selection-end="62" vertical-scroll-proportion="0.059753954">
           <folding />
         </state>
       </provider>
@@ -1049,9 +1035,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="102" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.6572935">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0904605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.icon-large.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/footablesortable.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="144" selection-end="162" vertical-scroll-proportion="0.13980263">
           <folding />
         </state>
       </provider>
