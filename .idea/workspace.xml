@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
@@ -51,15 +52,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seed_data.rake" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_infographs.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/conditions/_infographs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,120 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="2" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+            <state line="7" column="65" selection-start="379" selection-end="379" vertical-scroll-proportion="0.18949045">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="74" selection-start="725" selection-end="725" vertical-scroll-proportion="0.53125">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RailsDependency/#drugscomparison" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://RailsDependency/#drugscomparison">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>RailsDependency</ID>
-              <OriginalElement>#drugscomparison</OriginalElement>
-              <nodes>
-                <node x="0.0" y="291.25">User</node>
-                <node x="259.5" y="67.41666666666666">Condition</node>
-                <node x="431.0" y="625.25">Search</node>
-                <node x="242.0" y="219.0">Review</node>
-                <node x="850.0" y="625.25">Webmd</node>
-                <node x="518.0" y="58.0">Treatment</node>
-                <node x="0.0" y="958.25">Everydayhealth</node>
-                <node x="210.0" y="625.25">Conditioninfograph</node>
-                <node x="0.0" y="625.25">Druginfograph</node>
-                <node x="215.0" y="958.25">Tag</node>
-                <node x="405.0" y="958.25">Mostcommondrug</node>
-                <node x="0.0" y="0.0">Drug</node>
-                <node x="709.0" y="0.0">Conditionmetric</node>
-                <node x="635.0" y="625.25">Askapatient</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="User" target="Review">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Drug" target="Treatment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Drug" target="Condition">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Drug" target="Review">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Condition" target="Treatment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7445173383317713" x="245.35649546827796" y="228.35649546827796" />
-              <SelectedNodes>
-                <node>User</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Association fields</Category>
-                <Category>Migration fields</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="effectiveness_view.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.846153">
-              <folding>
-                <marker date="1370589689900" expanded="true" signature="14:4872" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="65:4867" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="388:445" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="485:4766" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
-                <marker date="1370589689900" expanded="true" signature="702:2566" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="727:2552" placeholder="[...]" />
-                <marker date="1370589689900" expanded="true" signature="891:2281" placeholder="do ... end" />
-                <marker date="1370589689900" expanded="true" signature="962:2221" placeholder="{&quot;html&quot;: '&lt;b&gt;&lt;%= drug.brand_name %&gt;&lt;/b&gt;'...}" />
-                <marker date="1370589689900" expanded="true" signature="1054:2197" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="1094:1590" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="1192:1312" placeholder="{&quot;left&quot;: '200px'...}" />
-                <marker date="1370589689900" expanded="true" signature="1445:1555" placeholder="{&quot;left&quot;: '200px'...}" />
-                <marker date="1370589689900" expanded="true" signature="1677:2164" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="1764:1884" placeholder="{&quot;left&quot;: '600px'...}" />
-                <marker date="1370589689900" expanded="true" signature="2023:2133" placeholder="{&quot;left&quot;: '600px'...}" />
-                <marker date="1370589689900" expanded="true" signature="2305:2534" placeholder="{&quot;html&quot;: &quot;&lt;b&gt;Restrictions:&lt;/b&gt; &lt;%= @label%&gt;&quot;...}" />
-                <marker date="1370589689900" expanded="true" signature="2405:2512" placeholder="{&quot;left&quot;: '0px'...}" />
-                <marker date="1370589689900" expanded="true" signature="2587:2669" placeholder="{&quot;text&quot;: 'Effectiveness ratings across related drugs'...}" />
-                <marker date="1370589689900" expanded="true" signature="2693:2820" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
-                <marker date="1370589689900" expanded="true" signature="2847:3383" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="2870:3369" placeholder="{&quot;allowPointSelect&quot;: true...}" />
-                <marker date="1370589689900" expanded="true" signature="2987:3351" placeholder="{&quot;enabled&quot;: true...}" />
-                <marker date="1370589689900" expanded="true" signature="3205:3329" placeholder="{...}" />
-                <marker date="1370589689900" expanded="true" signature="3405:4756" placeholder="[...]" />
-                <marker date="1370589689900" expanded="true" signature="3517:4738" placeholder="do ... end" />
-                <marker date="1370589689900" expanded="true" signature="3580:4687" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
-                <marker date="1370589689900" expanded="true" signature="3721:4235" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="3757:3953" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="4010:4206" placeholder="if ... end" />
-                <marker date="1370589689900" expanded="true" signature="4264:4669" placeholder="[...]" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -233,8 +116,8 @@
         <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/conditions/_infographs.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -1007,20 +890,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_table.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="104" selection-start="270" selection-end="270" vertical-scroll-proportion="0.11950791">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="723" column="0" selection-start="13732" selection-end="13732" vertical-scroll-proportion="-472.73077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="52" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.6926995">
@@ -1031,114 +900,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="63" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2688928">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="58.846153">
-          <folding>
-            <marker date="1370589689900" expanded="true" signature="14:4872" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="65:4867" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="388:445" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="485:4766" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="506:681" placeholder="{&quot;plotBackgroundColor&quot;: null...}" />
-            <marker date="1370589689900" expanded="true" signature="702:2566" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="727:2552" placeholder="[...]" />
-            <marker date="1370589689900" expanded="true" signature="891:2281" placeholder="do ... end" />
-            <marker date="1370589689900" expanded="true" signature="962:2221" placeholder="{&quot;html&quot;: '&lt;b&gt;&lt;%= drug.brand_name %&gt;&lt;/b&gt;'...}" />
-            <marker date="1370589689900" expanded="true" signature="1054:2197" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="1094:1590" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="1192:1312" placeholder="{&quot;left&quot;: '200px'...}" />
-            <marker date="1370589689900" expanded="true" signature="1445:1555" placeholder="{&quot;left&quot;: '200px'...}" />
-            <marker date="1370589689900" expanded="true" signature="1677:2164" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="1764:1884" placeholder="{&quot;left&quot;: '600px'...}" />
-            <marker date="1370589689900" expanded="true" signature="2023:2133" placeholder="{&quot;left&quot;: '600px'...}" />
-            <marker date="1370589689900" expanded="true" signature="2305:2534" placeholder="{&quot;html&quot;: &quot;&lt;b&gt;Restrictions:&lt;/b&gt; &lt;%= @label%&gt;&quot;...}" />
-            <marker date="1370589689900" expanded="true" signature="2405:2512" placeholder="{&quot;left&quot;: '0px'...}" />
-            <marker date="1370589689900" expanded="true" signature="2587:2669" placeholder="{&quot;text&quot;: 'Effectiveness ratings across related drugs'...}" />
-            <marker date="1370589689900" expanded="true" signature="2693:2820" placeholder="{&quot;pointFormat&quot;: '{series.name}: &lt;b&gt;{point.percentage}%&lt;/b&gt;'...}" />
-            <marker date="1370589689900" expanded="true" signature="2847:3383" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="2870:3369" placeholder="{&quot;allowPointSelect&quot;: true...}" />
-            <marker date="1370589689900" expanded="true" signature="2987:3351" placeholder="{&quot;enabled&quot;: true...}" />
-            <marker date="1370589689900" expanded="true" signature="3205:3329" placeholder="{...}" />
-            <marker date="1370589689900" expanded="true" signature="3405:4756" placeholder="[...]" />
-            <marker date="1370589689900" expanded="true" signature="3517:4738" placeholder="do ... end" />
-            <marker date="1370589689900" expanded="true" signature="3580:4687" placeholder="{&quot;name&quot;: '&lt;%= drug.brand_name %&gt;'...}" />
-            <marker date="1370589689900" expanded="true" signature="3721:4235" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="3757:3953" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="4010:4206" placeholder="if ... end" />
-            <marker date="1370589689900" expanded="true" signature="4264:4669" placeholder="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://RailsDependency/#drugscomparison">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#drugscomparison</OriginalElement>
-          <nodes>
-            <node x="0.0" y="291.25">User</node>
-            <node x="259.5" y="67.41666666666666">Condition</node>
-            <node x="431.0" y="625.25">Search</node>
-            <node x="242.0" y="219.0">Review</node>
-            <node x="850.0" y="625.25">Webmd</node>
-            <node x="518.0" y="58.0">Treatment</node>
-            <node x="0.0" y="958.25">Everydayhealth</node>
-            <node x="210.0" y="625.25">Conditioninfograph</node>
-            <node x="0.0" y="625.25">Druginfograph</node>
-            <node x="215.0" y="958.25">Tag</node>
-            <node x="405.0" y="958.25">Mostcommondrug</node>
-            <node x="0.0" y="0.0">Drug</node>
-            <node x="709.0" y="0.0">Conditionmetric</node>
-            <node x="635.0" y="625.25">Askapatient</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="User" target="Review">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Drug" target="Treatment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Drug" target="Condition">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Drug" target="Review">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Condition" target="Treatment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7445173383317713" x="245.35649546827796" y="228.35649546827796" />
-          <SelectedNodes>
-            <node>User</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Association fields</Category>
-            <Category>Migration fields</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1191,19 +952,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="2" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.628866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/#drugscomparison">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#drugscomparison</OriginalElement>
+          <nodes>
+            <node x="" y="">User</node>
+            <node x="" y="">Condition</node>
+            <node x="" y="">Search</node>
+            <node x="" y="">Review</node>
+            <node x="" y="">Webmd</node>
+            <node x="" y="">Treatment</node>
+            <node x="" y="">Everydayhealth</node>
+            <node x="" y="">Conditioninfograph</node>
+            <node x="" y="">Druginfograph</node>
+            <node x="" y="">Tag</node>
+            <node x="" y="">Mostcommondrug</node>
+            <node x="" y="">Drug</node>
+            <node x="" y="">Conditionmetric</node>
+            <node x="" y="">Askapatient</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7445173383317713" x="510.6290281973817" y="296.1856747230615" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="10" selection-start="2699" selection-end="2705" vertical-scroll-proportion="1.6285714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="74" selection-start="725" selection-end="725" vertical-scroll-proportion="0.53125">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="8" column="81" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="61" selection-start="13358" selection-end="13358" vertical-scroll-proportion="0.38991597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="4" selection-start="3204" selection-end="3241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="379" selection-end="379" vertical-scroll-proportion="0.18949045">
+          <folding />
         </state>
       </provider>
     </entry>
