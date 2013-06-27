@@ -4,8 +4,8 @@ Drugscomparison::Application.configure do
   config.action_controller.relative_url_root = '/drugapp'
   # Code is not reloaded between requests
   config.cache_classes = true
+  config.assets.precompile += ['footable.css','footablesortable.css','footable.js','footablesortable.js']
 
-  config.assets.precompile += ['application.css','application.js']
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
