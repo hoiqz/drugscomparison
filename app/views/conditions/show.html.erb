@@ -8,18 +8,17 @@
             $("#fountainTextG").hide();
 
             $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:beforeSend", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled");
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").prop("disabled",true);
+                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled")
                 $("#fountainTextG").show();
             });
             $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:complete", function(){
                 $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeClass("disabled")
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeProp("disabled");
                 $("#fountainTextG").hide();
             });
 
+
             //////////////////////////
-        $('.footable').footable();
+        //$('.footable').footable();  // already in show.js
         $("#overall_link").popover();
         $("#satisfactory_view").popover();
         $("#effectiveness_view").popover();
@@ -35,12 +34,10 @@
    <h1>
      <%= @condition.name %>
    </h1>
-
+   <h4 class="span 9">Control Panel</h4>
    <div class="static_buttons span9">
-     <h4>Control Panel</h4>
      <%= render "chart_buttons" %>
-   </div>
-   <div id="fountainTextG" class="span9">
+     <div id="fountainTextG" class="transparent_class">
      <div id="fountainTextG_1" class="fountainTextG">
        G</div>
      <div id="fountainTextG_2" class="fountainTextG">
@@ -93,7 +90,9 @@
      </div>
      <div id="fountainTextG_24" class="fountainTextG">
        .</div>
+     </div>
    </div>
+
   <div id="reviews_chart" class="span9">
     <%= render "infographs" %>
   </div>

@@ -1,3 +1,4 @@
+<div class="control_panel">
 <% if @for_counts <= 0 %>
     <%= link_to 'Infograph', drug_reviews_path(@drug.id,:button=>"infograph"), :id=>'infograph', remote: true, :class =>"btn btn-success", "data-trigger"=>"hover","data-content"=> "Get a feel of how well this drug performs", "data-original-title"=>"Infographics on this drug","data-placement"=>"bottom"%>
     <%= link_to 'Word cloud', "#", :id=>'tag_cloud_link', remote: true, :class =>"btn btn-success disabled", "data-trigger"=>"hover","data-content"=> "Most frequent list of words. Click on the word to view reviews", "data-original-title"=>"Frequent Word Cloud","data-placement"=>"bottom"%>
@@ -15,3 +16,4 @@
     <a href="#myModal" role="button" class="btn" data-toggle="modal">Review This Drug</a>
     <p class="notification"><span class="label label-info">Heads up!</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
 <% end%>
+</div>
