@@ -11,6 +11,11 @@ class Condition < ActiveRecord::Base
 
    validates :name,:uniqueness => true
 
+  searchable do
+    text :name, :boost => 2.0
+    text :information
+  end
+
 
   def get_related_drugs
     druglist=self.drugs

@@ -13,6 +13,10 @@ class Drug < ActiveRecord::Base
   accepts_nested_attributes_for :treatments, :allow_destroy => true, :reject_if => :reject_treatment
   accepts_nested_attributes_for :conditions
 
+  searchable do
+    text :brand_name, :boost => 3.0
+    text :generic_name
+  end
 
   validates :brand_name, :presence => true#, :uniqueness => true
 

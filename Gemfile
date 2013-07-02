@@ -7,9 +7,11 @@ gem 'rails', '3.2.8'
 gem 'bootstrap-sass'
 gem 'sqlite3'
 gem 'kaminari'
-
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 group :development do
   gem 'rspec-rails', '2.0.1'
+
 end
 group :test do
   gem 'rspec', '2.0.1'

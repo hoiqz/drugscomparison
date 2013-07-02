@@ -204,7 +204,7 @@ namespace :project do
 
 
   #########################################
-  #rake in=inputfile project:pullaskapatientreviews
+  #rake in=inputfile project:pullaskapatientreviews eg rake in=askapatient.druglist project:pullaskapatientreviews
   #########################################
   desc "go throught A-Z pull ask a patient reviews"
   task :pullaskapatientreviews =>:environment do

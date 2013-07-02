@@ -2,8 +2,22 @@ class SearchesController < ApplicationController
   # GET /searches
   # GET /searches.json
   def index
-    @searches = Search.all
-
+    @searches = Sunspot.search(Drug, Review, Condition) do
+      fulltext params[:search]
+    end
+    @results=@searches.results
+    @drugresults=Array.new
+    @conditionresults=Array.new
+    @reviewresults=Array.new
+    @results.each do |result|
+      if result.instance_of?Drug
+        @drugresults.push(result)
+      elsif result.instance_of?Condition
+        @conditionresults.push(result)
+      else
+        @reviewresults.push(result)
+      end
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @searches }

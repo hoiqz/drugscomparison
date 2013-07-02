@@ -40,11 +40,13 @@
                     </ul>
             </li>
             <li><%= link_to "Help", '#' %></li>
-            <li><div id="google_translate_element"></div><script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'zh-CN', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
-                }
-            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+
+         <li><%= form_tag searches_path,:class=>"navbar-search pull-right", :method => :get do %>
+                <%= text_field_tag :search, params[:search] ,:class=>"search-query", :placeholder=>"Search" %>
+
+               <button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
+          <% end %>
+         </li>
           </ul>
          </div>
 

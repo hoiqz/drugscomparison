@@ -1,6 +1,13 @@
-working on Canasa+Rect_reviews.tsv.words.freq now. Searchword Canasa: 
-working on Fiorinal-Codeine+%233+Oral_reviews.tsv.words.freq now. Searchword Fiorinal-Codeine %233: 
-working on Proctofoam+HC+Rect_reviews.tsv.words.freq now. Searchword Proctofoam HC: 
-working on Proctosol+HC+Rect_reviews.tsv.words.freq now. Searchword Proctosol HC: 
-working on Proctozone-HC+Rect_reviews.tsv.words.freq now. Searchword Proctozone-HC: 
-working on vancomycin+in+0.9%2525+sodium+Cl+IV_reviews.tsv.words.freq now. Searchword vancomycin in 0.9%2525 sodium Cl: 
+$("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:beforeSend", function(){
+                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled");
+                $("#fountainTextG").show();
+                return false;
+            });
+            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:complete", function(){
+                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeClass("disabled")
+
+                $("#fountainTextG").hide();
+            });
+			
+			
+			rake druglist=druglist_all_new_to_old input_dir=/c/Documents\ and\ Settings/hoiqz/RubymineProjects/everydayhealth/reviews/tmp project:initalize_everydayhealth_table >>tmp1$ rake druglist=druglist_all_new_to_old input_dir=/c/Documents\and\ Settings/h

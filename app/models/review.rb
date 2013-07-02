@@ -15,6 +15,9 @@ class Review < ActiveRecord::Base
   validates :effectiveness, :presence => true
   validates :satisfactory , :presence => true
 
+  searchable do
+    text :comments
+  end
 
 
 end

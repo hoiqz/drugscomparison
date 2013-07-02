@@ -1,39 +1,18 @@
-<h1>Listing searches</h1>
+<h1>Search Result for <%= params[:search] %></h1>
+<h3>Found in Drugs</h3>
+<%	 @drugresults.each do |result| %>
+          <p><b><%= link_to "#{result.brand_name}", drug_reviews_path(result.id)%></b></p>
+      <% end %>
 
-<table>
-  <tr>
-    <th>Keyword</th>
-    <th>Gender</th>
-    <th>Age</th>
-    <th>Location</th>
-    <th>Ethnicity</th>
-    <th>Weight</th>
-    <th>Smoking status</th>
-    <th>New</th>
-    <th>Show</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @searches.each do |search| %>
-  <tr>
-    <td><%= search.keyword %></td>
-    <td><%= search.gender %></td>
-    <td><%= search.age %></td>
-    <td><%= search.location %></td>
-    <td><%= search.ethnicity %></td>
-    <td><%= search.weight %></td>
-    <td><%= search.smoking_status %></td>
-    <td><%= search.new %></td>
-    <td><%= search.show %></td>
-    <td><%= link_to 'Show', search %></td>
-    <td><%= link_to 'Edit', edit_search_path(search) %></td>
-    <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<h3>Found in Conditions</h3>
+<%	 @conditionresults.each do |result| %>
+    <p><b><%= link_to "#{result.name}", condition_path(result.id)%></b></p>
 <% end %>
-</table>
 
-<br />
+<h3>Found in User Reviews</h3>
+<% @reviewresults.each do |result| %>
+    <p>Under drug: <b><%= link_to "#{ Drug.find(result.drug_id).brand_name}", drug_reviews_path(result.drug_id)%></b></p>
+    <p><%= result.comments %></p>
+    <% end %>
 
-<%= link_to 'New Search', new_search_path %>
+

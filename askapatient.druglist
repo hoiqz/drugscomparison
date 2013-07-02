@@ -922,29 +922,29 @@
 #MORPHINE SULFATE	20616	http://www.askapatient.com/viewrating.asp?drug=20616&name=KADIAN
 #MORPHINE SULFATE	19516	http://www.askapatient.com/viewrating.asp?drug=19516&name=MS+CONTIN
 #MORPHINE SULFATE	21260	http://www.askapatient.com/viewrating.asp?drug=21260&name=AVINZA
-MOXIFLOXACIN HYDROCHLORIDE	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
-MOXIFLOXACIN HYDROCHLORIDE	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
-MUPIROCIN	50591	http://www.askapatient.com/viewrating.asp?drug=50591&name=BACTROBAN
-MYCOPHENOLATE MOFETIL	50722	http://www.askapatient.com/viewrating.asp?drug=50722&name=CELLCEPT
-NABUMETONE	75179	http://www.askapatient.com/viewrating.asp?drug=75179&name=NABUMETONE
-NADOLOL	74172	http://www.askapatient.com/viewrating.asp?drug=74172&name=NADOLOL
-NALTREXONE HCL	74918	http://www.askapatient.com/viewrating.asp?drug=74918&name=NALTREXONE+HCL
-NAMENDA	21627	http://www.askapatient.com/viewrating.asp?drug=21627&name=NAMENDA
-NAPRELAN	20353	http://www.askapatient.com/viewrating.asp?drug=20353&name=NAPRELAN
-NAPROSYN	17581	http://www.askapatient.com/viewrating.asp?drug=17581&name=NAPROSYN
-NAPROXEN	74105	http://www.askapatient.com/viewrating.asp?drug=74105&name=NAPROXEN
-NAPROXEN SODIUM	74142	http://www.askapatient.com/viewrating.asp?drug=74142&name=NAPROXEN+SODIUM
-NARDIL	11909	http://www.askapatient.com/viewrating.asp?drug=11909&name=NARDIL
-NASACORT	19798	http://www.askapatient.com/viewrating.asp?drug=19798&name=NASACORT
-NASACORT AQ	20468	http://www.askapatient.com/viewrating.asp?drug=20468&name=NASACORT+AQ
-NASALCROM	20463	http://www.askapatient.com/viewrating.asp?drug=20463&name=NASALCROM
-NASAREL	20409	http://www.askapatient.com/viewrating.asp?drug=20409&name=NASAREL
-NASONEX	20762	http://www.askapatient.com/viewrating.asp?drug=20762&name=NASONEX
-NAVANE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
-NEMBUTAL	83244	http://www.askapatient.com/viewrating.asp?drug=83244&name=NEMBUTAL
-NEORAL	50716	http://www.askapatient.com/viewrating.asp?drug=50716&name=NEORAL
-NEOSPORIN	50417	http://www.askapatient.com/viewrating.asp?drug=50417&name=NEOSPORIN
-NEURONTIN	20235	http://www.askapatient.com/viewrating.asp?drug=20235&name=NEURONTIN
+#MOXIFLOXACIN HYDROCHLORIDE	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
+#MOXIFLOXACIN HYDROCHLORIDE	21085	http://www.askapatient.com/viewrating.asp?drug=21085&name=AVELOX
+#MUPIROCIN	50591	http://www.askapatient.com/viewrating.asp?drug=50591&name=BACTROBAN
+#MYCOPHENOLATE MOFETIL	50722	http://www.askapatient.com/viewrating.asp?drug=50722&name=CELLCEPT
+#NABUMETONE	75179	http://www.askapatient.com/viewrating.asp?drug=75179&name=NABUMETONE
+#NADOLOL	74172	http://www.askapatient.com/viewrating.asp?drug=74172&name=NADOLOL
+#NALTREXONE HCL	74918	http://www.askapatient.com/viewrating.asp?drug=74918&name=NALTREXONE+HCL
+#NAMENDA	21627	http://www.askapatient.com/viewrating.asp?drug=21627&name=NAMENDA
+#NAPRELAN	20353	http://www.askapatient.com/viewrating.asp?drug=20353&name=NAPRELAN
+#NAPROSYN	17581	http://www.askapatient.com/viewrating.asp?drug=17581&name=NAPROSYN
+#NAPROXEN	74105	http://www.askapatient.com/viewrating.asp?drug=74105&name=NAPROXEN
+#NAPROXEN SODIUM	74142	http://www.askapatient.com/viewrating.asp?drug=74142&name=NAPROXEN+SODIUM
+#NARDIL	11909	http://www.askapatient.com/viewrating.asp?drug=11909&name=NARDIL
+#NASACORT	19798	http://www.askapatient.com/viewrating.asp?drug=19798&name=NASACORT
+#NASACORT AQ	20468	http://www.askapatient.com/viewrating.asp?drug=20468&name=NASACORT+AQ
+#NASALCROM	20463	http://www.askapatient.com/viewrating.asp?drug=20463&name=NASALCROM
+#NASAREL	20409	http://www.askapatient.com/viewrating.asp?drug=20409&name=NASAREL
+#NASONEX	20762	http://www.askapatient.com/viewrating.asp?drug=20762&name=NASONEX
+#NAVANE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
+#NEMBUTAL	83244	http://www.askapatient.com/viewrating.asp?drug=83244&name=NEMBUTAL
+#NEORAL	50716	http://www.askapatient.com/viewrating.asp?drug=50716&name=NEORAL
+#NEOSPORIN	50417	http://www.askapatient.com/viewrating.asp?drug=50417&name=NEOSPORIN
+#NEURONTIN	20235	http://www.askapatient.com/viewrating.asp?drug=20235&name=NEURONTIN
 NEXIUM	21153	http://www.askapatient.com/viewrating.asp?drug=21153&name=NEXIUM
 NEXPLANON	21529	http://www.askapatient.com/viewrating.asp?drug=21529&name=NEXPLANON
 NIACIN	81134	http://www.askapatient.com/viewrating.asp?drug=81134&name=NIACIN
