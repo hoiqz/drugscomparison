@@ -1,4 +1,5 @@
 require "rvm/capistrano"
+require "bundler/capistrano"
 set :user, 'hoi'
 set :domain, '54.235.209.29'
 set :application, 'drugscomparison'
