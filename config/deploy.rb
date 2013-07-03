@@ -49,15 +49,13 @@ namespace :deploy do
   task :seed do
     run "cd #{current_path}; rake db:seed RAILS_ENV=production"
   end
-end
 
-after "deploy:update_code", :bundle_install
-desc "install the necessary prerequisites"
-task :bundle_install, :roles => :app do
-  run "cd #{release_path} && bundle install"
-end
+  desc "install the necessary prerequisites"
+  task :bundle_install, :roles => :app do
+    run "cd #{release_path} && bundle install"
+  end
 
-namespace :deploy do
+  desc "create directory for solr data"
   task :setup_solr_data_dir do
     run "mkdir -p #{shared_path}/solr/data"
   end
@@ -82,4 +80,5 @@ namespace :solr do
   end
 end
 
-after 'deploy:setup', 'deploy:setup_solr_data_dir'
+after "deploy:update_code", :bundle_install
+after 'deploy:setup', 'deploy:setup_solr_data_dir', 'solr:stop','solr:reindex','solr:run'
