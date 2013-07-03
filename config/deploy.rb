@@ -80,5 +80,5 @@ namespace :solr do
   end
 end
 
-after "deploy:update_code", "deploy:bundle_install"
-after 'deploy:setup', 'deploy:setup_solr_data_dir', 'solr:stop','solr:reindex','solr:run'
+after "deploy:update_code", "deploy:bundle_install",'deploy:setup_solr_data_dir'
+#after 'deploy:setup',
