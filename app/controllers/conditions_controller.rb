@@ -21,6 +21,7 @@ class ConditionsController < ApplicationController
     if params[:conditions]
       @optionshash=params
     end
+
     # this is for the tables view
     if params[:button]
     @metric=Hash.new

@@ -945,7 +945,7 @@
 #NEORAL	50716	http://www.askapatient.com/viewrating.asp?drug=50716&name=NEORAL
 #NEOSPORIN	50417	http://www.askapatient.com/viewrating.asp?drug=50417&name=NEOSPORIN
 #NEURONTIN	20235	http://www.askapatient.com/viewrating.asp?drug=20235&name=NEURONTIN
-NEXIUM	21153	http://www.askapatient.com/viewrating.asp?drug=21153&name=NEXIUM
+#NEXIUM	21153	http://www.askapatient.com/viewrating.asp?drug=21153&name=NEXIUM
 NEXPLANON	21529	http://www.askapatient.com/viewrating.asp?drug=21529&name=NEXPLANON
 NIACIN	81134	http://www.askapatient.com/viewrating.asp?drug=81134&name=NIACIN
 NIASPAN	20381	http://www.askapatient.com/viewrating.asp?drug=20381&name=NIASPAN

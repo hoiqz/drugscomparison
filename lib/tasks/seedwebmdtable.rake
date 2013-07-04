@@ -132,14 +132,14 @@ namespace :project do
               doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
             #  doc_comment = Hpricot(open("#{href}"))
               while doc_comment.nil?
-                sleeptime=rand(120)+rand(150)
+                sleeptime=150+rand(150)
                 sleep(sleeptime.seconds)
                 doc_comment = open(href) {|f| Hpricot(ic.iconv(f.read)) }
               end
                 (doc_comment/"meta").remove
               comments=doc_comment.inner_html.gsub(/^\n/,"").gsub(/<wbr \/>/,"")
                 puts comments
-              sleeptime=rand(225)+rand(160)
+              sleeptime=180+rand(160)
               sleep(sleeptime.seconds)
               end
                 end
@@ -375,7 +375,9 @@ namespace :project do
   task :generatereviewcounts =>:environment do
     Drug.reset_column_information
     Drug.all.each do |d|
-      d.update_attributes(:reviews_count=>d.reviews.count)
+      #d.update_attribute(:reviews_count, d.reviews.count)
+      d.reviews_count=d.reviews.count
+      d.save!
     end
   end
 
@@ -385,7 +387,7 @@ namespace :project do
   desc "upload the word count for each drug"
   task :uploadwordcountfreq =>:environment do
     Drug.all.each do |d|
-      d.update_attributes(:reviews_count=>d.reviews.count)
+      d.update_attribute(:reviews_count, d.reviews.count)
     end
   end
 
