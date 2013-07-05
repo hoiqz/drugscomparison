@@ -260,11 +260,11 @@ namespace :project do
               OUT.write("#{filename}\t")
               parse_page(doc2)
             end
-            sleeptime=rand(139)+rand(205)
+            sleeptime=300+rand(255)
             sleep(sleeptime.seconds)
           end
         end
-        sleeptime=rand(300)+rand(370)
+        sleeptime=500+rand(400)
         sleep(sleeptime.seconds)
         OUT.close
       end
@@ -674,6 +674,24 @@ with the next rake task:fix_other_records"
       end
     end
   end
+
+  ###############
+  #NEW TASK
+  ##############
+  # usage rake project:cleanReviews
+  desc "task to clean reviews and remove weird encodings inserted by me inside database"
+  task :cleanReviews =>:environment do
+    Review.all.each do |review|
+      puts "#{review.id}\n"
+      old=review.comments
+      cleaned=old.gsub(/\\/,'')
+      review.comments=cleaned
+      review.save!
+    end
+  end
+
+
+
 
   ########################
   # CLASS METHODS

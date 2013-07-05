@@ -16,15 +16,17 @@
             });
             ///////////////////////////////////
             // hide it first
-            $("#fountainTextG").hide();
+//            $("#fountainTextG").hide();
 
-            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph").bind("ajax:beforeSend", function(){
+            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph,.loading_btn").bind("ajax:beforeSend", function(){
                 $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").addClass("disabled");
-                $("#fountainTextG").show();
+//                $("#fountainTextG").show();
+                toggleOverlay();
             });
-            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph").bind("ajax:complete", function(){
+            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph, .loading_btn").bind("ajax:complete", function(){
                 $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").removeClass("disabled")
-                $("#fountainTextG").hide();
+//                $("#fountainTextG").hide();
+                toggleOverlay();
             });
 
              //////////////////////////////
@@ -39,7 +41,20 @@
             });
             //$("#tagcloud").jQCloud(word_array);
 
+
         });
+        function toggleOverlay(){
+            var overlay = document.getElementById('overlayid');
+            var specialBox = document.getElementById('loadingtext');
+//            overlay.style.opacity = .8;
+            if(overlay.style.display == "block"){
+                overlay.style.display = "none";
+                specialBox.style.display = "none";
+            } else {
+                overlay.style.display = "block";
+                specialBox.style.display = "block";
+            }
+        }
     </script>
 <% end %>
 
@@ -55,60 +70,6 @@
     <h4 class="span 8">Control Panel</h4>
     <div class="static_buttons span8">
       <%= render "chart_buttons" %>
-      <div id="fountainTextG" class="transparent_class">
-        <div id="fountainTextG_1" class="fountainTextG">
-          G</div>
-        <div id="fountainTextG_2" class="fountainTextG">
-          e</div>
-        <div id="fountainTextG_3" class="fountainTextG">
-          n</div>
-        <div id="fountainTextG_4" class="fountainTextG">
-          e</div>
-        <div id="fountainTextG_5" class="fountainTextG">
-          r</div>
-        <div id="fountainTextG_6" class="fountainTextG">
-          a</div>
-        <div id="fountainTextG_7" class="fountainTextG">
-          t</div>
-        <div id="fountainTextG_8" class="fountainTextG">
-          i</div>
-        <div id="fountainTextG_9" class="fountainTextG">
-          n</div>
-        <div id="fountainTextG_10" class="fountainTextG">
-          g</div>
-        <div id="fountainTextG_11" class="fountainTextG">
-          &nbsp;
-        </div>
-        <div id="fountainTextG_12" class="fountainTextG">
-          R</div>
-        <div id="fountainTextG_13" class="fountainTextG">
-          e</div>
-        <div id="fountainTextG_14" class="fountainTextG">
-          s</div>
-        <div id="fountainTextG_15" class="fountainTextG">
-          u</div>
-        <div id="fountainTextG_16" class="fountainTextG">
-          l</div>
-        <div id="fountainTextG_17" class="fountainTextG">
-          t</div>
-        <div id="fountainTextG_18" class="fountainTextG">
-          s</div>
-        <div id="fountainTextG_19" class="fountainTextG">
-          &nbsp;
-        </div>
-        <div id="fountainTextG_20" class="fountainTextG">
-          .</div>
-        <div id="fountainTextG_21" class="fountainTextG">
-          &nbsp;
-        </div>
-        <div id="fountainTextG_22" class="fountainTextG">
-          .</div>
-        <div id="fountainTextG_23" class="fountainTextG">
-          &nbsp;
-        </div>
-        <div id="fountainTextG_24" class="fountainTextG">
-          .</div>
-      </div>
     </div>
 
       <div id="reviews_chart" class="span8">

@@ -19,6 +19,5 @@ class Review < ActiveRecord::Base
     text :comments
   end
 
-
 end
 
