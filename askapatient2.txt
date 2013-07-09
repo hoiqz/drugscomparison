@@ -1,0 +1,71 @@
+VAGIFEM	20908	http://www.askapatient.com/viewrating.asp?drug=20908&name=VAGIFEM
+VALACYCLOVIR HYDROCHLORIDE	76588	http://www.askapatient.com/viewrating.asp?drug=76588&name=VALACYCLOVIR+HYDROCHLORIDE
+VALIUM	13263	http://www.askapatient.com/viewrating.asp?drug=13263&name=VALIUM
+VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
+VALTREX	20487	http://www.askapatient.com/viewrating.asp?drug=20487&name=VALTREX
+VANCENASE	18521	http://www.askapatient.com/viewrating.asp?drug=18521&name=VANCENASE
+VANCOCIN HCL	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
+VANCOMYCIN HCL	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
+VANIQA	21145	http://www.askapatient.com/viewrating.asp?drug=21145&name=VANIQA
+VANTIN	50674	http://www.askapatient.com/viewrating.asp?drug=50674&name=VANTIN
+VASERETIC	19221	http://www.askapatient.com/viewrating.asp?drug=19221&name=VASERETIC
+VASOTEC	18998	http://www.askapatient.com/viewrating.asp?drug=18998&name=VASOTEC
+VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
+VENTOLIN	18473	http://www.askapatient.com/viewrating.asp?drug=18473&name=VENTOLIN
+VENTOLIN HFA	20983	http://www.askapatient.com/viewrating.asp?drug=20983&name=VENTOLIN+HFA
+VENTOLIN ROTACAPS	19489	http://www.askapatient.com/viewrating.asp?drug=19489&name=VENTOLIN+ROTACAPS
+VERAMYST	22051	http://www.askapatient.com/viewrating.asp?drug=22051&name=VERAMYST
+VERAPAMIL HCL	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
+VERELAN	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
+VERELAN PM	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
+VERSED	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
+VESICARE	21518	http://www.askapatient.com/viewrating.asp?drug=21518&name=VESICARE
+VIAGRA	20895	http://www.askapatient.com/viewrating.asp?drug=20895&name=VIAGRA
+VIBRAMYCIN	50006	http://www.askapatient.com/viewrating.asp?drug=50006&name=VIBRAMYCIN
+VICODIN	88058	http://www.askapatient.com/viewrating.asp?drug=88058&name=VICODIN
+VICODIN ES	89736	http://www.askapatient.com/viewrating.asp?drug=89736&name=VICODIN+ES
+VICODIN HP	40117	http://www.askapatient.com/viewrating.asp?drug=40117&name=VICODIN+HP
+VICOPROFEN	20716	http://www.askapatient.com/viewrating.asp?drug=20716&name=VICOPROFEN
+VICTOZA	22341	http://www.askapatient.com/viewrating.asp?drug=22341&name=VICTOZA
+VIGAMOX	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
+VIIBRYD	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
+VIMPAT	22254	http://www.askapatient.com/viewrating.asp?drug=22254&name=VIMPAT
+VIOXX	21042	http://www.askapatient.com/viewrating.asp?drug=21042&name=VIOXX
+VISICOL	21097	http://www.askapatient.com/viewrating.asp?drug=21097&name=VISICOL
+VISKEN	18285	http://www.askapatient.com/viewrating.asp?drug=18285&name=VISKEN
+VISTARIL	11111	http://www.askapatient.com/viewrating.asp?drug=11111&name=VISTARIL
+VITAMIN D	80704	http://www.askapatient.com/viewrating.asp?drug=80704&name=VITAMIN+D
+VIVACTIL	16012	http://www.askapatient.com/viewrating.asp?drug=16012&name=VIVACTIL
+VIVELLE	20323	http://www.askapatient.com/viewrating.asp?drug=20323&name=VIVELLE
+VIVELLE-DOT	20538	http://www.askapatient.com/viewrating.asp?drug=20538&name=VIVELLE%2DDOT
+VOLTAREN	19201	http://www.askapatient.com/viewrating.asp?drug=19201&name=VOLTAREN
+VOLTAREN-XR	20254	http://www.askapatient.com/viewrating.asp?drug=20254&name=VOLTAREN%2DXR
+VYTORIN	21687	http://www.askapatient.com/viewrating.asp?drug=21687&name=VYTORIN
+VYVANSE	21977	http://www.askapatient.com/viewrating.asp?drug=21977&name=VYVANSE
+VALACYCLOVIR HYDROCHLORIDE	76588	http://www.askapatient.com/viewrating.asp?drug=76588&name=VALACYCLOVIR+HYDROCHLORIDE
+VALACYCLOVIR HYDROCHLORIDE	20487	http://www.askapatient.com/viewrating.asp?drug=20487&name=VALTREX
+VALPROATE SODIUM	20593	http://www.askapatient.com/viewrating.asp?drug=20593&name=DEPACON
+VALPROIC ACID	18081	http://www.askapatient.com/viewrating.asp?drug=18081&name=DEPAKENE
+VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
+VALSARTAN	20665	http://www.askapatient.com/viewrating.asp?drug=20665&name=DIOVAN
+VANCOMYCIN HYDROCHLORIDE	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
+VANCOMYCIN HYDROCHLORIDE	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
+VARDENAFIL HYDROCHLORIDE	21400	http://www.askapatient.com/viewrating.asp?drug=21400&name=LEVITRA
+VARENICLINE TARTRATE	21928	http://www.askapatient.com/viewrating.asp?drug=21928&name=CHANTIX
+VENLAFAXINE HYDROCHLORIDE	20151	http://www.askapatient.com/viewrating.asp?drug=20151&name=EFFEXOR
+VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
+VENLAFAXINE HYDROCHLORIDE	20699	http://www.askapatient.com/viewrating.asp?drug=20699&name=EFFEXOR+XR
+VERAPAMIL HYDROCHLORIDE	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
+VERAPAMIL HYDROCHLORIDE	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
+VERAPAMIL HYDROCHLORIDE	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
+VERAPAMIL HYDROCHLORIDE	20552	http://www.askapatient.com/viewrating.asp?drug=20552&name=COVERA%2DHS
+VERAPAMIL HYDROCHLORIDE	19152	http://www.askapatient.com/viewrating.asp?drug=19152&name=ISOPTIN+SR
+VERAPAMIL HYDROCHLORIDE	18817	http://www.askapatient.com/viewrating.asp?drug=18817&name=CALAN
+VILAZODONE HYDROCHLORIDE	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
+WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM
+WELCHOL	21141	http://www.askapatient.com/viewrating.asp?drug=21141&name=WELCHOL
+WELLBUTRIN	18644	http://www.askapatient.com/viewrating.asp?drug=18644&name=WELLBUTRIN
+WELLBUTRIN SR	20358	http://www.askapatient.com/viewrating.asp?drug=20358&name=WELLBUTRIN+SR
+WELLBUTRIN XL	21515	http://www.askapatient.com/viewrating.asp?drug=21515&name=WELLBUTRIN+XL
+WARFARIN SODIUM	9218	http://www.askapatient.com/viewrating.asp?drug=9218&name=COUMADIN
+WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM

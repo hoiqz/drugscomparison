@@ -1,0 +1,75 @@
+TERBUTALINE SULFATE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
+TERCONAZOLE	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
+TERCONAZOLE	19641	http://www.askapatient.com/viewrating.asp?drug=19641&name=TERAZOL+3
+TERIPARATIDE RECOMBINANT HUMAN	21318	http://www.askapatient.com/viewrating.asp?drug=21318&name=FORTEO
+TESTOSTERONE	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
+TESTOSTERONE	21015	http://www.askapatient.com/viewrating.asp?drug=21015&name=ANDROGEL
+TESTOSTERONE	20489	http://www.askapatient.com/viewrating.asp?drug=20489&name=ANDRODERM
+TESTOSTERONE CYPIONATE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
+TETRACYCLINE HYDROCHLORIDE	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
+THALIDOMIDE	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
+THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
+THIORIDAZINE	17923	http://www.askapatient.com/viewrating.asp?drug=17923&name=MELLARIL%2DS
+THIOTHIXENE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
+TIAGABINE HYDROCHLORIDE	20646	http://www.askapatient.com/viewrating.asp?drug=20646&name=GABITRIL
+TICAGRELOR	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
+TIMOLOL MALEATE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
+TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
+TIMOLOL MALEATE	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN
+TINIDAZOLE	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
+TIOTROPIUM BROMIDE MONOHYDRATE	21395	http://www.askapatient.com/viewrating.asp?drug=21395&name=SPIRIVA
+TIZANIDINE HYDROCHLORIDE	20397	http://www.askapatient.com/viewrating.asp?drug=20397&name=ZANAFLEX
+TOLCAPONE	20697	http://www.askapatient.com/viewrating.asp?drug=20697&name=TASMAR
+TOLMETIN SODIUM	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
+TOLTERODINE TARTRATE	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
+TOPIRAMATE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE
+TOPIRAMATE	20505	http://www.askapatient.com/viewrating.asp?drug=20505&name=TOPAMAX
+TORSEMIDE	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
+TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
+TRAMADOL HYDROCHLORIDE	21692	http://www.askapatient.com/viewrating.asp?drug=21692&name=ULTRAM+ER
+TRAMADOL HYDROCHLORIDE	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
+TRANDOLAPRIL	20528	http://www.askapatient.com/viewrating.asp?drug=20528&name=MAVIK
+TRANDOLAPRIL; VERAPAMIL HYDROCHLORIDE	20591	http://www.askapatient.com/viewrating.asp?drug=20591&name=TARKA
+TRANEXAMIC ACID	19281	http://www.askapatient.com/viewrating.asp?drug=19281&name=CYKLOKAPRON
+TRANEXAMIC ACID	22430	http://www.askapatient.com/viewrating.asp?drug=22430&name=LYSTEDA
+TRANYLCYPROMINE SULFATE	12342	http://www.askapatient.com/viewrating.asp?drug=12342&name=PARNATE
+TRAVOPROST	21257	http://www.askapatient.com/viewrating.asp?drug=21257&name=TRAVATAN
+TRAZODONE HYDROCHLORIDE	18207	http://www.askapatient.com/viewrating.asp?drug=18207&name=DESYREL
+TRAZODONE HYDROCHLORIDE	70857	http://www.askapatient.com/viewrating.asp?drug=70857&name=TRAZODONE+HCL
+TRETINOIN	16921	http://www.askapatient.com/viewrating.asp?drug=16921&name=RETIN%2DA
+TRETINOIN	20475	http://www.askapatient.com/viewrating.asp?drug=20475&name=RETIN%2DA+MICRO
+TRETINOIN	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA
+TRIAMCINOLONE ACETONIDE	11600	http://www.askapatient.com/viewrating.asp?drug=11600&name=KENALOG
+TRIAMCINOLONE ACETONIDE	12041	http://www.askapatient.com/viewrating.asp?drug=12041&name=KENALOG%2D10
+TRIAMCINOLONE ACETONIDE	12097	http://www.askapatient.com/viewrating.asp?drug=12097&name=KENALOG+IN+ORABASE
+TRIAMCINOLONE ACETONIDE	14901	http://www.askapatient.com/viewrating.asp?drug=14901&name=KENALOG%2D40
+TRIAMCINOLONE ACETONIDE	19798	http://www.askapatient.com/viewrating.asp?drug=19798&name=NASACORT
+TRIAMCINOLONE ACETONIDE	18117	http://www.askapatient.com/viewrating.asp?drug=18117&name=AZMACORT
+TRIAMCINOLONE ACETONIDE	20468	http://www.askapatient.com/viewrating.asp?drug=20468&name=NASACORT+AQ
+TRIAMTERENE	13174	http://www.askapatient.com/viewrating.asp?drug=13174&name=DYRENIUM
+TRIAZOLAM	17892	http://www.askapatient.com/viewrating.asp?drug=17892&name=HALCION
+TRIAZOLAM	74031	http://www.askapatient.com/viewrating.asp?drug=74031&name=TRIAZOLAM
+TRIFLUOPERAZINE HYDROCHLORIDE	11552	http://www.askapatient.com/viewrating.asp?drug=11552&name=STELAZINE
+TRIHEXYPHENIDYL HYDROCHLORIDE	6773	http://www.askapatient.com/viewrating.asp?drug=6773&name=ARTANE
+TRIMETHOBENZAMIDE HYDROCHLORIDE	17530	http://www.askapatient.com/viewrating.asp?drug=17530&name=TIGAN
+TRIMETHOPRIM	18679	http://www.askapatient.com/viewrating.asp?drug=18679&name=TRIMETHOPRIM
+TRIMIPRAMINE MALEATE	16792	http://www.askapatient.com/viewrating.asp?drug=16792&name=SURMONTIL
+TROSPIUM CHLORIDE	21595	http://www.askapatient.com/viewrating.asp?drug=21595&name=SANCTURA
+ULORIC	21856	http://www.askapatient.com/viewrating.asp?drug=21856&name=ULORIC
+ULTRACET	21123	http://www.askapatient.com/viewrating.asp?drug=21123&name=ULTRACET
+ULTRAM	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
+ULTRAM ER	21692	http://www.askapatient.com/viewrating.asp?drug=21692&name=ULTRAM+ER
+ULTRAVATE	19967	http://www.askapatient.com/viewrating.asp?drug=19967&name=ULTRAVATE
+UNIRETIC	20729	http://www.askapatient.com/viewrating.asp?drug=20729&name=UNIRETIC
+UNISOM	18066	http://www.askapatient.com/viewrating.asp?drug=18066&name=UNISOM
+UNITHROID	21210	http://www.askapatient.com/viewrating.asp?drug=21210&name=UNITHROID
+UNIVASC	20312	http://www.askapatient.com/viewrating.asp?drug=20312&name=UNIVASC
+URECHOLINE	88440	http://www.askapatient.com/viewrating.asp?drug=88440&name=URECHOLINE
+UREX	16151	http://www.askapatient.com/viewrating.asp?drug=16151&name=UREX
+UROXATRAL	21287	http://www.askapatient.com/viewrating.asp?drug=21287&name=UROXATRAL
+URSO	20675	http://www.askapatient.com/viewrating.asp?drug=20675&name=URSO
+URSODIOL	75517	http://www.askapatient.com/viewrating.asp?drug=75517&name=URSODIOL
+ULIPRISTAL ACETATE	22474	http://www.askapatient.com/viewrating.asp?drug=22474&name=ELLA
+URSODIOL	75517	http://www.askapatient.com/viewrating.asp?drug=75517&name=URSODIOL
+URSODIOL	19594	http://www.askapatient.com/viewrating.asp?drug=19594&name=ACTIGALL
+URSODIOL	20675	http://www.askapatient.com/viewrating.asp?drug=20675&name=URSO

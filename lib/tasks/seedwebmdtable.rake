@@ -682,11 +682,13 @@ with the next rake task:fix_other_records"
   desc "task to clean reviews and remove weird encodings inserted by me inside database"
   task :cleanReviews =>:environment do
     Review.all.each do |review|
+      if review.id < 94491
       puts "#{review.id}\n"
       old=review.comments
       cleaned=old.gsub(/\\/,'')
       review.comments=cleaned
       review.save!
+      end
     end
   end
 

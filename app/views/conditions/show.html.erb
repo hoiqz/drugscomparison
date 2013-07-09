@@ -4,23 +4,11 @@
 
     <script type='text/javascript'>
         $(function () {
-             /////////////////////////////////
-//            $("#fountainTextG").hide();
-
-            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:beforeSend", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled")
-//                $("#fountainTextG").show();
-                toggleOverlay();
-            });
-            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:complete", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeClass("disabled")
-//                $("#fountainTextG").hide();
-                toggleOverlay();
-            });
-
-
-            //////////////////////////
-        //$('.footable').footable();  // already in show.js
+            $(document).bind("ajaxSend", function(){
+                  toggleOverlay();
+            }).bind("ajaxComplete", function(){
+                        toggleOverlay();
+                    });
         $("#overall_link").popover();
         $("#satisfactory_view").popover();
         $("#effectiveness_view").popover();

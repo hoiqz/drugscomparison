@@ -1,4 +1,4 @@
-<%= form_for @condition,:url=> multi_pie_view_condition_path(@condition.id),:method => "get", :remote=>true do |f| %>
+<%= form_for @condition,:url=> condition_path(@condition.id,:button=>"overall_link"),:method => "get", :remote=>true do |f| %>
     <legend>Restrict By:</legend>
     <%= hidden_field_tag 'conditions', 'true' %>
 

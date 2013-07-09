@@ -75,6 +75,27 @@ class ConditionsController < ApplicationController
     @most_bad_reviews =format2hash_string(@infograph.most_bad_reviews)
     # end infograph stuff
 
+    # for pie charts
+    @generate_colors=Array.new
+    @label='Nil'
+    if params[:conditions]
+      @label=''
+      labels=params.except(:utf8,:amp,:commit,:action,:controller,:page,:type,:conditions,:id,:button,:drug_id)
+      labels.each_pair do |key,value|
+        @label<< "#{key.capitalize} : #{value} , "
+      end
+      @label='Nil' if @label.blank?
+    end
+
+    @review_options=params
+    @update_values = Hash.new{|hash, key| hash[key] = Array.new}
+    @drugs.each do  |drug|
+      @review_options[:for_drug_id]=drug.id
+      @related_reviews=@condition.get_all_reviews(@review_options)
+      @generate_colors.push('#C11B17','#FF9999' , '#FFCC33','#99FF33' , '#009900')      #set the colors here then pass to the javascript
+      (@update_values[drug]).push(@condition.eou_score1(@related_reviews).round(2), @condition.eou_score2(@related_reviews).round(2),@condition.eou_score3(@related_reviews).round(2),@condition.eou_score4(@related_reviews).round(2),@condition.eou_score5(@related_reviews).round(2))
+    end
+
     respond_to do |format|
           format.js
           format.html # show.html.erb

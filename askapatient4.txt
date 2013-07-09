@@ -1,0 +1,28 @@
+TRIPHASIL-21	19192	http://www.askapatient.com/viewrating.asp?drug=19192&name=TRIPHASIL%2D21
+TRIPHASIL-28	19190	http://www.askapatient.com/viewrating.asp?drug=19190&name=TRIPHASIL%2D28
+TRIVORA-21	74538	http://www.askapatient.com/viewrating.asp?drug=74538&name=TRIVORA%2D21
+TRUSOPT	20408	http://www.askapatient.com/viewrating.asp?drug=20408&name=TRUSOPT
+TRUVADA	21752	http://www.askapatient.com/viewrating.asp?drug=21752&name=TRUVADA
+TUSSIONEX	19111	http://www.askapatient.com/viewrating.asp?drug=19111&name=TUSSIONEX
+TYLENOL	19872	http://www.askapatient.com/viewrating.asp?drug=19872&name=TYLENOL
+TYLENOL W/ CODEINE	85057	http://www.askapatient.com/viewrating.asp?drug=85057&name=TYLENOL+W%2F+CODEINE
+TYLENOL W/ CODEINE NO. 1	85055	http://www.askapatient.com/viewrating.asp?drug=85055&name=TYLENOL+W%2F+CODEINE+NO%2E+1
+TYLOX	88790	http://www.askapatient.com/viewrating.asp?drug=88790&name=TYLOX
+TACROLIMUS	50708	http://www.askapatient.com/viewrating.asp?drug=50708&name=PROGRAF
+TADALAFIL	21368	http://www.askapatient.com/viewrating.asp?drug=21368&name=CIALIS
+TAMOXIFEN CITRATE	76398	http://www.askapatient.com/viewrating.asp?drug=76398&name=TAMOXIFEN+CITRATE
+TAMOXIFEN CITRATE	17970	http://www.askapatient.com/viewrating.asp?drug=17970&name=NOLVADEX
+TAMSULOSIN HYDROCHLORIDE	20579	http://www.askapatient.com/viewrating.asp?drug=20579&name=FLOMAX
+TAPENTADOL HYDROCHLORIDE	200533	http://www.askapatient.com/viewrating.asp?drug=200533&name=NUCYNTA+ER
+TAPENTADOL HYDROCHLORIDE	22304	http://www.askapatient.com/viewrating.asp?drug=22304&name=NUCYNTA
+TAZAROTENE	20600	http://www.askapatient.com/viewrating.asp?drug=20600&name=TAZORAC
+TEGASEROD MALEATE	21200	http://www.askapatient.com/viewrating.asp?drug=21200&name=ZELNORM
+TELITHROMYCIN	21144	http://www.askapatient.com/viewrating.asp?drug=21144&name=KETEK
+TELMISARTAN	20850	http://www.askapatient.com/viewrating.asp?drug=20850&name=MICARDIS
+TEMAZEPAM	18163	http://www.askapatient.com/viewrating.asp?drug=18163&name=RESTORIL
+TEMAZEPAM	70919	http://www.askapatient.com/viewrating.asp?drug=70919&name=TEMAZEPAM
+TEMOZOLOMIDE	21029	http://www.askapatient.com/viewrating.asp?drug=21029&name=TEMODAR
+TERAZOSIN HYDROCHLORIDE	19057	http://www.askapatient.com/viewrating.asp?drug=19057&name=HYTRIN
+TERBINAFINE HYDROCHLORIDE	21124	http://www.askapatient.com/viewrating.asp?drug=21124&name=LAMISIL+AT
+TERBINAFINE HYDROCHLORIDE	20192	http://www.askapatient.com/viewrating.asp?drug=20192&name=LAMISIL
+TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE

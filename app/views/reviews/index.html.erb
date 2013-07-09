@@ -14,23 +14,12 @@
                 $.getScript(this.href);
                 return false;
             });
-            ///////////////////////////////////
-            // hide it first
-//            $("#fountainTextG").hide();
 
-            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph,.loading_btn").bind("ajax:beforeSend", function(){
-                $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").addClass("disabled");
-//                $("#fountainTextG").show();
+            $(document).bind("ajaxSend", function(){
                 toggleOverlay();
-            });
-            $("#satisfylink,#tag_cloud_link,#effectlink,#eoulink,#infograph, .loading_btn").bind("ajax:complete", function(){
-                $("#infograph,#satisfylink,#tag_cloud_link,#effectlink,#eoulink").removeClass("disabled")
-//                $("#fountainTextG").hide();
-                toggleOverlay();
-            });
-
-             //////////////////////////////
-
+            }).bind("ajaxComplete", function(){
+                        toggleOverlay();
+                    });
             $("#infograph").popover();
             $("#effectlink").popover();
             $("#eoulink").popover();
@@ -39,9 +28,6 @@
             $('#effectlink').bind('click',function(){
                 $('#conditions').show;
             });
-            //$("#tagcloud").jQCloud(word_array);
-
-
         });
         function toggleOverlay(){
             var overlay = document.getElementById('overlayid');

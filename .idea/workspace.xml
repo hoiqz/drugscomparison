@@ -6,30 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.fnm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.frq" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.nrm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.prx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.tii" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.tis" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_7.fdt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/data/development/index/_7.fdx" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\ajax_update.js.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\effectiveness_view.js.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\eou_view.js.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\satisfactory_view.js.erb" afterPath="" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\_effectiveness_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_effectiveness_view_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\_eou_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_eou_view_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\_satisfactory_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_satisfactory_view_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\app\views\drugs\show.js.erb" afterPath="$PROJECT_DIR$/askapatient_reviews/TAMOXIFEN+CITRATE_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.fdt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_6.fdx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.js.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TAMIFLU_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TAMIFLU_reviews.tsv" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\askapatient.druglist2" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TAMOXIFEN+CITRATE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TAMOXIFEN+CITRATE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_7.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_7.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_7.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_7.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.js.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient.druglist" afterPath="$PROJECT_DIR$/askapatient.druglist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,28 +46,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reviews/index.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="301" column="74" selection-start="11462" selection-end="11462" vertical-scroll-proportion="-69.07692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drugs_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.7834395">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.0">
+            <state line="52" column="110" selection-start="1689" selection-end="1705" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conditions_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="110" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="35" selection-start="496" selection-end="496" vertical-scroll-proportion="-0.14119601">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="45" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-19.615385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_chart_buttons.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="130" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -97,22 +108,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/drugs/_effectiveness_view_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/drugs/_eou_view_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/drugs/_satisfactory_view_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/drugs/satisfactory_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-        <option value="$PROJECT_DIR$/app/views/reviews/satisfactory_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_satisfactory_view.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_satisfactory_view_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/_effectiveness_view_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/_eou_view_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/drugs/effectiveness_view.js.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/show.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
       </list>
     </option>
   </component>
@@ -308,29 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugs" />
+              <option name="myItemId" value="conditions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -817,7 +806,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1256" height="776" extended-state="7" />
+    <frame x="-4" y="-4" width="1256" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -894,109 +883,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/satisfactory_count.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.69435215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/satisfactory_view.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="693" column="22" selection-start="24697" selection-end="24697" vertical-scroll-proportion="0.63577235">
+        <state line="127" column="91" selection-start="4765" selection-end="4850" vertical-scroll-proportion="-17.26923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/effectiveness_view.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="128" column="8" selection-start="4777" selection-end="4861" vertical-scroll-proportion="-17.26923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/condition_layout.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/eou_view.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="232" selection-end="2074" vertical-scroll-proportion="0.37457046">
-          <folding>
-            <element signature="tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1211" column="6" selection-start="23448" selection-end="23448" vertical-scroll-proportion="-3.8431373">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_eou_view_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+        <state line="127" column="8" selection-start="4766" selection-end="4840" vertical-scroll-proportion="-17.26923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/_effectiveness_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="73" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_satisfactory_view_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_eou_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="76" vertical-scroll-proportion="-0.0">
+        <state line="0" column="81" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_multi_pie_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="3171" selection-end="3171" vertical-scroll-proportion="0.4040747">
+        <state line="0" column="85" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_satisfactory_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="8" selection-start="2162" selection-end="2162" vertical-scroll-proportion="1.4431239">
+        <state line="0" column="88" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="110" selection-start="3086" selection-end="3086" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.0">
+        <state line="52" column="110" selection-start="1689" selection-end="1705" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/_review_ratings.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_effectiveness_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/search.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_chart_buttons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="130" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="74" selection-start="11462" selection-end="11462" vertical-scroll-proportion="-69.07692">
+        <state line="557" column="0" selection-start="20835" selection-end="20835" vertical-scroll-proportion="-18.461538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/_effectiveness_view_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.7834395">
+        <state line="35" column="41" selection-start="1134" selection-end="1134" vertical-scroll-proportion="1.0456942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="45" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-19.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="35" selection-start="496" selection-end="496" vertical-scroll-proportion="-0.14119601">
           <folding />
         </state>
       </provider>
