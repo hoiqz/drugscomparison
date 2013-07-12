@@ -165,7 +165,7 @@ $(function () {
     var chart;
     $(document).ready(function() {
         var review_container = document.createElement('div');
-        review_container.style.height=<%= (((@drugs.count)/2.0).ceil) * 250 %>+'px';
+        review_container.style.height= <%= (@drugs.count + 1) * 200 %>+'px';
         document.getElementById('reviews_chart').innerHTML='';
         document.getElementById('reviews_chart').appendChild(review_container);
 
@@ -181,40 +181,17 @@ $(function () {
             },
             labels:{
                 items: [
-                    <% i=1%>
-                    <% y=150%>     // starting point of first plot
+                    <% i=0%>
+                    <% y=50%>     // starting point of first plot
                     <% x=150%>
                     <% @drugs.each do |drug| %>
-                    <%= ',' if i>1 %>
+                    <%= ',' if i>0 %>
                     {
-                        html: '<b><%= drug.brand_name %></b>',
-                        <% if i.odd? %>
-                        <% if i !=1 %>  // Case row 1 column2; i!=1 meaning plots 3,5,7,9 ...
                         style: {
-                            left: '200px',
-                            top: '<%= y+100 %>px'
+                            left: '50%',
+                            top: '<%= (i*200)+y %>px'
                         },
-                        <% y=y+200 %>
-                        <% else %>      // Case row 1 column1
-                        style: {
-                            left: '200px',
-                            top: '20px'
-                        }   ,
-                        <% end%>
-                        <% else %>       //case: row = 2
-                        <% if i !=2 %>                       // Case row 2 column2
-                        style: {
-                            left: '600px',
-                            top: '<%= x+100 %>px'
-                        }   ,
-                        <% x=x+200 %>
-                        <% else %>         // Case row 2 column1
-                        style: {
-                            left: '600px',
-                            top: '20px'
-                        }
-                        <% end%>
-                        <% end%>
+                        html: '<b><%= drug.brand_name %></b>'
                     },
                     <% i=i+1 %>
                     <% end %>
@@ -250,30 +227,16 @@ $(function () {
                 }
             },
             series: [
-                <% i=1%>
-                <% y=150%>
+                <% i=0%>
+                <% y=100%>
                 <% x=150%>
                 <% @drugs.each do |drug| %>
-                <%= ',' if i>1 %>
+                <%= ',' if i>0 %>
                 {
                     type: 'pie',
                     size: 100,
                     name: '<%= drug.brand_name %>',
-                    <% if i.odd? %>
-                    <% if i !=1 %>
-                    center: [ 250, <%= y+200 %> ],
-                    <% y=y+200 %>
-                    <% else %>
-                    center: [ 250, 120 ],
-                    <% end%>
-                    <% else %>
-                    <% if i !=2 %>
-                    center: [ 650, <%= x+200 %> ],
-                    <% x=x+200 %>
-                    <% else %>
-                    center: [ 650, 120 ],
-                    <% end%>
-                    <% end%>
+                    center: [ "50%" , <%= (i*200)+y %> ],
                     data: [
                         ['Scored 1/5',<%=raw @update_values[drug][0] %> ],
                         ['Scored 2/5',<%=raw @update_values[drug][1] %> ],
@@ -297,7 +260,7 @@ $(function () {
     var chart;
     $(document).ready(function() {
         var review_container = document.createElement('div');
-        review_container.style.height=<%= (((@drugs.count)/2.0).ceil) * 250 %>+'px';
+        review_container.style.height= <%= (@drugs.count + 1) * 200 %>+'px';
         document.getElementById('reviews_chart').innerHTML='';
         document.getElementById('reviews_chart').appendChild(review_container);
 
@@ -313,40 +276,17 @@ $(function () {
             },
             labels:{
                 items: [
-                    <% i=1%>
-                    <% y=150%>     // starting point of first plot
+                    <% i=0%>
+                    <% y=50%>     // starting point of first plot
                     <% x=150%>
                     <% @drugs.each do |drug| %>
-                    <%= ',' if i>1 %>
+                    <%= ',' if i>0 %>
                     {
-                        html: '<b><%= drug.brand_name %></b>',
-                        <% if i.odd? %>
-                        <% if i !=1 %>  // Case row 1 column2; i!=1 meaning plots 3,5,7,9 ...
                         style: {
-                            left: '200px',
-                            top: '<%= y+100 %>px'
+                            left: '50%',
+                            top: '<%= (i*200)+y %>px'
                         },
-                        <% y=y+200 %>
-                        <% else %>      // Case row 1 column1
-                        style: {
-                            left: '200px',
-                            top: '20px'
-                        }   ,
-                        <% end%>
-                        <% else %>       //case: row = 2
-                        <% if i !=2 %>                       // Case row 2 column2
-                        style: {
-                            left: '600px',
-                            top: '<%= x+100 %>px'
-                        }   ,
-                        <% x=x+200 %>
-                        <% else %>         // Case row 2 column1
-                        style: {
-                            left: '600px',
-                            top: '20px'
-                        }
-                        <% end%>
-                        <% end%>
+                        html: '<b><%= drug.brand_name %></b>'
                     },
                     <% i=i+1 %>
                     <% end %>
@@ -383,30 +323,16 @@ $(function () {
                 }
             },
             series: [
-                <% i=1%>
-                <% y=150%>
+                <% i=0%>
+                <% y=100%>
                 <% x=150%>
                 <% @drugs.each do |drug| %>
-                <%= ',' if i>1 %>
+                <%= ',' if i>0 %>
                 {
                     type: 'pie',
                     size: 100,
                     name: '<%= drug.brand_name %>',
-                    <% if i.odd? %>
-                    <% if i !=1 %>
-                    center: [ 250, <%= y+200 %> ],
-                    <% y=y+200 %>
-                    <% else %>
-                    center: [ 250, 120 ],
-                    <% end%>
-                    <% else %>
-                    <% if i !=2 %>
-                    center: [ 650, <%= x+200 %> ],
-                    <% x=x+200 %>
-                    <% else %>
-                    center: [ 650, 120 ],
-                    <% end%>
-                    <% end%>
+                    center: [ "50%" , <%= (i*200)+y %> ],
                     data: [
                         ['Scored 1/5',<%=raw @update_values[drug][0] %> ],
                         ['Scored 2/5',<%=raw @update_values[drug][1] %> ],
@@ -430,7 +356,7 @@ $(function () {
     var chart;
     $(document).ready(function() {
         var review_container = document.createElement('div');
-        review_container.style.height=<%= (((@drugs.count)/2.0).ceil) * 250 %>+'px';
+        review_container.style.height= <%= (@drugs.count + 1) * 200 %>+'px';
         document.getElementById('reviews_chart').innerHTML='';
         document.getElementById('reviews_chart').appendChild(review_container);
 
@@ -446,40 +372,17 @@ $(function () {
             },
             labels:{
                 items: [
-                    <% i=1%>
-                    <% y=150%>     // starting point of first plot
+                    <% i=0%>
+                    <% y=50%>     // starting point of first plot
                     <% x=150%>
                     <% @drugs.each do |drug| %>
-                    <%= ',' if i>1 %>
+                    <%= ',' if i>0 %>
                     {
-                        html: '<b><%= drug.brand_name %></b>',
-                        <% if i.odd? %>
-                        <% if i !=1 %>  // Case row 1 column2; i!=1 meaning plots 3,5,7,9 ...
                         style: {
-                            left: '200px',
-                            top: '<%= y+100 %>px'
+                            left: '50%',
+                            top: '<%= (i*200)+y %>px'
                         },
-                        <% y=y+200 %>
-                        <% else %>      // Case row 1 column1
-                        style: {
-                            left: '200px',
-                            top: '20px'
-                        }   ,
-                        <% end%>
-                        <% else %>       //case: row = 2
-                        <% if i !=2 %>                       // Case row 2 column2
-                        style: {
-                            left: '600px',
-                            top: '<%= x+100 %>px'
-                        }   ,
-                        <% x=x+200 %>
-                        <% else %>         // Case row 2 column1
-                        style: {
-                            left: '600px',
-                            top: '20px'
-                        }
-                        <% end%>
-                        <% end%>
+                        html: '<b><%= drug.brand_name %></b>'
                     },
                     <% i=i+1 %>
                     <% end %>
@@ -515,30 +418,17 @@ $(function () {
                 }
             },
             series: [
-                <% i=1%>
-                <% y=150%>
+                <% i=0%>
+                <% y=100%>
                 <% x=150%>
                 <% @drugs.each do |drug| %>
-                <%= ',' if i>1 %>
+                <%= ',' if i>0 %>
                 {
                     type: 'pie',
                     size: 100,
                     name: '<%= drug.brand_name %>',
-                    <% if i.odd? %>
-                    <% if i !=1 %>
-                    center: [ 250, <%= y+200 %> ],
-                    <% y=y+200 %>
-                    <% else %>
-                    center: [ 250, 120 ],
-                    <% end%>
-                    <% else %>
-                    <% if i !=2 %>
-                    center: [ 650, <%= x+200 %> ],
-                    <% x=x+200 %>
-                    <% else %>
-                    center: [ 650, 120 ],
-                    <% end%>
-                    <% end%>
+                    center: [ "50%" , <%= (i*200)+y %> ],
+
                     data: [
                         ['Scored 1/5',<%=raw @update_values[drug][0] %> ],
                         ['Scored 2/5',<%=raw @update_values[drug][1] %> ],
@@ -552,6 +442,7 @@ $(function () {
 
             ]
         });
+
     });
 });
 $('#conditions').html("<%= escape_javascript(render "eou_view_form") %>");

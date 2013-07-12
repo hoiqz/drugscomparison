@@ -34,10 +34,10 @@
    <!-- <span class="miniheader">By Condition</span>-->
 
  <article class="articlecontent">
-   <h1>
+   <h2>
      <%= @condition.name %>
-   </h1>
-   <h4 class="span 9">Control Panel</h4>
+   </h2>
+   <!--<h4 class="span 9">Control Panel</h4>-->
    <div class="static_buttons span9">
      <%= render "chart_buttons" %>
 
@@ -61,7 +61,7 @@
 <div class="tabbable"> <!-- Only required for left/right tabs -->
   <ul class="nav nav-tabs">
     <li class="active"><a href="#tab1" data-toggle="tab">General Information</a></li>
-    <li><a href="#tab2" data-toggle="tab">Related Drugs (<%= @drugs.count%>)</a></li>
+    <li><a href="#tab2" data-toggle="tab"> Drugs (<%= @number_of_drugs%>)</a></li>
 
   </ul>
   <div class="tab-content">
@@ -77,14 +77,14 @@
         <thead>
         <tr>
           <th>Brand</th>
-          <th>Action</th>
+          <!--<th>Action</th>-->
         </tr>
         </thead>
         <tbody>
         <% @drugs.each do |drug|%>
             <tr>
-              <td><i class="icon-zoom-in"></i>   <%= drug.brand_name%></td>
-              <td><%= link_to "Read", drug_reviews_path(drug.id), :class=>"btn btn-primary" %></td>
+              <td><%= link_to drug.brand_name, drug_reviews_path(drug.id) %>  <i class="icon-zoom-in" title="Go to this drug!"></i> </td>
+              <!--<td></td>-->
             </tr>
         <% end %>
         </tbody>

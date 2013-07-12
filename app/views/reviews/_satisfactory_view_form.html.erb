@@ -1,6 +1,6 @@
 <%= form_for @drug,:url=> drug_reviews_path(@drug.id,:button=>"satisfylink"),:method => "get", :remote=>true do |f| %>
     <legend>Restrict By:
-      <span><button type="submit" class="btn" href="#"><i class="icon-share-alt"></i> Reset</button></span>
+      <span><button type="submit" class="btn" href="#" button="satisfylink"><i class="icon-share-alt"></i> Reset</button></span>
     </legend>
     <%= hidden_field_tag 'conditions', 'true' %>
 
