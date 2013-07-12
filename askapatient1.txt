@@ -1230,18 +1230,18 @@
 #TEGRETOL	16608	http://www.askapatient.com/viewrating.asp?drug=16608&name=TEGRETOL
 #TEGRETOL-XR	20234	http://www.askapatient.com/viewrating.asp?drug=20234&name=TEGRETOL%2DXR
 #TEKTURNA	21985	http://www.askapatient.com/viewrating.asp?drug=21985&name=TEKTURNA
-TEMAZEPAM	70919	http://www.askapatient.com/viewrating.asp?drug=70919&name=TEMAZEPAM
-TEMODAR	21029	http://www.askapatient.com/viewrating.asp?drug=21029&name=TEMODAR
-TEMOVATE	19322	http://www.askapatient.com/viewrating.asp?drug=19322&name=TEMOVATE
-TENEX	19032	http://www.askapatient.com/viewrating.asp?drug=19032&name=TENEX
-TENORETIC 100	18760	http://www.askapatient.com/viewrating.asp?drug=18760&name=TENORETIC+100
-TENORMIN	18240	http://www.askapatient.com/viewrating.asp?drug=18240&name=TENORMIN
-TENUATE DOSPAN	12546	http://www.askapatient.com/viewrating.asp?drug=12546&name=TENUATE+DOSPAN
-TEQUIN	21062	http://www.askapatient.com/viewrating.asp?drug=21062&name=TEQUIN
-TERAZOL 3	19641	http://www.askapatient.com/viewrating.asp?drug=19641&name=TERAZOL+3
-TERAZOL 7	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
-TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE
-TESSALON	11210	http://www.askapatient.com/viewrating.asp?drug=11210&name=TESSALON
+#TEMAZEPAM	70919	http://www.askapatient.com/viewrating.asp?drug=70919&name=TEMAZEPAM
+#TEMODAR	21029	http://www.askapatient.com/viewrating.asp?drug=21029&name=TEMODAR
+#TEMOVATE	19322	http://www.askapatient.com/viewrating.asp?drug=19322&name=TEMOVATE
+#TENEX	19032	http://www.askapatient.com/viewrating.asp?drug=19032&name=TENEX
+#TENORETIC 100	18760	http://www.askapatient.com/viewrating.asp?drug=18760&name=TENORETIC+100
+#TENORMIN	18240	http://www.askapatient.com/viewrating.asp?drug=18240&name=TENORMIN
+#TENUATE DOSPAN	12546	http://www.askapatient.com/viewrating.asp?drug=12546&name=TENUATE+DOSPAN
+#TEQUIN	21062	http://www.askapatient.com/viewrating.asp?drug=21062&name=TEQUIN
+#TERAZOL 3	19641	http://www.askapatient.com/viewrating.asp?drug=19641&name=TERAZOL+3
+#TERAZOL 7	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
+#TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE
+#TESSALON	11210	http://www.askapatient.com/viewrating.asp?drug=11210&name=TESSALON
 TESTIM	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
 TESTOSTERONE CYPIONATE-ESTRADIOL CYPIONATE	85603	http://www.askapatient.com/viewrating.asp?drug=85603&name=TESTOSTERONE+CYPIONATE%2DESTRADIOL+CYPIONATE
 TETRACYCLINE HCL	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL

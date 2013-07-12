@@ -1,17 +1,17 @@
-VAGIFEM	20908	http://www.askapatient.com/viewrating.asp?drug=20908&name=VAGIFEM
-VALACYCLOVIR HYDROCHLORIDE	76588	http://www.askapatient.com/viewrating.asp?drug=76588&name=VALACYCLOVIR+HYDROCHLORIDE
-VALIUM	13263	http://www.askapatient.com/viewrating.asp?drug=13263&name=VALIUM
-VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
-VALTREX	20487	http://www.askapatient.com/viewrating.asp?drug=20487&name=VALTREX
-VANCENASE	18521	http://www.askapatient.com/viewrating.asp?drug=18521&name=VANCENASE
-VANCOCIN HCL	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
-VANCOMYCIN HCL	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
-VANIQA	21145	http://www.askapatient.com/viewrating.asp?drug=21145&name=VANIQA
-VANTIN	50674	http://www.askapatient.com/viewrating.asp?drug=50674&name=VANTIN
-VASERETIC	19221	http://www.askapatient.com/viewrating.asp?drug=19221&name=VASERETIC
-VASOTEC	18998	http://www.askapatient.com/viewrating.asp?drug=18998&name=VASOTEC
-VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
-VENTOLIN	18473	http://www.askapatient.com/viewrating.asp?drug=18473&name=VENTOLIN
+#VAGIFEM	20908	http://www.askapatient.com/viewrating.asp?drug=20908&name=VAGIFEM
+#VALACYCLOVIR HYDROCHLORIDE	76588	http://www.askapatient.com/viewrating.asp?drug=76588&name=VALACYCLOVIR+HYDROCHLORIDE
+#VALIUM	13263	http://www.askapatient.com/viewrating.asp?drug=13263&name=VALIUM
+#VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
+#VALTREX	20487	http://www.askapatient.com/viewrating.asp?drug=20487&name=VALTREX
+#VANCENASE	18521	http://www.askapatient.com/viewrating.asp?drug=18521&name=VANCENASE
+#VANCOCIN HCL	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
+#VANCOMYCIN HCL	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
+#VANIQA	21145	http://www.askapatient.com/viewrating.asp?drug=21145&name=VANIQA
+#VANTIN	50674	http://www.askapatient.com/viewrating.asp?drug=50674&name=VANTIN
+#VASERETIC	19221	http://www.askapatient.com/viewrating.asp?drug=19221&name=VASERETIC
+#VASOTEC	18998	http://www.askapatient.com/viewrating.asp?drug=18998&name=VASOTEC
+#VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
+#VENTOLIN	18473	http://www.askapatient.com/viewrating.asp?drug=18473&name=VENTOLIN
 VENTOLIN HFA	20983	http://www.askapatient.com/viewrating.asp?drug=20983&name=VENTOLIN+HFA
 VENTOLIN ROTACAPS	19489	http://www.askapatient.com/viewrating.asp?drug=19489&name=VENTOLIN+ROTACAPS
 VERAMYST	22051	http://www.askapatient.com/viewrating.asp?drug=22051&name=VERAMYST

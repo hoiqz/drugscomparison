@@ -1,12 +1,12 @@
-TERBUTALINE SULFATE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
-TERCONAZOLE	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
-TERCONAZOLE	19641	http://www.askapatient.com/viewrating.asp?drug=19641&name=TERAZOL+3
-TERIPARATIDE RECOMBINANT HUMAN	21318	http://www.askapatient.com/viewrating.asp?drug=21318&name=FORTEO
-TESTOSTERONE	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
-TESTOSTERONE	21015	http://www.askapatient.com/viewrating.asp?drug=21015&name=ANDROGEL
-TESTOSTERONE	20489	http://www.askapatient.com/viewrating.asp?drug=20489&name=ANDRODERM
-TESTOSTERONE CYPIONATE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
-TETRACYCLINE HYDROCHLORIDE	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
+#TERBUTALINE SULFATE	17849	http://www.askapatient.com/viewrating.asp?drug=17849&name=BRETHINE
+#TERCONAZOLE	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
+#TERCONAZOLE	19641	http://www.askapatient.com/viewrating.asp?drug=19641&name=TERAZOL+3
+#TERIPARATIDE RECOMBINANT HUMAN	21318	http://www.askapatient.com/viewrating.asp?drug=21318&name=FORTEO
+#TESTOSTERONE	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
+#TESTOSTERONE	21015	http://www.askapatient.com/viewrating.asp?drug=21015&name=ANDROGEL
+#TESTOSTERONE	20489	http://www.askapatient.com/viewrating.asp?drug=20489&name=ANDRODERM
+#TESTOSTERONE CYPIONATE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
+#TETRACYCLINE HYDROCHLORIDE	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
 THALIDOMIDE	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
 THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
 THIORIDAZINE	17923	http://www.askapatient.com/viewrating.asp?drug=17923&name=MELLARIL%2DS
