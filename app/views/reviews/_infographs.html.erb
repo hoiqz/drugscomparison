@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-interval="150000">
+<div id="myCarousel" class="carousel slide" data-interval="150000" xmlns="http://www.w3.org/1999/html">
   <!-- Carousel items -->
   <div class="carousel-inner">
     <div class="active item">
@@ -36,7 +36,7 @@
     <div class="item">
       <div id="age_breakdown_infograph">
         <%= image_tag("age_breakdown.png") %>
-        <h3>Overall<br>Reviewers <br> <span class="focus2">Gender profile</span></h3>
+        <h3>Overall<br>Reviewers <br> <span class="focus2">Age profile</span></h3>
           <p id="child"><%= @infograph.age_less_18.round(1) %></p>
           <p id="adult"><%= @infograph.age_btw_18_50.round(1) %></p>
           <p id="senior"><%= @infograph.age_more_50.round(1) %></p>
