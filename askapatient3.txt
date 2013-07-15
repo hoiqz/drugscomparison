@@ -7,12 +7,12 @@
 #TESTOSTERONE	20489	http://www.askapatient.com/viewrating.asp?drug=20489&name=ANDRODERM
 #TESTOSTERONE CYPIONATE	85635	http://www.askapatient.com/viewrating.asp?drug=85635&name=DEPO%2DTESTOSTERONE
 #TETRACYCLINE HYDROCHLORIDE	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
-THALIDOMIDE	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
-THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
-THIORIDAZINE	17923	http://www.askapatient.com/viewrating.asp?drug=17923&name=MELLARIL%2DS
-THIOTHIXENE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
-TIAGABINE HYDROCHLORIDE	20646	http://www.askapatient.com/viewrating.asp?drug=20646&name=GABITRIL
-TICAGRELOR	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
+#THALIDOMIDE	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
+#THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
+#THIORIDAZINE	17923	http://www.askapatient.com/viewrating.asp?drug=17923&name=MELLARIL%2DS
+#THIOTHIXENE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
+#TIAGABINE HYDROCHLORIDE	20646	http://www.askapatient.com/viewrating.asp?drug=20646&name=GABITRIL
+#TICAGRELOR	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
 TIMOLOL MALEATE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
 TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
 TIMOLOL MALEATE	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN

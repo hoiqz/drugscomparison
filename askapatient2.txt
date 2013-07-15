@@ -12,10 +12,10 @@
 #VASOTEC	18998	http://www.askapatient.com/viewrating.asp?drug=18998&name=VASOTEC
 #VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
 #VENTOLIN	18473	http://www.askapatient.com/viewrating.asp?drug=18473&name=VENTOLIN
-VENTOLIN HFA	20983	http://www.askapatient.com/viewrating.asp?drug=20983&name=VENTOLIN+HFA
-VENTOLIN ROTACAPS	19489	http://www.askapatient.com/viewrating.asp?drug=19489&name=VENTOLIN+ROTACAPS
-VERAMYST	22051	http://www.askapatient.com/viewrating.asp?drug=22051&name=VERAMYST
-VERAPAMIL HCL	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
+#VENTOLIN HFA	20983	http://www.askapatient.com/viewrating.asp?drug=20983&name=VENTOLIN+HFA
+#VENTOLIN ROTACAPS	19489	http://www.askapatient.com/viewrating.asp?drug=19489&name=VENTOLIN+ROTACAPS
+#VERAMYST	22051	http://www.askapatient.com/viewrating.asp?drug=22051&name=VERAMYST
+#VERAPAMIL HCL	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
 VERELAN	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
 VERELAN PM	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
 VERSED	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED

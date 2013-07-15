@@ -1242,14 +1242,14 @@
 #TERAZOL 7	19579	http://www.askapatient.com/viewrating.asp?drug=19579&name=TERAZOL+7
 #TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE
 #TESSALON	11210	http://www.askapatient.com/viewrating.asp?drug=11210&name=TESSALON
-TESTIM	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
-TESTOSTERONE CYPIONATE-ESTRADIOL CYPIONATE	85603	http://www.askapatient.com/viewrating.asp?drug=85603&name=TESTOSTERONE+CYPIONATE%2DESTRADIOL+CYPIONATE
-TETRACYCLINE HCL	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
-TEVETEN	20738	http://www.askapatient.com/viewrating.asp?drug=20738&name=TEVETEN
-THALOMID	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
-THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
-THORAZINE	9149	http://www.askapatient.com/viewrating.asp?drug=9149&name=THORAZINE
-TIAZAC	20401	http://www.askapatient.com/viewrating.asp?drug=20401&name=TIAZAC
+#TESTIM	21454	http://www.askapatient.com/viewrating.asp?drug=21454&name=TESTIM
+#TESTOSTERONE CYPIONATE-ESTRADIOL CYPIONATE	85603	http://www.askapatient.com/viewrating.asp?drug=85603&name=TESTOSTERONE+CYPIONATE%2DESTRADIOL+CYPIONATE
+#TETRACYCLINE HCL	60469	http://www.askapatient.com/viewrating.asp?drug=60469&name=TETRACYCLINE+HCL
+#TEVETEN	20738	http://www.askapatient.com/viewrating.asp?drug=20738&name=TEVETEN
+#THALOMID	20785	http://www.askapatient.com/viewrating.asp?drug=20785&name=THALOMID
+#THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
+#THORAZINE	9149	http://www.askapatient.com/viewrating.asp?drug=9149&name=THORAZINE
+#TIAZAC	20401	http://www.askapatient.com/viewrating.asp?drug=20401&name=TIAZAC
 TIGAN	17530	http://www.askapatient.com/viewrating.asp?drug=17530&name=TIGAN
 TIKOSYN	20931	http://www.askapatient.com/viewrating.asp?drug=20931&name=TIKOSYN
 TILADE	19660	http://www.askapatient.com/viewrating.asp?drug=19660&name=TILADE

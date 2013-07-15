@@ -23,6 +23,6 @@
 #TEMAZEPAM	70919	http://www.askapatient.com/viewrating.asp?drug=70919&name=TEMAZEPAM
 #TEMOZOLOMIDE	21029	http://www.askapatient.com/viewrating.asp?drug=21029&name=TEMODAR
 #TERAZOSIN HYDROCHLORIDE	19057	http://www.askapatient.com/viewrating.asp?drug=19057&name=HYTRIN
-TERBINAFINE HYDROCHLORIDE	21124	http://www.askapatient.com/viewrating.asp?drug=21124&name=LAMISIL+AT
-TERBINAFINE HYDROCHLORIDE	20192	http://www.askapatient.com/viewrating.asp?drug=20192&name=LAMISIL
-TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE
+#TERBINAFINE HYDROCHLORIDE	21124	http://www.askapatient.com/viewrating.asp?drug=21124&name=LAMISIL+AT
+#TERBINAFINE HYDROCHLORIDE	20192	http://www.askapatient.com/viewrating.asp?drug=20192&name=LAMISIL
+#TERBINAFINE HYDROCHLORIDE	77511	http://www.askapatient.com/viewrating.asp?drug=77511&name=TERBINAFINE+HYDROCHLORIDE

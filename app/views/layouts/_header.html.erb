@@ -1,7 +1,7 @@
 <div class="navbar ">
 
   <div class="navbar-inner">
-    <div class="container span10">
+    <div class="container">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
@@ -14,40 +14,64 @@
         <div class="nav-collapse collapse navbar-responsive-collapse">
 
 
-          <ul class="nav pull-right">
+          <ul class="nav">
             <li class="<%= 'active' if params[:controller] == 'static_pages' %>">
               <%= link_to 'Home', static_pages_home_path%>
             </li>
-            <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %>">
-             <%= link_to 'Browse Drugs', drugs_path %>
+            <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %> dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Browse Drugs <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to 'View All Drugs', drugs_path %></li>
+                <li class="divider"></li>
+                <table>
+                  <thead>
+                  <tr>
+                    <th class="menu_sub_header">Top Picks</th>
+                  </tr>
+                  </thead>
+                  <tbody class="menu_sub_content">
+                      <tr><td><%= link_to "#{@drugs_top_picks[0].brand_name}  (Cholesterol)" , drug_reviews_path(@drugs_top_picks[0].id) %></td></tr>
+                        <tr><td><%= link_to "#{@drugs_top_picks[1].brand_name}  (High Blood Pressure)" , drug_reviews_path(@drugs_top_picks[1].id) %></td></tr>
+                        <tr><td><%= link_to "#{@drugs_top_picks[2].brand_name}  (Thyroid Disorder)" , drug_reviews_path(@drugs_top_picks[2].id) %></td></tr>
+                        <tr><td><%= link_to "#{@drugs_top_picks[3].brand_name}  (Depression)" , drug_reviews_path(@drugs_top_picks[3].id) %></td></tr>
+                        <tr><td><%= link_to "#{@drugs_top_picks[4].brand_name}  (Type II Diabetes)" , drug_reviews_path(@drugs_top_picks[4].id) %></td></tr>
+
+
+                  </tbody>
+                </table>
+              </ul>
+
             </li>
             <li class="dropdown <%= 'active' if params[:controller] == 'conditions' %>">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Conditions <b class="caret"></b>
-              </a>
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Browse Conditions <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <%= link_to 'All Conditions', conditions_path %>
-                  </li>
-                  <li>
-                    <a href="#">Another action</a>
-                  </li>
+                  <li><%= link_to 'View All Conditions', conditions_path %></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Top Conditions</li>
-                  <li>
-                    <a href="#">Attention Deficit Disorder with Hyperactivity</a>
-                  </li>
-
-                    </ul>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th class="menu_sub_header">Day to Day Health</th>
+                      <th class="menu_sub_header">Common Conditions</th>
+                    </tr>
+                    </thead>
+                    <tbody class="menu_sub_content">
+                    <% @common_condition.zip(@day2day_condition).each do |common,day| %>
+                    <tr>
+                      <td><%= link_to day.name, condition_path(day.id) %></td>
+                      <td><%= link_to common.name, condition_path(common.id) %></td>
+                    </tr>
+                    <% end %>
+                    </tbody>
+                  </table>
+                </ul>
             </li>
-            <li><%= link_to "Help", '#' %></li>
 
-         <li><%= form_tag searches_path,:class=>"navbar-search pull-right", :method => :get do %>
+          </ul>
+          <%= form_tag searches_path,:class=>"navbar-search pull-right", :method => :get do %>
                 <%= text_field_tag :search, params[:search] ,:class=>"search-query", :placeholder=>"Search" %>
 
-               <button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
-          <% end %>
-         </li>
-          </ul>
+                <button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
+            <% end %>
          </div>
 
     </div>
