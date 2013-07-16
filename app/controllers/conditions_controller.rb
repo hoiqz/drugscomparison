@@ -1,7 +1,14 @@
 class ConditionsController < ApplicationController
   layout :resolve_layout
   def index
-    @conditions=Condition.all
+    @alphabetical=("A".."Z").to_a
+    @alphabetical<<"#"
+    if params[:letter]
+      params[:letter]=="#" ?  @conditions=Condition.by_non_letter(params[:letter]) : @conditions=Condition.by_letter(params[:letter])
+    else
+      @conditions= Condition.by_letter("a")
+    end
+    #@conditions=Condition.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @drugs }

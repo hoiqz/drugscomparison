@@ -24,6 +24,7 @@ Drugscomparison::Application.routes.draw do
   end
   #match "drugs(/:letter)" => "drugs#index", :as => :drugs_pagination
   match "drugs/index/:letter" => "drugs#index", :as => :drugs_pagination
+  match "conditions/index/:letter" => "conditions#index", :as => :conditions_pagination
   resources :conditions do
     member do
       get 'multi_pie_view'

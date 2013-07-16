@@ -16,6 +16,8 @@ class DrugsController < ApplicationController
       params[:letter]=="#" ?  @drugs=Drug.by_non_letter(params[:letter]) : @drugs=Drug.by_letter(params[:letter])
       #@drugs=Drug.by_letter(params[:letter]) if params[:letter]=!/#/
       #@drugs=Drug.by_non_letter(params[:letter]) if params[:letter] =~/#/
+    else
+      @drugs= Drug.by_letter("a")
     end
     @drugsarr = Array.new
     Mostcommondrug.scoped.each do |common|

@@ -16,6 +16,13 @@ class Condition < ActiveRecord::Base
     text :information
   end
 
+  scope :by_letter,
+        lambda { |letter|
+          where("name LIKE ?","#{letter}%")
+        }
+
+  scope :by_non_letter, where("name LIKE ?","1").where("name LIKE ?","2").where("name LIKE ?","3").where("name LIKE ?","4").where("name LIKE ?","5").where("name LIKE ?","6").where("name LIKE ?","7").where("name LIKE ?","8").where("name LIKE ?","9").where("name LIKE ?","0")
+
 
   def get_related_drugs
     druglist=self.drugs

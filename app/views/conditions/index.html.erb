@@ -1,22 +1,25 @@
 
 
-<div class="box span7 border-shadow">
+<div class="box span8 border-shadow">
   <span class="miniheader">All Conditions</span>
   <article class="articlecontent">
-    <h1>Condition list A-Z</h1>
+    <h1>Conditions  A-Z</h1>
+    <div class="pagination pagination-mini pagination-left">
+      <ul>
+        <% @alphabetical.each do |letter| %>
+            <%= content_tag :li, link_to(letter, conditions_pagination_path(:letter=>letter.downcase)) %>
+        <% end %>
+      </ul>
+    </div>
     <table class="table table-striped">
       <tr>
         <th>Condition</th>
-
-        <th>Action</th>
       </tr>
 
       <% @conditions.each do |condition| %>
           <% next if (condition.name == "Other"|| condition.name =="") %>
           <tr>
             <td><%= link_to condition.name, condition %></td>
-
-            <td><%= link_to 'show', condition ,:class => "btn"%></td>
           </tr>
       <% end %>
     </table>
