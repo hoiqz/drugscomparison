@@ -1,37 +1,64 @@
 
 
-<div class="box span8 border-shadow">
+<div class="span8 widget_container">
   <span class="miniheader">All Conditions</span>
   <article class="articlecontent">
     <h1>Conditions  A-Z</h1>
-    <div class="pagination pagination-mini pagination-left">
+    <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
             <%= content_tag :li, link_to(letter, conditions_pagination_path(:letter=>letter.downcase)) %>
         <% end %>
       </ul>
     </div>
-    <table class="table table-striped">
-      <tr>
-        <th>Condition</th>
-      </tr>
-
-      <% @conditions.each do |condition| %>
-          <% next if (condition.name == "Other"|| condition.name =="") %>
-          <tr>
-            <td><%= link_to condition.name, condition %></td>
-          </tr>
+    <section id="alphabet_listing">
+      <% if params[:letter].present? %>
+          <h2 class="span8"><em><%= params[:letter].capitalize %></em></h2>
+      <% else %>
+          <h2 class="span8"><em>A</em></h2>
       <% end %>
-    </table>
+
+      <% if @conditions.present? %>
+      <div class=" span3">
+        <ul class="unstyled">
+          <% @conditions[0..@sizehalf].each do |condition|%>
+              <li><%= link_to condition.name, condition %></li>
+          <%end%>
+        </ul>
+      </div>
+      <div class=" span3">
+        <ul class="unstyled">
+          <% @conditions[@sizehalf +1 ..@size].each do |condition|%>
+              <li><%= link_to condition.name, condition %></li>
+          <% end %>
+        </ul>
+      </div>
+          <% end %>
+    </section>
   </article>
 </div>
 
-<div class="well span3 border-shadow">
+<article class="widget_container span2">
   <ul class="nav nav-list">
     <li class="nav-header">Top Conditions</li>
     <li class="divider"></li>
 
   </ul>
-</div>
+</article>
+
+<article class="span2 widget_container">
+  <ul class="nav nav-list">
+    <!--<li class="nav-header">Commonly rated Drugs</li>-->
+    <span class="label label-info">Last Visited</span>
+    <li class="divider"></li>
+    <% if session[:history].present? %>
+        <% session[:history].each do |url| %>
+            <li>
+              <%= last_viewed url%>
+            </li>
+        <% end %>
+    <% end%>
+  </ul>
+</article>
 
 

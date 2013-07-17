@@ -13,13 +13,13 @@
 #THIOTHIXENE	16584	http://www.askapatient.com/viewrating.asp?drug=16584&name=NAVANE
 #TIAGABINE HYDROCHLORIDE	20646	http://www.askapatient.com/viewrating.asp?drug=20646&name=GABITRIL
 #TICAGRELOR	22433	http://www.askapatient.com/viewrating.asp?drug=22433&name=BRILINTA
-TIMOLOL MALEATE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
-TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
-TIMOLOL MALEATE	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN
-TINIDAZOLE	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
-TIOTROPIUM BROMIDE MONOHYDRATE	21395	http://www.askapatient.com/viewrating.asp?drug=21395&name=SPIRIVA
-TIZANIDINE HYDROCHLORIDE	20397	http://www.askapatient.com/viewrating.asp?drug=20397&name=ZANAFLEX
-TOLCAPONE	20697	http://www.askapatient.com/viewrating.asp?drug=20697&name=TASMAR
+#TIMOLOL MALEATE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
+#TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
+#TIMOLOL MALEATE	18017	http://www.askapatient.com/viewrating.asp?drug=18017&name=BLOCADREN
+#TINIDAZOLE	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
+#TIOTROPIUM BROMIDE MONOHYDRATE	21395	http://www.askapatient.com/viewrating.asp?drug=21395&name=SPIRIVA
+#TIZANIDINE HYDROCHLORIDE	20397	http://www.askapatient.com/viewrating.asp?drug=20397&name=ZANAFLEX
+#TOLCAPONE	20697	http://www.askapatient.com/viewrating.asp?drug=20697&name=TASMAR
 TOLMETIN SODIUM	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
 TOLTERODINE TARTRATE	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
 TOPIRAMATE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE

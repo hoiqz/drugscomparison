@@ -1250,13 +1250,13 @@
 #THEOPHYLLINE	40034	http://www.askapatient.com/viewrating.asp?drug=40034&name=THEOPHYLLINE
 #THORAZINE	9149	http://www.askapatient.com/viewrating.asp?drug=9149&name=THORAZINE
 #TIAZAC	20401	http://www.askapatient.com/viewrating.asp?drug=20401&name=TIAZAC
-TIGAN	17530	http://www.askapatient.com/viewrating.asp?drug=17530&name=TIGAN
-TIKOSYN	20931	http://www.askapatient.com/viewrating.asp?drug=20931&name=TIKOSYN
-TILADE	19660	http://www.askapatient.com/viewrating.asp?drug=19660&name=TILADE
-TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
-TIMOPTIC-XE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
-TINDAMAX	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
-TOBRADEX	50592	http://www.askapatient.com/viewrating.asp?drug=50592&name=TOBRADEX
+#TIGAN	17530	http://www.askapatient.com/viewrating.asp?drug=17530&name=TIGAN
+#TIKOSYN	20931	http://www.askapatient.com/viewrating.asp?drug=20931&name=TIKOSYN
+#TILADE	19660	http://www.askapatient.com/viewrating.asp?drug=19660&name=TILADE
+#TIMOLOL MALEATE	20963	http://www.askapatient.com/viewrating.asp?drug=20963&name=TIMOLOL+MALEATE
+#TIMOPTIC-XE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
+#TINDAMAX	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
+#TOBRADEX	50592	http://www.askapatient.com/viewrating.asp?drug=50592&name=TOBRADEX
 TOFRANIL	87844	http://www.askapatient.com/viewrating.asp?drug=87844&name=TOFRANIL
 TOFRANIL-PM	17090	http://www.askapatient.com/viewrating.asp?drug=17090&name=TOFRANIL%2DPM
 TOLECTIN	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN

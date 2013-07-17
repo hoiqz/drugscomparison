@@ -16,20 +16,20 @@
 #VENTOLIN ROTACAPS	19489	http://www.askapatient.com/viewrating.asp?drug=19489&name=VENTOLIN+ROTACAPS
 #VERAMYST	22051	http://www.askapatient.com/viewrating.asp?drug=22051&name=VERAMYST
 #VERAPAMIL HCL	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
-VERELAN	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
-VERELAN PM	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
-VERSED	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
-VESICARE	21518	http://www.askapatient.com/viewrating.asp?drug=21518&name=VESICARE
-VIAGRA	20895	http://www.askapatient.com/viewrating.asp?drug=20895&name=VIAGRA
-VIBRAMYCIN	50006	http://www.askapatient.com/viewrating.asp?drug=50006&name=VIBRAMYCIN
-VICODIN	88058	http://www.askapatient.com/viewrating.asp?drug=88058&name=VICODIN
-VICODIN ES	89736	http://www.askapatient.com/viewrating.asp?drug=89736&name=VICODIN+ES
-VICODIN HP	40117	http://www.askapatient.com/viewrating.asp?drug=40117&name=VICODIN+HP
-VICOPROFEN	20716	http://www.askapatient.com/viewrating.asp?drug=20716&name=VICOPROFEN
-VICTOZA	22341	http://www.askapatient.com/viewrating.asp?drug=22341&name=VICTOZA
-VIGAMOX	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
-VIIBRYD	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
-VIMPAT	22254	http://www.askapatient.com/viewrating.asp?drug=22254&name=VIMPAT
+#VERELAN	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
+#VERELAN PM	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
+#VERSED	18654	http://www.askapatient.com/viewrating.asp?drug=18654&name=VERSED
+#VESICARE	21518	http://www.askapatient.com/viewrating.asp?drug=21518&name=VESICARE
+#VIAGRA	20895	http://www.askapatient.com/viewrating.asp?drug=20895&name=VIAGRA
+#VIBRAMYCIN	50006	http://www.askapatient.com/viewrating.asp?drug=50006&name=VIBRAMYCIN
+#VICODIN	88058	http://www.askapatient.com/viewrating.asp?drug=88058&name=VICODIN
+#VICODIN ES	89736	http://www.askapatient.com/viewrating.asp?drug=89736&name=VICODIN+ES
+#VICODIN HP	40117	http://www.askapatient.com/viewrating.asp?drug=40117&name=VICODIN+HP
+#VICOPROFEN	20716	http://www.askapatient.com/viewrating.asp?drug=20716&name=VICOPROFEN
+#VICTOZA	22341	http://www.askapatient.com/viewrating.asp?drug=22341&name=VICTOZA
+#VIGAMOX	21598	http://www.askapatient.com/viewrating.asp?drug=21598&name=VIGAMOX
+#VIIBRYD	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
+#VIMPAT	22254	http://www.askapatient.com/viewrating.asp?drug=22254&name=VIMPAT
 VIOXX	21042	http://www.askapatient.com/viewrating.asp?drug=21042&name=VIOXX
 VISICOL	21097	http://www.askapatient.com/viewrating.asp?drug=21097&name=VISICOL
 VISKEN	18285	http://www.askapatient.com/viewrating.asp?drug=18285&name=VISKEN

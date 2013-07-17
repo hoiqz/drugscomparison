@@ -1,8 +1,9 @@
-<div class="box span8 border-shadow">
+<div class="widget_container span8">
+  <!--<div class="box span8 border-shadow">-->
   <span class="miniheader">Drugs</span>
   <article class="articlecontent">
     <h1>Drugs A-Z</h1>
-    <div class="pagination pagination-mini pagination-left">
+    <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
             <%= content_tag :li, link_to(letter, drugs_pagination_path(:letter=>letter.downcase)) %>
@@ -10,34 +11,72 @@
       </ul>
     </div>
 
-    <table class="table table-striped">
-      <tr>
-        <th>Brand name</th>
-        <th>Action</th>
-      </tr>
-      <% if @drugs %>
-      <% @drugs.each do |drug| %>
-          <tr>
-            <td><%= link_to drug.brand_name, drug_reviews_path(drug.id)%> (<%= pluralize(drug.reviews_count, "Review")%>)</td>
-            <td><%= link_to 'Show', drug_reviews_path(drug.id) ,:class=>'btn'%></td>
-
-          </tr>
+    <section id="alphabet_listing">
+      <% if params[:letter].present? %>
+      <h2 class="span8"><em><%= params[:letter].capitalize %></em></h2>
+          <% else %>
+          <h2 class="span8"><em>A</em></h2>
+          <% end %>
+      <% if @drugs.present? %>
+          <div class=" span3">
+            <ul class="unstyled">
+              <% @drugs[0..@sizehalf].each do |drug|%>
+                  <li><%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.id)%></li>
+              <%end%>
+            </ul>
+          </div>
+          <div class=" span3">
+            <ul class="unstyled">
+              <% @drugs[@sizehalf +1 ..@size].each do |drug|%>
+                  <li><%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.id)%></li>
+              <% end %>
+            </ul>
+          </div>
       <% end %>
-          <%end%>
-    </table>
-
+    </section>
   </article>
 </div>
 
 
-<div class="well span3 border-shadow">
-<ul class="nav nav-list">
-  <li class="nav-header">Commonly rated Drugs</li>
-  <li class="divider"></li>
-  <% @commondrugs.each do |drug| %>
-      <li>
-        <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
-      </li>
-  <% end %>
-</ul>
-   </div>
+
+
+<article class="span2 widget_container">
+  <ul class="nav nav-list">
+    <!--<li class="nav-header">Commonly rated Drugs</li>-->
+    <span class="label label-info">Top Reviewed</span>
+    <li class="divider"></li>
+    <% @commondrugs.each do |drug| %>
+        <li>
+          <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
+        </li>
+    <% end %>
+  </ul>
+</article>
+
+<article class="span2 widget_container">
+  <ul class="nav nav-list">
+    <!--<li class="nav-header">Commonly rated Drugs</li>-->
+    <span class="label label-info">Popular Drugs</span>
+    <li class="divider"></li>
+    <% @commondrugs.each do |drug| %>
+        <li>
+          <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
+        </li>
+    <% end %>
+  </ul>
+</article>
+
+<article class="span2 widget_container">
+  <ul class="nav nav-list">
+    <!--<li class="nav-header">Commonly rated Drugs</li>-->
+    <span class="label label-info">Last Visited</span>
+    <li class="divider"></li>
+    <% if session[:history].present? %>
+    <% session[:history].each do |url| %>
+        <li>
+        <%= last_viewed url%>
+        </li>
+    <% end %>
+        <% end%>
+  </ul>
+</article>

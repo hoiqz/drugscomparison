@@ -86,7 +86,7 @@ html{
 
 body{
 //  padding-top: 60px;
-  background: url("gray_jean.png") repeat scroll 0 0 transparent !important;
+  /*background: url("gray_jean.png") repeat scroll 0 0 transparent !important;*/
 }
 
 section{
@@ -136,6 +136,67 @@ p{
     margin: 15px;
 }
 
+#alphabet_listing{
+    overflow: hidden;
+    h2{
+        text-decoration: underline
+    }
+    ul{
+        li{
+            padding: 5px;
+            a{
+                font: 12px;
+            }
+        }
+    }
+}
+
+.box{
+    //background: none repeat scroll 0 0 #EEEEEE;
+    background: none repeat scroll 0 0 #FFFFFF;
+    //border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.widget_container{
+    border-radius: 4px 4px 4px 4px;
+    /*box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.05) inset;*/
+    -webkit-box-shadow: 6px 6px 13px rgba(58, 67, 50, 1);
+    -moz-box-shadow:    6px 6px 13px rgba(58, 67, 50, 1);
+    box-shadow:         6px 6px 13px rgba(58, 67, 50, 1);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.widget_header{
+    background-color: #4E4E4E;
+    background-image: none;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px 0px 5px;
+    font: bold 14px;
+    color: #ffffff;
+}
+.wdiget_corner{
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: #FFFFFF;
+        border-image: none;
+        border-style: solid;
+        border-width: 0 1px;
+        height: 1px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: auto;
+}
+.widget_content{
+    border: 1px solid #EAE9E9;
+    overflow: hidden;
+    margin: 3px 3px 0;
+}
 /* header */
 
 #logo {
@@ -239,14 +300,7 @@ padding: 0px 25px;
     }
 }
 
-.box{
-    //background: none repeat scroll 0 0 #EEEEEE;
-    background: none repeat scroll 0 0 #FFFFFF;
-    //border-radius: 3px 3px 3px 3px;
-    padding: 3px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
+
 
 .miniheader{
     background-color: #EAEAEA;
@@ -270,6 +324,7 @@ padding: 0px 25px;
   //  border: 1px solid #CACACA;
     border-radius: 3px;
     padding: 30px;
+
 }
 
 .notification{

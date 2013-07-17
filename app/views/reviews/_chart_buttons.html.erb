@@ -14,6 +14,6 @@
 <%= link_to 'Effectiveness', drug_reviews_path(@drug.id,:button=>"effectlink"), :id=>'effectlink', remote: true, :class =>"btn btn-success", "data-trigger"=>"hover","data-content"=> "View the score of this drug in terms of effectiveness", "data-original-title"=>"By Effectiveness","data-placement"=>"bottom"%>
 <%= link_to 'Ease of Use', drug_reviews_path(@drug.id,:button=>"eoulink"), :id=>'eoulink', remote: true, :class =>"btn btn-success", "data-trigger"=>"hover","data-content"=> "View the score of this drug in terms of ease of use", "data-original-title"=>"By Ease of Use","data-placement"=>"bottom"%>
     <a href="#myModal" role="button" class="btn" data-toggle="modal">Review This Drug</a>
-    <p class="notification"><span class="label label-info">Heads up!</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>
+    <!--<p class="notification"><span class="label label-info">Heads up!</span> The buttons above controls the plot view. Click on them to see various statistics of this drug!</p>-->
 <% end%>
 </div>

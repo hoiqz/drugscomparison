@@ -46,14 +46,14 @@
 
 <!-- level 2 nesting -->
 <div class=row>
-<div class="box span9 border-shadow">
+<div class="span9 widget_container">
  <!-- <span class="miniheader">By Drug</span> -->
 
   <article class="articlecontent">
    <h1>
     <%= @drug.brand_name %>
   </h1>
-    <h4 class="span 8">Control Panel</h4>
+    <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
     <div class="static_buttons span8">
       <%= render "chart_buttons" %>
     </div>
@@ -65,7 +65,7 @@
 </div>
 
 
-<div class="box span9 border-shadow">
+<div class="span9 widget_container">
   <span class="miniheader">Other information on <%= @drug.brand_name %></span>
   <article class="articlecontent">
     <div class="tabbable"> <!-- Only required for left/right tabs -->
@@ -104,7 +104,10 @@
       </div>
     </div>
   </article>
+
+  <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
 </div>
+
 
 
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

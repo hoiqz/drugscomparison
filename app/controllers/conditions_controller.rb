@@ -8,7 +8,8 @@ class ConditionsController < ApplicationController
     else
       @conditions= Condition.by_letter("a")
     end
-    #@conditions=Condition.all
+    @size= @conditions.count
+    @sizehalf= (@size / 2.0).ceil
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @drugs }

@@ -77,10 +77,22 @@
 
     </div>
     <div class="span3">
-      <div id="conditions">
-
-      </div>
-      <!--Sidebar content-->
+      <article id="conditions" class="span2 widget_container">
+      </article>
+      <article class="span2 widget_container">
+        <ul class="nav nav-list">
+          <!--<li class="nav-header">Commonly rated Drugs</li>-->
+          <span class="label label-info">Last Visited</span>
+          <li class="divider"></li>
+          <% if session[:history].present? %>
+              <% session[:history].each do |url| %>
+                  <li>
+                    <%= last_viewed url%>
+                  </li>
+              <% end %>
+          <% end%>
+        </ul>
+      </article>
     </div>
 
   </div>

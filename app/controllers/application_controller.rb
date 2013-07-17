@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :get_menu_list
+  before_filter :get_menu_list , :store_history
 
   def get_menu_list
     @common_condition=Array.new
@@ -31,5 +31,16 @@ class ApplicationController < ActionController::Base
     @common_condition=Condition.find(common_condition_array)
     @drugs_top_picks=Drug.find(drugs_top_picks_array)
 
+  end
+
+  private
+
+  def store_history
+    session[:history] ||= []
+    url=Rails.application.routes.recognize_path(request.url)
+    if url[:id] || url[:drug_id]
+    session[:history].delete_at(0) if session[:history].size >= 5
+    session[:history] << url
+    end
   end
 end
