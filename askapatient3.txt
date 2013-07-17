@@ -20,12 +20,12 @@
 #TIOTROPIUM BROMIDE MONOHYDRATE	21395	http://www.askapatient.com/viewrating.asp?drug=21395&name=SPIRIVA
 #TIZANIDINE HYDROCHLORIDE	20397	http://www.askapatient.com/viewrating.asp?drug=20397&name=ZANAFLEX
 #TOLCAPONE	20697	http://www.askapatient.com/viewrating.asp?drug=20697&name=TASMAR
-TOLMETIN SODIUM	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
-TOLTERODINE TARTRATE	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
-TOPIRAMATE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE
-TOPIRAMATE	20505	http://www.askapatient.com/viewrating.asp?drug=20505&name=TOPAMAX
-TORSEMIDE	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
-TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
+#TOLMETIN SODIUM	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
+#TOLTERODINE TARTRATE	20771	http://www.askapatient.com/viewrating.asp?drug=20771&name=DETROL
+#TOPIRAMATE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE
+#TOPIRAMATE	20505	http://www.askapatient.com/viewrating.asp?drug=20505&name=TOPAMAX
+#TORSEMIDE	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
+#TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
 TRAMADOL HYDROCHLORIDE	21692	http://www.askapatient.com/viewrating.asp?drug=21692&name=ULTRAM+ER
 TRAMADOL HYDROCHLORIDE	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
 TRANDOLAPRIL	20528	http://www.askapatient.com/viewrating.asp?drug=20528&name=MAVIK

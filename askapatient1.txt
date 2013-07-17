@@ -1257,15 +1257,15 @@
 #TIMOPTIC-XE	20330	http://www.askapatient.com/viewrating.asp?drug=20330&name=TIMOPTIC%2DXE
 #TINDAMAX	21618	http://www.askapatient.com/viewrating.asp?drug=21618&name=TINDAMAX
 #TOBRADEX	50592	http://www.askapatient.com/viewrating.asp?drug=50592&name=TOBRADEX
-TOFRANIL	87844	http://www.askapatient.com/viewrating.asp?drug=87844&name=TOFRANIL
-TOFRANIL-PM	17090	http://www.askapatient.com/viewrating.asp?drug=17090&name=TOFRANIL%2DPM
-TOLECTIN	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
-TOPAMAX	20505	http://www.askapatient.com/viewrating.asp?drug=20505&name=TOPAMAX
-TOPAMAX SPRINKLE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE
-TOPROL-XL	19962	http://www.askapatient.com/viewrating.asp?drug=19962&name=TOPROL%2DXL
-TORADOL	19645	http://www.askapatient.com/viewrating.asp?drug=19645&name=TORADOL
-TOVIAZ	22030	http://www.askapatient.com/viewrating.asp?drug=22030&name=TOVIAZ
-TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
+#TOFRANIL	87844	http://www.askapatient.com/viewrating.asp?drug=87844&name=TOFRANIL
+#TOFRANIL-PM	17090	http://www.askapatient.com/viewrating.asp?drug=17090&name=TOFRANIL%2DPM
+#TOLECTIN	17628	http://www.askapatient.com/viewrating.asp?drug=17628&name=TOLECTIN
+#TOPAMAX	20505	http://www.askapatient.com/viewrating.asp?drug=20505&name=TOPAMAX
+#TOPAMAX SPRINKLE	20844	http://www.askapatient.com/viewrating.asp?drug=20844&name=TOPAMAX+SPRINKLE
+#TOPROL-XL	19962	http://www.askapatient.com/viewrating.asp?drug=19962&name=TOPROL%2DXL
+#TORADOL	19645	http://www.askapatient.com/viewrating.asp?drug=19645&name=TORADOL
+#TOVIAZ	22030	http://www.askapatient.com/viewrating.asp?drug=22030&name=TOVIAZ
+#TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
 TRANSDERM SCOP	17874	http://www.askapatient.com/viewrating.asp?drug=17874&name=TRANSDERM+SCOP
 TRANXENE SD	17105	http://www.askapatient.com/viewrating.asp?drug=17105&name=TRANXENE+SD
 TRASYLOL	20304	http://www.askapatient.com/viewrating.asp?drug=20304&name=TRASYLOL
