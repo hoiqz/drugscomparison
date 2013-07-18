@@ -60,10 +60,10 @@ namespace :deploy do
     run "mkdir -p #{shared_path}/solr/data"
   end
 
-  desc "generate commondrugs"
-  task :run_specific_rake_tasks do
-    run "cd #{deploy_to}/current && #{rake} project:generateCommondrugContent RAILS_ENV=production"
-  end
+  #desc "generate commondrugs"
+  #task :run_specific_rake_tasks do
+  #  run "cd #{deploy_to}/current && #{rake} project:generateCommondrugContent RAILS_ENV=production"
+  #end
 end
 
 ## solr cap deploy
@@ -85,5 +85,5 @@ namespace :solr do
   end
 end
 
-after "deploy:update_code", "deploy:bundle_install", "deploy:run_specific_rake_tasks",'deploy:setup_solr_data_dir'
+after "deploy:update_code", "deploy:bundle_install",'deploy:setup_solr_data_dir'
 #after 'deploy:setup',

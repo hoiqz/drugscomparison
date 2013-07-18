@@ -6,8 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRANDOLAPRIL_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANDOLAPRIL_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRAZODONE+HCL_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAZODONE+HCL_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VALACYCLOVIR+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VALACYCLOVIR+HYDROCHLORIDE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VYVANSE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VYVANSE_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +57,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="78" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.8065041">
+            <state line="59" column="89" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.004878049">
               <folding />
             </state>
           </provider>
@@ -1113,7 +1118,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="78" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.8065041">
+        <state line="59" column="89" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.004878049">
           <folding />
         </state>
       </provider>
