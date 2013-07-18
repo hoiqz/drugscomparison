@@ -6,35 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANXENE+SD_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRASYLOL_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAVATAN_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAZODONE+HCL_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VIVELLE-DOT_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VOLTAREN-XR_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VOLTAREN_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/commondrug.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130718021446_create_commondrugs.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/commondrug_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRANSDERM+SCOP_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANSDERM+SCOP_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VIVELLE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VIVELLE_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient1.txt" afterPath="$PROJECT_DIR$/askapatient1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient2.txt" afterPath="$PROJECT_DIR$/askapatient2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient3.txt" afterPath="$PROJECT_DIR$/askapatient3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +52,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="84" selection-start="3070" selection-end="3070" vertical-scroll-proportion="0.77886176">
+            <state line="64" column="29" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.72357726">
               <folding />
             </state>
           </provider>
@@ -1140,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="84" selection-start="3070" selection-end="3070" vertical-scroll-proportion="0.77886176">
+        <state line="64" column="29" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.72357726">
           <folding />
         </state>
       </provider>
