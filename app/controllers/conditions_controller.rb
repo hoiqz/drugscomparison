@@ -10,6 +10,20 @@ class ConditionsController < ApplicationController
     end
     @size= @conditions.count
     @sizehalf= (@size / 2.0).ceil
+
+    @common=[]
+    @day2day_condition=[]
+    @elderly_condition=[]
+    @kids_condition=[]
+    @mental_condition=[]
+    Commoncondition.all.each do |condition|
+      @common << condition if condition.category== "Common Health Conditions"
+      @day2day_condition << condition if condition.category== "Day To Day Health"
+      @elderly_condition << condition if condition.category== "Elderly Related Conditions"
+      @kids_condition << condition if condition.category== "Kids Related Conditions"
+      @mental_condition << condition if condition.category== "Mental Conditions"
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @drugs }

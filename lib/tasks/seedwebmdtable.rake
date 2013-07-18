@@ -330,7 +330,7 @@ namespace :project do
   #########################################
   desc "generate content in Commondrug table."
   task :generateCommondrugContent =>:environment do
-    if Commondrug.all.empty?
+    #if Commondrug.all.empty?
     commonlist=["Levothyroxine","Lisinopril","Lipitor","Simvastatin","Plavix","Singulair",
                 "Azithromycin","Crestor","Nexium","Metoprolol Tartrate","Synthroid","Lexapro","ProAir HFA",
                 "Ibuprofen","Trazodone","Amoxicillin","Glucophage","Advair Diskus","Abilify","Seroquel","Actos","Epogen",
@@ -347,7 +347,47 @@ namespace :project do
         a=Commondrug.create!(:brand_name=>found.brand_name, :conditions=>conditions_involved, :drug_id=>found.id)
       end
     end
+
   end
+
+  #########################################
+  #rake project:generateCommonConditionContent
+  #########################################
+  desc "generate content in Commondrug table."
+  task :generateCommonConditionContent =>:environment do
+    #if Commoncondition.all.empty?
+      commonlist=["hepatitis A","type 1 diabetes","type 2 diabetes","stomach ulcer","Bronchitis","middle ear infection","hepatitis B","malaria","Anemia"]
+      daytodayillness=["Constipation","diarrhea","irritable bowel syndrome","Migraine Headache","Sinus Irritation and Congestion","cold","acne"]
+      elderlyillness=["high blood pressure","Osteoporosis","angina","arthritis","Rheumatism"]
+      kidsillness=["Eczema","Chickenpox","Whooping cough"]
+      mentalillness=["Repeated Episodes of Anxiety","Obsessive Compulsive Disorder","Bipolar Disorder","Panic Disorder","Depression"]
+
+      commonlist.each do |common|
+        category="Common Health Conditions"
+        found=Condition.where("name LIKE ?","%#{common}%").first
+          a=Commoncondition.create!(:name=>found.name, :condition_id=>found.id, :category=>category) if found
+      end
+
+      daytodayillness.each do |common|
+        category="Day To Day Health"
+        found=Condition.where("name LIKE ?","%#{common}%").first
+        a=Commoncondition.create!(:name=>found.name, :condition_id=>found.id, :category=>category) if found
+      end
+      elderlyillness.each do |common|
+        category="Elderly Related Conditions"
+        found=Condition.where("name LIKE ?","%#{common}%").first
+        a=Commoncondition.create!(:name=>found.name, :condition_id=>found.id, :category=>category) if found
+      end
+      kidsillness.each do |common|
+        category="Kids Related Conditions"
+        found=Condition.where("name LIKE ?","%#{common}%").first
+        a=Commoncondition.create!(:name=>found.name, :condition_id=>found.id, :category=>category) if found
+      end
+      mentalillness.each do |common|
+        category="Mental Conditions"
+        found=Condition.where("name LIKE ?","%#{common}%").first
+        a=Commoncondition.create!(:name=>found.name, :condition_id=>found.id, :category=>category) if found
+      end
   end
 
   #########################################

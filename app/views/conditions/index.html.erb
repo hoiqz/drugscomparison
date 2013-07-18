@@ -38,13 +38,40 @@
   </article>
 </div>
 
-<article class="widget_container span2">
+<article class="span2 widget_container side_widget">
   <ul class="nav nav-list">
-    <li class="nav-header">Top Conditions</li>
+    <!--<li class="nav-header">Commonly rated Drugs</li>-->
+    <span class="label label-info">Popular Searches</span>
     <li class="divider"></li>
 
+    <li class="nav-header">Day To Day Health</li>
+    <li class="divider"></li>
+    <% @day2day_condition.each do |entry| %>
+        <li ><%= display_hits entry %></li>
+     <% end %>
+    <li class="nav-header">Common Health Conditions</li>
+    <li class="divider"></li>
+    <% @common.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+    <li class="nav-header">Elderly Related Conditions</li>
+    <li class="divider"></li>
+    <% @elderly_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+    <li class="nav-header">Kids Related Conditions</li>
+    <li class="divider"></li>
+    <% @kids_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+    <li class="nav-header">Mental Conditions</li>
+    <li class="divider"></li>
+    <% @mental_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
   </ul>
 </article>
+
 
 <article class="span2 widget_container">
   <ul class="nav nav-list">
