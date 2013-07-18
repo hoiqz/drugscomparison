@@ -1,4 +1,4 @@
-       # run with rake in=list_of_all_drugs project:updatereviewcount
+ # run with rake in=list_of_all_drugs project:updatereviewcount
 namespace :project do
   desc "update number of reviews counts for webmd table use rake in=<inputfile> project:updatereviewcount"
   task :updatereviewcount =>:environment do
@@ -231,7 +231,7 @@ namespace :project do
         #doc = open("test.html") { |f| Hpricot(f) }
         ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
         doc = open(url) {|f| Hpricot(ic.iconv(f.read)) }
-         OUT=File.new("askapatient_reviews/#{for_windows_file}_reviews.tsv","w")
+         OUT=File.new("askapatient_reviews/#{for_windows_file}_reviews.tsv","a")
 
         # OUT.write(doc.inner_html)
         # exit
@@ -324,6 +324,31 @@ namespace :project do
 
   end
 
+
+  #########################################
+  #rake project:generateCommondrugContent
+  #########################################
+  desc "generate content in Commondrug table."
+  task :generateCommondrugContent =>:environment do
+    if Commondrug.all.empty?
+    commonlist=["Levothyroxine","Lisinopril","Lipitor","Simvastatin","Plavix","Singulair",
+                "Azithromycin","Crestor","Nexium","Metoprolol Tartrate","Synthroid","Lexapro","ProAir HFA",
+                "Ibuprofen","Trazodone","Amoxicillin","Glucophage","Advair Diskus","Abilify","Seroquel","Actos","Epogen",
+                "Xanax","Tramadol","Vicodin","Ultram"]
+    temp=Array.new
+    commonlist.each do |common|
+      found=Drug.where("brand_name LIKE ?","%#{common}%").first
+      if found
+        involved_in=Array.new
+        found.conditions.each do |con|
+          involved_in << con.name
+        end
+        conditions_involved=involved_in.join(",")
+        a=Commondrug.create!(:brand_name=>found.brand_name, :conditions=>conditions_involved, :drug_id=>found.id)
+      end
+    end
+  end
+  end
 
   #########################################
   #rake in=../everydayhealth/druglist.tsv.original project:findsideeffects

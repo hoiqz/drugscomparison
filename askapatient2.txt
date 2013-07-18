@@ -36,7 +36,7 @@
 #VISTARIL	11111	http://www.askapatient.com/viewrating.asp?drug=11111&name=VISTARIL
 #VITAMIN D	80704	http://www.askapatient.com/viewrating.asp?drug=80704&name=VITAMIN+D
 #VIVACTIL	16012	http://www.askapatient.com/viewrating.asp?drug=16012&name=VIVACTIL
-VIVELLE	20323	http://www.askapatient.com/viewrating.asp?drug=20323&name=VIVELLE
+#VIVELLE	20323	http://www.askapatient.com/viewrating.asp?drug=20323&name=VIVELLE
 VIVELLE-DOT	20538	http://www.askapatient.com/viewrating.asp?drug=20538&name=VIVELLE%2DDOT
 VOLTAREN	19201	http://www.askapatient.com/viewrating.asp?drug=19201&name=VOLTAREN
 VOLTAREN-XR	20254	http://www.askapatient.com/viewrating.asp?drug=20254&name=VOLTAREN%2DXR

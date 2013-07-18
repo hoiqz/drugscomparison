@@ -19,7 +19,7 @@ module ApplicationHelper
       linkpath
     else
       condition_name=Condition.find(id).name
-      linkpath= link_to condition_name.capitalize, conditions_path(id)
+      linkpath= link_to condition_name.capitalize, condition_path(id)
       linkpath
     end
 

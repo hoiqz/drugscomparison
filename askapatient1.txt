@@ -1265,8 +1265,8 @@
 #TOPROL-XL	19962	http://www.askapatient.com/viewrating.asp?drug=19962&name=TOPROL%2DXL
 #TORADOL	19645	http://www.askapatient.com/viewrating.asp?drug=19645&name=TORADOL
 #TOVIAZ	22030	http://www.askapatient.com/viewrating.asp?drug=22030&name=TOVIAZ
-#TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
-TRANSDERM SCOP	17874	http://www.askapatient.com/viewrating.asp?drug=17874&name=TRANSDERM+SCOP
+##TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
+#TRANSDERM SCOP	17874	http://www.askapatient.com/viewrating.asp?drug=17874&name=TRANSDERM+SCOP
 TRANXENE SD	17105	http://www.askapatient.com/viewrating.asp?drug=17105&name=TRANXENE+SD
 TRASYLOL	20304	http://www.askapatient.com/viewrating.asp?drug=20304&name=TRASYLOL
 TRAVATAN	21257	http://www.askapatient.com/viewrating.asp?drug=21257&name=TRAVATAN

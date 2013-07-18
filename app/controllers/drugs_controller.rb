@@ -27,7 +27,8 @@ class DrugsController < ApplicationController
         break
       end
     end
-    @commondrugs=Drug.find(@drugsarr)
+    @Mostrevieweddrugs=Drug.find(@drugsarr)
+    @commondrugs=Commondrug.all
 
     respond_to do |format|
       format.html # index.html.erb

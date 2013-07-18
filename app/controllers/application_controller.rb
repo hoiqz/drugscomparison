@@ -37,10 +37,12 @@ class ApplicationController < ActionController::Base
 
   def store_history
     session[:history] ||= []
+    if ! request.xml_http_request?    # we do not store ajax request into the session
     url=Rails.application.routes.recognize_path(request.url)
-    if url[:id] || url[:drug_id]
+    if url[:id] || url[:drug_id] # only add if it is a drug id or condition id
     session[:history].delete_at(0) if session[:history].size >= 5
     session[:history] << url
+      end
     end
   end
 end

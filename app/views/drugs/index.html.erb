@@ -43,9 +43,9 @@
 <article class="span2 widget_container">
   <ul class="nav nav-list">
     <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Top Reviewed</span>
+    <span class="label label-info">Most Reviewed Drugs</span>
     <li class="divider"></li>
-    <% @commondrugs.each do |drug| %>
+    <% @Mostrevieweddrugs.each do |drug| %>
         <li>
           <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
         </li>
@@ -53,14 +53,14 @@
   </ul>
 </article>
 
-<article class="span2 widget_container">
+<article class="span2 widget_container pre-scrollable">
   <ul class="nav nav-list">
     <!--<li class="nav-header">Commonly rated Drugs</li>-->
     <span class="label label-info">Popular Drugs</span>
     <li class="divider"></li>
     <% @commondrugs.each do |drug| %>
         <li>
-          <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
+          <%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%>
         </li>
     <% end %>
   </ul>

@@ -6,11 +6,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANXENE+SD_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRASYLOL_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAVATAN_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAZODONE+HCL_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VIVELLE-DOT_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VOLTAREN-XR_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VOLTAREN_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/commondrug.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130718021446_create_commondrugs.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/commondrug_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRANSDERM+SCOP_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANSDERM+SCOP_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VIVELLE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VIVELLE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient1.txt" afterPath="$PROJECT_DIR$/askapatient1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient2.txt" afterPath="$PROJECT_DIR$/askapatient2.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient3.txt" afterPath="$PROJECT_DIR$/askapatient3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,53 +61,43 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="18" selection-start="2142" selection-end="2544" vertical-scroll-proportion="-19.461538">
-              <folding>
-                <marker date="1374031450762" expanded="true" signature="35:1315" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="157:1308" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="245:443" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="256:432" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="480:1295" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="739:981" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="773:964" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1012:1264" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1046:1247" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1360:1728" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1388:1717" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1584:1695" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1770:2139" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1798:2128" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="1995:2106" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="2181:2543" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="2209:2532" placeholder="..." />
-                <marker date="1374031450762" expanded="true" signature="2449:2493" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1337" selection-end="1376" vertical-scroll-proportion="0.0">
+            <state line="45" column="54" selection-start="1504" selection-end="1504" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <file leaf-file-name="custom.css.scss.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="171" column="0" selection-start="3189" selection-end="3189" vertical-scroll-proportion="-16.346153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="244" selection-end="244" vertical-scroll-proportion="0.10828026">
+            <state line="87" column="84" selection-start="3070" selection-end="3070" vertical-scroll-proportion="0.77886176">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drugs_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="46" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="333" column="1" selection-start="12615" selection-end="12615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,22 +120,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/condition.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/drug_index_layout.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/conditions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/drug_review_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/condition_layout.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130717080554_rename_most_common_drug_to_most_reviewed_drug.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130717081347_create_common_drug.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130718021446_create_commondrugs.rb" />
+        <option value="$PROJECT_DIR$/app/models/commondrug.rb" />
+        <option value="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
   </component>
@@ -223,6 +237,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -961,137 +1007,140 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130322080818_create_mostcommondrugs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1222" selection-end="1238" vertical-scroll-proportion="-8.0">
+        <state line="7" column="12" selection-start="56" selection-end="185" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.9226804">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_satisfactory_view_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130618022148_create_conditionmetrics.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/drug_index_layout.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130403061150_add_column_to_drug_table.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="413" selection-end="413" vertical-scroll-proportion="0.46735394">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20121219074029_create_conditions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20121219081615_create_treatments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="104" selection-end="122" vertical-scroll-proportion="0.08388158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0755712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="480" column="24" selection-start="18330" selection-end="18330" vertical-scroll-proportion="0.36134455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/#drugscomparison">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#drugscomparison</OriginalElement>
+          <nodes>
+            <node x="" y="">User</node>
+            <node x="" y="">Condition</node>
+            <node x="" y="">Search</node>
+            <node x="" y="">Review</node>
+            <node x="" y="">Webmd</node>
+            <node x="" y="">Commondrug</node>
+            <node x="" y="">Treatment</node>
+            <node x="" y="">Everydayhealth</node>
+            <node x="" y="">Conditioninfograph</node>
+            <node x="" y="">Druginfograph</node>
+            <node x="" y="">Tag</node>
+            <node x="" y="">Mostcommondrug</node>
+            <node x="" y="">Drug</node>
+            <node x="" y="">Conditionmetric</node>
+            <node x="" y="">Askapatient</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5445173383317713" x="510.13080895008613" y="583.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/commondrug.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="79" selection-start="109" selection-end="109" vertical-scroll-proportion="0.08121019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130718021446_create_commondrugs.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="151" selection-end="151" vertical-scroll-proportion="0.10828026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="54" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="15" selection-start="3183" selection-end="3183" vertical-scroll-proportion="-7.4313726">
+        <state line="171" column="0" selection-start="3189" selection-end="3189" vertical-scroll-proportion="-16.346153">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="12" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/condition_layout.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="18" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.91237116">
-          <folding>
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/drug_review_layout.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="17" selection-start="2405" selection-end="2903" vertical-scroll-proportion="0.7408638">
-          <folding>
-            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="18" selection-start="2142" selection-end="2544" vertical-scroll-proportion="-19.461538">
-          <folding>
-            <marker date="1374031450762" expanded="true" signature="35:1315" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="157:1308" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="245:443" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="256:432" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="480:1295" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="739:981" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="773:964" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1012:1264" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1046:1247" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1360:1728" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1388:1717" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1584:1695" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1770:2139" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1798:2128" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="1995:2106" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="2181:2543" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="2209:2532" placeholder="..." />
-            <marker date="1374031450762" expanded="true" signature="2449:2493" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="485" selection-end="488" vertical-scroll-proportion="0.6633499">
+        <state line="333" column="1" selection-start="12615" selection-end="12615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="48" selection-end="49" vertical-scroll-proportion="0.044067796">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1337" selection-end="1376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.16401275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="244" selection-end="244" vertical-scroll-proportion="0.10828026">
+        <state line="87" column="84" selection-start="3070" selection-end="3070" vertical-scroll-proportion="0.77886176">
           <folding />
         </state>
       </provider>
