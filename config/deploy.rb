@@ -62,7 +62,7 @@ namespace :deploy do
 
   desc "generate commondrugs"
   task :run_specific_rake_tasks do
-    run "cd #{current_path}; rake project:generateCommondrugContent"
+    run "cd #{deploy_to}/current && #{rake} project:generateCommondrugContent RAILS_ENV=production"
   end
 end
 

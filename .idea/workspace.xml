@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VYTORIN_reviews.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRAMADOL+HYDROCHLORIDE_reviews.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
     <ignored path="drugscomparison.iws" />
@@ -52,7 +52,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="29" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.72357726">
+            <state line="64" column="78" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.8065041">
               <folding />
             </state>
           </provider>
@@ -1113,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="29" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.72357726">
+        <state line="64" column="78" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.8065041">
           <folding />
         </state>
       </provider>
