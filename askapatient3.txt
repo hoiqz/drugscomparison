@@ -27,8 +27,8 @@
 #TORSEMIDE	20137	http://www.askapatient.com/viewrating.asp?drug=20137&name=DEMADEX
 #TRAMADOL HYDROCHLORIDE	78783	http://www.askapatient.com/viewrating.asp?drug=78783&name=TRAMADOL+HYDROCHLORIDE
 #TRAMADOL HYDROCHLORIDE	21692	http://www.askapatient.com/viewrating.asp?drug=21692&name=ULTRAM+ER
-TRAMADOL HYDROCHLORIDE	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
-TRANDOLAPRIL	20528	http://www.askapatient.com/viewrating.asp?drug=20528&name=MAVIK
+#TRAMADOL HYDROCHLORIDE	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
+#TRANDOLAPRIL	20528	http://www.askapatient.com/viewrating.asp?drug=20528&name=MAVIK
 TRANDOLAPRIL; VERAPAMIL HYDROCHLORIDE	20591	http://www.askapatient.com/viewrating.asp?drug=20591&name=TARKA
 TRANEXAMIC ACID	19281	http://www.askapatient.com/viewrating.asp?drug=19281&name=CYKLOKAPRON
 TRANEXAMIC ACID	22430	http://www.askapatient.com/viewrating.asp?drug=22430&name=LYSTEDA

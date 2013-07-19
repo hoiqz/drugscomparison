@@ -49,6 +49,9 @@ class ApplicationController < ActionController::Base
     end
 
     @commondrugs=Commondrug.all
+    @size= @commondrugs.count
+    @sizefirsthalf= (@size / 3.0).ceil     # cause we wan to split it into three columns
+    @sizesecondhalf=@sizefirsthalf+@sizefirsthalf
   end
 
   private

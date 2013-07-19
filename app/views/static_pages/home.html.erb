@@ -1,11 +1,11 @@
 <% content_for :script do %>
     <script type='text/javascript' xmlns="http://www.w3.org/1999/html">
 
-        $(function () {
-            $("#feature1").tooltip();
-            $("#feature2").tooltip();
-            $("#feature3").tooltip();
-        });
+//        $(function () {
+//            $("#feature1").tooltip();
+//            $("#feature2").tooltip();
+//            $("#feature3").tooltip();
+//        });
     </script>
 <% end %>
 
@@ -45,50 +45,66 @@
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </article>
     <!--</div>-->
-<article>
-    <h3 class="static_divider">Features</h3>
-    <!--<div class="row-fluid">-->
-      <ul class="thumbnails">
-        <li class="span4">
-          <div class="thumbnail">
-            <div class="caption">
-              <%= image_tag ("conditionfeature.jpg") %>
-              <p><%= link_to 'Compare By Conditions', conditions_path, :id=>"feature1", "data-toggle"=>"tooltip", :title=>"Which is the most suitable drug for you? Find out more with statistics we constructed from other drug users" %></p>
-            </div>
-          </div>
-        </li>
-        <li class="span4">
-          <div class="thumbnail">
-            <div class="caption">
-              <%= image_tag ("drugfeature.jpg") %>
-              <h5><%= link_to 'Look up a drug', drugs_path, :id=>"feature2", "data-toggle"=>"tooltip", :title=>"See how the community rates a drug, read up side effects and precaution." %></h5>
-            </div>
-          </div>
-        </li>
-        <li class="span4">
-          <div class="thumbnail">
-            <div class="caption">
-              <%= image_tag ("reviewfeature.jpg") %>
-              <p><%= link_to 'Write a Review', drugs_path, :id=>"feature3", "data-toggle"=>"tooltip", :title=>"Return to the community. Share your experience with a drug" %></p>
-            </div>
-          </div>
-        </li>
-      </ul>
+
+<article class="span12">
+    <section><h3 class="static_divider">Features</h3></section>
+    <section class="row-fluid">
+      <div class="feature_divs span5">
+        <%= image_tag "piechart_feature2.png" %>
+        <h6><span class="label label-warning">Graphs</span> : Drug Performance Graphs Derived From User Reviews</h6>
+      </div>
+      <div class="feature_divs span5">
+        <%= image_tag "infograph_feature.png" %>
+        <h6><span class="label label-warning">Infographics</span> : Infographics To Give You Better Insights On The Drug</h6>
+      </div>
+      <div class="feature_divs span5">
+        <%= image_tag "compare_multi_drug_feature.png" %>
+        <h6><span class="label label-warning">Statistics</span> : Statistics Comparing Drugs Used To Treat Day To Day Conditions</h6>
+      </div>
+      <div class="feature_divs span5">
+        <%= image_tag "other_review_source_feature.png" %>
+        <h6><span class="label label-warning">Read Reviews</span> : Read Reviews From Multiple Sources</h6>
+      </div>
+      <div class="feature_divs span5">
+        <%= image_tag "review_feature.png" %>
+        <h6><span class="label label-warning">Contribute</span> : Contribute To The Health Community. Share Your Experience!</h6>
+      </div>
+      <div class="feature_divs span5">
+        <%= image_tag "piechart_feature.png" %>
+        <h6><span class="label label-warning">Lorem</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
+      </div>
+      <!--<div class="clearfix span12"></div>-->
+    </section>
 </article>
-    <!--</div>-->
 
     <article class="span12 side_widget">
       <section><h5 class="static_divider">Popular Drugs</h5></section>
-      <ul class="nav nav-list pre-scrollable">
-        <!--<li class="nav-header">Commonly rated Drugs</li>-->
-        <!--<span class="label label-info">Popular Drugs</span>-->
-        <!--<li class="divider"></li>-->
-        <% @commondrugs.each do |drug| %>
-            <li>
-              <%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%>
-            </li>
+      <div class="row-fluid">
+        <% if @commondrugs.present? %>
+            <div class=" span4">
+              <ul class="unstyled">
+                <% @commondrugs[0..@sizefirsthalf].each do |drug|%>
+                    <li><%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%></li>
+                <%end%>
+              </ul>
+            </div>
+            <div class=" span4">
+              <ul class="unstyled">
+                <% @commondrugs[@sizefirsthalf +1 ..@sizesecondhalf].each do |drug|%>
+                    <li><%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class=" span4">
+              <ul class="unstyled">
+                <% @commondrugs[@sizesecondhalf +1 ..@size].each do |drug|%>
+                    <li><%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%></li>
+                <% end %>
+              </ul>
+            </div>
         <% end %>
-      </ul>
+      </div>
+
     </article>
 
   <!--</div>-->
