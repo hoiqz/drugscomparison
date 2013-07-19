@@ -13,9 +13,9 @@
 
     <section id="alphabet_listing">
       <% if params[:letter].present? %>
-      <h2 class="span8"><em><%= params[:letter].capitalize %></em></h2>
+      <h1 class="span8 static_divider"><em><%= params[:letter].capitalize %></em></h1>
           <% else %>
-          <h2 class="span8"><em>A</em></h2>
+          <h1 class="span8 static_divider"><em>A</em></h1>
           <% end %>
       <% if @drugs.present? %>
           <div class=" span3">
@@ -40,24 +40,26 @@
 
 
 
-<article class="span2 widget_container">
+<article class="span2 widget_container side_widget">
   <ul class="nav nav-list">
     <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Most Reviewed Drugs</span>
-    <li class="divider"></li>
+    <!--<span class="label label-info">Most Reviewed Drugs</span>-->
+    <!--<li class="divider"></li>-->
+    <section> <h5 class="static_divider">Most Reviewed Drugs</h5></section>
     <% @Mostrevieweddrugs.each do |drug| %>
         <li>
-          <%= link_to "#{drug.brand_name} (#{drug.reviews.count})", drug_reviews_path(drug.id)%>
+          <%= link_to "#{drug.brand_name} (#{drug.reviews.count} reviews)", drug_reviews_path(drug.id)%>
         </li>
     <% end %>
   </ul>
 </article>
 
-<article class="span2 widget_container pre-scrollable">
-  <ul class="nav nav-list">
+<article class="span2 widget_container side_widget">
+  <section><h5 class="static_divider">Popular Drugs</h5></section>
+  <ul class="nav nav-list pre-scrollable">
     <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Popular Drugs</span>
-    <li class="divider"></li>
+    <!--<span class="label label-info">Popular Drugs</span>-->
+    <!--<li class="divider"></li>-->
     <% @commondrugs.each do |drug| %>
         <li>
           <%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%>
@@ -66,11 +68,9 @@
   </ul>
 </article>
 
-<article class="span2 widget_container">
+<article class="span2 widget_container side_widget">
+  <section><h5 class="static_divider">Last Visited</h5> </section>
   <ul class="nav nav-list">
-    <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Last Visited</span>
-    <li class="divider"></li>
     <% if session[:history].present? %>
     <% session[:history].each do |url| %>
         <li>

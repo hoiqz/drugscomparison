@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :get_menu_list , :store_history
+  before_filter :get_menu_list ,:side_widget, :store_history
 
   def get_menu_list
     @common_condition=Array.new
@@ -31,6 +31,24 @@ class ApplicationController < ActionController::Base
     @common_condition=Condition.find(common_condition_array)
     @drugs_top_picks=Drug.find(drugs_top_picks_array)
 
+  end
+
+  def side_widget
+
+    @common=[]
+    @day2day_condition=[]
+    @elderly_condition=[]
+    @kids_condition=[]
+    @mental_condition=[]
+    Commoncondition.all.each do |condition|
+      @common << condition if condition.category== "Common Health Conditions"
+      @day2day_condition << condition if condition.category== "Day To Day Health"
+      @elderly_condition << condition if condition.category== "Elderly Related Conditions"
+      @kids_condition << condition if condition.category== "Kids Related Conditions"
+      @mental_condition << condition if condition.category== "Mental Conditions"
+    end
+
+    @commondrugs=Commondrug.all
   end
 
   private

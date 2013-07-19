@@ -1,0 +1,59 @@
+<article class="span11 side_widget">
+  <section>
+  <h5 class="static_divider">We Also Recommend</h5>
+  </section>
+  <section class="widget_thumbnails">
+    <div><%= image_tag("demo_widget_img1.jpg") %><a href="#" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a></div>
+  </section>
+  <section class="widget_thumbnails">
+    <div><%= image_tag("demo_widget_img2.jpg") %><a href="#" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a></div>
+  </section>
+  <section class="widget_thumbnails">
+    <div><%= image_tag("demo_widget_img3.jpg") %><a href="#" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a></div>
+  </section>
+</article>
+
+<article class="span11 side_widget">
+  <!--<h4 class="static_divider">Popular Searches</h4>-->
+  <section><h5 class="static_divider">Day To Day Health</h5></section>
+  <ul class="nav nav-list">
+    <% @day2day_condition.each do |entry| %>
+        <li ><%= display_hits entry %></li>
+    <% end %>
+  </ul>
+</article>
+<article class="span11 side_widget">
+  <section><h5 class="static_divider">Common Health Conditions</h5> </section>
+  <ul class="nav nav-list">
+    <% @common.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+  </ul>
+</article>
+<article class="span11 side_widget">
+  <section><h5 class="static_divider">Elderly Related Conditions</h5> </section>
+  <ul class="nav nav-list">
+    <% @elderly_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+  </ul>
+</article>
+
+<article class="span11 side_widget">
+  <section><h5 class="static_divider">Kids Related Conditions</h5> </section>
+  <ul class="nav nav-list">
+    <% @kids_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+  </ul>
+</article>
+
+<article class="span11 side_widget">
+  <section><h5 class="static_divider">Mental Conditions</h5> </section>
+  <ul class="nav nav-list">
+    <% @mental_condition.each do |entry| %>
+        <li><%= display_hits entry %></li>
+    <% end %>
+  </ul>
+</article>
+

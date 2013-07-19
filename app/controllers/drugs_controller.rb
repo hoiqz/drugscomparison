@@ -28,7 +28,7 @@ class DrugsController < ApplicationController
       end
     end
     @Mostrevieweddrugs=Drug.find(@drugsarr)
-    @commondrugs=Commondrug.all
+
 
     respond_to do |format|
       format.html # index.html.erb

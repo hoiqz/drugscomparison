@@ -49,6 +49,7 @@ $infographorange:  #F87431;
     font-weight: normal;
     line-height: 20px;
     padding: 3px 20px;
+    font-size: 12px;
     }
     td:hover > a {
         background-color: #0081C2;
@@ -79,6 +80,7 @@ $infographorange:  #F87431;
     border-bottom-color: #1589FF;
     border-bottom-style: solid;
     border-bottom-width: medium;
+    margin-bottom: 15px;
 }
 html{
   overflow-y: scroll;
@@ -139,7 +141,10 @@ p{
 #alphabet_listing{
     overflow: hidden;
     h2{
-        text-decoration: underline
+        /*text-decoration: underline*/
+    }
+    h1{
+        text-align: left;
     }
     ul{
         li{
@@ -168,6 +173,23 @@ p{
     box-shadow:         6px 6px 13px rgba(58, 67, 50, 1);
     margin-bottom: 20px;
     padding: 10px;
+}
+.widget_thumbnails{
+    overflow: hidden;
+    div{
+        margin-bottom: 5px;
+        border-bottom: 1px;
+        border-bottom-color: #dcdcdc;
+    }
+    img{
+        width: 75px;
+        padding: 10px;
+        float:left;
+    }
+   a{
+        font-size: 12px;
+    }
+
 }
 .side_widget{
     li{
@@ -270,6 +292,7 @@ footer {
   padding: 10px;
 }
 .static_buttons{
+
   clear: both;
   padding: 0px 0px 30px 30px;
   margin-left: 0px;

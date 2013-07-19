@@ -13,9 +13,9 @@
     </div>
     <section id="alphabet_listing">
       <% if params[:letter].present? %>
-          <h2 class="span8"><em><%= params[:letter].capitalize %></em></h2>
+          <h1 class="span8 static_divider"><em><%= params[:letter].capitalize %></em></h1>
       <% else %>
-          <h2 class="span8"><em>A</em></h2>
+          <h1 class="span8 static_divider"><em>A</em></h1>
       <% end %>
 
       <% if @conditions.present? %>
@@ -39,33 +39,27 @@
 </div>
 
 <article class="span2 widget_container side_widget">
+  <!--<h4 class="static_divider">Popular Searches</h4>-->
   <ul class="nav nav-list">
-    <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Popular Searches</span>
-    <li class="divider"></li>
-
-    <li class="nav-header">Day To Day Health</li>
-    <li class="divider"></li>
+    <section><h5 class="static_divider">Day To Day Health</h5></section>
     <% @day2day_condition.each do |entry| %>
         <li ><%= display_hits entry %></li>
      <% end %>
-    <li class="nav-header">Common Health Conditions</li>
-    <li class="divider"></li>
+    <section><h5 class="static_divider">Common Health Conditions</h5></section>
     <% @common.each do |entry| %>
         <li><%= display_hits entry %></li>
     <% end %>
-    <li class="nav-header">Elderly Related Conditions</li>
-    <li class="divider"></li>
+    <section><h5 class="static_divider">Elderly Related Conditions</h5></section>
     <% @elderly_condition.each do |entry| %>
         <li><%= display_hits entry %></li>
     <% end %>
-    <li class="nav-header">Kids Related Conditions</li>
-    <li class="divider"></li>
+    <section><h5 class="static_divider">Kids Related Conditions</h5></section>
     <% @kids_condition.each do |entry| %>
         <li><%= display_hits entry %></li>
     <% end %>
-    <li class="nav-header">Mental Conditions</li>
-    <li class="divider"></li>
+    <!--<li class="nav-header">Mental Conditions</li>-->
+    <!--<li class="divider"></li>-->
+    <section><h5 class="static_divider">Mental Conditions</h5></section>
     <% @mental_condition.each do |entry| %>
         <li><%= display_hits entry %></li>
     <% end %>
@@ -73,10 +67,9 @@
 </article>
 
 
-<article class="span2 widget_container">
+<article class="span2 widget_container side_widget">
+  <section><h4 class="static_divider">Last Visited</h4></section>
   <ul class="nav nav-list">
-    <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <span class="label label-info">Last Visited</span>
     <li class="divider"></li>
     <% if session[:history].present? %>
         <% session[:history].each do |url| %>
