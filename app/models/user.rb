@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
  validates :username, :uniqueness => true , :presence => true
  #validates :age, :numericality => true
- # validates :email_address, :format => {:with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i} #,:presence => true
+  validates :email_address, :format => {:with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i} #,:presence => true
   validates :gender, :presence => true
 #  validates :weight, :numericality => true
 

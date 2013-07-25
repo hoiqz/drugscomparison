@@ -29,18 +29,18 @@
 #TRAMADOL HYDROCHLORIDE	21692	http://www.askapatient.com/viewrating.asp?drug=21692&name=ULTRAM+ER
 #TRAMADOL HYDROCHLORIDE	20281	http://www.askapatient.com/viewrating.asp?drug=20281&name=ULTRAM
 #TRANDOLAPRIL	20528	http://www.askapatient.com/viewrating.asp?drug=20528&name=MAVIK
-TRANDOLAPRIL; VERAPAMIL HYDROCHLORIDE	20591	http://www.askapatient.com/viewrating.asp?drug=20591&name=TARKA
-TRANEXAMIC ACID	19281	http://www.askapatient.com/viewrating.asp?drug=19281&name=CYKLOKAPRON
-TRANEXAMIC ACID	22430	http://www.askapatient.com/viewrating.asp?drug=22430&name=LYSTEDA
-TRANYLCYPROMINE SULFATE	12342	http://www.askapatient.com/viewrating.asp?drug=12342&name=PARNATE
-TRAVOPROST	21257	http://www.askapatient.com/viewrating.asp?drug=21257&name=TRAVATAN
-TRAZODONE HYDROCHLORIDE	18207	http://www.askapatient.com/viewrating.asp?drug=18207&name=DESYREL
-TRAZODONE HYDROCHLORIDE	70857	http://www.askapatient.com/viewrating.asp?drug=70857&name=TRAZODONE+HCL
-TRETINOIN	16921	http://www.askapatient.com/viewrating.asp?drug=16921&name=RETIN%2DA
-TRETINOIN	20475	http://www.askapatient.com/viewrating.asp?drug=20475&name=RETIN%2DA+MICRO
-TRETINOIN	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA
-TRIAMCINOLONE ACETONIDE	11600	http://www.askapatient.com/viewrating.asp?drug=11600&name=KENALOG
-TRIAMCINOLONE ACETONIDE	12041	http://www.askapatient.com/viewrating.asp?drug=12041&name=KENALOG%2D10
+#TRANDOLAPRIL; VERAPAMIL HYDROCHLORIDE	20591	http://www.askapatient.com/viewrating.asp?drug=20591&name=TARKA
+#TRANEXAMIC ACID	19281	http://www.askapatient.com/viewrating.asp?drug=19281&name=CYKLOKAPRON
+#TRANEXAMIC ACID	22430	http://www.askapatient.com/viewrating.asp?drug=22430&name=LYSTEDA
+#TRANYLCYPROMINE SULFATE	12342	http://www.askapatient.com/viewrating.asp?drug=12342&name=PARNATE
+#TRAVOPROST	21257	http://www.askapatient.com/viewrating.asp?drug=21257&name=TRAVATAN
+#TRAZODONE HYDROCHLORIDE	18207	http://www.askapatient.com/viewrating.asp?drug=18207&name=DESYREL
+#TRAZODONE HYDROCHLORIDE	70857	http://www.askapatient.com/viewrating.asp?drug=70857&name=TRAZODONE+HCL
+#TRETINOIN	16921	http://www.askapatient.com/viewrating.asp?drug=16921&name=RETIN%2DA
+#TRETINOIN	20475	http://www.askapatient.com/viewrating.asp?drug=20475&name=RETIN%2DA+MICRO
+#TRETINOIN	20404	http://www.askapatient.com/viewrating.asp?drug=20404&name=AVITA
+#TRIAMCINOLONE ACETONIDE	11600	http://www.askapatient.com/viewrating.asp?drug=11600&name=KENALOG
+#TRIAMCINOLONE ACETONIDE	12041	http://www.askapatient.com/viewrating.asp?drug=12041&name=KENALOG%2D10
 TRIAMCINOLONE ACETONIDE	12097	http://www.askapatient.com/viewrating.asp?drug=12097&name=KENALOG+IN+ORABASE
 TRIAMCINOLONE ACETONIDE	14901	http://www.askapatient.com/viewrating.asp?drug=14901&name=KENALOG%2D40
 TRIAMCINOLONE ACETONIDE	19798	http://www.askapatient.com/viewrating.asp?drug=19798&name=NASACORT

@@ -1,0 +1,57 @@
+<% content_for :script do %>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+        $("#letter").change(function(){
+            $.ajax({
+                url: "<%= static_pages_update_drug_list_path %>",
+                data: {
+                    selected_letter : $('#letter').val()
+                },
+                dataType: "script"
+            });
+        });
+            $("#drug_select").change(function(){
+                $.ajax({
+                    url: "<%= static_pages_review_path %>",
+                    data: {
+                        selected_drug : $('#drug_select').val(),
+                        selected_letter : $('#letter').val()
+                    },
+                    dataType: "script"
+                });
+            });
+
+        });
+    </script>
+<% end %>
+
+<div class="span12">
+
+<article>
+  <h3 class="grey_static_divider"> Lets Write A Review! </h3>
+  <section>
+
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Step 1: </strong> Select A Drug To Review.
+    </div>
+
+    <!--<h5>Step 1: Select A Drug To Review</h5>-->
+    <%= form_tag({controller:"static_pages", action:"review", method: "get"}, :remote=>true) do %>
+
+        <%= select_tag(:letter, options_for_select(@alpha_arr),:prompt => "Select Alphabet") %>
+    <% end %>
+  </section>
+  <%= collection_select(nil, :drug_id, @drugs, :id, :brand_name, {:prompt => "Select Drug"}, {:id => 'drug_select'}) %>
+</article>
+</div>
+<div class="span12">
+  <article>
+  <section id="review_form_all">
+
+  </section>
+</article>
+</div>
+
+
+

@@ -42,7 +42,7 @@ namespace :project do
   end
 
   ###########################################
-  # rake druglist=druglist_all_new_to_old input_dir=/c/Documents\ and\ Settings/hoiqz/RubymineProjects/everydayhealth/reviews/tmp project:initalize_everydayhealth_table
+  # rake druglist=druglist_all_new_to_old input_dir=/c/Documents\ and\ Settings/hoiqz/RubymineProjects/everydayhealth/reviews/tmp project:initalize_everydayhealth_table >>tmp1
   ###########################################
   desc "get data from pages scrapped off everyday health"
   task :initalize_everydayhealth_table =>:environment do

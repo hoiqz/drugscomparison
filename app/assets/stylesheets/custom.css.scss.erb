@@ -125,14 +125,36 @@ $infographorange:  #F87431;
 }
 
 .static_divider{
+        border-bottom-color: #1589FF;
+        border-bottom-style: solid;
+        border-bottom-width: medium;
+        margin-bottom: 15px;
     display: block;
-    float: left;
+    /*float: left;*/
     width: 100%;
+}
+.grey_static_divider{
     border-bottom-color: #1589FF;
     border-bottom-style: solid;
     border-bottom-width: medium;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    display: block;
+  //  float: left;
+    width: 100%;
 }
+
+.columns{
+    -webkit-column-count: 3;
+    -webkit-column-gap: 40px;
+    -webkit-column-rule: 2px dotted black;
+    -moz-column-count: 3;
+    -moz-column-gap: 40px;
+    -moz-column-rule: 2px dotted black;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 2px dotted black;
+}
+
 html{
   overflow-y: scroll;
 }

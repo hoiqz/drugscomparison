@@ -1,0 +1,19 @@
+<section>
+<!--<h5>Your Review Was Successfully Submitted!</h5>-->
+  <div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Success! </strong> Your Review Has Been Submitted.
+  </div>
+<p class="pull-right"><%= link_to "Go to #{@drug.brand_name.capitalize} page", drug_reviews_path(@drug.id)%>  <i class="icon-fast-forward"></i></p>
+</section>
+<section>
+<h5 class="static_divider">You may also be interested in </h5>
+  <h5><%= @drug.brand_name.capitalize %> has been mentioned in: </h5>
+  <div>
+    <ul>
+    <% @conditions.each do |con|%>
+      <li><%=link_to con.name, condition_path(con) %></li>
+    <%end%>
+    </ul>
+  </div>
+</section>

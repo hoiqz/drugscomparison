@@ -33,10 +33,16 @@ Drugscomparison::Application.routes.draw do
       get 'satisfactory_view'
          end
   end
-  #get "conditions/index"
 
-  #get "conditions/show"
+
   get "static_pages/home"
+  #get "static_pages/review"
+  match "static_pages/review", to: "static_pages#review" , via: :get
+  get 'static_pages/update_drug_list'
+  get 'static_pages/new'
+  match "static_pages/create", to: "static_pages#create" , via: [:post, :put]
+  #post 'createform', to: 'static_pages#createform'
+  #post 'static_pages/create'
 
 
   # The priority is based upon order of creation:

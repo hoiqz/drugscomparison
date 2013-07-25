@@ -1,13 +1,25 @@
-$("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:beforeSend", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").addClass("disabled");
-                $("#fountainTextG").show();
-                return false;
-            });
-            $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").bind("ajax:complete", function(){
-                $("#overall_link,#satisfactory_view,#effectiveness_view,#eou_view,#sat-table,#eff-table,#eou-table").removeClass("disabled")
-
-                $("#fountainTextG").hide();
-            });
-			
-			
-			rake druglist=druglist_all_new_to_old input_dir=/c/Documents\ and\ Settings/hoiqz/RubymineProjects/everydayhealth/reviews/tmp project:initalize_everydayhealth_table >>tmp1$ rake druglist=druglist_all_new_to_old input_dir=/c/Documents\and\ Settings/h
+<article class="span12">
+    <section><h3 class="static_divider">Features</h3></section>
+    <section class="row-fluid">
+      <ul class="thumbnails">
+        <li class="span4">
+          <div class="thumbnail">
+              <%= image_tag ("conditionfeature.jpg") %>
+              <p><%= link_to 'Compare By Conditions', conditions_path, :id=>"feature1", "data-toggle"=>"tooltip", :title=>"Which is the most suitable drug for you? Find out more with statistics we constructed from other drug users" %></p>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+              <%= image_tag ("drugfeature.jpg") %>
+              <h3><%= link_to 'Look up a drug', drugs_path, :id=>"feature2", "data-toggle"=>"tooltip", :title=>"See how the community rates a drug, read up side effects and precaution." %></h3>
+            </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+              <%= image_tag ("reviewfeature.jpg") %>
+              <p><%= link_to 'Write a Review', drugs_path, :id=>"feature3", "data-toggle"=>"tooltip", :title=>"Return to the community. Share your experience with a drug" %></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+</article>

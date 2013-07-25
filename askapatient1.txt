@@ -1272,13 +1272,13 @@
 #TRAVATAN	21257	http://www.askapatient.com/viewrating.asp?drug=21257&name=TRAVATAN
 #TRAZODONE HCL	70857	http://www.askapatient.com/viewrating.asp?drug=70857&name=TRAZODONE+HCL
 #TRENTAL	18631	http://www.askapatient.com/viewrating.asp?drug=18631&name=TRENTAL
-TREXIMET	21926	http://www.askapatient.com/viewrating.asp?drug=21926&name=TREXIMET
-TRIAMTERENE AND HYDROCHLOROTHIAZIDE	71251	http://www.askapatient.com/viewrating.asp?drug=71251&name=TRIAMTERENE+AND+HYDROCHLOROTHIAZIDE
-TRIAZOLAM	74031	http://www.askapatient.com/viewrating.asp?drug=74031&name=TRIAZOLAM
-TRICOR	21656	http://www.askapatient.com/viewrating.asp?drug=21656&name=TRICOR
-TRICOR (MICRONIZED)	19304	http://www.askapatient.com/viewrating.asp?drug=19304&name=TRICOR+%28MICRONIZED%29
-TRILAFON	10775	http://www.askapatient.com/viewrating.asp?drug=10775&name=TRILAFON
-TRILEPTAL	21014	http://www.askapatient.com/viewrating.asp?drug=21014&name=TRILEPTAL
-TRILIPIX	22224	http://www.askapatient.com/viewrating.asp?drug=22224&name=TRILIPIX
+#TREXIMET	21926	http://www.askapatient.com/viewrating.asp?drug=21926&name=TREXIMET
+#TRIAMTERENE AND HYDROCHLOROTHIAZIDE	71251	http://www.askapatient.com/viewrating.asp?drug=71251&name=TRIAMTERENE+AND+HYDROCHLOROTHIAZIDE
+#TRIAZOLAM	74031	http://www.askapatient.com/viewrating.asp?drug=74031&name=TRIAZOLAM
+#TRICOR	21656	http://www.askapatient.com/viewrating.asp?drug=21656&name=TRICOR
+#TRICOR (MICRONIZED)	19304	http://www.askapatient.com/viewrating.asp?drug=19304&name=TRICOR+%28MICRONIZED%29
+#TRILAFON	10775	http://www.askapatient.com/viewrating.asp?drug=10775&name=TRILAFON
+#TRILEPTAL	21014	http://www.askapatient.com/viewrating.asp?drug=21014&name=TRILEPTAL
+#TRILIPIX	22224	http://www.askapatient.com/viewrating.asp?drug=22224&name=TRILIPIX
 TRIMETHOPRIM	18679	http://www.askapatient.com/viewrating.asp?drug=18679&name=TRIMETHOPRIM
 TRI-NORINYL 21-DAY	18977	http://www.askapatient.com/viewrating.asp?drug=18977&name=TRI%2DNORINYL+21%2DDAY

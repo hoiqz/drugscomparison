@@ -46,12 +46,12 @@
 #VALACYCLOVIR HYDROCHLORIDE	20487	http://www.askapatient.com/viewrating.asp?drug=20487&name=VALTREX
 #VALPROATE SODIUM	20593	http://www.askapatient.com/viewrating.asp?drug=20593&name=DEPACON
 #VALPROIC ACID	18081	http://www.askapatient.com/viewrating.asp?drug=18081&name=DEPAKENE
-VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
-VALSARTAN	20665	http://www.askapatient.com/viewrating.asp?drug=20665&name=DIOVAN
-VANCOMYCIN HYDROCHLORIDE	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
-VANCOMYCIN HYDROCHLORIDE	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
-VARDENAFIL HYDROCHLORIDE	21400	http://www.askapatient.com/viewrating.asp?drug=21400&name=LEVITRA
-VARENICLINE TARTRATE	21928	http://www.askapatient.com/viewrating.asp?drug=21928&name=CHANTIX
+#VALPROIC ACID	70195	http://www.askapatient.com/viewrating.asp?drug=70195&name=VALPROIC+ACID
+#VALSARTAN	20665	http://www.askapatient.com/viewrating.asp?drug=20665&name=DIOVAN
+#VANCOMYCIN HYDROCHLORIDE	62663	http://www.askapatient.com/viewrating.asp?drug=62663&name=VANCOMYCIN+HCL
+#VANCOMYCIN HYDROCHLORIDE	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
+#VARDENAFIL HYDROCHLORIDE	21400	http://www.askapatient.com/viewrating.asp?drug=21400&name=LEVITRA
+#VARENICLINE TARTRATE	21928	http://www.askapatient.com/viewrating.asp?drug=21928&name=CHANTIX
 VENLAFAXINE HYDROCHLORIDE	20151	http://www.askapatient.com/viewrating.asp?drug=20151&name=EFFEXOR
 VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
 VENLAFAXINE HYDROCHLORIDE	20699	http://www.askapatient.com/viewrating.asp?drug=20699&name=EFFEXOR+XR

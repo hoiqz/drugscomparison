@@ -9,6 +9,12 @@ gem 'sqlite3'
 gem 'kaminari'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+
+#form validation gems
+gem 'simple_form', '2.0.4'
+gem 'client_side_validations', '3.2.1'
+gem 'client_side_validations-simple_form', '2.0.1'
+
 group :development do
   gem 'rspec-rails', '2.0.1'
 

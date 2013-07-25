@@ -20,6 +20,9 @@
 //= require footable
 //= require footablesortable
 //= require footablefilter
+//= require rails.validations
+//= require rails.validations.simple_form
+//= require bootstrap_validation_tweak
 //= require_self
 
 $(function () {

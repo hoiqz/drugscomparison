@@ -1,0 +1,141 @@
+<!--<div><h5 class="static_divider">You Have Selected To Review </h5></div>-->
+
+<div class="alert alert-info">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Step 2: </strong> Give Your Review On <%= @drug.brand_name.capitalize %>.
+</div>
+
+
+<!--<h5 class="steps_green">Step 2: Review Drug</h5>-->
+<%= simple_form_for ([@drug,@review]), :url => static_pages_create_path , :html => {:class => "form-horizontal",:id=>"newreviewform",:method => :post}, :validate => true ,:remote=>true do |f| %>
+    <div class="control-group">
+      <%= f.label :comments, "Your experience with this drug  *", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.text_area :comments, :size=> "50x6", :class=>"input-xlarge", :placeholder=>"Enter review here ..." %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :effectiveness, "How Effective Is This Drug?", :class=>"control-label" %>
+      <div class="controls">
+        <div class="rating">
+          <input type="radio" id="eff5" name="review[effectiveness]" value="5" /><label for="eff5" title="Rocks!">5 stars</label>
+          <input type="radio" id="eff4" name="review[effectiveness]" value="4" /><label for="eff4" title="Pretty good">4 stars</label>
+          <input type="radio" id="eff3" name="review[effectiveness]" value="3" /><label for="eff3" title="Meh">3 stars</label>
+          <input type="radio" id="eff2" name="review[effectiveness]" value="2" /><label for="eff2" title="Kinda bad">2 stars</label>
+          <input type="radio" id="eff1" name="review[effectiveness]" value="1" /><label for="eff1" title="Sucks big time">1 star</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :ease_of_use, "Is This Drug Easy To Use?", :class=>"control-label" %>
+      <div class="controls">
+        <div class="rating">
+          <input type="radio" id="eou5" name="review[ease_of_use]" value="5" /><label for="eou5" title="Rocks!">5 stars</label>
+          <input type="radio" id="eou4" name="review[ease_of_use]" value="4" /><label for="eou4" title="Pretty good">4 stars</label>
+          <input type="radio" id="eou3" name="review[ease_of_use]" value="3" /><label for="eou3" title="Meh">3 stars</label>
+          <input type="radio" id="eou2" name="review[ease_of_use]" value="2" /><label for="eou2" title="Kinda bad">2 stars</label>
+          <input type="radio" id="eou1" name="review[ease_of_use]" value="1" /><label for="eou1" title="Sucks big time">1 star</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :satisfactory, "Are You Satisfied With This Drug?", :class=>"control-label" %>
+      <div class="controls">
+        <div class="rating">
+          <input type="radio" id="satist5" name="review[satisfactory]" value="5" /><label for="satist5" title="Rocks!">5 stars</label>
+          <input type="radio" id="satist4" name="review[satisfactory]" value="4" /><label for="satist4" title="Pretty good">4 stars</label>
+          <input type="radio" id="satist3" name="review[satisfactory]" value="3" /><label for="satist3" title="Meh">3 stars</label>
+          <input type="radio" id="satist2" name="review[satisfactory]" value="2" /><label for="satist2" title="Kinda bad">2 stars</label>
+          <input type="radio" id="satist1" name="review[satisfactory]" value="1" /><label for="satist1" title="Sucks big time">1 star</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :usage_duration_days, "How long have you been using this drug?", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.select :usage_duration_days, options_for_select([["less than 3 months",90],["3 - 6 months",180],["6 - 9 months",270],["one year",365],["two years",730],["three years or more",1000]]) %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :other_drugs, "Are you consuming any other medication at the same time?", :class=>"control-label" %>
+      <div class="controls">
+        <%= f.text_field :other_drugs ,:placeholder=>"eg painkillers"%>
+      </div>
+    </div>
+    <%= hidden_field_tag :drug_id, @drug.id%>
+
+ <!-------------------------------------------------------------------->
+    <!--<h5 class="static_divider">Tell Us More About Yourself</h5>-->
+
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Step 3: </strong> Tell Us More About Yourself.
+    </div>
+    <!--<h5>Step 3: Provide Personal Information</h5>-->
+
+    <%= fields_for @user ,:html => {:id=>"newuserform"} do |user_detail_form| %>
+
+        <div class="control-group">
+          <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
+          <div class="controls ">
+            <div class="input-append">
+              <%= user_detail_form.text_field :email_address, :placeholder=>"myemail@email"%>
+              <span class="add-on">.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :age, "Age Range", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]),:prompt => "Select Age range",:validate => { :greater_than_or_equal_to => 0} %>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :gender, "Gender", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :gender, options_for_select([["Male","Male"],["Female","Female"]]),:prompt => "Select Gender" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :ethnicity, "Ethnicity", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.select :ethnicity , options_for_select([["Mixed Race","Mixed Race"],
+                                                                         ["Caucasian","Caucasian"],
+                                                                         ["Asian","Asian"],
+                                                                         ["African","African"],
+                                                                         ["Others","Others"]]),:prompt => "Select Ethnicity"%>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :weight, "Weight", :class=>"control-label" %>
+          <div class="controls">
+            <div class="input-append">
+              <%= user_detail_form.text_field :weight %>
+              <span class="add-on">Kg</span>
+            </div>
+            <a href="https://www.google.com.sg/#hl=en&sugexp=les%3B&gs_rn=4&gs_ri=psy-ab&tok=7wt6bUI1aOwN5pqkGgx4jg&cp=23&gs_id=1l&xhr=t&q=pounds+to+kg+conversion&es_nrs=true&pf=p&output=search&sclient=psy-ab&oq=pounds+to+kg+conversion&gs_l=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.&bvm=bv.42965579,d.bmk&fp=dc95da784d3321d&biw=1248&bih=613" target="_blank">Converter</a>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= user_detail_form.label :smoking_status, "Do you smoke?", :class=>"control-label" %>
+          <div class="controls">
+            <%= user_detail_form.radio_button :smoking_status, "no", :checked =>true %>
+            <%= label :smoking_status_no, 'No' %>
+            <%= user_detail_form.radio_button :smoking_status, "yes" %>
+            <%= label :smoking_status_yes, 'Yes' %>
+          </div>
+        </div>
+
+    <% end %>
+
+    <div class="control-group">
+      <div class="controls">
+        <%= f.submit "Submit Review" ,:class=>"btn btn-primary"%> (* :required fields)
+      </div>
+    </div>
+  <% end %>

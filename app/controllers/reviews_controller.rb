@@ -15,9 +15,12 @@ class ReviewsController < ApplicationController
     @for_counts=@drug.reviews.count
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 
+    #################################
     ## for adding form into the page
+    ################################
     @review = @drug.reviews.new
     @user=User.new
+
     #for the tag cloud
     @edited_params=params.except(:amp,:commit,:action, :controller, :page).merge(:drug_name=>@drug.brand_name)
     @urlendcoded=@edited_params.to_query
@@ -134,9 +137,6 @@ class ReviewsController < ApplicationController
     #@review.effectiveness=params[:review][:effectiveness] ? params[:review][:effectiveness]:nil
     #@review.satisfactory=params[:review][:satisfactory] ? params[:review][:satisfactory]:nil
     #@review.ease_of_use=params[:review][:ease_of_use] ? params[:review][:ease_of_use]:nil
-
-
-
     @review.drug_id=params[:drug_id]
 
     #@for_counts=@drug.reviews.count
