@@ -7,72 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap_validation_tweak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/_review_successful.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/_review_unsuccessful.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/create.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/create_success.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/review.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/review.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/update_drug_list.js.erb" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.fnm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.frq" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.nrm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.prx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.tii" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_2.tis" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.fnm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.frq" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.nrm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.prx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.tii" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_3.tis" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5_1.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.fnm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.frq" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.nrm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.prx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.tii" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_6.tis" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_9.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_9.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\segments_5" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\write.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/drugscomparison.iml" afterPath="$PROJECT_DIR$/.idea/drugscomparison.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TRANDOLAPRIL;+VERAPAMIL+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TRANDOLAPRIL;+VERAPAMIL+HYDROCHLORIDE_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/TREXIMET_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/TREXIMET_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VALPROIC+ACID_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VALPROIC+ACID_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient_reviews/VENLAFAXINE+HYDROCHLORIDE_reviews.tsv" afterPath="$PROJECT_DIR$/askapatient_reviews/VENLAFAXINE+HYDROCHLORIDE_reviews.tsv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient1.txt" afterPath="$PROJECT_DIR$/askapatient1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient2.txt" afterPath="$PROJECT_DIR$/askapatient2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askapatient3.txt" afterPath="$PROJECT_DIR$/askapatient3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xa" afterPath="$PROJECT_DIR$/xa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,70 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="static_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="32" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_review_unsuccessful.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/_review_unsuccessful.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="67" selection-start="4962" selection-end="4962" vertical-scroll-proportion="-5.6666665">
-              <folding>
-                <marker date="1374723757525" expanded="true" signature="145:355" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="415:657" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="529:646" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="768:932" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="1164:1425" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="1286:1414" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="1458:2309" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="1579:2298" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="1608:2285" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="2342:3179" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="2459:3168" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="2488:3155" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="3212:4093" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="3338:4082" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="3367:4069" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="4126:4489" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="4265:4478" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="4522:4766" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="4670:4755" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="4996:5148" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="5267:5671" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="5440:5656" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="5479:5639" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="5707:6187" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="5823:6172" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="6223:6508" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="6339:6493" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="6544:8504" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="6666:8489" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="8540:9213" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="8656:9198" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="8695:8816" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="9249:9674" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="9380:9659" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="9722:9862" placeholder="..." />
-                <marker date="1374723757525" expanded="true" signature="9751:9851" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="review.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/review.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="32" selection-start="957" selection-end="957" vertical-scroll-proportion="-2.3461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom.css.scss.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -172,16 +44,16 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="80" selection-end="277" vertical-scroll-proportion="-0.6666667">
+            <state line="110" column="127" selection-start="6139" selection-end="6602" vertical-scroll-proportion="-2.6666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_review_successful.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/_review_successful.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="71" selection-start="323" selection-end="323" vertical-scroll-proportion="0.20158103">
+            <state line="46" column="126" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.5171103">
               <folding />
             </state>
           </provider>
@@ -204,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/update_drug_list.js.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
@@ -217,9 +88,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/review.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_review_unsuccessful.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_review_successful.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -1015,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="121" selection-end="469" vertical-scroll-proportion="0.100790516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/conditions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5469925">
@@ -1082,42 +947,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="67" selection-start="4962" selection-end="4962" vertical-scroll-proportion="-5.6666665">
           <folding>
-            <marker date="1374723757525" expanded="true" signature="145:355" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="415:657" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="529:646" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="768:932" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="1164:1425" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="1286:1414" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="1458:2309" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="1579:2298" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="1608:2285" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="2342:3179" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="2459:3168" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="2488:3155" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="3212:4093" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="3338:4082" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="3367:4069" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="4126:4489" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="4265:4478" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="4522:4766" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="4670:4755" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="4996:5148" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="5267:5671" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="5440:5656" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="5479:5639" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="5707:6187" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="5823:6172" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="6223:6508" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="6339:6493" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="6544:8504" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="6666:8489" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="8540:9213" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="8656:9198" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="8695:8816" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="9249:9674" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="9380:9659" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="9722:9862" placeholder="..." />
-            <marker date="1374723757525" expanded="true" signature="9751:9851" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1374723757525" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1125,13 +990,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/review.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="32" selection-start="957" selection-end="957" vertical-scroll-proportion="-2.3461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="80" selection-end="277" vertical-scroll-proportion="-0.6666667">
           <folding />
         </state>
       </provider>
@@ -1145,7 +1003,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/_review_successful.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="71" selection-start="323" selection-end="323" vertical-scroll-proportion="0.20158103">
+        <state line="6" column="71" selection-start="323" selection-end="323" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="127" selection-start="6139" selection-end="6602" vertical-scroll-proportion="-2.6666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="126" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.5171103">
           <folding />
         </state>
       </provider>

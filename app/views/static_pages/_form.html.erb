@@ -84,13 +84,13 @@
           <%= user_detail_form.label :email_address, "Email Address (to allow other reviewers to contact you)", :class=>"control-label" %>
           <div class="controls ">
             <div class="input-append">
-              <%= user_detail_form.text_field :email_address, :placeholder=>"myemail@email"%>
-              <span class="add-on">.com</span>
+              <%= user_detail_form.text_field :email_address, :placeholder=>"myemail@email.com"%>
+
             </div>
           </div>
         </div>
         <div class="control-group">
-          <%= user_detail_form.label :age, "Age Range", :class=>"control-label" %>
+          <%= user_detail_form.label :age, "Age Range (years)", :class=>"control-label" %>
           <div class="controls">
             <%= user_detail_form.select :age, options_for_select([["3-6","3-6"],["7-12","7-12"],["13-18","13-18"],["19-24","19-24"],["25-34","25-34"],["35-44","35-44"],["45-54","45-54"],["55-64","55-64"],["65-74","65-74"],["75 or over","75 or over"]]),:prompt => "Select Age range",:validate => { :greater_than_or_equal_to => 0} %>
           </div>
