@@ -35,7 +35,7 @@ Drugscomparison::Application.routes.draw do
   end
 
 
-  get "static_pages/home"
+  get 'home', to: "static_pages#home"
   #get "static_pages/review"
   match "static_pages/review", to: "static_pages#review" , via: :get
   get 'static_pages/update_drug_list'

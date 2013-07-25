@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,19 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="127" selection-start="6139" selection-end="6602" vertical-scroll-proportion="-2.6666667">
+            <state line="37" column="32" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="126" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.5171103">
+            <state line="18" column="34" selection-start="734" selection-end="734" vertical-scroll-proportion="0.50570345">
               <folding />
             </state>
           </provider>
@@ -76,12 +76,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/static_pages/update_drug_list.js.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/review.js.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/new.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/create_success.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/create.js.erb" />
@@ -92,6 +90,8 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/_review_successful.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       </list>
     </option>
   </component>
@@ -265,28 +265,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugscomparison" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reviews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -894,23 +872,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2592592">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="104" selection-start="1741" selection-end="1835" vertical-scroll-proportion="0.5946502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="23" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -925,13 +889,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="1" selection-start="3972" selection-end="3972" vertical-scroll-proportion="-5.098039">
           <folding />
         </state>
       </provider>
@@ -1008,16 +965,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="127" selection-start="6139" selection-end="6602" vertical-scroll-proportion="-2.6666667">
+        <state line="46" column="126" selection-start="2391" selection-end="2391" vertical-scroll-proportion="1.4866921">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="126" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.5171103">
+        <state line="110" column="127" selection-start="6139" selection-end="6602" vertical-scroll-proportion="0.27145708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="1" selection-start="3972" selection-end="3972" vertical-scroll-proportion="-5.098039">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="32" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="734" selection-end="734" vertical-scroll-proportion="0.50570345">
           <folding />
         </state>
       </provider>

@@ -15,8 +15,8 @@
 
 
           <ul class="nav">
-            <li class="<%= 'active' if params[:controller] == 'static_pages' %>">
-              <%= link_to 'Home', static_pages_home_path%>
+            <li class="<%= 'active' if params[:controller] == 'static_pages' && params[:action]=='home' %>">
+              <%= link_to 'Home', home_path%>
             </li>
             <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %> dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Browse Drugs <b class="caret"></b></a>
@@ -65,7 +65,7 @@
                   </table>
                 </ul>
             </li>
-            <li class="<%= 'active' if params[:controller] == 'review' %>">
+            <li class="<%= 'active' if params[:controller] == 'static_pages' && params[:action]=='review' %>">
               <%= link_to 'Review A Drug', static_pages_review_path%>
             </li>
           </ul>
