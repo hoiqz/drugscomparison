@@ -12,6 +12,7 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
+    @conditions=@drug.conditions
     @for_counts=@drug.reviews.count
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 

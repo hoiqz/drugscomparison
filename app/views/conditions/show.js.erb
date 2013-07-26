@@ -1,22 +1,26 @@
 <% if params[:button]=="sat-table"%>
 $("#reviews_chart").empty();
-//$("#conditions").hide(300);
+$("#conditions").hide(500);
+$("#subheader_holder").html('<h5 class="static_divider">Table Comparison</h5>');
 $("#reviews_chart").html('<%= escape_javascript render("satisfactory_table") %>');
 $(".footable").footable();
 <% elsif params[:button]=="eff-table"%>
 $("#reviews_chart").empty();
-//$("#conditions").hide(300);
+$("#conditions").hide(500);
+$("#subheader_holder").html('<h5 class="static_divider">Table Comparison</h5>');
 $("#reviews_chart").html('<%= escape_javascript render("effectiveness_table") %>');
 $(".footable").footable();
 <% elsif params[:button]=="eou-table"%>
 $("#reviews_chart").empty();
-//$("#conditions").hide(300);
+$("#conditions").hide(500);
+$("#subheader_holder").html('<h5 class="static_divider">Table Comparison</h5>');
 $("#reviews_chart").html('<%= escape_javascript render("ease_of_use_table") %>');
 $(".footable").footable();
 <% elsif params[:button]=="infographs"%>
 $("#reviews_chart").empty();
-//$("#conditions").hide(300);
-$("#reviews_chart").html('<%= escape_javascript render("infographs") %>');
+$("#conditions").hide(500);
+$("#subheader_holder").html('<h5 class="static_divider">Infograph View</h5>');
+
 <% elsif params[:button]=="overall_link"%>
 $("#reviews_chart").empty();
 $(function () {
@@ -158,8 +162,11 @@ $(function () {
     });
 });
 $('#conditions').html("<%= escape_javascript(render "multi_pie_view_form") %>");
+
 <% elsif params[:button]=="satisfactory_view"%>
 $("#reviews_chart").empty();
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
+$("#conditions").show();
 $(function () {
 
     var chart;
@@ -255,6 +262,8 @@ $(function () {
 $('#conditions').html("<%= escape_javascript(render "satisfactory_view_form") %>");
 <% elsif params[:button]=="effectiveness_view"%>
 $("#reviews_chart").empty();
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
+$("#conditions").show();
 $(function () {
 
     var chart;
@@ -351,6 +360,8 @@ $(function () {
 $('#conditions').html("<%= escape_javascript(render "effectiveness_view_form") %>");
 <% elsif params[:button]=="eou_view"%>
 $("#reviews_chart").empty();
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
+$("#conditions").show();
 $(function () {
 
     var chart;

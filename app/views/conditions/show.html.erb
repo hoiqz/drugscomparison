@@ -29,40 +29,32 @@
         }
     </script>
 <% end %>
+
 <div class=row>
-<div class="widget_container span10">
-   <!-- <span class="miniheader">By Condition</span>-->
-
+<div class=" span9">
  <article class="articlecontent">
-   <h2>
-     <%= @condition.name %>
-   </h2>
-   <!--<h4 class="span 9">Control Panel</h4>-->
-   <div class="static_buttons span9">
+   <h3 class="static_divider"><%= @condition.name.capitalize %></h3>
+   <p><i class="icon-backward"></i> <%= link_to "Back To Condition Index",conditions_path%></p>
+   <div id="subheader_holder">
+     <h5 class="static_divider">Infograph View</h5>
+   </div>
+   <div class="static_buttons span8">
      <%= render "chart_buttons" %>
-
    </div>
 
-  <div id="reviews_chart" class="span9">
+  <div id="reviews_chart" class="span8">
     <%= render "infographs" %>
   </div>
-
-
  </article>
 </div>
 
-
-
-
-
-<div class="span10 widget_container">
-  <span class="miniheader">Infomation pertaining to <%= @condition.name %></span>
+<div class="span9">
   <article class="articlecontent">
-<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <h5 class="static_divider">Infomation pertaining to <%= @condition.name %></h5>
+<div class="tabbable widget_container"> <!-- Only required for left/right tabs -->
   <ul class="nav nav-tabs">
     <li class="active"><a href="#tab1" data-toggle="tab">General Information</a></li>
     <li><a href="#tab2" data-toggle="tab"> Drugs (<%= @number_of_drugs%>)</a></li>
-
   </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="tab1">
@@ -95,3 +87,7 @@
   </article>
 </div>
 </div>
+
+<% content_for :side_widget do  %>
+    <%= render "side_widget_last_viewed" %>
+<% end %>

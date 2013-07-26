@@ -1,8 +1,5 @@
 <% content_for :script do %>
     <script type='text/javascript' xmlns="http://www.w3.org/1999/html">
-        /*!
-         * Create an array of word objects, each representing a word in the cloud
-         */
         var word_array = [
                 <% @tagshash.each_pair do |key,value|%>
                     {text: "<%=key%>", weight: <%= value.to_i%>, link: {href: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>", target: "_blank"}},
@@ -46,29 +43,33 @@
 
 <!-- level 2 nesting -->
 <div class=row>
-<div class="span9 widget_container">
- <!-- <span class="miniheader">By Drug</span> -->
-
+<div class="span9 ">
   <article class="articlecontent">
-   <h1>
-    <%= @drug.brand_name %>
+   <h1 class="static_divider">
+    <%= @drug.brand_name.capitalize %>
   </h1>
     <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
+    <div id="subheader_holder">
+      <h5 class="static_divider">Infograph View</h5>
+    </div>
     <div class="static_buttons span8">
       <%= render "chart_buttons" %>
     </div>
 
+      <div id="word_cloud_chart"></div>
       <div id="reviews_chart" class="span8">
+
         <%= render "infographs" if !params[:button]%>
       </div>
   </article>
 </div>
 
 
-<div class="span9 widget_container">
-  <span class="miniheader">Other information on <%= @drug.brand_name %></span>
+<div class="span9 ">
+
   <article class="articlecontent">
-    <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <h5 class="static_divider">Information On <%= @drug.brand_name.capitalize %></h5>
+    <div class="tabbable widget_container"> <!-- Only required for left/right tabs -->
       <ul class="nav nav-tabs">
         <li  class="active"><a href="#tab1" data-toggle="tab" id="tabcount"> <%=@for_counts%> Reviews</a></li>
         <li><a href="#tab2" data-toggle="tab">General Information</a></li>
@@ -122,6 +123,11 @@
 </div>
 
 </div>
+
+<% content_for :side_widget do  %>
+    <%= render "side_widget_last_viewed" %>
+    <%= render "side_widget_related_conditions" %>
+<% end %>
 
 
 

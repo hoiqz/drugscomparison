@@ -68,38 +68,15 @@
 <%= render "layouts/header" %>
 <div class="container">
   <div class="row">
-    <!--  <div class="span1">
-
-    </div>    Sidebar content-->
     <div class="span9">
-      <!--Body content-->
       <%= yield %>
-
     </div>
     <div class="span3">
-      <article id="conditions" class="span2 widget_container">
-      </article>
-      <article class="span2 widget_container">
-        <ul class="nav nav-list">
-          <!--<li class="nav-header">Commonly rated Drugs</li>-->
-          <span class="label label-info">Last Visited</span>
-          <li class="divider"></li>
-          <% if session[:history].present? %>
-              <% session[:history].each do |url| %>
-                  <li>
-                    <%= last_viewed url%>
-                  </li>
-              <% end %>
-          <% end%>
-        </ul>
-      </article>
+      <%= yield :side_widget %>
     </div>
-
   </div>
-
   <%= render "layouts/footer" %>
 </div>
-
 <%= debug(params) if Rails.env.development? %>
 
 </body>

@@ -1,9 +1,9 @@
 
 
-<div class="span8 widget_container">
-  <span class="miniheader">All Conditions</span>
+<div class="span8 ">
+
   <article class="articlecontent">
-    <h1>Conditions  A-Z</h1>
+    <h1 class="static_divider">Conditions  A-Z List</h1>
     <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
@@ -38,7 +38,7 @@
   </article>
 </div>
 
-<article class="span2 widget_container side_widget">
+<article class="span2  side_widget">
   <!--<h4 class="static_divider">Popular Searches</h4>-->
   <ul class="nav nav-list">
     <section><h5 class="static_divider">Day To Day Health</h5></section>
@@ -67,9 +67,10 @@
 </article>
 
 
-<article class="span2 widget_container side_widget">
-  <section><h4 class="static_divider">Last Visited</h4></section>
+<article class="span2  side_widget">
+
   <ul class="nav nav-list">
+    <section><h4 class="static_divider">Last Visited</h4></section>
     <!--<li class="divider"></li>-->
     <% if session[:history].present? %>
         <% session[:history].each do |url| %>

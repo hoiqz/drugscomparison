@@ -1,0 +1,12 @@
+<article class="span2  side_widget">
+  <section><h5 class="static_divider">Last Visited</h5> </section>
+  <ul>
+    <% if session[:history].present? %>
+        <% session[:history].each do |url| %>
+            <li>
+              <%= last_viewed url%>
+            </li>
+        <% end %>
+    <% end%>
+  </ul>
+</article>

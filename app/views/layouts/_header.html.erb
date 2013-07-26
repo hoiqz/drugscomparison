@@ -21,48 +21,40 @@
             <li class="<%= 'active' if (params[:controller] == 'reviews'||params[:controller] == 'drugs') %> dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Browse Drugs <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%= link_to 'View All Drugs', drugs_path %></li>
+                <li class="menu_sub_header">All Drugs</li>
+                <li><%= link_to 'Drugs A-Z List', drugs_path %></li>
                 <li class="divider"></li>
-                <table>
-                  <thead>
-                  <tr>
-                    <th class="menu_sub_header">Top Picks</th>
-                  </tr>
-                  </thead>
-                  <tbody class="menu_sub_content">
-                      <tr><td><%= link_to "#{@drugs_top_picks[0].brand_name.capitalize}  (Cholesterol)" , drug_reviews_path(@drugs_top_picks[0].id) %></td></tr>
-                       <tr><td><%= link_to "#{@drugs_top_picks[1].brand_name.capitalize}  (High Blood Pressure)" , drug_reviews_path(@drugs_top_picks[1].id) %></td></tr>
-                       <tr><td><%= link_to "#{@drugs_top_picks[2].brand_name.capitalize}  (Thyroid Disorder)" , drug_reviews_path(@drugs_top_picks[2].id) %></td></tr>
-                       <tr><td><%= link_to "#{@drugs_top_picks[3].brand_name.capitalize}  (Depression)" , drug_reviews_path(@drugs_top_picks[3].id) %></td></tr>
-                       <tr><td><%= link_to "#{@drugs_top_picks[4].brand_name.capitalize}  (Type II Diabetes)" , drug_reviews_path(@drugs_top_picks[4].id) %></td></tr>
-
-
-                  </tbody>
-                </table>
+                    <li class="menu_sub_header">Top Picks</li>
+                      <li><%= link_to "#{@drugs_top_picks[0].brand_name.capitalize}  (Cholesterol)" , drug_reviews_path(@drugs_top_picks[0].id) %></li>
+                <li><%= link_to "#{@drugs_top_picks[1].brand_name.capitalize}  (High Blood Pressure)" , drug_reviews_path(@drugs_top_picks[1].id) %></li>
+                <li><%= link_to "#{@drugs_top_picks[2].brand_name.capitalize}  (Thyroid Disorder)" , drug_reviews_path(@drugs_top_picks[2].id) %></li>
+                <li><%= link_to "#{@drugs_top_picks[3].brand_name.capitalize}  (Depression)" , drug_reviews_path(@drugs_top_picks[3].id) %></li>
+                <li><%= link_to "#{@drugs_top_picks[4].brand_name.capitalize}  (Type II Diabetes)" , drug_reviews_path(@drugs_top_picks[4].id) %></li>
               </ul>
 
             </li>
             <li class="dropdown <%= 'active' if params[:controller] == 'conditions' %>">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Browse Conditions <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to 'View All Conditions', conditions_path %></li>
+                  <li class="menu_sub_header">All Conditions</li>
+
+                  <li><%= link_to 'Conditions A-Z List', conditions_path %></li>
                   <li class="divider"></li>
-                  <table>
-                    <thead>
-                    <tr>
-                      <th class="menu_sub_header">Day to Day Health</th>
-                      <th class="menu_sub_header">Common Conditions</th>
-                    </tr>
-                    </thead>
-                    <tbody class="menu_sub_content">
-                    <% @common_condition.zip(@day2day_condition).each do |common,day| %>
-                    <tr>
-                      <td><%= link_to day.name.capitalize, condition_path(day.id) %></td>
-                      <td><%= link_to common.name.capitalize, condition_path(common.id) %></td>
-                    </tr>
-                    <% end %>
-                    </tbody>
-                  </table>
+                  <li class="menu_sub_header">Day to Day Health</li>
+
+                  <% @day2day_condition.each do |day| %>
+                      <li>
+                        <%= link_to day.name, condition_path(day.condition_id) %>
+                      </li>
+                  <% end %>
+                  <li class="divider"></li>
+                  <li class="menu_sub_header">Common Conditions</li>
+
+                  <% @common.each do |common| %>
+                      <li>
+                        <%= link_to common.name, condition_path(common.condition_id) %>
+                      </li>
+                  <% end %>
                 </ul>
             </li>
             <li class="<%= 'active' if params[:controller] == 'static_pages' && params[:action]=='review' %>">

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   def get_menu_list
     @common_condition=Array.new
-    @day2day_condition=Array.new
+    @day2day_condition1=Array.new
     if Rails.env.development?
       common_condition_array=[67, #diarrhea
                               32, #Type 2 Diabetes Mellitus
@@ -26,9 +26,16 @@ class ApplicationController < ActionController::Base
       day_to_day_condition_array=[352,497,835,322,270,349]
       drugs_top_picks_array=[1430,169,487,1286,1489]
     end
-
-    @day2day_condition=Condition.find(day_to_day_condition_array)
-    @common_condition=Condition.find(common_condition_array)
+    @common=[]
+    @day2day_condition=[]
+    Commoncondition.all.each do |condition|
+      @common << condition if condition.category== "Common Health Conditions"
+      @day2day_condition << condition if condition.category== "Day To Day Health"
+    end
+    @largest=@common.size
+    @largest=@day2day_condition.size ? @day2day_condition.size >= @largest : @day2day_condition.size <@largest
+    #@day2day_condition1=Condition.find(day_to_day_condition_array)
+    #@common_condition=Condition.find(common_condition_array)
     @drugs_top_picks=Drug.find(drugs_top_picks_array)
 
   end

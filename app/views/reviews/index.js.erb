@@ -1,16 +1,50 @@
+function jqGetWidth(){
+    var width_value = $(window).width();
+    return width_value;
+};
+var width =$(document).ready(jqGetWidth);
+var width =$(window).resize(jqGetWidth);
 $('#reviews_section').html('<%= escape_javascript render("reviews") %>');
+
 <% if params[:button]=="tag_cloud_link"%>
+    //width=jqGetWidth(); //get the width
     $("#reviews_chart").empty();
-   // $("#conditions").hide(300);
-    $("#reviews_chart").jQCloud(word_array);
+    $("#word_cloud_chart").empty().height(0);
+    $("#subheader_holder").html('<h5 class="static_divider">Word Cloud</h5>');
+    $("#word_cloud_chart").show();
+   console.log(width);
+    if(width <= 480){
+        $("#word_cloud_chart").jQCloud(word_array, {
+            delayedMode: true,width: 300,height: 200
+        });
+    }else if(width >481 && width <=767){
+        $("#word_cloud_chart").jQCloud(word_array, {
+            delayedMode: true,width: 300,height: 200
+        });
+    }else if (width >768 && width <=979) {
+        $("#word_cloud_chart").jQCloud(word_array, {
+            delayedMode: true,width: 770,height: 400
+        });
+    }else{
+        $("#word_cloud_chart").jQCloud(word_array, {
+            delayedMode: true,width: 770,height: 400
+        });
+    }
+
 <%end%>
+
 <% if params[:button]=="infograph"%>
 $("#reviews_chart").empty();
+$("#word_cloud_chart").empty().height(0);
 //$("#conditions").hide(300);
+$("#subheader_holder").html('<h5 class="static_divider">Infograph View</h5>');
 $("#reviews_chart").html('<%= escape_javascript render("infographs") %>');
 <%end%>
+
 <% if params[:button]=="satisfylink"%>
 $("#reviews_chart").empty();
+$("#word_cloud_chart").empty().height(0);
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
 $(function () {
     $("#reviews_chart").empty();
     var chart;
@@ -110,7 +144,8 @@ $('#conditions').html("<%= escape_javascript(render "satisfactory_view_form") %>
 
 <% if params[:button]=="effectlink"%>
 $("#reviews_chart").empty();
-
+$("#word_cloud_chart").empty().height(0);
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
 $(function () {
     $("#reviews_chart").empty();
 
@@ -209,7 +244,8 @@ $('#conditions').html("<%= escape_javascript(render "effectiveness_view_form") %
 
 <% if params[:button]=="eoulink"%>
 $("#reviews_chart").empty();
-
+$("#word_cloud_chart").empty().height(0);
+$("#subheader_holder").html('<h5 class="static_divider">Plot View</h5>');
 $(function () {
     $("#reviews_chart").empty();
     var chart;

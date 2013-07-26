@@ -1,8 +1,9 @@
-<div class="widget_container span8">
+<div class=" span8">
   <!--<div class="box span8 border-shadow">-->
-  <span class="miniheader">Drugs</span>
+  <!--<span class="miniheader">Drugs</span>-->
   <article class="articlecontent">
-    <h1>Drugs A-Z</h1>
+    <section>
+    <h1 class="static_divider">Drugs A-Z List</h1>
     <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
@@ -10,12 +11,13 @@
         <% end %>
       </ul>
     </div>
+    </section>
 
     <section id="alphabet_listing">
       <% if params[:letter].present? %>
-      <h1 class="span8 static_divider"><em><%= params[:letter].capitalize %></em></h1>
+      <h3 class="span8 static_divider"><em><%= params[:letter].capitalize %></em></h3>
           <% else %>
-          <h1 class="span8 static_divider"><em>A</em></h1>
+          <h3 class="span8 static_divider"><em>A</em></h3>
           <% end %>
       <% if @drugs.present? %>
           <div class=" span3">
@@ -40,11 +42,9 @@
 
 
 
-<article class="span2 widget_container side_widget">
+<article class="span2  side_widget">
+
   <ul class="nav nav-list">
-    <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <!--<span class="label label-info">Most Reviewed Drugs</span>-->
-    <!--<li class="divider"></li>-->
     <section> <h5 class="static_divider">Most Reviewed Drugs</h5></section>
     <% @Mostrevieweddrugs.each do |drug| %>
         <li>
@@ -54,12 +54,10 @@
   </ul>
 </article>
 
-<article class="span2 widget_container side_widget">
-  <section><h5 class="static_divider">Popular Drugs</h5></section>
+<article class="span2  side_widget">
+
   <ul class="nav nav-list pre-scrollable">
-    <!--<li class="nav-header">Commonly rated Drugs</li>-->
-    <!--<span class="label label-info">Popular Drugs</span>-->
-    <!--<li class="divider"></li>-->
+    <section><h5 class="static_divider">Popular Drugs</h5></section>
     <% @commondrugs.each do |drug| %>
         <li>
           <%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%>
@@ -68,9 +66,10 @@
   </ul>
 </article>
 
-<article class="span2 widget_container side_widget">
-  <section><h5 class="static_divider">Last Visited</h5> </section>
+<article class="span2  side_widget">
+
   <ul class="nav nav-list">
+    <section><h5 class="static_divider">Last Visited</h5> </section>
     <% if session[:history].present? %>
     <% session[:history].each do |url| %>
         <li>
