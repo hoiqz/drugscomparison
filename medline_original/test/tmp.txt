@@ -1,0 +1,133 @@
+<div id=hgroup>
+<h2>Why get vaccinated?</h2>
+
+<p>Tetanus, diphtheria and pertussis can be very serious diseases.</p>
+<p>
+<strong>TETANUS</strong> (Lockjaw) causes painful muscle spasms and stiffness, usually all over the body. It can lead to tightening of muscles in the head and neck so the victim cannot open his mouth or swallow, or sometimes even breathe. Tetanus kills about 1 out of 5 people who are infected.</p>
+<p>
+<strong>DIPHTHERIA</strong> can cause a thick membrane to cover the back of the throat. It can lead to breathing problems, paralysis, heart failure, and even death.</p>
+<p>
+<strong>PERTUSSIS</strong> (Whooping Cough) causes severe coughing spells which can lead to difficulty breathing, vomiting, and disturbed sleep. It can lead to weight loss, incontinence, rib fractures and passing out from violent coughing. Up to 2 in 100 adolescents and 5 in 100 adults with pertussis are hospitalized or have complications, including pneumonia and death.</p>
+<p>These three diseases are all caused by bacteria. Diphtheria and pertussis are spread from person to person. Tetanus enters the body through cuts, scratches, or wounds. The United States saw as many as 200,000 cases a year of diphtheria and pertussis before vaccines were available, and hundreds of cases of tetanus. Since then, tetanus and diphtheria cases have dropped by about 99% and pertussis cases by about 92%. Children 6 years of age and younger get DTaP vaccine to protect them from these three diseases. But older children, adolescents, and adults need protection too.</p>
+<a name="app2">
+    </a>
+</div>
+<div id=hgroup>
+<h2>What are Tetanus, Diphtheria (Td) or Tetanus, Diphtheria, Pertussis (Tdap) Vaccines?</h2>
+
+<p>Two vaccines are available to protect people 7 years of age and older from these diseases:
+
+</p><ol>
+<li>
+<p>Td vaccine has been used for many years. It protects against tetanus and diphtheria.</p>
+</li>
+<li>
+<p>Tdap vaccine was licensed in 2005. It is the first vaccine for adolescents and adults that protects against pertussis as well as tetanus and diphtheria.</p>
+</li>
+</ol>
+
+<p>A Td booster dose is recommended every 10 years. Tdap is given only once.</p>
+<a name="app3">
+    </a>
+</div>
+<div id=hgroup>
+<h2>Which vaccine, and when?</h2>
+<a href="#skip" class="return">Return to top</a>
+
+<p>
+<strong>Ages 7 through 18 years:</strong>
+</p>
+<p>
+</p><ol>
+<li>
+<p>A dose of Tdap is recommended at age 11 or 12. This dose could be given as early as age 7 for children who missed one or more childhood doses of DTaP.</p>
+</li>
+<li>
+<p>Children and adolescents who did not get a complete series of DTaP shots by age 7 should complete the series using a combination of Td and Tdap.</p>
+</li>
+</ol>
+
+<p>
+<strong>Age 19 years and Older:</strong>
+</p>
+<p>
+</p><ol>
+<li>
+<p>All adults should get a booster dose of Td every 10 years. Adults under 65 who have never gotten Tdap should get a dose of Tdap as their next booster dose. Adults 65 and older may get one booster dose of Tdap.</p>
+</li>
+<li>
+<p>Adults (including women who may become pregnant and adults 65 and older) who expect to have close contact with a baby younger than 12 months of age should get a dose of Tdap to help protect the baby from pertussis.</p>
+</li>
+<li>
+<p>Healthcare professionals who have direct patient contact in hospitals or clinics should get one dose of Tdap.</p>
+</li>
+</ol>
+
+<p>
+<strong>Protection After a Wound:</strong>
+</p>
+<p>A person who gets a severe cut or burn might need a dose of Td or Tdap to prevent tetanus infection. Tdap should be used for anyone who has never had a dose previously. Td should be used if Tdap is not available, or for:
+
+</p><ol>
+<li>
+<p>anybody who has already had a dose of Tdap,</p>
+</li>
+<li>
+<p>children 7 through 9 years of age who completed the childhood DTaP series, or</p>
+</li>
+<li>
+<p>adults 65 and older.</p>
+</li>
+</ol>
+
+<p>
+<strong>Pregnant Women:</strong>
+</p>
+<p>
+</p><ol>
+<li>
+<p>Pregnant women who have never had a dose of Tdap should get one, after the 20th week of gestation and preferably during the 3rd trimester. If they do not get Tdap during their pregnancy they should get a dose as soon as possible after delivery. Pregnant women who have previously received Tdap and need tetanus or diphtheria vaccine while pregnant should get Td.</p>
+</li>
+</ol>
+
+<p>Tdap or Td may be given at the same time as other vaccines.</p>
+<a name="app4">
+    </a>
+</div>
+<div id=hgroup>
+<h2>Who should not get Td or Tdap or should wait?</h2>
+<a href="#skip" class="return">Return to top</a>
+
+<p>
+</p><ol>
+<li>
+<p>Anyone who has had a life-threatening allergic reaction after a dose of any tetanus, diphtheria, or pertussis containing vaccine should not get Td or Tdap.</p>
+</li>
+<li>
+<p>Anyone who has a severe allergy to any component of a vaccine should not get that vaccine. Tell your doctor if the person getting the vaccine has any severe allergies.</p>
+</li>
+<li>
+<p>Anyone who had a coma, or long or multiple seizures within 7 days after a dose of DTP or DTaP should not get Tdap, unless a cause other than the vaccine was found. These people may get Td.</p>
+</li>
+<li>
+<p>Talk to your doctor if the person getting either vaccine has epilepsy or another nervous system problem, had severe swelling or severe pain after a previous dose of DTP, DTaP, DT, Td, or Tdap vaccine, or has had Guillain Barré Syndrome (GBS).</p>
+</li>
+</ol>
+
+<p>Anyone who has a moderate or severe illness on the day the shot is scheduled should usually wait until they recover before getting Tdap or Td vaccine. A person with a mild illness or low fever can usually be vaccinated.</p>
+<a name="app5">
+    </a>
+</div>
+<div id=hgroup>
+<h2>What are the risks from Tdap and Td vaccines?</h2>
+<a href="#skip" class="return">Return to top</a>
+
+<p>With a vaccine, as with any medicine, there is always a small risk of a life-threatening allergic reaction or other serious problem.</p>
+<p>Brief fainting spells and related symptoms (such as jerking movements) can happen after any medical procedure, including vaccination. Sitting or lying down for about 15 minutes after a vaccination can help prevent fainting and injuries caused by falls. Tell your doctor if the patient feels dizzy or light-headed, or has vision changes or ringing in the ears.</p>
+<p>Getting tetanus, diphtheria or pertussis disease would be much more likely to lead to severe problems than getting either Td or Tdap vaccine.</p>
+<p>Problems reported after Td and Tdap vaccines are listed below.</p>
+<p>
+<strong>Mild Problems</strong>
+<em>(Noticeable, but did not interfere with activities):</em>
+</p><ol>
+</ol></div>

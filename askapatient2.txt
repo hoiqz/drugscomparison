@@ -52,20 +52,20 @@
 #VANCOMYCIN HYDROCHLORIDE	50606	http://www.askapatient.com/viewrating.asp?drug=50606&name=VANCOCIN+HCL
 #VARDENAFIL HYDROCHLORIDE	21400	http://www.askapatient.com/viewrating.asp?drug=21400&name=LEVITRA
 #VARENICLINE TARTRATE	21928	http://www.askapatient.com/viewrating.asp?drug=21928&name=CHANTIX
-VENLAFAXINE HYDROCHLORIDE	20151	http://www.askapatient.com/viewrating.asp?drug=20151&name=EFFEXOR
-VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
-VENLAFAXINE HYDROCHLORIDE	20699	http://www.askapatient.com/viewrating.asp?drug=20699&name=EFFEXOR+XR
-VERAPAMIL HYDROCHLORIDE	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
-VERAPAMIL HYDROCHLORIDE	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
-VERAPAMIL HYDROCHLORIDE	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
-VERAPAMIL HYDROCHLORIDE	20552	http://www.askapatient.com/viewrating.asp?drug=20552&name=COVERA%2DHS
-VERAPAMIL HYDROCHLORIDE	19152	http://www.askapatient.com/viewrating.asp?drug=19152&name=ISOPTIN+SR
-VERAPAMIL HYDROCHLORIDE	18817	http://www.askapatient.com/viewrating.asp?drug=18817&name=CALAN
-VILAZODONE HYDROCHLORIDE	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
-WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM
-WELCHOL	21141	http://www.askapatient.com/viewrating.asp?drug=21141&name=WELCHOL
-WELLBUTRIN	18644	http://www.askapatient.com/viewrating.asp?drug=18644&name=WELLBUTRIN
-WELLBUTRIN SR	20358	http://www.askapatient.com/viewrating.asp?drug=20358&name=WELLBUTRIN+SR
-WELLBUTRIN XL	21515	http://www.askapatient.com/viewrating.asp?drug=21515&name=WELLBUTRIN+XL
-WARFARIN SODIUM	9218	http://www.askapatient.com/viewrating.asp?drug=9218&name=COUMADIN
-WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM
+#VENLAFAXINE HYDROCHLORIDE	20151	http://www.askapatient.com/viewrating.asp?drug=20151&name=EFFEXOR
+#VENLAFAXINE HYDROCHLORIDE	22104	http://www.askapatient.com/viewrating.asp?drug=22104&name=VENLAFAXINE+HYDROCHLORIDE
+#VENLAFAXINE HYDROCHLORIDE	20699	http://www.askapatient.com/viewrating.asp?drug=20699&name=EFFEXOR+XR
+#VERAPAMIL HYDROCHLORIDE	20943	http://www.askapatient.com/viewrating.asp?drug=20943&name=VERELAN+PM
+#VERAPAMIL HYDROCHLORIDE	70225	http://www.askapatient.com/viewrating.asp?drug=70225&name=VERAPAMIL+HCL
+#VERAPAMIL HYDROCHLORIDE	19614	http://www.askapatient.com/viewrating.asp?drug=19614&name=VERELAN
+#VERAPAMIL HYDROCHLORIDE	20552	http://www.askapatient.com/viewrating.asp?drug=20552&name=COVERA%2DHS
+#VERAPAMIL HYDROCHLORIDE	19152	http://www.askapatient.com/viewrating.asp?drug=19152&name=ISOPTIN+SR
+#VERAPAMIL HYDROCHLORIDE	18817	http://www.askapatient.com/viewrating.asp?drug=18817&name=CALAN
+#VILAZODONE HYDROCHLORIDE	22567	http://www.askapatient.com/viewrating.asp?drug=22567&name=VIIBRYD
+#WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM
+#WELCHOL	21141	http://www.askapatient.com/viewrating.asp?drug=21141&name=WELCHOL
+#WELLBUTRIN	18644	http://www.askapatient.com/viewrating.asp?drug=18644&name=WELLBUTRIN
+#WELLBUTRIN SR	20358	http://www.askapatient.com/viewrating.asp?drug=20358&name=WELLBUTRIN+SR
+#WELLBUTRIN XL	21515	http://www.askapatient.com/viewrating.asp?drug=21515&name=WELLBUTRIN+XL
+#WARFARIN SODIUM	9218	http://www.askapatient.com/viewrating.asp?drug=9218&name=COUMADIN
+#WARFARIN SODIUM	40145	http://www.askapatient.com/viewrating.asp?drug=40145&name=WARFARIN+SODIUM

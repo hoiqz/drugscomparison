@@ -316,7 +316,50 @@ p{
     text-decoration: none;
   }
 }
+#my-nav{
+    font-size: 12px;
+}
+.my-content{
+    p{
+        margin: 0px;
+    }
+}
+.scrollcontent{
+    height: 300px;
+    overflow: auto;
+}
 
+.subheader{
+    color: #0088CC;
+    span a{
+        font-size: 10px;
+        color: #00008b;
+    }
+}
+
+.bs-docs-sidenav.affix {
+    top: 10px;
+}
+@media (min-width: 1200px) {
+    .bs-docs-sidenav {
+        width: 258px;
+    }
+    .bs-docs-sidenav {
+        width: 130px;
+        margin: 10px 0 0;
+        padding: 0;
+        background-color: #fff;
+        /*-webkit-border-radius: 6px;*/
+        /*-moz-border-radius: 6px;*/
+        /*border-radius: 6px;*/
+        /*-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);*/
+        /*-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);*/
+        /*box-shadow: 0 1px 4px rgba(0,0,0,.065);*/
+    }
+    .affix {
+        position: fixed;
+    }
+}
 /* footer */
 
 footer {
@@ -1031,6 +1074,11 @@ img{
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    .bs-docs-sidenav.affix {
+        position: static;
+        width: auto;
+        top: 0;
+    }
     #avg_sat_infograph{
         h3 {
             font-size: 230%;
@@ -1115,6 +1163,11 @@ img{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .bs-docs-sidenav.affix {
+        position: static;
+        width: auto;
+        top: 0;
+    }
     #avg_sat_infograph{
         h3 {
             font-size: 200%;

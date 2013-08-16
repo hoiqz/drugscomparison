@@ -554,7 +554,7 @@ with the next rake task:fix_other_records"
   end
 
   ##############
-  ## NEW TASK
+  ## task to upload word cloud to the drugs
   ##############
   # usage rake inputdir=../wordfreq project:uploadwordcloud
   desc "task to upload word cloud to the drugs"
@@ -603,7 +603,7 @@ with the next rake task:fix_other_records"
   end
 
   ##############
-  ## NEW TASK
+  ## task to upload the side effects
   ##############
   # usage rake inputfile=../sideeffects/combined_new_format project:uploadsideeffects
   desc "task to upload the side effects"
@@ -757,12 +757,416 @@ with the next rake task:fix_other_records"
     end
   end
 
+  ###############
+  #parse out general information from downloaded files // rake inputfolder=../medline_original/ project:parseGeneralInformation
+  ##############
+  # usage rake project:cleanReviews
+  desc "task to parse out general information from downloaded files"
+  task :parseGeneralInformation =>:environment do
+    require 'open-uri'
+    require 'action_view'
+    require 'iconv'
+    inputfolder=ENV['inputfolder']
+    parsed_file="#{inputfolder}/all.parsed.cleaned"
+    #puts parsed_file
+    PARSE=File.new(parsed_file,"a")
+    PARSE.write "drug\tprescribed\thowtouse\totheruses\tprecaution\tdietary_precaution\tside_effects\tstorage\tother_info\tbrand_names\tother_names\n"
+    files=Dir.glob("#{inputfolder}/*")
+    files.each do|filename|
+      if filename !~ /_reviews.tsv$/
+        puts filename
 
+        next
+      end
+      tmp_file="#{inputfolder}/test/tmp.txt"
+      #tmp_file="#{inputfolder}tmp.txt"
+      #puts tmp_file
+      OUT=File.new(tmp_file,"w")
+      File.open(filename,"r") do |filereader|
+        filereader.each do |line|
+          if (line=~/hgroup\n/)
+            tmpline=line.gsub(/hgroup/,"hgroup>")
+            OUT.write(tmpline)
+          else
+            OUT.write line
+            end
+        end
+        end
+        OUT.close
+      drugname=File.basename(filename).gsub(/_reviews.*/,"").gsub(/^_/,"").gsub(/_$/,"")
+      drugnamesplit=drugname.split(/\+/).join " "
+
+          doc = open(tmp_file) { |f| Hpricot(f) }
+      prescribed=""
+      howtouse=""
+      otheruses=""
+      precaution=""
+      dietary_precaution=""
+      side_effects=""
+      storage=""
+      other_info=""
+      brands=""
+      other_names=""
+
+          (doc/"div#hgroup").each do |h2elements|
+            content=h2elements.search("h2").inner_html
+            #puts "h2 is  #{content}\n"
+            content_p_tag=""
+            case
+              when content.match(/medication prescribed/i)
+                h2elements.search("a").remove # remove ahrefs
+
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                prescribed=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/medicine be used/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                 end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                howtouse=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/Other uses for this medicine/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+            end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                otheruses=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/special precautions/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                  end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                precaution=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/special dietary instructions/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                dietary_precaution=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/side effects/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  temp=Array.new
+                  h2elements.search("li p").each do |ele|
+                    temp.push(ele.inner_html)
+                  end
+                  joinlist=temp.join(", ")
+                  content_p_tag += joinlist
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                side_effects=clean_p_tags_and_newline(content_p_tag)
+
+              when content.match(/storage and disposal/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                storage=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/other information should/i)
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                other_info=clean_p_tags_and_newline(content_p_tag)
+              when content.match(/Brand names/i)
+                next
+              when content.match(/Other names/i)
+                next
+                h2elements.search("a").remove # remove ahrefs
+                if h2elements.search("#hgroup > p").any?
+                  content_p_tag += h2elements.search("#hgroup > p").inner_html
+                end
+                if h2elements.search("#hgroup > h3").any?
+                  content_p_tag += h2elements.search("#hgroup > h3").first.inner_html
+                end
+
+                if h2elements.search("li p").any?
+                  content_p_tag += h2elements.search("li p").inner_html
+                elsif h2elements.search("li").any?
+                  temp=Array.new
+                  h2elements.search("li p").each do |ele|
+                    temp.push(ele.inner_html)
+                  end
+                  joinlist=temp.join(";")
+                  content_p_tag += joinlist
+                  #content_p_tag += h2elements.search("li").inner_html
+                else
+                  #content_p_tag += h2elements.search("p").inner_html
+                end
+                other_names=clean_p_tags_and_newline(content_p_tag)
+              else
+                puts "#{content} didn't match any cases"
+            end
+          end
+
+      # i'm handling brand names and other names seperately. this is due to the  tags not closing properly
+      temp=Array.new
+      contents=""
+       if (doc/"div#brand-name")
+         found=(doc/"div#brand-name")
+         found.search("a").remove
+         found.search("sup").remove
+         if found.search("li").any?
+           found.search("li").each do |ele|
+             if !ele.inner_html.empty?
+               temp.push(ele.inner_html)
+             end
+           end
+         end
+       end
+
+      if (doc/"div#other-name-id")
+        found=(doc/"div#other-name-id")
+        found.search("a").remove
+        found.search("sup").remove
+        if found.search("li").any?
+          found.search("li").each do |ele|
+            if !ele.inner_html.empty?
+              temp.push(ele.inner_html)
+            end
+          end
+        end
+      end
+      temp.push(drugnamesplit)
+      joinlist=temp.join(",")
+      contents += joinlist
+      brands=clean_p_tags_and_newline(contents)
+
+      arr=Array.new
+      arr.push(drugnamesplit,prescribed,howtouse,otheruses,precaution,dietary_precaution,side_effects,storage,other_info,brands,other_names)
+      outstring=arr.join("||")
+      PARSE.write("#{outstring}\n")
+
+      #File.unlink(tmp_file)
+      puts "#{filename} completed\n"
+    end
+    PARSE.close
+  end
+
+
+  ###############
+  #find drugs name and upload general infomation into them usage: rake inputfile=medline_original/all.parsed.cleaned project:loadDrugsGeneralInfo
+  ##############
+
+  desc "task to clean reviews and remove weird encodings inserted by me inside database"
+  task :loadDrugsGeneralInfo =>:environment do
+    inputfile=ENV['inputfile']
+    count=0
+    tmp_file="load_drug_info.log"
+    OUT=File.new tmp_file,"w"
+    File.open(inputfile,"r") do |filereader|
+      filereader.each do |line|
+        next if line =~ /^drug/
+        line.chomp!
+
+        # get each column information
+        line_arr=line.split(/\|\|/)
+        name=line_arr[0].gsub(/Injection/,"Inj")
+        prescription=line_arr[1]
+        howtouse=line_arr[2]
+        otheruses=line_arr[3]
+        precaution=line_arr[4]
+        dietary_precaution=line_arr[5]
+        side_effect=line_arr[6]
+        storage=line_arr[7]
+        other_info=line_arr[8]
+        other_known_names=line_arr[9].split(/,/)
+        other_known_names_stringify=other_known_names.join(',')
+        OUT.write "searching for #{name} other names:#{other_known_names}\n"
+
+        #for each known brand names of medline file, we try to load the general info
+        other_known_names.each do |known_name|
+          knowns=known_name.gsub(/Injection/,"Inj")
+          if knowns.length < 4    # throw out names that are really too short eg 'DM' such that it doesnt match everything
+            puts "throwing out #{knowns} as it is too short\n"
+            OUT.write "throwing out #{knowns} as it is too short\n"
+            next
+          end
+
+          # match medline knwon names to the brandname
+          otherknown_match=Drug.where("brand_name LIKE ?","%#{knowns}%")
+          if otherknown_match.any?
+            count+=1
+            otherknown_match.each do |match|
+              puts "case 1 #{match.brand_name} matched with #{knowns}\n"
+              OUT.write "case 1 #{match.brand_name} matched with #{knowns}\n"
+              clear_old_drug_info match
+              OUT.write "clear older info.. checking: #{match.other_known_names}\n"
+              match.update_attributes(prescription_for: prescription, how_to_use:howtouse, other_uses:otheruses, precaution: precaution,
+                                      dietary_precaution:dietary_precaution, side_effect:side_effect, storage:storage,other_info:other_info, other_known_names: other_known_names_stringify)
+              OUT.write "checking updated value: #{match.other_known_names}\n"
+            end
+          else
+
+          #match  other_names
+          otherknown_match_other_names=Drug.where("other_names LIKE ?","%#{knowns}%")
+          if otherknown_match_other_names.any?
+            count+=1
+            otherknown_match_other_names.each do |match|
+              puts "case 2 #{match.brand_name} matched with #{knowns}\n"
+              OUT.write "case 2 #{match.brand_name} matched with #{knowns}\n"
+              clear_old_drug_info match
+              match.update_attributes(prescription_for: prescription, how_to_use:howtouse, other_uses:otheruses, precaution: precaution,
+                                      dietary_precaution:dietary_precaution, side_effect:side_effect, storage:storage,other_info:other_info, other_known_names: other_known_names_stringify)
+            end
+          end
+          end
+        end
+      end
+    end
+    puts "#{count} matched\n"
+    OUT.write "#{count} matched\n"
+    OUT.close
+  end
+
+  ###############
+  #trying to pull more drugname alias usage: rake inputfile=medline_original/all.parsed.cleaned project:pulldrugalias
+  ##############
+
+  desc "task to pull drug alias from medline text"
+  task :pulldrugalias =>:environment do
+    inputfile=ENV['inputfile']
+    count=0
+    File.open(inputfile,"r") do |filereader|
+      filereader.each do |line|
+        next if line =~ /^drug/
+        line.chomp!
+        if line =~ //
+
+        end
+        #line_arr=line.split(/\|\|/)
+        #name=line_arr[0].gsub(/Injection/,"Inj")
+        #prescription=line_arr[1]
+        #howtouse=line_arr[2]
+        #otheruses=line_arr[3]
+        #precaution=line_arr[4]
+        #dietary_precaution=line_arr[5]
+        #side_effect=line_arr[6]
+        #storage=line_arr[7]
+        #other_info=line_arr[8]
+        #other_known_names=line_arr[9]
+      end
+    end
+  end
 
 
   ########################
   # CLASS METHODS
   ########################
+  def clear_old_drug_info obj
+    obj.update_attributes(prescription_for: "", how_to_use: "",other_uses: "",precaution: "",dietary_precaution: "", side_effect: "", storage: "",other_info: "", other_known_names: "")
+  end
+
+  def clean_p_tags_and_newline(str)
+    tempArray=Array.new
+    str.each_line do |line|
+      line.chomp!
+      if line.blank?
+        next
+      end
+      newstr=line.gsub(/\n/,"").gsub(/<p>/,"").gsub(/<\/p>/,"")
+      tempArray.push(newstr)
+    end
+    cleaned_str=tempArray.join(" ")
+
+    #title=""
+    #inner_content=""
+    #str.each_line do |line|
+    #  #puts "this is a line #{line}\n"
+    #  if line.match(/<li>/)
+    #
+    #    inner_content+=""
+    #  elsif line.match(/<h3>/)
+    #
+    #  else
+    #    next
+    #  end
+    #
+    #  if line.match (/<p>/)
+    #
+    #  end
+    #end
+  end
 
   def escape_characters_in_string(string)
     pattern = /(\'|\"|\*|\/|\-|\\|\#|\@|\$|\%|\&)/
