@@ -989,7 +989,8 @@ with the next rake task:fix_other_records"
          if found.search("li").any?
            found.search("li").each do |ele|
              if !ele.inner_html.empty?
-               temp.push(ele.inner_html)
+               ele_content= to_ascii_iconv (ele.inner_html)
+               temp.push(ele_content)
              end
            end
          end
@@ -1002,7 +1003,8 @@ with the next rake task:fix_other_records"
         if found.search("li").any?
           found.search("li").each do |ele|
             if !ele.inner_html.empty?
-              temp.push(ele.inner_html)
+              ele_content= to_ascii_iconv (ele.inner_html)
+              temp.push(ele_content)
             end
           end
         end
@@ -1133,6 +1135,11 @@ with the next rake task:fix_other_records"
   ########################
   # CLASS METHODS
   ########################
+  def to_ascii_iconv str
+    converter = Iconv.new('ASCII//IGNORE//TRANSLIT', 'UTF-8')
+    converter.iconv(str).unpack('U*').select{ |cp| cp < 127 }.pack('U*')
+  end
+
   def clear_old_drug_info obj
     obj.update_attributes(prescription_for: "", how_to_use: "",other_uses: "",precaution: "",dietary_precaution: "", side_effect: "", storage: "",other_info: "", other_known_names: "")
   end
