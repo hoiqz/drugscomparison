@@ -6,12 +6,12 @@
       <div id="avg_sat_infograph">
         <%= image_tag("average-satisfaction_white.png") %>
         <h3>Overall<br><span class="focus3">Satisfaction</span></h3>
-       <p> <%	 if @infograph.avg_sat_male.nil?  %>
+       <p> <%	 if @infograph.avg_sat_male.blank?  %>
             <span id="maleleft"><span class="focus3">-</span> / 5</span>
             <%	 else %>
             <span id="maleleft"><span class="focus3"><%= @infograph.avg_sat_male.round(2)%></span> / 5</span>
             <%	 end %>
-            <%	 if @infograph.avg_sat_female.nil?  %>
+            <%	 if @infograph.avg_sat_female.blank?  %>
             <span id="femaleright"><span class="focus3">-</span> / 5</span>
             <%	 else %>
             <span id="femaleright"><span class="focus3"><%= @infograph.avg_sat_female.round(2)%></span> / 5</span>

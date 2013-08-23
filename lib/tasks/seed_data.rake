@@ -517,9 +517,12 @@ namespace :project do
     score4=query_record.where("satisfactory=?",4).count
     score5=query_record.where("satisfactory=?",5).count
     sum=Float(query_record.count)
-      weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum if sum != 0.0
-    puts "get satisfactory values: #{score1} #{score2} #{score3} #{score4} #{score5} #{sum} #{weighted_average}"
-
+     if query_record.empty?
+       return ""
+     else
+       weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+       return weighted_average
+     end
   end
 
   def get_top_used_words(drug)
@@ -533,7 +536,6 @@ namespace :project do
       arr=temp.collect { |x| x[0]}
       string  =arr.join(",")
     end
-
   end
 
   def format2hash(string)
