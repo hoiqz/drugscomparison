@@ -421,24 +421,39 @@ namespace :project do
     count_age_group1=get_user_age_group(drug,">55")
     count_age_group2=get_user_age_group(drug,"<18")
     count_age_group3=total_reviewer_for_this - count_age_group1 - count_age_group2
-    att_hash[:age_more_50]=(count_age_group1/total_reviewer_for_this) *100
-    att_hash[:age_less_18]= (count_age_group2/total_reviewer_for_this) *100
-    att_hash[:age_btw_18_50]= (count_age_group3/total_reviewer_for_this) *100
-
-    att_hash[:no_of_males] =(total_reviewers(drug,"Male") /total_reviewer_for_this)*100
-    att_hash[:no_of_females]=(total_reviewers(drug,"Female")/total_reviewer_for_this)*100
+    if (count_age_group1 == -1.0 || count_age_group2 == -1.0)
+      att_hash[:age_more_50]= -1.0
+      att_hash[:age_less_18]= -1.0
+      att_hash[:age_btw_18_50]= -1.0
+    else
+      att_hash[:age_more_50]=(count_age_group1/total_reviewer_for_this) *100
+      att_hash[:age_less_18]= (count_age_group2/total_reviewer_for_this) *100
+      att_hash[:age_btw_18_50]= (count_age_group3/total_reviewer_for_this) *100
+    end
+    if(total_reviewer_for_this == 0.0)
+      att_hash[:no_of_males] = -1.0
+      att_hash[:no_of_females]= -1.0
+    else
+      att_hash[:no_of_males] =(total_reviewers(drug,"Male") /total_reviewer_for_this)*100
+      att_hash[:no_of_females]=(total_reviewers(drug,"Female")/total_reviewer_for_this)*100
+    end
 
     total_reviews_for_this= total_reviews(drug).to_f
-    eff_over_3=statistic_get_more_or_equal(drug,"effectiveness",3)
-    eff_less_3=statistic_get_less(drug,"effectiveness",3)
-    att_hash[:effective_over_3]=(eff_over_3/ total_reviews_for_this)*10
-    att_hash[:effective_less_3]  =(eff_less_3/ total_reviews_for_this) *10
-
-    eou_over_3=statistic_get_more_or_equal(drug,"ease_of_use",3)
-    eou_less_3=statistic_get_less(drug,"ease_of_use",3)
-    att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
-    att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
-
+    if (total_reviews_for_this == 0.0)
+      att_hash[:effective_over_3]= -1.0
+      att_hash[:effective_less_3]=  -1.0
+      att_hash[:eou_over_3] = -1.0
+      att_hash[:eou_less_3]= -1.0
+    else
+      eff_over_3=statistic_get_more_or_equal(drug,"effectiveness",3)
+      eff_less_3=statistic_get_less(drug,"effectiveness",3)
+      att_hash[:effective_over_3]=(eff_over_3/ total_reviews_for_this)*10
+      att_hash[:effective_less_3]  =(eff_less_3/ total_reviews_for_this) *10
+      eou_over_3=statistic_get_more_or_equal(drug,"ease_of_use",3)
+      eou_less_3=statistic_get_less(drug,"ease_of_use",3)
+      att_hash[:eou_over_3] =(eou_over_3/ total_reviews_for_this) *10
+      att_hash[:eou_less_3]=(eou_less_3/ total_reviews_for_this) *10
+    end
     ValidateThenPrintHash(att_hash)
     return att_hash
   end
@@ -446,12 +461,12 @@ namespace :project do
   def ValidateThenPrintHash(myhash)
   myhash.each_pair do |key,value|
     if key=="brand_name" ||  key == "top_used_words"
-      puts "#{key}  =>  #{value}\n"
+      #puts "#{key}  =>  #{value}\n"
     else
       if value.nan?
         myhash[key]=999.0
       end
-      puts "#{key}  =>  #{value}\n"
+      #puts "#{key}  =>  #{value}\n"
     end
   end
   end
@@ -477,7 +492,6 @@ namespace :project do
     drugid=Drug.find_by_brand_name(drug).id
 
     if gender.empty?
-
       user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid}).count
     else
       if gender.shift == 'Male'
@@ -504,7 +518,12 @@ namespace :project do
       count=count+user_record.where("age=?","65-74").count
       count=count+user_record.where("age=?","75 or over").count
     end
+    if user_record.empty?
+      return -1.0
+    else
     return count
+    end
+
   end
 
   def get_satisfactory(drug,gender)
@@ -518,7 +537,7 @@ namespace :project do
     score5=query_record.where("satisfactory=?",5).count
     sum=Float(query_record.count)
      if query_record.empty?
-       return ""
+       return -1.0
      else
        weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
        return weighted_average

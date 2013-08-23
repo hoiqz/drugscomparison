@@ -104,11 +104,14 @@
         <div class="control-group">
           <%= user_detail_form.label :ethnicity, "Ethnicity", :class=>"control-label" %>
           <div class="controls">
-            <%= user_detail_form.select :ethnicity , options_for_select([["Mixed Race","Mixed Race"],
-                                                                         ["Caucasian","Caucasian"],
-                                                                         ["Asian","Asian"],
-                                                                         ["African","African"],
-                                                                         ["Others","Others"]]),:prompt => "Select Ethnicity"%>
+            <%= user_detail_form.select :ethnicity , options_for_select(
+                    [       ["African American / Black","African American / Black"],
+                            ["East Asian (Chinese, Japanese, Korean, etc)","East Asian (Chinese, Japanese, Korean, etc)"],
+                            ["Hispanic / Latino ","Hispanic / Latino"],
+                            ["Indian","Indian"],
+                            ["White (European)","White (European)"],
+                            ["White (Middle Eastern)","White (Middle Eastern)"],
+                            ["Others","Others"]]),:prompt => "Select Ethnicity"%>
           </div>
         </div>
         <div class="control-group">
