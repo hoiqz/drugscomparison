@@ -285,18 +285,11 @@ namespace :project do
   task :initDruginfographs =>:environment do
     drugs=Drug.all
     drugs.map do |drug|
-           if (drug.reviews.counts != 0)
+      if (drug.reviews.count != 0)
         attributehash=get_infograph_attributes(drug.brand_name)
-        druginfograph = Druginfograph.new(attributehash)
-        if druginfograph.save
-          puts "#{drug.id} saved"
-          next
-        else
-          druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
-          druginfograph.update_attributes(attributehash)
-          puts "#{drug.id} updated"
-        end
+
       else
+        att_hash={}
         att_hash[:brand_name]=drug
         att_hash[:avg_sat_male]=-1.0
         att_hash[:avg_sat_female]=-1.0
@@ -310,6 +303,16 @@ namespace :project do
         att_hash[:age_btw_18_50]= -1.0
         att_hash[:no_of_males] = -1.0
         att_hash[:no_of_females]= -1.0
+        attributehash=att_hash
+      end
+      druginfograph = Druginfograph.new(attributehash)
+      if druginfograph.save
+        puts "#{drug.id} saved"
+        next
+      else
+        druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
+        druginfograph.update_attributes(attributehash)
+        puts "#{drug.id} updated"
       end
     end
   end
@@ -325,17 +328,35 @@ namespace :project do
          puts "No such drug: #{drugname} found. Are you sure you typed it correctly?"
          exit
        end
+    if (drug.reviews.count != 0)
       attributehash=get_infograph_attributes(drug.brand_name)
-      druginfograph = Druginfograph.new(attributehash)
-      if druginfograph.save
-        puts "#{druginfograph} saved"
-        next
-      else
-        druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
-        druginfograph.update_attributes(attributehash)
-        puts "#{druginfograph} updated"
-      end
 
+    else
+      att_hash={}
+      att_hash[:brand_name]=drug
+      att_hash[:avg_sat_male]=-1.0
+      att_hash[:avg_sat_female]=-1.0
+      att_hash[:effective_over_3]= -1.0
+      att_hash[:effective_less_3]=  -1.0
+      att_hash[:eou_over_3] = -1.0
+      att_hash[:eou_less_3]= -1.0
+      att_hash[:top_used_words]= ""
+      att_hash[:age_more_50]= -1.0
+      att_hash[:age_less_18]= -1.0
+      att_hash[:age_btw_18_50]= -1.0
+      att_hash[:no_of_males] = -1.0
+      att_hash[:no_of_females]= -1.0
+      attributehash=att_hash
+    end
+    druginfograph = Druginfograph.new(attributehash)
+    if druginfograph.save
+      puts "#{drug.id} saved"
+      next
+    else
+      druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
+      druginfograph.update_attributes(attributehash)
+      puts "#{drug.id} updated"
+    end
   end
 
 ##############
