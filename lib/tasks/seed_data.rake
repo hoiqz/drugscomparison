@@ -285,21 +285,31 @@ namespace :project do
   task :initDruginfographs =>:environment do
     drugs=Drug.all
     drugs.map do |drug|
-      #if drug.id < 437
-      #  puts "skipping drug: #{drug.id}"
-      #    next
-      #end
-      if !(drug.reviews.empty?)
-      attributehash=get_infograph_attributes(drug.brand_name)
-      druginfograph = Druginfograph.new(attributehash)
-      if druginfograph.save
-        puts "#{drug.id} saved"
-        next
+           if (drug.reviews.counts != 0)
+        attributehash=get_infograph_attributes(drug.brand_name)
+        druginfograph = Druginfograph.new(attributehash)
+        if druginfograph.save
+          puts "#{drug.id} saved"
+          next
+        else
+          druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
+          druginfograph.update_attributes(attributehash)
+          puts "#{drug.id} updated"
+        end
       else
-        druginfograph = Druginfograph.find_by_brand_name(drug.brand_name)
-        druginfograph.update_attributes(attributehash)
-        puts "#{drug.id} updated"
-      end
+        att_hash[:brand_name]=drug
+        att_hash[:avg_sat_male]=-1.0
+        att_hash[:avg_sat_female]=-1.0
+        att_hash[:effective_over_3]= -1.0
+        att_hash[:effective_less_3]=  -1.0
+        att_hash[:eou_over_3] = -1.0
+        att_hash[:eou_less_3]= -1.0
+        att_hash[:top_used_words]= ""
+        att_hash[:age_more_50]= -1.0
+        att_hash[:age_less_18]= -1.0
+        att_hash[:age_btw_18_50]= -1.0
+        att_hash[:no_of_males] = -1.0
+        att_hash[:no_of_females]= -1.0
       end
     end
   end
@@ -409,6 +419,7 @@ namespace :project do
     else
     end
   end
+
 
   def get_infograph_attributes(drug) #drug is the brand_name not drug id
     att_hash={}

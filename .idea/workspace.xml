@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
@@ -58,7 +54,7 @@
       <file leaf-file-name="seed_data.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="469" column="10" selection-start="18179" selection-end="18179" vertical-scroll-proportion="-0.49122807">
+            <state line="287" column="5" selection-start="11073" selection-end="11073" vertical-scroll-proportion="0.11929824">
               <folding />
             </state>
           </provider>
@@ -86,7 +82,9 @@
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="114" column="16" selection-start="6736" selection-end="6736" vertical-scroll-proportion="-20.26923">
-              <folding />
+              <folding>
+                <marker date="1377238073035" expanded="true" signature="6098:6719" placeholder="&lt;%=...%&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -923,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="26" selection-start="3156" selection-end="3156" vertical-scroll-proportion="-0.7894737">
@@ -961,7 +952,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="16" selection-start="6736" selection-end="6736" vertical-scroll-proportion="-20.26923">
-          <folding />
+          <folding>
+            <marker date="1377238073035" expanded="true" signature="6098:6719" placeholder="&lt;%=...%&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -979,9 +972,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_chart_buttons.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="469" column="10" selection-start="18179" selection-end="18179" vertical-scroll-proportion="-0.49122807">
+        <state line="287" column="5" selection-start="11073" selection-end="11073" vertical-scroll-proportion="0.11929824">
           <folding />
         </state>
       </provider>
