@@ -420,7 +420,7 @@ with the next rake task:fix_other_records"
   # usage rake drugid=id project:initSingleDruginfographs
   desc "task to initialize Druginfographs for A SPECIFIC drug in database"
   task :initSingleDruginfographs =>:environment do
-    drugnid=ENV['drugid']
+    drugid=ENV['drugid']
        unless drug=Drug.find(drugid)
          puts "No such drugid: #{drugid} found. Are you sure you typed it correctly?"
          exit
@@ -676,7 +676,7 @@ with the next rake task:fix_other_records"
   end
 
   # self declared methods to get the values
-  def get_infograph_attributes(condition)   #condition relation object
+  def get_condition_infograph_attributes(condition)   #condition relation object
     att_hash={}
     att_hash[:condition_id]=condition.id
     att_hash[:most_reviewed]=get_most_reviewed_drug(condition)
