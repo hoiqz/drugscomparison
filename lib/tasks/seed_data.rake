@@ -286,11 +286,11 @@ namespace :project do
     drugs=Drug.all
     drugs.map do |drug|
       if (drug.reviews.count != 0)
-        attributehash=get_infograph_attributes(drug.brand_name)
+        attributehash=get_infograph_attributes(drug)
 
       else
         att_hash={}
-        att_hash[:brand_name]=drug
+        att_hash[:brand_name]=drug.brand_name
         att_hash[:avg_sat_male]=-1.0
         att_hash[:avg_sat_female]=-1.0
         att_hash[:effective_over_3]= -1.0
@@ -322,20 +322,20 @@ namespace :project do
   ##############
   ## NEW TASK
   ##############
-  # usage rake drug=infed project:initSingleDruginfographs
+  # usage rake drugid=id project:initSingleDruginfographs
   desc "task to initialize Druginfographs for A SPECIFIC drug in database"
   task :initSingleDruginfographs =>:environment do
-    drugname=ENV['drug']
-       unless drug=Drug.find_by_brand_name(drugname)
-         puts "No such drug: #{drugname} found. Are you sure you typed it correctly?"
+    drugnid=ENV['drugid']
+       unless drug=Drug.find(drugid)
+         puts "No such drugid: #{drugid} found. Are you sure you typed it correctly?"
          exit
        end
     if (drug.reviews.count != 0)
-      attributehash=get_infograph_attributes(drug.brand_name)
+      attributehash=get_infograph_attributes(drug)
 
     else
       att_hash={}
-      att_hash[:brand_name]=drug
+      att_hash[:brand_name]=drug.brand_name
       att_hash[:avg_sat_male]=-1.0
       att_hash[:avg_sat_female]=-1.0
       att_hash[:effective_over_3]= -1.0
@@ -353,6 +353,7 @@ namespace :project do
     end
     druginfograph = Druginfograph.new(attributehash)
     if druginfograph.save
+      puts "updating #{drug.brand_name}with :#{attributehash}"
       puts "#{drug.id} saved"
       next
     else
@@ -446,9 +447,9 @@ namespace :project do
   end
 
 
-  def get_infograph_attributes(drug) #drug is the brand_name not drug id
+  def get_infograph_attributes(drug) #drug is the drug object
     att_hash={}
-    att_hash[:brand_name]=drug
+    att_hash[:brand_name]=drug.brand_name
     att_hash[:avg_sat_male]=get_satisfactory(drug,"Male")
     att_hash[:avg_sat_female]=get_satisfactory(drug,"Female")
     att_hash[:top_used_words]=get_top_used_words(drug)
@@ -493,22 +494,22 @@ namespace :project do
 
 
   def total_reviews(drug)
-    mydrugid=Drug.find_by_brand_name(drug).id
+    mydrugid=drug.id
     query_record=Review.joins(:drug,:user).where("drug_id=?",mydrugid).count
   end
 
   def statistic_get_more_or_equal(drug,type,score)
-    mydrugid=Drug.find_by_brand_name(drug).id
+    mydrugid=drug.id
     query_record=Review.joins(:drug,:user).where("drug_id=? AND #{type} >= ?",mydrugid,score).count
   end
 
   def statistic_get_less(drug,type,score)
-    mydrugid=Drug.find_by_brand_name(drug).id
+    mydrugid=drug.id
     query_record=Review.joins(:drug,:user).where("drug_id=? AND #{type} < ?",mydrugid,score).count
   end
 
   def total_reviewers(drug,*gender)
-    drugid=Drug.find_by_brand_name(drug).id
+    drugid=drug.id
 
     if gender.empty?
       user_record_count=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid}).count
@@ -524,7 +525,7 @@ namespace :project do
   end
 
   def get_user_age_group(drug,age_range)
-    drugid=Drug.find_by_brand_name(drug).id
+    drugid=drug.id
     user_record=User.joins(:reviews=>:drug).where(:reviews=>{:drug_id=>drugid})
     count=0
     if age_range == "<18"
@@ -542,11 +543,10 @@ namespace :project do
     else
     return count
     end
-
   end
 
   def get_satisfactory(drug,gender)
-    mydrugid=Drug.find_by_brand_name(drug).id
+    mydrugid=drug.id
     query_record=Review.joins(:drug,:user).where(:drug_id=>mydrugid).where(:users=>{:gender=>gender})
 
     score1=query_record.where("satisfactory=?",1).count
@@ -559,7 +559,7 @@ namespace :project do
   end
 
   def get_top_used_words(drug)
-    @tags=Tag.find_by_brand_name(drug)
+    @tags=Tag.find_by_brand_name(drug.brand_name)
     if @tags.nil?
       string=""
     else
