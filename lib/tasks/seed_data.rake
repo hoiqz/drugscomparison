@@ -276,6 +276,101 @@ namespace :project do
     }
   end
 
+  #########################################
+  #rake project:rename_and_getrepeats
+  #########################################
+  desc "get the list of drugs are not unique after removing the suffix. generates a tofix file consisting of all the duplicates to use
+with the next rake task:fix_other_records"
+  task :rename_and_getrepeats =>:environment do
+    h=Hash.new
+    OUT=File.new("tofix","w+")
+    Drug.all.each do |drug|
+      edited_drug=drug.brand_name.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+
+      if h.has_key?(edited_drug)
+        h[edited_drug]=h[edited_drug]+";"+drug.brand_name
+        puts "#{edited_drug} already exist. original name was #{h[edited_drug]}"
+        OUT.write(h[edited_drug]+"\n")
+      else
+        h[edited_drug]=drug.brand_name
+      end
+      drug.update_attributes(:brand_name => edited_drug)
+    end
+    puts "#{Drug.all.count} records reduced to #{h.size}"
+  end
+
+
+  #########################################
+  #rake in=tofix project:fix_other_records
+  #########################################
+  desc "lots of steps to rename the drugs and fix the others tables."
+  task :fix_other_records =>:environment do
+    input=ENV['in']
+    toupdate=Array.new
+    File.open(input,"r") do |filereader|
+      filereader.each do |line|
+        next if line=~/^#/
+        drugs=Array.new
+        drugs=line.split(";")
+        # the first drug is always the one that we want to retain. So we pop it and store as retain
+        retain=drugs.pop.chomp
+        newname=retain.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+        #rename the new drug we want to keep and push it into toupdate array
+        toupdate.push newname
+        retain_drug=Drug.where("other_names LIKE ?","%#{retain}%").first
+        #drugs array now contains all the drugs from tofix file that are to be destroyed / merged into another record
+        drugs.each do |drug|
+          puts "working on #{drug} now"
+          # change the reviews drugid to the merged drug id
+          oldrecord=Drug.where("other_names LIKE ?","%#{drug}%").first
+          found=oldrecord.reviews
+          unless (found.nil?)
+            found.each do |rev|
+              rev.update_attributes(:drug_id=>retain_drug.id)
+              #destroy the drug. conditions will get destroyed too.
+              #oldrecord.destroy
+            end
+          end
+          # remove the druginfograph entry
+          Druginfograph.find_by_brand_name(drug).destroy       if Druginfograph.find_by_brand_name(drug)
+
+        end
+        #update the other_names to include both
+        update_alias=line
+        #update the review counts
+        retain_drug.update_attributes(:other_names=>update_alias,:reviews_count=>retain_drug.reviews.count)
+
+      end
+    end
+    puts toupdate
+    toupdate.each do |entry|
+      Drug.find_all_by_brand_name(entry).each do |repeats|
+        #we  have shifted the reviews to the retain drugs. so duplicate drugs shld have >1 reviews
+        if repeats.reviews.count < 1 && repeats.other_names !~ /;/
+          puts "entries to be deleted : #{repeats.other_names} #{repeats.id}"
+          repeats.destroy
+        else
+          puts "Not deleted: #{repeats.other_names} #{repeats.id}"
+        end
+      end
+    end
+
+    #update the name on Druginforgraphs
+    Druginfograph.all.each do |drug|
+      edited_drug=drug.brand_name.gsub(/\s(Oral|IV|IM|Top|Inj|SubQ|Vagl|Opht|Impl|Nasl|Misc|Rect)$/,"")
+      drug.update_attributes(:brand_name=>edited_drug)
+    end
+    #after that run initdruginfographs for those
+    toupdate.each do |drug|
+      if Druginfograph.find_by_brand_name(drug)
+        attributehash=get_infograph_attributes(drug)
+        druginfograph = Druginfograph.find_by_brand_name(drug)
+        druginfograph.update_attributes(attributehash)
+        puts "#{druginfograph.brand_name} updated"
+      end
+    end
+
+  end
 
   ##############
   ## NEW TASK
