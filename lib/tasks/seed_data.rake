@@ -650,7 +650,12 @@ with the next rake task:fix_other_records"
     score4=query_record.where("satisfactory=?",4).count
     score5=query_record.where("satisfactory=?",5).count
     sum=Float(query_record.count)
-       weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+    if sum <= 0
+      weighted_average=-1.0
+    else
+      weighted_average=((1*score1)+(2*score2)+(3*score3)+(4*score4)+(5*score5))/sum
+    end
+
   end
 
   def get_top_used_words(drug)

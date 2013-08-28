@@ -92,12 +92,14 @@
       <div class="span6 my-content">
         <section >
           <h4 id="othernames"class="subheader">Commonly Known Names <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+          <% if (! @drug.other_known_names.empty?) %>
           <ul>
             <% arr= listdrugnames @drug.other_known_names %>
             <% arr.each do |item|%>
                 <li><%=  item%></li>
             <%end%>
           </ul>
+              <% end %>
         </section>
         <section >
           <h4 id="general" class="subheader">General Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
