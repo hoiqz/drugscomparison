@@ -8,10 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reviews/index.html.erb" afterPath="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seed_data.rake" afterPath="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" afterPath="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
     </list>
     <ignored path="drugscomparison.iws" />
@@ -48,7 +45,7 @@
       <file leaf-file-name="seedwebmdtable.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1023" column="76" selection-start="39580" selection-end="39580" vertical-scroll-proportion="-7.6">
+            <state line="995" column="53" selection-start="38818" selection-end="38818" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,16 +54,7 @@
       <file leaf-file-name="seed_data.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="630" column="103" selection-start="24249" selection-end="24249" vertical-scroll-proportion="-1.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_infographs.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="683" selection-end="683" vertical-scroll-proportion="-8.5">
+            <state line="377" column="41" selection-start="14764" selection-end="14795" vertical-scroll-proportion="-81.64">
               <folding />
             </state>
           </provider>
@@ -84,7 +72,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="20" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.4516129">
+            <state line="94" column="42" selection-start="3673" selection-end="3690" vertical-scroll-proportion="0.4516129">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reviews_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="65" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,10 +116,10 @@
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_form.html.erb" />
-        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
         <option value="$PROJECT_DIR$/lib/tasks/seed_data.rake" />
         <option value="$PROJECT_DIR$/app/views/reviews/_infographs.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/index.html.erb" />
+        <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
       </list>
     </option>
   </component>
@@ -326,7 +323,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,7 +740,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1256" height="776" extended-state="6" />
+    <frame x="-4" y="-4" width="1256" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -820,13 +817,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -897,23 +887,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="683" selection-end="683" vertical-scroll-proportion="0.3797251">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="65" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1023" column="76" selection-start="39580" selection-end="39580" vertical-scroll-proportion="-7.6">
+        <state line="995" column="53" selection-start="38818" selection-end="38818" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/seed_data.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="630" column="103" selection-start="24249" selection-end="24249" vertical-scroll-proportion="-1.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reviews/_infographs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="683" selection-end="683" vertical-scroll-proportion="-8.5">
+        <state line="377" column="41" selection-start="14764" selection-end="14795" vertical-scroll-proportion="-81.64">
           <folding />
         </state>
       </provider>
@@ -927,7 +924,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.4516129">
+        <state line="94" column="42" selection-start="3673" selection-end="3690" vertical-scroll-proportion="0.4516129">
           <folding />
         </state>
       </provider>

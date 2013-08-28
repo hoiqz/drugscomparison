@@ -985,7 +985,7 @@ namespace :project do
     OUT.close
   end
 
-  ###############
+    ###############
   #trying to pull more drugname alias usage: rake inputfile=medline_original/all.parsed.cleaned project:pulldrugalias
   ##############
 
@@ -1000,19 +1000,35 @@ namespace :project do
         if line =~ //
 
         end
-        #line_arr=line.split(/\|\|/)
-        #name=line_arr[0].gsub(/Injection/,"Inj")
-        #prescription=line_arr[1]
-        #howtouse=line_arr[2]
-        #otheruses=line_arr[3]
-        #precaution=line_arr[4]
-        #dietary_precaution=line_arr[5]
-        #side_effect=line_arr[6]
-        #storage=line_arr[7]
-        #other_info=line_arr[8]
-        #other_known_names=line_arr[9]
+
       end
     end
+  end
+
+  ###############
+  #new task  rake project:fillDruginfoWithEmptyString
+  ##############
+
+  desc "fill drug info other know names with its own name"
+  task :fillDruginfoWithEmptyString =>:environment do
+    Drug.all.each do |drug|
+        if drug.other_known_names
+          puts "other know names : #{drug.other_known_names}\n"
+          if drug.other_known_names !~ /#{drug.brand_name}/
+            puts "no brand name in other known names\n"
+            arr= drug.other_known_names.split(/,/)
+            arr.push drug.brand_name
+            other_known=arr.join(',')
+            drug.other_known_names=other_known
+            drug.save!
+            puts "known names added : #{drug.other_known_names}\n"
+          end
+          #puts "other known names is not declared!"
+          #drug.other_known_names=""
+          #drug.save!
+        end
+    end
+
   end
 
 
