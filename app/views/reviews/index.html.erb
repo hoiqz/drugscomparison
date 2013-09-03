@@ -2,7 +2,7 @@
     <script type='text/javascript' xmlns="http://www.w3.org/1999/html">
         var word_array = [
                 <% @tagshash.each_pair do |key,value|%>
-                    {text: "<%=key%>", weight: <%= value.to_i%>, link: {href: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>", target: "_blank"}},
+                    {text: "<%=key%>", weight: <%= (value.to_i)*2%>, link: {href: "<%= DOMAIN_NAME%>/searches/<%= @drug.id%>/non_form_search?keyword=<%=u key%>&<%= @urlendcoded %>", target: "_blank"}},
                 <% end%>
         ];
 

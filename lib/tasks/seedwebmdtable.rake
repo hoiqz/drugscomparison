@@ -1013,19 +1013,21 @@ namespace :project do
   task :fillDruginfoWithEmptyString =>:environment do
     Drug.all.each do |drug|
         if drug.other_known_names
-          puts "other know names : #{drug.other_known_names}\n"
+          puts "other known names : #{drug.other_known_names}\n"
           if drug.other_known_names !~ /#{drug.brand_name}/
             puts "no brand name in other known names\n"
             arr= drug.other_known_names.split(/,/)
             arr.push drug.brand_name
             other_known=arr.join(',')
-            drug.other_known_names=other_known
-            drug.save!
+            #drug.other_known_names=other_known
+            #drug.save!
+            drug.update_attribute(:other_known_names,other_known)
             puts "known names added : #{drug.other_known_names}\n"
           end
-          #puts "other known names is not declared!"
-          #drug.other_known_names=""
-          #drug.save!
+        elsif drug.other_known_names.nil?
+          drug.update_attribute(:other_known_names,drug.brand_name)
+          puts "empty names added : #{drug.other_known_names}\n"
+        else
         end
     end
 
