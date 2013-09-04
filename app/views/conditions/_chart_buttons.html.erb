@@ -2,7 +2,7 @@
 <%= link_to 'Infographs', condition_path(@condition.id,:button=>"infographs"), :id=>'con_infographs', remote: true, :class =>"btn btn-success button_loading", "data-trigger"=>"hover","data-content"=> "We generated some infographs for #{@condition.name} that might interest you!", "data-original-title"=>"Infographics","data-placement"=>"bottom" %>
 
 <div class="btn-group">
-  <a id="satbtngroup" class="btn dropdown-toggle btn-success" data-toggle="dropdown" href="#">
+  <a id="satbtngroup" class="btn dropdown-toggle btn-success" data-toggle="dropdown" href="#" data-trigger="hover" data-content="View / rank statistic about drugs related to this condition!" data-original-title="Statistics" data-placement="bottom">
     Satisfaction
     <span class="caret"></span>
   </a>

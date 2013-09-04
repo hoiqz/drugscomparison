@@ -1,18 +1,4 @@
-<% content_for :script do %>
-    <script type='text/javascript' xmlns="http://www.w3.org/1999/html">
 
-//        $(function () {
-//            $("#feature1").tooltip();
-//            $("#feature2").tooltip();
-//            $("#feature3").tooltip();
-//        });
-    </script>
-<% end %>
-
-
-<!--<div id="logo" class="span12">-->
- <!--<%= image_tag("logosample4.png") %>-->
-<!--</div>-->
 
   <!--<div class="span12">-->
 
@@ -62,30 +48,41 @@
 <article class="span12">
     <section><h3 class="static_divider">Features</h3></section>
     <section class="row-fluid">
-      <div class="feature_divs span5">
+
+        <div class="feature_divs span5">
+          <a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?help=graph">
         <%= image_tag "piechart_feature2.png" %>
         <h6><span class="label label-warning">Graphs</span> : Drug Performance Graphs Derived From User Reviews</h6>
-      </div>
+          </a>
+        </div>
+
       <div class="feature_divs span5">
+        <a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?help=infograph_guide">
         <%= image_tag "infograph_feature.png" %>
         <h6><span class="label label-warning">Infographics</span> : Infographics To Give You Better Insights On The Drug</h6>
+        </a>
       </div>
       <div class="feature_divs span5">
+        <a href="conditions/<%= @condition.id%>?help=statistics">
         <%= image_tag "compare_multi_drug_feature.png" %>
         <h6><span class="label label-warning">Statistics</span> : Statistics Comparing Drugs Used To Treat Day To Day Conditions</h6>
+            </a>
       </div>
+
       <div class="feature_divs span5">
+        <a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?#reviews">
         <%= image_tag "other_review_source_feature.png" %>
         <h6><span class="label label-warning">Read Reviews</span> : Read Reviews From Multiple Sources</h6>
+        </a>
+
       </div>
       <div class="feature_divs span5">
+
         <%= image_tag "review_feature.png" %>
         <h6><span class="label label-warning">Contribute</span> : Contribute To The Health Community. Share Your Experience!</h6>
+
       </div>
-      <div class="feature_divs span5">
-        <%= image_tag "piechart_feature.png" %>
-        <h6><span class="label label-warning">Lorem</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit</h6>
-      </div>
+
       <!--<div class="clearfix span12"></div>-->
     </section>
 </article>

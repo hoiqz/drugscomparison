@@ -7,6 +7,15 @@
         ];
 
         $(function () {
+            var params=$.url().param('help');
+            if(params)  {
+                if (params == 'graph'){
+                    $("#satisfylink").popover('show');
+                }else if(params == 'infograph_guide'){
+                    $("#infograph").popover('show');
+                }else {}
+            }
+
             $('.paginator nav span a').live('click', function () {
                 $.getScript(this.href);
                 return false;

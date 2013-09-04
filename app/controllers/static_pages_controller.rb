@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   layout "static_pages_layout"
   def home
-
+     @condition=Condition.first
   end
 
   def review

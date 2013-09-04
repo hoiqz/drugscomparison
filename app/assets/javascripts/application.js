@@ -23,6 +23,7 @@
 //= require rails.validations
 //= require rails.validations.simple_form
 //= require bootstrap_validation_tweak
+//= require purl
 //= require_self
 
 $(function () {
