@@ -5,8 +5,10 @@ class ConditionsController < ApplicationController
     @alphabetical<<"#"
     if params[:letter]
       params[:letter]=="#" ?  @conditions=Condition.by_non_letter(params[:letter]) : @conditions=Condition.by_letter(params[:letter])
+      @conditions.sort_by!{ |ele| ele.name.downcase }
     else
       @conditions= Condition.by_letter("a")
+      @conditions.sort_by!{ |ele| ele.name.downcase }
     end
     @size= @conditions.count
     @sizehalf= (@size / 2.0).ceil

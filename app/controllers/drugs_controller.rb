@@ -14,8 +14,10 @@ class DrugsController < ApplicationController
     @alphabetical<<"#"
     if params[:letter]
       params[:letter]=="#" ?  @drugs=Drug.by_non_letter(params[:letter]) : @drugs=Drug.by_letter(params[:letter])
+      @drugs.sort_by!{ |ele| ele.brand_name.downcase }
     else
       @drugs= Drug.by_letter("a")
+      @drugs.sort_by!{ |ele| ele.brand_name.downcase }
     end
     @size= @drugs.count
     @sizehalf= (@size / 2.0).ceil
