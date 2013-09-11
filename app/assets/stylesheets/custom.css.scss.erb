@@ -76,40 +76,61 @@ $infographorange:  #F87431;
 }
 
 .feature_divs{
-    height: 70px;
+    height: 90px;
     margin-bottom: 15px;
     /*gradient*/
-    background: #feffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #feffff 0%, #d2ebf9 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#d2ebf9)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #feffff 0%,#d2ebf9 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #feffff 0%,#d2ebf9 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=0 ); /* IE6-9 */
+    background: #f1e767; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+
     /*GRADIENT END*/
+    a{
+        text-decoration: none;
+    }
     img{
         float:left;
-        width: 50px;
+        width: 70px;
         padding: 10px;
+    }
+    h3{
+          color: #000000;
     }
     h6{
         padding-right: 10px;
+        margin: 0px 0px 10px 0px;
+        color: grey;
     }
     /*rounded corners*/
-    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
     -moz-border-radius-bottomleft: 5px;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     /*shadows*/
     -webkit-box-shadow: 6px 6px 4px rgba(26, 93, 114, 0.54);
     -moz-box-shadow:    6px 6px 4px rgba(26, 93, 114, 0.54);
     box-shadow:         6px 6px 4px rgba(26, 93, 114, 0.54);
+}
+
+.feature_divs:hover{
+    background: #ffd65e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+
 }
 #banner_black{
  background-image: url("community.png");
@@ -187,6 +208,7 @@ textarea{
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
     margin: 20px 0 10px;
+    font-family: 'Arvo', Georgia, Times, serif;
 }
 
 h1{
@@ -206,9 +228,14 @@ h2{
 }
 
 p{
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   line-height: 1.7em;
     margin: 15px;
+}
+a{
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
 }
 
 #alphabet_listing{
@@ -260,14 +287,14 @@ p{
         float:left;
     }
    a{
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
 .side_widget{
     li{
         a{
-        font-size: 12px;
+        font-size: 13px;
         }
     }
 }
