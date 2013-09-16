@@ -40,6 +40,7 @@ class ReviewsController < ApplicationController
     else
       @topwords=@infograph.top_used_words.split(',')
     end
+    @ineffective=10- (@infograph.effective_over_3.round)
     ###############
     #for the pie charts
     ##############

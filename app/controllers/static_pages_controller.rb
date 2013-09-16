@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
-  layout "static_pages_layout"
+  layout :resolve_layout
+  #layout "static_pages_layout"
   def home
      @condition=Condition.first
   end
@@ -78,5 +79,17 @@ class StaticPagesController < ApplicationController
       format.js
     end
   end
+
+
+
+  def resolve_layout
+    case action_name
+      when "review"
+        "static_pages_review_layout"
+      else
+        "static_pages_layout"
+    end
+  end
+
 
 end

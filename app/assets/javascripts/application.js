@@ -24,6 +24,7 @@
 //= require rails.validations.simple_form
 //= require bootstrap_validation_tweak
 //= require purl
+//= require sweetpages
 //= require_self
 
 $(function () {

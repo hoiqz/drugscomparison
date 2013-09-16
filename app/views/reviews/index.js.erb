@@ -9,6 +9,7 @@ $('#reviews_section').html('<%= escape_javascript render("reviews") %>');
 <% if params[:button]=="tag_cloud_link"%>
     //width=jqGetWidth(); //get the width
     $("#reviews_chart").empty();
+$('#drug_review_side').empty();
     $("#word_cloud_chart").empty().height(0);
     $("#subheader_holder").html('<h5 class="static_divider">Word Cloud</h5>');
     $("#word_cloud_chart").show();
@@ -35,6 +36,7 @@ $('#reviews_section').html('<%= escape_javascript render("reviews") %>');
 
 <% if params[:button]=="infograph"%>
 $("#reviews_chart").empty();
+$('#drug_review_side').empty();
 $("#word_cloud_chart").empty().height(0);
 //$("#conditions").hide(300);
 $("#subheader_holder").html('<h5 class="static_divider">Infograph View</h5>');
@@ -139,7 +141,8 @@ $(function () {
     });
 
 });
-$('#conditions').html("<%= escape_javascript(render "satisfactory_view_form") %>");
+$('#drug_review_side').empty();
+$('#drug_review_side').prepend("<%= escape_javascript(render "satisfactory_view_form") %>");
 <%end%>
 
 <% if params[:button]=="effectlink"%>
@@ -239,7 +242,8 @@ $(function () {
         });
     });
 });
-$('#conditions').html("<%= escape_javascript(render "effectiveness_view_form") %>");
+$('#drug_review_side').empty();
+$('#drug_review_side').prepend("<%= escape_javascript(render "effectiveness_view_form") %>");
 <% end%>
 
 <% if params[:button]=="eoulink"%>
@@ -338,7 +342,8 @@ $(function () {
         });
     });
 });
-$('#conditions').html("<%= escape_javascript(render "eou_view_form") %>");
+$('#drug_review_side').empty();
+$('#drug_review_side').prepend("<%= escape_javascript(render "eou_view_form") %>");
 <% end%>
 
 

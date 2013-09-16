@@ -1,0 +1,155 @@
+<div class="row-fluid">
+  <div id="ca-container" class="ca-container">
+    <div class="ca-wrapper">
+      <div class="ca-item ca-item-1">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Figure it out</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>Graphs and figures help you understand which is the better drug.</span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>See it in graphs.</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "graph1.png" %>
+            </div>
+            <ul>
+              <li><a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?help=graph">Try it!</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ca-item ca-item-2">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Infographs</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>Not into graphs and figures? Discover stunning infographics about drugs/diseases </span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>Get informed.</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "carouselinfographfeature.png" %>
+            </div>
+            <ul>
+              <li><a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?help=infograph_guide">Try it!</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ca-item ca-item-3">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Compare drugs</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>Compare drugs by disease, see their performance and find out what is best for you!</span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>Finding a suitable drug.</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "comparefeature.png" %>
+            </div>
+            <ul>
+              <li><a href="conditions/<%= @condition.id%>?help=statistics">Try it!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ca-item ca-item-4">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Some thing to say?</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>Want to be part of the community? Contribute now!</span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>Have your say.</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "reviewfeatures2.png" %>
+            </div>
+            <ul>
+              <li><a href="/static_pages/review">Try it!</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ca-item ca-item-5">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Read & Learn</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>Find out more about effects of your drug. See what others have to say to help you make the right choice</span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>Information & Reviews</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "read_write_reviews.png" %>
+            </div>
+            <ul>
+              <li><a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?#reviews">Try it!</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ca-item ca-item-6">
+        <div class="ca-item-main">
+          <div class="ca-icon"></div>
+          <h3>Word cloud</h3>
+          <h4>
+            <span class="ca-quote">“</span>
+            <span>See what's common in reviews. May reveal interesting information!</span>
+          </h4>
+          <a href="#" class="ca-more">more...</a>
+        </div>
+        <div class="ca-content-wrapper">
+          <div class="ca-content">
+            <h6>Review word cloud</h6>
+            <a href="#" class="ca-close">close</a>
+            <div class="ca-content-text">
+              <!--<p>Some more text...Some more text...Some more text...</p>-->
+              <%= image_tag "wordcloud.png" %>
+            </div>
+            <ul>
+              <li><a href="drugs/<%= @commondrugs.last.drug_id%>/reviews?help=graph">Try it!</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

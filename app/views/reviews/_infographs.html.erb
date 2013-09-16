@@ -47,7 +47,7 @@
       <div id="gender_breakdown_infograph">
         <div class="human_bar1">
           <div style="width:<%= (@infograph.effective_over_3.round)*10 %>%"></div>
-          <h3><span class="focus2">8</span>
+          <h3><span class="focus2"><%= (@infograph.effective_over_3.round) %></span>
           in
           <span class="focus3">10</span>
           <br>
@@ -59,8 +59,8 @@
         </div>
 
         <div class="human_bar2">
-          <div style="width:<%= (@infograph.effective_less_3.ceil)*10 %>%"></div>
-          <h3><span class="focus2">2</span>
+          <div style="width:<%= @ineffective*10 %>%"></div>
+          <h3><span class="focus2"><%= @ineffective%></span>
           in
           <span class="focus3">10</span>
           <br>

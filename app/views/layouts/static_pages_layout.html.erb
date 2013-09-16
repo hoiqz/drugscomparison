@@ -11,21 +11,21 @@
 <%= render "layouts/header" %>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span1">
-    </div>
-    <div class="span8">
-      <div class="row-fluid">
+    <!--<div class="span1">-->
+    <!--</div>-->
+    <!--added outside render to prevent the previous button bug-->
+       <%=  render "features"%>
+    <div class="span10">
         <%= yield %>
-      </div>
     </div>
-    <div class="span3">
-      <div class="row-fluid">
+    <div class="span1">
+
         <%= render "widgets" %>
-      </div>
     </div>
   </div>
-
+  <div class="row-fluid">
   <%= render "layouts/footer" %>
+    </div>
 </div>
 
 <%= debug(params) if Rails.env.development? %>

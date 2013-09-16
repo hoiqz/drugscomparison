@@ -292,40 +292,113 @@ a{
 
 }
 .side_widget{
+    margin-top: 20px;
+    max-width: 310px;
+    position:relative;
+    border: 1px solid #EAE9E9;
+    padding-bottom: 50px;
     li{
         a{
         font-size: 13px;
         }
     }
 }
+
+#day2day_holder,
+    #commonholder,
+#popular_holder{
+    /* The unordered list that is to be split into pages */
+    overflow:hidden;
+    position:relative;
+    padding-bottom:10px;
+    li{
+        list-style:none outside none;
+        /*background-color:#F4F4F4;*/
+        /*-moz-box-shadow:0 0 6px #111111;*/
+        /*-webkit-box-shadow:0 0 6px #111111;*/
+        /*box-shadow:0 0 6px #111111;*/
+        margin:10px 10px 0 0;
+        /*padding:20px;*/
+        /*float:left;*/
+        display: block;
+    }
+}
+
+.swControls{
+    position:absolute;
+    margin-top:10px;
+}
+a.swShowPage{
+
+    /* The links that initiate the page slide */
+
+    background-color:#d3d3d3;
+    float:left;
+    height:15px;
+    margin:4px 3px;
+    text-indent:-9999px;
+    width:15px;
+    /*border:1px solid #ccc;*/
+
+    /* CSS3 rounded corners */
+
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+    background-color:#2993dd;
+
+    /*	CSS3 inner shadow */
+
+    -moz-box-shadow:0 0 7px #1e435d inset;
+    /*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+    box-shadow:0 0 7px #1e435d inset;
+}
+
+.clear{
+    /* This class clears the floated elements */
+    clear:both;
+}
+
 .widget_header{
-    background-color: #4E4E4E;
-    background-image: none;
-    border-radius: 5px 5px 5px 5px;
-    margin: 0px 0px 5px;
+   overflow: hidden;
+    height: 49px;
+
+    /*border-radius: 5px 5px 5px 5px;*/
+    /*margin: 0px 0px 5px;*/
     font: bold 14px;
-    color: #ffffff;
+   h5{
+       margin-left: 60px;
+       color: white;
+   }
 }
-.wdiget_corner{
-        -moz-border-bottom-colors: none;
-        -moz-border-left-colors: none;
-        -moz-border-right-colors: none;
-        -moz-border-top-colors: none;
-        border-color: #FFFFFF;
-        border-image: none;
-        border-style: solid;
-        border-width: 0 1px;
-        height: 1px;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        width: auto;
+#day2day{
+    background-image: url("day2dayheader.png");
+    /*background-color: #33CCFF;*/
+    background-repeat: no-repeat;
+
 }
+#common_cond{
+    background-image: url("commonconditionheader.png");
+    /*background-color: #6633CC;*/
+    background-repeat: no-repeat;
+}
+#popular_drug{
+    background-image: url("popolardrugheader.png");
+    /*background-color: #00CC66;*/
+    background-repeat: no-repeat;
+}
+
 .widget_content{
-    border: 1px solid #EAE9E9;
+
     overflow: hidden;
-    margin: 3px 3px 0;
-}
+    /*margin: 3px 3px 0;*/
+}   li{
+    padding: 5px 10px 0px;
+    }
 /* header */
 
 #logo {
@@ -797,6 +870,7 @@ img{
             left: 58%;
         }
     h3{
+        font-family: leaguegothic;
         position: absolute;
         top: 50%;
         left:5%;
@@ -833,6 +907,7 @@ img{
         }
 
     h3{
+        font-family: leaguegothic;
         font-size: 50px;
         color: $infographblue;
         text-transform: uppercase;
@@ -951,10 +1026,11 @@ img{
 }
 
 #most_awards{
-    font-family: leaguegothic;
+
     position: relative;
     max-width: 100%;
     h3{
+        font-family: leaguegothic;
         position: absolute;
         font-size: 25px;
         color: $infographblue;
@@ -1784,3 +1860,368 @@ color:#78F03C;
 
 }
 /* END LOADING SPINNER*/
+
+/*homepage css for the carousel*/
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+    {
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+    {
+    position: absolute;
+}
+
+.jspVerticalBar
+    {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: #fff;
+
+}
+
+.jspHorizontalBar
+    {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+    {
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap
+    {
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+    {
+    float: left;
+}
+
+.jspTrack
+    {
+    background: #fff;
+    position: relative;
+}
+
+.jspDrag
+    {
+    background: #000;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+    {
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+    {
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+    {
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+    {
+    height: 10px;
+}
+
+.jspHorizontalBar .jspArrow
+    {
+    width: 10px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+    {
+    outline: none;
+}
+
+.jspCorner
+    {
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+    {
+    margin: 0 -3px 0 0;
+}
+
+/* Circular Content Carousel Style */
+.ca-container{
+    position:relative;
+    margin:25px auto 20px auto;
+    width:990px;
+    height:450px;
+
+}
+.ca-wrapper{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.ca-item{
+    position:relative;
+    float:left;
+    width:330px;
+    height:100%;
+    text-align:center;
+}
+.ca-more{
+    position: absolute;
+    bottom: 10px;
+    right:0px;
+    padding:4px 15px;
+    font-weight:bold;
+    background: #ccbda2;
+    text-align:center;
+    color: white;
+    font-family: "Georgia","Times New Roman",serif;
+    font-style:italic;
+    text-shadow:1px 1px 1px #897c63;
+}
+.ca-close{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#fff url("cross.png") no-repeat center center;
+    width:27px;
+    height:27px;
+    text-indent:-9000px;
+    outline:none;
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    opacity:0.7;
+}
+.ca-close:hover{
+    opacity:1.0;
+}
+.ca-item-main{
+    /* CSS reset */
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+        margin:0;
+        padding:0;
+    }
+    html,body {
+        margin:0;
+        padding:0;
+    }
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+    fieldset,img {
+        border:0;
+    }
+    input{
+        border:1px solid #b0b0b0;
+        padding:3px 5px 4px;
+        color:#979797;
+        width:190px;
+    }
+    address,caption,cite,code,dfn,th,var {
+        font-style:normal;
+        font-weight:normal;
+    }
+    ol,ul {
+        list-style:none;
+    }
+    caption,th {
+        text-align:left;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-size:100%;
+        font-weight:normal;
+    }
+    q:before,q:after {
+        content:'';
+    }
+    abbr,acronym { border:0;
+    }
+
+    padding:20px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    right:5px;
+    bottom:5px;
+    background:#fff;
+    overflow:hidden;
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+}
+.ca-icon{
+    width:233px;
+    height:189px;
+    position:relative;
+    margin:0 auto;
+    background:transparent url("graphfeature2.png") no-repeat center center;
+}
+.ca-item-2 .ca-icon{
+    background-image:url("statisticsfeature2.png");
+}
+.ca-item-3 .ca-icon{
+    background-image:url("infographfeature2.png");
+}
+.ca-item-4 .ca-icon{
+    background-image:url("reviewfeature2.png");
+}
+.ca-item-5 .ca-icon{
+    background-image:url("contributefeature2.png");
+}
+.ca-item-6 .ca-icon{
+    background-image:url("tagcloudfeature2.png");
+}
+
+.ca-item h3{
+    font-family: 'Coustard', sans-serif;
+    text-transform:uppercase;
+    font-size:30px;
+    color:#000;
+    margin-bottom:20px;
+    height:85px;
+    text-align:center;
+    text-shadow: 0px 1px 1px #e4ebe9;
+}
+.ca-item h4{
+    font-family: "Georgia","Times New Roman",serif;
+    font-style:italic;
+    font-size:12px;
+    text-align:left;
+    border-left:10px solid #b0ccc6;
+    padding-left:10px;
+    line-height:24px;
+    margin:10px;
+    position:relative;
+}
+.ca-item h4 span{
+    text-indent:40px;
+    display:block;
+}
+.ca-item h4  span.ca-quote{
+    color:#f4eee3;
+    font-size:100px;
+    position:absolute;
+    top:20px;
+    left:0px;
+    text-indent:0px;
+}
+.ca-content-wrapper{
+    /*background:#b0ccc6;*/
+    position:absolute;
+    width:0px; /* expands to width of the wrapper minus 1 element */
+    height:440px;
+    top:5px;
+    text-align:left;
+    z-index:10000;
+    overflow:hidden;
+}
+.ca-content{
+    width:660px;
+    overflow:hidden;
+}
+.ca-content-text{
+    font-size: 14px;
+    font-style: italic;
+    font-family: "Georgia","Times New Roman",serif;
+    margin:10px 20px;
+    padding:10px 20px;
+    line-height:24px;
+}
+.ca-content-text p{
+    padding-bottom:5px;
+}
+.ca-content h6{
+    margin:25px 20px 0px 35px;
+    font-size:32px;
+    padding-bottom:5px;
+    color:#000;
+    font-family: 'Coustard', sans-serif;
+    color:#60817a;
+    border-bottom:2px solid #99bcb4;
+    text-shadow: 1px 1px 1px #99BCB4;
+}
+.ca-content ul{
+    margin:20px 35px;
+    height:30px;
+    list-style:none;
+}
+.ca-content ul li{
+    float:left;
+    margin:0px 2px;
+}
+.ca-content ul li a{
+    color:#fff;
+    background:#000;
+    padding:3px 6px;
+    font-size:14px;
+    font-family: "Georgia","Times New Roman",serif;
+    font-style:italic;
+}
+.ca-content ul li a:hover{
+    background:#fff;
+    color:#000;
+    text-shadow:none;
+}
+.ca-nav span{
+    width:25px;
+    height:38px;
+    background:transparent url("arrows.png") no-repeat top left;
+    position:absolute;
+    top:50%;
+    margin-top:-19px;
+    left:-40px;
+    text-indent:-9000px;
+    opacity:0.7;
+    cursor:pointer;
+    z-index:100;
+}
+.ca-nav span.ca-nav-next{
+    background-position:top right;
+    left:auto;
+    right:-40px;
+}
+.ca-nav span:hover{
+    opacity:1.0;
+}
+
+/*end carousel*/

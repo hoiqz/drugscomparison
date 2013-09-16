@@ -48,11 +48,14 @@ class ApplicationController < ActionController::Base
     @kids_condition=[]
     @mental_condition=[]
     Commoncondition.all.each do |condition|
-      @common << condition if condition.category== "Common Health Conditions"
       @day2day_condition << condition if condition.category== "Day To Day Health"
-      @elderly_condition << condition if condition.category== "Elderly Related Conditions"
-      @kids_condition << condition if condition.category== "Kids Related Conditions"
-      @mental_condition << condition if condition.category== "Mental Conditions"
+      #@common << condition if condition.category== "Common Health Conditions"
+      #@elderly_condition << condition if condition.category== "Elderly Related Conditions"
+      #@kids_condition << condition if condition.category== "Kids Related Conditions"
+      #@mental_condition << condition if condition.category== "Mental Conditions"
+      @common << condition if condition.category== "Common Health Conditions"
+      @common << condition if condition.category== "Elderly Related Conditions"
+      @common << condition if condition.category== "Kids Related Conditions"
     end
 
     @commondrugs=Commondrug.all
