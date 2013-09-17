@@ -36,12 +36,19 @@ $infographorange:  #F87431;
     margin-right: 10%;
 }
 
-.navbar .brand {
-    margin-left: 10%;
+.brand {
+    /*margin-left: 5%;*/
     //width: 120px;
-    padding: 0px;
+    width: 240px;
+    padding: 25px 10px 10px 30px;
 }
 
+.navbar-search{
+    padding: 60px 10px 10px;
+    .search-query{
+        /*width: 100px;*/
+}
+}
 .menu_sub_header{
     padding-left: 20px;
     padding-right: 20px;
@@ -145,6 +152,10 @@ $infographorange:  #F87431;
     }
 }
 
+.colorgrey{
+    background: none repeat scroll 0 0 #ECECEC;
+    padding: 0px 10px;
+}
 .static_divider{
         border-bottom-color: #1589FF;
         border-bottom-style: solid;
@@ -374,6 +385,12 @@ a.swShowPage.active{
        margin-left: 60px;
        color: white;
    }
+}
+.popular_drug_widget,
+.day2day_widget,
+.common_widget{
+    background-color: #ffffff;
+
 }
 #day2day{
     background-image: url("day2dayheader.png");
@@ -1541,8 +1558,17 @@ img{
 
 .border-shadow {
     box-shadow: 0 4px 12px #C0C0C0;
+    margin: 0 50px;
 }
 
+.border-shadow:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.other_contents_container{
+    padding: 0 50px;
+}
  /* for loading spinner */
 
 .pageOverlay {
@@ -1988,8 +2014,10 @@ color:#78F03C;
 .ca-container{
     position:relative;
     margin:25px auto 20px auto;
-    width:990px;
-    height:450px;
+    /*width:990px;*/
+    width:900px;
+    /*height:450px;*/
+    height:350px;
 
 }
 .ca-wrapper{
@@ -2000,7 +2028,8 @@ color:#78F03C;
 .ca-item{
     position:relative;
     float:left;
-    width:330px;
+    /*width:330px;*/
+    width:300px;
     height:100%;
     text-align:center;
 }

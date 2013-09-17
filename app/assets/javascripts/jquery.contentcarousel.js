@@ -192,14 +192,14 @@
                         });
 
                         // click to open the item(s)
-                        $el.find('a.ca-more').live('click.contentcarousel', function( event ) {
-                            if( cache.isAnimating ) return false;
-                            cache.isAnimating	= true;
-                            $(this).hide();
-                            var $item	= $(this).closest('div.ca-item');
-                            aux.openItem( $wrapper, $item, settings, cache );
-                            return false;
-                        });
+//                        $el.find('a.ca-more').live('click.contentcarousel', function( event ) {
+//                            if( cache.isAnimating ) return false;
+//                            cache.isAnimating	= true;
+//                            $(this).hide();
+//                            var $item	= $(this).closest('div.ca-item');
+//                            aux.openItem( $wrapper, $item, settings, cache );
+//                            return false;
+//                        });
 
                         // click to close the item(s)
                         $el.find('a.ca-close').live('click.contentcarousel', function( event ) {
