@@ -1,24 +1,51 @@
+<h4>Reviews containing word: "<%= @keyword %>"</h4>
 <div id="paginator1" class="paginator" xmlns="http://www.w3.org/1999/html">
   <%= paginate @reviews %>
 </div>
-<span id="reviews_count"><%= pluralize(@for_counts, "reviews for #{@type}") %></span>
+<span id="reviews_count"><%= @for_counts %> <%= @drug.brand_name %> reviews for "<%= @keyword %>" </span>
 <% @reviews.each do |review| %>
-    <div id="review_<%="#{review.id}"%>" class="review_object">
-    <span class="dateandoptions">
-    Posted <%= time_ago_in_words(review.created_at)%> ago<br />
-  </span>
-      <p class="commentor"><b><%= review.user.username %></b> wrote:</p>
-      Effectiveness <div class="rating_bar">
-      <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
-    </div>
-      Ease of Use <div class="rating_bar">
-      <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
-    </div>
-      Satisfactory <div class="rating_bar">
-      <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
-    </div> <br />
+    <div class="review_object">
+      <div class="comments">
+        <blockquote class="pull-right"><%=review.comments %>
+          <small>
+            <%= review.user.username %>
+          </small>
+        </blockquote>
+      </div>
 
-      <%= content_tag(:p, review.comments, :class => "review-body") %>
+      <ul class="inline">
+        <li>Effectiveness <div class="rating_bar">
+          <div style="width:<%= (review.effectiveness/5)*100 %>%"></div>
+        </div>
+        </li>
+        <li>Ease of Use <div class="rating_bar">
+          <div style="width:<%= (review.ease_of_use/5)*100%>%"></div>
+        </div></li>
+        <li>Satisfactory <div class="rating_bar">
+          <div style="width:<%= (review.satisfactory/5)*100%>%"></div>
+        </div></li>
+      </ul>
+      <br />
+
+      <div class="dateandoptions">
+        <span>Posted <%= time_ago_in_words(review.created_at)%> ago  </span>
+        <% if review.user.caregiver %>
+            <span><i id="caregivericon"></i>Caregiver</span>
+        <%else%>
+            <span><i class="icon-user icon-white"></i>Patient</span>
+        <%end%>
+
+        <% if review.user.gender == "Male" %>
+            <span><i id="maleicon"></i>Male</span>
+        <% elsif review.user.gender == "Female" %>
+            <span><i class="icon-girl"></i>Female</span>
+        <%else%>
+            <span><i id="unknownicon"></i>Not Specified</span>
+
+        <%end%>
+
+        <span>Age: <%= review.user.age %></span>
+      </div>
     </div> <br />
 
 <%	end %>

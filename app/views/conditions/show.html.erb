@@ -36,8 +36,8 @@
     </script>
 <% end %>
 
-<div class=row>
-<div class=" span9">
+<!--<div class=row>-->
+<div class="span8">
  <article class="articlecontent">
    <h3 class="static_divider"><%= @condition.name.capitalize %></h3>
    <p><i class="icon-backward"></i> <%= link_to "Back To Condition Index",conditions_path%></p>
@@ -54,7 +54,7 @@
  </article>
 </div>
 
-<div class="span9">
+<div class="span8">
   <article class="articlecontent">
   <h5 class="static_divider">Infomation pertaining to <%= @condition.name %></h5>
 <div class="tabbable widget_container"> <!-- Only required for left/right tabs -->
@@ -92,7 +92,7 @@
 </div>
   </article>
 </div>
-</div>
+<!--</div>-->
 
 <% content_for :side_widget do  %>
     <%= render "side_widget_last_viewed" %>

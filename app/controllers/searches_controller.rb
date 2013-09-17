@@ -1,4 +1,5 @@
 class SearchesController < ApplicationController
+  require 'uri'
   # GET /searches
   # GET /searches.json
   def index
@@ -55,9 +56,10 @@ class SearchesController < ApplicationController
   end
 
   def non_form_search
+
     #@search_object = Search.find(params[:id])
     @review_options=params
-
+     @keyword=URI.decode_www_form_component(params[:keyword])
     if params[:drug_name] != 'all'
       @drug=Drug.find_by_brand_name(params[:drug_name])
       @review_options[:for_drug_id]=@drug.id

@@ -8,16 +8,21 @@
   <%= yield :script %>
 </head>
 <body>
-<%= render "layouts/header" %>
 <div class="container">
   <div class="row">
-    <!--<div class="span1"></div>-->
-    <div class="span12">
-      <!--Body content-->
-      <%= yield %>
-
+    <div class="border-shadow">
+      <div class="header_container">
+        <%= image_tag("chosen1blue.png",:class=>"brand") %>
+        <%= form_tag searches_path,:class=>"navbar-search pull-right", :method => :get do %>
+            <%= text_field_tag :search, params[:search] ,:class=>"search-query", :placeholder=>"Search Drug/Condition" %>
+            <button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
+        <% end %>
+      </div>
+      <%= render "layouts/header"%>
+      <div class="span12">
+        <%= yield %>
+      </div>
     </div>
-
   </div>
 
   <%= render "layouts/footer" %>
