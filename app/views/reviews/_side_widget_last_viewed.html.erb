@@ -3,9 +3,11 @@
   <ul>
     <% if session[:history].present? %>
         <% session[:history].each do |url| %>
-            <li>
-              <%= last_viewed url%>
-            </li>
+            <% if url[:controller]=~/(conditions|reviews)/ %>
+                <li>
+                  <%= last_viewed url%>
+                </li>
+            <%end%>
         <% end %>
     <% end%>
   </ul>

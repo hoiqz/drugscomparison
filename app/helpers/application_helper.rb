@@ -17,10 +17,12 @@ module ApplicationHelper
       drug_name=Drug.find(id).brand_name
     linkpath = link_to drug_name.capitalize, drug_reviews_path(id)
       linkpath
-    else
+    elsif controller="conditions"
       condition_name=Condition.find(id).name
       linkpath= link_to condition_name.capitalize, condition_path(id)
       linkpath
+    else
+
     end
 
   end
