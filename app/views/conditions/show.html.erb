@@ -78,7 +78,7 @@
         <tbody>
         <% @drugs.each do |drug|%>
             <tr>
-              <td><%= link_to drug.brand_name, drug_reviews_path(drug.id) %>  <i class="icon-zoom-in" title="Go to this drug!"></i> </td>
+              <td><%= link_to drug.brand_name, drug_reviews_path(drug.id) %></td>
               <!--<td></td>-->
             </tr>
         <% end %>
