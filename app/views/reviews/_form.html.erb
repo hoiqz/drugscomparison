@@ -13,7 +13,10 @@
         </div>
     <% end %>
 
-
+    <div class="field sweet_honey_for_bots">
+      <%= label_tag :sweet_honey, "This is a honeypot, if you see this you're CSS is turned off or you're a bot. If you're not a bot don't fill it in." %>
+      <%= text_field_tag :sweet_honey %>
+    </div>
     <%= fields_for @user do |user_detail_form| %>
 
         <div class="control-group">

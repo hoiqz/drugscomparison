@@ -1,0 +1,4 @@
+Abdominal aortic aneurysm		DS01194	http://www.mayoclinic.com/health/abdominal-aortic-aneurysm/DS01194
+Acne		DS00169	http://www.mayoclinic.com/health/acne/DS00169
+Acoustic neuroma		DS00803	http://www.mayoclinic.com/health/acoustic-neuroma/DS00803
+Acquired immunodeficiency syndrome 	HIV/AIDS	DS00005	http://www.mayoclinic.com/health/hiv-aids/DS00005

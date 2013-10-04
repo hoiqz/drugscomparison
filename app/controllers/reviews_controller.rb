@@ -145,7 +145,10 @@ class ReviewsController < ApplicationController
     @reviews = @drug.reviews.order("created_at DESC").page(params[:page]).per(5)
 
     respond_to do |format|
-      if @review.save
+      if params[:sweet_honey].present?
+        #format.html { render :partial => "honeypot", :layout => "static_pages_review_layout" }
+        format.js {render :bot_detected}
+      elsif @review.save
         @new_id=@review.id
         flash[:notice] = "Thanks for reviewing!"
         format.html { redirect_to drug_reviews_path(@drug.id), notice: 'Review was successfully created.' }

@@ -8,6 +8,10 @@
 
 <!--<h5 class="steps_green">Step 2: Review Drug</h5>-->
 <%= simple_form_for ([@drug,@review]), :url => static_pages_create_path , :html => {:class => "form-horizontal",:id=>"newreviewform",:method => :post}, :validate => true ,:remote=>true do |f| %>
+    <div class="field sweet_honey_for_bots">
+      <%= label_tag :sweet_honey, "This is a honeypot, if you see this you're CSS is turned off or you're a bot. If you're not a bot don't fill it in." %>
+      <%= text_field_tag :sweet_honey %>
+    </div>
     <div class="control-group">
       <%= f.label :comments, "Your experience with this drug  *", :class=>"control-label" %>
       <div class="controls">

@@ -183,7 +183,7 @@ namespace :project do
       doc = Hpricot(open(address+letter))
       #doc = Hpricot(open("http://www.askapatient.com/drugalpha.asp?letter=A"))
 
-     #doc.search("html body div#wrapper div#contentWrapper div#mainContent div div table tbody tr td small font a")
+     #doc.search("html body div#wrapper div#main div#content div#b.tests div#letternav ul.list li a").each do |row|
      doc.search("html body div#wrapper div#contentWrapper div#mainContent div div table tr a").each do |row|
       puts row
       name=row.inner_html

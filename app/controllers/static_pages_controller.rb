@@ -42,7 +42,11 @@ class StaticPagesController < ApplicationController
     @conditions=@drug.conditions
 
     respond_to do |format|
-      if @review.save
+      if params[:sweet_honey].present?
+        #format.html { render :partial => "honeypot", :layout => "static_pages_review_layout" }
+        flash[:notice] = "Are you a robot?!"
+        format.js {render :action => "bot_detected"}
+      elsif @review.save
         @new_id=@review.id
         flash[:notice] = "Thanks for reviewing!"
         format.html

@@ -12,7 +12,7 @@
   <div class="row">
     <div class="border-shadow">
       <div class="header_container">
-        <%= image_tag("chosen1blue.png",:class=>"brand") %>
+        <%= link_to image_tag("chosen1blue.png",:class=>"brand"), home_path%>
         <%= form_tag searches_path,:class=>"navbar-search pull-right", :method => :get do %>
             <%= text_field_tag :search, params[:search] ,:class=>"search-query", :placeholder=>"Search Drug/Condition" %>
             <button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
