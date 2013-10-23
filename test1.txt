@@ -1,0 +1,2 @@
+Abdominal aortic aneurysm		DS01194	http://www.mayoclinic.com/health/abdominal-aortic-aneurysm/DS01194
+Abscess, Bartholin's 	Bartholin's cyst	DS00667	http://www.mayoclinic.com/health/bartholin-cyst/DS00667

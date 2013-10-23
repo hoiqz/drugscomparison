@@ -75,7 +75,8 @@ namespace :screenscrapper do
 
     root="http://www.mayoclinic.com"
     input=ENV['in']
-    OUT=File.new("mayoclinic_conditions_info.tsv","a")
+    #OUT=File.new("mayoclinic_conditions_info.tsv","a")
+    OUT=File.new("rubbish.tsv","a")
 
     File.open(input,"r") do |filereader|
       filereader.each do |line|
@@ -97,7 +98,7 @@ namespace :screenscrapper do
         storage.push(condition_name,other_condition_name,url)
         #doc.search("html body div#wrapper div#main div#content div#b ul.related").remove
    doc.search("html body div#wrapper div#main div#content div#a ul#tabnav li").each do |row|
-      puts row
+      #puts row
       naventry=row.search("a")
      header=naventry.inner_html
      header_href=root+naventry.first[:href]
@@ -114,13 +115,19 @@ namespace :screenscrapper do
       b.search("a[@id=staff]").remove
       b.search("h1").remove
     #puts b
-      content=b.inner_html
-      clear_html_tag=Hpricot(content).to_plain_text.gsub(/\n+/,"\n").gsub(/^\n/,'').gsub(/\n/,'||')
+      content1=b.inner_html.gsub("<br />",". ").delete!("\r")
+      content2=content1.delete!("\n").delete!("\t")
+      content=content2.gsub(/<\/li>/,"||")
+      #clear_html_tag=content
+      clear_html_tag=Hpricot(content).to_plain_text
+      #puts "line now is #{clear_html_tag}"
+      #clear_html_tag=clear_html_tag2.delete!("\n").delete!("\t")
      storage.push("#{header}::#{clear_html_tag}")
    end
         str=storage.join("\t")
-        OUT.write("#{str}\n")
+        OUT.write("#{str}**END**")
         sleeptime=60+rand(60)
+        #sleeptime=rand(60)
         sleep(sleeptime.seconds)
 
       end
@@ -129,17 +136,203 @@ namespace :screenscrapper do
   end
 
   #########################################
+  # rake in=inputfile screenscrapper:changeFormat
+  #########################################
+  desc "formats the inputfile into one line one drug description."
+  task :changeFormat =>:environment do
+    require 'iconv'
+    input=ENV['in']
+    ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
+    OUT=File.new("#{input}.tmp","w")
+    File.open(input,"r") do |filereader|
+      filereader.each do |line_original|
+        entry=ic.iconv(line_original)
+        line=entry.gsub(/\[.*\]/,'').gsub(/http(.*?)\s/,'').gsub("\n",'||')
+        line.gsub!(/Subscribe to .*\|\|/,"||")
+        OUT.write(line)
+        #print line
+      end
+    end
+    OUT2=File.new("#{input}.formatted","w")
+    File.open("#{input}.tmp","r") do |filereader|
+      filereader.each do |line_original|
+        entry=ic.iconv(line_original)
+        line=entry.gsub("**END**","\n")
+        OUT2.write(line)
+        #print line
+      end
+    end
+    OUT.close
+    OUT2.close
+  end
+
+
+  #########################################
   # rake in=inputfile screenscrapper:parseConditionText
   #########################################
   desc "parse conditions_info.tsv file into db"
   task :parseConditionText =>:environment do
+    require 'iconv'
+    input=ENV['in']              # input file is the whole mayo conditions downloaded
+    ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
+    OUT=File.new("xa.tsv","w")
+    count=0
+  Condition.all.each do |condition|
+    #if condition.name != "High Blood Pressure"
+    #  next
+    #end
+    File.open(input,"r") do |filereader|
+      filereader.each do |line_original|
+        entry=ic.iconv(line_original)
+        line=entry.split(/\t/)
+        line[0].strip!
+        if condition.other_names
+        if condition.other_names.upcase ==  line[0].upcase
+          OUT.write "condition #{condition.name} : #{condition.other_names} matched #{line[0]}\n"
+          loadinfo(condition,entry)
+          count=count+1
+          break
+        else
+          if line[1] != ""
+            line[1].strip!
+            if condition.other_names.upcase == line[1].upcase
+              OUT.write "condition #{condition.name} : #{condition.other_names} matched #{line[1]}\n"
+              loadinfo(condition,entry)
+              count=count+1
+              break
+            end
+          end
+        end
+        end
+        #OUT.write "condition #{condition.name} no match #{line[0]} and #{line[1]}\n"
+      end
+      OUT.write "condition #{condition.name} no match!\n"
+    end
+  end
+    puts count
+    OUT.close
+  end
+
+  def loadinfo(match,text)
+    #match_arr=shift
+    #text=shift
+    textarr=text.split(/\t/)
+    textarr.shift(2)
+
+
+    (information,symptoms,causes,risk_factors,treatment_and_medication,prevention,alternative_medication,complications,lifestyle,coping_with_disease)=""
+    textarr.each do |element1|
+      #element=element1.gsub(/\|+/,"\n")
+      element=element1
+      if element =~ /Definition::(.*)/
+        information=$1.gsub(/\|+/,"\n")
+        #puts "definition:#{information}"
+        next
+      end
+      if element =~ /Symptoms::(.*)/
+        symptoms=$1.gsub(/\|+/,"\n")
+        #puts "symnptons:#{symptoms}"
+        next
+      end
+      if element =~ /Causes::(.*)/
+        causes=$1.gsub(/\|+/,"\n")
+        #puts "causes:#{causes}"
+        next
+      end
+      if element =~ /Risk factors::(.*)/
+        risk_factors=$1.gsub(/\|+/,"\n")
+        #puts "risks:#{risk_factors}"
+        next
+      end
+      if element =~ /Complications::(.*)/
+        complications=$1.gsub(/\|+/,"\n")
+        #puts "complications:#{complications}"
+        next
+      end
+      if element =~ /Treatments and drugs::(.*)/
+        treatment_and_medication=$1.gsub(/\|+/,"\n")
+        #puts "treatment:#{treatment_and_medication}"
+        next
+      end
+      if element =~ /Lifestyle and home remedies::(.*)/
+        lifestyle=$1.gsub(/\|+/,"\n")
+        #puts "lifestyle:#{lifestyle}"
+        next
+      end
+      if element =~ /Prevention::(.*)/
+        prevention=$1.gsub(/\|+/,"\n")
+        #puts "prevention:#{prevention}"
+        next
+      end
+      if element =~ /Coping and support::(.*)/
+        coping_with_disease=$1.gsub(/\|+/,"\n")
+        #puts "coping with disease:#{coping_with_disease}"
+        next
+      end
+      if element =~ /Alternative medicine::(.*)/
+        alternative_medication=$1.gsub(/\|+/,"\n")
+        #puts "alt med:#{alternative_medication}"
+        next
+      end
+    end
+
+      match.update_attributes(:information=>information,
+                                :symptoms=>symptoms,
+                                :causes=>causes,
+                                :risk_factors=>risk_factors,
+                                :complications=>complications,
+                                :treatment_and_medication=>treatment_and_medication,
+                                :lifestyle=>lifestyle,
+                                :prevention=>prevention,
+                                :coping_with_disease=>coping_with_disease,
+                                :alternative_medication=>alternative_medication
+      )
+      puts "#{match.name} updated"
+  end
+
+  #########################################
+  # rake in=inputfile screenscrapper:addGeneralNameToConditions
+  #########################################
+  desc "add in the common conditions name to those weird looking conditions from webmd"
+  task :addGeneralNameToConditions =>:environment do
+    require 'iconv'
     input=ENV['in']
     File.open(input,"r") do |filereader|
-      filereader.each do |line|
-        entry=line.split(/\t/)
-        entry.each do |test|
-          puts test
+      filereader.each do |line_original|
+        next if line_original=~/^#/
+        line=line_original.split(/\t/)
+        original=line[0].gsub(/\"/,'').gsub(/\n/,'')
+        alternative=line[1].gsub(/\"/,'').gsub(/\n/,'')  if line[1]
+        if alternative=~/-/
+          next
+          puts "#{line_original} has no alternative name"
+        else
+          puts "#{line_original} has alternative #{alternative}"
+          original_con=Condition.find_by_name(original)
+            puts "found #{original_con}"
+          original_con.update_attributes(:other_names=>alternative)  if original_con
         end
+      end
+    end
+  end
+
+  #########################################
+  # rake in=inputfile screenscrapper:reformatMyConditionFile
+  #########################################
+  desc "add in the common conditions name to those weird looking conditions from webmd"
+  task :reformatMyConditionFile =>:environment do
+    require 'iconv'
+    input=ENV['in']
+    OUT=File.new("#{input}.reformatted","w")
+    File.open(input,"r") do |filereader|
+      filereader.each do |line_original|
+        if line_original=~/^#/
+          OUT.write "#{line_original}\n"
+        end
+        line=line_original.split(/\t/)
+        original=line[0].gsub(/\"/,'').gsub(/\n/,'')
+        alternative=line[1].gsub(/\"/,'').gsub(/\n/,'').gsub(/,(.*)/,'')
+        OUT.write "#{original}\t#{alternative}\n"
       end
     end
   end

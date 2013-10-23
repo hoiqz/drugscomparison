@@ -7,4 +7,11 @@ module ConditionHelper
   def display_hits condition
       link_to condition.name, condition_path(condition.condition_id)
   end
+
+  def display_condition_info(desc)
+    return_str="<p>"
+    return_str=return_str+desc+"</p>"
+    return return_str
+  end
+
 end

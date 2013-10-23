@@ -1,5 +1,8 @@
 class Condition < ActiveRecord::Base
-  attr_accessible :information, :condition_id , :name
+  attr_accessible :information, :condition_id , :name,
+                  :symptoms,:causes,:risk_factors,:treatment_and_medication,
+                  :prevention,:other_names,:alternative_medication,:complications,:lifestyle,
+                  :coping_with_disease
   has_many :treatments,
           # :foreign_key => "drug_id",
            :dependent => :destroy

@@ -1,2 +1,0 @@
-Webmd.create!(source_id:'63990', brand_name:"Lexapro+Oral", current_reviews:  3639, latest_reviews:  3639)
-Webmd.create!(source_id:'150568', brand_name:"Lexiscan+IV", current_reviews:  24, latest_reviews:  24)
