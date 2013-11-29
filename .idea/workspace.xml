@@ -7,30 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d246ba1-bf7a-4f79-9d01-50bee866fb07" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\Adderall+XR+Oral_reviews.tsv.words.freq" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\matchings" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\myconditions" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\seed.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\seedwebmd.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.fdt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.fdx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.frq" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.nrm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.prx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\_5.tis" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\test1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\tmp2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\log\sunspot-solr-development.log.lck" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\segments_h" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\hoiqz\RubymineProjects\drugscomparison\solr\data\development\index\write.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" afterPath="$PROJECT_DIR$/everydayhealth_reviews/all.merged.reviews" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_m.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_m.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_m.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_m.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/condition_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/condition_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/condition.rb" afterPath="$PROJECT_DIR$/app/models/condition.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/druglist_all_new_to_old" afterPath="$PROJECT_DIR$/druglist_all_new_to_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/mayoscrapper.rake" afterPath="$PROJECT_DIR$/lib/tasks/mayoscrapper.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mayoclinic_condition" afterPath="$PROJECT_DIR$/mayoclinic_condition" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp1" afterPath="$PROJECT_DIR$/tmp1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xa" afterPath="$PROJECT_DIR$/xa" />
     </list>
     <ignored path="drugscomparison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="75" selection-start="1986" selection-end="1986" vertical-scroll-proportion="21.333334">
+            <state line="47" column="75" selection-start="1986" selection-end="1986" vertical-scroll-proportion="1.404218">
               <folding />
             </state>
           </provider>
@@ -81,19 +70,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mayoscrapper.rake" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mayoscrapper.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/mayoscrapper.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="48" selection-start="9324" selection-end="9324" vertical-scroll-proportion="3.3219512">
+            <state line="161" column="72" selection-start="5898" selection-end="5898" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
+      <file leaf-file-name="_stylesheets.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="43" selection-start="3035" selection-end="3035" vertical-scroll-proportion="-13.5">
+            <state line="19" column="17" selection-start="557" selection-end="557" vertical-scroll-proportion="-12.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="45" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="31" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-19.76923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -116,22 +132,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static_pages_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/condition_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/drug_index_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/drug_review_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static_pages_review_layout.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/lib/tasks/seedwebmdtable.rake" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131010013844_add_columns_to_conditions.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131018063812_add_more_columns_to_conditions.rb" />
         <option value="$PROJECT_DIR$/app/models/condition.rb" />
         <option value="$PROJECT_DIR$/app/helpers/condition_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/conditions/show.html.erb" />
         <option value="$PROJECT_DIR$/lib/tasks/mayoscrapper.rake" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb" />
       </list>
     </option>
   </component>
@@ -186,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,11 +291,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="locales" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,6 +314,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,13 +389,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drugscomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope">
         <subPane subId="All" />
       </pane>
@@ -686,13 +768,13 @@
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Production: drugscomparison" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Development: drugscomparison" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.test" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.assets:precompile" />
-      <item index="6" class="java.lang.String" itemvalue="Ruby.convert2seed" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.assets:precompile" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.convert2seed" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: drugscomparison" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: drugscomparison" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="6" class="java.lang.String" itemvalue="Ruby.test" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -757,9 +839,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.34330985" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18300654" sideWeight="0.6753446" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18627451" sideWeight="0.6753446" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249183" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24795641" sideWeight="0.33450705" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3093415" sideWeight="0.5007622" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3093415" sideWeight="0.49390244" order="2" side_tool="false" content_ui="tabs" />
@@ -770,6 +851,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32465544" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249183" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -826,16 +908,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/condition_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="229" selection-end="251" vertical-scroll-proportion="0.27070063" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="46" selection-end="46" vertical-scroll-proportion="0.08471761">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25976232">
           <folding />
         </state>
       </provider>
@@ -847,30 +934,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131010013844_add_columns_to_conditions.rb">
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="55" selection-end="467" vertical-scroll-proportion="0.027960526">
+        <state line="52" column="33" selection-start="1818" selection-end="1821" vertical-scroll-proportion="0.03220339">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131018063812_add_more_columns_to_conditions.rb">
+    <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="201" selection-end="220" vertical-scroll-proportion="0.1118421">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="38" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.33552632">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/condition.rb">
+    <entry file="file://$PROJECT_DIR$/lib/tasks/mayoscrapper.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="301" selection-end="301" vertical-scroll-proportion="0.110569105">
+        <state line="161" column="72" selection-start="5898" selection-end="5898" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -882,58 +969,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="45" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="31" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-19.76923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/drug_index_layout.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/drugs/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_stylesheets.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="17" selection-start="557" selection-end="557" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="75" selection-start="1986" selection-end="1986" vertical-scroll-proportion="21.333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/reviews_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/drugs_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/conditions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="43" selection-start="3035" selection-end="3035" vertical-scroll-proportion="-13.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/condition_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="229" selection-end="251" vertical-scroll-proportion="0.27070063">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/mayoscrapper.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="272" column="48" selection-start="9324" selection-end="9324" vertical-scroll-proportion="3.3219512">
+        <state line="47" column="75" selection-start="1986" selection-end="1986" vertical-scroll-proportion="1.404218">
           <folding />
         </state>
       </provider>

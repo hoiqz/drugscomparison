@@ -1,1 +1,40 @@
 rake sunspot:solr:run
+perl preAnalysisPreparation.pl -i /mnt/PolarisPool/PolarisSequencing/PHS001/131009_D00240_0032_AH7PEUADXX -b tmp/breast_cancer_hiseq/Sureselect-manifest_DukeNUS.txt -t BREASTCANCER -d ncvap -s tmp/breast_cancer_hiseq/BCL2fastq.SampleSheet.csv -m Y100n,I8,Y100n -r hg19
+
+  File.open(input,"r") do |filereader|
+      filereader.each do |line_original|
+        entry=ic.iconv(line_original)
+        line=entry.split(/\t/)
+        con_name=line[0]
+        con_alt_name=line[1]
+        #puts "conname #{con_name} , alt name  #{con_alt_name}"
+        if match=Condition.find_all_by_name(con_name)
+          if !match.empty?
+            OUT.write("con_name #{con_name} matched case 1\n")
+            count=count+match.size
+            loadinfo(match,entry)
+          else match = Condition.find_all_by_other_names(con_name)
+          if !match.empty?
+            OUT.write "con_name #{con_name} matched case 2\n"
+            count=count+match.size
+            loadinfo(match,entry)
+          else !con_alt_name.blank? && (match = Condition.find_all_by_name(con_alt_name))
+          if !match.empty?
+            OUT.write "con_alt_name #{con_alt_name} matched case 3\n"
+            count=count+match.size
+            loadinfo(match,entry)
+          else !con_alt_name.blank? && (match= Condition.find_all_by_other_names(con_alt_name))
+          if !match.empty?
+            OUT.write "con_alt_name #{con_alt_name} matched case 4\n"
+            count=count+match.size
+            loadinfo(match,entry)
+          else
+            OUT.write "#{con_name} and #{con_alt_name} no match \n "
+            next
+          end
+          end
+          end
+          end
+        end
+      end
+      end

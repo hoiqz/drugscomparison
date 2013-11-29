@@ -291,7 +291,7 @@ namespace :screenscrapper do
   end
 
   #########################################
-  # rake in=inputfile screenscrapper:addGeneralNameToConditions
+  # rake in=myconditions.tsv screenscrapper:addGeneralNameToConditions
   #########################################
   desc "add in the common conditions name to those weird looking conditions from webmd"
   task :addGeneralNameToConditions =>:environment do
