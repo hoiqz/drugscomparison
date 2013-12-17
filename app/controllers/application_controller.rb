@@ -20,11 +20,11 @@ class ApplicationController < ActionController::Base
                                   35, #Asthma
                                   129 #Runny nose
       ]
-      drugs_top_picks_array=[1239,747,729,1132,39]
+      drugs_top_picks_array=[747,729,1132,1239,39]
     else
       common_condition_array=[639, 240,946,239,305,465]
       day_to_day_condition_array=[352,497,835,322,270,349]
-      drugs_top_picks_array=[1430,169,487,1286,1489]
+      drugs_top_picks_array=[169,487,1286,1430,1489]
     end
     @common=[]
     @day2day_condition=[]
