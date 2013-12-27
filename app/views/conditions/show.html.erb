@@ -42,26 +42,27 @@
 <% end %>
 
 <!--<div class=row>-->
-<div class="span8">
+<div class="row-fluid">
  <article class="articlecontent">
-   <h3 class="static_divider"><%= @condition.name.capitalize %></h3>
+   <h1 class="static_divider"><%= @condition.name.capitalize %></h1>
    <p><i class="icon-backward"></i> <%= link_to "Back To Condition Index",conditions_path%></p>
    <div id="subheader_holder">
-     <h5 class="static_divider">Infograph View</h5>
+     <h3 class="static_divider">Infograph View</h3>
    </div>
-   <div class="static_buttons span8">
+   <div class="static_buttons span12">
      <%= render "chart_buttons" %>
    </div>
 
-  <div id="reviews_chart" class="span8">
+  <div id="reviews_chart" class="span12">
     <%= render "infographs" %>
   </div>
  </article>
 </div>
 
-<div class="span8">
-  <h5 class="static_divider">Information On </h5>
-  <div class="row">
+
+
+  <div class="row-fluid">
+
     <div id="my-nav" class="span2 bs-docs-sidebar">
       <ul  class="nav nav-pills nav-stacked bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="750">
         <li class="active"><a href="#general">General Information</a></li>
@@ -76,7 +77,8 @@
         <li><a href="#prevent">Prevention</a></li>
       </ul>
     </div>
-    <div class="span5 my-content">
+    <div class="span10 my-content">
+      <h3 class="static_divider">Information On <%= @condition.name.capitalize %></h3>
       <section >
         <h4 id="general"class="subheader">General Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
         <p><%= @condition.information%></p>
@@ -117,11 +119,9 @@
         <h4 id="prevent" class="subheader">Prevention<span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
         <p><%= @condition.prevention%></p>
       </section>
-
+      <p class=""><i class="icon-backward"></i> <%= link_to "Back To Index",conditions_path%> </p>
     </div>
   </div>
-  <p class="span9"><i class="icon-backward"></i> <%= link_to "Back To Index",conditions_path%> </p>
-</div>
 
 <% content_for :side_widget do  %>
     <%= render "side_widget_last_viewed" %>

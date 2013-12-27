@@ -20,7 +20,7 @@ $(".footable").footable();
 $("#reviews_chart").empty();
 $("#conditions").hide(500);
 $("#subheader_holder").html('<h5 class="static_divider">Infograph View</h5>');
-
+$("#reviews_chart").html('<%= escape_javascript render("infographs") %>');
 <% elsif params[:button]=="overall_link"%>
 $("#reviews_chart").empty();
 $(function () {

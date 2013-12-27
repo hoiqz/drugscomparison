@@ -1,4 +1,5 @@
-<article class="span2  side_widget">
+<div class="row-fluid">
+<article class="span12 side_widget">
   <section><h5 class="static_divider">Last Visited</h5> </section>
   <ul>
     <% if session[:history].present? %>
@@ -12,3 +13,4 @@
     <% end%>
   </ul>
 </article>
+</div>

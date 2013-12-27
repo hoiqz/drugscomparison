@@ -1,5 +1,5 @@
-@import "bootstrap";
-@import "bootstrap-responsive";
+/*@import "bootstrap";*/
+/*@import "bootstrap-responsive";*/
 
 
 /*this is bootstrap hack for the non first child having extra margin*/
@@ -162,10 +162,16 @@ $infographorange:  #F87431;
     padding: 0px 10px;
 }
 .static_divider{
-        border-bottom-color: #1589FF;
-        border-bottom-style: solid;
-        border-bottom-width: medium;
-        margin-bottom: 15px;
+
+        color: #869690;
+        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+   letter-spacing: 1px;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+    /*border-bottom-color: #1589FF;*/
+        /*border-bottom-style: solid;*/
+        /*border-bottom-width: medium;*/
+        /*margin-bottom: 15px;*/
     display: block;
     /*float: left;*/
     width: 100%;
@@ -281,6 +287,9 @@ a{
     border-radius: 5px;
 }
 
+.header_container{
+    margin: 30px 0px;
+}
 .widget_container{
     border-radius: 4px 4px 4px 4px;
     /*box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.05) inset;*/
@@ -445,7 +454,7 @@ a.swShowPage.active{
     overflow: hidden;
     /*margin: 3px 3px 0;*/
 }   li{
-    padding: 5px 10px 0px;
+    /*padding: 5px 10px 0px;*/
     }
 /* header */
 
@@ -470,6 +479,7 @@ a.swShowPage.active{
 .my-content{
     p{
         margin: 0px;
+        color: #869690;
     }
 }
 .scrollcontent{
@@ -630,6 +640,10 @@ padding: 0px 25px;
 .notification{
     margin: 0px;
   padding-top: 10px;
+}
+input.text-area-hack, textarea, .uneditable-input
+    {
+    width: 150px;
 }
 
 h3#review_title{
@@ -1920,372 +1934,17 @@ color:#78F03C;
 /* END LOADING SPINNER*/
 
 
-/*homepage css for the carousel*/
-/*
- * CSS Styles that are needed by jScrollPane for it to operate correctly.
- *
- * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
- * may not operate correctly without them.
- */
 
-.jspContainer
-    {
-    overflow: hidden;
-    position: relative;
-}
-
-.jspPane
-    {
-    position: absolute;
-}
-
-.jspVerticalBar
-    {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-    background: #fff;
-
-}
-
-.jspHorizontalBar
-    {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: #fff;
-}
-
-.jspVerticalBar *,
-.jspHorizontalBar *
-    {
-    margin: 0;
-    padding: 0;
-}
-
-.jspCap
-    {
-    display: none;
-}
-
-.jspHorizontalBar .jspCap
-    {
-    float: left;
-}
-
-.jspTrack
-    {
-    background: #fff;
-    position: relative;
-}
-
-.jspDrag
-    {
-    background: #000;
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-}
-
-.jspHorizontalBar .jspTrack,
-.jspHorizontalBar .jspDrag
-    {
-    float: left;
-    height: 100%;
-}
-
-.jspArrow
-    {
-    background: #50506d;
-    text-indent: -20000px;
-    display: block;
-    cursor: pointer;
-}
-
-.jspArrow.jspDisabled
-    {
-    cursor: default;
-    background: #80808d;
-}
-
-.jspVerticalBar .jspArrow
-    {
-    height: 10px;
-}
-
-.jspHorizontalBar .jspArrow
-    {
-    width: 10px;
-    float: left;
-    height: 100%;
-}
-
-.jspVerticalBar .jspArrow:focus
-    {
-    outline: none;
-}
-
-.jspCorner
-    {
-    background: #eeeef4;
-    float: left;
-    height: 100%;
-}
-
-/* Yuk! CSS Hack for IE6 3 pixel bug :( */
-* html .jspCorner
-    {
-    margin: 0 -3px 0 0;
+/* owl content carousel */
+#feature-carousel .item{
+    background: #42bdc2;
+    padding: 30px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 
-
-/* Circular Content Carousel Style */
-.ca-container{
-    position:relative;
-    margin:25px auto 20px auto;
-    /*width:990px;*/
-    width:900px;
-    /*height:450px;*/
-    height:350px;
-
-}
-.ca-wrapper{
-    width:100%;
-    height:100%;
-    position:relative;
-}
-.ca-item{
-    position:relative;
-    float:left;
-    /*width:330px;*/
-    width:300px;
-    height:100%;
-    text-align:center;
-}
-.ca-more{
-    position: absolute;
-    bottom: 10px;
-    right:0px;
-    padding:4px 15px;
-    font-weight:bold;
-    background: #ccbda2;
-    text-align:center;
-    color: white;
-    font-family: "Georgia","Times New Roman",serif;
-    font-style:italic;
-    text-shadow:1px 1px 1px #897c63;
-}
-.ca-close{
-    position:absolute;
-    top:10px;
-    right:10px;
-    background:#fff url("cross.png") no-repeat center center;
-    width:27px;
-    height:27px;
-    text-indent:-9000px;
-    outline:none;
-    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    opacity:0.7;
-}
-.ca-close:hover{
-    opacity:1.0;
-}
-.ca-item-main{
-    /* CSS reset */
-    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-        margin:0;
-        padding:0;
-    }
-    html,body {
-        margin:0;
-        padding:0;
-    }
-    table {
-        border-collapse:collapse;
-        border-spacing:0;
-    }
-    fieldset,img {
-        border:0;
-    }
-    input{
-        border:1px solid #b0b0b0;
-        padding:3px 5px 4px;
-        color:#979797;
-        width:190px;
-    }
-    address,caption,cite,code,dfn,th,var {
-        font-style:normal;
-        font-weight:normal;
-    }
-    ol,ul {
-        list-style:none;
-    }
-    caption,th {
-        text-align:left;
-    }
-    h1,h2,h3,h4,h5,h6 {
-        font-size:100%;
-        font-weight:normal;
-    }
-    q:before,q:after {
-        content:'';
-    }
-    abbr,acronym { border:0;
-    }
-
-    padding:20px;
-    position:absolute;
-    top:5px;
-    left:5px;
-    right:5px;
-    bottom:5px;
-    background:#fff;
-    overflow:hidden;
-    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-    box-shadow:1px 1px 2px rgba(0,0,0,0.2);
-}
-.ca-icon{
-    width:233px;
-    height:189px;
-    position:relative;
-    margin:0 auto;
-    background:transparent url("graphfeature2.png") no-repeat center center;
-}
-.ca-item-2 .ca-icon{
-    background-image:url("statisticsfeature2.png");
-}
-.ca-item-3 .ca-icon{
-    background-image:url("infographfeature2.png");
-}
-.ca-item-4 .ca-icon{
-    background-image:url("reviewfeature2.png");
-}
-.ca-item-5 .ca-icon{
-    background-image:url("contributefeature2.png");
-}
-.ca-item-6 .ca-icon{
-    background-image:url("tagcloudfeature2.png");
-}
-
-.ca-item h3{
-    font-family: 'Coustard', sans-serif;
-    text-transform:uppercase;
-    font-size:30px;
-    color:#000;
-    margin-bottom:20px;
-    height:85px;
-    text-align:center;
-    text-shadow: 0px 1px 1px #e4ebe9;
-}
-.ca-item h4{
-    font-family: "Georgia","Times New Roman",serif;
-    font-style:italic;
-    font-size:12px;
-    text-align:left;
-    border-left:10px solid #b0ccc6;
-    padding-left:10px;
-    line-height:24px;
-    margin:10px;
-    position:relative;
-}
-.ca-item h4 span{
-    text-indent:40px;
-    display:block;
-}
-.ca-item h4  span.ca-quote{
-    color:#f4eee3;
-    font-size:100px;
-    position:absolute;
-    top:20px;
-    left:0px;
-    text-indent:0px;
-}
-.ca-content-wrapper{
-    /*background:#b0ccc6;*/
-    position:absolute;
-    width:0px; /* expands to width of the wrapper minus 1 element */
-    height:440px;
-    top:5px;
-    text-align:left;
-    z-index:10000;
-    overflow:hidden;
-}
-.ca-content{
-    width:660px;
-    overflow:hidden;
-}
-.ca-content-text{
-    font-size: 14px;
-    font-style: italic;
-    font-family: "Georgia","Times New Roman",serif;
-    margin:10px 20px;
-    padding:10px 20px;
-    line-height:24px;
-}
-.ca-content-text p{
-    padding-bottom:5px;
-}
-.ca-content h6{
-    margin:25px 20px 0px 35px;
-    font-size:32px;
-    padding-bottom:5px;
-    color:#000;
-    font-family: 'Coustard', sans-serif;
-    color:#60817a;
-    border-bottom:2px solid #99bcb4;
-    text-shadow: 1px 1px 1px #99BCB4;
-}
-.ca-content ul{
-    margin:20px 35px;
-    height:30px;
-    list-style:none;
-}
-.ca-content ul li{
-    float:left;
-    margin:0px 2px;
-}
-.ca-content ul li a{
-    color:#fff;
-    background:#000;
-    padding:3px 6px;
-    font-size:14px;
-    font-family: "Georgia","Times New Roman",serif;
-    font-style:italic;
-}
-.ca-content ul li a:hover{
-    background:#fff;
-    color:#000;
-    text-shadow:none;
-}
-.ca-nav span{
-    width:25px;
-    height:38px;
-    background:transparent url("arrows.png") no-repeat top left;
-    position:absolute;
-    top:50%;
-    margin-top:-19px;
-    left:-40px;
-    text-indent:-9000px;
-    opacity:0.7;
-    cursor:pointer;
-    z-index:100;
-}
-.ca-nav span.ca-nav-next{
-    background-position:top right;
-    left:auto;
-    right:-40px;
-}
-.ca-nav span:hover{
-    opacity:1.0;
-}
-
-/*end carousel*/

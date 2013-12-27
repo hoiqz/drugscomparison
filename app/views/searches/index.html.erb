@@ -1,5 +1,5 @@
-<h1>Here's what we found for "<%= params[:search] %>"</h1>
-<h3>Under Drugs</h3>
+<h1 class="static_divider">Search result for "<%= params[:search] %>"</h1>
+<h3 class="static_divider">Under Drugs</h3>
 <% if ! @drugresults.blank? %>
 <%	 @drugresults.each do |result| %>
           <p><b><%= link_to "#{result.brand_name}", drug_reviews_path(result.id)%></b></p>
@@ -8,7 +8,7 @@
     <p>No match found</p>
     <%end%>
 
-<h3>Under Conditions</h3>
+<h3 class="static_divider">Under Conditions</h3>
 <% if ! @conditionresults.blank? %>
 <%	 @conditionresults.each do |result| %>
     <p><b><%= link_to "#{result.name}", condition_path(result.id)%></b></p>
@@ -17,7 +17,7 @@
     <p>No match found</p>
 <% end %>
 
-<h3>"<%= params[:search] %>" found in user reviews</h3>
+<h3 class="static_divider">"<%= params[:search] %>" found in user reviews</h3>
 <% @reviewresults.each do |result| %>
     <p>Drug: <b><%= link_to "#{ Drug.find(result.drug_id).brand_name}", drug_reviews_path(result.drug_id)%></b></p>
 

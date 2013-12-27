@@ -4,8 +4,24 @@
     <script type='text/javascript'>
         $(function () {
         // for Circular content carousel
-            $('#ca-container').contentcarousel();
+//            $('#ca-container').contentcarousel();
+            var owl = $("#feature-carousel");
 
+            owl.owlCarousel({
+                itemsCustom : [
+                    [0, 2],
+                    [450, 2],
+                    [600, 3],
+                    [700, 3],
+                    [1000, 3],
+                    [1200, 4],
+                    [1400, 4],
+                    [1600, 4]
+                ],
+                navigation : true
+
+            });
+//
          // this is for the widget page viewer
             $('#popular_holder').sweetPages({perPage:4});
             var controls = $('#popular_holder_control').detach();

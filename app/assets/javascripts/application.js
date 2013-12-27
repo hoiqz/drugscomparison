@@ -13,9 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require jquery.easing.1.3
-//= require jquery.mousewheel
-//= require jquery.contentcarousel
+//= require owl.carousel
 //= require highcharts
 //= require highcharts-more
 //= require exporting

@@ -58,34 +58,36 @@
 
 <!-- level 2 nesting -->
 <!--<div class=row>-->
-<div class="span9">
+<div class="span12">
+  <div class="row-fluid">
   <article class="articlecontent">
    <h1 id="top" class="static_divider">
     <%= @drug.brand_name.capitalize %>
   </h1>
     <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
     <div id="subheader_holder">
-      <h5 class="static_divider">Infograph View</h5>
+      <h3 class="static_divider">Infograph View</h3>
     </div>
-    <div class="static_buttons span8">
+    <div class="static_buttons span12">
       <%= render "chart_buttons" %>
     </div>
 
       <div id="word_cloud_chart"></div>
-      <div id="reviews_chart" class="span8">
+      <div id="reviews_chart" class="span10">
 
         <%= render "infographs" if !params[:button]%>
       </div>
   </article>
+  </div>
 </div>
 
 
-<div class="span9">
-  <h5 class="static_divider">Information On <%= @drug.brand_name.capitalize %></h5>
+<div class="span12">
 
-      <div class="row">
+
+      <div class="row-fluid">
       <div id="my-nav" class="span2 bs-docs-sidebar">
-        <ul  class="nav nav-pills nav-stacked bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="750">
+        <ul  class="nav nav-pills nav-stacked bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="800">
           <li class="active"><a href="#othernames">Other Names</a></li>
           <li><a href="#general">General Information</a></li>
           <li><a href="#sideeffects">Side Effects</a></li>
@@ -98,8 +100,9 @@
           <li><a href="#reviews">Reviews</a></li>
         </ul>
       </div>
-      <div class="span6 my-content">
+      <div class="span10 my-content">
         <section >
+          <h3 class="static_divider">Information On <%= @drug.brand_name.capitalize %></h3>
           <h4 id="othernames"class="subheader">Commonly Known Names <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
           <% if (! @drug.other_known_names.empty?) %>
           <ul>
@@ -148,9 +151,10 @@
             <%= render "reviews", :locals => { :list => true } %>
           </div>
         </section>
+        <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%> </p>
       </div>
       </div>
-  <p class="span9"><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%> </p>
+
 </div>
 
 

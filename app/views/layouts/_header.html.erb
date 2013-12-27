@@ -1,17 +1,13 @@
-<div class="navbar">
+<div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+      <span class="icon-list"></span>
     </a>
       <!-- Be sure to leave the brand out there if you want it shown -->
 
-
         <div class="nav-collapse collapse navbar-responsive-collapse">
-
 
           <ul class="nav">
             <li class="<%= 'active' if params[:controller] == 'static_pages' && params[:action]=='home' %>">
@@ -59,7 +55,18 @@
             <li class="<%= 'active' if params[:controller] == 'static_pages' && params[:action]=='review' %>">
               <%= link_to 'Review A Drug', static_pages_review_path%>
             </li>
+            <li>
+              <%= form_tag searches_path,:class=>"navbar-form pull-left", :method => :get do %>
+                  <%= text_field_tag :search, params[:search] ,:class=>"search-query text-area-hack", :placeholder=>"Search Drug/Condition" %>
+                  <!--<button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>-->
+              <% end %>
+            </li>
           </ul>
+
+          <!--<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-search">-->
+            <!--<span class="icon-search"></span>-->
+          <!--</a>-->
+
 
          </div>
 
