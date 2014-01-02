@@ -16,19 +16,19 @@ $('#drug_review_side').empty();
    console.log(width);
     if(width <= 480){
         $("#word_cloud_chart").jQCloud(word_array, {
-            delayedMode: true,width: 300,height: 200
+            delayedMode: true,width: 250,height: 200
         });
     }else if(width >481 && width <=767){
         $("#word_cloud_chart").jQCloud(word_array, {
-            delayedMode: true,width: 300,height: 200
+            delayedMode: true,width: 250,height: 200
         });
     }else if (width >768 && width <=979) {
         $("#word_cloud_chart").jQCloud(word_array, {
-            delayedMode: true,width: 770,height: 400
+            delayedMode: true,width: 670,height: 400
         });
     }else{
         $("#word_cloud_chart").jQCloud(word_array, {
-            delayedMode: true,width: 770,height: 400
+            delayedMode: true,width: 670,height: 400
         });
     }
 

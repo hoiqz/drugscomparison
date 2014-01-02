@@ -56,104 +56,106 @@
     </script>
 <% end %>
 
-<!-- level 2 nesting -->
-<!--<div class=row>-->
-<div class="span12">
-  <div class="row-fluid">
-  <article class="articlecontent">
-   <h1 id="top" class="static_divider">
-    <%= @drug.brand_name.capitalize %>
-  </h1>
-    <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
-    <div id="subheader_holder">
-      <h3 class="static_divider">Infograph View</h3>
-    </div>
-    <div class="static_buttons span12">
-      <%= render "chart_buttons" %>
-    </div>
 
-      <div id="word_cloud_chart"></div>
-      <div id="reviews_chart" class="span10">
 
-        <%= render "infographs" if !params[:button]%>
+<div class="row-fluid">
+  <div class="span12">
+    <!--<article class="articlecontent">-->
+      <h1 id="top" class="static_divider">
+        <%= @drug.brand_name.capitalize %>
+      </h1>
+      <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%></p>
+      <div id="subheader_holder">
+        <h3 class="static_divider">Infograph View</h3>
       </div>
-  </article>
+      <div class="static_buttons span12">
+        <%= render "chart_buttons" %>
+      </div>
+  </div>
+  <div class="span12">
+      <div class="row-fluid">
+        <div id="word_cloud_chart" class=""></div>
+        <div id="reviews_chart" class="">
+          <%= render "infographs" if !params[:button]%>
+        </div>
+        <div id="drug_review_side" class="span12"></div>
+      </div>
+    <!--</article>-->
   </div>
 </div>
 
 
-<div class="span12">
 
-
-      <div class="row-fluid">
-      <div id="my-nav" class="span2 bs-docs-sidebar">
-        <ul  class="nav nav-pills nav-stacked bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="800">
-          <li class="active"><a href="#othernames">Other Names</a></li>
-          <li><a href="#general">General Information</a></li>
-          <li><a href="#sideeffects">Side Effects</a></li>
-          <li><a href="#precaution">Precaution</a></li>
-          <li><a href="#dietaryprecaution">Dietary Precaution</a></li>
-          <li><a href="#howtouse">How To Use</a></li>
-          <li><a href="#otheruses">Other Uses</a></li>
-          <li><a href="#storage">Storage</a></li>
-          <li><a href="#otherinformation">Other Information</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-      </div>
-      <div class="span10 my-content">
-        <section >
-          <h3 class="static_divider">Information On <%= @drug.brand_name.capitalize %></h3>
-          <h4 id="othernames"class="subheader">Commonly Known Names <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <% if (! @drug.other_known_names.empty?) %>
-          <ul>
-            <% arr= listdrugnames @drug.other_known_names %>
-            <% arr.each do |item|%>
-                <li><%=  item%></li>
-            <%end%>
-          </ul>
-              <% end %>
-        </section>
-        <section >
-          <h4 id="general" class="subheader">General Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.prescription_for %></p>
-        </section>
-        <section >
-          <h4 id="sideeffects" class="subheader">Known Side Effects <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.side_effect %></p>
-        </section>
-        <section >
-          <h4 id="precaution" class="subheader">Precautions <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.precaution%></p>
-        </section>
-        <section >
-          <h4 id="dietaryprecaution" class="subheader">Dietary Precautions <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.dietary_precaution%></p>
-        </section>
-        <section >
-          <h4 id="howtouse" class="subheader">Usage, Dosage and Applications <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.how_to_use %></p>
-        </section>
-        <section >
-          <h4 id="otheruses" class="subheader">Other Uses <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.other_uses%></p>
-        </section>
-        <section >
-          <h4 id="storage" class="subheader">Storage <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.storage%></p>
-        </section>
-        <section >
-          <h4 id="otherinformation" class="subheader">Miscellaneous Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <p><%= @drug.other_info%></p>
-        </section>
-        <section >
-          <h4 id="reviews" class="subheader">Reviews on <%= @drug.brand_name.capitalize %> <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
-          <div id="reviews_section">
-            <%= render "reviews", :locals => { :list => true } %>
-          </div>
-        </section>
-        <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%> </p>
-      </div>
-      </div>
+<div class="row-fluid">
+  <div class="span12">
+    <div id="my-nav" class="span2 bs-docs-sidebar">
+      <ul  class="nav nav-pills nav-stacked bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="1000">
+        <li class="active"><a href="#othernames">Other Names</a></li>
+        <li><a href="#general">General Information</a></li>
+        <li><a href="#sideeffects">Side Effects</a></li>
+        <li><a href="#precaution">Precaution</a></li>
+        <li><a href="#dietaryprecaution">Dietary Precaution</a></li>
+        <li><a href="#howtouse">How To Use</a></li>
+        <li><a href="#otheruses">Other Uses</a></li>
+        <li><a href="#storage">Storage</a></li>
+        <li><a href="#otherinformation">Other Information</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="span10 my-content">
+      <section >
+        <h3 class="static_divider">Information On <%= @drug.brand_name.capitalize %></h3>
+        <h4 id="othernames"class="subheader">Commonly Known Names <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <% if (! @drug.other_known_names.empty?) %>
+            <ul>
+              <% arr= listdrugnames @drug.other_known_names %>
+              <% arr.each do |item|%>
+                  <li><%=  item%></li>
+              <%end%>
+            </ul>
+        <% end %>
+      </section>
+      <section >
+        <h4 id="general" class="subheader">General Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.prescription_for %></p>
+      </section>
+      <section >
+        <h4 id="sideeffects" class="subheader">Known Side Effects <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.side_effect %></p>
+      </section>
+      <section >
+        <h4 id="precaution" class="subheader">Precautions <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.precaution%></p>
+      </section>
+      <section >
+        <h4 id="dietaryprecaution" class="subheader">Dietary Precautions <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.dietary_precaution%></p>
+      </section>
+      <section >
+        <h4 id="howtouse" class="subheader">Usage, Dosage and Applications <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.how_to_use %></p>
+      </section>
+      <section >
+        <h4 id="otheruses" class="subheader">Other Uses <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.other_uses%></p>
+      </section>
+      <section >
+        <h4 id="storage" class="subheader">Storage <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.storage%></p>
+      </section>
+      <section >
+        <h4 id="otherinformation" class="subheader">Miscellaneous Information <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <p><%= @drug.other_info%></p>
+      </section>
+      <section >
+        <h4 id="reviews" class="subheader">Reviews on <%= @drug.brand_name.capitalize %> <span class="pull-right"><a href="#top">Top<i class="icon-arrow-up"></i></a></span></h4>
+        <div id="reviews_section">
+          <%= render "reviews", :locals => { :list => true } %>
+        </div>
+      </section>
+      <p><i class="icon-backward"></i> <%= link_to "Back To Index",drugs_path%> </p>
+    </div>
+  </div>
 
 </div>
 
@@ -175,7 +177,6 @@
 <!--</div>-->
 
 <% content_for :side_widget do  %>
-    <div id="drug_review_side"></div>
     <%= render "side_widget_last_viewed" %>
     <%= render "side_widget_related_conditions" %>
 <% end %>
