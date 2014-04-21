@@ -1,6 +1,19 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :get_menu_list ,:side_widget, :store_history
+  before_filter :get_menu_list ,:side_widget, :store_history, :set_locale
+
+  # this is to over write the default url options method. Enables the params[:locale] to be
+  # persistant across all pages ( not all. see the rails guide http://guides.rubyonrails.org/i18n.html#internationalizing-your-application page for more info)
+  def default_url_options(options={})
+    logger.debug "default_url_options is passed options: #{options.inspect}\n"
+    { locale: I18n.locale }
+  end
+
+  # sets the locale if it is defined
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
 
   def get_menu_list
     @common_condition=Array.new

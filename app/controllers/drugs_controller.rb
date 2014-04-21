@@ -1,11 +1,14 @@
 class DrugsController < ApplicationController
-  before_filter :get_average, :only=>:show
+  before_filter :get_average, only:[:show]
   layout "drug_index_layout"
+
   def get_average
-    @drug = Drug.find(params[:id])
-    @avg_effectivness=@drug.avg_eff
-    @avg_ease_of_use=@drug.avg_eou
-    @avg_satisfactory=@drug.avg_sat
+     if params[:id]
+       @drug = Drug.find(params[:id])
+       @avg_effectivness=@drug.avg_eff
+       @avg_ease_of_use=@drug.avg_eou
+       @avg_satisfactory=@drug.avg_sat
+     end
   end
   # GET /drugs
   # GET /drugs.json

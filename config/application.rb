@@ -65,5 +65,7 @@ module Drugscomparison
     #config.assets.precompile += ['highcharts.js', 'bootstrap.js','highcharts-more.js','exporting.js','gray.js','bootstrap-tooltip.js','jqcloud-1.0.2.min.js']
     config.assets.compress = true
     config.assets.js_compressor = :uglifier
+
+
   end
 end

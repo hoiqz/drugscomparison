@@ -3,7 +3,7 @@
 <div class="span8 offset1">
 
   <article class="articlecontent">
-    <h1 class="static_divider">Conditions  A-Z List</h1>
+    <h1 class="static_divider"><%=t "conditionindex.title" %></h1>
     <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
@@ -41,28 +41,15 @@
 <article class="span2  side_widget">
   <!--<h4 class="static_divider">Popular Searches</h4>-->
   <ul class="nav nav-list">
-    <section><h5 class="static_divider">Day To Day Health</h5></section>
+    <section><h5 class="static_divider"><%=t "conditionindex.side_widgets.day_to_day_health.header" %></h5></section>
     <% @day2day_condition.each do |entry| %>
         <li ><%= display_hits entry %></li>
      <% end %>
-    <section><h5 class="static_divider">Common Health Conditions</h5></section>
+    <section><h5 class="static_divider"><%=t "conditionindex.side_widgets.common_health_conditions.header" %></h5></section>
     <% @common.each do |entry| %>
         <li><%= display_hits entry %></li>
     <% end %>
-    <section><h5 class="static_divider">Elderly Related Conditions</h5></section>
-    <% @elderly_condition.each do |entry| %>
-        <li><%= display_hits entry %></li>
-    <% end %>
-    <section><h5 class="static_divider">Kids Related Conditions</h5></section>
-    <% @kids_condition.each do |entry| %>
-        <li><%= display_hits entry %></li>
-    <% end %>
-    <!--<li class="nav-header">Mental Conditions</li>-->
-    <!--<li class="divider"></li>-->
-    <section><h5 class="static_divider">Mental Conditions</h5></section>
-    <% @mental_condition.each do |entry| %>
-        <li><%= display_hits entry %></li>
-    <% end %>
+
   </ul>
 </article>
 
@@ -70,7 +57,7 @@
 <article class="span2  side_widget">
 
   <ul class="nav nav-list">
-    <section><h4 class="static_divider">Last Visited</h4></section>
+    <section><h4 class="static_divider"><%=t "conditionindex.side_widgets.last_visited.header" %></h4></section>
     <!--<li class="divider"></li>-->
     <% if session[:history].present? %>
         <% session[:history].each do |url| %>

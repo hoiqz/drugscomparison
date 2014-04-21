@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+
+
   layout :resolve_layout
   #layout "static_pages_layout"
   def home

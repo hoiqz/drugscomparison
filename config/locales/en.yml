@@ -1,5 +1,117 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+#top menu bar
+  header:
+    home_button: Home
+    browse_drug:
+      title: Browse Drugs
+      subheader1:
+        category: ALL DRUGS
+        A-Zdrug: Drugs A-Z List
+      subheader2:
+        category: TOP PICKS
+        high_blood_pressure: High Blood Pressure
+        thyroid_disorder: Thyroid Disorder
+        depression: Depression
+        cholesterol: Cholesterol
+        diabetes: Type II Diabetes
+    browse_condition:
+      title: Browse Conditions
+      subheader1:
+        category: ALL CONDITIONS
+        item1: Conditions A-Z List
+      subheader2:
+        category: DAY TO DAY HEALTH
+        item1: Constipation Predominant Irritable Colon
+        item2: Diarrhea
+        item3: Migraine Headache
+        item4: Sinus Irritation and Congestion
+        item5: Cold Sore
+        item6: Acne
+      subheader3:
+        category: COMMON CONDITIONS
+        item1: Type 1 Diabetes Mellitus
+        item2: Type 2 Diabetes Mellitus
+        item3: Stomach Ulcer from Aspirin/Ibuprofen-Like Drugs Prevention
+        item4: COPD with Chronic Bronchitis
+        item5: Middle Ear Infection
+        item6: Chronic Hepatitis B
+        item7: Preventive Treatment of Vivax Malaria
+        item8: Anemia from Chemotherapy
+        item9: High Blood Pressure
+        item10: Osteoporosis
+        item11: Type of Angina Where Chest Pain Occurs at Rest
+        item12: Pain associated with Arthritis
+        item13: Inflammation of the External Ear Resembling Eczema
+        item14: Chickenpox
+        item15: Whooping Cough
+    review: Review A Drug
+    search_text: Search Drug/Condition
+    language: Choose Language
+
+ #main page features carousel
+  features:
+    title: Features
+    graph_heading: Figure it out
+    graph_caption: Try our graphical tools!
+    info_heading: Visualise
+    info_caption: See infographics
+    compare_heading: Compare drugs
+    compare_caption: Compare now!
+    review_heading: Share your experience
+    review_caption: Write review
+    read_heading: Be informed
+    read_caption: Read up a drug or condition
+    word_cloud_heading: Discover prominent words
+    word_cloud_caption: Try it!
+    buttons:
+      prev: prev
+      next: next
+
+ #main page quicklinks boxes
+  quicklinks:
+    popular_drugs:
+      title: Popular Drugs
+    day_to_day:
+      title: Day To Day Health
+    common_conditions:
+      title: Common Conditions
+
+# footer menu
+  footer:
+    contact: Contact
+
+# widgets - legacy
+  widgets:
+    popular_drugs:
+      header: Popular Drugs
+    common_condition:
+      header: Common Health Conditions
+    day_to_day_health:
+      header: Day To Day Health
+    elderly_related:
+      header: Elderly Related Conditions
+    kids_related:
+      header: Kids Related Conditions
+
+#drug index page
+  drugindex:
+    title: Drugs A-Z List
+    side_widgets:
+      most_reviewed_drugs:
+        header: Most Reviewed Drugs
+        reviews: reviews
+      popular_drugs:
+        header: Popular Drugs
+      last_visited:
+        header: Last Visited
+
+#condition index page
+  conditionindex:
+    title: Condition A-Z List
+    side_widgets:
+      day_to_day_health:
+        header: Day To Day Health
+      common_health_conditions:
+        header: Common Health Conditions
+      last_visited:
+        header: Last Visited

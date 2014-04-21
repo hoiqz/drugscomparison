@@ -1,0 +1,131 @@
+zh:
+#top menu bar
+  header:
+    home_button: 首页
+    browse_drug:
+      title: 药物
+      subheader1:
+        category: 所有药物
+        A-Zdrug: 药物 A-Z
+      subheader2:
+        category: 人气
+        high_blood_pressure: 高血压
+        thyroid_disorder: 甲状腺疾病
+        depression: 抑郁症
+        cholesterol: 胆固醇
+        diabetes: II型糖尿病
+    browse_condition:
+      title: 医疗状况
+      subheader1:
+        category: 全部
+        item1: 症状 A-Z
+      subheader2:
+        category: 日常生活有关健康
+        item1: 便秘
+        item2: 腹泻
+        item3: 偏头痛
+        item4: 鼻窦发炎
+        item5: 冷疮
+        item6: 青春痘
+      subheader3:
+        category: 常见病情状况
+        item1: 1型糖尿病
+        item2: 2型糖尿病
+        item3: 胃溃疡
+        item4: COPD 及 慢性支气管炎
+        item5: 中耳炎
+        item6: 慢性乙型肝炎
+        item7: 间日疟
+        item8: 化疗后贫血
+        item9: 高血压
+        item10: 骨质疏松
+        item11: 休息时感到胸痛 (心绞痛)
+        item12: 关节炎疼痛
+        item13: 外耳发炎相似湿疹
+        item14: 水痘
+        item15: 百日咳
+    review: 评介药物
+    search_text: 搜索 药物/症状
+    language: 选择语言
+
+#main page features carousel
+  features:
+    title: 特点
+    graph_heading: 图表和数字
+    graph_caption: 尝试我们的图表工具!
+    info_heading: 信息图表
+    info_caption: 信息图表-获取更多的药物见闻
+    compare_heading: 药物相比
+    compare_caption: 开始尝试!
+    review_heading: 分享您的经验
+    review_caption: 写个评论
+    read_heading: 更进一步了解药物/医疗状况
+    read_caption: 开始查看
+    word_cloud_heading: 词云图片
+    word_cloud_caption: 词云图片让您更进一步的了解!
+    buttons:
+      prev: 上一页
+      next: 下一页
+
+#main page quicklinks boxes
+  quicklinks:
+    popular_drugs:
+      title: 高人气药
+    day_to_day:
+      title: 日常生活有关健康
+    common_conditions:
+      title: 常见病情状况
+
+# footer menu
+  footer:
+    contact: 联系
+
+# widgets - legacy
+  widgets:
+    popular_drugs:
+      header: 高人气药
+    common_condition:
+      header: 常见病情状况
+    day_to_day_health:
+      header: 日常生活有关健康
+    elderly_related:
+      header: 年老病情状况
+    kids_related:
+      header: 小孩病情状况
+
+#drug index page
+  drugindex:
+    title: 药物 A-Z 目录
+    side_widgets:
+      most_reviewed_drugs:
+        header: 最多评论药物
+        reviews: 评论
+      popular_drugs:
+        header: 高人气药
+      last_visited:
+        header: 最近查看过什么？
+
+#condition index page
+  conditionindex:
+    title: 病情状况 A-Z 目录
+    side_widgets:
+      day_to_day_health:
+        header: 日常生活有关健康
+      common_health_conditions:
+        header: 常见病情状况
+      last_visited:
+        header: 最近查看过什么？
+
+#drugreview page (individual drug information page)
+  drugreview:
+    back_to_index: Back To Index
+    infograph_view:
+      title: Infograph View
+      buttons:
+        infograph_button: Infograph
+        wordcloud_button: Word cloud
+        satisfaction_button: Satisfaction
+        effectiveness_button: Effectiveness
+        easeofuse_button: Ease of Use
+        reviewdrug_button: Review This Drug
+

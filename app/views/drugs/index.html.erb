@@ -3,7 +3,7 @@
   <!--<span class="miniheader">Drugs</span>-->
   <article class="articlecontent">
     <section>
-    <h1 class="static_divider">Drugs A-Z List</h1>
+    <h1 class="static_divider"><%=t "drugindex.title" %></h1>
     <div class="pagination pagination-mini pagination-centered">
       <ul>
         <% @alphabetical.each do |letter| %>
@@ -45,10 +45,10 @@
 <article class="span2  side_widget">
 
   <ul class="nav nav-list">
-    <section> <h5 class="static_divider">Most Reviewed Drugs</h5></section>
+    <section> <h5 class="static_divider"><%=t "drugindex.side_widgets.most_reviewed_drugs.header" %></h5></section>
     <% @Mostrevieweddrugs.each do |drug| %>
         <li>
-          <%= link_to "#{drug.brand_name} (#{drug.reviews.count} reviews)", drug_reviews_path(drug.id)%>
+          <%= link_to "#{drug.brand_name} (#{drug.reviews.count} #{t "drugindex.side_widgets.most_reviewed_drugs.reviews"})", drug_reviews_path(drug.id)%>
         </li>
     <% end %>
   </ul>
@@ -57,7 +57,7 @@
 <article class="span2  side_widget">
 
   <ul class="nav nav-list pre-scrollable">
-    <section><h5 class="static_divider">Popular Drugs</h5></section>
+    <section><h5 class="static_divider"><%=t "drugindex.side_widgets.popular_drugs.header" %></h5></section>
     <% @commondrugs.each do |drug| %>
         <li>
           <%= link_to drug.brand_name.capitalize, drug_reviews_path(drug.drug_id)%>
@@ -69,7 +69,7 @@
 <article class="span2  side_widget">
 
   <ul class="nav nav-list">
-    <section><h5 class="static_divider">Last Visited</h5> </section>
+    <section><h5 class="static_divider"><%=t "drugindex.side_widgets.last_visited.header" %></h5> </section>
     <% if session[:history].present? %>
     <% session[:history].each do |url| %>
         <li>

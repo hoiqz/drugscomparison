@@ -41,7 +41,7 @@
 <% end %>
 
   <article class="span4 home_side_widget popular_drug_widget">
-    <section class="widget_header" id="popular_drug"><h5>Popular Drugs</h5></section>
+    <section class="widget_header" id="popular_drug"><h5><%=t "widgets.popular_drugs.header" %></h5></section>
     <section class="widget_content">
       <% if @commondrugs.present? %>
           <ul id="popular_holder">
@@ -57,7 +57,7 @@
 
   <article class="span4 home_side_widget day2day_widget">
     <!--<h4 class="static_divider">Popular Searches</h4>-->
-    <section id="day2day" class="widget_header"><h5>Day To Day Health</h5></section>
+    <section id="day2day" class="widget_header"><h5><%=t "widgets.day_to_day_health.header" %></h5></section>
     <section class="widget_content">
       <ul id="day2day_holder">
         <% @day2day_condition.each do |entry| %>
@@ -68,7 +68,7 @@
 
   </article>
   <article class="span4 home_side_widget common_widget">
-    <section id="common_cond" class="widget_header"><h5>Common Conditions</h5></section>
+    <section id="common_cond" class="widget_header"><h5><%=t "widgets.day_to_day_health.header"  %></h5></section>
     <section class="widget_content">
       <ul id="commonholder">
         <% @common.each do |entry| %>

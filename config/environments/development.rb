@@ -34,4 +34,7 @@ Drugscomparison::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # which i18n gem local file to load
+  config.i18n.available_locales = ['zh-CN', 'en']
 end
